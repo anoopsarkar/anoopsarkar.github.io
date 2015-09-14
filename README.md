@@ -1,9 +1,5 @@
-anoopsarkar.github.io
+Anoop Sarkar's web page
 =====================
 
-Main portal website that will link to my teaching websites for different courses and semesters.
-
-Cloned from https://github.com/mt-class and then modified.
-
-
+Website for Anoop Sarkar, Professor of Computer Science at Simon Fraser University
 

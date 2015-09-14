@@ -1,0 +1,28 @@
+
+title: "Anoop Sarkar"
+
+description: >
+  "Anoop Sarkar is a Professor of Computer Science at Simon Fraser University in Vancouver, Canada"
+
+url: "http://anoopsarkar.github.io"
+
+markdown: kramdown
+
+email:
+  main: anoop@sfu.ca
+
+links:
+  lab: "http://natlang.cs.sfu.ca"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+social_media:
+  - title: E-mail
+    user: "anoop@sfu.ca"
+    url: "mailto:anoop@sfu.ca"
+    icon: img/email-icon-16.gif
+
