@@ -1,25 +1,6 @@
 <footer class="site-footer">
 
-<hr class="content-divisor">
-
 <div class="footer-content">
-  <table class="horizontal-blocks-table">
-    <tr class="horizontal-blocks-list">
-      <td class="social-media-block">
-        <!-- <p><strong>{{ site.title }}</strong>, May 31–June 5, Denver, Colorado, USA</p> -->
-        <ul>
-          {% for media in site.social_media %}
-          <li>
-            <a href="{{ media.url }}">{{ media.user }}</a>
-            {% if media.icon %}
-            <img class="icon" src="{{ media.icon }}"
-                 alt="{{ media.title }}" title="{{ media.title }}">
-            {% else %}
-            <span class="icon">: {{ media.title }}</span>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
         <p class="license-block">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                 <img alt="Creative Commons License" 
@@ -29,22 +10,6 @@
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                 Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
          </p>
-      </td>
-
-      <td class="sponsor-block">
-        <ul>
-          {% for type in site.data.sponsors.types %}
-          {% for sponsor in site.data.sponsors[type] %}
-          <li><a href="{{ sponsor.url }}">
-            <img class="logo" src="img/sponsors/{{ sponsor.footer }}"
-                 alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
-          </a></li>
-          {% endfor %}
-          {% endfor %}
-        </ul>
-      </td>
-    </tr>
-  </table>
 </div>
 
 </footer>
