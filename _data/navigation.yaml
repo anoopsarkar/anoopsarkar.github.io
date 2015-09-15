@@ -1,0 +1,28 @@
+- title: "Home"
+  href: "/"
+
+- title: "About"
+  href: "/about.html"
+
+- title: "Publications"
+  href: "/publications.html"
+
+- title: "Research"
+  href: "/research.html"
+
+- title: "Graduate Students"
+  href: "/gradstudents.html"
+
+- title: "For Students"
+  href: "/forstudents.html"
+
+- title: "Links"
+  href: "links.html"
+  subcategories:
+    - subtitle: "Link 1"
+      subhref: "/link1/"
+    - subtitle: "Link 2"
+      subhref: "/link2/"
+    - subtitle: "Link 3"
+      subhref: "/link3/"
+
