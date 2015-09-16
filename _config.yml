@@ -1,28 +1,26 @@
+exclude: ['README.md']
+timezone: US/Pacific
 
-title: "Anoop Sarkar"
+markdown:         kramdown
+highlighter:      pygments
 
-description: >
-  "Anoop Sarkar is a Professor of Computer Science at Simon Fraser University in Vancouver, Canada"
+permalink:            pretty
 
-url: "http://anoopsarkar.github.io"
+title:            Anoop Sarkar
+tagline:          'slow train coming ...'
+#url:              http://anoopsarkar.github.io
+url:              http://127.0.0.1:4000/
+baseurl:          /
+assets:           /assets/
+imageurl:         /assets/images/
+fileurl:          /assets/files/
+cssurl:           /assets/css/
 
-markdown: kramdown
+author:
+  name:           'Anoop Sarkar'
+  github:         https://github.com/anoopsarkar
+  bitbucket:      https://bitbucket.org/sfu-natlang
+  twitter:        https://twitter.com/anoopsarkar
 
-email:
-  main: anoop@sfu.ca
-
-links:
-  lab: "http://natlang.cs.sfu.ca"
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-social_media:
-  - title: E-mail
-    user: "anoop@sfu.ca"
-    url: "mailto:anoop@sfu.ca"
-    icon: assets/img/email-icon-16.gif
-
+github:
+  repo:           https://github.com/anoopsarkar/anoopsarkar.github.io

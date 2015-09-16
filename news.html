@@ -1,0 +1,19 @@
+---
+layout: default
+title: News
+---
+
+<ul class="posts">
+  {% for post in site.posts %}
+    {% if post.draft == null %}
+      <li>
+        <a href="{{ post.url }}">
+          <div>
+            <span class="title">{{ post.title }}</span>
+            <span class="date">{{ post.date | date_to_string }}</span>
+          </div>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
