@@ -3,7 +3,16 @@ layout: default
 title: Home
 ---
 
-<h2>News</h2>
+<img align="right" padding="10px" src="{{ site.baseurl }}assets/favicon-precompose.png" class="img-responsive img-rounded" style="max-width:144px">
+
+# Anoop Sarkar
+
+> [Professor]({{ site.baseurl }}professor) <br/>
+> [School of Computing Science](http://www.cs.sfu.ca/) <br/>
+> [Simon Fraser University](http://www.sfu.ca)
+
+## News
+
 <ul class="posts">
   {% for post in site.posts limit:2 %}
     {% if post.draft == null %}
@@ -19,3 +28,4 @@ title: Home
   {% endfor %}
   <li><a href="{{ site.baseurl }}news">All the news ...</a></li>
 </ul>
+

@@ -1,8 +1,6 @@
 ---
 layout: page
-title: Biography
+title: Grants
 menu: true
 ---
-
-blah blah
 
