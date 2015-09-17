@@ -4,7 +4,9 @@ title: On Being a Professor
 menu: false
 ---
 
-An excerpt from **Master and Commander** by Patrick O'Brian. Captain Jack Aubrey, an 18th century Royal Navy officer, has been given his first ship to command at the start of the novel, and in conversation with him is Stephen Maturin, the ship's doctor. This conversation occurs on page 271 (of 403) in the HarperCollins paperback.
+An excerpt from _Master and Commander_ by Patrick O'Brian. 
+
+Captain Jack Aubrey, an 18th century Royal Navy officer, has been given his first ship to command at the start of the novel, and in conversation with him is Stephen Maturin, the ship's doctor. This conversation occurs on page 271 (of 403) in the HarperCollins paperback.
 
 > 'I wonder you should be so concerned about a mere title -- a tolerably Byzantine title,' observed Stephen, 'After all, you are called Captain Aubrey now, and you would still only be called Captain Aubrey after that eventual elevation; for no man, as I understand it, ever says "Post-captain So-and-so". Surely it cannot be a peevish desire for symmetry -- a longing to wear two epaulettes?'
 
