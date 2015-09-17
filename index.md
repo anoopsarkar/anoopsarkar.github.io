@@ -12,7 +12,7 @@ title: Home
 
 ### Biography
 
-### Recent News
+### News and ill-tempered observations
 
 <ul class="posts">
   {% for post in site.posts limit:2 %}
