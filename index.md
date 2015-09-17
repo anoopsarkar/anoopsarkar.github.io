@@ -4,9 +4,10 @@ title: Home
 ---
 
 * [Professor]({{ site.baseurl }}professor)
+* [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
-* [&raquo; Contact details ...]({{ site.baseurl }}contact)
+* &raquo; [Contact details ...]({{ site.baseurl }}contact)
 {: .contact}
 
 ### Biography
@@ -26,16 +27,16 @@ title: Home
       </li>
     {% endif %}
   {% endfor %}
-  <li style="list-style: none;">&raquo; <a href="{{ site.baseurl }}news">All the news ...</a></li>
+  <li class="more"><a href="{{ site.baseurl }}news">More news ...</a></li>
 </ul>
 
-### Recent Publications
+### Publications
 
-### Recent Talks
+### Talks
 
-### Recent Activities
+### Activities
 
-### Recently Graduated Students
+### Graduated Students
 
 ### Research Grants
 
