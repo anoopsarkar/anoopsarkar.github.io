@@ -3,11 +3,13 @@ layout: default
 title: Home
 ---
 
-### Contact
+* [Professor]({{ site.baseurl }}professor)
+* [School of Computing Science](http://www.cs.sfu.ca/)
+* [Simon Fraser University](http://www.sfu.ca)
+* [&raquo; Contact details ...]({{ site.baseurl }}contact)
+{: .contact}
 
-> [Professor]({{ site.baseurl }}professor) <br/>
-> [School of Computing Science](http://www.cs.sfu.ca/) <br/>
-> [Simon Fraser University](http://www.sfu.ca)
+### Biography
 
 ### Recent News
 
@@ -24,7 +26,7 @@ title: Home
       </li>
     {% endif %}
   {% endfor %}
-  <li><a href="{{ site.baseurl }}news">All the news ...</a></li>
+  <li style="list-style: none;">&raquo; <a href="{{ site.baseurl }}news">All the news ...</a></li>
 </ul>
 
 ### Recent Publications
