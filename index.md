@@ -3,15 +3,13 @@ layout: default
 title: Home
 ---
 
-<img align="right" padding="10px" src="{{ site.baseurl }}assets/favicon-precompose.png" class="img-responsive img-rounded" style="max-width:144px">
-
-# Anoop Sarkar
+### Contact
 
 > [Professor]({{ site.baseurl }}professor) <br/>
 > [School of Computing Science](http://www.cs.sfu.ca/) <br/>
 > [Simon Fraser University](http://www.sfu.ca)
 
-## News
+### News
 
 <ul class="posts">
   {% for post in site.posts limit:2 %}

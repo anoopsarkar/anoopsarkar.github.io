@@ -4,23 +4,35 @@ timezone: US/Pacific
 markdown:         kramdown
 highlighter:      pygments
 
-permalink:            pretty
+permalink:           pretty
+relative_permalinks: true
 
-title:            Anoop Sarkar
-tagline:          'slow train coming ...'
+# Setup
+title:            'Anoop Sarkar'
+tagline:          'Professor | Computer Science | SFU'
+description:      ''
 #url:              http://anoopsarkar.github.io
 url:              http://127.0.0.1:4000/
-baseurl:          /
-assets:           /assets/
-imageurl:         /assets/images/
-fileurl:          /assets/files/
-cssurl:           /assets/css/
+baseurl:          ''
+#paginate:         5
 
+#assets:           /public/
+#imageurl:         /public/images/
+#fileurl:          /public/files/
+#cssurl:           /public/css/
+
+# About/contact
 author:
   name:           'Anoop Sarkar'
+  url:            http://anoopsarkar.github.io
+  email:          anoop@sfu.ca
   github:         https://github.com/anoopsarkar
   bitbucket:      https://bitbucket.org/sfu-natlang
   twitter:        https://twitter.com/anoopsarkar
 
 github:
   repo:           https://github.com/anoopsarkar/anoopsarkar.github.io
+
+# Custom vars
+version:             1.0.0
+

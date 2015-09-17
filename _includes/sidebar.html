@@ -1,35 +1,51 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description }}</p>
-    </div>
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}> -->
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/index.html">Home</a>
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+   <p>
+   <img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px">
+   </p>
+  </div>
 
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
+  {% if site.description != '' %}
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+  {% endif %}
 
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` and `menu: true` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          {% if node.menu == true %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
-      {% endfor %}
+      {% endif %}
+    {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.author.github }}">GitHub</a>
-      <a class="sidebar-nav-item" href="{{ site.author.bitbucket }}">Bitbucket</a>
-    </nav>
+    <!-- 
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    -->
+  </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  <div class="sidebar-item">
+    <p>
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    </p>
   </div>
 </div>

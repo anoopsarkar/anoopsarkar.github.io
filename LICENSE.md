@@ -6,9 +6,7 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Code
 
-Poole and Hyde are © 2014 Mark Otto
-
-Some modifications are © Robert Vojta
+Poole and Lanyon are © 2014 Mark Otto
 
 Any other code that was created by me in this repository is released under the MIT License:
 
