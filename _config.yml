@@ -9,8 +9,8 @@ relative_permalinks: true
 
 # Setup
 title:            'Anoop Sarkar'
-tagline:          'Professor | Computer Science | SFU'
-description:      ''
+tagline:          'ac.ufs@poona'
+description:      'Anoop Sarkar'
 #url:              http://anoopsarkar.github.io
 url:              http://127.0.0.1:4000/
 baseurl:          ''

@@ -5,17 +5,15 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-   <p>
-   <img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px">
-   </p>
-  </div>
 
-  {% if site.description != '' %}
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p><img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px"></p>
+    {% if site.description != '' %}
+    <p>
+      {{ site.description }}
+    </p>
+    {% endif %}
   </div>
-  {% endif %}
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>

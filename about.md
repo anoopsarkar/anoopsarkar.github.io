@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About this site
+menu: true
 ---
 
 * Hosted by [GitHub Pages](https://pages.github.com).
