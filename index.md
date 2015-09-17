@@ -9,7 +9,7 @@ title: Home
 > [School of Computing Science](http://www.cs.sfu.ca/) <br/>
 > [Simon Fraser University](http://www.sfu.ca)
 
-### News
+### Recent News
 
 <ul class="posts">
   {% for post in site.posts limit:2 %}
@@ -26,4 +26,14 @@ title: Home
   {% endfor %}
   <li><a href="{{ site.baseurl }}news">All the news ...</a></li>
 </ul>
+
+### Recent Publications
+
+### Recent Talks
+
+### Recent Activities
+
+### Recently Graduated Students
+
+### Research Grants
 
