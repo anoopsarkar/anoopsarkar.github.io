@@ -7,12 +7,16 @@ title: Home
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
-* &raquo; [Contact details ...]({{ site.baseurl }}contact)
+* <span class="moreinfo"><a href="{{ site.baseurl }}biography">Biography</a> and <a href="{{ site.baseurl }}contact">Contact details ...</a></span>
 {: .contact}
 
-### Biography
+### Research
 
-### News and ill-tempered observations
+* Statistical machine translation
+* Statistical parsing
+* Machine learning methods for Natural Language Processing
+
+### News and Ill-Tempered Observations
 
 <ul class="posts">
   {% for post in site.posts limit:2 %}
