@@ -1,0 +1,22 @@
+
+.contact {
+  padding-left: 0;
+  list-style: none;
+  /* font-size: 75%; */
+}
+
+span.rev {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.moreinfo {
+  display: block;
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+  font-size: 75%;
+}
+
+.moreinfo:before {
+  content: "More: ";
+}
