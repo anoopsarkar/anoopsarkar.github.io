@@ -13,10 +13,10 @@ title: Home
 ### Research
 
 * Statistical machine translation
-* Statistical parsing
+* Statistical parsing of natural languages
 * Machine learning methods for Natural Language Processing
 
-### News and Ill-Tempered Observations
+### News and Posts
 
 <ul class="posts">
   {% for post in site.posts limit:2 %}
