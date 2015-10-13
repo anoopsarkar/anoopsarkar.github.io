@@ -5,7 +5,7 @@ require 'bibtex'
 #require 'citeproc'
 require 'yaml'
 #require 'latex/decode'
-b = BibTeX.open('publications.bib')
+b = BibTeX.open('anoopsarkar.bib')
 #puts b['@inproceedings'].length
 #b.each do |p|
 #    CiteProc.process p.to_citeproc, :style => :apa

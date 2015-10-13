@@ -1,2889 +1,904 @@
-entries:
-    ann:ijcnlp2013:
-        address: Nagoya, Japan
-        author:
-        -   first: Ann
-            last: Clifton
-        -   first: Max
-            last: Whitney
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 6th International Joint Conference on Natural
-            Language Processing
-        month: October
-        pages: 252--260
-        publisher: Association for Computational Linguistics
-        title: An Online Algorithm for Learning over Constrained Latent Representations
-            using Multiple Views
-        type: inproceedings
-        year: '2013'
-    birke-sarkar:2007:wcafl:
-        address: Rochester, New York
-        author:
-        -   first: Julia
-            last: Birke
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the Workshop on Computational Approaches to Figurative
-            Language
-        month: apr
-        pages: 21--28
-        publisher: Association for Computational Linguistics
-        title: Active Learning for the Identification of Nonliteral Language
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W/W07/W07-0104
-        year: '2007'
-    clifton-sarkar:2011:acl-hlt2011:
-        abstract: This paper extends the training and tuning regime for phrase-based
-            statistical machine translation to obtain fluent translations into morphologically
-            complex languages (we build an English to Finnish translation system).
-            Our methods use unsupervised morphology induction. Unlike previous work
-            we focus on morphologically productive phrase pairs – our decoder can
-            combine morphemes across phrase boundaries. Morphemes in the target language
-            may not have a corresponding morpheme or word in the source language.
-            Therefore, we propose a novel combination of post-processing morphology
-            prediction with morpheme-based translation. We show, using both automatic
-            evaluation scores and linguistically motivated analyses of the output,
-            that our methods outperform previously proposed ones and provide the best
-            known results on the EnglishFinnish Europarl translation task. Our methods
-            are mostly language independent, so they should improve translation into
-            other target languages with complex morphology.
-        address: Portland, Oregon, USA
-        author:
-        -   first: Ann
-            last: Clifton
-        -   first: Anoop
-            last: Sarkar
-        booktitle: 'Proceedings of the 49th Annual Meeting of the Association for
-            Computational Linguistics: Human Language Technologies'
-        month: June
-        pages: 32--42
-        pdf: http://aclweb.org/anthology-new/P/P11/P11-1004.pdf
-        publisher: Association for Computational Linguistics
-        title: Combining Morpheme-based Machine Translation with Post-processing Morpheme
-            Prediction
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P11-1004
-        year: '2011'
-    dblp:conf/acl/nederhofss98:
-        author:
-        -   first: Mark-Jan
-            last: Nederhof
-        -   first: Anoop
-            last: Sarkar
-        -   first: Giorgio
-            last: Satta
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: '{COLING-ACL}'
-        pages: 953-959
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/prefix.pdf
-        title: Prefix Probabilities from Stochastic Tree Adjoining Grammars
-        type: inproceedings
-        year: '1998'
-    dblp:conf/acl/popowich89:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ACL
-        pages: 228-236
-        title: Tree Unification Grammar
-        type: inproceedings
-        year: '1989'
-    dblp:conf/acl/sarkar98:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING-ACL
-        pages: 1164-1170
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/consist.pdf
-        title: Conditions on Consistency of Probabilistic Tree Adjoining Grammars
-        type: inproceedings
-        year: '1998'
-    dblp:conf/ai/1996:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Gordon
-            last: McCalla
-            middle: I.
-        isbn: 3-540-61291-2
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence, 11th Biennial Conference of the
-            Canadian Society for Computational Studies of Intelligence, AI '96, Toronto,
-            Ontario, Canada, May 21-24, 1996, Proceedings
-        type: proceedings
-        volume: '1081'
-        year: '1996'
-    dblp:conf/ai/2000:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Howard
-            last: Hamilton
-            middle: J.
-        isbn: 3-540-67557-4
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence, 13th Biennial Conference of the
-            Canadian Society for Computational Studies of Intelligence, AI 2000, Montr{\'e}al,
-            Quebec, Canada, May 14-17, 2000, Proceedings
-        type: proceedings
-        volume: '1822'
-        year: '2000'
-    dblp:conf/ai/2004:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Ahmed
-            last: Tawfik
-            middle: Y.
-        -   first: Scott
-            last: Goodwin
-            middle: D.
-        isbn: 3-540-22004-6
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence, 17th Conference of the Canadian
-            Society for Computational Studies of Intelligence, Canadian AI 2004, London,
-            Ontario, Canada, May 17-19, 2004, Proceedings
-        type: proceedings
-        volume: '3060'
-        year: '2004'
-    dblp:conf/ai/2005:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Bal{\'a}zs
-            last: K{\'e}gl
-        -   first: Guy
-            last: Lapalme
-        isbn: 3-540-25864-7
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence, 18th Conference of the Canadian
-            Society for Computational Studies of Intelligence, Canadian AI 2005, Victoria,
-            Canada, May 9-11, 2005, Proceedings
-        type: proceedings
-        volume: '3501'
-        year: '2005'
-    dblp:conf/ai/2007:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Ziad
-            last: Kobti
-        -   first: Dan
-            last: Wu
-        isbn: 978-3-540-72664-7
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence, 20th Conference of the Canadian
-            Society for Computational Studies of Intelligence, Canadian AI 2007, Montreal,
-            Canada, May 28-30, 2007, Proceedings
-        type: proceedings
-        volume: '4509'
-        year: '2007'
-    dblp:conf/ai/2008:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Sabine
-            last: Bergler
-        isbn: 978-3-540-68821-1
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence , 21st Conference of the Canadian
-            Society for Computational Studies of Intelligence, Canadian AI 2008, Windsor,
-            Canada, May 28-30, 2008, Proceedings
-        type: proceedings
-        volume: '5032'
-        year: '2008'
-    dblp:conf/ai/2010:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        editor:
-        -   first: Atefeh
-            last: Farzindar
-        -   first: Vlado
-            last: Keselj
-        ee: http://dx.doi.org/10.1007/978-3-642-13059-5
-        isbn: 978-3-642-13058-8
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Advances in Artificial Intelligence, 23rd Canadian Conference on Artificial
-            Intelligence, Canadian, AI 2010, Ottawa, Canada, May 31 - June 2, 2010.
-            Proceedings
-        type: proceedings
-        volume: '6085'
-        year: '2010'
-    dblp:conf/ai/barrierep00:
-        author:
-        -   first: Caroline
-            last: Barri{\`e}re
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2000
-        ee: http://link.springer.de/link/service/series/0558/bibs/1822/18220053.htm
-        pages: 53-68
-        title: Expanding the Type Hierarchy with Nonlexical Concepts
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ai/barrierep01:
-        author:
-        -   first: Caroline
-            last: Barri{\`e}re
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2000
-        ee: http://dx.doi.org/10.1007/3-540-45486-1_5
-        pages: 53-68
-        title: Expanding the Type Hierarchy with Nonlexical Concepts
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ai/dilkinap04:
-        author:
-        -   first: Katia
-            last: Dilkina
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2004
-        ee: http://springerlink.metapress.com/openurl.asp?genre=article{\&}issn=0302-9743{\&}volume=3060{\&}spage=534
-        pages: 534-539
-        title: An Algorithm for Anaphora Resolution in Aviation Safety Reports
-        type: inproceedings
-        year: '2004'
-    dblp:conf/ai/dilkinap05:
-        author:
-        -   first: Katia
-            last: Dilkina
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2004
-        ee: http://dx.doi.org/10.1007/978-3-540-24840-8_50
-        pages: 534-539
-        title: An Algorithm for Anaphora Resolution in Aviation Safety Reports
-        type: inproceedings
-        year: '2004'
-    dblp:conf/ai/gupd08:
-        author:
-        -   first: Baohua
-            last: Gu
-        -   first: Fred
-            last: Popowich
-        -   first: Ver{\'o}nica
-            last: Dahl
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2008
-        ee: http://dx.doi.org/10.1007/978-3-540-68825-9_12
-        pages: 114-125
-        title: Recognizing Biomedical Named Entities in Chinese Research Abstracts
-        type: inproceedings
-        year: '2008'
-    dblp:conf/ai/gupd09:
-        author:
-        -   first: Baohua
-            last: Gu
-        -   first: Fred
-            last: Popowich
-        -   first: Ver{\'o}nica
-            last: Dahl
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2008
-        ee: http://dx.doi.org/10.1007/978-3-540-68825-9_12
-        pages: 114-125
-        title: Recognizing Biomedical Named Entities in Chinese Research Abstracts
-        type: inproceedings
-        year: '2008'
-    dblp:conf/ai/kubonpt00:
-        author:
-        -   first: Petr
-            last: Kubon
-        -   first: Fred
-            last: Popowich
-        -   first: Gordon
-            last: Tisher
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2000
-        ee: http://link.springer.de/link/service/series/0558/bibs/1822/18220082.htm
-        pages: 82-89
-        title: An Extendable Natural Language Interface to a Consumer Service Database
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ai/kubonpt01:
-        author:
-        -   first: Petr
-            last: Kubon
-        -   first: Fred
-            last: Popowich
-        -   first: Gordon
-            last: Tisher
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2000
-        ee: http://dx.doi.org/10.1007/3-540-45486-1_7
-        pages: 82-89
-        title: An Extendable Natural Language Interface to a Consumer Service Database
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ai/mcdonaldtmpt00:
-        author:
-        -   first: Scott
-            last: McDonald
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2000
-        ee: http://link.springer.de/link/service/series/0558/bibs/1822/18220126.htm
-        pages: 126-137
-        title: Collocation Discovery for Optimal Bilingual Lexicon Development
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ai/mcdonaldtmpt01:
-        author:
-        -   first: Scott
-            last: McDonald
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2000
-        ee: http://dx.doi.org/10.1007/3-540-45486-1_11
-        pages: 126-137
-        title: Collocation Discovery for Optimal Bilingual Lexicon Development
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ai/popowich96:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/1996
-        pages: 97-108
-        title: A Chart Generator for Shake and Bake Machine Translation
-        type: inproceedings
-        year: '1996'
-    dblp:conf/ai/popowich97:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/1996
-        ee: http://dx.doi.org/10.1007/3-540-61291-2_44
-        pages: 97-108
-        title: A Chart Generator for Shake and Bake Machine Translation
-        type: inproceedings
-        year: '1996'
-    dblp:conf/ai/royp10:
-        author:
-        -   first: Maxim
-            last: Roy
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2010
-        ee: http://dx.doi.org/10.1007/978-3-642-13059-5_27
-        pages: 273-277
-        title: Phrase-Based Statistical Machine Translation for a Low-Density Language
-            Pair
-        type: inproceedings
-        year: '2010'
-    dblp:conf/ai/shens05:
-        author:
-        -   first: Hong
-            last: Shen
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2005
-        ee: http://dx.doi.org/10.1007/11424918_40
-        pages: 389-400
-        title: Voting Between Multiple Data Representations for Text Chunking
-        type: inproceedings
-        year: '2005'
-    dblp:conf/ai/shimwlgksp07:
-        author:
-        -   first: Zhongmin
-            last: Shi
-        -   first: Gabor
-            last: Melli
-        -   first: Yang
-            last: Wang
-        -   first: Yudong
-            last: Liu
-        -   first: Baohua
-            last: Gu
-        -   first: Mehdi
-            last: Kashani
-            middle: M.
-        -   first: Anoop
-            last: Sarkar
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2007
-        ee: http://dx.doi.org/10.1007/978-3-540-72665-4_25
-        pages: 284-295
-        title: Question Answering Summarization of Multiple Biomedical Documents
-        type: inproceedings
-        year: '2007'
-    dblp:conf/ai/shimwlgksp08:
-        author:
-        -   first: Zhongmin
-            last: Shi
-        -   first: Gabor
-            last: Melli
-        -   first: Yang
-            last: Wang
-        -   first: Yudong
-            last: Liu
-        -   first: Baohua
-            last: Gu
-        -   first: Mehdi
-            last: Kashani
-            middle: M.
-        -   first: Anoop
-            last: Sarkar
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Canadian Conference on AI
-        crossref: DBLP:conf/ai/2007
-        ee: http://dx.doi.org/10.1007/978-3-540-72665-4_25
-        pages: 284-295
-        title: Question Answering Summarization of Multiple Biomedical Documents
-        type: inproceedings
-        year: '2007'
-    dblp:conf/amta/1998:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: AMTA
-        editor:
-        -   first: David
-            last: Farwell
-        -   first: Laurie
-            last: Gerber
-        -   first: Eduard
-            last: Hovy
-            middle: H.
-        isbn: 3-540-65259-0
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Machine Translation and the Information Soup, Third Conference of the
-            Association for Machine Translation in the Americas, AMTA '98, Langhorne,
-            PA, USA, October 28-31, 1998, Proceedings
-        type: proceedings
-        volume: '1529'
-        year: '1998'
-    dblp:conf/amta/tooletpfm98:
-        author:
-        -   first: Janine
-            last: Toole
-        -   first: Davide
-            last: Turcato
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        -   first: Paul
-            last: McFetridge
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: AMTA
-        crossref: DBLP:conf/amta/1998
-        ee: http://link.springer.de/link/service/series/0558/bibs/1529/15290103.htm
-        pages: 103-112
-        title: Time-Constrained Machine Translation
-        type: inproceedings
-        year: '1998'
-    dblp:conf/amta/tooletpfm99:
-        author:
-        -   first: Janine
-            last: Toole
-        -   first: Davide
-            last: Turcato
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        -   first: Paul
-            last: McFetridge
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: AMTA
-        crossref: DBLP:conf/amta/1998
-        ee: http://dx.doi.org/10.1007/3-540-49478-2_10
-        pages: 103-112
-        title: Time-Constrained Machine Translation
-        type: inproceedings
-        year: '1998'
-    dblp:conf/clin/1999:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: CLIN
-        editor:
-        -   first: Paola
-            last: Monachesi
-        publisher: UILOTS Utrecht
-        title: Computational Linguistics in the Netherlands 1999, Selected Papers
-            from the Tenth CLIN Meeting, December 10, OTS Utrecht
-        type: proceedings
-        year: '1999'
-    dblp:conf/clin/sarkarw99:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Shuly
-            last: Wintner
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: CLIN
-        crossref: DBLP:conf/clin/1999
-        ee: http://www-uilots.let.uu.nl/publications/clin1999/Pap/shuly.pdf
-        title: Typing as a means for validating feature structures
-        type: inproceedings
-        year: '1999'
-    dblp:conf/coling/2000:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        publisher: Morgan Kaufmann
-        title: COLING 2000, 18th International Conference on Computational Linguistics,
-            Proceedings of the Conference, 2 Volumes, July 31 - August 4, 2000, Universit{\"a}t
-            des Saarlandes, Saarbr{\"u}cken, Germany
-        type: proceedings
-        year: '2000'
-    dblp:conf/coling/barrihrep96:
-        author:
-        -   first: Caroline
-            last: Barri{\`e}re
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        ee: http://acl.ldc.upenn.edu/C/C96/C96-1013.pdf
-        pages: 65-70
-        title: Concept clustering and knowledge integration from a children's dictionary
-        type: inproceedings
-        year: '1996'
-    dblp:conf/coling/barrihrep97:
-        author:
-        -   first: Caroline
-            last: Barri{\`e}re
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        ee: http://acl.ldc.upenn.edu/C/C96/C96-1013.pdf
-        pages: 65-70
-        title: Concept clustering and knowledge integration from a children's dictionary
-        type: inproceedings
-        year: '1996'
-    dblp:conf/coling/popowichmfh92:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Paul
-            last: McFetridge
-        -   first: Dan
-            last: Fass
-        -   first: Gary
-            last: Hall
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        ee: http://acl.ldc.upenn.edu/C/C92/C92-1011.pdf
-        pages: 46-52
-        title: Processing Complex Noun Phrases In A Natural Language Interface To
-            A Statistical Database
-        type: inproceedings
-        year: '1992'
-    dblp:conf/coling/popowichmfh93:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Paul
-            last: McFetridge
-        -   first: Dan
-            last: Fass
-        -   first: Gary
-            last: Hall
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        ee: http://acl.ldc.upenn.edu/C/C92/C92-1011.pdf
-        pages: 46-52
-        title: Processing Complex Noun Phrases In A Natural Language Interface To
-            A Statistical Database
-        type: inproceedings
-        year: '1992'
-    dblp:conf/coling/sarkarj96:
-        address: Copenhagen, Denmark
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Aravind
-            last: Joshi
-            middle: K.
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        ee: http://acl.ldc.upenn.edu/C/C96/C96-2103.pdf
-        pages: 610-615
-        title: 'Coordination in Tree Adjoining Grammars: Formalization and Implementation'
-        type: inproceedings
-        year: '1996'
-    dblp:conf/coling/sarkart02:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Woottiporn
-            last: Tripasai
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        ee: http://acl.ldc.upenn.edu/C/C02/C02-1040.pdf
-        title: Learning Verb Argument Structure from Minimally Annotated Corpora
-        type: inproceedings
-        year: '2002'
-    dblp:conf/coling/sarkarz00:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Daniel
-            last: Zeman
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: COLING
-        crossref: DBLP:conf/coling/2000
-        ee: http://acl.ldc.upenn.edu/C/C00/C00-2100.pdf
-        pages: 691-697
-        title: Automatic Extraction of Subcategorization Frames for Czech
-        type: inproceedings
-        year: '2000'
-    dblp:conf/eacl/2006:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: EACL
-        isbn: 1-932432-59-0
-        publisher: The Association for Computer Linguistics
-        title: EACL 2006, 11st Conference of the European Chapter of the Association
-            for Computational Linguistics, Proceedings of the Conference, April 3-7,
-            2006, Trento, Italy
-        type: proceedings
-        year: '2006'
-    dblp:conf/eacl/birkes06:
-        author:
-        -   first: Julia
-            last: Birke
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: EACL
-        crossref: DBLP:conf/eacl/2006
-        ee: http://acl.ldc.upenn.edu/E/E06/E06-1042.pdf
-        title: A Clustering Approach for Nearly Unsupervised Recognition of Nonliteral
-            Language
-        type: inproceedings
-        year: '2006'
-    dblp:conf/eacl/popowich85:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: EACL
-        ee: http://acl.ldc.upenn.edu/E/E85/E85-1007.pdf
-        pages: 48-56
-        title: 'Saumer: Sentence Analysis Using Metarules'
-        type: inproceedings
-        year: '1985'
-    dblp:conf/eacl/steedmansohchrbc03:
-        author:
-        -   first: Mark
-            last: Steedman
-        -   first: Anoop
-            last: Sarkar
-        -   first: Miles
-            last: Osborne
-        -   first: Rebecca
-            last: Hwa
-        -   first: Stephen
-            last: Clark
-        -   first: Julia
-            last: Hockenmaier
-        -   first: Paul
-            last: Ruhlen
-        -   first: Steven
-            last: Baker
-        -   first: Jeremiah
-            last: Crim
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: EACL
-        ee: http://acl.ldc.upenn.edu/E/E03/E03-1008.pdf
-        pages: 331-338
-        title: Bootstrapping statistical parsers from small datasets
-        type: inproceedings
-        year: '2003'
-    dblp:conf/europar/2011-2:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Euro-Par (2)
-        editor:
-        -   first: Emmanuel
-            last: Jeannot
-        -   first: Raymond
-            last: Namyst
-        -   first: Jean
-            last: Roman
-        ee: http://dx.doi.org/10.1007/978-3-642-23397-5
-        isbn: 978-3-642-23396-8
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Euro-Par 2011 Parallel Processing - 17th International Conference,
-            Euro-Par 2011, Bordeaux, France, August 29 - September 2, 2011, Proceedings,
-            Part II
-        type: proceedings
-        volume: '6853'
-        year: '2011'
-    dblp:conf/europar/cameronahlsp11:
-        author:
-        -   first: Robert
-            last: Cameron
-            middle: D.
-        -   first: Ehsan
-            last: Amiri
-        -   first: Kenneth
-            last: Herdy
-            middle: S.
-        -   first: Dan
-            last: Lin
-        -   first: Thomas
-            last: Shermer
-            middle: C.
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Euro-Par (2)
-        crossref: DBLP:conf/europar/2011-2
-        ee: http://dx.doi.org/10.1007/978-3-642-23397-5_2
-        pages: 2-13
-        title: 'Parallel Scanning with Bitstream Addition: An XML Case Study'
-        type: inproceedings
-        year: '2011'
-    dblp:conf/icml/2008:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ICML
-        editor:
-        -   first: William
-            last: Cohen
-            middle: W.
-        -   first: Andrew
-            last: McCallum
-        -   first: Sam
-            last: Roweis
-            middle: T.
-        isbn: 978-1-60558-205-4
-        publisher: ACM
-        series: ACM International Conference Proceeding Series
-        title: Machine Learning, Proceedings of the Twenty-Fifth International Conference
-            (ICML 2008), Helsinki, Finland, June 5-9, 2008
-        type: proceedings
-        volume: '307'
-        year: '2008'
-    dblp:conf/icml/haffariwwmj08:
-        author:
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Yang
-            last: Wang
-        -   first: Shaojun
-            last: Wang
-        -   first: Greg
-            last: Mori
-        -   first: Feng
-            last: Jiao
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ICML
-        crossref: DBLP:conf/icml/2008
-        ee: http://doi.acm.org/10.1145/1390156.1390203
-        pages: 368-375
-        title: Boosting with incomplete information
-        type: inproceedings
-        year: '2008'
-    dblp:conf/icost/2011:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ICOST
-        editor:
-        -   first: Bessam
-            last: Abdulrazak
-        -   first: Sylvain
-            last: Giroux
-        -   first: Bruno
-            last: Bouchard
-        -   first: H{\'e}l{\`e}ne
-            last: Pigot
-        -   first: Mounir
-            last: Mokhtari
-        ee: http://dx.doi.org/10.1007/978-3-642-21535-3
-        isbn: 978-3-642-21534-6
-        publisher: Springer
-        series: Lecture Notes in Computer Science
-        title: Toward Useful Services for Elderly and People with Disabilities - 9th
-            International Conference on Smart Homes and Health Telematics, ICOST 2011,
-            Montreal, Canada, June 20-22, 2011. Proceedings
-        type: proceedings
-        volume: '6719'
-        year: '2011'
-    dblp:conf/icost/makoninp11:
-        author:
-        -   first: Stephen
-            last: Makonin
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ICOST
-        crossref: DBLP:conf/icost/2011
-        ee: http://dx.doi.org/10.1007/978-3-642-21535-3_33
-        pages: 236-240
-        title: An Intelligent Agent for Determining Home Occupancy Using Power Monitors
-            and Light Sensors
-        type: inproceedings
-        year: '2011'
-    dblp:conf/ictai/hallpf96:
-        author:
-        -   first: Gary
-            last: Hall
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ICTAI
-        pages: 475-477
-        title: 'Natural Language Edit Controls: Constrained Natural Language Devices
-            in User Interfaces'
-        type: inproceedings
-        year: '1996'
-    dblp:conf/ictai/hallpf97:
-        author:
-        -   first: Gary
-            last: Hall
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: ICTAI
-        pages: 475-477
-        title: 'Natural Language Edit Controls: Constrained Natural Language Devices
-            in User Interfaces'
-        type: inproceedings
-        year: '1996'
-    dblp:conf/ifip9-1/2000:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Woman, Work and Computerization
-        editor:
-        -   first: Elen
-            last: Balka
-        -   first: Richard
-            last: Smith
-        isbn: 0-7923-7864-4
-        publisher: Kluwer
-        series: IFIP Conference Proceedings
-        title: 'Woman, Work and Computerization: Charting a Course to the Future,
-            IFIP TC9/WG9.1 Seventh International Conference on Woman, Work and Computerization,
-            June 8-11, 2000, Vancouver, British Columbia, Canada'
-        type: proceedings
-        volume: '172'
-        year: '2000'
-    dblp:conf/ifip9-1/klawecpc00:
-        author:
-        -   first: Maria
-            last: Klawe
-            middle: M.
-        -   first: Ian
-            last: Cavers
-        -   first: Fred
-            last: Popowich
-        -   first: Grace
-            last: Chen
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Woman, Work and Computerization
-        crossref: DBLP:conf/ifip9-1/2000
-        pages: 94-101
-        title: ARC
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ifip9-1/klawecpc01:
-        author:
-        -   first: Maria
-            last: Klawe
-            middle: M.
-        -   first: Ian
-            last: Cavers
-        -   first: Fred
-            last: Popowich
-        -   first: Grace
-            last: Chen
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Woman, Work and Computerization
-        crossref: DBLP:conf/ifip9-1/2000
-        pages: 94-101
-        title: ARC
-        type: inproceedings
-        year: '2000'
-    dblp:conf/ijcai/1985:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: IJCAI
-        editor:
-        -   first: Aravind
-            last: Joshi
-            middle: K.
-        publisher: Morgan Kaufmann
-        title: Proceedings of the 9th International Joint Conference on Artificial
-            Intelligence. Los Angeles, CA, August 1985
-        type: proceedings
-        year: '1985'
-    dblp:conf/ijcai/2005:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: IJCAI
-        editor:
-        -   first: Leslie
-            last: Kaelbling
-            middle: Pack
-        -   first: Alessandro
-            last: Saffiotti
-        isbn: 0938075934
-        publisher: Professional Book Center
-        title: IJCAI-05, Proceedings of the Nineteenth International Joint Conference
-            on Artificial Intelligence, Edinburgh, Scotland, UK, July 30-August 5,
-            2005
-        type: proceedings
-        year: '2005'
-    dblp:conf/ijcai/popowich85:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: IJCAI
-        crossref: DBLP:conf/ijcai/1985
-        pages: 765-768
-        title: Unrestricted Gapping Grammars
-        type: inproceedings
-        year: '1985'
-    dblp:conf/ijcai/shis05:
-        author:
-        -   first: Zhongmin
-            last: Shi
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: IJCAI
-        crossref: DBLP:conf/ijcai/2005
-        ee: http://www.ijcai.org/papers/post-0441.pdf
-        pages: 1634-1635
-        title: 'Intimate Learning: A Novel Approach for Combining Labelled and Unlabelled
-            Data'
-        type: inproceedings
-        year: '2005'
-    dblp:conf/lbm/2007s:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: LBM (Short Papers)
-        editor:
-        -   first: Christopher
-            last: Baker
-            middle: J. O.
-        -   first: Jian
-            last: Su
-        publisher: CEUR-WS.org
-        series: CEUR Workshop Proceedings
-        title: Short Paper Proceedings of the 2nd International Symposium on Languages
-            in Biology and Medicine (LBM 2007), Singapore, December 6-7, 2007
-        type: proceedings
-        volume: '319'
-        year: '2008'
-    dblp:conf/lbm/mellies07:
-        author:
-        -   first: Gabor
-            last: Melli
-        -   first: Martin
-            last: Ester
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: LBM (Short Papers)
-        crossref: DBLP:conf/lbm/2007s
-        ee: http://ceur-ws.org/Vol-319/Paper2.pdf
-        title: Recognition of Multi-sentence n-ary Subcellular Localization Mentions
-            in Biomedical Abstracts
-        type: inproceedings
-        year: '2007'
-    dblp:conf/naacl/2007:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: HLT-NAACL
-        editor:
-        -   first: Candace
-            last: Sidner
-            middle: L.
-        -   first: Tanja
-            last: Schultz
-        -   first: Matthew
-            last: Stone
-        -   first: ChengXiang
-            last: Zhai
-        publisher: The Association for Computational Linguistics
-        title: Human Language Technology Conference of the North American Chapter
-            of the Association of Computational Linguistics, Proceedings, April 22-27,
-            2007, Rochester, New York, USA
-        type: proceedings
-        year: '2007'
-    dblp:conf/naacl/2009o:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: HLT-NAACL (Demos)
-        editor:
-        -   first: Fred
-            last: Popowich
-        -   first: Michael
-            last: Johnston
-        isbn: 978-1-932432-42-8
-        publisher: The Association for Computational Linguistics
-        title: 'Human Language Technologies: Conference of the North American Chapter
-            of the Association of Computational Linguistics, Proceedings, May 31 -
-            June 5, 2009, Boulder, Colorado, USA, Demos'
-        type: proceedings
-        year: '2009'
-    dblp:conf/naacl/sarkar01:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: NAACL
-        ee: http://ucrel.lancs.ac.uk/acl/N/N01/N01-1023.pdf
-        title: Applying Co-Training Methods to Statistical Parsing
-        type: inproceedings
-        year: '2001'
-    dblp:conf/naacl/shisp07:
-        author:
-        -   first: Zhongmin
-            last: Shi
-        -   first: Anoop
-            last: Sarkar
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: HLT-NAACL (Short Papers)
-        crossref: DBLP:conf/naacl/2007
-        ee: http://www.aclweb.org/anthology/N07-2041
-        pages: 161-164
-        title: Simultaneous Identification of Biomedical Named-Entity and Functional
-            Relation Using Statistical Parsing Techniques
-        type: inproceedings
-        year: '2007'
-    dblp:conf/naacl/steedmanhcoshrbc03:
-        author:
-        -   first: Mark
-            last: Steedman
-        -   first: Rebecca
-            last: Hwa
-        -   first: Stephen
-            last: Clark
-        -   first: Miles
-            last: Osborne
-        -   first: Anoop
-            last: Sarkar
-        -   first: Julia
-            last: Hockenmaier
-        -   first: Paul
-            last: Ruhlen
-        -   first: Steven
-            last: Baker
-        -   first: Jeremiah
-            last: Crim
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: HLT-NAACL
-        ee: http://acl.ldc.upenn.edu/N/N03/N03-1031.pdf
-        title: Example Selection for Bootstrapping Statistical Parsers
-        type: inproceedings
-        year: '2003'
-    dblp:conf/nldb/mcfetridgepf95:
-        author:
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: NLDB
-        pages: 0-
-        title: An Analysis of Compounds in HPSG for Database Queries
-        type: inproceedings
-        year: '1995'
-    dblp:conf/nlulp/popowichv91:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Carl
-            last: Vogel
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Natural Language Understanding and Logic Programming Workshop
-        pages: 227-245
-        title: A Logic-Based Implementation of Head-Driven Phrase Structure Grammar
-        type: inproceedings
-        year: '1991'
-    dblp:conf/nlulp/popowichv92:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Carl
-            last: Vogel
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: Natural Language Understanding and Logic Programming Workshop
-        pages: 227-245
-        title: A Logic-Based Implementation of Head-Driven Phrase Structure Grammar
-        type: inproceedings
-        year: '1991'
-    dblp:conf/rsctc/1993:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: RSKD
-        editor:
-        -   first: Wojciech
-            last: Ziarko
-        isbn: 3-540-19885-7
-        publisher: Springer
-        series: Workshops in Computing
-        title: Rough Sets, Fuzzy Sets and Knowledge Discovery, Proceedings of the
-            International Workshop on Rough Sets and Knowledge Discovery (RSKD'93),
-            Banff, Alberta, Canada, 12-15 October 1993
-        type: proceedings
-        year: '1994'
-    dblp:conf/rsctc/cerconemhp93:
-        author:
-        -   first: Nick
-            last: Cercone
-        -   first: Paul
-            last: McFetridge
-        -   first: Jiawei
-            last: Han
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: RSKD
-        crossref: DBLP:conf/rsctc/1993
-        pages: 32-43
-        title: 'Human-Computer Interfaces: DBLEARN and System X'
-        type: inproceedings
-        year: '1993'
-    dblp:conf/rsctc/cerconemhp94:
-        author:
-        -   first: Nick
-            last: Cercone
-        -   first: Paul
-            last: McFetridge
-        -   first: Jiawei
-            last: Han
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: RSKD
-        crossref: DBLP:conf/rsctc/1993
-        pages: 32-43
-        title: 'Human-Computer Interfaces: DBLEARN and System X'
-        type: inproceedings
-        year: '1993'
-    dblp:conf/trec/2005:
-        bibsource: DBLP, http://dblp.uni-trier.de
-        editor:
-        -   first: Ellen
-            last: Voorhees
-            middle: M.
-        -   first: Lori
-            last: Buckland
-            middle: P.
-        publisher: National Institute of Standards and Technology (NIST)
-        title: Proceedings of the Fourteenth Text REtrieval Conference, TREC 2005,
-            Gaithersburg, Maryland, November 15-18, 2005
-        type: proceedings
-        volume: Special Publication 500-266
-        year: '2005'
-    dblp:conf/trec/shigps05:
-        author:
-        -   first: Zhongmin
-            last: Shi
-        -   first: Baohua
-            last: Gu
-        -   first: Fred
-            last: Popowich
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        booktitle: TREC
-        crossref: DBLP:conf/trec/2005
-        ee: http://trec.nist.gov/pubs/trec14/papers/simon-fraseru.geo.pdf
-        title: 'Synonym-Based Expansion and Boosting-Based Re-Ranking: A Two-phase
-            Approach for Genomic Information Retrieval'
-        type: inproceedings
-        year: '2005'
-    dblp:journals/ci/popowich86:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        journal: Computational Intelligence
-        pages: 28-53
-        title: Unrestricted gapping grammars
-        type: article
-        volume: '2'
-        year: '1986'
-    dblp:journals/coling/wintners02:
-        author:
-        -   first: Shuly
-            last: Wintner
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        journal: Computational Linguistics
-        number: '3'
-        pages: 389-397
-        title: A Note on Typing Feature Structures
-        type: article
-        volume: '28'
-        year: '2002'
-    dblp:journals/corr/abs-1011-4623:
-        author:
-        -   first: Samaneh
-            last: Moghaddam
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/1011.4623
-        journal: CoRR
-        title: Opinion Polarity Identification through Adjectives
-        type: article
-        volume: abs/1011.4623
-        year: '2010'
-    dblp:journals/corr/cmp-lg-9505021:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9505021
-        journal: CoRR
-        title: Improving the Efficiency of a Generation Algorithm for Shake and Bake
-            Machine Translation Using Head-Driven Phrase Structure Grammar
-        type: article
-        volume: cmp-lg/9505021
-        year: '1995'
-    dblp:journals/corr/cmp-lg-9505022:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9505021
-        journal: CoRR
-        title: Improving the Efficiency of a Generation Algorithm for Shake and Bake
-            Machine Translation Using Head-Driven Phrase Structure Grammar
-        type: article
-        volume: cmp-lg/9505021
-        year: '1995'
-    dblp:journals/corr/cmp-lg-9605017:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9605017
-        journal: CoRR
-        title: A Chart Generator for Shake and Bake Machine Translation
-        type: article
-        volume: cmp-lg/9605017
-        year: '1996'
-    dblp:journals/corr/cmp-lg-9606006:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Aravind
-            last: Joshi
-            middle: K.
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9606006
-        journal: CoRR
-        title: 'Coordination in Tree Adjoining Grammars: Formalization and Implementation'
-        type: article
-        volume: cmp-lg/9606006
-        year: '1996'
-    dblp:journals/corr/cmp-lg-9703002:
-        author:
-        -   first: Caroline
-            last: Barri{\`e}re
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9703002
-        journal: CoRR
-        title: Concept Clustering and Knowledge Integration from a Children's Dictionary
-        type: article
-        volume: cmp-lg/9703002
-        year: '1997'
-    dblp:journals/corr/cmp-lg-9703003:
-        author:
-        -   first: Caroline
-            last: Barri{\`e}re
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9703002
-        journal: CoRR
-        title: Concept Clustering and Knowledge Integration from a Children's Dictionary
-        type: article
-        volume: cmp-lg/9703002
-        year: '1997'
-    dblp:journals/corr/cmp-lg-9706024:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Davide
-            last: Turcato
-        -   first: Olivier
-            last: Laurens
-        -   first: Paul
-            last: McFetridge
-        -   first: Devlan
-            last: Nicholson
-        -   first: Patrick
-            last: McGivern
-        -   first: Maricela
-            last: Pena
-            middle: Corzo
-        -   first: Lisa
-            last: Pidruchney
-        -   first: Scott
-            last: McDonald
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9706024
-        journal: CoRR
-        title: A Lexicalist Approach to the Translation of Colloquial Text
-        type: article
-        volume: cmp-lg/9706024
-        year: '1997'
-    dblp:journals/corr/cmp-lg-9706025:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Davide
-            last: Turcato
-        -   first: Olivier
-            last: Laurens
-        -   first: Paul
-            last: McFetridge
-        -   first: Devlan
-            last: Nicholson
-        -   first: Patrick
-            last: McGivern
-        -   first: Maricela
-            last: Pena
-            middle: Corzo
-        -   first: Lisa
-            last: Pidruchney
-        -   first: Scott
-            last: McDonald
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cmp-lg/9706024
-        journal: CoRR
-        title: A Lexicalist Approach to the Translation of Colloquial Text
-        type: article
-        volume: cmp-lg/9706024
-        year: '1997'
-    dblp:journals/corr/cs-cl-0009003:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Daniel
-            last: Zeman
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/0009003
-        journal: CoRR
-        title: Automatic Extraction of Subcategorization Frames for Czech
-        type: article
-        volume: cs.CL/0009003
-        year: '2000'
-    dblp:journals/corr/cs-cl-9809028:
-        author:
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/9809028
-        journal: CoRR
-        title: Separating Dependency from Constituency in a Tree Rewriting System
-        type: article
-        volume: cs.CL/9809028
-        year: '1998'
-    dblp:journals/corr/cs-cl-9906034:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/9906034
-        journal: CoRR
-        title: A Unified Example-Based and Lexicalist Approach to Machine Translation
-        type: article
-        volume: cs.CL/9906034
-        year: '1999'
-    dblp:journals/corr/cs-cl-9906035:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/9906034
-        journal: CoRR
-        title: A Unified Example-Based and Lexicalist Approach to Machine Translation
-        type: article
-        volume: cs.CL/9906034
-        year: '1999'
-    dblp:journals/corr/cs-cl-9907008:
-        author:
-        -   first: Janine
-            last: Toole
-        -   first: Fred
-            last: Popowich
-        -   first: Devlan
-            last: Nicholson
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/9907008
-        journal: CoRR
-        title: Explanation-based Learning for Machine Translation
-        type: article
-        volume: cs.CL/9907008
-        year: '1999'
-    dblp:journals/corr/cs-cl-9907017:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/9907017
-        journal: CoRR
-        title: A Bootstrap Approach to Automatically Generating Lexical Transfer Rules
-        type: article
-        volume: cs.CL/9907017
-        year: '1999'
-    dblp:journals/corr/cs-cl-9907018:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://arxiv.org/abs/cs.CL/9907017
-        journal: CoRR
-        title: A Bootstrap Approach to Automatically Generating Lexical Transfer Rules
-        type: article
-        volume: cs.CL/9907017
-        year: '1999'
-    dblp:journals/dke/mcfetridgepf96:
-        author:
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1016/S0169-023X(96)00033-X
-        journal: Data Knowl. Eng.
-        number: '2'
-        pages: 195-209
-        title: An Analysis of Compounds in HPSG (Head-Driven Phrase Structure Grammar)
-            for Database Queries
-        type: article
-        volume: '20'
-        year: '1996'
-    dblp:journals/dke/mcfetridgepf97:
-        author:
-        -   first: Paul
-            last: McFetridge
-        -   first: Fred
-            last: Popowich
-        -   first: Dan
-            last: Fass
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1016/S0169-023X(96)00033-X
-        journal: Data Knowl. Eng.
-        number: '2'
-        pages: 195-209
-        title: An Analysis of Compounds in HPSG (Head-Driven Phrase Structure Grammar)
-            for Database Queries
-        type: article
-        volume: '20'
-        year: '1996'
-    dblp:journals/jlp/andrewsdp96:
-        author:
-        -   first: James
-            last: Andrews
-        -   first: Ver{\'o}nica
-            last: Dahl
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        journal: J. Log. Program.
-        number: '3'
-        pages: 235-283
-        title: 'Characterizing Logic Grammars: A Substructural Logic Approach'
-        type: article
-        volume: '26'
-        year: '1996'
-    dblp:journals/jlp/andrewsdp97:
-        author:
-        -   first: James
-            last: Andrews
-            middle: H.
-        -   first: Ver{\'o}nica
-            last: Dahl
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1016/0743-1066(95)00075-5
-        journal: J. Log. Program.
-        number: '3'
-        pages: 235-283
-        title: 'Characterizing Logic Grammars: A Substructural Logic Approach'
-        type: article
-        volume: '26'
-        year: '1996'
-    dblp:journals/jolli/forbesmpsjw03:
-        author:
-        -   first: Katherine
-            last: Forbes
-        -   first: Eleni
-            last: Miltsakaki
-        -   first: Rashmi
-            last: Prasad
-        -   first: Anoop
-            last: Sarkar
-        -   first: Aravind
-            last: Joshi
-            middle: K.
-        -   first: Bonnie
-            last: Webber
-            middle: L.
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1023/A:1024137719751
-        journal: Journal of Logic, Language and Information
-        number: '3'
-        pages: 261--279
-        title: 'D-LTAG System: Discourse Parsing with a Lexicalized Tree-Adjoining
-            Grammar'
-        type: article
-        volume: '12'
-        year: '2003'
-    dblp:journals/mt/popowichmtt00:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Paul
-            last: McFetridge
-        -   first: Davide
-            last: Turcato
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1023/A:1012244918183
-        journal: Machine Translation
-        number: '4'
-        pages: 311-341
-        title: Machine Translation of Closed Captions
-        type: article
-        volume: '15'
-        year: '2000'
-    dblp:journals/mt/popowichmtt01:
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Paul
-            last: McFetridge
-        -   first: Davide
-            last: Turcato
-        -   first: Janine
-            last: Toole
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1023/A:1012244918183
-        journal: Machine Translation
-        number: '4'
-        pages: 311-341
-        title: Machine Translation of Closed Captions
-        type: article
-        volume: '15'
-        year: '2000'
-    dblp:journals/mt/ueffinghs07:
-        author:
-        -   first: Nicola
-            last: Ueffing
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Anoop
-            last: Sarkar
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1007/s10590-008-9036-3
-        journal: Machine Translation
-        number: '2'
-        pages: 77-94
-        title: Semi-supervised model adaptation for statistical machine translation
-        type: article
-        volume: '21'
-        year: '2007'
-    dblp:journals/ngc/dahlp90:
-        author:
-        -   first: Ver{\'o}nica
-            last: Dahl
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        journal: New Generation Comput.
-        number: '3'
-        pages: 245-
-        title: Parsing and Generation with Static Discontinuity Grammars
-        type: article
-        volume: '8'
-        year: '1990'
-    dblp:journals/ngc/dahlp91:
-        author:
-        -   first: Ver{\'o}nica
-            last: Dahl
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1007/BF03037519
-        journal: New Generation Comput.
-        number: '3'
-        pages: 245-274
-        title: Parsing and Generation with Static Discontinuity Grammars
-        type: article
-        volume: '8'
-        year: '1990'
-    dblp:journals/ngc/vogelp97:
-        author:
-        -   first: Carl
-            last: Vogel
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        journal: New Generation Comput.
-        number: '3'
-        pages: 247-292
-        title: A Parametric Definition for a Family of Inheritance Reasoners
-        type: article
-        volume: '15'
-        year: '1997'
-    dblp:journals/ngc/vogelp98:
-        author:
-        -   first: Carl
-            last: Vogel
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1007/BF03037948
-        journal: New Generation Comput.
-        number: '3'
-        pages: 247-292
-        title: A Parametric Definition for a Family of Inheritance Reasoners
-        type: article
-        volume: '15'
-        year: '1997'
-    dblp:journals/pami/marslandp85:
-        author:
-        -   first: T.
-            last: Marsland
-            middle: Anthony
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1109/TPAMI.1985.4767683
-        journal: IEEE Trans. Pattern Anal. Mach. Intell.
-        number: '4'
-        pages: 442-452
-        title: Parallel Game-Tree Search
-        type: article
-        volume: '7'
-        year: '1985'
-    dblp:journals/pami/marslandp85a:
-        author:
-        -   first: T.
-            last: Marsland
-            middle: Anthony
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://dx.doi.org/10.1109/TPAMI.1985.4767737
-        journal: IEEE Trans. Pattern Anal. Mach. Intell.
-        number: '6'
-        pages: 748-749
-        title: Corrections to "Parallel Game Tree-Search"
-        type: article
-        volume: '7'
-        year: '1985'
-    dblp:journals/sigkdd/popowich05:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://doi.acm.org/10.1145/1089815.1089824
-        journal: SIGKDD Explorations
-        number: '1'
-        pages: 59-66
-        title: Using text mining and natural language processing for health care claims
-            processing
-        type: article
-        volume: '7'
-        year: '2005'
-    dblp:journals/sigkdd/popowich06:
-        author:
-        -   first: Fred
-            last: Popowich
-        bibsource: DBLP, http://dblp.uni-trier.de
-        ee: http://doi.acm.org/10.1145/1089815.1089824
-        journal: SIGKDD Explorations
-        number: '1'
-        pages: 59-66
-        title: Using text mining and natural language processing for health care claims
-            processing
-        type: article
-        volume: '7'
-        year: '2005'
-    dholakia-sarkar:2014:amta2014:
-        address: Vancouver, Canada
-        author:
-        -   first: Rohit
-            last: Dholakia
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 11th Biennial Conference of the Association
-            for Machine Translation in the Americas (AMTA-2014)
-        month: October
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/triangulation-amta2014.pdf
-        title: Pivot-based Triangulation for Low-Resource Languages
-        type: inproceedings
-        year: '2014'
-    haffari-razavi-sarkar:2011:acl-hlt2011:
-        address: Portland, Oregon, USA
-        author:
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Marzieh
-            last: Razavi
-        -   first: Anoop
-            last: Sarkar
-        booktitle: 'Proceedings of the 49th Annual Meeting of the Association for
-            Computational Linguistics: Human Language Technologies'
-        month: jun
-        pages: 710--714
-        publisher: Association for Computational Linguistics
-        title: An Ensemble Model that Combines Syntactic and Semantic Clustering for
-            Discriminative Dependency Parsing
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P11-2125
-        year: '2011'
-    haffari-sarkar:2008:papers:
-        address: Manchester, UK
-        author:
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 22nd International Conference on Computational
-            Linguistics (Coling 2008)
-        month: aug
-        pages: 305--312
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/coling08.pdf
-        publisher: Coling 2008 Organizing Committee
-        title: Homotopy-Based Semi-Supervised Hidden Markov Models for Sequence Labeling
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/C08-1039
-        year: '2008'
-    haffari-whyeteh:2009:naaclhlt09:
-        address: Boulder, Colorado
-        author:
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Yee
-            last: Whye Teh
-        booktitle: 'Proceedings of Human Language Technologies: The 2009 Annual Conference
-            of the North American Chapter of the Association for Computational Linguistics'
-        month: June
-        pages: 173--181
-        publisher: Association for Computational Linguistics
-        title: Hierarchical Dirichlet Trees for Information Retrieval
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/N/N09/N09-1020
-        year: '2009'
-    hagen-popowich:2000:sigdial:
-        address: Hong Kong, China
-        author:
-        -   first: Eli
-            last: Hagen
-        -   first: Fred
-            last: Popowich
-        booktitle: 1st SIGdial Workshop on Discourse and Dialogue
-        doi: 10.3115/1117736.1117751
-        month: oct
-        pages: 131--140
-        publisher: Association for Computational Linguistics
-        title: Flexible Speech Act Based Dialogue Management
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W00-1015
-        year: '2000'
-    kashani-etal:2007:wmt:
-        address: Prague, Czech Republic
-        author:
-        -   first: Mehdi
-            last: Kashani
-            middle: M.
-        -   first: Eric
-            last: Joanis
-        -   first: Roland
-            last: Kuhn
-        -   first: George
-            last: Foster
-        -   first: Fred
-            last: Popowich
-        booktitle: Proceedings of the Second Workshop on Statistical Machine Translation
-        month: jun
-        pages: 17--24
-        publisher: Association for Computational Linguistics
-        title: Integration of an Arabic Transliteration Module into a Statistical
-            Machine Translation System
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W07-0703
-        year: '2007'
-    liu-sarkar:2006:tag:
-        address: Sydney, Australia
-        author:
-        -   first: Yudong
-            last: Liu
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the Eighth International Workshop on Tree Adjoining
-            Grammar and Related Formalisms
-        month: jul
-        pages: 127--132
-        publisher: Association for Computational Linguistics
-        title: Using {LTAG}-Based Features for Semantic Role Labeling
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W/W06/W06-1518
-        year: '2006'
-    liu-sarkar:2007:emnlp-conll2007:
-        address: Prague, Czech Republic
-        author:
-        -   first: Yudong
-            last: Liu
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 2007 Joint Conference on Empirical Methods in
-            Natural Language Processing and Computational Natural Language Learning
-            (EMNLP-CoNLL)
-        month: jun
-        pages: 590--599
-        publisher: Association for Computational Linguistics
-        title: Experimental Evaluation of {LTAG}-Based Features for Semantic Role
-            Labeling
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/D/D07/D07-1062
-        year: '2007'
-    liu-shi-sarkar:2007:shortpapers:
-        address: Rochester, New York
-        author:
-        -   first: Yudong
-            last: Liu
-        -   first: Zhongmin
-            last: Shi
-        -   first: Anoop
-            last: Sarkar
-        booktitle: 'Human Language Technologies 2007: The Conference of the North
-            American Chapter of the Association for Computational Linguistics; Companion
-            Volume, Short Papers'
-        month: apr
-        pages: 97--100
-        publisher: Association for Computational Linguistics
-        title: Exploiting Rich Syntactic Information for Relationship Extraction from
-            Biomedical Articles
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/N/N07/N07-2025
-        year: '2007'
-    majid_etal:2012:wmt:
-        abstract: This paper describes our submissions for the WMT-12 translation
-            task using Kriya - our hierarchical phrase-based system. We submitted
-            systems in French-English and English-Czech language pairs. In addition
-            to the baseline system following the standard MT pipeline, we tried ensemble
-            decoding for French-English. The ensemble decoding method improved the
-            BLEU score by 0.4 points over the baseline in newstest-2011. For English-Czech,
-            we segmented the Czech side of the corpora and trained two different segmented
-            models in addition to our baseline system.
-        address: Montréal, Canada
-        author:
-        -   first: Majid
-            last: Razmara
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Ann
-            last: Clifton
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the Seventh Workshop on Statistical Machine Translation
-            (WMT)
-        month: jun
-        pdf: http://www2.cs.sfu.ca/~bsa33/personal/publications/majid_etal_12b.pdf
-        publisher: Association for Computational Linguistics
-        title: Kriya - The SFU System for Translation Task at WMT-12
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W12-3145
-        year: '2012'
-    maryam:akbc13:
-        address: San Francisco, USA
-        author:
-        -   first: Maryam
-            last: Siahbani
-        -   first: Ravikiran
-            last: Vadlapudi
-        -   first: Max
-            last: Whitney
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 3rd Workshop on Knowledge Extraction
-        month: October
-        publisher: ACM
-        title: Knowledge Base Population and Visualization Using an Ontology based
-            on Semantic Roles
-        type: inproceedings
-        year: '2013'
-    mehdizadehseraj-siahbani-sarkar:2015:emnlp:
-        abstract: '{The multilingual Paraphrase Database (PPDB) is a freely available
-            automatically created resource of paraphrases in multiple languages. In
-            statistical machine translation, paraphrases can be used to provide translation
-            for out-of-vocabulary (OOV) phrases. In this paper, we show that a graph
-            propagation approach that uses PPDB paraphrases can be used to improve
-            overall translation quality. We provide an extensive comparison with previous
-            work and show that our PPDB-based method improves the BLEU score by up
-            to 1.79 percent points. We show that our approach improves on the state
-            of the art in three different settings: when faced with limited amount
-            of parallel training data; a domain shift between training and test data;
-            and handling a morphologically complex source language. Our PPDB-based
-            method outperforms the use of distributional profiles from monolingual
-            source data.}'
-        address: Lisbon, Portugal
-        author:
-        -   first: Ramtin
-            last: Mehdizadeh Seraj
-        -   first: Maryam
-            last: Siahbani
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 2015 Conference on Empirical Methods in Natural
-            Language Processing
-        month: September
-        pages: 1379--1390
-        publisher: Association for Computational Linguistics
-        title: Improving Statistical Machine Translation with a Multilingual Paraphrase
-            Database
-        type: inproceedings
-        url: http://aclweb.org/anthology/D15-1163
-        year: '2015'
-    och-etal:2004:hltnaacl:
-        address: Boston, Massachusetts, USA
-        author:
-        -   first: Franz
-            last: Josef
-            middle: Och
-        -   first: Daniel
-            last: Gildea
-        -   first: Sanjeev
-            last: Khudanpur
-        -   first: Anoop
-            last: Sarkar
-        -   first: Kenji
-            last: Yamada
-        -   first: Alex
-            last: Fraser
-        -   first: Shankar
-            last: Kumar
-        -   first: Libin
-            last: Shen
-        -   first: David
-            last: Smith
-        -   first: Katherine
-            last: Eng
-        -   first: Viren
-            last: Jain
-        -   first: Zhen
-            last: Jin
-        -   first: Dragomir
-            last: Radev
-        booktitle: 'HLT-NAACL 2004: Main Proceedings'
-        editor:
-        -   first: Daniel
-            last: Susan Dumais
-            middle: Marcu
-        -   first: Salim
-            last: Roukos
-        month: may
-        pages: 161--168
-        publisher: Association for Computational Linguistics
-        title: A Smorgasbord of Features for Statistical Machine Translation
-        type: inproceedings
-        year: '2004'
-    oveisi-delgrande-pelletier-popowich:2014:kr2014:
-        address: Vienna, Austria
-        author:
-        -   first: Mehrdad
-            last: Oveisi
-        -   first: James
-            last: Delgrande
-        -   first: Jeff
-            last: Pelletier
-        -   first: Fred
-            last: Popowich
-        booktitle: Proceedings of the Fourteenth International Conference on Principles
-            of Knowledge Representation and Reasoning
-        month: July
-        title: Belief Change and Base Dependence
-        type: inproceedings
-        year: '2014'
-    popowich-mosny-lindberg:2012:inlg2012:
-        abstract: '{Question answering is an age old AI challenge. How we approach
-            this challenge is determined by decisions regarding the linguistic and
-            domain knowledge our system will need, the technical and business acumen
-            of our users, the interface used to input questions, and the form in which
-            we should present answers to a user''s questions. Our approach to question
-            answering involves the interactive construction of natural language queries.
-            We describe and evaluate a question answering system that provides a point-and-click,
-            web-based interface in conjunction with a semantic grammar to support
-            user-controlled natural language question generation. A preliminary evaluation
-            is performed using a selection of 12 questions based on the Adventure
-            Works sample database.}'
-        address: Utica, IL
-        author:
-        -   first: Fred
-            last: Popowich
-        -   first: Milan
-            last: Mosny
-        -   first: David
-            last: Lindberg
-        booktitle: Proceedings of the Seventh International Natural Language Generation
-            Conference
-        month: May
-        pages: 115--119
-        pdf: http://www.aclweb.org/anthology-new/W/W12/W12-1519.pdf
-        publisher: Association for Computational Linguistics
-        title: Interactive Natural Language Query Construction for Report Generation
-        type: inproceedings
-        year: '2012'
-    popowich:1989:acl:
-        address: Vancouver, British Columbia, Canada
-        author:
-        -   first: Fred
-            last: Popowich
-        booktitle: Proceedings of the 27th Annual Meeting of the Association for Computational
-            Linguistics
-        doi: 10.3115/981623.981651
-        month: June
-        pages: 228--236
-        publisher: Association for Computational Linguistics
-        title: Tree Unification Grammar
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P89-1028
-        year: '1989'
-    razavi-msc-thesis:2012:
-        abstract: Syntactic parsing and dependency parsing in particular are a core
-            component of many Natural Language Processing (NLP) tasks and applications.
-            Improvements in dependency parsing can help improve machine translation
-            and information extraction applications among many others. In this thesis,
-            we extend the framework of (Koo, Carreras, and Collins, 2008) for dependency
-            parsing which uses a single clustering method for semi-supervised learning.
-            We make use of multiple diverse clustering methods to build multiple discriminative
-            dependency parsing models in the Maximum Spanning Tree (MST) parsing framework
-            (McDonald, Crammer, and Pereira, 2005). All of these diverse clustering-based
-            parsers are then combined together using a novel ensemble model, which
-            performs exact inference on the shared hypothesis space of all the parser
-            models. We show that diverse clustering-based parser models and the ensemble
-            method together significantly improves unlabeled dependency accuracy from
-            90.82% to 92.46% on Section 23 of the Penn Treebank. We also show significant
-            improvements in domain adaptation to the Switchboard and Brown corpora.
-        author:
-        -   first: Marzieh
-            last: Razavi
-        month: August
-        pdf: https://theses.lib.sfu.ca/sites/all/files/public_copies/etd7405--301146022-thesis.pdf
-        school: School of Computing Science, Faculty of Applied Sciences, Simon Fraser
-            University
-        title: Ensembles of diverse clustering-based discriminative dependency parsers
-        type: mastersthesis
-        url: https://theses.lib.sfu.ca/thesis/etd7405
-        year: '2012'
-    razmara-etal:2013:acl2013:
-        address: Sofia, Bulgaria
-        author:
-        -   first: Majid
-            last: Razmara
-        -   first: Maryam
-            last: Siahbani
-        -   first: Reza
-            last: Haffari
-        -   first: Anoop
-            last: Sarkar
-        booktitle: 'Proceedings of the 51st Annual Meeting of the Association for
-            Computational Linguistics (Volume 1: Long Papers)'
-        month: August
-        pages: 1105--1115
-        publisher: Association for Computational Linguistics
-        title: Graph Propagation for Paraphrasing Out-of-Vocabulary Words in Statistical
-            Machine Translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P13-1109
-        year: '2013'
-    razmara-sarkar:2013:short:
-        address: Sofia, Bulgaria
-        author:
-        -   first: Majid
-            last: Razmara
-        -   first: Anoop
-            last: Sarkar
-        booktitle: 'Proceedings of the 51st Annual Meeting of the Association for
-            Computational Linguistics (Volume 2: Short Papers)'
-        month: August
-        pages: 334--339
-        publisher: Association for Computational Linguistics
-        title: Stacking for Statistical Machine Translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P13-2060
-        year: '2013'
-    razmara:2012:acl:
-        abstract: Statistical machine translation is often faced with the problem
-            of combining training data from many diverse sources into a single translation
-            model which then has to translate sentences in a new domain. We propose
-            a novel approach, ensemble decoding, which combines a number of translation
-            systems dynamically at the decoding step. In this paper, we evaluate performance
-            on a domain adaptation setting where we translate sentences from the medical
-            domain. Our experimental results show that ensemble decoding outperforms
-            various strong baselines including mixture models, the current state-of-the-art
-            for domain adaptation in machine translation.
-        address: Jeju, Republic of Korea
-        author:
-        -   first: Majid
-            last: Razmara
-        -   first: George
-            last: Foster
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 50th Annual Meeting of the Association for Computational
-            Linguistics
-        month: jul
-        publisher: Association for Computational Linguistics
-        title: Mixing Multiple Translation Models in Statistical Machine Translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P12-1099
-        year: '2012'
-    razmara:ijcnlp2013:
-        address: Nagoya, Japan
-        author:
-        -   first: Majid
-            last: Razmara
-        -   first: Maryam
-            last: Siahbani
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 6th International Joint Conference on Natural
-            Language Processing
-        month: October
-        pages: 252--260
-        publisher: Association for Computational Linguistics
-        title: Ensemble Triangulation for Statistical Machine Translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/I/I13/I13-1029.pdf
-        year: '2013'
-    sankaran-sarkar-duh:2013:naacl-hlt:
-        address: Atlanta, Georgia
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Anoop
-            last: Sarkar
-        -   first: Kevin
-            last: Duh
-        booktitle: 'Proceedings of the 2013 Conference of the North American Chapter
-            of the Association for Computational Linguistics: Human Language Technologies'
-        month: June
-        pages: 947--957
-        publisher: Association for Computational Linguistics
-        title: Multi-Metric Optimization Using Ensemble Tuning
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/N13-1115
-        year: '2013'
-    sankaran-sarkar:2014:amta2014:
-        address: Vancouver, Canada
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 11th Biennial Conference of the Association
-            for Machine Translation in the Americas (AMTA-2014)
-        month: October
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/bayesian_cascade.pdf
-        title: Bayesian Iterative-cascade Framework for Hierarchical Phrase-based
-            Translation
-        type: inproceedings
-        year: '2014'
-    sankaran_anoop:2012:naacl:
-        abstract: 'Shallow-n grammars (deGispert 2010) were introduced to reduce over-generation
-            in the Hiero translation model (Chiang 2005) resulting in much faster
-            decoding and restricting reordering to a desired level for specific language
-            pairs. However, Shallow-n grammars require parameters which cannot be
-            directly optimized using minimum error-rate tuning by the decoder. This
-            paper introduces some novel improvements to the translation model for
-            Shallow-n grammars. We introduce two rules: a BITG-style reordering glue
-            rule and a simpler monotonic concatenation rule. We use separate features
-            for the new rules in our log-linear model allowing the decoder to directly
-            optimize the feature weights. We show this formulation of Shallow-n hierarchical
-            phrase-based translation is comparable in translation quality to full
-            Hiero-style decoding (without shallow rules) while at the same time being
-            considerably faster.'
-        address: Montréal, Canada
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the North-American Chapter of Association of Computational
-            Linguistics (NAACL)
-        month: jun
-        pages: 533--537
-        pdf: http://www2.cs.sfu.ca/~bsa33/personal/publications/sankaran_anoop_12b.pdf
-        publisher: Association for Computational Linguistics
-        title: Improved Reordering for Shallow-n Grammar based Hierarchical Phrase-based
-            Translation
-        type: inproceedings
-        url: http://aclweb.org/anthology-new/N/N12/N12-1060.pdf
-        year: '2012'
-    sankaran_etal:2010:wmt:
-        abstract: In this paper we focus on the incremental decoding for a statistical
-            phrase-based machine translation system. In incremental decoding, translations
-            are generated incrementally for every word typed by a user, instead of
-            waiting for the entire sentence as input. We introduce a novel modification
-            to the beam-search decoding algorithm for phrase-based MT to address this
-            issue, aimed at efficient computation of future costs and avoiding search
-            errors. Our objective is to do a faster translation during incremental
-            decoding without significant reduction in the translation quality.
-        address: Stroudsburg, PA, USA
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Ajeet
-            last: Grewal
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the Joint Fifth Workshop on Statistical Machine
-            Translation and Metrics MATR
-        location: Uppsala, Sweden
-        numpages: '8'
-        pages: 216--223
-        publisher: Association for Computational Linguistics
-        title: Incremental decoding for phrase-based statistical machine translation
-        type: inproceedings
-        url: http://aclweb.org/anthology-new/W/W10/W10-1733
-        year: '2010'
-    sankaran_etal:2011:wmt:
-        abstract: We present a novel approach for extracting a minimal synchronous
-            context-free grammar (SCFG) for Hiero-style statistical machine translation
-            using a non-parametric Bayesian framework. Our approach is designed to
-            extract rules that are licensed by the word alignments and heuristically
-            extracted phrase pairs. Our Bayesian model limits the number of SCFG rules
-            extracted, by sampling from the space of all possible hierarchical rules;
-            additionally our informed prior based on the lexical alignment probabilities
-            biases the grammar to extract high quality rules leading to improved generalization
-            and the automatic identification of commonly re-used rules. We show that
-            our Bayesian model is able to extract minimal set of hierarchical phrase
-            rules without impacting the translation quality as measured by the BLEU
-            score.
-        address: Edinburgh, Scotland
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the Sixth Workshop on Statistical Machine Translation
-        month: jul
-        pages: 533--541
-        pdf: http://www2.cs.sfu.ca/~bsa33/personal/publications/sankaran_etal_11.pdf
-        publisher: Association for Computational Linguistics
-        title: Bayesian Extraction of Minimal SCFG Rules for Hierarchical Phrase-based
-            Translation
-        type: inproceedings
-        year: '2011'
-    sankaran_etal:2012:amta:
-        address: San Diego, CA
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Anoop
-            last: Sarkar
-        booktitle: In The 10th biennial conference of the Association for Machine
-            Translation in the Americas (AMTA)
-        month: oct
-        publisher: Association for Computational Linguistics
-        title: Compact Rule Extraction for Hierarchical Phrase-based Translation
-        type: inproceedings
-        year: '2012'
-    sankaran_etal:2012:canai:
-        abstract: Statistical Machine Translation (SMT) is currently used in real-time
-            and commercial settings to quickly produce initial translations for a
-            document which can later be edited by a human. The SMT models specialized
-            for one domain often perform poorly when applied to other domains. The
-            typical assumption that both training and testing data are drawn from
-            the same distribution no longer applies. This paper evaluates domain adaptation
-            techniques for SMT systems in the context of end-user feedback in a real
-            world application. We present our experiments using two adaptive techniques,
-            one relying on log-linear models and the other using mixture models. We
-            describe our experimental results on legal and government data, and present
-            the human evaluation effort for post-editing in addition to traditional
-            automated scoring techniques (BLEU scores). The human effort is based
-            primarily on the amount of time and number of edits required by a professional
-            post-editor to improve the quality of machine-generated translations to
-            meet industry standards. The experimental results in this paper show that
-            the domain adaptation techniques can yield a significant increase in BLEU
-            score (up to four points) and a significant reduction in post-editing
-            time of about one second per word.
-        address: Toronto, Canada
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Majid
-            last: Razmara
-        -   first: Atefeh
-            last: Farzindar
-        -   first: Wael
-            last: Khreich
-        -   first: Fred
-            last: Popowich
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of 25th Canadian Conference on Artificial Intelligence
-        month: may
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/ai2012.pdf
-        title: Domain Adaptation Techniques for Machine Translation and their Evaluation
-            in a Real-World Setting
-        type: inproceedings
-        year: '2012'
-    sankaran_etal:2012:pbml:
-        abstract: 'This paper describes Kriya --- a new statistical machine translation
-            (SMT) system that uses hierarchical phrases, which were first introduced
-            in the Hiero machine translation system (Chiang 2007). Kriya supports
-            both a grammar extraction module for synchronous context-free grammars
-            (SCFGs) and a CKY-based decoder. There are several re-implementations
-            of Hiero in the machine translation community, but Kriya offers the following
-            novel contributions: (a) Grammar extraction in Kriya supports extraction
-            of the full set of Hiero-style SCFG rules but also supports the extraction
-            of several types of compact rule sets which leads to faster decoding for
-            different language pairs without compromising the BLEU scores. Kriya currently
-            supports extraction of compact SCFGs such as grammars with one non-terminal
-            and grammar pruning based on certain rule patterns, and (b) The Kriya
-            decoder offers some unique improvements in the implementation of cube
-            pruning, such as increasing diversity in the target language n-best output
-            and novel methods for language model (LM) integration. The Kriya decoder
-            can take advantage of parallelization using a networked cluster. Kriya
-            supports KENLM and SRILM for language model queries and exploits n-gram
-            history states in KENLM. This paper also provides several experimental
-            results which demonstrate that the translation quality of Kriya compares
-            favourably to the Moses (Koehn 2007) phrase-based system in several language
-            pairs while showing a substantial improvement for Chinese-English similar
-            to (Chiang 2007). We also quantify the model sizes for phrase-based and
-            Hiero-style systems apart from presenting experiments comparing variants
-            of Hiero models.'
-        address: Prague, Czech Republic
-        author:
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Majid
-            last: Razmara
-        -   first: Anoop
-            last: Sarkar
-        booktitle: The Prague Bulletin of Mathematical Linguistics (PBML)
-        month: apr
-        number: '97'
-        pages: 83--98
-        pdf: http://www.cs.sfu.ca/~bsa33/personal/publications/sankaran_pbml12.pdf
-        publisher: Charles University
-        title: Kriya -- An end-to-end Hierarchical Phrase-based MT System
-        type: article
-        url: http://ufal.mff.cuni.cz/pbml/97/art-sankaran-razmara-sarkar.pdf
-        year: '2012'
-    sarkar-haffari:2006:hlt-naacl06-tutorials:
-        address: New York City, USA
-        author:
-        -   first: Anoop
-            last: Sarkar
-        -   first: Gholamreza
-            last: Haffari
-        booktitle: 'Proceedings of the Human Language Technology Conference of the
-            NAACL, Companion Volume: Tutorial Abstracts'
-        month: jun
-        pages: 307--308
-        publisher: Association for Computational Linguistics
-        title: 'Tutorial on Inductive Semi-supervised Learning Methods: with Applicability
-            to Natural Language Processing'
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/N/N06/N06-5005
-        year: '2006'
-    sarkar:1993:acl:
-        address: Columbus, Ohio, USA
-        author:
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 31st Annual Meeting of the Association for Computational
-            Linguistics, Student Session
-        doi: 10.3115/981574.981622
-        month: jun
-        pages: 304--306
-        publisher: Association for Computational Linguistics
-        title: Extending Kimmo's Two-Level Model of Morphology
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P93-1047
-        year: '1993'
-    sarkar:1996:acl:
-        address: Santa Cruz, California, USA
-        author:
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 34th Annual Meeting of the Association for Computational
-            Linguistics, Student Session
-        doi: 10.3115/981863.981920
-        month: jun
-        pages: 375--377
-        publisher: Association for Computational Linguistics
-        title: Incremental Parser Generation for Tree Adjoining Grammars
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P96-1056
-        year: '1996'
-    sarkar:mol:1997:
-        address: Saarbruecken, Germany
-        author:
-        -   first: Anoop
-            last: Sarkar
-        booktitle: '{Proceedings of the Fifth Meeting on Mathematics of Language}'
-        month: August
-        pages: 153--160
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/mol5final.pdf
-        title: '{Seperating Dependency from Constituency in a Tree Rewriting System}'
-        type: inproceedings
-        year: '1997'
-    schmidt:2015:jmlr2015:
-        address: San Diego, CA, USA
-        author:
-        -   first: Mark
-            last: Schmidt
-        -   first: Reza
-            last: Babanezhad
-        -   first: Mohamed
-            last: Ahmed
-            middle: Osama
-        -   first: Aaron
-            last: Defazio
-        -   first: Ann
-            last: Clifton
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 18th International Conference on Artificial
-            Intelligence and Statistics (AISTATS)
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/sag4crf-aistats2015.pdf
-        publisher: JMLR W & CP
-        title: Non-Uniform Stochastic Average Gradient Method for Training Conditional
-            Random Fields
-        type: inproceedings
-        volume: '38'
-        year: '2015'
-    shen-sarkar-joshi:2003:emnlp-2003:
-        address: Sapporo, Japan
-        author:
-        -   first: Yudong
-            last: Liu
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 2003 Conference on Empirical Methods in Natural
-            Language Processing (EMNLP)
-        month: jul
-        pages: xx--xx
-        publisher: Association for Computational Linguistics
-        title: Using {LTAG} Based Features in Parse Reranking
-        type: inproceedings
-        url: http://aclweb.org/anthology-new/W/W03/W03-1012.pdf
-        year: '2003'
-    shen-sarkar-och:2004:hltnaacl:
-        address: Boston, Massachusetts, USA
-        author:
-        -   first: Libin
-            last: Shen
-        -   first: Anoop
-            last: Sarkar
-        -   first: Franz
-            last: Josef
-            middle: Och
-        booktitle: 'HLT-NAACL 2004: Main Proceedings'
-        editor:
-        -   first: Daniel
-            last: Susan Dumais
-            middle: Marcu
-        -   first: Salim
-            last: Roukos
-        month: may
-        pages: 177--184
-        publisher: Association for Computational Linguistics
-        title: Discriminative Reranking for Machine Translation
-        type: inproceedings
-        year: '2004'
-    shi-sarkar-popowich:2007:shortpapers:
-        address: Rochester, New York
-        author:
-        -   first: Zhongmin
-            last: Shi
-        -   first: Anoop
-            last: Sarkar
-        -   first: Fred
-            last: Popowich
-        booktitle: 'Human Language Technologies 2007: The Conference of the North
-            American Chapter of the Association for Computational Linguistics; Companion
-            Volume, Short Papers'
-        month: apr
-        pages: 161--164
-        publisher: Association for Computational Linguistics
-        title: Simultaneous Identification of Biomedical Named-Entity and Functional
-            Relation Using Statistical Parsing Techniques
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/N/N07/N07-2041
-        year: '2007'
-    siahbani-sankaran-sarkar:2013:emnlp:
-        address: Seattle, Washington, USA
-        author:
-        -   first: Maryam
-            last: Siahbani
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 2013 Conference on Empirical Methods in Natural
-            Language Processing
-        month: October
-        pages: 1089--1099
-        publisher: Association for Computational Linguistics
-        title: Efficient Left-to-Right Hierarchical Phrase-Based Translation with
-            Improved Reordering
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/D13-1110
-        year: '2013'
-    siahbani-sarkar:2014:amta2014:
-        address: Vancouver, Canada
-        author:
-        -   first: Maryam
-            last: Siahbani
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 11th Biennial Conference of the Association
-            for Machine Translation in the Americas (AMTA-2014)
-        month: October
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/LRHieroXtraction.pdf
-        title: Expressive Hierarchical Rule Extraction for Left-to-Right Translation
-        type: inproceedings
-        year: '2014'
-    siahbani-sarkar:2014:emnlp2014:
-        address: Doha, Qatar
-        author:
-        -   first: Maryam
-            last: Siahbani
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 2014 Conference on Empirical Methods in Natural
-            Language Processing
-        month: October
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/lrhiero-newglue-short.pdf
-        publisher: Association for Computational Linguistics
-        title: Two Improvements to Left-to-Right Decoding for Hierarchical Phrase-based
-            Machine Translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/D13-1110
-        year: '2014'
-    siahbani-seraj-sankaran-sarkar:2014:slt2014:
-        address: Nevada, USA
-        author:
-        -   first: Maryam
-            last: Siahbani
-        -   first: Ramtin
-            last: Mehdizadeh Seraj
-        -   first: Baskaran
-            last: Sankaran
-        -   first: Anoop
-            last: Sarkar
-        booktitle: In Proceedings of the 2014 IEEE Spoken Language Technology Workshop
-            (SLT 2014)
-        month: December
-        pdf: http://www.cs.sfu.ca/~anoop/papers/pdf/lr-speech-slt2014.pdf
-        title: Incremental Translation using a Hierarchical Phrase-based Translation
-            System
-        type: inproceedings
-        year: '2014'
-    song-sarkar:2006:sighan:
-        address: Sydney, Australia
-        author:
-        -   first: Dong
-            last: Song
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the Fifth SIGHAN Workshop on Chinese Language Processing
-        month: jul
-        pages: 126--129
-        publisher: Association for Computational Linguistics
-        title: Voting between Dictionary-Based and Subword Tagging Models for Chinese
-            Word Segmentation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W/W06/W06-0118
-        year: '2006'
-    tofiloski-zhang-popowich:2014:sigsem2014:
-        author:
-        -   first: Milan
-            last: Tofiloski
-        -   first: Evan
-            last: Zhang
-        -   first: Fred
-            last: Popowich
-        booktitle: Proceedings 10th Joint ISO-ACL SIGSEM Workshop on Interoperable
-            Semantic Annotation
-        pages: '79'
-        title: Annotating Discourse Zones in Medical Interviews
-        type: inproceedings
-        year: '2014'
-    tofiloski:2015:iui2015:
-        address: New York, USA
-        author:
-        -   first: Milan
-            last: Tofiloski
-        -   first: Lydia
-            last: Odilinye
-        -   first: Jasneet
-            last: Sabharwal
-        -   first: Fred
-            last: Popowich
-        booktitle: Proceedings of the 20th International Conference on Intelligent
-            User Interfaces (IUI '15)
-        pdf: http://vialab.science.uoit.ca/textvis2015/papers/Tofiloski-textvis2015.pdf
-        publisher: ACM
-        title: A Taxonomy Of The Target-Problem Space For Visual Text Analytics
-        type: inproceedings
-        year: '2015'
-    turcato03whatis:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Fred
-            last: Popowich
-        booktitle: Recent Advances in Example-Based Machine Translation
-        editor:
-        -   first: M.
-            last: Carl
-        -   first: A.
-            last: Way
-        pages: 59--81
-        publisher: Kluwer
-        title: What is example based machine translation
-        type: inbook
-        year: '2003'
-    ueffing-haffari-sarkar:2007:aclmain:
-        address: Prague, Czech Republic
-        author:
-        -   first: Nicola
-            last: Ueffing
-        -   first: Gholamreza
-            last: Haffari
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 45th Annual Meeting of the Association of Computational
-            Linguistics
-        month: jun
-        pages: 25--32
-        publisher: Association for Computational Linguistics
-        title: Transductive learning for statistical machine translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/P/P07/P07-1004
-        year: '2007'
-    w00-0506:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Fred
-            last: Popowich
-        -   first: Paul
-            last: McFetridge
-        -   first: Devlan
-            last: Nicholson
-        -   first: Janine
-            last: Toole
-        booktitle: 'ANLP-NAACL 2000 Workshop: Embedded Machine Translation Systems'
-        pages: 38--45
-        title: Pre-processing Closed Captions for Machine Translation
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W00-0506
-        year: '2000'
-    w00-1101:
-        author:
-        -   first: Davide
-            last: Turcato
-        -   first: Fred
-            last: Popowich
-        -   first: Janine
-            last: Toole
-        -   first: Dan
-            last: Fass
-        -   first: Devlan
-            last: Nicholson
-        -   first: Gordon
-            last: Tisher
-        booktitle: ACL-2000 Workshop on Recent Advances in Natural Language Processing
-            and Information Retrieval
-        pages: 1--11
-        title: Adapting a synonym database to specific domains
-        type: inproceedings
-        url: http://www.aclweb.org/anthology/W00-1101
-        year: '2000'
-    wang:2015:pbml:
-        author:
-        -   first: Ziqi
-            last: Wang
-        -   first: Haotian
-            last: Zhang
-        -   first: Anoop
-            last: Sarkar
-        journal: The Prague Bulletin of Mathematical Linguistics
-        number: '1'
-        pages: 139--159
-        pdf: https://ufal.mff.cuni.cz/pbml/103/pbml103.pdf#page=139
-        title: A Python-based Interface for Wide Coverage Lexicalized Tree-adjoining
-            Grammars
-        type: article
-        volume: '103'
-        year: '2015'
-    whitney-clifton-sarkar-fedorova:2012:nw-nlp:
-        abstract: Perceptron training is commonly used for various natural language
-            processing tasks, making it desirable to apply on very large datasets.
-            We implemented a distributed perceptron training algorithm in a MapReduce
-            framework for a structured output chunking task and evaluated it on a
-            cluster and on multi-core systems. Our work extends (McDonald et al. 2002)
-            into two areas of analysis. We compare two methods for implementing the
-            algorithm and find that the choice of topology in the MapReduce operations
-            significantly affects runtime, with the unexpected result that duplicating
-            computation increases overall performance. We also examine the behaviour
-            with different numbers of data shards and find a tradeoff between runtime
-            and accuracy.
-        address: Redmond, Washington, USA
-        author:
-        -   first: Max
-            last: Whitney
-        -   first: Ann
-            last: Clifton
-        -   first: Anoop
-            last: Sarkar
-        -   first: Alexandra
-            last: Fedorova
-        month: May
-        pdf: http://dada.cs.washington.edu/nw-nlp-2012/papers/perceptron-nwnlp.pdf
-        publisher: Pacific Northwest Regional NLP Workshop
-        title: Making the most of a distributed perceptron for NLP
-        type: inproceedings
-        year: '2012'
-    whitney-msc-thesis:2012:
-        abstract: The Yarowsky algorithm is a simple self-training algorithm for bootstrapping
-            learning from a small number of initial seed rules which has proven very
-            effective in several natural language processing tasks. Bootstrapping
-            a classifier from a small set of seed rules can be viewed as the propagation
-            of labels between examples via features shared between them. This thesis
-            introduces a novel variant of the Yarowsky algorithm based on this view.
-            It is a bootstrapping learning method which uses a graph propagation algorithm
-            with a well-defined objective function. The experimental results show
-            that our proposed bootstrapping algorithm achieves state of the art performance
-            or better on several different natural language data sets.
-        author:
-        -   first: Max
-            last: Whitney
-        month: August
-        pdf: https://theses.lib.sfu.ca/sites/all/files/public_copies/etd7421--thesis.pdf
-        school: School of Computing Science, Faculty of Applied Sciences, Simon Fraser
-            University
-        title: Bootstrapping via Graph Propagation
-        type: mastersthesis
-        url: https://theses.lib.sfu.ca/thesis/etd7421
-        year: '2012'
-    whitney-sarkar:2012:
-        abstract: '{Bootstrapping a classifier from a small set of seed rules can
-            be viewed as the propagation of labels between examples via features shared
-            between them. This paper introduces a novel variant of the Yarowsky algorithm
-            based on this view. It is a bootstrapping learning method which uses a
-            graph propagation algorithm with a well defined objective function. The
-            experimental results show that our proposed bootstrapping algorithm achieves
-            state of the art performance or better on several different natural language
-            data sets.}'
-        address: Jeju Island, R. of Korea
-        author:
-        -   first: Max
-            last: Whitney
-        -   first: Anoop
-            last: Sarkar
-        booktitle: Proceedings of the 50th Annual Meeting of the Association for Computational
-            Linguistics (ACL-2012)
-        month: jul
-        pdf: http://www2.cs.sfu.ca/~mwhitney/personal/yarowsky-propagation.pdf
-        publisher: Association for Computational Linguistics
-        title: Bootstrapping via Graph Propagation
-        type: inproceedings
-        url: http://natlang.cs.sfu.ca/software/yarowsky.html
-        year: '2012'
+---
+- :bibtex_key: mehdizadehseraj-siahbani-sarkar:2015:EMNLP
+  :bibtex_type: :inproceedings
+  :author: "{Mehdizadeh Seraj, Ramtin and Siahbani, Maryam and Sarkar, Anoop}"
+  :title: "{Improving Statistical Machine Translation with a Multilingual Paraphrase
+    Database}"
+  :booktitle: "{Proceedings of the 2015 Conference on Empirical Methods in Natural
+    Language Processing}"
+  :address: "{Lisbon, Portugal}"
+  :month: sep
+  :year: "{2015}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{1379--1390}"
+  :url: "{http://aclweb.org/anthology/D15-1163}"
+  :abstract: "{{The multilingual Paraphrase Database (PPDB) is a freely available
+    automatically created resource of paraphrases in multiple languages. In statistical
+    machine translation, paraphrases can be used to provide translation for out-of-vocabulary
+    (OOV) phrases. In this paper, we show that a graph propagation approach that uses
+    PPDB paraphrases can be used to improve overall translation quality. We provide
+    an extensive comparison with previous work and show that our PPDB-based method
+    improves the BLEU score by up to 1.79 percent points. We show that our approach
+    improves on the state of the art in three different settings: when faced with
+    limited amount of parallel training data; a domain shift between training and
+    test data; and handling a morphologically complex source language. Our PPDB-based
+    method outperforms the use of distributional profiles from monolingual source
+    data.}}"
+  :month_numeric: "{9}"
+- :bibtex_key: wang:2015:PBML
+  :bibtex_type: :article
+  :title: "{A Python-based Interface for Wide Coverage Lexicalized Tree-adjoining
+    Grammars}"
+  :author: "{Wang, Ziqi and Zhang, Haotian and Sarkar, Anoop}"
+  :journal: "{The Prague Bulletin of Mathematical Linguistics}"
+  :volume: "{103}"
+  :number: "{1}"
+  :pages: "{139--159}"
+  :year: "{2015}"
+  :pdf: "{https://ufal.mff.cuni.cz/pbml/103/pbml103.pdf#page=139}"
+- :bibtex_key: schmidt:2015:JMLR2015
+  :bibtex_type: :inproceedings
+  :title: "{Non-Uniform Stochastic Average Gradient Method for Training Conditional
+    Random Fields}"
+  :author: "{Schmidt, Mark and Babanezhad, Reza and Ahmed, Mohamed Osama and Defazio,
+    Aaron and Clifton, Ann and Sarkar, Anoop}"
+  :booktitle: "{Proceedings of the 18th International Conference on Artificial Intelligence
+    and Statistics (AISTATS)}"
+  :address: "{San Diego, CA, USA}"
+  :publisher: "{JMLR}"
+  :year: "{2015}"
+  :volume: "{38}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/sag4crf-aistats2015.pdf}"
+- :bibtex_key: siahbani-sarkar:2014:EMNLP2014
+  :bibtex_type: :inproceedings
+  :title: "{Two Improvements to Left-to-Right Decoding for Hierarchical Phrase-based
+    Machine Translation}"
+  :author: "{Siahbani, Maryam and Sarkar, Anoop}"
+  :booktitle: "{Proceedings of the 2014 Conference on Empirical Methods in Natural
+    Language Processing}"
+  :address: "{Doha, Qatar}"
+  :publisher: "{Association for Computational Linguistics}"
+  :month: oct
+  :year: "{2014}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/lrhiero-newglue-short.pdf}"
+  :url: "{http://www.aclweb.org/anthology/D13-1110}"
+  :month_numeric: "{10}"
+- :bibtex_key: siahbani-sarkar:2014:AMTA2014
+  :bibtex_type: :inproceedings
+  :title: "{Expressive Hierarchical Rule Extraction for Left-to-Right Translation}"
+  :author: "{Siahbani, Maryam and Sarkar, Anoop}"
+  :booktitle: "{Proceedings of the 11th Biennial Conference of the Association for
+    Machine Translation in the Americas (AMTA-2014)}"
+  :address: "{Vancouver, Canada}"
+  :month: oct
+  :year: "{2014}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/LRHieroXtraction.pdf}"
+  :month_numeric: "{10}"
+- :bibtex_key: sankaran-sarkar:2014:AMTA2014
+  :bibtex_type: :inproceedings
+  :title: "{Bayesian Iterative-cascade Framework for Hierarchical Phrase-based Translation}"
+  :author: "{Sankaran, Baskaran and Sarkar, Anoop}"
+  :booktitle: "{Proceedings of the 11th Biennial Conference of the Association for
+    Machine Translation in the Americas (AMTA-2014)}"
+  :address: "{Vancouver, Canada}"
+  :month: oct
+  :year: "{2014}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/bayesian_cascade.pdf}"
+  :month_numeric: "{10}"
+- :bibtex_key: dholakia-sarkar:2014:AMTA2014
+  :bibtex_type: :inproceedings
+  :title: "{Pivot-based Triangulation for Low-Resource Languages}"
+  :author: "{Dholakia, Rohit and Sarkar, Anoop}"
+  :booktitle: "{Proceedings of the 11th Biennial Conference of the Association for
+    Machine Translation in the Americas (AMTA-2014)}"
+  :address: "{Vancouver, Canada}"
+  :month: oct
+  :year: "{2014}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/triangulation-amta2014.pdf}"
+  :month_numeric: "{10}"
+- :bibtex_key: siahbani-seraj-sankaran-sarkar:2014:SLT2014
+  :bibtex_type: :inproceedings
+  :title: "{Incremental Translation using a Hierarchical Phrase-based Translation
+    System}"
+  :author: "{Siahbani, Maryam and Mehdizadeh Seraj, Ramtin and Sankaran, Baskaran
+    and Sarkar, Anoop}"
+  :booktitle: "{In Proceedings of the 2014 IEEE Spoken Language Technology Workshop
+    (SLT 2014)}"
+  :address: "{Nevada, USA}"
+  :month: dec
+  :year: "{2014}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/lr-speech-slt2014.pdf}"
+  :month_numeric: "{12}"
+- :bibtex_key: sankaran-sarkar-duh:2013:NAACL-HLT
+  :bibtex_type: :inproceedings
+  :author: "{Sankaran, Baskaran and Sarkar, Anoop and Duh, Kevin}"
+  :title: "{Multi-Metric Optimization Using Ensemble Tuning}"
+  :booktitle: "{Proceedings of the 2013 Conference of the North American Chapter of
+    the Association for Computational Linguistics: Human Language Technologies}"
+  :month: jun
+  :year: "{2013}"
+  :address: "{Atlanta, Georgia}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{947--957}"
+  :url: "{http://www.aclweb.org/anthology/N13-1115}"
+  :month_numeric: "{6}"
+- :bibtex_key: razmara-sarkar:2013:Short
+  :bibtex_type: :inproceedings
+  :author: "{Razmara, Majid and Sarkar, Anoop}"
+  :title: "{Stacking for Statistical Machine Translation}"
+  :booktitle: "{Proceedings of the 51st Annual Meeting of the Association for Computational
+    Linguistics (Volume 2: Short Papers)}"
+  :month: aug
+  :year: "{2013}"
+  :address: "{Sofia, Bulgaria}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{334--339}"
+  :url: "{http://www.aclweb.org/anthology/P13-2060}"
+  :month_numeric: "{8}"
+- :bibtex_key: razmara-EtAl:2013:ACL2013
+  :bibtex_type: :inproceedings
+  :author: "{Razmara, Majid and Siahbani, Maryam and Haffari, Reza and Sarkar, Anoop}"
+  :title: "{Graph Propagation for Paraphrasing Out-of-Vocabulary Words in Statistical
+    Machine Translation}"
+  :booktitle: "{Proceedings of the 51st Annual Meeting of the Association for Computational
+    Linguistics (Volume 1: Long Papers)}"
+  :month: aug
+  :year: "{2013}"
+  :address: "{Sofia, Bulgaria}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{1105--1115}"
+  :url: "{http://www.aclweb.org/anthology/P13-1109}"
+  :month_numeric: "{8}"
+- :bibtex_key: razmara:ijcnlp2013
+  :bibtex_type: :inproceedings
+  :author: "{Razmara, Majid and Siahbani, Maryam and Sarkar, Anoop}"
+  :title: "{Ensemble Triangulation for Statistical Machine Translation}"
+  :booktitle: "{Proceedings of the 6th International Joint Conference on Natural Language
+    Processing}"
+  :month: oct
+  :year: "{2013}"
+  :address: "{Nagoya, Japan}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{252--260}"
+  :url: "{http://www.aclweb.org/anthology/I/I13/I13-1029.pdf}"
+  :month_numeric: "{10}"
+- :bibtex_key: ann:ijcnlp2013
+  :bibtex_type: :inproceedings
+  :author: "{Clifton, Ann and Whitney, Max and Sarkar, Anoop}"
+  :title: "{An Online Algorithm for Learning over Constrained Latent Representations
+    using Multiple Views}"
+  :booktitle: "{Proceedings of the 6th International Joint Conference on Natural Language
+    Processing}"
+  :month: oct
+  :year: "{2013}"
+  :address: "{Nagoya, Japan}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{252--260}"
+  :month_numeric: "{10}"
+- :bibtex_key: maryam:akbc13
+  :bibtex_type: :inproceedings
+  :author: "{Siahbani, Maryam and Vadlapudi, Ravikiran and Whitney, Max and Sarkar,
+    Anoop}"
+  :title: "{Knowledge Base Population and Visualization Using an Ontology based on
+    Semantic Roles}"
+  :booktitle: "{Proceedings of the 3rd Workshop on Knowledge Extraction}"
+  :month: oct
+  :year: "{2013}"
+  :address: "{San Francisco, USA}"
+  :publisher: "{ACM}"
+  :month_numeric: "{10}"
+- :bibtex_key: siahbani-sankaran-sarkar:2013:EMNLP
+  :bibtex_type: :inproceedings
+  :author: "{Siahbani, Maryam and Sankaran, Baskaran and Sarkar, Anoop}"
+  :title: "{Efficient Left-to-Right Hierarchical Phrase-Based Translation with Improved
+    Reordering}"
+  :booktitle: "{Proceedings of the 2013 Conference on Empirical Methods in Natural
+    Language Processing}"
+  :month: oct
+  :year: "{2013}"
+  :address: "{Seattle, Washington, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{1089--1099}"
+  :url: "{http://www.aclweb.org/anthology/D13-1110}"
+  :month_numeric: "{10}"
+- :bibtex_key: sankaran_etal:2012:AMTA
+  :bibtex_type: :inproceedings
+  :author: "{Sankaran, Baskaran and Haffari, Gholamreza and Sarkar, Anoop}"
+  :title: "{Compact Rule Extraction for Hierarchical Phrase-based Translation}"
+  :booktitle: "{In The 10th biennial conference of the Association for Machine Translation
+    in the Americas (AMTA)}"
+  :month: oct
+  :year: "{2012}"
+  :address: "{San Diego, CA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :month_numeric: "{10}"
+- :bibtex_key: Razmara:2012:ACL
+  :bibtex_type: :inproceedings
+  :author: "{Razmara, Majid and Foster, George and Sankaran, Baskaran and Sarkar,
+    Anoop}"
+  :title: "{Mixing Multiple Translation Models in Statistical Machine Translation}"
+  :booktitle: "{Proceedings of the 50th Annual Meeting of the Association for Computational
+    Linguistics}"
+  :month: jul
+  :year: "{2012}"
+  :address: "{Jeju, Republic of Korea}"
+  :publisher: "{Association for Computational Linguistics}"
+  :url: "{http://www.aclweb.org/anthology/P12-1099}"
+  :abstract: "{Statistical machine translation is often faced with the problem of
+    combining training data from many diverse sources into a single translation model
+    which then has to translate sentences in a new domain. We propose a novel approach,
+    ensemble decoding, which combines a number of translation systems dynamically
+    at the decoding step. In this paper, we evaluate performance on a domain adaptation
+    setting where we translate sentences from the medical domain. Our experimental
+    results show that ensemble decoding outperforms various strong baselines including
+    mixture models, the current state-of-the-art for domain adaptation in machine
+    translation.}"
+  :month_numeric: "{7}"
+- :bibtex_key: whitney-sarkar:2012
+  :bibtex_type: :inproceedings
+  :author: "{Whitney, Max and Sarkar, Anoop}"
+  :title: "{Bootstrapping via Graph Propagation}"
+  :booktitle: "{Proceedings of the 50th Annual Meeting of the Association for Computational
+    Linguistics (ACL-2012)}"
+  :year: "{2012}"
+  :month: jul
+  :address: "{Jeju Island, R. of Korea}"
+  :publisher: "{Association for Computational Linguistics}"
+  :url: "{http://natlang.cs.sfu.ca/software/yarowsky.html}"
+  :pdf: "{http://www2.cs.sfu.ca/~mwhitney/personal/yarowsky-propagation.pdf}"
+  :abstract: "{{Bootstrapping a classifier from a small set of seed rules can be viewed
+    as the propagation of labels between examples via features shared between them.
+    This paper introduces a novel variant of the Yarowsky algorithm based on this
+    view. It is a bootstrapping learning method which uses a graph propagation algorithm
+    with a well defined objective function. The experimental results show that our
+    proposed bootstrapping algorithm achieves state of the art performance or better
+    on several different natural language data sets.}}"
+  :month_numeric: "{7}"
+- :bibtex_key: majid_etal:2012:WMT
+  :bibtex_type: :inproceedings
+  :author: "{Razmara, Majid and Sankaran, Baskaran and Clifton, Ann and Sarkar, Anoop}"
+  :title: "{Kriya - The SFU System for Translation Task at WMT-12}"
+  :booktitle: "{Proceedings of the Seventh Workshop on Statistical Machine Translation
+    (WMT)}"
+  :month: jun
+  :year: "{2012}"
+  :address: "{Montréal, Canada}"
+  :publisher: "{Association for Computational Linguistics}"
+  :url: "{http://www.aclweb.org/anthology/W12-3145}"
+  :pdf: "{http://www2.cs.sfu.ca/~bsa33/personal/publications/majid_etal_12b.pdf}"
+  :abstract: "{This paper describes our submissions for the WMT-12 translation task
+    using Kriya - our hierarchical phrase-based system. We submitted systems in French-English
+    and English-Czech language pairs. In addition to the baseline system following
+    the standard MT pipeline, we tried ensemble decoding for French-English. The ensemble
+    decoding method improved the BLEU score by 0.4 points over the baseline in newstest-2011.
+    For English-Czech, we segmented the Czech side of the corpora and trained two
+    different segmented models in addition to our baseline system.}"
+  :month_numeric: "{6}"
+- :bibtex_key: sankaran_etal:2012:PBML
+  :bibtex_type: :article
+  :author: "{Sankaran, Baskaran and Razmara, Majid and Sarkar, Anoop}"
+  :title: "{Kriya -- An end-to-end Hierarchical Phrase-based MT System}"
+  :booktitle: "{The Prague Bulletin of Mathematical Linguistics (PBML)}"
+  :number: "{97}"
+  :month: apr
+  :year: "{2012}"
+  :address: "{Prague, Czech Republic}"
+  :publisher: "{Charles University}"
+  :pages: "{83--98}"
+  :url: "{http://ufal.mff.cuni.cz/pbml/97/art-sankaran-razmara-sarkar.pdf}"
+  :pdf: "{http://www.cs.sfu.ca/~bsa33/personal/publications/sankaran_pbml12.pdf}"
+  :abstract: "{This paper describes Kriya --- a new statistical machine translation
+    (SMT) system that uses hierarchical phrases, which were first introduced in the
+    Hiero machine translation system (Chiang 2007). Kriya supports both a grammar
+    extraction module for synchronous context-free grammars (SCFGs) and a CKY-based
+    decoder. There are several re-implementations of Hiero in the machine translation
+    community, but Kriya offers the following novel contributions: (a) Grammar extraction
+    in Kriya supports extraction of the full set of Hiero-style SCFG rules but also
+    supports the extraction of several types of compact rule sets which leads to faster
+    decoding for different language pairs without compromising the BLEU scores. Kriya
+    currently supports extraction of compact SCFGs such as grammars with one non-terminal
+    and grammar pruning based on certain rule patterns, and (b) The Kriya decoder
+    offers some unique improvements in the implementation of cube pruning, such as
+    increasing diversity in the target language n-best output and novel methods for
+    language model (LM) integration. The Kriya decoder can take advantage of parallelization
+    using a networked cluster.  Kriya supports KENLM and SRILM for language model
+    queries and exploits n-gram history states in KENLM. This paper also provides
+    several experimental results which demonstrate that the translation quality of
+    Kriya compares favourably to the Moses (Koehn 2007) phrase-based system in several
+    language pairs while showing a substantial improvement for Chinese-English similar
+    to (Chiang 2007). We also quantify the model sizes for phrase-based and Hiero-style
+    systems apart from presenting experiments comparing variants of Hiero models.}"
+  :month_numeric: "{4}"
+- :bibtex_key: sankaran_anoop:2012:NAACL
+  :bibtex_type: :inproceedings
+  :author: "{Sankaran, Baskaran and Sarkar, Anoop}"
+  :title: "{Improved Reordering for Shallow-n Grammar based Hierarchical Phrase-based
+    Translation}"
+  :booktitle: "{Proceedings of the North-American Chapter of Association of Computational
+    Linguistics (NAACL)}"
+  :month: jun
+  :year: "{2012}"
+  :address: "{Montréal, Canada}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{533--537}"
+  :pdf: "{http://www2.cs.sfu.ca/~bsa33/personal/publications/sankaran_anoop_12b.pdf}"
+  :url: "{http://aclweb.org/anthology-new/N/N12/N12-1060.pdf}"
+  :abstract: "{Shallow-n grammars (deGispert 2010) were introduced to reduce over-generation
+    in the Hiero translation model (Chiang 2005) resulting in much faster decoding
+    and restricting reordering to a desired level for specific language pairs. However,
+    Shallow-n grammars require parameters which cannot be directly optimized using
+    minimum error-rate tuning by the decoder. This paper introduces some novel improvements
+    to the translation model for Shallow-n grammars. We introduce two rules: a BITG-style
+    reordering glue rule and a simpler monotonic concatenation rule. We use separate
+    features for the new rules in our log-linear model allowing the decoder to directly
+    optimize the feature weights. We show this formulation of Shallow-n hierarchical
+    phrase-based translation is comparable in translation quality to full Hiero-style
+    decoding (without shallow rules) while at the same time being considerably faster.}"
+  :month_numeric: "{6}"
+- :bibtex_key: sankaran_etal:2012:CanAI
+  :bibtex_type: :inproceedings
+  :author: "{Sankaran, Baskaran and Razmara, Majid and Farzindar, Atefeh and Khreich,
+    Wael and Popowich, Fred and Sarkar, Anoop}"
+  :title: "{Domain Adaptation Techniques for Machine Translation and their Evaluation
+    in a Real-World Setting}"
+  :booktitle: "{Proceedings of 25th Canadian Conference on Artificial Intelligence}"
+  :month: may
+  :year: "{2012}"
+  :address: "{Toronto, Canada}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/ai2012.pdf}"
+  :abstract: "{Statistical Machine Translation (SMT) is currently used in real-time
+    and commercial settings to quickly produce initial translations for a document
+    which can later be edited by a human. The SMT models specialized for one domain
+    often perform poorly when applied to other domains. The typical assumption that
+    both training and testing data are drawn from the same distribution no longer
+    applies. This paper evaluates domain adaptation techniques for SMT systems in
+    the context of end-user feedback in a real world application. We present our experiments
+    using two adaptive techniques, one relying on log-linear models and the other
+    using mixture models. We describe our experimental results on legal and government
+    data, and present the human evaluation effort for post-editing in addition to
+    traditional automated scoring techniques (BLEU scores). The human effort is based
+    primarily on the amount of time and number of edits required by a professional
+    post-editor to improve the quality of machine-generated translations to meet industry
+    standards. The experimental results in this paper show that the domain adaptation
+    techniques can yield a significant increase in BLEU score (up to four points)
+    and a significant reduction in post-editing time of about one second per word.}"
+  :month_numeric: "{5}"
+- :bibtex_key: whitney-clifton-sarkar-fedorova:2012:NW-NLP
+  :bibtex_type: :inproceedings
+  :author: "{Whitney, Max and Clifton, Ann and Sarkar, Anoop and Fedorova, Alexandra}"
+  :title: "{Making the most of a distributed perceptron for NLP}"
+  :year: "{2012}"
+  :month: may
+  :publisher: "{Pacific Northwest Regional NLP Workshop}"
+  :address: "{Redmond, Washington, USA}"
+  :pdf: "{http://dada.cs.washington.edu/nw-nlp-2012/papers/perceptron-nwnlp.pdf}"
+  :abstract: "{Perceptron training is commonly used for various natural language processing
+    tasks, making it desirable to apply on very large datasets. We implemented a distributed
+    perceptron training algorithm in a MapReduce framework for a structured output
+    chunking task and evaluated it on a cluster and on multi-core systems. Our work
+    extends (McDonald et al. 2002) into two areas of analysis. We compare two methods
+    for implementing the algorithm and find that the choice of topology in the MapReduce
+    operations significantly affects runtime, with the unexpected result that duplicating
+    computation increases overall performance. We also examine the behaviour with
+    different numbers of data shards and find a tradeoff between runtime and accuracy.}"
+  :month_numeric: "{5}"
+- :bibtex_key: sankaran_etal:2011:WMT
+  :bibtex_type: :inproceedings
+  :author: "{Sankaran, Baskaran and Haffari, Gholamreza and Sarkar, Anoop}"
+  :title: "{Bayesian Extraction of Minimal SCFG Rules for Hierarchical Phrase-based
+    Translation}"
+  :booktitle: "{Proceedings of the Sixth Workshop on Statistical Machine Translation}"
+  :month: jul
+  :year: "{2011}"
+  :address: "{Edinburgh, Scotland}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{533--541}"
+  :pdf: "{http://www2.cs.sfu.ca/~bsa33/personal/publications/sankaran_etal_11.pdf}"
+  :abstract: "{We present a novel approach for extracting a minimal synchronous context-free
+    grammar (SCFG) for Hiero-style statistical machine translation using a non-parametric
+    Bayesian framework. Our approach is designed to extract rules that are licensed
+    by the word alignments and heuristically extracted phrase pairs. Our Bayesian
+    model limits the number of SCFG rules extracted, by sampling from the space of
+    all possible hierarchical rules; additionally our informed prior based on the
+    lexical alignment probabilities biases the grammar to extract high quality rules
+    leading to improved generalization and the automatic identification of commonly
+    re-used rules. We show that our Bayesian model is able to extract minimal set
+    of hierarchical phrase rules without impacting the translation quality as measured
+    by the BLEU score.}"
+  :month_numeric: "{7}"
+- :bibtex_key: haffari-razavi-sarkar:2011:ACL-HLT2011
+  :bibtex_type: :inproceedings
+  :author: "{Haffari, Gholamreza and Razavi, Marzieh and Sarkar, Anoop}"
+  :title: "{An Ensemble Model that Combines Syntactic and Semantic Clustering for
+    Discriminative Dependency Parsing}"
+  :booktitle: "{Proceedings of the 49th Annual Meeting of the Association for Computational
+    Linguistics: Human Language Technologies}"
+  :month: jun
+  :year: "{2011}"
+  :address: "{Portland, Oregon, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{710--714}"
+  :url: "{http://www.aclweb.org/anthology/P11-2125}"
+  :month_numeric: "{6}"
+- :bibtex_key: clifton-sarkar:2011:ACL-HLT2011
+  :bibtex_type: :inproceedings
+  :author: "{Clifton, Ann and Sarkar, Anoop}"
+  :title: "{Combining Morpheme-based Machine Translation with Post-processing Morpheme
+    Prediction}"
+  :booktitle: "{Proceedings of the 49th Annual Meeting of the Association for Computational
+    Linguistics: Human Language Technologies}"
+  :month: jun
+  :year: "{2011}"
+  :address: "{Portland, Oregon, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{32--42}"
+  :pdf: "{http://aclweb.org/anthology-new/P/P11/P11-1004.pdf}"
+  :abstract: "{This paper extends the training and tuning regime for phrase-based
+    statistical machine translation to obtain fluent translations into morphologically
+    complex languages (we build an English to Finnish translation system). Our methods
+    use unsupervised morphology induction. Unlike previous work we focus on morphologically
+    productive phrase pairs – our decoder can combine morphemes across phrase boundaries.
+    Morphemes in the target language may not have a corresponding morpheme or word
+    in the source language. Therefore, we propose a novel combination of post-processing
+    morphology prediction with morpheme-based translation. We show, using both automatic
+    evaluation scores and linguistically motivated analyses of the output, that our
+    methods outperform previously proposed ones and provide the best known results
+    on the EnglishFinnish Europarl translation task. Our methods are mostly language
+    independent, so they should improve translation into other target languages with
+    complex morphology.}"
+  :url: "{http://www.aclweb.org/anthology/P11-1004}"
+  :month_numeric: "{6}"
+- :bibtex_key: sankaran_etal:2010:WMT
+  :bibtex_type: :inproceedings
+  :author: "{Sankaran, Baskaran and Grewal, Ajeet and Sarkar, Anoop}"
+  :title: "{Incremental decoding for phrase-based statistical machine translation}"
+  :booktitle: "{Proceedings of the Joint Fifth Workshop on Statistical Machine Translation
+    and Metrics MATR}"
+  :year: "{2010}"
+  :location: "{Uppsala, Sweden}"
+  :pages: "{216--223}"
+  :numpages: "{8}"
+  :url: "{http://aclweb.org/anthology-new/W/W10/W10-1733}"
+  :abstract: "{In this paper we focus on the incremental decoding for a statistical
+    phrase-based machine translation system. In incremental decoding, translations
+    are generated incrementally for every word typed by a user, instead of waiting
+    for the entire sentence as input. We introduce a novel modification to the beam-search
+    decoding algorithm for phrase-based MT to address this issue, aimed at efficient
+    computation of future costs and avoiding search errors. Our objective is to do
+    a faster translation during incremental decoding without significant reduction
+    in the translation quality.}"
+  :publisher: "{Association for Computational Linguistics}"
+  :address: "{Stroudsburg, PA, USA}"
+- :bibtex_key: haffari-sarkar:2008:PAPERS
+  :bibtex_type: :inproceedings
+  :author: "{Haffari, Gholamreza and Sarkar, Anoop}"
+  :title: "{Homotopy-Based Semi-Supervised Hidden Markov Models for Sequence Labeling}"
+  :booktitle: "{Proceedings of the 22nd International Conference on Computational
+    Linguistics (Coling 2008)}"
+  :month: aug
+  :year: "{2008}"
+  :address: "{Manchester, UK}"
+  :publisher: "{Coling 2008 Organizing Committee}"
+  :pages: "{305--312}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/coling08.pdf}"
+  :url: "{http://www.aclweb.org/anthology/C08-1039}"
+  :month_numeric: "{8}"
+- :bibtex_key: DBLP:journals/mt/UeffingHS07
+  :bibtex_type: :article
+  :author: "{Ueffing, Nicola and Haffari, Gholamreza and Sarkar, Anoop}"
+  :title: "{Semi-supervised model adaptation for statistical machine translation}"
+  :journal: "{Machine Translation}"
+  :volume: "{21}"
+  :number: "{2}"
+  :year: "{2007}"
+  :pages: "{77-94}"
+  :ee: "{http://dx.doi.org/10.1007/s10590-008-9036-3}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: ueffing-haffari-sarkar:2007:ACLMain
+  :bibtex_type: :inproceedings
+  :author: "{Ueffing, Nicola and Haffari, Gholamreza and Sarkar, Anoop}"
+  :title: "{Transductive learning for statistical machine translation}"
+  :booktitle: "{Proceedings of the 45th Annual Meeting of the Association of Computational
+    Linguistics}"
+  :month: jun
+  :year: "{2007}"
+  :address: "{Prague, Czech Republic}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{25--32}"
+  :url: "{http://www.aclweb.org/anthology/P/P07/P07-1004}"
+  :month_numeric: "{6}"
+- :bibtex_key: DBLP:conf/ai/ShiMWLGKSP07
+  :bibtex_type: :inproceedings
+  :author: "{Shi, Zhongmin and Melli, Gabor and Wang, Yang and Liu, Yudong and Gu,
+    Baohua and Kashani, Mehdi M. and Sarkar, Anoop and Popowich, Fred}"
+  :title: "{Question Answering Summarization of Multiple Biomedical Documents}"
+  :booktitle: "{Canadian Conference on AI}"
+  :year: "{2007}"
+  :pages: "{284-295}"
+  :ee: "{http://dx.doi.org/10.1007/978-3-540-72665-4_25}"
+  :crossref: "{DBLP:conf/ai/2007}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/naacl/ShiSP07
+  :bibtex_type: :inproceedings
+  :author: "{Shi, Zhongmin and Sarkar, Anoop and Popowich, Fred}"
+  :title: "{Simultaneous Identification of Biomedical Named-Entity and Functional
+    Relation Using Statistical Parsing Techniques}"
+  :booktitle: "{HLT-NAACL (Short Papers)}"
+  :year: "{2007}"
+  :pages: "{161-164}"
+  :ee: "{http://www.aclweb.org/anthology/N07-2041}"
+  :crossref: "{DBLP:conf/naacl/2007}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: liu-sarkar:2007:EMNLP-CoNLL2007
+  :bibtex_type: :inproceedings
+  :author: "{Liu, Yudong and Sarkar, Anoop}"
+  :title: "{Experimental Evaluation of {LTAG}-Based Features for Semantic Role Labeling}"
+  :booktitle: "{Proceedings of the 2007 Joint Conference on Empirical Methods in Natural
+    Language Processing and Computational Natural Language Learning (EMNLP-CoNLL)}"
+  :month: jun
+  :year: "{2007}"
+  :address: "{Prague, Czech Republic}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{590--599}"
+  :url: "{http://www.aclweb.org/anthology/D/D07/D07-1062}"
+  :month_numeric: "{6}"
+- :bibtex_key: liu-shi-sarkar:2007:ShortPapers
+  :bibtex_type: :inproceedings
+  :author: "{Liu, Yudong and Shi, Zhongmin and Sarkar, Anoop}"
+  :title: "{Exploiting Rich Syntactic Information for Relationship Extraction from
+    Biomedical Articles}"
+  :booktitle: "{Human Language Technologies 2007: The Conference of the North American
+    Chapter of the Association for Computational Linguistics; Companion Volume, Short
+    Papers}"
+  :month: apr
+  :year: "{2007}"
+  :address: "{Rochester, New York}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{97--100}"
+  :url: "{http://www.aclweb.org/anthology/N/N07/N07-2025}"
+  :month_numeric: "{4}"
+- :bibtex_key: shi-sarkar-popowich:2007:ShortPapers
+  :bibtex_type: :inproceedings
+  :author: "{Shi, Zhongmin and Sarkar, Anoop and Popowich, Fred}"
+  :title: "{Simultaneous Identification of Biomedical Named-Entity and Functional
+    Relation Using Statistical Parsing Techniques}"
+  :booktitle: "{Human Language Technologies 2007: The Conference of the North American
+    Chapter of the Association for Computational Linguistics; Companion Volume, Short
+    Papers}"
+  :month: apr
+  :year: "{2007}"
+  :address: "{Rochester, New York}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{161--164}"
+  :url: "{http://www.aclweb.org/anthology/N/N07/N07-2041}"
+  :month_numeric: "{4}"
+- :bibtex_key: birke-sarkar:2007:WCAFL
+  :bibtex_type: :inproceedings
+  :author: "{Birke, Julia and Sarkar, Anoop}"
+  :title: "{Active Learning for the Identification of Nonliteral Language}"
+  :booktitle: "{Proceedings of the Workshop on Computational Approaches to Figurative
+    Language}"
+  :month: apr
+  :year: "{2007}"
+  :address: "{Rochester, New York}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{21--28}"
+  :url: "{http://www.aclweb.org/anthology/W/W07/W07-0104}"
+  :month_numeric: "{4}"
+- :bibtex_key: DBLP:conf/lbm/MelliES07
+  :bibtex_type: :inproceedings
+  :author: "{Melli, Gabor and Ester, Martin and Sarkar, Anoop}"
+  :title: "{Recognition of Multi-sentence n-ary Subcellular Localization Mentions
+    in Biomedical Abstracts}"
+  :booktitle: "{Short Paper Proceedings of the 2nd International Symposium on Languages
+    in Biology and Medicine (LBM 2007), Singapore, December 6-7}"
+  :year: "{2007}"
+  :ee: "{http://ceur-ws.org/Vol-319/Paper2.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/ai/ShiMWLGKSP08
+  :bibtex_type: :inproceedings
+  :author: "{Shi, Zhongmin and Melli, Gabor and Wang, Yang and Liu, Yudong and Gu,
+    Baohua and Kashani, Mehdi M. and Sarkar, Anoop and Popowich, Fred}"
+  :title: "{Question Answering Summarization of Multiple Biomedical Documents}"
+  :booktitle: "{Canadian Conference on AI}"
+  :year: "{2007}"
+  :pages: "{284-295}"
+  :ee: "{http://dx.doi.org/10.1007/978-3-540-72665-4_25}"
+  :crossref: "{DBLP:conf/ai/2007}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/eacl/BirkeS06
+  :bibtex_type: :inproceedings
+  :author: "{Birke, Julia and Sarkar, Anoop}"
+  :title: "{A Clustering Approach for Nearly Unsupervised Recognition of Nonliteral
+    Language}"
+  :booktitle: "{EACL 2006, 11st Conference of the European Chapter of the Association
+    for Computational Linguistics, Proceedings of the Conference, April 3-7, 2006,
+    Trento, Italy}"
+  :year: "{2006}"
+  :ee: "{http://acl.ldc.upenn.edu/E/E06/E06-1042.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: sarkar-haffari:2006:HLT-NAACL06-Tutorials
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop and Haffari, Gholamreza}"
+  :title: "{Tutorial on Inductive Semi-supervised Learning Methods: with Applicability
+    to Natural Language Processing}"
+  :booktitle: "{Proceedings of the Human Language Technology Conference of the NAACL,
+    Companion Volume: Tutorial Abstracts}"
+  :month: jun
+  :year: "{2006}"
+  :address: "{New York City, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{307--308}"
+  :url: "{http://www.aclweb.org/anthology/N/N06/N06-5005}"
+  :month_numeric: "{6}"
+- :bibtex_key: song-sarkar:2006:SIGHAN
+  :bibtex_type: :inproceedings
+  :author: "{Song, Dong and Sarkar, Anoop}"
+  :title: "{Voting between Dictionary-Based and Subword Tagging Models for Chinese
+    Word Segmentation}"
+  :booktitle: "{Proceedings of the Fifth SIGHAN Workshop on Chinese Language Processing}"
+  :month: jul
+  :year: "{2006}"
+  :address: "{Sydney, Australia}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{126--129}"
+  :url: "{http://www.aclweb.org/anthology/W/W06/W06-0118}"
+  :month_numeric: "{7}"
+- :bibtex_key: liu-sarkar:2006:TAG
+  :bibtex_type: :inproceedings
+  :author: "{Liu, Yudong and Sarkar, Anoop}"
+  :title: "{Using {LTAG}-Based Features for Semantic Role Labeling}"
+  :booktitle: "{Proceedings of the Eighth International Workshop on Tree Adjoining
+    Grammar and Related Formalisms}"
+  :month: jul
+  :year: "{2006}"
+  :address: "{Sydney, Australia}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{127--132}"
+  :url: "{http://www.aclweb.org/anthology/W/W06/W06-1518}"
+  :month_numeric: "{7}"
+- :bibtex_key: DBLP:conf/ai/ShenS05
+  :bibtex_type: :inproceedings
+  :author: "{Shen, Hong and Sarkar, Anoop}"
+  :title: "{Voting Between Multiple Data Representations for Text Chunking}"
+  :booktitle: "{Advances in Artificial Intelligence, 18th Conference of the Canadian
+    Society for Computational Studies of Intelligence, Canadian AI 2005, Victoria,
+    Canada, May 9-11}"
+  :year: "{2005}"
+  :pages: "{389-400}"
+  :ee: "{http://dx.doi.org/10.1007/11424918_40}"
+  :crossref: "{DBLP:conf/ai/2005}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/trec/ShiGPS05
+  :bibtex_type: :inproceedings
+  :author: "{Shi, Zhongmin and Gu, Baohua and Popowich, Fred and Sarkar, Anoop}"
+  :title: "{Synonym-Based Expansion and Boosting-Based Re-Ranking: A Two-phase Approach
+    for Genomic Information Retrieval}"
+  :booktitle: "{Proceedings of the Fourteenth Text REtrieval Conference, TREC 2005,
+    Gaithersburg, Maryland, November 15-18, 2005}"
+  :year: "{2005}"
+  :ee: "{http://trec.nist.gov/pubs/trec14/papers/simon-fraseru.geo.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/ijcai/ShiS05
+  :bibtex_type: :inproceedings
+  :author: "{Shi, Zhongmin and Sarkar, Anoop}"
+  :title: "{Intimate Learning: A Novel Approach for Combining Labelled and Unlabelled
+    Data}"
+  :booktitle: "{IJCAI-05, Proceedings of the Nineteenth International Joint Conference
+    on Artificial Intelligence, Edinburgh, Scotland, UK, July 30-August 5}"
+  :year: "{2005}"
+  :pages: "{1634-1635}"
+  :ee: "{http://www.ijcai.org/papers/post-0441.pdf}"
+  :crossref: "{DBLP:conf/ijcai/2005}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: och-EtAl:2004:HLTNAACL
+  :bibtex_type: :inproceedings
+  :author: "{Josef, Franz Och and Gildea, Daniel and Khudanpur, Sanjeev and Sarkar,
+    Anoop and Yamada, Kenji and Fraser, Alex and Kumar, Shankar and Shen, Libin and
+    Smith, David and Eng, Katherine and Jain, Viren and Jin, Zhen and Radev, Dragomir}"
+  :title: "{A Smorgasbord of Features for Statistical Machine Translation}"
+  :booktitle: "{HLT-NAACL 2004: Main Proceedings }"
+  :editor: "{Susan Dumais, Daniel Marcu and Roukos, Salim}"
+  :year: "{2004}"
+  :month: may
+  :address: "{Boston, Massachusetts, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{161--168}"
+  :month_numeric: "{5}"
+- :bibtex_key: shen-sarkar-och:2004:HLTNAACL
+  :bibtex_type: :inproceedings
+  :author: "{Shen, Libin and Sarkar, Anoop and Josef, Franz Och}"
+  :title: "{Discriminative Reranking for Machine Translation}"
+  :booktitle: "{HLT-NAACL 2004: Main Proceedings }"
+  :editor: "{Susan Dumais, Daniel Marcu and Roukos, Salim}"
+  :year: "{2004}"
+  :month: may
+  :address: "{Boston, Massachusetts, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{177--184}"
+  :month_numeric: "{5}"
+- :bibtex_key: DBLP:conf/eacl/SteedmanSOHCHRBC03
+  :bibtex_type: :inproceedings
+  :author: "{Steedman, Mark and Sarkar, Anoop and Osborne, Miles and Hwa, Rebecca
+    and Clark, Stephen and Hockenmaier, Julia and Ruhlen, Paul and Baker, Steven and
+    Crim, Jeremiah}"
+  :title: "{Bootstrapping statistical parsers from small datasets}"
+  :booktitle: "{EACL}"
+  :year: "{2003}"
+  :pages: "{331-338}"
+  :ee: "{http://acl.ldc.upenn.edu/E/E03/E03-1008.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/naacl/SteedmanHCOSHRBC03
+  :bibtex_type: :inproceedings
+  :author: "{Steedman, Mark and Hwa, Rebecca and Clark, Stephen and Osborne, Miles
+    and Sarkar, Anoop and Hockenmaier, Julia and Ruhlen, Paul and Baker, Steven and
+    Crim, Jeremiah}"
+  :title: "{Example Selection for Bootstrapping Statistical Parsers}"
+  :booktitle: "{HLT-NAACL}"
+  :year: "{2003}"
+  :ee: "{http://acl.ldc.upenn.edu/N/N03/N03-1031.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:journals/jolli/ForbesMPSJW03
+  :bibtex_type: :article
+  :author: "{Forbes, Katherine and Miltsakaki, Eleni and Prasad, Rashmi and Sarkar,
+    Anoop and Joshi, Aravind K. and Webber, Bonnie L.}"
+  :title: "{D-LTAG System: Discourse Parsing with a Lexicalized Tree-Adjoining Grammar}"
+  :journal: "{Journal of Logic, Language and Information}"
+  :volume: "{12}"
+  :number: "{3}"
+  :year: "{2003}"
+  :pages: "{261--279}"
+  :ee: "{http://dx.doi.org/10.1023/A:1024137719751}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: shen-sarkar-joshi:2003:EMNLP-2003
+  :bibtex_type: :inproceedings
+  :author: "{Liu, Yudong and Sarkar, Anoop}"
+  :title: "{Using {LTAG} Based Features in Parse Reranking}"
+  :booktitle: "{Proceedings of the 2003 Conference on Empirical Methods in Natural
+    Language Processing (EMNLP)}"
+  :month: jul
+  :year: "{2003}"
+  :address: "{Sapporo, Japan}"
+  :publisher: "{Association for Computational Linguistics}"
+  :url: "{http://aclweb.org/anthology-new/W/W03/W03-1012.pdf}"
+  :month_numeric: "{7}"
+- :bibtex_key: DBLP:conf/coling/SarkarT02
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop and Tripasai, Woottiporn}"
+  :title: "{Learning Verb Argument Structure from Minimally Annotated Corpora}"
+  :booktitle: "{COLING}"
+  :year: "{2002}"
+  :ee: "{http://acl.ldc.upenn.edu/C/C02/C02-1040.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:journals/coling/WintnerS02
+  :bibtex_type: :article
+  :author: "{Wintner, Shuly and Sarkar, Anoop}"
+  :title: "{A Note on Typing Feature Structures}"
+  :journal: "{Computational Linguistics}"
+  :volume: "{28}"
+  :number: "{3}"
+  :year: "{2002}"
+  :pages: "{389-397}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/naacl/Sarkar01
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop}"
+  :title: "{Applying Co-Training Methods to Statistical Parsing}"
+  :booktitle: "{NAACL}"
+  :year: "{2001}"
+  :ee: "{http://ucrel.lancs.ac.uk/acl/N/N01/N01-1023.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/coling/SarkarZ00
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop and Zeman, Daniel}"
+  :title: "{Automatic Extraction of Subcategorization Frames for Czech}"
+  :booktitle: '{COLING 2000, 18th International Conference on Computational Linguistics,
+    Proceedings of the Conference, 2 Volumes, July 31 - August 4, 2000, Universit{\"a}t
+    des Saarlandes, Saarbr{\"u}cken, Germany}'
+  :year: "{2000}"
+  :pages: "{691-697}"
+  :ee: "{http://acl.ldc.upenn.edu/C/C00/C00-2100.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:journals/corr/cs-CL-0009003
+  :bibtex_type: :article
+  :author: "{Sarkar, Anoop and Zeman, Daniel}"
+  :title: "{Automatic Extraction of Subcategorization Frames for Czech}"
+  :journal: "{CoRR}"
+  :volume: "{cs.CL/0009003}"
+  :year: "{2000}"
+  :ee: "{http://arxiv.org/abs/cs.CL/0009003}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/clin/SarkarW99
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop and Wintner, Shuly}"
+  :title: "{Typing as a means for validating feature structures}"
+  :booktitle: "{Computational Linguistics in the Netherlands 1999, Selected Papers
+    from the Tenth CLIN Meeting, December 10, OTS Utrecht}"
+  :year: "{1999}"
+  :ee: "{http://www-uilots.let.uu.nl/publications/clin1999/Pap/shuly.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/acl/Sarkar98
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop}"
+  :title: "{Conditions on Consistency of Probabilistic Tree Adjoining Grammars}"
+  :booktitle: "{COLING-ACL}"
+  :year: "{1998}"
+  :pages: "{1164-1170}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/consist.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/acl/NederhofSS98
+  :bibtex_type: :inproceedings
+  :author: "{Nederhof, Mark-Jan and Sarkar, Anoop and Satta, Giorgio}"
+  :title: "{Prefix Probabilities from Stochastic Tree Adjoining Grammars}"
+  :booktitle: "{{COLING-ACL}}"
+  :year: "{1998}"
+  :pages: "{953-959}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/prefix.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: sarkar:MOL:1997
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop}"
+  :title: "{{Seperating Dependency from Constituency in a Tree Rewriting System}}"
+  :booktitle: "{{Proceedings of the Fifth Meeting on Mathematics of Language}}"
+  :pages: "{153--160}"
+  :month: aug
+  :year: "{1997}"
+  :address: "{Saarbruecken, Germany}"
+  :pdf: "{http://www.cs.sfu.ca/~anoop/papers/pdf/mol5final.pdf}"
+  :month_numeric: "{8}"
+- :bibtex_key: DBLP:journals/corr/cs-CL-9809028
+  :bibtex_type: :article
+  :author: "{Sarkar, Anoop}"
+  :title: "{Separating Dependency from Constituency in a Tree Rewriting System}"
+  :journal: "{CoRR}"
+  :volume: "{cs.CL/9809028}"
+  :year: "{1998}"
+  :ee: "{http://arxiv.org/abs/cs.CL/9809028}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: sarkar:1996:ACL
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop}"
+  :title: "{Incremental Parser Generation for Tree Adjoining Grammars}"
+  :booktitle: "{Proceedings of the 34th Annual Meeting of the Association for Computational
+    Linguistics, Student Session}"
+  :month: jun
+  :year: "{1996}"
+  :address: "{Santa Cruz, California, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{375--377}"
+  :url: "{http://www.aclweb.org/anthology/P96-1056}"
+  :doi: "{10.3115/981863.981920}"
+  :month_numeric: "{6}"
+- :bibtex_key: DBLP:journals/corr/cmp-lg-9606006
+  :bibtex_type: :article
+  :author: "{Sarkar, Anoop and Joshi, Aravind K.}"
+  :title: "{Coordination in Tree Adjoining Grammars: Formalization and Implementation}"
+  :journal: "{CoRR}"
+  :volume: "{cmp-lg/9606006}"
+  :year: "{1996}"
+  :ee: "{http://arxiv.org/abs/cmp-lg/9606006}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: DBLP:conf/coling/SarkarJ96
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop and Joshi, Aravind K.}"
+  :title: "{Coordination in Tree Adjoining Grammars: Formalization and Implementation}"
+  :booktitle: "{COLING}"
+  :year: "{1996}"
+  :pages: "{610-615}"
+  :address: "{Copenhagen, Denmark}"
+  :ee: "{http://acl.ldc.upenn.edu/C/C96/C96-2103.pdf}"
+  :bibsource: "{DBLP, http://dblp.uni-trier.de}"
+- :bibtex_key: sarkar:1993:ACL
+  :bibtex_type: :inproceedings
+  :author: "{Sarkar, Anoop}"
+  :title: "{Extending Kimmo's Two-Level Model of Morphology}"
+  :booktitle: "{Proceedings of the 31st Annual Meeting of the Association for Computational
+    Linguistics, Student Session}"
+  :month: jun
+  :year: "{1993}"
+  :address: "{Columbus, Ohio, USA}"
+  :publisher: "{Association for Computational Linguistics}"
+  :pages: "{304--306}"
+  :url: "{http://www.aclweb.org/anthology/P93-1047}"
+  :doi: "{10.3115/981574.981622}"
+  :month_numeric: "{6}"
