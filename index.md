@@ -14,7 +14,7 @@ title: Home
 
 * Statistical machine translation
 * Statistical parsing of natural languages
-* Machine learning methods for Natural Language Processing
+* Machine learning for Natural Language Processing
 
 ### News and Posts
 
