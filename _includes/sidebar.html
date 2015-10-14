@@ -33,17 +33,11 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <!-- 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    -->
   </nav>
 
   <div class="sidebar-item">
     <p>
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    &copy; 2013 - {{ site.time | date: '%Y' }} {{ site.author.name }}. <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
     </p>
     <p>
       <a href="{{ site.baseurl }}atom.xml">RSS feed</a>.
