@@ -31,8 +31,8 @@ title: Home
       </li>
     {% endif %}
   {% endfor %}
-  <li class="more"><a href="{{ site.baseurl }}news">More news ...</a></li>
 </ul>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}news">News ...</a></span></p>
 
 ### Publications
 
