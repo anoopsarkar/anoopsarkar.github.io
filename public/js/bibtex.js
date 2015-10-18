@@ -501,6 +501,8 @@ function BibtexDisplay() {
 
     // iterate over bibTeX entries
     var entries = b.getEntries();
+    var last_counter = 1;
+
     // console.log(entries);
     for (var entryKey in entries) {
       var entry = entries[entryKey];
@@ -615,7 +617,14 @@ function BibtexDisplay() {
         }
         if (approved == true){
           // console.log(entry['AUTHOR']);
-          output.append(tpl);
+          if ( constraints['LAST'] != null ){
+              if (last_counter <= constraints['LAST'] ){
+                  output.append(tpl);
+              }
+              last_counter += 1;
+          } else {
+            output.append(tpl);
+          }
         }
 
       }

@@ -1,0 +1,88 @@
+
+<textarea id="bibtex_input" style="display:none;"></textarea>
+
+<div class="main">
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="years panel-title">Publications     
+    <button class="btn allyears btn-primary" type="button" value='all'>All</button> 
+    </h3>
+  </div> <!-- panel-heading -->
+
+  <div class="panel-body">
+    <div id="bibtex_display"></div>
+
+    <ol reversed="reversed">
+    <div class="bibtex_template"  style="display:none; padding:  0.8em;">
+
+    <li style="padding:  0.2em;">
+      <span>
+        <span class="if title" style="font-weight: bold;">
+          <span class="title"></span>     
+          <br>
+        </span>
+        <span class="author"></span>.<br>
+        <span class="if booktitle" style="font-style: italic;">
+          <span class="booktitle"></span>,
+          <span class="if address" style="font-style: normal;">
+      <span class="address"></span>
+          </span>     
+        </span>
+        <span class="if journal" style="font-style: italic;">
+          <span class="journal"></span>
+        </span>
+        <span style="if publisher">
+          <span class="publisher"></span>
+        </span>
+        <span style="if school">
+          <span class="school"></span>
+        </span>
+        <span class="if volume">
+          <span class="volume"></span>
+          <span class="if number">
+      (<span class="number"></span>)
+          </span>
+          <span class="if pages">
+      :<span class="pages"></span>
+          </span>
+        </span>
+        <span class="if edition">
+          <span class="edition"></span> ed.,
+        </span>
+        <span class="year"></span>
+      </span>
+      <br>
+     <span class="if url">
+        <button type="button" class="btn btn-sm btn-info" aria-label="Left Align">
+        <a class="url" > URL </a>
+        </button>
+      </span>
+      <span class="if pdf">
+        <button type="button" class="btn btn-sm btn-info" aria-label="Left Align">
+        <a class="pdf" > PDF </a> 
+        </button>
+      </span>
+
+      <span class="if bibtex">
+     <button type="button" class="btn bibtex_but btn-sm btn-success" data-toggle="collapse" data-target="#demo">bibtex</button>
+    </span>
+
+      <span class="if abstract">
+        <button type="button" class="btn abstract_but btn-sm btn-info" data-toggle="collapse" data-target="#demo">abstract</button>
+      </span>
+       <br>
+      
+    <span>
+      <span class="if abstract">
+        <div class="abstractdata alert alert-info collapse closed" role="alert"><b>Abstract:</b><p><span class="abstract"></span></p></div>
+      </span>
+      <div class="bibtexdata alert alert-success collapse closed" role="alert"><b>Bibtex:</b><p><span class="bibtex"></span></p></div>
+    </span>
+
+    </li>
+    </div> <!-- bibtex_template -->
+</ol>
+</div> <!-- panel-body -->
+</div> <!-- panel -->
+</div> <!-- main -->

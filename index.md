@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+customjs: shortpubs
 ---
 
 * [Professor]({{ site.baseurl }}professor)
@@ -35,6 +36,8 @@ title: Home
 <p><span class="moreinfo"><a href="{{ site.baseurl }}news">News ...</a></span></p>
 
 ### Publications
+
+{% include shortpubs.html %}
 
 ### Talks
 
