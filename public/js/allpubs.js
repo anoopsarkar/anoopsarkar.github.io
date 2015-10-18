@@ -1,6 +1,6 @@
 ---
 ---
-bibtex_reader = new BibtexDisplay()
+bibtex_reader = new BibtexDisplay();
 constraints = {};
 /// Add always constrains here like constrains['AUTHOR']='Anoop Sarkar'
 
@@ -39,11 +39,9 @@ function mytoggle(name){
 
 $(document).ready( function() {
   // $('.years').append('<button class="btn btn-primary" type="button" value=\'2012\' onclick="bibtex_js_draw()"> 2012 </button> ');
- // $("#bibtex_input").load( "publications.bib",   bibtex_js_draw );
-//  $("#bibtex_input").load( "publications.bib",   get_years );
   $(".bibtexdata").hide();
   $(".abstractdata").hide();
-  $("#bibtex_input").load( "http://127.0.0.1:4000/public/bibtex/anoopsarkar.bib", bibtex_js_draw );  
-  $("#bibtex_input").load( "http://127.0.0.1:4000/public/bibtex/anoopsarkar.bib", get_years );  
+  $("#bibtex_input").load( "{{ site.baseurl }}/public/bibtex/anoopsarkar.bib", bibtex_js_draw );  
+  $("#bibtex_input").load( "{{ site.baseurl }}/public/bibtex/anoopsarkar.bib", get_years );  
 } );
 

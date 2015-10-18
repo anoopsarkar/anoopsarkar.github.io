@@ -4,11 +4,11 @@ title: Home
 customjs: shortpubs
 ---
 
-* [Professor]({{ site.baseurl }}professor)
+* [Professor]({{ site.baseurl }}/professor)
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
-* <span class="moreinfo"><a href="{{ site.baseurl }}biography">Biography</a> and <a href="{{ site.baseurl }}contact">Contact details ...</a></span>
+* <span class="moreinfo"><a href="{{ site.baseurl }}/biography">Biography</a> and <a href="{{ site.baseurl }}/contact">Contact details ...</a></span>
 {: .contact}
 
 ### Research
@@ -33,17 +33,19 @@ customjs: shortpubs
     {% endif %}
   {% endfor %}
 </ul>
-<p><span class="moreinfo"><a href="{{ site.baseurl }}news">News ...</a></span></p>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/news">News ...</a></span></p>
 
-### Publications
+### Recent Publications
 
 {% include shortpubs.html %}
 
-### Talks
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/publications">Publications ...</a></span></p>
 
-### Activities
+### Invited Talks
+
+### Professional Activities
 
 ### Graduated Students
 
-### Research Grants
+### Recent Research Grants
 

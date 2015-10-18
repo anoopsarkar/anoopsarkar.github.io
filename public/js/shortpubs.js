@@ -1,8 +1,8 @@
 ---
 ---
-bibtex_reader = new BibtexDisplay()
+bibtex_reader = new BibtexDisplay();
 constraints = {};
-constraints['LAST'] = 5;
+constraints['LAST'] = 3;
 
 function bibtex_js_draw() {
     $(".bibtex_template").hide();
@@ -18,5 +18,5 @@ function mytoggle(name){
 $(document).ready( function() {
   $(".bibtexdata").hide();
   $(".abstractdata").hide();
-  $("#bibtex_input").load( "{{ site.baseurl }}public/bibtex/anoopsarkar.bib", bibtex_js_draw );  
+  $("#bibtex_input").load( "{{ site.baseurl }}/public/bibtex/anoopsarkar.bib", bibtex_js_draw );  
 } );
