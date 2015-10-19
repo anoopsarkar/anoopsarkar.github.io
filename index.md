@@ -23,6 +23,7 @@ customjs: shortpubs
 * Spring 2015: [Machine Learning for Decipherment](http://anoopsarkar.github.io/decipherment-class/)
 * Fall 2014: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 * Fall 2013: [Compilers](http://www.cs.sfu.ca/~anoop/teaching/CMPT-379-Fall-2013/)
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/teaching">Teaching ...</a></span></p>
 
 ### News and Posts
 
