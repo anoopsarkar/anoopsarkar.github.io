@@ -48,7 +48,7 @@ span.rev {
    box-shadow:0 0 1px #333;
 }
 
-.badge{
+.badge {
    color: white;
    background-color: #29c;
    padding: 2px 2px 2px 2px;
@@ -58,3 +58,6 @@ span.rev {
    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+.footer {
+   margin-top: 10px;
+}
