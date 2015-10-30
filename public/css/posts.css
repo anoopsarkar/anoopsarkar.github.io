@@ -1,0 +1,43 @@
+
+.posts li .title {
+  font-size: 1rem;
+  padding: 0
+}
+
+.posts li .date {
+  /* float: right; */
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  line-height: 24px
+}
+
+@media (max-width: 48em) {
+  .posts li .date {
+      display: none
+  }
+}
+
+/*
+ * Related Posts
+ */
+
+.related-posts li .title {
+  font-size: 0.8rem;
+  padding: 0
+}
+
+.related-posts li .date {
+  /* float: right; */
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  line-height: 24px
+}
+
+@media (max-width: 48em) {
+  .related-posts li .date {
+      display: none
+  }
+}
+

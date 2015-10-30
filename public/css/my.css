@@ -1,0 +1,30 @@
+
+.contact {
+  padding-left: 0;
+  list-style: none;
+  /* font-size: 75%; */
+}
+
+span.rev {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.moreinfo {
+  display: block;
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+  font-size: 90%;
+}
+
+.moreinfo:before {
+  content: "More: ";
+}
+
+.bibtex {
+    display: block;
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 70%;
+}
