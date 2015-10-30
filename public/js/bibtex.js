@@ -547,13 +547,13 @@ function BibtexDisplay() {
       // fill in remaining fields 
       
       tpl.find("div.bibtexdata").attr('id', "bib"+entryKey.replace(/\:/g,""));
-      tpl.find("button.bibtex_but").attr('data-target', "#bib"+entryKey.replace(/\:/g,""));
-      tpl.find("button.bibtex_but").attr('data-target', "#bib"+entryKey.replace(/\:/g,""));
-      tpl.find("button.bibtex_but").attr('onclick', "mytoggle(\'bib"+entryKey.replace(/\:/g,"")+"\')");
+      tpl.find("a.bibtex_but").attr('data-target', "#bib"+entryKey.replace(/\:/g,""));
+      tpl.find("a.bibtex_but").attr('data-target', "#bib"+entryKey.replace(/\:/g,""));
+      tpl.find("a.bibtex_but").attr('onclick', "mytoggle(\'bib"+entryKey.replace(/\:/g,"")+"\')");
 
       tpl.find("div.abstractdata").attr('id', "abs"+entryKey.replace(/\:/g,""));
-      tpl.find("button.abstract_but").attr('data-target', "#abs"+entryKey.replace(/\:/g,""));     
-      tpl.find("button.abstract_but").attr('onclick', "mytoggle(\'abs"+entryKey.replace(/\:/g,"")+"\')");
+      tpl.find("a.abstract_but").attr('data-target', "#abs"+entryKey.replace(/\:/g,""));     
+      tpl.find("a.abstract_but").attr('onclick', "mytoggle(\'abs"+entryKey.replace(/\:/g,"")+"\')");
 
 
       for (var index in keys) {

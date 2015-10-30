@@ -10,11 +10,13 @@ function get_years(){
   years = bibtex_reader.get_years($("#bibtex_input").val(),constraints);
   // years = [{"year":"2014","value":"1"},{"year":"2013","value":"2"}]
   $.each(years, function (key, value) {
-    $('.years').append('<button class="btn years_btn btn-primary" type="button" value=\''+key+'\' > '+key+' (<span class="badge">'+value+'</span>)</button> ');
+    // $('.years').append('<button class="btn years_btn btn-primary" type="button" value=\''+key+'\' > '+key+' (<span class="badge">'+value+'</span>)</button> ');
+    $('.years').append('<a href="#" class="years_btn button" year="'+key+'">'+key+'<span class="badge">'+value+'</span></a>');
   });
   $('.years_btn').click(function() {
               $(".bibtex_template").hide();
-              constraints['YEAR']=$(this).val();
+              //constraints['YEAR']=$(this).val();
+              constraints['YEAR']=$(this).attr("year");
               (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"),constraints);
         });
 
