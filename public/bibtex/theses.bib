@@ -1,23 +1,86 @@
+%% 2015
+
+@mastersthesis{ramtin-msc-thesis:2015,
+	author = {Mehdizadeh Seraj, Ramtin},
+	title = {Paraphrases for Statistical Machine Translation},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2015,
+	month = sep,
+	abstract = {Statistical Machine Translation (SMT) is the task of automatic translation between two natural languages (source language and target language) by using bilingual corpora. To accomplish this goal, machine learning models try to capture human translation patterns inside a bilingual corpus. An open challenge for SMT is finding translations for phrases which are missing in the training data (out-of-vocabulary phrases). We propose to use paraphrases to provide translations for out-of-vocabulary (OOV) phrases. We compare two major approaches to automatically extract paraphrases from corpora: distributional profile (DP) and bilingual pivoting. The multilingual Paraphrase Database (PPDB) is a freely available automatically created (using bilingual pivoting) resource of paraphrases in multiple languages. We show that a graph propagation approach that uses PPDB paraphrases can be used to improve overall translation quality. We provide an extensive comparison with previous work and show that our PPDB-based method improves the BLEU score by up to 1.79 percent points. We show that our approach improves on the state of the art in three different settings: when faced with limited amount of parallel training data; a domain shift between training and test data; and handling a morphologically complex source language.},
+	url = {https://theses.lib.sfu.ca/thesis/etd9252},
+	pdf = {https://theses.lib.sfu.ca/sites/all/files/public_copies/etd9252--ramtinthesis.pdf}
+}
+
+%% 2014
+
+@mastersthesis{dholakia-msc-thesis:2014,
+	author = {Dholakia, Rohit},
+	title = {Real-world use of pivot languages to translate low-resource languages},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2014,
+	month = apr,
+	abstract = {Triangulation refers to the use of a pivot language when translating from a source language to a target language. Previous research in triangulation has only focused on large corpora in the same domain. This thesis conducts the first in-depth study on the use of triangulation for four real-world low-resource languages with realistic data settings, Mawukakan, Maninkakan, Haitian Kreyol and Malagasy, where fluent translations using statistical machine translation are difficult to obtain due to limited amounts of training data in the source-target language pair. We compare and contrast several design choices one needs to consider when using triangulation. We observe that triangulation via French improves translations signiﬁcantly for Mawukakan and Maninkakan, two languages spoken in West Africa. We also improve translations for real-world short messages sent in the aftermath of the Haiti earthquake in 2010 and news articles in Malagasy. As part of the dissertation, we build the first effective translation system for the first two of these languages and outperform the state-of-the-art for Haitian Kreyol. We improve translation quality by injecting more data via pivot languages and show that in realistic data settings carefully considering triangulation design options is important. Furthermore, in all four languages since the low-resource language pair and pivot language pair data typically come from very different domains, we propose a novel iterative method to fine-tune the weighted mixture of direct and pivot based phrase pairs to signiﬁcantly improve translation quality.},
+	url = {http://summit.sfu.ca/item/13993},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/13993/etd8287_RDholakia.pdf}
+}
+
+%% 2013
+
+@phdthesis{sankaran-phd-thesis:2013,
+	author = {Sankaran, Baskaran},
+	title = {Improvements in hierarchical phrase-based Statistical Machine Translation},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2013,
+	month = dec,
+	abstract = {Hierarchical phrase-based translation (Hiero) is a statistical machine translation (SMT) model that encodes translation as a synchronous context-free grammar derivation between source and target language strings (Chiang, 2005; Chiang, 2007). Hiero models are more powerful than phrase-based models in capturing complex source-target reordering as well as discontiguous phrases, while being easier to estimate and decode with compared to their full syntax-based counterparts. In this thesis, we propose improvements to two broad aspects of the Hiero translation pipeline: i) learning Hiero translation model and estimating their parameters and ii) parameter tuning for discriminative log-linear models that are used to decode with such features. We use our own open-source implementation of Hiero called Kriya (Sankaran et al., 2012b) for all the experiments in this thesis. This thesis contains the following specific contributions: We propose a Bayesian model for learning Hiero grammars as an alternative to the heuristic method usually used in Hiero. Our model learns a peaked distribution of grammars, which consistently performs better than the heuristically extracted grammars across several language pairs (Sankaran et al., 2013a). We propose a novel unified-cascade framework for jointly learning alignments and the Hiero translation rules by removing the disconnect between the alignments and extracted synchronous context-free grammar. This is the first time a joint training framework is being proposed for Hiero, where we iterate the two step inference so that it learns in alternate iterations the phrase alignments and then the Hiero rules that are consistent with alignments. We extend our Bayesian model for extracting compact Hiero translation rules using arity-1 grammars, resulting in up to 57\% reduction in model size while retaining the translation performance (Sankaran et al., 2011; Sankaran et al., 2012a). We propose several novel approaches for parameter tuning of discriminative log-linear models for SMT which can be used for jointly optimizing towards multiple evaluation metrics. We show that our methods for multi-objective tuning for SMT yield substantial gains in translation quality measured through automatic as well as human evaluations (Sankaran et al., 2013b; Duh et al., 2013).},
+	url = {http://summit.sfu.ca/item/13826},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/13826/etd8180_BSankaran.pdf}
+}
+
+@phdthesis{razmara-phd-thesis:2013,
+	author = {Razmara, Majid},
+	title = {Leveraging diverse sources in statistical machine translation},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2013,
+	month = jul,
+	abstract = {Statistical machine translation (SMT) is often faced with the problem of having insufficient training data for many language pairs. We propose several approaches to leveraging other available sources in SMT systems to enhance the quality of translation. Particularly, we propose approaches suitable in these four scenarios: 1. when an additional parallel corpus is available; 2. when parallel corpora between the source language and a third language and between that language and the target language are available; 3. when an abundant source-language monolingual corpus is available; 4. when no additional resource is available. In the heart of these solutions lie two novel approaches: ensemble decoding and a graph propagation approach for paraphrasing out-of-vocabulary words. Ensemble decoding combines a number of translation systems dynamically at the decoding step. Our experimental results show that ensemble decoding outperforms various strong baselines including mixture models, the current state-of-the-art for domain adaptation in machine translation. We extend ensemble decoding to do triangulation on-the-fly when there exist parallel corpora between the source language and one or multiple pivot languages and between those and the target language. These triangulated systems are dynamically combined together and possibly to a direct source-target system. Experiments in 12 different language pairs show significant improvements over the baselines in terms of BLEU scores. Ensemble decoding can also be used to apply stacking to statistical machine translation. Stacking is an ensemble learning approach that enhances the bias of the models. We show that stacking can consistently and significantly improve over the conventional SMT systems in two different language pairs and three different training sizes. In addition to ensemble decoding, we propose a novel approach to mining translations for OOV words using a monolingual corpus on the source-side language. We induce a lexicon by constructing a graph on the source language phrases and employ a graph propagation technique in order to find translations for those phrases. Experimental results in two different settings show that our graph propagation method significantly improves performance over two strong baselines under intrinsic and extrinsic evaluation metrics.},
+	url = {http://summit.sfu.ca/item/13542},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/13542/etd8018_MRazmara.pdf}
+}
+
+
+@mastersthesis{vadlapudi-msc-thesis:2013,
+	author = {Vadlapudi, Ravikiran},
+	title = {Verbose Labels for Semantic Roles},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2013,
+	month = jan,
+	abstract = {We introduce a new task that takes the output of semantic role labeling and associates each of the argument slots for a predicate with a verbose description such as buyer or thing_bought to semantic role labels such as Arg0 and Arg1 for predicate like "buy". Ambiguous verb senses and syntactic alternations make this a challenging task. We adapt the frame information for each verb in the PropBank to create our training data. We propose various baseline methods and more informed models which can identify such verbose labels with 95.2\% accuracy if the semantic roles have already been correctly identified. We extend our work to text visualization to illustrate the importance of verbose labeling. As a proof of concept, we built an interactive browser for human history articles from Wikipedia, called lensingWikipedia.},
+	url = {http://summit.sfu.ca/item/12617},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12617/etd7632_RVadlapudi.pdf}
+}
+
+%% 2012
 
 @mastersthesis{razavi-msc-thesis:2012,
-	author = {Marzieh Razavi},
+	author = {Razavi, Marzieh},
 	title = {Ensembles of diverse clustering-based discriminative dependency parsers},
 	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
 	year = 2012,
 	month = aug,
-	abstract = {Syntactic parsing and dependency parsing in particular are a core component of many Natural Language Processing (NLP) tasks and applications. Improvements in dependency parsing can help improve machine translation and information extraction applications among many others. In this thesis, we extend the framework of (Koo, Carreras, and Collins, 2008) for dependency parsing which uses a single clustering method for semi-supervised learning. We make use of multiple diverse clustering methods to build multiple discriminative dependency parsing models in the Maximum Spanning Tree (MST) parsing framework (McDonald, Crammer, and Pereira, 2005). All of these diverse clustering-based parsers are then combined together using a novel ensemble model, which performs exact inference on the shared hypothesis space of all the parser models. We show that diverse clustering-based parser models and the ensemble method together significantly improves unlabeled dependency accuracy from 90.82% to 92.46% on Section 23 of the Penn Treebank. We also show significant improvements in domain adaptation to the Switchboard and Brown corpora.},
-	url = {https://theses.lib.sfu.ca/thesis/etd7405},
-	pdf = {https://theses.lib.sfu.ca/sites/all/files/public_copies/etd7405--301146022-thesis.pdf}
+	abstract = {Syntactic parsing and dependency parsing in particular are a core component of many Natural Language Processing (NLP) tasks and applications. Improvements in dependency parsing can help improve machine translation and information extraction applications among many others. In this thesis, we extend the framework of (Koo, Carreras, and Collins, 2008) for dependency parsing which uses a single clustering method for semi-supervised learning. We make use of multiple diverse clustering methods to build multiple discriminative dependency parsing models in the Maximum Spanning Tree (MST) parsing framework (McDonald, Crammer, and Pereira, 2005). All of these diverse clustering-based parsers are then combined together using a novel ensemble model, which performs exact inference on the shared hypothesis space of all the parser models. We show that diverse clustering-based parser models and the ensemble method together significantly improves unlabeled dependency accuracy from 90.82\% to 92.46\% on Section 23 of the Penn Treebank. We also show significant improvements in domain adaptation to the Switchboard and Brown corpora.},
+	url = {http://summit.sfu.ca/item/12425},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12425/etd7405_MRazavi.pdf}
 }
 
 @mastersthesis{whitney-msc-thesis:2012,
-	author = {Max Whitney},
+	author = {Whitney, Max Everett},
 	title = {Bootstrapping via Graph Propagation},
 	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
 	year = 2012,
 	month = aug,
 	abstract = {The Yarowsky algorithm is a simple self-training algorithm for bootstrapping learning from a small number of initial seed rules which has proven very effective in several natural language processing tasks. Bootstrapping a classifier from a small set of seed rules can be viewed as the propagation of labels between examples via features shared between them. This thesis introduces a novel variant of the Yarowsky algorithm based on this view. It is a bootstrapping learning method which uses a graph propagation algorithm with a well-defined objective function. The experimental results show that our proposed bootstrapping algorithm achieves state of the art performance or better on several different natural language data sets.},
-	url = {https://theses.lib.sfu.ca/thesis/etd7421},
-	pdf = {https://theses.lib.sfu.ca/sites/all/files/public_copies/etd7421--thesis.pdf}
+	url = {http://summit.sfu.ca/item/12447},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12447/etd7421_MWhitney.pdf}
 }
 
