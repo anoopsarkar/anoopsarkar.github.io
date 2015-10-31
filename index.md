@@ -55,5 +55,19 @@ customjs: shortpubs
 
 ### Graduated Students
 
+<ul>
+{% assign counter = 0 %}
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Graduated" %}
+        {% if counter < 3 %}
+            <li>{{ student.Name }} ({{ student.Program }})</li>
+            {% assign counter = counter | plus: 1 %}
+        {% else %}
+            {% break %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>
+
 ### Recent Research Grants
 
