@@ -10,7 +10,6 @@ function get_years(){
   years = bibtex_reader.get_years($("#bibtex_input").val(),constraints);
   // years = [{"year":"2014","value":"1"},{"year":"2013","value":"2"}]
   $.each(years, function (key, value) {
-    // $('.years').append('<button class="btn years_btn btn-primary" type="button" value=\''+key+'\' > '+key+' (<span class="badge">'+value+'</span>)</button> ');
     $('.years').append('<a href="#" class="years_btn button" year="'+key+'">'+key+'<span class="badge">'+value+'</span></a>');
   });
   $('.years_btn').click(function() {
@@ -34,13 +33,10 @@ function bibtex_js_draw() {
 }
 
 function mytoggle(name){
-    //this.parent.parent.$(".bibtexdata").first()
-    // alert(item);
     $("#"+name).toggle( "drop" );
 }
 
 $(document).ready( function() {
-  // $('.years').append('<button class="btn btn-primary" type="button" value=\'2012\' onclick="bibtex_js_draw()"> 2012 </button> ');
   $(".bibtexdata").hide();
   $(".abstractdata").hide();
   $("#bibtex_input").load( "{{ site.baseurl }}/public/bibtex/theses.bib", bibtex_js_draw );  
