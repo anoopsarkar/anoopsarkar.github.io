@@ -10,9 +10,8 @@ function bibtex_js_draw() {
 }
 
 function mytoggle(name){
-    //this.parent.parent.$(".bibtexdata").first()
-    // alert(item);
     $("#"+name).toggle( "drop" );
+    return false;
 }
 
 $(document).ready( function() {

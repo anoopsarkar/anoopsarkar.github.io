@@ -30,7 +30,3 @@ menu: false
 * Fax: +1 778 782 3045
 {: .contact}
 
-### Photo
-
-<p><img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px"></p>
-

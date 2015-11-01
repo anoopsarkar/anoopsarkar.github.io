@@ -4,6 +4,8 @@ title: Biography
 menu: true
 ---
 
+<p><img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px"></p>
+
 Anoop Sarkar is Professor of Computer Science at [Simon Fraser
 University](http://www.sfu.ca) in British Columbia, Canada where
 he co-directs the [Natural Language Laboratory](http://natlang.cs.sfu.ca).

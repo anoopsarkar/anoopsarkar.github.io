@@ -34,6 +34,7 @@ function bibtex_js_draw() {
 
 function mytoggle(name){
     $("#"+name).toggle( "drop" );
+    return true;
 }
 
 $(document).ready( function() {
