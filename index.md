@@ -93,5 +93,5 @@ customjs: shortpubs
 </ul>
 {% endif %}
 
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/grads">Graduated Students</a> and <a href="{{ site.baseurl }}/grads">People ...</a></span></p>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/grads">Graduated Students</a> and <a href="{{ site.baseurl }}/grads">People I worked with ...</a></span></p>
 
