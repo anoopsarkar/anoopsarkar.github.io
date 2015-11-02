@@ -34,4 +34,18 @@
   semesters: "Summer 2013 (NSERC CRD), Spring 2014 (NSERC CRD)"
   after: "CMU MSc"
 
+- name: "Huang, Yulan"
+  degree: "BSc (SFU DDP)"
+  semesters: "Spring 2014 (NSERC CRD), Summer 2014 (SFU VPR USRA and NSERC)"
+  after: "CMU MSc"
+
+- name: "Yan, Sun"
+  degree: "BSc (SFU DDP)"
+  semesters: "Fall 2014 (NSERC Discovery)"
+  after: "SFU MSc"
+
+- name: "Fu, Di"
+  degree: "BSc (SFU DDP)"
+  semesters: "Fall 2014 (NSERC Discovery)"
+  after: "SFU MSc"
 
