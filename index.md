@@ -75,7 +75,7 @@ customjs: shortpubs
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        <li>{{ student.Name }} (started: {{ student.StartSemester }})</li>
+        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -87,7 +87,7 @@ customjs: shortpubs
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        <li>{{ student.Name }} (started: {{ student.StartSemester }})</li>
+        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
     {% endif %}
 {% endfor %}
 </ul>

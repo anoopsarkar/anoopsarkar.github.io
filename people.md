@@ -25,7 +25,7 @@ These are the people I have supervised (as senior supervisor) including graduate
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        <li>{{ student.Name }} (started: {{ student.StartSemester }})</li>
+        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -37,7 +37,7 @@ These are the people I have supervised (as senior supervisor) including graduate
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        <li>{{ student.Name }} (started: {{ student.StartSemester }})</li>
+        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -47,8 +47,8 @@ These are the people I have supervised (as senior supervisor) including graduate
 
 <ul>
 {% for postdoc in site.data.postdocs %}
-    <li>{{ postdoc.name }} ({{ postdoc.start }} to {{ postdoc.end }})
-        <ul><li>After: {{ postdoc.after }}</li></ul>
+    <li>{{ postdoc.name }} <span class="smaller">({{ postdoc.start }} to {{ postdoc.end }})</span>
+        <!-- <ul class="smaller"><li>After: {{ postdoc.after }}</li></ul> -->
     </li>
 {% endfor %}
 </ul>
@@ -58,12 +58,23 @@ These are the people I have supervised (as senior supervisor) including graduate
 <ul>
 {% for ugrad in site.data.undergrads %}
     <li>{{ ugrad.name }}
-        <ul>
-        <li>Semesters: {{ ugrad.semesters }}</li>
+        <span class="smaller">(
+        {% for sem in ugrad.semesters %}
+            {{ sem.semester }}
+        {% endfor %}
+        )
+        </span>
+        <!--
+        <ul class="smaller">
+        {% for sem in ugrad.semesters %}
+            <li>{{ sem.semester }} (Funding: {{ sem.funding }})</li>
+        {% endfor %}
+        </li>
         {% if ugrad.after %}
             <li>After: {{ ugrad.after }}</li>
         {% endif %}
         </ul>
+        -->
     </li>
 {% endfor %}
 </ul>

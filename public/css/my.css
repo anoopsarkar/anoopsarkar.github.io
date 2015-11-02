@@ -61,3 +61,7 @@ span.rev {
 .footer {
    margin-top: 10px;
 }
+
+.smaller {
+    font-size: 80%;
+}
