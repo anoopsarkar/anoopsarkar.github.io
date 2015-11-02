@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Student Theses
+title: Graduated Students
 menu: true
 customjs: thesisbib
 ---

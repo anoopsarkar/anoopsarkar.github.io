@@ -51,23 +51,31 @@ customjs: shortpubs
 
 ### Invited Talks
 
+### Research Grants
+
 ### Professional Activities
 
-### Graduated Students
+### Current Students
+
+#### Phd
 
 <ul>
-{% assign counter = 0 %}
 {% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Graduated" %}
-        {% if counter < 3 %}
-            <li>{{ student.Name }} ({{ student.Program }})</li>
-            {% assign counter = counter | plus: 1 %}
-        {% else %}
-            {% break %}
-        {% endif %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
+        <li>{{ student.Name }}</li>
     {% endif %}
 {% endfor %}
 </ul>
 
-### Recent Research Grants
+#### MSc
+
+<ul>
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
+        <li>{{ student.Name }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/grads">Graduated Students ...</a></span></p>
 
