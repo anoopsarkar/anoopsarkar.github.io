@@ -1,0 +1,81 @@
+- name: "Chilana, Parmit"
+  degree: "BSc (SFU)"
+  semesters: 
+    - semester: "Spring 2003"
+      funding: "NSERC USRA"
+    - semester: "Summer 2003"
+      funding: "NSERC USRA"
+
+- name: "Whitney, Max"
+  degree: "BSc (SFU)"
+  semesters: 
+    - semester: "Fall 2008"
+      funding: "NSERC Discovery"
+    - semester: "Summer 2009"
+      funding: "NSERC Discovery"
+  after: "MSc with me"
+
+- name: "Faruqui, Manaal"
+  degree: "BSc (IIT Kharagpur)"
+  semesters: 
+    - semester: "Summer 2009"
+      funding: "MITACS Globalink"
+  after: "CMU PhD"
+
+- name: "Chatterjee, Diptesh"
+  degree: "BSc (IIT Kharagpur)"
+  semesters: 
+    - semester: "Summer 2010"
+      funding: "MITACS Globalink"
+  after: "Google India &raquo; Rocket Fuel &raquo; FireEye"
+
+- name: "Kong, Mengyun"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2011"
+      funding: "Google"
+
+- name: "Jiang, Yuhuan"
+  degree: "BSc (Chongqing Univ)"
+  semesters: 
+    - semester: "Summer 2013"
+      funding: "MITACS Globalink"
+
+- name: "Zhang, Haotian"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2013"
+      funding: "NSERC CRD"
+
+- name: "Wang, Ziqi"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2013"
+      funding: "NSERC CRD"
+    - semester: "Spring 2014"
+      funding: "NSERC CRD"
+  after: "CMU MSc"
+
+- name: "Huang, Yulan"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Spring 2014"
+      funding: "NSERC CRD"
+    - semester: "Summer 2014"
+      funding: "SFU VPR USRA and NSERC"
+  after: "CMU MSc"
+
+- name: "Yan, Sun"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Fall 2014"
+      funding: "NSERC Discovery"
+  after: "SFU MSc"
+
+- name: "Fu, Di"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Fall 2014"
+      funding: "NSERC Discovery"
+  after: "SFU MSc"
+
