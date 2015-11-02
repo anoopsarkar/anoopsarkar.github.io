@@ -1,0 +1,238 @@
+%% 2015
+
+@mastersthesis{ramtin-msc-thesis:2015,
+	author = {Mehdizadeh Seraj, Ramtin},
+	title = {Paraphrases for Statistical Machine Translation},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2015,
+	month = sep,
+	abstract = {Statistical Machine Translation (SMT) is the task of automatic translation between two natural languages (source language and target language) by using bilingual corpora. To accomplish this goal, machine learning models try to capture human translation patterns inside a bilingual corpus. An open challenge for SMT is finding translations for phrases which are missing in the training data (out-of-vocabulary phrases). We propose to use paraphrases to provide translations for out-of-vocabulary (OOV) phrases. We compare two major approaches to automatically extract paraphrases from corpora: distributional profile (DP) and bilingual pivoting. The multilingual Paraphrase Database (PPDB) is a freely available automatically created (using bilingual pivoting) resource of paraphrases in multiple languages. We show that a graph propagation approach that uses PPDB paraphrases can be used to improve overall translation quality. We provide an extensive comparison with previous work and show that our PPDB-based method improves the BLEU score by up to 1.79 percent points. We show that our approach improves on the state of the art in three different settings: when faced with limited amount of parallel training data; a domain shift between training and test data; and handling a morphologically complex source language.},
+	url = {https://theses.lib.sfu.ca/thesis/etd9252},
+	pdf = {https://theses.lib.sfu.ca/sites/all/files/public_copies/etd9252--ramtinthesis.pdf}
+}
+
+%% 2014
+
+@mastersthesis{dholakia-msc-thesis:2014,
+	author = {Dholakia, Rohit},
+	title = {Real-world use of pivot languages to translate low-resource languages},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2014,
+	month = apr,
+	abstract = {Triangulation refers to the use of a pivot language when translating from a source language to a target language. Previous research in triangulation has only focused on large corpora in the same domain. This thesis conducts the first in-depth study on the use of triangulation for four real-world low-resource languages with realistic data settings, Mawukakan, Maninkakan, Haitian Kreyol and Malagasy, where fluent translations using statistical machine translation are difficult to obtain due to limited amounts of training data in the source-target language pair. We compare and contrast several design choices one needs to consider when using triangulation. We observe that triangulation via French improves translations signiﬁcantly for Mawukakan and Maninkakan, two languages spoken in West Africa. We also improve translations for real-world short messages sent in the aftermath of the Haiti earthquake in 2010 and news articles in Malagasy. As part of the dissertation, we build the first effective translation system for the first two of these languages and outperform the state-of-the-art for Haitian Kreyol. We improve translation quality by injecting more data via pivot languages and show that in realistic data settings carefully considering triangulation design options is important. Furthermore, in all four languages since the low-resource language pair and pivot language pair data typically come from very different domains, we propose a novel iterative method to fine-tune the weighted mixture of direct and pivot based phrase pairs to signiﬁcantly improve translation quality.},
+	url = {http://summit.sfu.ca/item/13993},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/13993/etd8287_RDholakia.pdf}
+}
+
+%% 2013
+
+@phdthesis{sankaran-phd-thesis:2013,
+	author = {Sankaran, Baskaran},
+	title = {Improvements in hierarchical phrase-based Statistical Machine Translation},
+    note = {PhD thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2013,
+	month = dec,
+	abstract = {Hierarchical phrase-based translation (Hiero) is a statistical machine translation (SMT) model that encodes translation as a synchronous context-free grammar derivation between source and target language strings (Chiang, 2005; Chiang, 2007). Hiero models are more powerful than phrase-based models in capturing complex source-target reordering as well as discontiguous phrases, while being easier to estimate and decode with compared to their full syntax-based counterparts. In this thesis, we propose improvements to two broad aspects of the Hiero translation pipeline: i) learning Hiero translation model and estimating their parameters and ii) parameter tuning for discriminative log-linear models that are used to decode with such features. We use our own open-source implementation of Hiero called Kriya (Sankaran et al., 2012b) for all the experiments in this thesis. This thesis contains the following specific contributions: We propose a Bayesian model for learning Hiero grammars as an alternative to the heuristic method usually used in Hiero. Our model learns a peaked distribution of grammars, which consistently performs better than the heuristically extracted grammars across several language pairs (Sankaran et al., 2013a). We propose a novel unified-cascade framework for jointly learning alignments and the Hiero translation rules by removing the disconnect between the alignments and extracted synchronous context-free grammar. This is the first time a joint training framework is being proposed for Hiero, where we iterate the two step inference so that it learns in alternate iterations the phrase alignments and then the Hiero rules that are consistent with alignments. We extend our Bayesian model for extracting compact Hiero translation rules using arity-1 grammars, resulting in up to 57\% reduction in model size while retaining the translation performance (Sankaran et al., 2011; Sankaran et al., 2012a). We propose several novel approaches for parameter tuning of discriminative log-linear models for SMT which can be used for jointly optimizing towards multiple evaluation metrics. We show that our methods for multi-objective tuning for SMT yield substantial gains in translation quality measured through automatic as well as human evaluations (Sankaran et al., 2013b; Duh et al., 2013).},
+	url = {http://summit.sfu.ca/item/13826},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/13826/etd8180_BSankaran.pdf}
+}
+
+@phdthesis{razmara-phd-thesis:2013,
+	author = {Razmara, Majid},
+	title = {Leveraging diverse sources in statistical machine translation},
+    note = {PhD thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2013,
+	month = jul,
+	abstract = {Statistical machine translation (SMT) is often faced with the problem of having insufficient training data for many language pairs. We propose several approaches to leveraging other available sources in SMT systems to enhance the quality of translation. Particularly, we propose approaches suitable in these four scenarios: 1. when an additional parallel corpus is available; 2. when parallel corpora between the source language and a third language and between that language and the target language are available; 3. when an abundant source-language monolingual corpus is available; 4. when no additional resource is available. In the heart of these solutions lie two novel approaches: ensemble decoding and a graph propagation approach for paraphrasing out-of-vocabulary words. Ensemble decoding combines a number of translation systems dynamically at the decoding step. Our experimental results show that ensemble decoding outperforms various strong baselines including mixture models, the current state-of-the-art for domain adaptation in machine translation. We extend ensemble decoding to do triangulation on-the-fly when there exist parallel corpora between the source language and one or multiple pivot languages and between those and the target language. These triangulated systems are dynamically combined together and possibly to a direct source-target system. Experiments in 12 different language pairs show significant improvements over the baselines in terms of BLEU scores. Ensemble decoding can also be used to apply stacking to statistical machine translation. Stacking is an ensemble learning approach that enhances the bias of the models. We show that stacking can consistently and significantly improve over the conventional SMT systems in two different language pairs and three different training sizes. In addition to ensemble decoding, we propose a novel approach to mining translations for OOV words using a monolingual corpus on the source-side language. We induce a lexicon by constructing a graph on the source language phrases and employ a graph propagation technique in order to find translations for those phrases. Experimental results in two different settings show that our graph propagation method significantly improves performance over two strong baselines under intrinsic and extrinsic evaluation metrics.},
+	url = {http://summit.sfu.ca/item/13542},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/13542/etd8018_MRazmara.pdf}
+}
+
+@mastersthesis{vadlapudi-msc-thesis:2013,
+	author = {Vadlapudi, Ravikiran},
+	title = {Verbose Labels for Semantic Roles},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2013,
+	month = jan,
+	abstract = {We introduce a new task that takes the output of semantic role labeling and associates each of the argument slots for a predicate with a verbose description such as buyer or thing_bought to semantic role labels such as Arg0 and Arg1 for predicate like "buy". Ambiguous verb senses and syntactic alternations make this a challenging task. We adapt the frame information for each verb in the PropBank to create our training data. We propose various baseline methods and more informed models which can identify such verbose labels with 95.2\% accuracy if the semantic roles have already been correctly identified. We extend our work to text visualization to illustrate the importance of verbose labeling. As a proof of concept, we built an interactive browser for human history articles from Wikipedia, called lensingWikipedia.},
+	url = {http://summit.sfu.ca/item/12617},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12617/etd7632_RVadlapudi.pdf}
+}
+
+%% 2012
+
+@mastersthesis{razavi-msc-thesis:2012,
+	author = {Razavi, Marzieh},
+	title = {Ensembles of diverse clustering-based discriminative dependency parsers},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2012,
+	month = aug,
+	abstract = {Syntactic parsing and dependency parsing in particular are a core component of many Natural Language Processing (NLP) tasks and applications. Improvements in dependency parsing can help improve machine translation and information extraction applications among many others. In this thesis, we extend the framework of (Koo, Carreras, and Collins, 2008) for dependency parsing which uses a single clustering method for semi-supervised learning. We make use of multiple diverse clustering methods to build multiple discriminative dependency parsing models in the Maximum Spanning Tree (MST) parsing framework (McDonald, Crammer, and Pereira, 2005). All of these diverse clustering-based parsers are then combined together using a novel ensemble model, which performs exact inference on the shared hypothesis space of all the parser models. We show that diverse clustering-based parser models and the ensemble method together significantly improves unlabeled dependency accuracy from 90.82\% to 92.46\% on Section 23 of the Penn Treebank. We also show significant improvements in domain adaptation to the Switchboard and Brown corpora.},
+	url = {http://summit.sfu.ca/item/12425},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12425/etd7405_MRazavi.pdf}
+}
+
+@mastersthesis{whitney-msc-thesis:2012,
+	author = {Whitney, Max Everett},
+	title = {Bootstrapping via Graph Propagation},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2012,
+	month = aug,
+	abstract = {The Yarowsky algorithm is a simple self-training algorithm for bootstrapping learning from a small number of initial seed rules which has proven very effective in several natural language processing tasks. Bootstrapping a classifier from a small set of seed rules can be viewed as the propagation of labels between examples via features shared between them. This thesis introduces a novel variant of the Yarowsky algorithm based on this view. It is a bootstrapping learning method which uses a graph propagation algorithm with a well-defined objective function. The experimental results show that our proposed bootstrapping algorithm achieves state of the art performance or better on several different natural language data sets.},
+	url = {http://summit.sfu.ca/item/12447},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12447/etd7421_MWhitney.pdf}
+}
+
+@mastersthesis{kim-msc-thesis:2012,
+	author = {Kim, Youngchan},
+	title = {Bidirectional segmentation for English-Korean machine translation},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2012,
+	month = apr,
+	abstract = {Unlike English or Spanish, which has each word clearly segmented, morphologically rich languages, such as Korean, do not have clear optimal word boundaries for machine translation (MT). Previous work has shown that segmenting such languages by incorporating information available from parallel corpus can improve MT results. In this thesis we show that this can be improved further by segmenting both source and target languages and present improvement in BLEU scores from 3.13 to 3.46 for English-Korean translation.},
+	url = {http://summit.sfu.ca/item/12241},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/12241/etd7145_YKim.pdf}
+}
+
+%% 2011
+
+@mastersthesis{patell-msc-thesis:2011,
+	author = {Patell, Porus Jimmy},
+	title = {Experiments on phrasal chunking in NLP using exponentiated gradient for structured prediction},
+    note = {MSc project},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2011,
+	month = apr,
+	abstract = {Exponentiated Gradient (EG) updates were originally introduced in (Kivinen and Warmuth, 1997) in the context of online learning algorithms. EG updates were shown by (Collins et al., 2008) to provide fast batch and online algorithms for learning a max-margin classiﬁer. They show that EG can converge quickly due to multiplicative updates, and that EG updates can be factored into tractable components for structured prediction tasks where the number of output labels is exponential in the size of the input. In this project, we implement EG for a Natural Language Processing structured prediction task of phrasal chunking (ﬁnding noun phrases, and other phrases in text) and we compare the performance of EG with other discriminative learning algorithms that have state of the art results on this task.},
+	url = {http://summit.sfu.ca/item/11679},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/11679/etd6600_PPatell.pdf}
+}
+
+%% 2010
+
+@mastersthesis{clifton-msc-thesis:2010,
+	author = {Clifton, Ann},
+	title = {Unsupervised morphological segmentation for statistical machine translation},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2010,
+	month = jul,
+	abstract = {Statistical Machine Translation (SMT) techniques often assume the word is the basic unit of analysis. These techniques work well when producing output in languages like English, which has simple morphology and hence few word forms, but tend to perform poorly on languages like Finnish with very complex morphological systems with a large vocabulary. This thesis examines various methods of augmenting SMT models to use morphological information to improve the quality of translation into morphologically rich languages, comparing them on an English-Finnish translation task. We investigate the use of the three main methods to integrate morphological awareness into SMT systems: factored models, segmented translation, and morphology generation models. We incorporate previously proposed unsupervised morphological segmentation methods into the translation model and combine this segmentation-based system with a Conditional Random Field morphology prediction model. We find the morphology aware models yield significantly more fluent translation output compared to a baseline word-based model.},
+	url = {http://summit.sfu.ca/item/11406},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/11406/etd6183_AClifton.pdf}
+}
+
+%% 2009
+
+@phdthesis{haffari-phd-thesis:2009,
+	author = {Haffari, Gholam Reza},
+	title = {Machine learning approaches for dealing with limited bilingual data in statistical machine translation},
+    note = {PhD thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2009,
+	month = aug,
+	abstract = {Statistical Machine Translation (SMT) models learn how to translate by examining a bilingual parallel corpus containing sentences aligned with their human-produced translations. However, high quality translation output is dependent on the availability of massive amounts of parallel text in the source and target languages. There are a large number of languages that are considered low-density, either because the population speaking the language is not very large, or even if millions of people speak the language, insufficient online resources are available in that language. This thesis covers machine learning approaches for dealing with such situations in statistical machine translation where the amount of available bilingual data is limited. The problem of learning from insufficient labeled training data has been dealt with in machine learning community under two general frameworks: (i) Semi-supervised Learning, and (ii) Active Learning. The complex nature of machine translation task poses severe challenges to most of the algorithms developed in machine learning community for these two learning scenarios. In this thesis, I develop semi-supervised learning as well as active learning algorithms to deal with the shortage of bilingual training data for Statistical Machine Translation task, specific to cases where there is shortage of bilingual training data. This dissertation provides two approaches, unified in what is called the bootstrapping framework, to this problem.},
+	url = {http://summit.sfu.ca/item/9913},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/9913/ETD4896.pdf}
+}
+
+@mastersthesis{grewal-msc-thesis:2009,
+	author = {Grewal, Ajeet},
+	title = {Model adaptation for statistical machine translation},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2009,
+	month = nov,
+	abstract = {Statistical machine translation (SMT) systems use statistical learning methods to learn how to translate from large amounts of parallel training data. Unfortunately, SMT systems are tuned to the domain of the training data and need to be adapted before they can be used to translate data in a different domain. First, we consider a semi-supervised technique to perform model adaptation. We explore new feature extraction techniques, feature combinations and their effects on performance. In addition, we introduce an unsupervised variant of Minimum Error Rate Training (MERT), which can be used to tune the SMT model parameters. We do this by using another SMT model that translates in the reverse direction. We apply this variant of MERT to the model adaptation task. Both of the techniques we explore in this thesis produce promising results in exhaustive experiments we performed for translation from French to English in different domains.},
+	url = {http://summit.sfu.ca/item/9759},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/9759/ETD4817.pdf}
+}
+
+@phdthesis{liu-phd-thesis:2009,
+	author = {Liu, Yudong},
+	title = {Semantic role labeling using lexicalized tree adjoining grammars},
+    note = {PhD thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2009,
+	month = dec,
+	abstract = {The predicate-argument structure (PAS) of a natural language sentence is a useful representation that can be used for a deeper analysis of the underlying meaning of the sentence or directly used in various natural language processing (NLP) applications. The task of semantic role labeling (SRL) is to identify the predicate-argument structures and label the relations between the predicate and each of its arguments. Researchers have been studying SRL as a machine learning problem in the past six years, after large-scale semantically annotated corpora such as FrameNet and PropBank were released to the research community. Lexicalized Tree Adjoining Grammars (LTAGs), a tree rewriting formalism, are often a convenient representation for capturing locality of predicate-argument relations. Our work in this thesis is focused on the development and learning of the state of the art discriminative SRL systems with LTAGs. Our contributions to this field include: We apply to the SRL task a variant of the LTAG formalism called LTAG-spinal and the associated LTAG-spinal Treebank (the formalism and the Treebank were created by Libin Shen). Predicate-argument relations that are either implicit or absent from the original Penn Treebank are made explicit and accessible in the LTAG-spinal Treebank, which we show to be a useful resource for SRL. We propose the use of the LTAGs as an important additional source of features for the SRL task. Our experiments show that, compared with the best-known set of features that are used in state of the art SRL systems, LTAG-based features can improve SRL performance significantly. We treat multiple LTAG derivation trees as latent features for SRL and introduce a novel learning framework -- Latent Support Vector Machines (LSVMs) to the SRL task using these latent features. This method significantly outperforms state of the art SRL systems. In addition, we adapt an SRL framework to a real-world ternary relation extraction task in the biomedical domain. Our experiments show that the use of SRL related features significantly improves performance over the system using only shallow word-based features.},
+	url = {http://summit.sfu.ca/item/9859},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/9859/ETD4905.pdf}
+}
+
+%% 2008
+
+@mastersthesis{song-msc-thesis:2008,
+	author = {Song, Dong},
+	title = {Experimental comparison of discriminative learning approaches for Chinese word segmentation},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2008,
+	month = aug,
+	abstract = {Natural language processing tasks assume that the input is tokenized into individual words. In languages like Chinese, however, such tokens are not available in the written form. This thesis explores the use of machine learning to segment Chinese sentences into word tokens. We conduct a detailed experimental comparison between various methods for word segmentation. We have built two Chinese word segmentation systems and evaluated them on standard data sets. The state of the art in this area involves the use of character-level features where the best segmentation is found using conditional random fields (CRF). The first system we implemented uses a majority voting approach among different CRF models and dictionary-based matching, and it outperforms the individual methods. The second system uses novel global features for word segmentation. Feature weights are trained using the averaged perceptron algorithm. By adding global features, performance is significantly improved compared to character-level CRF models.},
+	url = {http://summit.sfu.ca/item/9070},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/9070/etd4124.pdf}
+}
+
+%% 2007
+
+@mastersthesis{gattani-msc-thesis:2007,
+	author = {Gattani, Akshay Kishore},
+	title = {Automated natural language headline generation using discriminative machine learning models},
+    note = {MSc project},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2007,
+	month = jan,
+	abstract = {Headline or short summary generation is an important problem in Text Summarization and has several practical applications. We present a discriminative learning framework and a rich feature set for the headline generation task. Secondly, we present a novel Bleu measure based scheme for evaluation of headline generation models, which does not require human produced references. We achieve this by building a test corpus using the Google news service. We propose two stacked log-linear models for both headline word selection (Content Selection) and for ordering words into a grammatical and coherent headline (Headline Synthesis). For decoding a beam search algorithm is used that combines the two log-linear models to produce a list of k-best human readable headlines from a news story. Systematic training and experimental results on the Google-news test dataset demonstrate the success and effectiveness of our approach.},
+	url = {http://summit.sfu.ca/item/2546},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/2546/etd2783.pdf}
+}
+
+%% 2005
+
+@mastersthesis{birke-msc-thesis:2005,
+	author = {Birke, Julia},
+	title = {A clustering approach for the unsupervised recognition of nonliteral language},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2005,
+	month = jul,
+	abstract = {In this thesis we present TroFi, a system for separating literal and nonliteral usages of verbs through unsupervised statistical word-sense disambiguation and clustering techniques. TroFi distinguishes itself by redefining the types of nonliteral language handled and by depending purely on sentential context rather than selectional constraint violations and paths in semantic hierarchies. TroFi uses literal and nonliteral seed sets acquired and cleaned without human supervision to bootstrap learning. We adapt a word-sense disambiguation algorithm to our task and add learners, a voting schema, SuperTags, and additional context. Detailed experiments on hand-annotated data and the introduction of active learning and iterative augmentation allow us to build the TroFi Example Base, an expandable resource of literal/nonliteral usage clusters for the NLP community. We also describe some other possible applications of TroFi and the TroFi Example Base. Our basic algorithm outperforms the baseline by 24.4%. Adding active learning increases this to over 35\%.},
+	url = {http://summit.sfu.ca/item/9163},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/9163/etd1753.pdf}
+}
+
+%% 2004
+
+@mastersthesis{shen-msc-thesis:2004,
+	author = {Shen, Hong},
+	title = {Voting between multiple data representations for text chunking},
+    note = {MSc project},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2004,
+	month = jun,
+	abstract = {One major goal of research on Natural Language Processing (NLP) is to process and understand multiple languages. There is arguably a close link between understanding language and the hierarchical analysis of linguistic utterances or sentences. To achieve this goal, much research in NLP has focused on an intermediate task, text chunking, which is the task of finding non-recursive phrases in a given sentence of natural language text. Most of the successful text chunking methods proposed in the last decade have been achieved using machine learning techniques. Recent research shows the combination approach, using simple majority voting or more complex techniques like boosting, is more successful than a single learning model. Voting can be in terms of system combination or data representation (DR) combination. In this project, we consider the hypothesis that voting between multiple data representations can be more accurate than voting between multiple learning models. To show the power of the data representation combination, we present that a simple learning method, in our case a simple trigram Hidden Markov Model (HMM), combined with DR voting techniques can achieve a result better than the best on the CoNLL-2000 text chunking data set. Without using any additional knowledge sources, we achieved 94.01 Fscore for arbitrary phrase identification which is equal to previous best comparable score of 93.91 and 95.23 Fscore for Base NP phrase identification which is better than the current comparable state-of-the-art score of 94.22. In addition, our chunker is considerably faster and simpler than comparably accurate methods in training as well as decoding.},
+	url = {http://summit.sfu.ca/item/7727},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/7727/b37360498.pdf}
+}
+
+@mastersthesis{zhang-msc-thesis:2004,
+	author = {Zhang, Yingjian},
+	title = {Prediction of financial time series with Hidden Markov Models},
+    note = {MSc thesis},
+	school = {School of Computing Science, Faculty of Applied Sciences, Simon Fraser University},
+	year = 2004,
+	month = may,
+	abstract = {In this thesis, we develop an extension of the Hidden Markov Model (HMM) that addresses two of the most important challenges of financial time series modeling: non-stationary and non-linearity. Specifically, we extend the HMM to include a novel exponentially weighted Expectation-Maximization (EM) algorithm to handle these two challenges. We show that this extension allows the HMM algorithm to model not only sequence data but also dynamic financial time series. We show the update rules for the HMM parameters can be written in a form of exponential moving averages of the model variables so that we can take the advantage of existing technical analysis techniques. We further propose a double weighted EM algorithm that is able to adjust training sensitivity automatically. Convergence results for the proposed algorithms are proved using techniques from the EM Theorem.  Experimental results show that our models consistently beat the S\&P 500 Index over five 400-day testing periods from 1994 to 2002, including both bull and bear markets. Our models also consistently outperform the top 5 S\&P 500 mutual funds in terms of the Sharpe Ratio.},
+	url = {http://summit.sfu.ca/item/7728},
+	pdf = {http://summit.sfu.ca/system/files/iritems1/7728/b37360541.pdf}
+}
+

@@ -1,0 +1,67 @@
+
+<textarea id="bibtex_input" style="display:none;"></textarea>
+
+<div class="main">
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div id="bibtex_display"></div>
+
+    <ol reversed="reversed">
+    <div class="bibtex_template"  style="display:none; padding:  0.8em;">
+
+    <li style="padding:  0.2em;">
+      <span>
+        <span class="if title" style="font-weight: bold;">
+          <span class="title"></span>.
+        </span>
+        <span class="author"></span>.
+        <span class="if booktitle" style="font-style: italic;">
+          <span class="booktitle"></span>,
+        </span>
+        <span class="if journal" style="font-style: italic;">
+          <span class="journal"></span>
+        </span>
+        <span class="if volume">
+          <span class="volume"></span>
+          <span class="if number">
+      (<span class="number"></span>)
+          </span>
+          <span class="if pages">
+      :<span class="pages"></span>
+          </span>
+        </span>
+        <span class="year"></span>
+      </span>
+      <br>
+     <span class="if url">
+        <a href="#" class="button url" target="_blank">URL</a>
+      </span>
+      <span class="if pdf">
+        <a href="#" class="button pdf" target="_blank">PDF</a>
+      </span>
+
+      <span class="if bibtex">
+        <a href="#" class="button bibtex_but">BibTeX</a>
+      </span>
+
+      <span class="if abstract">
+        <a href="#" class="button abstract_but">Abstract</a>
+      </span>
+       <br>
+      
+    <span>
+      <span class="if abstract">
+        <div class="abstractdata alert alert-info collapse closed" role="alert"><b>Abstract:</b><p><span class="abstract"></span></p></div>
+      </span>
+      <span class="if bibtex">
+        <div class="bibtexdata alert alert-success collapse closed" role="alert"><b>Bibtex:</b><p><span class="bibtex"></span></p></div>
+      </span>
+    </span>
+
+    </li>
+    </div> <!-- bibtex_template -->
+</ol>
+</div> <!-- panel-body -->
+</div> <!-- panel -->
+</div> <!-- main -->

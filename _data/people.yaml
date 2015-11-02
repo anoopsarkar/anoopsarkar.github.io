@@ -1,0 +1,42 @@
+current:
+    - postdoc:
+    - phd:
+        - name: "Sheikhshabbafghi, Golnar"
+          startsemester: "Fall 2014"
+          project: "Graph-based semi-supervised learning and Bio NLP"
+          status: "Pre depth report"
+        - name: "Mansouri Bigvand, Anahita"
+          startsemester: "Fall 2013"
+          project: "Multilingual word alignment for statistical machine translation"
+          status: "Pre depth report"
+    - msc:
+        - name: "Kou, Xinxin (Vivian)"
+          startsemester: "Fall 2015"
+          project: "Distributed training strategies for structured prediction in NLP"
+        - name: "Wu, Zhelun"
+          startsemester: "Fall 2014"
+          project: "Decipherment methods for dealing with adversarial text"
+        - name: "Shavarani, Sayyedhassan"
+          startsemester: "Fall 2014"
+          project: "Pareto-optimal segmentation strategies for simultaneous machine translation"
+        - name: "Soleimani Nasab, Mohammad Mahdi"
+          startsemester: "Spring 2014"
+          project: "Impact of decoding versus training in bootstrapping for NLP"
+        - name: "Bu, Te"
+          startsemester: "Fall 2013"
+          project: "Joint prediction of word alignment and alignment types for statistical machine translation"
+    - undergrad:
+alums:
+    - postdoc:
+    - phd:
+    - msc:
+        - name: "Mehdizadeh Seraj, Ramtin"
+          startsemester: "Fall 2013"
+          endsemester: "Fall 2015"
+          endmonth: "September"
+          endyear: 2015
+          thesistitle: "Paraphrases for Statistical Machine Translation"
+          thesispdf: "https://theses.lib.sfu.ca/sites/all/files/public_copies/etd9252--ramtinthesis.pdf"
+          thesisurl: "https://theses.lib.sfu.ca/thesis/etd9252"
+          destination: "Machine learning engineer at Axiom Zen Inc."
+    - undergrad:
