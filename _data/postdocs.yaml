@@ -1,0 +1,9 @@
+- name: "Schmidt, Mark"
+  start: "Fall 2013"
+  end: "Summer 2014"
+  after: "Assistant Professor at the University of British Columbia"
+
+- name: "Roy, Maxim"
+  start: "Fall 2011"
+  end: "Fall 2012"
+  after: "Nuance Communications"

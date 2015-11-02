@@ -59,8 +59,19 @@ customjs: shortpubs
 
 ### Current Students
 
-#### Phd
+{% assign phd = 0 %}
+{% assign msc = 0 %}
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
+        {% assign phd = phd | plus: 1 %}
+    {% endif %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
+        {% assign msc = msc | plus: 1 %}
+    {% endif %}
+{% endfor %}
 
+{% if phd > 0 %}
+#### Phd
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
@@ -68,7 +79,9 @@ customjs: shortpubs
     {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
+{% if msc > 0 %}
 #### MSc
 
 <ul>
@@ -78,6 +91,7 @@ customjs: shortpubs
     {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/grads">Graduated Students ...</a></span></p>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/grads">Graduated Students</a> and <a href="{{ site.baseurl }}/grads">People ...</a></span></p>
 

@@ -1,0 +1,37 @@
+- name: "Chilana, Parmit"
+  degree: "BSc (SFU)"
+  semesters: "Spring 2003 (NSERC USRA), Summer 2003 (NSERC USRA)"
+
+- name: "Whitney, Max"
+  degree: "BSc (SFU)"
+  semesters: "Fall 2008 (NSERC Discovery), Summer 2009 (NSERC Discovery)"
+  after: "MSc with me"
+
+- name: "Faruqui, Manaal"
+  degree: "BSc (IIT Kharagpur)"
+  semesters: "Summer 2009 (MITACS Globalink)"
+  after: "CMU PhD"
+
+- name: "Chatterjee, Diptesh"
+  degree: "BSc (IIT Kharagpur)"
+  semesters: "Summer 2010 (MITACS Globalink)"
+  after: "Google India &raquo; Rocket Fuel &raquo; FireEye"
+
+- name: "Kong, Mengyun"
+  degree: "BSc (SFU DDP)"
+  semesters: "Summer 2011 (Google)"
+
+- name: "Jiang, Yuhuan"
+  degree: "BSc (Chongqing Univ)"
+  semesters: "Summer 2013 (MITACS Globalink)"
+
+- name: "Zhang, Haotian"
+  degree: "BSc (SFU DDP)"
+  semesters: "Summer 2013 (NSERC CRD)"
+
+- name: "Wang, Ziqi"
+  degree: "BSc (SFU DDP)"
+  semesters: "Summer 2013 (NSERC CRD), Spring 2014 (NSERC CRD)"
+  after: "CMU MSc"
+
+
