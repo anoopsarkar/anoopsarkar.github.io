@@ -5,7 +5,7 @@
 }
 
 .posts li .date {
-  /* float: right; */
+  float: right;
   font-size: 0.6rem;
   text-transform: uppercase;
   color: #9a9a9a;
