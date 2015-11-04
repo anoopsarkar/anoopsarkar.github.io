@@ -25,7 +25,7 @@ customjs: shortpubs
 * Spring 2015: [Machine Learning for Decipherment](http://anoopsarkar.github.io/decipherment-class/)
 * Fall 2014: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 * Fall 2013: [Compilers](http://www.cs.sfu.ca/~anoop/teaching/CMPT-379-Fall-2013/)
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/teaching">Teaching ...</a></span></p>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/teaching">All teaching ...</a></span></p>
 
 ### News and Posts
 
@@ -43,23 +43,23 @@ customjs: shortpubs
     {% endif %}
   {% endfor %}
 </ul>
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/news">News ...</a></span></p>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/news">All news ...</a></span></p>
 
 ### Recent Publications
 
 {% include shortpubs.html %}
 
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/publications">Publications ...</a></span></p>
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/publications">All publications ...</a></span></p>
 
 ### Invited Talks
+
+### Recently Graduated Students
+
+{% include graduatedstudents.html param=2 %}
+
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/people">All students and postdocs</a> and <a href="{{ site.baseurl }}/theses">All student theses ...</a></span></p>
 
 ### Research Grants
 
 ### Professional Activities
-
-### Current Students
-
-{% include currentstudents.html %}
-
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/grads">Graduated Students</a> and <a href="{{ site.baseurl }}/people">People supervised ...</a></span></p>
 

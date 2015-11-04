@@ -2,14 +2,15 @@
 layout: page
 title: People
 menu: true
-customjs: thesisbib
 ---
 
 These are the people I have supervised (as senior supervisor) including graduate and undergraduate students and postdoctoral fellows.
 
-## Current Graduate Students
+## Graduated Students
 
-{% include currentstudents.html %}
+{% include graduatedstudents.html %}
+
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/theses">All student theses ...</a></span></p>
 
 ## Postdoctoral Fellows
 
@@ -20,6 +21,10 @@ These are the people I have supervised (as senior supervisor) including graduate
     </li>
 {% endfor %}
 </ul>
+
+## Current Graduate Students
+
+{% include currentstudents.html %}
 
 ## Undergraduates
 
@@ -47,7 +52,4 @@ These are the people I have supervised (as senior supervisor) including graduate
 {% endfor %}
 </ul>
 
-## Graduated Students
-
-{% include allpubs.html %}
 
