@@ -61,5 +61,5 @@ customjs: shortpubs
 
 ### Research Grants
 
-### Professional Activities
+### Service
 
