@@ -9,39 +9,7 @@ These are the people I have supervised (as senior supervisor) including graduate
 
 ## Current Graduate Students
 
-{% assign phd = 0 %}
-{% assign msc = 0 %}
-{% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        {% assign phd = phd | plus: 1 %}
-    {% endif %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        {% assign msc = msc | plus: 1 %}
-    {% endif %}
-{% endfor %}
-
-{% if phd > 0 %}
-#### Phd
-<ul>
-{% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
-    {% endif %}
-{% endfor %}
-</ul>
-{% endif %}
-
-{% if msc > 0 %}
-#### MSc
-
-<ul>
-{% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
-    {% endif %}
-{% endfor %}
-</ul>
-{% endif %}
+{% include currentstudents.html %}
 
 ## Postdoctoral Fellows
 
