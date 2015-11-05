@@ -15,7 +15,12 @@
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% assign studentdata = site.data.currentstudents[student.Name] %}
+        {% if studentdata.url %}
+            <li><a href="{{ studentdata.url }}">{{ student.Name }}</a> <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% else %}
+            <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% endif %}
     {% endif %}
 {% endfor %}
 </ul>
@@ -27,7 +32,12 @@
 <ul>
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% assign studentdata = site.data.currentstudents[student.Name] %}
+        {% if studentdata.url %}
+            <li><a href="{{ studentdata.url }}">{{ student.Name }}</a> <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% else %}
+            <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% endif %}
     {% endif %}
 {% endfor %}
 </ul>
