@@ -6,6 +6,11 @@ menu: true
 
 <p><img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px"></p>
 
+* Professor of Computer Science, Simon Fraser University, 2002-current.
+* PhD, Computer Science, University of Pennsylvania, 2002.
+* B.Engg, Computer Engineering, University of Pune (PICT), 1993.
+{: .contact}
+
 Anoop Sarkar is Professor of Computer Science at [Simon Fraser
 University](http://www.sfu.ca) in British Columbia, Canada where
 he co-directs the [Natural Language Laboratory](http://natlang.cs.sfu.ca).
@@ -25,10 +30,10 @@ Grant with industrial contributions from Boeing and AeroInfo Systems.
 He received the Excellence in Undergraduate Teaching Award in 2007
 by the SFU Undergraduate Computing Science Student Society (CSSS).
 
-Anoop Sarkar received his Ph.D. from the Department of Computer and
+Anoop Sarkar received his PhD from the Department of Computer and
 Information Sciences at the University of Pennsylvania under Prof.
 Aravind Joshi for his work on semi-supervised statistical parsing
 using Tree-Adjoining Grammars. Based on this background, he continues
 to be interested in formal-language theory (finite-state transducers,
-tree automata, etc.) and stochastic formal grammars.
+tree automata and stochastic formal grammars).
 

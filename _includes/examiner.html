@@ -5,7 +5,7 @@
     {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
         {% assign phd = phd | plus: 1 %}
     {% endif %}
-    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program == "MSc Thesis option" %}
+    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program | scan 'MSc' %}
         {% assign msc = msc | plus: 1 %}
     {% endif %}
 {% endfor %}
@@ -26,7 +26,7 @@
 
 <ul>
 {% for student in site.data.gradstudents %}
-    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program == "MSc Thesis option" %}
+    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program | scan 'MSc' %}
         <li>{{ student.Name }} <span class="smaller">(graduated: {{ student.EndSemester }})</span></li>
     {% endif %}
 {% endfor %}

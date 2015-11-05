@@ -4,9 +4,10 @@ title: People
 menu: true
 ---
 
-These are the people I have supervised (as senior supervisor) including graduate and undergraduate students and postdoctoral fellows.
 
 ## Graduated Students
+
+A list of graduate students I have supervised (as senior supervisor).
 
 {% include graduatedstudents.html %}
 
@@ -24,9 +25,13 @@ These are the people I have supervised (as senior supervisor) including graduate
 
 ## Current Graduate Students
 
+Graduate students I am currently supervising (as senior supervisor).
+
 {% include currentstudents.html %}
 
 ## Undergraduates
+
+Undergraduate students who have worked with me as a Research Assistant.
 
 <ul>
 {% for ugrad in site.data.undergrads %}
