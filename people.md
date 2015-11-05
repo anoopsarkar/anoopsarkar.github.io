@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: linkedpage
 title: People
 menu: true
+relatedpages:
+  - title: "All student theses"
+    url: theses
 ---
 
 
@@ -10,8 +13,6 @@ menu: true
 A list of graduate students I have supervised (as senior supervisor).
 
 {% include graduatedstudents.html %}
-
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/theses">All student theses ...</a></span></p>
 
 ## Postdoctoral Fellows
 

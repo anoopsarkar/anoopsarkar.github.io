@@ -39,7 +39,7 @@ customjs: shortpubs
 
 ### Software
 
-* [SFU natlang on GitHub](https://github.com/sfu-natlang)
+* [SFU natlang lab on GitHub](https://github.com/sfu-natlang)
 * [My GitHub](https://github.com/anoopsarkar)
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/software">All software ...</a></span></p>
 
