@@ -52,4 +52,17 @@ These are the people I have supervised (as senior supervisor) including graduate
 {% endfor %}
 </ul>
 
+<hr/>
+
+## Students Supervised
+
+I served as Supervisor on the thesis committee of these students.
+
+{% include supervisor.html %}
+
+## Students Examined
+
+I served as Examiner on the thesis committee of these students.
+
+{% include examiner.html %}
 
