@@ -6,11 +6,6 @@ menu: true
 
 <p><img padding="10px" src="/public/apple-touch-icon-precomposed.png" class="img-responsive img-rounded" style="max-width:144px"></p>
 
-* Professor of Computer Science, Simon Fraser University, 2002-current.
-* PhD, Computer Science, University of Pennsylvania, 2002.
-* B.Engg, Computer Engineering, University of Pune (PICT), 1993.
-{: .contact}
-
 Anoop Sarkar is Professor of Computer Science at [Simon Fraser
 University](http://www.sfu.ca) in British Columbia, Canada where
 he co-directs the [Natural Language Laboratory](http://natlang.cs.sfu.ca).
@@ -36,4 +31,15 @@ Aravind Joshi for his work on semi-supervised statistical parsing
 using Tree-Adjoining Grammars. Based on this background, he continues
 to be interested in formal-language theory (finite-state transducers,
 tree automata and stochastic formal grammars).
+
+### Employment history
+
+* Professor of Computer Science, Simon Fraser University, from September 2015.
+* Associate Professor of Computer Science, Simon Fraser University, September 2009 to August 2015.
+* Assistant Professor of Computer Science, Simon Fraser University, September 2002 to August 2009.
+* Postdoctoral fellow, Institute for Research in Cognitive Science (IRCS), June 2002 to August 2009.
+* PhD, Computer Science, University of Pennsylvania, 2002.
+* Research Associate, Center for Development of Advanced Computing (C-DAC), 1991-1993.
+* B.Eng, Computer Engineering, University of Pune (PICT), 1991.
+{: .contact}
 
