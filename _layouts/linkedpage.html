@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {{ content }}
+</div>
+
+<div class="related">
+  <h2>Related Pages</h2>
+  <ul class="related-posts">
+    {% for page in page.relatedpages %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}/{{ page.url }}">{{ page.title }}
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

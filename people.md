@@ -1,47 +1,18 @@
 ---
-layout: page
+layout: linkedpage
 title: People
 menu: true
-customjs: thesisbib
+relatedpages:
+  - title: "All student theses"
+    url: theses
 ---
 
-These are the people I have supervised (as senior supervisor) including graduate and undergraduate students and postdoctoral fellows.
 
-## Current Graduate Students
+## Graduated Students
 
-{% assign phd = 0 %}
-{% assign msc = 0 %}
-{% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        {% assign phd = phd | plus: 1 %}
-    {% endif %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        {% assign msc = msc | plus: 1 %}
-    {% endif %}
-{% endfor %}
+A list of graduate students I have supervised (as senior supervisor).
 
-{% if phd > 0 %}
-#### Phd
-<ul>
-{% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
-        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
-    {% endif %}
-{% endfor %}
-</ul>
-{% endif %}
-
-{% if msc > 0 %}
-#### MSc
-
-<ul>
-{% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
-        <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
-    {% endif %}
-{% endfor %}
-</ul>
-{% endif %}
+{% include graduatedstudents.html %}
 
 ## Postdoctoral Fellows
 
@@ -53,7 +24,15 @@ These are the people I have supervised (as senior supervisor) including graduate
 {% endfor %}
 </ul>
 
+## Current Graduate Students
+
+Graduate students I am currently supervising (as senior supervisor).
+
+{% include currentstudents.html %}
+
 ## Undergraduates
+
+Undergraduate students who have worked with me as a Research Assistant.
 
 <ul>
 {% for ugrad in site.data.undergrads %}
@@ -79,7 +58,17 @@ These are the people I have supervised (as senior supervisor) including graduate
 {% endfor %}
 </ul>
 
-## Graduated Students
+<hr/>
 
-{% include allpubs.html %}
+## Students Supervised
+
+I served as Supervisor on the thesis committee of these students.
+
+{% include supervisor.html %}
+
+## Students Examined
+
+I served as Examiner on the thesis committee of these students.
+
+{% include examiner.html %}
 

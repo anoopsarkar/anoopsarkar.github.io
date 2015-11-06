@@ -1,0 +1,44 @@
+
+{% assign phd = 0 %}
+{% assign msc = 0 %}
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
+        {% assign phd = phd | plus: 1 %}
+    {% endif %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
+        {% assign msc = msc | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% if phd > 0 %}
+#### Phd (Total: {{ phd }})
+<ul>
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "PhD" %}
+        {% assign studentdata = site.data.currentstudents[student.Name] %}
+        {% if studentdata.url %}
+            <li><a href="{{ studentdata.url }}">{{ student.Name }}</a> <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% else %}
+            <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if msc > 0 %}
+#### MSc (Total: {{ msc }})
+
+<ul>
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Active" and student.Program == "MSc Thesis option" %}
+        {% assign studentdata = site.data.currentstudents[student.Name] %}
+        {% if studentdata.url %}
+            <li><a href="{{ studentdata.url }}">{{ student.Name }}</a> <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% else %}
+            <li>{{ student.Name }} <span class="smaller">(started: {{ student.StartSemester }})</span></li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>
+{% endif %}

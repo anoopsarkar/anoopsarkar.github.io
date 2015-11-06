@@ -1,0 +1,34 @@
+
+{% assign phd = 0 %}
+{% assign msc = 0 %}
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
+        {% assign phd = phd | plus: 1 %}
+    {% endif %}
+    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
+        {% assign msc = msc | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% if phd > 0 %}
+#### Phd (Total: {{ phd }})
+<ul>
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
+        <li>{{ student.Name }} <span class="smaller">(graduated: {{ student.EndSemester }})</span></li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if msc > 0 %}
+#### MSc (Total: {{ msc }})
+
+<ul>
+{% for student in site.data.gradstudents %}
+    {% if student.YourRole == "SFU Examiner" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
+        <li>{{ student.Name }} <span class="smaller">(graduated: {{ student.EndSemester }})</span></li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endif %}

@@ -5,9 +5,10 @@
 }
 
 .posts li .date {
-  /* float: right; */
+  float: right;
+  margin: 0 200px 0 0;
   font-size: 0.6rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #9a9a9a;
   line-height: 24px
 }
