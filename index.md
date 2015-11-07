@@ -19,12 +19,6 @@ customjs: shortpubs
 * Statistical parsing of natural languages
 * Machine learning for Natural Language Processing
 
-### Schedule
-
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=canadian%40holiday.calendar.google.com&amp;color=%235229A3&amp;src=l0fdahjlgf25v808cnsfp87b38%40group.calendar.google.com&amp;color=%2329527A&amp;src=gsrb686df4mefnaegqgs8kug8k%40group.calendar.google.com&amp;color=%23182C57&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%232952A3&amp;src=5r8pdvqu1avl1473japs3dcevg%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FVancouver" style="border-width:0" width="600" height="200" frameborder="0" scrolling="no"></iframe>
-
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/schedule">Full Schedule ...</a></span></p>
-
 ### News and Posts
 
 <ul class="posts">
@@ -45,9 +39,21 @@ customjs: shortpubs
 
 ### Software
 
-* [Lensing Wikipedia](http://lensingwikipedia.cs.sfu.ca) -- Interactive summaries of history events ([source](https://github.com/sfu-natlang/lensingwikipedia))
-* Hierarchical phrase-based (Hiero) decoder: [Kriya](https://github.com/sfu-natlang/Kriya) 
-* Left to right decoding for SMT: [lrhiero](https://github.com/sfu-natlang/lrhiero)
+<ul>
+{% for sw in site.data.software limit:2 %}
+    <li>
+    {% if sw.url %}
+        <a href="{{ sw.url }}">{{ sw.name }}</a>: {{ sw.about }}.
+    {% else %}
+        {{ sw.name }}: {{ sw.about }}.
+    {% endif %}
+    {% if sw.repo %}
+        [<a href="{{ sw.repo }}">Source</a>]
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>
+
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/software">All software ...</a></span></p>
 
 ### Teaching
@@ -73,4 +79,10 @@ customjs: shortpubs
 {% include graduatedstudents.html param=2 %}
 
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/people">All students and postdocs</a> and <a href="{{ site.baseurl }}/theses">All student theses ...</a></span></p>
+
+### Schedule
+
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=canadian%40holiday.calendar.google.com&amp;color=%235229A3&amp;src=l0fdahjlgf25v808cnsfp87b38%40group.calendar.google.com&amp;color=%2329527A&amp;src=gsrb686df4mefnaegqgs8kug8k%40group.calendar.google.com&amp;color=%23182C57&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%232952A3&amp;src=5r8pdvqu1avl1473japs3dcevg%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FVancouver" style="border-width:0" width="600" height="200" frameborder="0" scrolling="no"></iframe>
+
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/schedule">Full Schedule ...</a></span></p>
 
