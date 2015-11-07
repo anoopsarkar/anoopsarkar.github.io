@@ -1,16 +1,16 @@
 - name: "Lensing Wikipedia"
-  about: "Interacive summaries of human history articles from Wikipedia"
+  about: "Interactive summaries of human history articles from Wikipedia"
   url: "http://lensingwikipedia.cs.sfu.ca/"
   repo: "https://github.com/sfu-natlang/lensingwikipedia"
 
 - name: "lrhiero"
   about: "Left to right decoding for statistical machine translation"
-  url: "http://www.aclweb.org/anthology/D13-1110"
+  paper: "http://www.aclweb.org/anthology/D13-1110"
   repo: "https://github.com/sfu-natlang/lrhiero"
 
 - name: "graphprop-smt"
   about: "Graph propagation for statistical machine translation"
-  url: "http://aclweb.org/anthology/D15-1163"
+  paper: "http://aclweb.org/anthology/D15-1163"
   repo: "https://github.com/sfu-natlang/graphprop-smt"
 
 - name: "glm-parser"
@@ -19,12 +19,12 @@
 
 - name: "Kriya"
   about: "Hierarchical phrase-based (Hiero) decoder"
-  url: "http://ufal.mff.cuni.cz/pbml/97/art-sankaran-razmara-sarkar.pdf"
+  paper: "http://ufal.mff.cuni.cz/pbml/97/art-sankaran-razmara-sarkar.pdf"
   repo: "https://github.com/sfu-natlang/Kriya"
 
 - name: "Yarowsky algorithm"
   about: "Bootstrapping algorithms for semi-supervised learning in NLP"
-  url: "http://natlang.cs.sfu.ca/software/yarowsky.html"
+  paper: "http://natlang.cs.sfu.ca/software/yarowsky.html"
   repo: "http://natlang.cs.sfu.ca/software/yarowsky.html" 
 
 - name: "TroFi"
@@ -34,5 +34,5 @@
 
 - name: "XTAG for NLTK"
   about: "Python code to read, display and parse with the XTAG English (and other) grammars as part of the NLTK project"
-  url: "https://ufal.mff.cuni.cz/pbml/103/art-wang-zhang-sarkar.pdf"
+  paper: "https://ufal.mff.cuni.cz/pbml/103/art-wang-zhang-sarkar.pdf"
   repo: "https://github.com/sfu-natlang/xtag-nltk"

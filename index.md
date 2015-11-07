@@ -44,11 +44,16 @@ customjs: shortpubs
     <li>
     {% if sw.url %}
         <a href="{{ sw.url }}">{{ sw.name }}</a>: {{ sw.about }}.
+    {% elsif sw.repo %}
+        <a href="{{ sw.repo }}">{{ sw.name }}</a>: {{ sw.about }}.
     {% else %}
         {{ sw.name }}: {{ sw.about }}.
     {% endif %}
     {% if sw.repo %}
-        [<a href="{{ sw.repo }}">Source</a>]
+        <a href="{{ sw.repo }}" class="button">Source</a>
+    {% endif %}
+    {% if sw.paper %}
+        <a href="{{ sw.paper }}" class="button">More</a>
     {% endif %}
     </li>
 {% endfor %}
