@@ -62,7 +62,7 @@ Undergraduate students who have worked with me as a Research Assistant.
 
 ## Students Supervised
 
-I served as Supervisor on the thesis committee of these students.
+I served as Supervisor on the thesis committee of these graduated students.
 
 {% include supervisor.html %}
 
