@@ -37,12 +37,6 @@ customjs: shortpubs
 </ul>
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/news">All news and posts ...</a></span></p>
 
-### Software
-
-{% include software.html param=2 %}
-
-<p><span class="moreinfo"><a href="{{ site.baseurl }}/software">All software ...</a></span></p>
-
 ### Teaching
 
 * On sabbatical: Fall 2015 and Spring 2016
@@ -56,6 +50,12 @@ customjs: shortpubs
 {% include shortpubs.html %}
 
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/publications">All publications ...</a></span></p>
+
+### Software
+
+{% include software.html param=2 %}
+
+<p><span class="moreinfo"><a href="{{ site.baseurl }}/software">All software ...</a></span></p>
 
 ### Research Grants
 

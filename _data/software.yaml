@@ -10,7 +10,7 @@
   paper: "http://www.aclweb.org/anthology/D13-1110"
 
 - name: "graphprop-smt"
-  about: "Graph propagation for statistical machine translation"
+  about: "Graph propagation for statistical machine translation using [PPDB](http://paraphrase.org/)"
   repo: "https://github.com/sfu-natlang/graphprop-smt"
   paper: "http://aclweb.org/anthology/D15-1163"
 
