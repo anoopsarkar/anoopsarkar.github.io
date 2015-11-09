@@ -4,25 +4,26 @@ title: Software
 menu: true
 ---
 
-<ul>
+<dl>
 {% for sw in site.data.software %}
-    <li>
-    {% if sw.url %}
-        <a href="{{ sw.url }}">{{ sw.name }}</a>: {{ sw.about }}.
-    {% elsif sw.repo %}
-        <a href="{{ sw.repo }}">{{ sw.name }}</a>: {{ sw.about }}.
-    {% else %}
-        {{ sw.name }}: {{ sw.about }}.
-    {% endif %}
+    <dt>
     {% if sw.repo %}
-        <a href="{{ sw.repo }}" class="button">Source</a>
+        <a href="{{ sw.repo }}">{{ sw.name }}</a>
+    {% else %}
+        {{ sw.name }}
     {% endif %}
+    {% if sw.demo %}
+        <span class="smaller">[<a href="{{ sw.demo }}">Demo</a>]</span>
+    {% endif %}
+    </dt>
+    <dd>
+    <span class="smaller">{{ sw.about }}</span>.
     {% if sw.paper %}
-        <a href="{{ sw.paper }}" class="button">More</a>
+        <span class="smaller">[<a href="{{ sw.paper }}">More</a>]</span>
     {% endif %}
-    </li>
+    </dd>
 {% endfor %}
-</ul>
+</dl>
 
 ### Repositories
 
