@@ -66,9 +66,11 @@ I served as Supervisor on the thesis committee of these graduated students.
 
 {% include supervisor.html %}
 
+{% comment %}
 ## Students Examined
 
 I served as Examiner on the thesis committee of these students.
 
 {% include examiner.html %}
 
+{% endcomment %}
