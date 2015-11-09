@@ -39,26 +39,7 @@ customjs: shortpubs
 
 ### Software
 
-<dl>
-{% for sw in site.data.software limit:2 %}
-    <dt>
-    {% if sw.repo %}
-        <a href="{{ sw.repo }}">{{ sw.name }}</a>
-    {% else %}
-        {{ sw.name }}
-    {% endif %}
-    {% if sw.demo %}
-        <span class="smaller">[<a href="{{ sw.demo }}">Demo</a>]</span>
-    {% endif %}
-    </dt>
-    <dd>
-    <span class="smaller">{{ sw.about }}</span>.
-    {% if sw.paper %}
-        <span class="smaller">[<a href="{{ sw.paper }}">More</a>]</span>
-    {% endif %}
-    </dd>
-{% endfor %}
-</dl>
+{% include software.html param=2 %}
 
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/software">All software ...</a></span></p>
 
