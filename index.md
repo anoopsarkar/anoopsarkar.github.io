@@ -6,7 +6,7 @@ customjs: shortpubs
 
 **This page is under construction. Go and visit [my home page at SFU](http://www.cs.sfu.ca/~anoop/) for correct and up to date information.**
 
-* [Professor]({{ site.baseurl }}/professor)
+* [Professor]({% post_url 2015-09-01-professor %})
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
@@ -23,9 +23,15 @@ If you are interested in working with me, before you email me, please read my <a
 </div>
 
 ### Research
+<div class="more">
+    <ul class="navigate">
+        <li><a href="{{ site.baseurl }}/research">More on research</a></li>
+    </ul>
+</div>
 
 * Statistical machine translation
 * Statistical parsing of natural languages
+* Multilingual Natural Language Processing
 * Machine learning for Natural Language Processing
 
 ### News and Posts
