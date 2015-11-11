@@ -1,0 +1,40 @@
+- name: "Lensing Wikipedia"
+  about: "Interactive summaries of human history articles from Wikipedia"
+  repo: "https://github.com/sfu-natlang/lensingwikipedia"
+  demo: "http://lensingwikipedia.cs.sfu.ca/"
+  paper: "http://www.cs.sfu.ca/~anoop/papers/pdf/akbc2013.pdf"
+
+- name: "lrhiero"
+  about: "Left to right decoding for statistical machine translation"
+  repo: "https://github.com/sfu-natlang/lrhiero"
+  paper: "http://www.aclweb.org/anthology/D13-1110"
+
+- name: "graphprop-smt"
+  about: "Graph propagation for statistical machine translation using [PPDB](http://paraphrase.org/)"
+  repo: "https://github.com/sfu-natlang/graphprop-smt"
+  paper: "http://aclweb.org/anthology/D15-1163"
+
+- name: "glm-parser"
+  about: "Multilingual natural language dependency parsing using Tree-adjoining Grammars (under development)"
+  repo: "https://github.com/sfu-natlang/glm-parser"
+
+- name: "Kriya"
+  about: "Hierarchical phrase-based (Hiero) decoder"
+  repo: "https://github.com/sfu-natlang/Kriya"
+  paper: "http://ufal.mff.cuni.cz/pbml/97/art-sankaran-razmara-sarkar.pdf"
+
+- name: "Yarowsky algorithm"
+  about: "Bootstrapping algorithms for semi-supervised learning in NLP"
+  repo: "http://natlang.cs.sfu.ca/software/yarowsky.html" 
+  paper: "http://aclweb.org/anthology/P/P12/P12-1065.pdf"
+  data: "http://aclweb.org/anthology/attachments/P/P12/P12-1065.Datasets.zip"
+
+- name: "TroFi"
+  about: "Metaphor dataset: literal versus non-literal uses of words"
+  repo: "https://github.com/anoopsarkar/trofi-metaphor-data"
+  paper: "http://aclweb.org/anthology/E/E06/E06-1042.pdf"
+
+- name: "XTAG for NLTK"
+  about: "Python code to read and display the XTAG English (and other) grammars"
+  repo: "https://github.com/sfu-natlang/xtag-nltk"
+  paper: "https://ufal.mff.cuni.cz/pbml/103/art-wang-zhang-sarkar.pdf"

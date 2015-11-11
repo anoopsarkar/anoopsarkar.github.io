@@ -1,7 +1,6 @@
 ---
-layout: page
-title: On Being a Professor
-menu: false
+layout: post
+title: "On Being a Professor"
 ---
 
 An excerpt from _Master and Commander_ by Patrick O'Brian. 

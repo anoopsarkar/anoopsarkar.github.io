@@ -491,7 +491,7 @@ function BibtexDisplay() {
   this.displayBibtex = function(input, output, constraints) {
     // parse bibtex input - filter_type, filter_value
 
-    console.log(constraints);
+    // console.log(constraints);
     var b = new BibtexParser();
     b.setInput(input);
     b.bibtex();
