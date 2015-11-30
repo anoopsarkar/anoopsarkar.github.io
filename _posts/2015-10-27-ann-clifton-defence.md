@@ -27,3 +27,4 @@ framework for latent structure learning for machine translation,
 in which the latent segmentation and alignment of the parallel
 training data inform the translation model.
 
+More information on the [Student theses page]({{ site.baseurl }}/theses)
