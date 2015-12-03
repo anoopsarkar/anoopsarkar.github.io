@@ -14,7 +14,7 @@ If you have watched any documentary on the Apollo space program, you've heard (a
 
 What does "the other things" refer to?
 
-The answer is clear from watching [video footage of the entire speech](http://www.open-video.org/details.php?videoid=4865) (also on [YouTube](https://youtu.be/WZyRbnpGyzQ?t=8m25s):
+The answer is clear from watching [video footage of the entire speech](http://www.open-video.org/details.php?videoid=4865) (also on [YouTube](https://youtu.be/WZyRbnpGyzQ?t=8m25s)):
 
 > There is no strife, no prejudice, no national conflict in outer
   space as yet. Its hazards are hostile to us all. Its conquest
@@ -30,12 +30,12 @@ The answer is clear from watching [video footage of the entire speech](http://ww
 
 So it seems that the referent for the other things is the set: `{
 "climb the highest mountain", "fly the Atlantic 35 years ago", "Rice
-playing Texas" }` . Apart from the last item, it is quite easy to
+playing Texas" }`. Apart from the last item, it is quite easy to
 grasp Kennedy's comparison. The same set is also presumably the
 referent for the second case of anaphora: one which we intend to
 win, and the others, too. Climbing the Everest and transatlantic
-flight are clear analogies for going to the moon, but the "Rice
-playing Texas" item requires some further explanation.
+flight are clear analogies for going to the moon, but the `"Rice
+playing Texas"` item requires some further explanation.
 
 Here is what Bill Little has to say about the Rice-Texas football
 rivalry in an article published on Sept 24, 2004:
