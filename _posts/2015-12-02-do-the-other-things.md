@@ -14,7 +14,7 @@ If you have watched any documentary on the Apollo space program, you've heard (a
 
 What does "the other things" refer to?
 
-The answer is clear from watching [video footage of the entire speech](http://www.open-video.org/details.php?videoid=4865):
+The answer is clear from watching [video footage of the entire speech](http://www.open-video.org/details.php?videoid=4865) (also on [YouTube](https://youtu.be/WZyRbnpGyzQ?t=8m25s):
 
 > There is no strife, no prejudice, no national conflict in outer
   space as yet. Its hazards are hostile to us all. Its conquest
@@ -67,7 +67,7 @@ will notice that Kennedy, every bit the accomplished public speaker,
 gets the loudest applause just after his line: "Why does Rice play
 Texas?".
 
-On the [video footage](http://www.open-video.org/details.php?videoid=4865),
+On the [video footage](https://youtu.be/WZyRbnpGyzQ?t=8m25s),
 watch closely for the cigar smoking man just to Kennedy's right for
 a good example of the crowd's reaction to Kennedy's comparison of
 the Moon missions with the Rice-Texas football rivalry.
