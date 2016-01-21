@@ -3,12 +3,7 @@ layout: post
 title: "The ideal meeting"
 ---
 
-The most eloquent description I have found of the experience
-of technical meetings with people like
-[Aravind Joshi](https://en.wikipedia.org/wiki/Aravind_Joshi), 
-[Fred Jelinek](https://en.wikipedia.org/wiki/Frederick_Jelinek), 
-and [Fernando Pereira](https://sites.google.com/site/fernandopereira/)
-is the following excerpt from _In the First Circle: The First Uncensored Edition_
+The following excerpt is from _In the First Circle: The First Uncensored Edition_
 by [Aleksandr Solzhenitsyn](https://en.wikipedia.org/wiki/Aleksandr_Solzhenitsyn). 
 
 The scene is set in [Sharashka](https://en.wikipedia.org/wiki/Sharashka)

@@ -63,6 +63,8 @@
       funding: "NSERC CRD"
     - semester: "Summer 2014"
       funding: "SFU VPR USRA and NSERC"
+    - semester: "Spring 2015"
+      funding: "Google"
   after: "CMU MSc"
 
 - name: "Yan, Sun"
@@ -78,4 +80,28 @@
     - semester: "Fall 2014"
       funding: "NSERC Discovery"
   after: "SFU MSc"
+
+- name: "Jin, Torres"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2015"
+      funding: "Google"
+
+- name: "Vacariu, Andrei"
+  degree: "BSc (SFU)"
+  semesters: 
+    - semester: "Spring 2015"
+      funding: "Google"
+    - semester: "Summer 2015"
+      funding: "Google"
+    - semester: "Fall 2015"
+      funding: "NSERC DAS"
+
+- name: "Wang, Yizhou"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2015"
+      funding: "Google"
+    - semester: "Fall 2015"
+      funding: "NSERC DAS"
 
