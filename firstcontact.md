@@ -21,6 +21,7 @@ Although I try my best to respond to all my email, due the large volume I cannot
 1. Look at what [previous students in my lab]({{ site.baseurl }}/people) have accomplished.
 1. If you are a prospective student, postdoc or potential collaborator of any kind please find the appropriate section below that matches your background.
 1. After reading this page, if you do contact me please add the code: `X.TcyM6CTZ` to the subject line of your email, e.g. `Subject: Graduate research position in NLP at SFU? (X.TcyM6CTZ)`. Please do not attach any documents (send a URL instead).
+1. If you are in the Greater Vancouver area email me to meet and talk about NLP. You can also show up and attend the [SFU Natural Language Lab](http://natlang.cs.sfu.ca) weekly lab meetings. Visitors are welcome.
 
 ## Prospective graduate students: Applying for MSc and PhD
 
@@ -32,19 +33,15 @@ About open lab positions: we usually have at least 1-2 open positions every year
 
 All internship applications should apply through the [MITACS Globalink program](http://www.mitacs.ca/en/programs/globalink). Every year I usually have a project available that you can apply for through the Globalink program. I am unable to hire any summer interns except through the Globalink program.
 
-## SFU Undergraduate students
+## SFU undergraduate students
 
 If you're in the undergraduate program at SFU, and you are interested in NLP and working with me, please email me (see instructions above) to set up an appointment. Consider applying for the [NSERC USRA program](http://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) and the [SFU VP Research USRA program](https://www.sfu.ca/dean-gradstudies/awards/undergraduate-awards/undergraduate-research-awards.html).
 
-Take the undergraduate NLP course (CMPT-413: Natural Language Processing).
+Take the undergraduate NLP course: [CMPT-413: Natural Language Processing](http://anoopsarkar.github.io/nlp-class/).
 
-Email me to meet and talk about NLP. You can also show up and attend the [SFU Natural Language Lab](http://natlang.cs.sfu.ca) weekly lab meetings. Visitors are welcome.
+## SFU graduate students
 
-## SFU Graduate students
-
-If you are already a graduate student at SFU first take the graduate level NLP course (CMPT 825: Natural Language Processing). 
-
-Email me to meet and talk about NLP. You can also show up and attend the [SFU Natural Language Lab](http://natlang.cs.sfu.ca) weekly lab meetings. Visitors are welcome.
+If you are already a graduate student at SFU first take the graduate level NLP course: [CMPT 825: Natural Language Processing](http://anoopsarkar.github.io/nlp-class/). 
 
 ## Prospective postdoctoral fellows
 
