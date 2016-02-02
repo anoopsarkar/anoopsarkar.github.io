@@ -25,7 +25,8 @@
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
         {% if counter < max %}
-            {% assign studentdata = site.data.graduatedstudents[student.Name] %}
+            {% capture studentkey %}{{ student.Name }}-PhD{% endcapture %}
+            {% assign studentdata = site.data.graduatedstudents[studentkey] %}
             {% if studentdata.url %}
                 <li>{{ student.Name }}. <a href="{{ studentdata.url }}">{{ student.ThesisTitle }}</a>. <span class="smaller">(from: {{ student.StartSemester }} to: {{ student.EndSemester }})</span></li>
             {% else %}
@@ -56,7 +57,8 @@
 {% for student in site.data.gradstudents %}
     {% if student.YourRole == "Senior Supervisor" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
         {% if counter < max %}
-            {% assign studentdata = site.data.graduatedstudents[student.Name] %}
+            {% capture studentkey %}{{ student.Name }}-MSc{% endcapture %}
+            {% assign studentdata = site.data.graduatedstudents[studentkey] %}
             {% if studentdata.url %}
                 <li>{{ student.Name }}. <a href="{{ studentdata.url }}">{{ student.ThesisTitle }}</a>. <span class="smaller">(from: {{ student.StartSemester }} to: {{ student.EndSemester }})</span></li>
             {% else %}

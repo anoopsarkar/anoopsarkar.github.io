@@ -30,5 +30,6 @@
 1. Fiscal period: `Sep-2002` To: `Dec-2015`
 1. Sum by: `Project`
 1. Click on the `Download to Excel` button on upper right corner
-1. Copy the `xls` file to `_data` and run `python convert-xls.py -i xls-file -o grants.csv` to create `grants.csv`
+1. Copy the `xls` file to `_data` 
+1. Manually convert the entries into grants.yaml
 
