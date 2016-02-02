@@ -16,12 +16,15 @@ relatedpages:
 Although I try my best to respond to all my email, due the large volume I cannot always respond to every email individually. If you do not get a response I hope you have found this page where I try to answer the typical questions you might have about joining or visiting my research lab and admission to graduate studies in computer science at SFU.
 </div>
 
-1. Please read my description of [my research program]({{ site.baseurl }}/research) to see if your research goals are allied with mine.
-1. Read the [SFU Natural Language Lab](http://natlang.cs.sfu.ca) web page to see what we are doing.
-1. Look at what [previous students in my lab]({{ site.baseurl }}/people) have accomplished.
+## Contacting me
+
 1. If you are a prospective student, postdoc or potential collaborator of any kind please find the appropriate section below that matches your background.
 1. After reading this page, if you do contact me please add the code: `X.TcyM6CTZ` to the subject line of your email, e.g. `Subject: Graduate research position in NLP at SFU? (X.TcyM6CTZ)`. Please do not attach any documents (send a URL instead).
 1. If you are in the Greater Vancouver area email me to meet and talk about NLP. You can also show up and attend the [SFU Natural Language Lab](http://natlang.cs.sfu.ca) weekly lab meetings. Visitors are welcome.
+1. Useful information:
+    * [My research program]({{ site.baseurl }}/research).
+    * The [SFU Natural Language Lab](http://natlang.cs.sfu.ca) web page.
+    * Information about [my previous students]({{ site.baseurl }}/people).
 
 ## Prospective graduate students: Applying for MSc and PhD
 
