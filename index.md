@@ -45,7 +45,7 @@ If you are interested in working with me, before you email me, please read my <a
 
 <ul class="posts">
   {% for post in site.posts limit:2 %}
-    {% if post.draft == null %}
+    {% unless post.draft == 'true' %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
           <div>
