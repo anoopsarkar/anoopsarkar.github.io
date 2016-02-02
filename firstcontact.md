@@ -38,7 +38,7 @@ All internship applications should apply through the [MITACS Globalink program](
 
 ## SFU undergraduate students
 
-If you're in the undergraduate program at SFU, and you are interested in NLP and working with me, please email me (see instructions above) to set up an appointment. Consider applying for the [NSERC USRA program](http://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) and the [SFU VP Research USRA program](https://www.sfu.ca/dean-gradstudies/awards/undergraduate-awards/undergraduate-research-awards.html).
+If you are in the undergraduate program at SFU, and you are interested in NLP and working with me, please email me (see instructions above) to set up an appointment. Consider applying for the [NSERC USRA program](http://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) and the [SFU VP Research USRA program](https://www.sfu.ca/dean-gradstudies/awards/undergraduate-awards/undergraduate-research-awards.html).
 
 Take the undergraduate NLP course: [CMPT-413: Natural Language Processing](http://anoopsarkar.github.io/nlp-class/).
 
