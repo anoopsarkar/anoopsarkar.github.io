@@ -4,7 +4,11 @@ timezone: US/Pacific
 markdown:         kramdown
 highlighter:      rouge
 
-permalink:           pretty
+permalink:        pretty
+
+# optionally remove smart quotes
+#kramdown:
+#    smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # Setup
 title:            'Anoop Sarkar'
@@ -20,16 +24,16 @@ baseurl:          ''
 
 # About/contact
 author:
-  name:           'Anoop Sarkar'
-  url:            http://anoopsarkar.github.io
-  email:          anoop@sfu.ca
-  github:         https://github.com/anoopsarkar
-  bitbucket:      https://bitbucket.org/sfu-natlang
-  twitter:        https://twitter.com/anoopsarkar
-
+  name:            'Anoop Sarkar'
+  url:             http://anoopsarkar.github.io
+  email:           anoop@sfu.ca
+  github:          https://github.com/anoopsarkar
+  bitbucket:       https://bitbucket.org/sfu-natlang
+  twitter:         https://twitter.com/anoopsarkar
+ 
 github:
-  repo:           https://github.com/anoopsarkar/anoopsarkar.github.io
+  repo:            https://github.com/anoopsarkar/anoopsarkar.github.io
 
 # Custom vars
-version:             1.0.0
+version:           1.0.0
 

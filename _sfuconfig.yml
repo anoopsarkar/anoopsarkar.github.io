@@ -1,35 +1,4 @@
-exclude: ['README.md']
-timezone: US/Pacific
-
-markdown:         kramdown
-highlighter:      rouge
-
-permalink:           pretty
-
-# Setup
-title:            'Anoop Sarkar'
-tagline:          'ac.ufs@poona'
-description:      'Anoop Sarkar'
 baseurl:          "//www.cs.sfu.ca/~anoop/"
-
-#paginate:         5
-#assets:           /public/
-#imageurl:         /public/images/
-#fileurl:          /public/files/
-#cssurl:           /public/css/
-
 # About/contact
 author:
-  name:           'Anoop Sarkar'
-  url:            http://anoopsarkar.github.io
-  email:          anoop@sfu.ca
-  github:         https://github.com/anoopsarkar
-  bitbucket:      https://bitbucket.org/sfu-natlang
-  twitter:        https://twitter.com/anoopsarkar
-
-github:
-  repo:           https://github.com/anoopsarkar/anoopsarkar.github.io
-
-# Custom vars
-version:             1.0.0
-
+  url:            http://www.cs.sfu.ca/~anoop/
