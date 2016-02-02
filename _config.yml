@@ -10,11 +10,10 @@ permalink:           pretty
 title:            'Anoop Sarkar'
 tagline:          'ac.ufs@poona'
 description:      'Anoop Sarkar'
-#url:              http://anoopsarkar.github.io
-#url:              http://127.0.0.1:4000/
-#baseurl:          ''
-#paginate:         5
+url:              http://anoopsarkar.github.io
+baseurl:          ''
 
+#paginate:         5
 #assets:           /public/
 #imageurl:         /public/images/
 #fileurl:          /public/files/
