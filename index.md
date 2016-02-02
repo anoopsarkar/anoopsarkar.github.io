@@ -4,7 +4,9 @@ title: Home
 customjs: shortpubs
 ---
 
+{::comment}
 **This page is under construction. Go and visit [my home page at SFU](http://www.cs.sfu.ca/~anoop/) for correct and up to date information.**
+{:/comment}
 
 * [Professor]({% post_url 2015-09-01-professor %})
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
@@ -90,8 +92,24 @@ If you are interested in working with me, before you email me, please read my <a
 {% include software.html param=2 %}
 
 ### Research Grants
+<div class="more">
+    <ul class="navigate">
+        <li><a href="{{ site.baseurl }}/grants">All grants</a></li>
+    </ul>
+</div>
+* Google Faculty Research Award, 2014-2015.
+* NSERC Discovery Accelerator Supplements Program, 2012-2015.
+* NSERC Discovery Grants Program, 2003-2007, 2007-2012, 2012-2017.
 
 ### Service
+<div class="more">
+    <ul class="navigate">
+        <li><a href="{{ site.baseurl }}/service">All activities</a></li>
+    </ul>
+</div>
+* Program co-chair, NAACL HLT 2015.
+* Doctoral forum chair for SIAM International Conference on Data Mining, SDM 2015.
+* Tutorials chair for Meeting of the American Machine Translation Association, AMTA 2014.
 
 ### Recently Graduated Students
 <div class="more">

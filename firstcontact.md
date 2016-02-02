@@ -34,7 +34,7 @@ About open lab positions: we usually have at least 1-2 open positions every year
 
 ## International undergraduate students looking for internships
 
-All internship applications should apply through the [MITACS Globalink program](http://www.mitacs.ca/en/programs/globalink). Every year I usually have a project available that you can apply for through the Globalink program. I am unable to hire any summer interns except through the Globalink program.
+All internship applications should apply through the [MITACS Globalink program](http://www.mitacs.ca/en/programs/globalink). Every year I usually have a project available that you can apply for through the Globalink program. Search for my name to find the project description. I am unable to hire any summer interns except through the Globalink program.
 
 ## SFU undergraduate students
 
