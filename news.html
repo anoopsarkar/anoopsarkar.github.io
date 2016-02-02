@@ -9,6 +9,7 @@ relatedpages:
 
 <ul class="posts">
   {% for post in site.posts %}
+    <li> <span class="title">{{ post.title }}</span> </li>
     {% if post.draft == null %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
