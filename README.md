@@ -9,5 +9,6 @@
   * `_posts/*`,
   * `*.md`.
 * To copy to SFU:
+    jekyll build --config=_config.yml,_sfuconfig.yml
     scp -r _site/* linux.cs.sfu.ca:/fas-info/cs/people/Faculty/anoop/.
 
