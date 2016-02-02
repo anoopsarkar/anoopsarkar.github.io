@@ -47,7 +47,7 @@ If you are interested in working with me, before you email me, please read my <a
   {% for post in site.posts limit:2 %}
     {% if post.draft == null %}
       <li>
-        <a href="{{ post.url }}">
+        <a href="{{ site.baseurl }}{{ post.url }}">
           <div>
             <span class="title">{{ post.title }}</span>
             <span class="date">{{ post.date | date_to_string }}</span>
