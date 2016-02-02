@@ -4,10 +4,6 @@ title: Home
 customjs: shortpubs
 ---
 
-{::comment}
-**This page is under construction. Go and visit [my home page at SFU](http://www.cs.sfu.ca/~anoop/) for correct and up to date information.**
-{:/comment}
-
 * [Professor]({% post_url 2015-09-01-professor %})
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
