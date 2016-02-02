@@ -10,5 +10,5 @@
   * `*.md`.
 * To copy to SFU:
     jekyll build --config=_config.yml,_sfuconfig.yml
-    scp -qr _site/* linux.cs.sfu.ca:/fas-info/cs/people/Faculty/anoop/.
+    rsync --delete -avz _site/ anoop@linux.cs.sfu.ca:/fas-info/cs/people/Faculty/anoop
 
