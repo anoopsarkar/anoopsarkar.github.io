@@ -8,3 +8,6 @@
   * `assets/images`,
   * `_posts/*`,
   * `*.md`.
+* To copy to SFU:
+    scp -r _site/* linux.cs.sfu.ca:/fas-info/cs/people/Faculty/anoop/.
+
