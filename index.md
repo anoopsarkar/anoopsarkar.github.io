@@ -54,7 +54,7 @@ If you are interested in working with me, before you email me, please read my <a
           </div>
         </a>
       </li>
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 </ul>
 <!--
