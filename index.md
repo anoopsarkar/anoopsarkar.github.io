@@ -4,7 +4,7 @@ title: Home
 customjs: shortpubs
 ---
 
-* [Professor]({% post_url 2015-09-01-professor %})
+* [Professor]({{ site.baseurl }}{% post_url 2015-09-01-professor %})
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
