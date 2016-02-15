@@ -1,0 +1,122 @@
+
+Begin3
+Title:          TroFi Example Base
+Version:        1.0
+Entered-date:   11 July 2005
+Description:    A database of literal/nonliteral sentence clusters for 50 words
+Keywords:       CLUSTERING NONLITERAL METAPHOR NLP
+Author:         Julia Birke <jbirke@sfu.ca>
+Maintained-by:  Julia Birke <jbirke@sfu.ca>
+Home-page:      http://natlang.cs.sfu.ca/
+Alternate-site:
+Primary-site:   http://natlang.cs.sfu.ca/researchProject.php?s=84
+Platform:       
+Copying-policy: GPL
+End3           
+
+Before installing please read the contents of the LICENSE file that accompanies this distribution.
+
+General Description:
+-------------------
+
+The TroFi Example Base consists of literal and nonliteral usage clusters for 50 English verbs.  
+The clusters contain sentences using these words drawn from The 1987-89 Wall Street Journal (WSJ) Corpus Release 1.  
+The clusters were automatically generated using TroFi, a system for the unsupervised recognition 
+of nonliteral language.  For detailed information on the TroFi Example Base and the system used to produce it, 
+please see:
+
+Birke, J. 2005.  A clustering approach for the unsupervised recognition
+of nonliteral language. Masters Thesis. School of Computing Science.
+Simon Fraser University.
+
+
+Contents:
+--------
+
+The TroFi Example Base contains literal/nonliteral clusters for the following words:
+
+absorb
+assault
+attack
+besiege
+cool
+dance
+destroy
+die
+dissolve
+drag
+drink
+drown
+eat
+escape
+evaporate
+examine
+fill
+fix
+flood
+flourish
+flow
+fly
+grab
+grasp
+kick
+kill
+knock
+lend
+melt
+miss
+pass
+plant
+play
+plow
+pour
+pump
+rain
+rest
+ride
+roll
+sleep
+smooth
+step
+stick
+strike
+stumble
+target
+touch
+vaporize
+wither
+
+Average accuracy is estimated at approximately 64%.
+
+
+Structure:
+---------
+
+The TroFi Example Base is organized by the target words listed above.  Under each target word, first the nonliteral 
+cluster, then the literal cluster, is given.  The order of the examples is dependent on the TroFi run in which they 
+were clustered.  The examples from the original run are given first, in numerical order; the examples from the iterative 
+augmentation run are given next. (See (Birke, 2005))
+
+The examples contain three tab-delimited columns.  
+
+The first column contains an identifier to link the sentence back to the WSJ source files used by TroFi.  For TroFi, 
+the WSJ sentences were split into 86 files.  In an identifier, for example wsj02:2251, the first number is the file 
+number; the second, the line within that file.  
+
+The second column contains one of three labels for the status of human annotation: L (Literal), N (Nonliteral), 
+or U (Unannotated).  There are two reasons a sentence may have an annotation of L or N.  For the first run, 
+all the sentences were manually annotated for testing purposes.  For the iterative augmentation run, only those sentences 
+that were sent to the human for active learning (Birke, 2005) will have an L or N label.  All other sentences have 
+a U label for "Unannotated".  
+
+The third column is the tokenized WSJ sentence.  Each sentence ends with "./."
+
+For example:
+
+***absorb***
+*nonliteral cluster*
+wsj02:2251	U	Another option will be to try to curb the growth in education and other local assistance , which absorbs 66 % of the state 's budget ./.
+wsj03:2839	N	But in the short-term it will absorb a lot of top management 's energy and attention , '' says Philippe Haspeslagh , a business professor at the European management school , Insead , in Paris ./.
+*literal cluster*
+wsj11:1363	L	An Energy Department spokesman says the sulfur dioxide might be simultaneously recoverable through the use of powdered limestone , which tends to absorb the sulfur ./.
+
