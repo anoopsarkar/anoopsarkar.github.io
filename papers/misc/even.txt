@@ -1,0 +1,512 @@
+
+			   Even and Even if
+			  ------------------
+
+1. Introduction
+
+'Even-if' conditionals are problematic in giving a semantics of
+conditionals. Consider the following 'even-if' conditionals where in
+(1a) the consequent is asserted regardless of the truth of the
+antecedent, while this is not true in (1b).
+
+(1) a. Even if the bridge were standing, I would not cross.
+    b. Even if he drank just a little, she would fire him. 
+
+Rather than treating 'even-if' as an idiomatic chunk we expect an
+analysis of 'even-if' conditionals should fall out of a general theory
+of the semantics of 'even' giving us a semantics for 'even-if' which
+is compositional. And so we first want to account for the distribution
+of 'even' in non-conditionals:
+
+(2) Even Grannie was sober.
+
+The intuition about the use of 'even' in (2) is that Grannie was
+sober, someone else was sober too and it's more surprising that
+Grannie was sober than any of the other people being sober. There are
+several ways we can account for this intuition: (a) The minimal view,
+'even' has no semantic contribution, only emphasis. Which means (1)
+can be paraphrased as `Gosh, GRANNIE was sober.' (b) Conversational
+implicature, 'even' has no semantic contribution but triggers an
+implicature which is nondetachable. (c) Semantic view, 'even' has a
+purely truth conditional meaning. (d) Speech acts, 'even' is
+felicitous only when a certain speech act is performed. (a) is
+difficult to maintain. We'll be looking at (b), (c) and (d).
+
+2. 'Even' and conversational implicature
+
+First we look at 'even' as a lexical item that doesn't affect the
+truth conditions but which triggers a conversational implicature. 
+
+Bennett(82) notices that 'even' can operate over almost every part of
+the sentence cf. (3). Define the scope of 'even' to be that part of
+the sentence on which 'even' acts as an operator.
+
+(3) a. Even Max tried on the trousers.
+    b. Max even tried on the trousers.
+    c. Max tried on even the trousers.
+    d. Max tried on the trousers, even.
+    e. Even HER children laughed at him.
+    f. Even her CHILDREN laughed at him.
+
+Bennett(82) gives the following conditions on the felicity of 'even':
+Take an 'even' sentence S, remove 'even' to get S* and then form
+neighbours of S called { S0, S1, ... } by replacing the scope of
+'even' in S with a contextually relevant set of alternatives (although
+Bennett(82) calls this "something else that yields a sentence"). And
+so applying these rules on (4a) we get:
+
+(4) a. (S)  Even the children laughed at him.
+    b. (S*) The children laughed at him.
+    c. (S0) Everybody laughed at him.
+    d. (S1) Nobody laughed at him.
+    e. (S2) His grandmother laughed at him.
+
+Now Bennett(82) defines the following conditions on felicity of
+'even'.
+
+(5) a. Sj is true, where Sj is a neighbour of S, Sj is mutually
+	believed by speaker and hearer and is salient in the
+	discourse. 
+    b. the truth of S* and Sj is part of a single more general
+	truth. This condition takes care of the situation where `his
+	grandmother laughed at him' for an independent and incidental
+	reason from `the children laughed at him'
+    c. it is more surprising that S* is true than that Sj is true.
+
+(5) simply states the condition that in the contextually relevant set
+the scope of `even' is the least likely element to which the assertion
+in S is applied. An important assumption that Bennett(82) makes is
+that among the alternatives that are used to create each Sj is the
+null or empty string. This is used in his analysis of the even-if
+conditional where the consequent is asserted. Lycan(91) complains
+loudly about this and we'll come back to this when we take up his
+analysis.
+
+Bennett(82) can now analyze the difference between (1a) and (1b)
+(i.e. whether the consequent is entailed or not in an even-if
+conditional) to be a difference of the scope of even in the two
+sentences. 
+
+The informal notion of scope of even can be interpreted to be the
+focus of the sentence which gives a set of alternatives over which the
+conventional implicature of `even' applies. This is the tack followed in
+von Fintel(94).
+
+2.1 Introduced-if conditionals
+
+Recall that (1a) reproduced below entails its consequent.
+
+(1) a. Even if the bridge were standing, I would not cross.
+
+Take the scope of `even' to be `if the bridge were standing' and then
+given the null string assumption we have the following:
+
+(6) a. (Sj) I will not cross.
+    b. (S*) If the bridge were standing, I would not cross.
+
+And so 'even' is felicitous as (i) Sj is true, mutually believed and
+salient, (ii) Sj is unified with S* as a wide range of conditions is
+inimical to the crossing of the bridge, and so what Bennett is
+actually saying here is that Sj is equivalent to `Under any condition
+I will not cross.' and (iii) Sj is less surprising than S*.
+
+Hence (6a) is true by (i). (ii) and (iii) are problematic and these
+problems are considered by Lycan(91) and we return to this later.
+
+2.2 Standing-if conditionals
+
+In (1b), reproduced below, the even-if conditional does not entail its
+consequent.
+
+(1) b. [ His boss is puritanical and so if he drank a lot she would
+	fire him ]. Even if he drank just a little, she would fire
+	him. 
+
+Here the scope of `even' is `just a little' (Cf. `If he drank even
+just a little...'). Then we have:
+
+(7) a. (Sj) If he drank a lot she would fire him.
+    b. (S*) If he drank just a little she would fire him.
+
+Here as before (i) Sj is known to be true, (ii) truth of Sj is
+naturally linked to the truth of S* and (iii) S* is more surprising
+than Sj. Note that in (1b) we also get the reading in which whatever
+he did, even if he drank just a little, she would still fire him which
+is a introduced-if conditional simply derived by a different scope of
+`even'.
+
+Notice that the analysis of both types of `even-if' conditionals is
+purely compositional. Lest you forget, Bennett reminds you of this
+fact on every other page.
+
+2.3 Counterexamples
+
+(i) Even with Comparatives
+
+The analysis in Bennett(82) doesn't cover the following case:
+
+(8) My wife's satisfaction is even greater than my own.
+
+Bennett(82) and consequently Lycan(91) both ascribe this use of 'even'
+as a lexical meaning of 'even' distinct from the cases discussed
+above. 
+
+(ii) Barker's Counterexample
+
+(9)  a. A: Looking outside the yard expecting only to find family members
+	   I see 3 figures and remark, {There's Pa and Grandma outside
+	   and even Ronald Reagan!} 
+        B: Even Reagan is outside!
+     b. (Sj) Pa is outside.
+     c. (S*) Reagan is outside.
+
+Barker(91) shows that although (9a) is infelicitous, Bennett's three
+conditions are satisfied. (i) Sj is mutually believed (ii) Sj and S*
+are parts of a single more general truth and (iii) S* is more
+surprising than Sj.
+
+Bennett(82) also expends a great deal of ink trying to argue that an
+even-if P,Q conditional is logically equivalent to an if P,Q
+conditional because (he argues) `even' contributes no truth
+conditional import to the conditional. So this means that every
+model that makes true an even-if conditional also makes true the
+if-conditional obtained by deleting `even'. But this doesn't work as
+in (9') if we have a model in which `John bakes the cake' then in (9'a)
+we have `I do not eat the cake' whereas in (9'b) we have `I eat the
+cake'. 
+
+(9') a. If John doesn't bake the cake, I will eat it.
+     b. Even if John doesn't bake the cake, I will eat it.
+
+The reason for arguing for such a logical equivalence is to show that
+the consequent in both `Even if that finger were bent, Syracuse would
+be in New York' and in `If that finger were bent, Syracuse would be in
+New York' is always asserted. Barker has something to say about this
+and we come back to this while considering his analysis.
+
+3. `Even' as a Universal Quantifier
+
+Lycan(91) asks two questions of the approach taken in Bennett(82):
+
+(i) How can (6a) and (6b) reproduced below be parts of a single and
+more general truth as Bennett's conditions require.
+
+(6) a. (Sj) I will not cross.
+    b. (S*) If the bridge were standing, I would not cross.
+
+and,
+
+(ii) In the case of `Even Grannie laughed at him' there is a reference
+set { x : x laughed at him } which defines the neighbours (Sj) of the
+sentence (S). But there is no such set immediately obvious in
+(6). Even if(!) you change (6a) to the sentences in (10) it doesn't
+rescue the discrepancy that both (10a) and (10b) are less likely than
+(6a) and hence `even' should be infelicitous as per Bennett's theory.
+
+(10) a. If the bridge were in any condition, I would not cross.
+     b. I would not cross under any condition.
+
+As Lycan notes this problem is directly linked to the null string
+assumption we pointed out earlier.
+
+Lycan(91) then embarks on a modified theory of `even-if' which
+contends that `even' in `even-if' means simply `even' just as `only'
+in `only-if' means `only'. This is claimed internal to his theory of
+conditionals. The paper after this is formalized is a successive
+watering down of this strong version in the face of the various uses
+of `even-if'.
+
+3.1 Lycan's Theory of Conditionals
+
+The basic idea is that like `when' and `where', `if' is an operator
+that forms an adverbial clause containing a universal quantifier.
+
+(11) a. I'll leave when you leave.
+     b. ForAll t [ relevant time t ] [ you leave at t -> 
+		I'll leave at t ]
+
+(12) a. I'll leave if you leave.
+     b. ForAll e [ relevant events/conditions e ] [ you leave in e -> 
+		I'll leave in e ]
+
+The restrictor of the quantifier varies with the context. There are
+two requirements on the restrictor in (12):
+
+(i) It must contain at least one event for which the conditional
+antecedent is true.
+(ii) All actual relevant events are in the restrictor set. Else, modus
+ponens fails.
+
+3.2 Even-if
+
+`Even-if' conditionals are analyzed as in (13), where (13a) is
+transformed into (13d) through a series of equivalences.
+
+(13) a. I'll leave even if you leave.
+     b.                      the event that
+        I'll leave even in { events in which        } you leave.
+                             circumstances in which
+     c. I'll leave in any event including the events in which you
+	leave. 
+     d. ForAll e, ForAll f [ e,f in R ] [ In(e, I'll leave) /\
+		( In(f, You leave) -> In(f, I'll leave) ) ]
+
+Note that in the theory of `even-if' presented so far, the consequent
+will always be entailed. Thus Q even if P is felt to assert Q because
+(on the "event" analysis) its first conjunct says in effect that in
+any envisioned event, Q is true.
+
+This brings us back full circle to the Consequent-Entailement problem
+in the sentence (1b) reproduced below as (14a) for which we get the
+analysis due to Lycan in (14b)
+
+(14) a. Even if he drank a little, she would fire him.
+     b. ForAll e, Forall f [ e,f in R ] [ In(e, She fires him) /\
+		( In(f, He drinks a little) -> In(f, She fires him) ) ]
+
+To handle this, Lycan weakens his earlier notion of even=even-if and
+asks the question: what does `even' add semantically to the derivation
+in (14b)?  Seemingly, it adds:
+
+(i) implicit reference to a contextually specified WIDER class.
+(ii) univeral quantification over this class.
+
+Also, the focus of even as defined by Bennett(82) also is crucial in
+the definition of the restrictor set. In (14a) then Lycan admits to
+`even' taking `just a little' as its scope and hence modifying the
+restrictor set to be every amount that he can drink including just a
+little. And so (14b) now becomes (15) where she would fire him iff
+every amount including just a little is such that if he drank that
+amount, she would fire him.
+
+(15) ForAll e, Forall f [ e,f in R ] [ In(e, She fires him) /\
+		( In(f, He drinks) -> In(f, She fires him) ) ]
+
+Lycan(91) then claims that there is independent reason to believe that
+`even' should be a universal quantifier. `Even' is closely akin to
+`only'. Both can occur in almost any grammatical position. Since
+`only' and `even' occur in the same syntactic enivironments and only
+is uncontroversially an universal quantifier, `even' must be one too. 
+
+
+3.3 Counterexamples
+
+(i) `even' as an intensifier of comparatives. This was noted by
+Bennett (in (8)) and proposed to be a different lexical use of
+`even'. Lycan having no analysis to offer, agrees.
+
+(ii) In example (16)
+
+(16) You have to be 11 or 12 or even 13 to get your ears pierced.
+
+This intuitively means that when parents are strict they make children
+wait till they're 13. So if we simply analyze this as univeral
+quantification then we get 'Every age at which any of the relevant
+children is to be allowed by their parents to get their ears pierced,
+including ageees 13 is F' where F can be construed as `at least 11 and
+is required by some parent', 13 being less expected to be required
+than 11 or 12. "This is awkward at best." And since we have (17) below
+Lycan takes this case of `even' also as a comparative intensifier.
+
+(17) *You have to be even 13 to get your ears pierced.
+
+(iii) In example (18)
+
+(18) a. I'll be polite even if you insult me, but I won't be polite if
+	you insult my wife.
+     b. ForAll e, Forall f [ e,f in R ] [ In(e, I'm polite) /\
+		( In(f, you insult me) -> In(f, I'm polite) ) ]
+	   Forall g [ g in R ] [ In(g, you insult my wife) ->
+		In(g, ~(i'm polite)) ]
+
+(18b) entails that there is no event e in R in which you insult my
+wife which contradicts the condition on the restrictor (for the third
+conjunct) which says that such an event (of `insulting my wife') must
+exist. Also, (18a) does not assert `I'll be polite no matter what'. To
+handle this case, Lycan adds the ability to change the restrictor set
+for the third conjunct where an additional possible event is
+"envisioned" of `you insulting my wife'. This contradicts the
+assumption made earlier that all envisioned events were in R. Lycan
+shrugs it off by saying that there is independent evidence for saying
+that modus ponens shouldn't exist.
+
+(iv) If `even' is universal quantification then it shouldn't permit
+exceptions.
+
+(19) [ Gonzo and Bluto are virtually certain to go to this party. But
+	everyone else falls ill and none of the others turn up. Both
+	Gonzo and Bluto are also ill. Bluto doesn't manage to go but
+	Bluto does and on reaching the party says to the host ...] 
+     Even Gonzo stayed at home.
+
+Here lies the rub: Lycan's theory predicts that `Everyone stayed at
+home including Bluto.' This counterexample drives Lycan to weakening
+his theory further. Lycan converts the original quantification which
+meant "every ... including ..." to "every ... PLUS ...". This means
+that `Even Grannie was sober' now means everyone whom you would expect
+to be sober was sober PLUS Grannie was sober too. This leaves open the
+possibility that someone besides Grannie was unexpectedly sober too. 
+
+This handles (19) but now Q even if P does not entail Q as the
+restrictor contains possibilities that are also "expected" and not
+just relevant. Notably, Q is not entailed even in cases earlier
+considered to be cases of consequent entailment. Lycan argues that
+this is not as bad as it seems because in any conditional there is a
+possible reading in which the consequent is not entailed. This last
+weakening of the theory also takes `even' away from `only' as `only'
+still quantifies over the entire universe of contextually specified
+items while `even' is now restricted to a proper subset of this group
+containing just the expected members.
+
+4. Scalar Analyses
+
+You could consider `even' as having inducing a scalar implicature over
+some scale (as defined in Fauconnier) where the scope of even is the
+most unlikely element in the scale for this assertion to made of it
+and the scalar implicature gives universal quantification over the
+scale. Both Lycan(91) and Barker(91) quote (19) as a direct
+contradiction to such an approach as both Gonzo and Bluto are equally
+unlikely to not attend the party the scalar analyses fail. A better
+example from Barker(91) is:
+
+(20) [ There are 3 philosophy students at a rally where police go out
+	of their way to arrest philosophy students ]
+     A: Who got arrested today?
+     B: Just some philosophy students: Fred, Mary, and even Jane.
+
+Here although Jane is the least unlikely person to get arrested, a
+scalar implicature universally quantifies hence predicting (20) to be
+felicitous, but according to Barker(91) (20) is infelicitous.
+
+5. Even as a Speech Act Modifier
+
+Consider (20). A more general form of B's utterance can be written as:
+
+(21) Just some/only some/few/x's were F: (these being) a, b and even
+	c. 
+
+Barker claims that in (21) the `even' implies that we are performing
+some speech act with c (Jane in (20)) while the rest of the sentence
+implies or presupposes that we are performing some other speech act
+with c. Hence (20) is bad. In enumerating people who were arrested
+(20) exhibits an "existential instantiation" speech-act. Barker then
+calls the speech-act associated with `even' the "universal
+instantiation" speech-act which states that the statement S is an
+instance of an implied or asserted universal quantification along the
+current `pragmatic scale'. Let this universal quantification give rise
+to a statement called Su.
+
+Barker then gives his conditions for felicity of an even-statement
+assuming the conventions specified in Bennett(82).
+
+(i) S* and Sj are asserted as universal instantiation cases of an
+implied or stated Su.
+(ii) S* is an extreme case of Su.
+
+And `even' is a modifier of the speech act "universal
+instantiation". This mechanism handles many of the counterexamples
+mentioned so far. (16) was one such case:
+
+(16) You have to be 11 or 12 or even 13 to get your ears pierced.
+
+In this case it is not asserted that the age should be 11 or 12,
+rather these function as age estimates. This means that (16) can be
+paraphrased as (22a):
+
+(22) a. The ages 11, 12, even 13 accords with my impression of an age at
+	which you can get your ears pierced.
+     b. (Sj) The age of 11 accords with my impression.
+     c. (S)  Even the age 13 accords with my impression.
+     d. (S*) The age 13 accords with my impression. 
+     e. (Su) Any height between 11 and 13 accords with my impression.
+
+Then given the value for Sj, S and S* (as 11, 12 even 13 is implicitly
+a conjunct) it is easy to see that S* and Sj fall under Su and S* is
+an extreme case of Su.
+
+The other counterexample to both Bennett and Lycan was even in
+comparatives like in (23a):
+
+(23) a. Their house is even larger than ours.
+     b. (Su) Most/All houses are such that their house is larger than
+	them. 
+     c. (S*) Their house is larger than ours.
+     d. (Sj) Their house is larger than a doghouse.
+
+S* and Sj are derived straightforwardly. Su is derived from the fact
+that `their house' is the scope of `even' and hence (23a) is about how
+large their house is. Then, S* is surprising only if our house is also
+larger than most houses and so S* can be considered an extreme case of
+Su. 
+
+5.1 Introduced-if conditionals
+
+Barker runs into problems (as Lycan did) with the null string
+assumption that allowed Bennett to define even-if conditionals with
+the consequent entailed or asserted. For Barker, there can be no Su
+with Q and if P, Q as instantiation cases.
+
+Barker defines consequent-entailment in terms of the connection
+between P and Q in a even-if P, Q conditional. Q can be asserted no
+matter what if P and Q are not connected in any way. P is connected to
+Q if the context defines a causal or analytic reason for Q to be
+true. Barker uses the `I will not cross' example of an introduced-if
+conditional to show that a connection always holds for this class thus
+reducing it to standing-if conditionals. The argument lies in the
+inference from (24a) to (24c).
+
+(24) a. Even if the bridge is standing I will not cross.
+     b. I won't use any of the available means of crossing.
+     c. I won't cross the river.
+
+So Barker effectively claims that Bennett's class of introduced-if
+conditionals does not exist as a class.
+
+5.2 Still
+
+Now Barker's tack is if introduced-if conditionals do not assert their
+consequent no matter what, is there a category of even-if conditionals
+that always assert their consequent. Barker claims that even-if
+conditionals of the form Even if P Still Q is such a category.
+
+(25) a. Even if Bill pays me $200, I'm still not going to do
+	it. 
+     b. If my finger were bent, Syracuse would still be in New York. 
+
+Barker then shows that the assertion of Q in an Even-if P, Q
+conditional holds only when still appears in the consequent. This is
+explained by Barker by saying that (Still P) is true just in case the
+state of affairs P, or some component of it has persisted against some
+condition. This explains the "bent-finger" problem which was not
+satisfactorily explained in Bennett(82). (25b) would be interpreted as
+(26) because Syracuse remaining in New York has persisted inspite the
+antecedent of the conditional.
+
+(26) If my finger were bent, then the fact of my finger's being bent
+	would not undermine the fact that Syracuse is in New York.
+
+However, von Fintel(94) gives cases of introduced-if conditionals
+where an interpretation can be forced such that the consequent is
+entailed, typically in cases where the antecedent is exhaustive:
+
+(27) a. If John is dead or alive, I will find him.
+     b. If John were the last man on earth, I wouldn't marry him.
+
+------
+Anoop Sarkar, anoop@linc.cis, 3/23/95, Lx554
+
+
+
+References:
+
+Jonathan Bennett. {Even If}. Linguistics and Philosophy (5) 403-418,
+1982. 
+
+William Lycan. {Even and Even If}. Linguistics and Philosophy (14)
+115-150, 1991. 
+
+Stephen Barker. {Even, Still and Counterfactuals}. Linguistics and
+Philosophy (14) 1-38, 1991.
+
+Kai von Fintel. {Restrictions on Quantifier Domains}. PhD diss U
+Mass. 1994.

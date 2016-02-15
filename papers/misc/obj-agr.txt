@@ -1,0 +1,74 @@
+
+??Object Agreement in English
+=============================
+
+This note examines whether an argument can be made for an AGR_o
+functional projection motivated by the need for certain verbs in
+English to optionally check agreement with the object under a
+SPEC-head relation.
+
+There seems to be an optionality to argument-verb agreement in certain
+environments shown in (1) and (2).
+
+(1) a.  There is $\alpha$[ a chair ] in the garden.
+    b.  There are $\alpha$[ four chairs ] in the garden.
+    c.  There's $\alpha$[ four chairs ] in the garden.
+    d. *There is $\alpha$[ four chairs ] in the garden.
+
+(2) a.  There seem t to be lots of reasons to avoid him.
+    b. ?There seems t to be lots of reasons to avoid him.
+    c.  There seems t to be no reason to avoid him.
+
+Both 1(a) and 1(b) can be analyzed as the $\alpha$ having raised at LF
+to adjoin to 'there' where agreement is checked with the verb at
+[SPEC,AGRsP]. But under this analysis 1(c) cannot be acceptable unless
+we allow AGRsP to be an ambiguous projection. But there is little to
+warrant such a capability outside this environment, which motivates
+the move of such an option to another functional projection which we
+call AGRoP. Under such an analysis, AGRoP would be ambiguous between
+having a strong vs. weak feature. With a strong feature $\alpha$ would
+move from complement of the verb to [SPEC,AGRoP] for reasons of
+enlightened self interest and agree with the verb adjoined to AGRo and
+then would move to adjoin to 'there' to pick up case. The verb adjoins
+to TP to give us the overt word order. In the case where AGRoP is weak
+the agreement feature is relaxed and $\alpha$ remains in the
+complement position raising at LF and the derivation converges. This
+does not explain the ungrammaticality of 1(d) nor the contrast between
+1(c) and 1(d).[1]
+
+Perhaps a stronger claim is that object agreement in English occurs in
+predicates that fall into Burzio's generalization.
+
+(3) a.  $\alpha$[ The girls ] worry John t.
+    b.  $\alpha$[ John ] worries the girls t.
+
+(4) a.  $\alpha$[ The girl ] is likely t to win.
+    b.  $\alpha$[ The girls ] are likely t to win.
+
+(5) a.  $\alpha$[ The door ] opens t.
+    b.  $\alpha$[ The doors ] open t.
+
+(6) a.  $\alpha$[ The book ] was read by John t.
+    b.  $\alpha$[ The books ] were read by John t.
+
+The motivation for object agreement in the above examples is weak: we
+can postulate that $\alpha$ moves to [SPEC,AGR_o] where it checks
+agreement with the verb adjoined to AGR_o, and then moves up to
+[SPEC,AGR_s] to satisfy the strong NP feature which tense carries, but
+there is no motivation to move to AGR_o, the agreement can just as
+well be checked at [SPEC,AGR_s]. Nonetheless, the analysis is
+available.
+
+We can also apply this analysis to cases as in (7) below, where the NP
+raises out of the adjectival phrase to [SPEC,AGR_o] at LF to check
+agreement if we assume the above mechanism, and then raises further to
+[SPEC,AGRsP].
+
+(7) a.  [ The girl ] is [ t intelligent ].
+    b.  [ The girls ] are [ t intelligent ].
+
+
+Footnotes:
+-------------------------
+[1] Is (2) similar?
+
