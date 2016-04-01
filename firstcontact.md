@@ -48,5 +48,5 @@ If you are already a graduate student at SFU first take the graduate level NLP c
 
 ## Prospective postdoctoral fellows
 
-I do not have any openings for postdocs at the moment. Open postdoc positions will be announced in the [News]({{ site.baseurl }}/news) section.
+Any currently open postdoc positions will be announced in the [News]({{ site.baseurl }}/news) section.
 
