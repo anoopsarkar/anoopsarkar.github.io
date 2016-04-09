@@ -1,6 +1,6 @@
 <ul>
 {% for pub in site.data.anoopsarkarbib limit:include.param %}
-  <li>{{ pub.title | remove: '}' | remove: '{' }} {{ pub.year }}</li>
+  <li>{{ pub.title }} {{ pub.year }}</li>
 {% endfor %}
 </ul>
 
