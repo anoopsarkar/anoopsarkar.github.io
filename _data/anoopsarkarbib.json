@@ -685,7 +685,7 @@
         "ID": "DBLP:conf/coling/SarkarZ00", 
         "author": "Sarkar, Anoop and Zeman, Daniel", 
         "bibsource": "DBLP, http://dblp.uni-trier.de", 
-        "booktitle": "COLING 2000, 18th International Conference on Computational Linguistics, Proceedings of the Conference, 2 Volumes, July 31 - August 4, 2000, Universit{\\\"a}t des Saarlandes, Saarbr{\\\"u}cken, Germany", 
+        "booktitle": "COLING 2000, 18th International Conference on Computational Linguistics, Proceedings of the Conference, 2 Volumes, July 31 - August 4, 2000, Universit\u00e4t des Saarlandes, Saarbr\u00fccken, Germany", 
         "ee": "http://acl.ldc.upenn.edu/C/C00/C00-2100.pdf", 
         "pages": "691-697", 
         "title": "Automatic Extraction of Subcategorization Frames for Czech", 

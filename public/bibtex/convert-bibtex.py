@@ -1,7 +1,11 @@
 import bibtexparser, json
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.customization import convert_to_unicode
 
 def convert_bibtex(contents):
-    bib = bibtexparser.loads(contents)
+    parser = BibTexParser()
+    parser.customization = convert_to_unicode
+    bib = bibtexparser.loads(contents, parser=parser)
     return json.dumps(bib.entries, sort_keys=True, indent=4)
 
 if __name__ == '__main__':
