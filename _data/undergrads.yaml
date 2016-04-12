@@ -104,4 +104,28 @@
       funding: "Google"
     - semester: "Fall 2015"
       funding: "NSERC DAS"
+    - semester: "Spring 2016"
+      funding: "NSERC DAS"
+
+- name: "La, Sean"
+  degree: "BSc"
+  semesters: 
+    - semester: "Spring 2016"
+      funding: "NSERC DAS"
+
+- name: "Chen, Kingston"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Spring 2016"
+      funding: "NSERC DAS"
+    - semester: "Summer 2016"
+      funding: "NSERC DAS"
+
+- name: "Gu, Jetic"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Spring 2016"
+      funding: "NSERC DAS"
+    - semester: "Summer 2016"
+      funding: "NSERC DAS"
 
