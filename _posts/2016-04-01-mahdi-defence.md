@@ -24,3 +24,6 @@ tasks and has shown significant improvement over previous generative
 approaches.
 
 More information on the [Student theses page]({{ site.baseurl }}/theses)
+
+> No, this is not an elaborate April Fools joke on Mahdi. He really did pass.
+
