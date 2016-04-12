@@ -429,7 +429,7 @@
         "month": "jun", 
         "pages": "590--599", 
         "publisher": "Association for Computational Linguistics", 
-        "title": "Experimental Evaluation of {LTAG}-Based Features for Semantic Role Labeling", 
+        "title": "Experimental Evaluation of LTAG-Based Features for Semantic Role Labeling", 
         "year": "2007"
     }, 
     {
@@ -539,7 +539,7 @@
         "month": "jul", 
         "pages": "127--132", 
         "publisher": "Association for Computational Linguistics", 
-        "title": "Using {LTAG}-Based Features for Semantic Role Labeling", 
+        "title": "Using LTAG-Based Features for Semantic Role Labeling", 
         "year": "2006"
     }, 
     {
@@ -645,7 +645,7 @@
         "link": "http://aclweb.org/anthology/W/W03/W03-1012.pdf", 
         "month": "jul", 
         "publisher": "Association for Computational Linguistics", 
-        "title": "Using {LTAG} Based Features in Parse Reranking", 
+        "title": "Using LTAG Based Features in Parse Reranking", 
         "year": "2003"
     }, 
     {
