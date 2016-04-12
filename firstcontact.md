@@ -25,6 +25,8 @@ Although I try my best to respond to all my email, due the large volume I cannot
     * [My research program]({{ site.baseurl }}/research).
     * The [SFU Natural Language Lab](http://natlang.cs.sfu.ca) web page.
     * Information about [my previous students]({{ site.baseurl }}/people).
+    * [How to email](http://matt.might.net/articles/how-to-email/) by Matt Might
+    * [Email writing tips](http://www.pgbovine.net/email-tips.htm) by Philip Guo
 
 ## Prospective graduate students: Applying for MSc and PhD
 

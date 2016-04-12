@@ -10,15 +10,28 @@ customjs: shortpubs
 * [Simon Fraser University](http://www.sfu.ca)
 {: .contact}
 
-<div class="alert alert-info">
-If you are interested in working with me, before you email me, please read my <a href="{{ site.baseurl }}/firstcontact">First Contact</a> guide.
+<p>
+<div class="button-group">
+    <a href="https://scholar.google.ca/citations?user=KhJJchQAAAAJ" class="button">Google Scholar</a>
+    <a href="https://github.com/anoopsarkar" class="button">Github</a>
+    <a href="https://bitbucket.org/sfu-natlang/" class="button">Bitbucket</a>
+    <a href="https://twitter.com/anoopsarkar" class="button">Twitter</a>
 </div>
+</p>
+
+
 <div class="more">
     <ul class="navigate">
         <li><a href="{{ site.baseurl }}/biography">Biography</a></li>
         <li><a href="{{ site.baseurl }}/contact">Contact details</a></li>
     </ul>
 </div>
+
+<p>
+<div class="alert alert-info">
+If you are interested in working with me, before you email me, please read my <a href="{{ site.baseurl }}/firstcontact">First Contact</a> guide.
+</div>
+</p>
 
 ### Research
 <div class="more">
