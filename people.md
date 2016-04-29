@@ -43,7 +43,7 @@ Undergraduate students who have worked with me as a Research Assistant.
         {% endfor %}
         )
         {% if ugrad.after %}
-            &rarr; {{ ugrad.after }}
+            &raquo; {{ ugrad.after }}
         {% endif %}
         </span>
         <!--
