@@ -42,6 +42,9 @@ Undergraduate students who have worked with me as a Research Assistant.
             {{ sem.semester }}
         {% endfor %}
         )
+        {% if ugrad.after %}
+            &rarr; {{ ugrad.after }}
+        {% endif %}
         </span>
         <!--
         <ul class="smaller">
