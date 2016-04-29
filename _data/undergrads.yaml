@@ -96,6 +96,7 @@
       funding: "Google"
     - semester: "Fall 2015"
       funding: "NSERC DAS"
+  after: "SFU MSc"
 
 - name: "Wang, Yizhou"
   degree: "BSc (SFU DDP)"
@@ -106,6 +107,7 @@
       funding: "NSERC DAS"
     - semester: "Spring 2016"
       funding: "NSERC DAS"
+  after: "Yale MSc"
 
 - name: "La, Sean"
   degree: "BSc"
