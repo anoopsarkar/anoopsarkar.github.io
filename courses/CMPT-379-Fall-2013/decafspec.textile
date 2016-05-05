@@ -27,7 +27,7 @@ h1. The Decaf Programming Language Specification <small>(for CMPT 379 Fall 2013)
 
 h2. Introduction
 
-This is the reference manual for the Decaf programming language which is the programming language specifically for the "CMPT 379: Compilers":http://www.cs.sfu.ca/~anoop/teaching/CMPT-379-Fall-2013/index.html course taught by "Anoop Sarkar":http://www.cs.sfu.ca/~anoop/ at the SFU Computing Science School (Burnaby campus). For more information and other documentation, see the course web page.
+This is the reference manual for the Decaf programming language which is the programming language specifically for the "CMPT 379: Compilers":http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2013/index.html course taught by "Anoop Sarkar":http://www.cs.sfu.ca/~anoop/ at the SFU Computing Science School (Burnaby campus). For more information and other documentation, see the course web page.
 
 Decaf is a strongly typed C-like language. The feature set is trimmed down considerably from what is usually part of a full-fledged programming language. This is done to keep the programming assignments manageable. Despite these limitations, Decaf will be able to handle interesting and non-trivial programs.
 
