@@ -1,0 +1,184 @@
+
+General Resources 
+-----------------
+Some general resources for your projects:
+
+* Word alignment. The canonical implementation of the IBM models
+is GIZA++ (http://code.google.com/p/giza-pp/). However, you may be
+able to use simple IBM Model 1 and 2 alignments for your project
+using the implementation in the cdec SMT decoder
+(http://www.cdec-decoder.org/guide/fast_align.html)
+
+* A good small data set to test your SMT project implementation
+is the Spanish-English demo data from cdec: 
+http://data.cdec-decoder.org/cdec-spanish-demo.tar.gz
+
+* The following data sets are in ~anoop/cmpt825/data
+
+* A large data set in Chinese-English is available in
+chinese-english-phrtable.tar.gz which is suitable for use with a
+phrase-based decoder like Moses. This was built from 2.2M sentence
+pairs from the HK parallel corpus (LDC2004T08) and GALE phase-1
+(LDC2007T23).
+
+* For tuning and testing a multiple reference Chinese-English data
+set is available in chinese-multi-ref.tar.gz
+
+* Several years of the SIGHAN shared task on Chinese word segmentation
+is available in the cnwseg directory.
+
+* Sample run of MERT is in mert.tar.gz
+
+P1. Perceptron-based Chunker using Multiple Representations
+-----------------------------------------------------------
+
+Use the Michael Collins average perceptron algorithm and use that
+as the base learner (replace the trigram tagger) used in the following
+paper:
+
+Voting between Multiple Data Representations for Text Chunking.
+Hong Shen and Anoop Sarkar. In Proceedings of the Eighteenth Meeting
+of the Canadian Society for Computational Intelligence, Canadian
+AI 2005. Victoria, BC. May 9-11, 2005. In Advances in Artificial
+Intelligence, Lecture Notes in Artificial Intelligence 3501, eds.
+Balász Kégl and Guy Lapalme. Springer.
+http://www.cs.sfu.ca/~anoop/papers/pdf/ai05.pdf
+
+The above paper currently has the best result on this data set. For
+example, see the comparison in a recent JMLR paper (page 2463) in
+http://ronan.collobert.com/pub/matos/2011_nlp_jmlr.pdf
+
+The majority voting idea is related to the softmax idea in neural
+nets, and so another extension would be to implement softmax on top
+of multiple perceptron chunkers (each one based on a different
+underlying representation of the chunking task).
+
+P2. Pick a language pair from Workshop on Machine Translation
+-----------------------------------------------------------
+
+Pick an obscure language pair from the freely available WMT shared
+task data and try to beat Google Translate by incorporating new
+features and data pre-processing / post-processing tricks.
+
+e.g. perhaps Haitian Creole to English could be improved by
+incorporating French to Haitian Creole or French to English translation
+information. (one student is already claimed this particular topic)
+
+P3. Dependency Parsing
+----------------------
+
+We have dependency treebanks for 11 different languages. Implement
+a dependency parser for a language that is morphologically complex
+using existing research software such as MALTParser or MSTParser.
+Incorporate new features to improve dependency parsing accuracy.
+
+P4. Chinese Word Segmentation
+-----------------------------
+
+Chinese word segmentation shared tasks have been conducted in the
+ACL special interest group on Chinese languages (SIGHAN).
+
+Use SIGHAN 2006 and/or SIGHAN 2007 data (I've put it in
+~anoop/cmpt825/data/cnwseg)
+
+P4-1: Combining large amounts of unlabeled (unsegmented) Chinese
+text with supervised training data for Chinese word segmentation.
+Use novel features for word segmentation in Chinese: exploit tones,
+"semantic" diacritics, sub-strokes, etc.
+
+P4-2: There are many different types of Chinese word segmentation
+depending on where the annotation was done (mainland, HK, Taiwan,
+etc.). This can be treated as multi-task learning. There is a lot
+of literature in machine learning on multi-task learning.  Does it
+help Chinese word segmentation.
+
+The idea would be to train individual taggers to do wseg for each
+data set, and the compare with a multi-task learner that learns
+from each data set individually but also constrains the learning
+for the other learners.
+
+I recommend using the multi-task learning framework in:
+
+Rie K. Ando and T. Zhang, A framework for learning predictive
+structures from multiple tasks and unlabeled data, Journal of Machine
+Learning Research 6 (2005), 1817-1853.
+http://jmlr.csail.mit.edu/papers/v6/ando05a.html
+
+(many) papers on multi-task (also called transfer) learning:
+
+http://www.cs.berkeley.edu/~russell/classes/cs294/f05/all-papers.html
+
+
+P5. Learning sub-word Alignment
+-------------------------------
+
+
+
+P6. Scale up Avg Perceptron training
+------------------------------------
+
+Sharding the data set for perceptron training is possible
+as shown in:
+
+Distributed Training Strategies for the Structured Perceptron
+R. McDonald, K. Hall and G. Mann
+North American Association for Computational Linguistics (NAACL), 2010.
+http://www.ryanmcd.com/papers/parallel_perceptronNAACL2010.pdf
+
+There are also hashing tricks in machine learning to 
+deal with very large feature vectors:
+
+http://hunch.net/~jl/projects/hash_reps/index.html
+
+In particular, see:
+
+http://www.seas.upenn.edu/~kuzman/publications/ganchev_mobilenlp_2008.pdf
+
+Can these ideas be combined? 
+
+P7. Latent Variable Discriminative Models for NLP
+-------------------------------------------------
+
+One choice is to replicate the following paper:
+
+
+
+P8. Hidden CRF model for word alignment
+----------------------------------------
+
+Replicate the following paper:
+
+Unsupervised Word Alignment with Arbitrary Features. Chris Dyer,
+Jonathan H. Clark, Alon Lavie and Noah A. Smith. In Proceedings of
+the Annual Meeting of the Association for Computational Linguistics.
+http://www.aclweb.org/anthology/P/P11/P11-1042.pdf
+
+P9. Compare PRO for SMT tuning with other ranking algorithms
+-----------------------------------------
+
+Use the splitting rule for picking top k and bottom k translations
+and using ordinal regression (as described in the paper below) to
+compare with PRO for tuning in SMT.
+
+Discriminative Reranking for Machine Translation. Libin Shen, Anoop
+Sarkar and Franz Och. In the Human Language Technology Conference
+and the 5th Meeting of the North American Association for Computational
+Linguistics: HLT-NAACL 2004. Boston, USA. May 2-7, 2004.
+http://aclweb.org/anthology/N/N04/N04-1023.pdf
+
+Another comparison can be done with rankSVM:
+http://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html 
+
+For rankSVM and possibly for ordinal regression the positive
+examples can be labeled 1 but instead of marking the negative
+examples with 0 (which would make it binary classification)
+since both these algorithms are regression algorithms the
+negative examples can be assigned scores based on their
+BLEU scores thus making the classifier learn a ranking
+on the bad outputs based on their BLEU scores. This idea
+was used in the following paper:
+
+Kevin Duh; Katsuhito Sudoh; Xianchao Wu; Hajime Tsukada; Masaaki
+Nagata Learning to Translate with Multiple Objectives. ACL 2012.
+http://aclweb.org/anthology/P/P12/P12-1001.pdf
+

@@ -1,0 +1,10 @@
+$startstate = 1;
+$finalstate[3] = 'true';
+$edges[1] = [2];
+$edges[2] = [2,3];
+$input[1][2] = ['a'];
+$output[1][2] = ['0'];
+$input[2][2] = ['a','b'];
+$output[2][2] = ['0','1'];
+$input[2][3] = ['b'];
+$output[2][3] = ['1'];

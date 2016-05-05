@@ -12,7 +12,7 @@ permalink:        pretty
 
 # Setup
 title:            'Anoop Sarkar'
-tagline:          'ac.ufs@poona'
+tagline:          'SFU Computer Science'
 description:      'Anoop Sarkar'
 baseurl:          ''
 
@@ -36,4 +36,3 @@ github:
 
 # Custom vars
 version:           1.0.0
-

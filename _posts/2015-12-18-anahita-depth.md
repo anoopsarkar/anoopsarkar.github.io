@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Anahita passes her PhD depth exam"
+tags: [graduate-students,news]
 ---
 
 Anahita Mansouri successfully defended her PhD thesis on Dec 18th 2015. 

@@ -1,0 +1,493 @@
+<html>
+<head>
+<title>Decaf Language Reference. cmpt-379 course on Compilers: Burnaby Campus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
+<style>
+body {
+    padding-top: 5px;
+}
+</style>
+<link rel="shortcut icon" href="favicon32.ico" type="image/x-icon" />
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+<h1>The Decaf Programming Language Specification <small>(for <span class="caps">CMPT</span> 379 Fall 2013)</small></h1>
+<h2>Introduction</h2>
+<p>This is the reference manual for the Decaf programming language which is the programming language specifically for the <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2013/index.html"><span class="caps">CMPT</span> 379: Compilers</a> course taught by <a href="http://www.cs.sfu.ca/~anoop/">Anoop Sarkar</a> at the <span class="caps">SFU</span> Computing Science School (Burnaby campus). For more information and other documentation, see the course web page.</p>
+<p>Decaf is a strongly typed C-like language. The feature set is trimmed down considerably from what is usually part of a full-fledged programming language. This is done to keep the programming assignments manageable. Despite these limitations, Decaf will be able to handle interesting and non-trivial programs.</p>
+<p>Here is an example Decaf program:</p>
+<pre><code>extern void print_int(int);</code>
+
+<code>class GreatestCommonDivisor {
+    int a = 10;
+    int b = 20;</code>
+    
+<code>    int main() {
+       int x, y, z;
+       x = a;
+       y = b;
+       z = gcd(x, y);</code>
+
+<code>       // print_int is part of the standard input-output library
+       print_int(z); 
+    }</code>
+
+<code>    // function that computes the greatest common divisor
+    int gcd(int a, int b) {
+       if (b == 0) { return(a); } 
+       else { return( gcd(b, a % b) ); }
+    }
+}</code></pre>
+<h2>Notation</h2>
+<p>The syntax is specified using <a href="http://en.wikipedia.org/wiki/Extended_Backus-Naur_Form">Extended Backus-Naur Form</a> (<span class="caps">EBNF</span>):</p>
+<pre><code>Production  = production_name "=" [ Expression ] "." .
+Expression  = Alternative { "|" Alternative } .
+Alternative = Term { Term } .
+Term        = production_name | token [ "..." token ] | Group | Option | Repetition .
+Group       = "(" Expression ")" .
+Option      = "[" Expression "]" .
+Repetition  = "{" Expression "}" .
+CommaList   = "{" Expression "}+" .</code></pre>
+<p>Productions are expressions constructed from terms and the following operators, in increasing precedence:</p>
+<pre><code>|   alternation
+()  grouping
+[]  option (0 or 1 Expression)
+{}  repetition (0 to n Expressions)
+{}+ comma list (1 to n Expressions comma separated, e.g. x, y, z)</code></pre>
+<p>Lower-case production names are used to identify lexical tokens. Non-terminals are in CamelCase. Lexical tokens are enclosed in double quotes &quot;&quot; or back quotes ``.</p>
+<p>The form <code>a ... b</code> represents the set of characters from a through b as alternatives. The horizontal ellipsis <code>...</code> is also used elsewhere in the spec to informally denote various enumerations or code snippets that are not further specified. The character <code>...</code> is not a token of the Decaf language.</p>
+<h2>Source code representation</h2>
+<p>Decaf source code is encoded as <span class="caps">ASCII</span> text. Upper and lower case characters are considered different characters. For example, <code>if</code> is defined as a keyword, but <code>IF</code> would be considered an identifier.</p>
+<h3><span class="caps">ASCII</span> table</h3>
+<p>The <span class="caps">ASCII</span> table and decimal equivalent for each character is shown below:</p>
+<pre><code>  0 nul    1 soh    2 stx    3 etx    4 eot    5 enq    6 ack    7 bel
+  8 bs     9 ht    10 nl    11 vt    12 np    13 cr    14 so    15 si
+ 16 dle   17 dc1   18 dc2   19 dc3   20 dc4   21 nak   22 syn   23 etb
+ 24 can   25 em    26 sub   27 esc   28 fs    29 gs    30 rs    31 us
+ 32 sp    33  !    34  "    35  #    36  $    37  %    38  &amp;    39  '
+ 40  (    41  )    42  *    43  +    44  ,    45  -    46  .    47  /
+ 48  0    49  1    50  2    51  3    52  4    53  5    54  6    55  7
+ 56  8    57  9    58  :    59  ;    60  &lt;    61  =    62  &gt;    63  ?
+ 64  @    65  A    66  B    67  C    68  D    69  E    70  F    71  G
+ 72  H    73  I    74  J    75  K    76  L    77  M    78  N    79  O
+ 80  P    81  Q    82  R    83  S    84  T    85  U    86  V    87  W
+ 88  X    89  Y    90  Z    91  [    92  \    93  ]    94  ^    95  _
+ 96  `    97  a    98  b    99  c   100  d   101  e   102  f   103  g
+104  h   105  i   106  j   107  k   108  l   109  m   110  n   111  o
+112  p   113  q   114  r   115  s   116  t   117  u   118  v   119  w
+120  x   121  y   122  z   123  {   124  |   125  }   126  ~   127 del</code></pre>
+<p>The set of valid characters in Decaf is all the <span class="caps">ASCII</span> characters:</p>
+<pre><code>all_char = /* all ASCII characters from 7 ... 13 and 32 ... 126 */ .
+char = /* all ASCII characters from 7 ... 13 and 32 ... 126 except char 92 "\" */ .</code></pre>
+<p>Implementation restriction: For compatibility with other tools, a compiler should always disallow the <code>nul</code> character (decimal: 0) in the source text.</p>
+<h3>Letters and Digits</h3>
+<p>The underscore character <code>_</code> is considered a letter.</p>
+<pre><code>letter        = "A" ... "Z" | "a" ... "z" | "_" .
+decimal_digit = "0" ... "9" .
+hex_digit     = "0" ... "9" | "A" ... "F" | "a" ... "f" .
+digit         = "0" ... "9" .</code></pre>
+<h2>Lexical Elements</h2>
+<h3>Comments</h3>
+<p>Decaf only has line comments that start with the character sequence <code>//</code> and stop at the newline character. The newline character is assumed to be part of the comment. The comment representation is as follows:</p>
+<pre><code>// this is a line comment and it includes the newline at the end of the line\n</code></pre>
+<pre><code>comment = // { char } \n</code></pre>
+<h3>Whitespace</h3>
+<p>Whitespace is used to separate tokens, and is defined as follows:</p>
+<pre><code>newline         = /* ASCII character nl : '\n' */ .
+carriage_return = /* ASCII character cr : '\r' */ .
+horizontal_tab  = /* ASCII character ht : '\t' */ .
+vertical_tab    = /* ASCII character vt : '\v' */ .
+form_feed       = /* ASCII character np : '\f' */ .
+space           = /* ASCII character sp : ' ' */ .
+whitespace      = { newline | carriage_return | horizontal_tab | vertical_tab | form_feed | space } .</code></pre>
+<p>The following are special characters that are not part of white space:</p>
+<pre><code>bell         = /* ASCII character bel : '\a' */ .
+backspace    = /* ASCII character bs : '\b' */ .</code></pre>
+<h3>Tokens</h3>
+<p>Tokens are the vocabulary of the Decaf language. There are four classes: identifiers, keywords, operators and literals.  White space is ignored except as it separates tokens that would otherwise combine into a single token. For example, <code>int3</code> is a single token but <code>int 3</code> is two tokens, a keyword <code>int</code> and integer <code>3</code>; and <code>int(3)</code> is a sequence of four tokens: <code>int</code>, <code>(</code>, <code>3</code> and <code>)</code>.</p>
+<p>While breaking the input into tokens, the next token is the longest sequence of characters that form a valid token.</p>
+<h3>Semicolons</h3>
+<p>The Decaf language uses semicolons <code>;</code> as a terminator in a number of productions.</p>
+<h3>Identifiers</h3>
+<p>Identifiers name program entities such as variables and types. An identifier is a sequence of one or more letters and digits. The first character in an identifier must be a letter.</p>
+<pre><code>identifier = letter { letter | digit } .</code></pre>
+<p>For example:</p>
+<pre><code>a
+x9
+_x9
+ThisVariableIsInCamelCase</code></pre>
+<p>Type and constant identifiers are predeclared.</p>
+<h3>Keywords</h3>
+<p>The following keywords are reserved and may not be used as identifiers.</p>
+<pre><code>bool    break   continue  class  else   extends 
+extern  false   for       if     int    new 
+null    return  string    true   void   while  </code></pre>
+<h3>Operators and Delimiters</h3>
+<p>The following character sequences represent operators (see Operators section below) and delimiters.</p>
+<pre><code>{  }   [   ]   ,   ;   (   )  =  
+-  !   +   *   /   &lt;&lt;  &lt;&lt;  &lt;  &gt;  
+%  &lt;=  &gt;=  ==  !=  &amp;&amp;  ||  .</code></pre>
+<h3>Integer literals</h3>
+<p>An integer literal is a sequence of digits representing an integer constant. An optional prefix sets a non-decimal base: 0x or 0X for hexadecimal. In hexadecimal literals, letters a-f and A-F represent values 10 through 15.</p>
+<pre><code>int_lit     = decimal_lit | hex_lit .
+decimal_lit = { decimal_digit } .
+hex_lit     = "0" ( "x" | "X" ) hex_digit { hex_digit } .</code></pre>
+<p>For example, the following are integer literals:</p>
+<pre><code>42
+0xBadFace
+170141183460469231731687303715884105727</code></pre>
+<p>For integer literals, the semantics of range checking occurs later, so that a long sequence of digits such as the last example above which is clearly out of range is still scanned as a single token. The semantic analyzer will come in later and reject this lexeme value as a valid integer constant.</p>
+<h3>Character literals</h3>
+<p>A character literal represents a character constant (see Constants section), which is an integer value that identifies an <span class="caps">ASCII</span> eqivalent. A character literal is expressed as one or more characters enclosed in single quotes. Within the quotes, any character may appear except single quote and newline. A single quoted character represents the <span class="caps">ASCII</span> value of the character itself, while multi-character sequences beginning with a backslash encode special <span class="caps">ASCII</span> values as escaped characters.</p>
+<p>The simplest form represents the single character within the quotes which is equal to the integer <span class="caps">ASCII</span> value. For example:</p>
+<pre><code>'a' // equal to ASCII value 97 stored as an integer type</code></pre>
+<p>After a backslash, certain single-character escapes represent special values:</p>
+<pre><code>\a   ASCII 7:   alert or bell
+\b   ASCII 8:   backspace
+\t   ASCII 9:   horizontal tab
+\n   ASCII 10:  line feed or newline
+\v   ASCII 11:  vertical tab
+\f   ASCII 12:  form feed
+\r   ASCII 13:  carriage return
+\\   ASCII 92:  backslash
+\'   single quote
+\"   double quote</code></pre>
+<p>The following is a list of escaped character codes that refer to the equivalent <span class="caps">ASCII</span> codes above.</p>
+<pre><code>char_lit     = "'" ( char | escaped_char ) "'" .
+escaped_char = "\" ( "n" | "r" | "t" | "v" | "f" | "a" | "b" | `\` | "'" | `"` ) .</code></pre>
+<p>The following are some legal and illegal examples of character literals:</p>
+<pre><code>'a'
+'\t'
+'"'
+'\"'
+'aa'         // illegal: too many characters
+''           // illegal: no characters
+'\'          // illegal: invalid closing delimiter</code></pre>
+<p>Unterminated character literals must be reported as errors.</p>
+<h3>String literals</h3>
+<p>A string literal represents a string constant obtained from concatenating a sequence of characters (also see the Constants section below).</p>
+<pre><code>string_lit = `"` { char | escaped_char } `"` .</code></pre>
+<p>A string literal must start and end on a single line, it cannot be split over multiple lines. It can include escape sequences like \n and this is distinct from a newline character inside the string constant.</p>
+<p>For example, the following is legal:</p>
+<pre><code>"\n" </code></pre>
+<p>But the following is not legal:</p>
+<pre><code>"
+"</code></pre>
+<p>Escaped characters have to used correctly. The following string has an invalid escaped character:</p>
+<pre><code>"\"</code></pre>
+<p>You can have an single quote or escaped single quote in a string. So both of the following are valid.</p>
+<pre><code>"'"
+"\'"</code></pre>
+<p>Unterminated string literals must be reported as errors.</p>
+<h3>Type literals</h3>
+<p>The following are the keywords used to specify Decaf types.</p>
+<pre><code>int bool void string</code></pre>
+<h3>Boolean constant literals</h3>
+<p>The following keywords are used as constants for boolean types.</p>
+<pre><code>true false</code></pre>
+<h3>List of Tokens</h3>
+<p>The following is an alphabetically sorted list of tokens for Decaf with the token names used in the homework.</p>
+<pre><code>T_AND            &amp;&amp;
+T_ASSIGN         =
+T_BOOLTYPE       bool
+T_BREAK          break
+T_CHARCONSTANT   char_lit (see section on Character literals)
+T_CLASS          class
+T_COMMA          ,
+T_COMMENT        comment
+T_CONTINUE       continue
+T_DIV            /
+T_DOT            .
+T_ELSE           else
+T_EQ             ==
+T_EXTENDS        extends
+T_EXTERN         extern
+T_FALSE          false
+T_FOR            for
+T_GEQ            &gt;=
+T_GT             &gt;
+T_ID             identifier (see section on Identifiers)
+T_IF             if
+T_INTCONSTANT    int_lit (see section on Integer literals)
+T_INTTYPE        int
+T_LCB            {
+T_LEFTSHIFT      &lt;&lt;
+T_LEQ            &lt;=
+T_LPAREN         (
+T_LSB            [
+T_LT             &lt;
+T_MINUS          -
+T_MOD            %
+T_MULT           *
+T_NEQ            !=
+T_NEW            new
+T_NOT            !
+T_NULL           null
+T_OR             ||
+T_PLUS           +
+T_RCB            }
+T_RETURN         return
+T_RIGHTSHIFT     &gt;&gt;
+T_RPAREN         )
+T_RSB            ]
+T_SEMICOLON      ;
+T_STRINGCONSTANT string_lit (see section on String literals)
+T_STRINGTYPE     string
+T_TRUE           true
+T_VOID           void
+T_WHILE          while
+T_WHITESPACE     whitespace (see section on Whitespace)</code></pre>
+<h2>Types</h2>
+<p>Decaf has four types: void, booleans, integers and strings. String types, however, can only be used with extern functions. Void types are for return types of functions only (called MethodType below) and not used in variable declarations.</p>
+<pre><code>ExternType = ( string | MethodType ) .
+MethodType = ( void | Type ) .
+Type = ( int | bool ) .</code></pre>
+<p>Decaf also has a limited <em>array type</em> for arrays of integers and booleans.</p>
+<h3>Boolean types</h3>
+<p>A boolean type represents the set of Boolean truth values denoted by the predeclared constants <code>true</code> and <code>false</code>. The predeclared boolean type is <code>bool</code>. This is represented as the <span class="caps">LLVM</span> type <code>Int1</code>.</p>
+<pre><code>BoolConstant = ( true | false ) .</code></pre>
+<h3>Integer types</h3>
+<p>A integer type refers to the set of all signed 32 bit integers (-2147483648 to 2147483647) corresponding to the <span class="caps">LLVM</span> type <code>Int32</code>. The predeclared integer type is <code>int</code>.</p>
+<h3>String types</h3>
+<p>A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The <span class="caps">LLVM</span> type that corresponds to a Decaf string type is <code>Int8Ptr</code>. The predeclared string type is <code>string</code>.</p>
+<h3>Array types</h3>
+<p>Decaf has integer and boolean arrays. However, arrays are declared only in the global (class declaration) scope as part of the field declarations (see FieldDecl). All arrays are one-dimensional and have a size that is fixed at compile-time. Arrays are indexed from 0 to n − 1, where n &gt; 0 is the size of the array. The usual bracket notation is used to index arrays. Since arrays have a compile-time fixed size and cannot be declared as method parameters (or local variables), there is no facility to query the length of an array variable in Decaf. Arrays must be initialized to all zeroes at declaration time.</p>
+<pre><code>ArrayDecl = identifier "[" int_lit "]" .</code></pre>
+<h2>Constants</h2>
+<p>Decaf has <em>boolean constants</em>, <em>integer constants</em>, and <em>string constants</em>. Integer constants can be created using character literals and integer literals. <code>BoolConstant</code> is defined (in the Types section) as either <code>true</code> or <code>false</code>.</p>
+<pre><code>Constant = ( int_lit | char_lit | BoolConstant ) .</code></pre>
+<p>String constants can only be used with extern functions. See the Types section for more details.</p>
+<h2>Decaf program structure</h2>
+<h3>Program</h3>
+<p>A Decaf program starts with optional external function declarations followed by the class definition (a Decaf class is more like a module or namespace). A class has optional global variables (called field variables) followed by method (function) definitions.</p>
+<pre><code>Program = Externs class identifier "{" FieldDecls MethodDecls "}" .</code></pre>
+<h3>External Functions</h3>
+<p>A Decaf program can access external function that are linked, such as the Decaf standard library functions which are implemented in C, and accessed from within the Decaf program as external functions.</p>
+<pre><code>Externs    = { ExternDefn } .
+ExternDefn = extern MethodType identifier "(" [ { ExternType }+ ] ")" ";" .</code></pre>
+<h3>Global variables</h3>
+<p>Decaf has global variables with scope limited to their class that appear before any method declarations. Global variables in Decaf are called <em>field declarations</em>. They can be simple declarations without initialization (assumed to be zero initialized by the compiler) or non-array variables can be declared with an assignment to a constant (see Constants section).</p>
+<pre><code>FieldDecls = { FieldDecl } .
+FieldDecl  = Type { identifier | ArrayDecl }+ ";" 
+FieldDecl  = Type identifier "=" Constant ";" .</code></pre>
+<p>The assignment to an identifier has to be a constant:</p>
+<pre><code>class foo { int a; int b = a; } // Invalid!</code></pre>
+<h3>Method declarations</h3>
+<p>Functions or methods in Decaf start with the return type of the method, the name of the method and in parentheses is the argument list.</p>
+<pre><code>MethodDecls = { MethodDecl } .
+MethodDecl  = MethodType identifier "(" [ { Type identifier }+ ] ")" Block</code></pre>
+<p>The program must contain a declaration for a method called <code>main</code> that has no parameters. The return type of the method <code>main</code> has to be type <code>int</code>, however the compiler does not enforce a return statement within the <code>main</code> definition (just like <span class="caps">ANSI</span> C). Execution of a Decaf program starts at this method <code>main</code>. Methods defined as part of the class declaration can have zero or more parameters and must have a return type of type <code>MethodType</code> explicitly defined.</p>
+<h3>Blocks</h3>
+<p>Decaf blocks have a section for local variable definitions first followed by statements.</p>
+<pre><code>Block = "{" VarDecls Statements "}" .</code></pre>
+<h3>Variable Declarations</h3>
+<p>Local variables are declared using a comma separated list for each type. They cannot be assigned a value when they are defined.</p>
+<pre><code>VarDecls = { VarDecl } .
+VarDecl  = Type { identifier }+ ";" .</code></pre>
+<p>There is no assignment allowed for local variables:</p>
+<pre><code>int foo() { int a = 10; } // Invalid!</code></pre>
+<h3>Statements</h3>
+<p>Statements in Decaf consist of variable assignment, method calls, syntax for various kinds of control flow, special statements for breaking out of or continuing to the top of the block. Statements can also be Blocks (see section on Blocks).</p>
+<pre><code>Statement = Block .</code></pre>
+<h4>Assign statement</h4>
+<pre><code>Statement = Assign ";" .
+Assign    = Lvalue "=" Expr .
+Lvalue    = identifier | identifier "[" Expr "]" .</code></pre>
+<h4>Method calls</h4>
+<pre><code>Statement  = MethodCall ";" .
+MethodCall = identifier "(" [ { MethodArg }+ ] ")" .
+MethodArg  = Expr | string_lit .</code></pre>
+<p>External functions are declared using the extern keyword. These functions are provided at using a separate library which is linked with your Decaf program at runtime. Some minimal type checking is done using the declaration. The most useful library functions that you will use are the <code>print_string</code>, <code>print_int</code> and <code>read_int</code> functions.</p>
+<p>The return value can be a type that can be assigned to an <code>Lvalue</code>:</p>
+<pre><code>z = read int(); </code></pre>
+<p>In this case, the integer variable <code>z</code> receives the result of calling the <code>read_int</code> library function. The return value can also be declared to be <code>void</code> in which case assigning the output of a library function to an <code>Lvalue</code> will result in a semantic error.</p>
+<h4>If statement</h4>
+<pre><code>Statement = if "(" Expr ")" Block [ else Block ] .</code></pre>
+<h4>While statement</h4>
+<pre><code>Statement =  while "(" Expr ")" Block .</code></pre>
+<h4>For statement</h4>
+<p>The <code>for</code> loop in Decaf has the usual structure <code>for ( init ; check ; post )</code> followed by the <code>Block</code> of the for loop.</p>
+<pre><code>Statement = for "(" { Assign }+ ";" Expr ";" { Assign }+ ")" Block .</code></pre>
+<p>The init, check and post parts of the <code>for</code> loop cannot be empty:</p>
+<pre><code>for(; a &lt; b; ) // Invalid!</code></pre>
+<h4>Return statement</h4>
+<pre><code>Statement = return [ "(" [ Expr ] ")" ] ";" .</code></pre>
+<p>The following are all valid return statements:</p>
+<pre><code>return(3);
+return(bool);
+return();
+return;</code></pre>
+<h4>Break statement</h4>
+<p>A <code>break</code> statement terminates execution of the innermost <code>for</code> or <code>while</code> loop (branches to end of loop).</p>
+<pre><code>Statement = break ";" .</code></pre>
+<h4>Continue statement</h4>
+<p>A <code>continue</code> statement begins the next iteration of the innermost <code>for</code> or <code>while</code> loop at its post statement (see For statement).</p>
+<pre><code>Statement = continue ";" .</code></pre>
+<h2>Expressions</h2>
+<h3>Operands</h3>
+<p>Operands are the elementary values in an expression.</p>
+<pre><code>Expr = identifier
+Expr = MethodCall 
+Expr = Constant .</code></pre>
+<h3>Unary Operators</h3>
+<p>There are only two unary operators in Decaf. One for logical negation and the other for unary minus of arithmetic expressions. The result of <code>UnaryNot</code> is of type <code>bool</code> and the result of <code>UnaryMinus</code> is of type <code>int</code>.</p>
+<pre><code>UnaryOperator = ( UnaryNot | UnaryMinus ) .
+UnaryNot = "!" .
+UnaryMinus = "-" .</code></pre>
+<h3>Binary Operators</h3>
+<p>Binary operators are split into boolean binary operators and arithmetic binary operators. The result of using a boolean operator is the type <code>bool</code> and the result of using an arithmetic operator is the type <code>int</code>.</p>
+<pre><code>BinaryOperator = ( ArithmeticOperator | BooleanOperator ) .
+ArithmeticOperator = ( "+" | "-" | "*" | "/" | "&lt;&lt;" | "&gt;&gt;" | "%" ) .
+BooleanOperator = ( "==" | "!=" | "&lt;" | "&lt;=" | "&gt;" | "&gt;=" | "&amp;&amp;" | "||" ) .</code></pre>
+<p>The boolean connectives <code>&amp;&amp;</code> and <code>||</code> are interpreted using <a href="http://en.wikipedia.org/wiki/Short-circuit_evaluation">short circuit evaluation</a>. This means: the second operand is not evaluated if the result of the first operand determines the value of the whole expression. For example, if the result is <code>false</code> for <code>&amp;&amp;</code> or <code>true</code> for <code>||</code>.</p>
+<p>Binary <code>%</code> computes the modulus of two numbers. Given two operands of type <code>int</code>, <code>a</code> and <code>b</code>: If <code>b</code> is positive, then <code>a % b</code> is a minus the largest multiple of <code>b</code> that is not greater than <code>a</code>. If <code>b</code> is negative, then <code>a % b</code> is <code>a</code> minus the smallest multiple of <code>b</code> that is not less than <code>a</code> (in this case the result will be less than or equal to zero).</p>
+<h3>Operators and Precedence</h3>
+<p>Unary operators have the highest precedence. For the other binary operators the precedence is defined as follows. All operators at the same precedence level get equal precedence. All operators with equal precedence associate left. The <code>UnaryMinus</code> operator associates to the right.</p>
+<table class="table">
+	<tr>
+		<th>Precedence </th>
+		<th>Operator </th>
+	</tr>
+	<tr>
+		<td> 7 </td>
+		<td> <code>UnaryMinus</code> </td>
+	</tr>
+	<tr>
+		<td> 6 </td>
+		<td> <code>UnaryNot</code> </td>
+	</tr>
+	<tr>
+		<td> 5 </td>
+		<td> <code>* / % &lt;&lt; &gt;&gt;</code> </td>
+	</tr>
+	<tr>
+		<td> 4 </td>
+		<td> <code>+ -</code> </td>
+	</tr>
+	<tr>
+		<td> 3 </td>
+		<td> <code>== != &lt; &lt;= &gt; &gt;=</code> </td>
+	</tr>
+	<tr>
+		<td> 2 </td>
+		<td> <code>&amp;&amp;</code> </td>
+	</tr>
+	<tr>
+		<td> 1 </td>
+		<td> &#8220;&#124;&#124;&#8221; </td>
+	</tr>
+</table>
+<h3>Primary expressions</h3>
+<p>Primary expressions build larger expressions from operands, operators and parentheses. The parentheses are used to group expressions to obtain different orders of evaluation. Parentheses can be omitted if the desired evaluation is consistent with the precedence rules (see the Operators and Precedence section). The type of the <code>Expr</code> on the left hand side is determined by the <code>Expr</code> on the right hand side and the operator used.</p>
+<pre><code>Expr = Expr BinaryOperator Expr
+Expr = UnaryOperator Expr
+Expr = "(" Expr ")" .</code></pre>
+<h3>Index expression</h3>
+<p>In this expression, the <code>identifier</code> must be an Array Type (see section on Array Types). The <code>Expr</code> is evaluated to give an array index and the result of the evaluation must be of type <code>int</code>. The integer value is then used to find the element of the array which is of type <code>int</code> or <code>bool</code> depending on the Array Type.</p>
+<pre><code>Expr = identifier "[" Expr "]" .</code></pre>
+<h3>Decaf grammar</h3>
+<pre><code>Program = Externs class identifier "{" FieldDecls MethodDecls "}" .
+Externs    = { ExternDefn } .
+ExternDefn = extern MethodType identifier "(" [ { ExternType }+ ] ")" ";" .
+FieldDecls = { FieldDecl } .
+FieldDecl  = Type { identifier | ArrayDecl }+ ";" 
+FieldDecl  = Type identifier "=" Constant ";" .
+ArrayDecl = identifier "[" int_lit "]" .
+MethodDecls = { MethodDecl } .
+MethodDecl  = MethodType identifier "(" [ { Type identifier }+ ] ")" Block
+Block = "{" VarDecls Statements "}" .
+VarDecls = { VarDecl } .
+VarDecl  = Type { identifier }+ ";" .
+Statement = Block .
+Statement = Assign ";" .
+Assign    = Lvalue "=" Expr .
+Lvalue    = identifier | identifier "[" Expr "]" .
+Statement  = MethodCall ";" .
+MethodCall = identifier "(" [ { MethodArg }+ ] ")" .
+MethodArg  = Expr | string_lit .
+Statement = if "(" Expr ")" Block [ else Block ] .
+Statement =  while "(" Expr ")" Block .
+Statement = for "(" { Assign }+ ";" Expr ";" { Assign }+ ")" Block .
+Statement = return [ "(" [ Expr ] ")" ] ";" .
+Statement = break ";" .
+Statement = continue ";" .
+Expr = identifier
+Expr = MethodCall 
+Expr = Constant .
+UnaryOperator = ( UnaryNot | UnaryMinus ) .
+UnaryNot = "!" .
+UnaryMinus = "-" .
+BinaryOperator = ( ArithmeticOperator | BooleanOperator ) .
+ArithmeticOperator = ( "+" | "-" | "*" | "/" | "&lt;&lt;" | "&gt;&gt;" | "%" ) .
+BooleanOperator = ( "==" | "!=" | "&lt;" | "&lt;=" | "&gt;" | "&gt;=" | "&amp;&amp;" | "||" ) .
+Expr = Expr BinaryOperator Expr
+Expr = UnaryOperator Expr
+Expr = "(" Expr ")" .
+Expr = identifier "[" Expr "]" .</code></pre>
+<h2>Decaf Semantics</h2>
+<h3>Type Checking</h3>
+<p>Make sure the following type checks are implemented in the compiler.</p>
+<ul>
+	<li>Binary <code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code> <code>&gt;&gt;</code> <code>&lt;&lt;</code> <code>&lt;</code> <code>&gt;</code> <code>&lt;=</code> <code>&gt;=</code> and unary <code>-</code> only work on integer expressions.</li>
+	<li>Binary <code>&amp;&amp;</code> <code>||</code> and unary <code>!</code> only work on boolean expressions.</li>
+	<li>Binary <code>==</code> <code>!=</code> work on any type, but both operands have to have the same type.</li>
+	<li>Assignment to a function parameter is valid and should change the value as for a local variable</li>
+	<li>The &amp;&amp; and || operators are short-circuiting (this is already specified in the spec)</li>
+	<li>If you have multiple return statements in one block then only the first is used, but the others should still be type checked.</li>
+	<li>Indexing a scalar is a semantic error. <code>{ int x; x[0] = 1; }</code> is a semantic error, and <code>{ int x; int y; y = x[0]; }</code> is a semantic error, and the same if <code>x</code> is a field variable.</li>
+	<li>Indexing with a bool is a semantic error. <code>{ int xs[10]; int main() { int x; x = xs[true]; }</code> is a semantic error.</li>
+	<li>Using a non-bool expression for a loop condition is a semantic error. <code>{ while (1) {} }</code> and <code>{ int x; for (x = 0; 1; x = x + 1) {} }</code> are semantic errors.</li>
+	<li>Using a non-bool expression in an if statement condition is a semantic error. <code>{ if (0) {} }</code> is a semantic error.</li>
+	<li>A return statement with an expression is not allowed in function with void return type. <code>{ void foo() { return (1); }</code> and <code>{ void bar() {} void foo() { return (bar()); }</code> are both semantic errors.</li>
+	<li>A return statement with no expression in a non-void function produces an undefined return value. <code>{ int foo() { return; } int main() { int x; x = foo(); } }</code> is a not a semantic error, but the value of <code>x</code> may be anything (typicall zero due to zero initialization).</li>
+	<li>Cannot use a void function in an expression. <code>void foo() {} int main() { if (foo()) {} }</code> is invalid.</li>
+	<li>Cannot call a method with the wrong number of arguments.</li>
+</ul>
+<h3>Scoping Rules</h3>
+<p>This section clarifies the behaviour with scoping.</p>
+<ul>
+	<li>Having two fields with the same name is a semantic error.</li>
+	<li>Having two methods with the same name is a semantic error.</li>
+	<li>Having a field and a method with the same name is a semantic error.</li>
+	<li>externs count as methods for scoping.</li>
+	<li>Having two local variables with the same name declared at the same block is a semantic error. <code>{ int x; int x; }</code> is an error, but <code>{ int x; { int x; } }</code> is ok.</li>
+	<li>Having a local variable in the outer block of a method that has a parameter with the same name is a semantic error. <code>void foo(int x) { int x; }</code> is an error, but <code>void foo(int x) { { int x; } }</code> is ok.</li>
+	<li>A function can be referred to anywhere in the program, including before its definition. <code>class C { void foo() { bar() }; void bar() {}; /* ... */ }</code> is ok.</li>
+	<li>Functions, fields, arguments, and local variables all share the same namespace (symbol table) and can shadow each other except for the above rules. e.g. in <code>class C { void foo() {}; void bar() { int foo; foo(); } /* ... */ }</code> the &#8220;foo();&#8221; refers to the local int variable, not the function.</li>
+	<li><code>break</code> and <code>continue</code> only apply to the innermost containing loop. Using <code>break</code> or <code>continue</code> outside of a loop results in a semantic error.</li>
+</ul>
+<h3>Statements</h3>
+<p>These are semantic errors that can occur when using statements in Decaf.</p>
+<ul>
+	<li>There are no restrictions on the type of <code>main</code>.</li>
+	<li>Assigning a scalar to an array is considered a type mismatch.</li>
+	<li>The following produce undefined behaviour, but must not produce compile time semantic errors:<br />
+   &#8211; Using the value of any uninitialized scalar variable or array element<br />
+   &#8211; A function with no return statement is equivalent to ending the function with a return statement that has no expression: <code>return;</code><br />
+   &#8211; Assigning to an array cell at an invalid index</li>
+	<li>Any bool argument to a integer parameter must be converted while keeping its value, not just for <code>print_int</code>.</li>
+	<li>Passing a argument to a function parameter with a different type is a semantic error except for the special case of passing a <code>bool</code> as an <code>int</code>.</li>
+	<li>Declaring an array of size less than or equal to zero is a semantic error.</li>
+	<li>Assignment to a function parameter is valid and should change the value as for a local variable.</li>
+</ul>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit">All content is &copy; <a href="http://www.cs.sfu.ca/~anoop/index.html">Anoop Sarkar</a>. The style sheet is from <a href="http://getbootstrap.com">Twitter Bootstrap</a>. The style and some details of this language reference were taken from the <a href="http://golang.org/ref/spec">Go Language Reference</a> although as yet Decaf and Go are very different from each other.</p>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

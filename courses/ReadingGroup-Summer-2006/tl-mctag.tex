@@ -1,0 +1,56 @@
+
+\documentclass{article}
+
+\usepackage{txfonts}
+\usepackage{color}
+\usepackage{latexsym}
+\usepackage{strikeout}
+\ifx\pdfoutput\undefined
+  \usepackage{graphicx}
+\else
+  \usepackage[pdftex]{graphicx}
+  \DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\usepackage{amssymb}
+
+\begin{document}
+
+Consider the synchronous tree-local multicomponent TAG (syncMCTAG) shown below. I'll call the left component of the synchronous pair the source, and the right component the target. 
+
+\[ \beta: \left\{ \ 
+\begin{array}{c}
+\includegraphics{figures.mps.35}
+\end{array}
+\ , \ 
+\left( 
+\begin{array}{ccc}
+\includegraphics{figures.mps.36} & , &  
+\includegraphics{figures.mps.37} 
+\end{array}
+\right) \ 
+\right\} \]
+
+\[ \alpha: \left\{ \ 
+\begin{array}{c}
+\includegraphics{figures.mps.38}
+\end{array}
+\ , \ 
+\begin{array}{c}
+\includegraphics{figures.mps.39} \ \ 
+\end{array}
+\ 
+\right\} \]
+
+The subscripted number $1$ in the tree is a link, and since source TAG in $\alpha$ links to target TAG in $\alpha$ that is going to have a tree-set adjoin into it, we have to denote this in some way. The notation used here to denote this is that link $1$ from source links to $1.1$ in the target which takes the first component and $1.2$ takes the second component of the tree-set. 
+
+In this notation it is not clear to me what happens when an adjunction into $\beta$ does not have a tree-set on the target side. It could pick $1.1$ in the target tree by default.
+
+An example derivation in this syncMCTAG would be 
+\[ \alpha(\beta_{[0,(0,00)]}(\beta_{[01,(0,01)]})) \]
+which derives the string pair $(aabbccdd, aabb)$. The subscripts indicate the Gorn address in the parent where the adjunction occurs.
+
+The tree-set for syncMCTAG is related to adding a pair of obligatory adjunction constraints on the elementary tree. Does the embedded tree transducer, while generating the target string, have enough `memory' to ensure that the second adjunction for the tree-set is forced to occur? 
+
+\end{document}
+

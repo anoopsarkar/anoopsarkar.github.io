@@ -1,0 +1,409 @@
+
+Crash course in Perl scripting
+Anoop Sarkar <anoop at cs.sfu.ca>
+
+1. hello, world
+
+print "hello, world\n";
+print "hello, world", "\n";
+printf ("%s\n", "hello, world");
+
+2. comments
+
+print "hello, world\n";  # comments after hash symbol until end of line
+
+3. supported types (internally typed, untyped for the user)
+
+scalars: 
+
+   initialization:
+   $x = 2; $y = 3.1415;
+   $mesg = "hello, world\n";
+
+   $x = 2;
+   $y = 4;
+   $z = 2;
+
+   $x == $y;
+   $x == $z;
+   $x < $y;
+   $x < $z;
+   $x <= $z;
+   $x <= $y;
+   $x >= $y;
+   $x >= $z;
+   $x <=> $y;
+   $x <=> $z;
+   $y <=> $x;
+
+   $i = $x + $y - $z;
+   $i += 2;  # $i = $i + 2;
+   $i++;
+   ++$i;
+   $i = 11 % 3;  # modulus a % b: a minus largest multiple of b
+
+   $x = 'ab';
+   $y = 'ac';
+   $z = 'ab';
+
+   $x eq $y;
+   $x eq $z;
+   $x lt $y;
+   $x lt $z;
+   $x le $y;
+   $x le $z;
+   $x gt $y;
+   $x gt $z;
+   $x ge $y;
+   $x ge $z;
+   $x cmp $y;
+   $x cmp $z;
+   $y cmp $x;
+
+   $x = "ay";
+   ++$x;
+   ++$x;
+
+   $y = "zz";
+   $x = $x . $y;
+   $x .= $y;
+
+   $x = "Can you hear that, Mr. Baggins";
+   $y = "that's the sound of inevitability";
+   print "\t$x, $y.\n";
+   print '\t$x, $y.\n';
+   $x = 1;
+   print "$x line one\n";
+   $x++;
+   print "$x line two\n";
+
+   $mesg = 'hello, world' . "\n";
+   print $mesg;
+   print uc($mesg);
+   $tmp = uc($mesg);
+   print lc($tmp);
+
+   $mesg = "hello\n";
+   print length($mesg), "\n";
+   chomp($mesg);
+   print length($mesg), "\n";
+   print $mesg;
+
+arrays: 
+
+   @x = (1,2,3); 
+   print "@x\n";
+   $y = shift(@x); 
+   unshift(@x, 1);
+   push(@x, 4); 
+   $y = pop(@x);
+   $len = $#x + 1;   # length is last index of array plus one
+
+   @x = (1,2,3);
+   $#x = 1;
+   print "@x\n";
+
+   @x = (1,2,3);
+   $p = $x[0];
+   $q = $x[1];
+   $r = $x[2];
+
+   @x = 1..10;
+   print "@x\n";
+
+   print join("\n", @x), "\n";
+
+   $line = "this is a line of text\n";
+   chomp($line);
+   @line = split(" ", $line);
+   print join("\n", @line), "\n";
+
+   @x = ('c', 'a', 'd', 'b', 'e');
+   @y = sort @x;
+   print "@y\n";
+
+hash:   
+
+   %x = ( "a" => 1, "b" => 2 );  
+   same as: %x = ("a", 1, "b", 2);
+   @y = keys %x;
+   print "@y\n";
+
+scalar vs. non-scalar context:  
+
+   $len = @x; 
+   @copy = @x;
+
+
+4. blocks
+
+if ("a" eq "a") { print "yes\n"; }
+
+die;
+
+5. control flow:
+
+if: 
+
+  print "yes\n" if ("a" eq "a");
+
+if-block: 
+
+  if ("a" eq "a") { print "yes\n"; }
+  elsif ("b" eq "b") { print "maybe\n"; }
+  else { print "no\n"; }
+
+foreach:
+
+  foreach $key (keys %x) { print "$key\n"; }
+  for $key (1..10) { print "$key\n"; }
+
+while:
+
+  $i = 0; 
+  while (1) { 
+    print "yes\n"; 
+    last if ($i++ > 10); 
+  }
+
+for:
+
+  for ($i = 0; $i < 10; $i++) { 
+    print "$i yes\n"; 
+  }
+
+ternary op:
+
+  ("a" eq "a") ? print "yes\n" : print "no\n";
+
+9. command line args (@ARGV can also be default variable for functions like shift):
+
+$file = shift(@ARGV) or die "usage: $0 <file>\n";
+open(F, $file) or die "could not open $file\n";
+while ($line = <F>) {
+  chomp($line);
+  print "$line\n";
+}
+close(F);
+
+
+$file = shift or die "usage: $0 <file>\n";
+open(F, $file) or die "could not open $file\n";
+while (<F>) {
+  chomp;
+  print "$_\n";
+}
+close(F);
+
+to save typing, with even more hidden variables:
+
+while (<>) {
+  chomp;
+  print "$_\n";
+}
+
+6b. editing a perl file
+
+  - create a simple perl program
+  - run it from the command line
+  - read in a text corpus
+  - perform a simple task on the corpus: 
+     collect all words (tr ' ' '\n' | uniq)
+     compute freq of each word (uniq -c)
+     sort based on freq and print
+
+
+10. regexps operators:
+
+print only upper case words
+
+while (<>) {
+  chomp;
+  if (/^[A-Z]+\. /) { print; print "\n"; }
+}
+
+$_ = "(S NP (VP V NP))";
+tr/[A-Z]/[a-z]/;
+print;
+$lcount = (tr/(//);
+$rcount = (tr/)//);
+print "\nleft=$lcount right=$rcount\n";
+
+
+7. functions (lexical scoping is user-defined, @_ is a default variable):
+
+sub foo {
+    my ($a, $b) = @_;
+    if ($a == 0) {
+       return $b+1;
+    } elsif (($a > 0) and ($b == 0)) {
+       foo($a-1, 1);
+    } else {
+       foo($a-1, foo($a, $b-1));
+    }
+}
+
+sub ack {
+    my ($a, $b) = @_;
+    return ($a > 0) ? ack($a-1, (($b > 0) ? ack($a, $b-1) : 1)) : $b+1;
+}
+
+print foo(3,2), "\n";
+print ack(3,2), "\n";
+
+sub iterfn {
+  my ($x) = @_;
+  print "$n $x\n";
+}
+
+sub iter {
+  local ($n) = @_;
+  for (my $i = 0; $i <= $n; $i++) {
+    iterfn($i);
+  }
+}
+
+iter(10);
+
+for comparison of speed with C:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int foo (int a, int b) {
+  return (a > 0) ? foo(a-1, (b > 0) ? foo(a, b-1) : 1) : b+1;
+}
+
+int main (int argc, char **argv) {
+  if (argc < 3) { exit(0); }
+  printf("%d\n", foo(atoi(argv[1]), atoi(argv[2])));
+} 
+
+sub foo {
+  my (@a, @b) = @_;
+  print "line1: @a\n";
+  print "line2: @b\n";
+}
+@x = (1,2,3);
+@y = ('a','b','c');
+foo(@x,@y);
+
+References
+
+sub foo {
+  my ($a, $b) = @_;
+  print "line1: @$a\n";
+  print "line2: @$b\n";
+}
+foo(\@x,\@y);
+
+@x = (1,2,3);
+$x = \@x;
+foreach $i (@{$x}) { print "$i\n"; }
+
+8. file operator ($_ is again a default variable)
+
+$file = "tmp";
+open(F, $file) or die "could not open $file\n";
+while (<F>) {
+  chomp;
+  print "$_\n";
+}
+close(F);
+
+use English;
+sub printfile {
+  my ($file) = @ARG;  # instead of @_
+  open(F, $file) or die "could not open $file\n";
+  while (<F>) { chomp; print "$ARG\n"; }
+  close(F);
+}
+
+sub printfile($) {
+ ..
+}
+
+11. advanced file operations:
+
+open(F, "ls |") or die "could not find ls\n";
+while (<F>) {
+  if ($_ !~ /^\./) { print; }
+}
+close(F);
+
+12. advanced references
+
+sub visit {
+  my ($tree) = @_;
+  if (ref $tree) {
+     my @nodes = @{$tree};
+     print "(",  shift(@nodes), " ";
+     foreach $kid (@nodes) { visit($kid); }
+     print ")";
+  } else {
+     print " $tree ";
+  }
+}
+$x = ['S','NP',['VP','V','NP']];
+visit($x); print "\n";
+
+13. variables that control perl behaviour
+
+$/ = "\n\n";
+while (<>) {
+  chomp;
+  s/\n/ /g;
+  print "$_\n";
+}
+
+14. advanced list functions
+
+sorting:
+
+   @names = ('Tellier','Eure','Rivet','Constance','Yvetot','Phillipe','rivet','eure');
+   @numbers = (1 .. 10);
+   @sortedlist = sort {$b cmp $a} @names;
+   @sortedlist = sort {uc($b) cmp uc($a)} @names;
+   @sortedlist = sort {$a <=> $b} @numbers;  # numerically ascending
+   @sortedlist = sort {$b <=> $a} @numbers;  # numerically descending
+   print join(" ", @sortedlist), "\n";
+   @eldest = sort { $age{$b} <=> $age{$a} } keys %age; # descending on the numeric key
+
+finding elements:
+
+   @x = ('said','the','joker','to','the','thief');
+   @found = grep { /^t/ } @x;
+   print join(" ", @found), "\n";
+   @x = (1,2,3,4,5,6,7,8,9,10);
+   @found = grep { $_ > 5 } @x;
+   foreach (@found) { print; print "\n"; }
+
+transforming elements:
+
+   @x = ('said','the','joker','to','the','thief');
+   @found = map(uc, @x);
+   foreach (@found) { print; print "\n"; }
+
+converting lists to hash:
+
+   @x = ('said','the','joker','to','the','thief');
+   %found = map { $_ => length($_) } @x;
+   foreach (keys %found) { print "$_ => $found{$_}\n"; }
+
+converting s-expressions to trees:
+
+   $x = "(S NP (VP V NP))";
+   $x =~ s/\(/\[/g;
+   $x =~ s/\)/\]/g;
+   $x =~ s/ /,/g;
+   $x =~ s/([^,\[\]]+)/'$1'/g;
+   print "$x\n";
+   $tree = eval $x;
+   visit($tree); print "\n";
+
+file operations: file test -X, chdir, unlink, readdir
+
+vec() -- bit vectors
+
+pack() and unpack() -- binary data
+

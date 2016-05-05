@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Golnar passes her PhD depth exam"
+tags: [graduate-students,news]
 ---
 
 Golnar Sheikhshab successfully defended her PhD thesis on Nov 25th 2015. 

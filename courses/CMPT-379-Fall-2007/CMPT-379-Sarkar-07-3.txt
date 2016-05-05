@@ -1,0 +1,66 @@
+SFU                       Computing Science                       07-3
+________________________________________________________________________
+CMPT 379-3 SECT   Principles of Compiler Design
+ Instructor: A. Sarkar                       WHERE
+ LECTURE TIME TBA ... EXAM TIME TBA
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+This is a course for those who are interested in the design and practice of
+programming languages.  If you want to learn how to design and implement
+your own programming language, then take this course.  Every computing
+device built today needs a compiler.  It enables us to use a high-level
+programming language like C or Java by translating programs into low-level
+machine code.  Understanding how compilers work is essential if you want to
+be a good programmer.  The study of compilers also includes interesting
+ideas in translation and optimization with sparse resources.  As part of
+the course, the carefully designed assignments will allow students to
+implement a working compiler using standard compiler tools.  Students
+lacking the MACM 201 pre-requisite should contact the instructor.  The
+course web page contains more information:  visit
+http://www.cs.sfu.ca/CourseCentral/379/anoop/
+
+TOPICS:
+
+   o Overview of a compiler
+   o Lexical Analysis:  regular expressions and finite-state machines
+   o Simple Parsing:  context-free grammars, top-down and bottom-up parsing
+   o LL(1) parsing:  efficient top-down parsing
+   o Shift-reduce parsers:  introduction to bottom-up parsing
+   o SLR/LR parsing:  fast and efficient bottom-up parsing
+   o Type checking:  checking semantics of programs
+   o Semantics and code generation:  from a high-level language to assembly
+     language
+   o Optimization:  an introduction to various types of code optimization
+
+GRADING:
+
+The grade distribution will be handed out at the start of classes.
+
+TEXTBOOKS:
+
+   o Compilers:  Principles, Techniques and Tools (2nd Edition), A. V. Aho,
+     M. S. Lam, R. Sethi, and J. D. Ullman, Addison-Wesley, 2006:  ISBN-13:
+     978-0321486813 (the purple dragon book)
+
+REFERENCES:
+
+   o
+
+PREREQUISITES/COREQUISITES:
+
+MACM 201 ( or CMPT 205), CMPT 150 and CMPT 201 ( or 225)
+
+Distributed:  June 4, 2007
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's Statement on Intellectual Honesty
+(http://www.cs.sfu.ca/undergrad/Policies/honesty.html).

@@ -1,0 +1,44 @@
+
+Project requirements for CMPT 882-3:
+Anoop Sarkar <anoop at cs.sfu.ca>
+
+1. Based on readings done in this class (past and future). For other
+   material talk to me first.
+
+2. No re-implementations of an existing algorithm without
+   modifications applied to a simple task. This is a grad seminar
+   where you are expected to provide some state-of-the-art research. 
+
+3. Try to build on previous implementations of an algorithm of
+   interest. This is typically easy to do since you can sometimes
+   simply take the output of an existing system and compare with your
+   new and improved implementation (speed and accuracy considerations)
+   or alternatively you can take the output of an existing system and
+   do discriminative re-ranking (reduce its error rate post-hoc)
+
+4. No joint projects. However, you can have parallel projects which
+   are compared with each other in the end with some code sharing
+   involved. There have to be two ideas/hypotheses in a parallel
+   project. 
+
+5. Use the standard data sets for the task that you choose to attack
+   with a particular machine learning algorithm. Most of these are
+   available from /cs/fac1/anoop/data or from links on the course web
+   page. If you are in doubt as to what the dataset should be, send me
+   email and I will put up a link on the course web page.
+
+6. Artificial datasets are permitted only if you come up with a
+   radically new learning algorithm or you solve some existing
+   theoretical problem with a machine learning algorithm, e.g. if you
+   come up with a new solution to parameter re-estimation in HMMs or
+   provide an answer to the "label bias" problem in discriminative
+   models.
+
+7. No restriction on the programming language used (don't use
+   Intercal, unlambda or other obfuscating languages)
+
+8. Final project report should be no longer than 7 pages. The style
+   files for LaTeX and Microsoft Word are linked on the course web
+   page. 
+
+

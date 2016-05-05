@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CMPT 413: Natural Language Processing. Burnaby Campus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!--    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
+    <link href="css/my.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron visible-md visible-lg visible-sm" style="overflow: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="page-header">
+                    <h2>Natural Language Processing <small>Spring 2014</small></h2>
+                    <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-hand-right"></span><a href="https://courses.cs.sfu.ca/2014sp-cmpt-413-d1/"> courses.cs</a> / <a href="https://courses.cs.sfu.ca/2014sp-cmpt-413-x1/discussion/"> discussion board</a>
+                    </button>
+                    <small>
+                    <ul>
+                    <li>CMPT 413: SFU Burnaby Campus. <small>(<a href="https://portal.cs.sfu.ca/portal/outlines/1141-CMPT-413-D100/">course outline</a>)</small></li>
+                    <li>Instructor: <a href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+                    <li>Office hours: Wed 10:30AM-11:30AM at TASC1 9427</li>
+                    </ul>
+                    </small>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5">
+                    <img src="images/cmpt413wordle.png" alt="" class="thumbnail">
+                </div>
+            </div> <!-- row -->
+            </ul>
+        </div>
+    </div> <!-- jumbotron -->
+
+    <div class="row visible-xs">
+      <div class="col-md-4">
+      <div class="container">
+      <div class="page-header">
+      <h1> NLP <small>Fall 2014</small></h1>
+      <ul>
+      <li>CMPT 413: SFU Burnaby Campus. <small>(<a href="https://portal.cs.sfu.ca/portal/outlines/1141-CMPT-413-D100/">course outline</a>)</small></li>
+      <li>Instructor: <a href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+      <li>Grades, etc.: <a href="https://courses.cs.sfu.ca/2014sp-cmpt-413-d1/"> courses.cs</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+    </div> <!-- row -->
+
+    <div class="container">
+      <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#about" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> About</a></li>
+        <li><a href="#notes" data-toggle="tab"><span class="glyphicon glyphicon-list"></span> Notes</a></li>
+        <li><a href="#homeworks" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Homeworks</a></li>
+        <li><a href="#policies" data-toggle="tab"><span class="glyphicon glyphicon-warning-sign"></span> Policies</a></li>
+        <li><a href="#textbook" data-toggle="tab"><span class="glyphicon glyphicon-book"></span> Textbook</a></li>
+        <li class="dropdown">
+          <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-calendar"></span> Dates <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">Calendar</a></li>
+            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">Agenda</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="about">
+            <div class="container">
+                <div class="row">
+
+                  <div class="col-md-4">
+                  <h3>Dates</h3>
+                  <p>From Jan 6, 2014 to Apr 9, 2014</p>
+                    <ul>
+                      <li>Tue 1:30PM - 2:20PM in <a href="http://www.sfu.ca/fs/Campus-Facility-Profiles/Building_Information/Saywell_Hall.html">SWH 10041</a></li>
+                      <li>Thu 12:30PM - 2:20PM in <a href="http://www.sfu.ca/fs/Campus-Facility-Profiles/Building_Information/Academic_Quadrangle.html">AQ 3149</a></li>
+                    </ul>
+                  <p>Final Exam: Apr 23, 2014 12:00PM to 3:00PM<br/>
+                  Location: <a href="http://www.sfu.ca/fs/Campus-Facility-Profiles/Building_Information/Blusson_Hall.html">BLU 9660</a></p>
+                  </div>
+
+                  <div class="col-md-4">
+                  <h3>Teaching Assistant</h3>
+                  <p>
+                    <ul>
+                    <li><a href="http://www.cs.sfu.ca/~aca69/personal/">Ann Clifton</a></li>
+                    <li>Office hours: Wed 1:30PM - 2:20PM</li>
+                    <li>Location: TASC1 9404 (Natural Language Lab)</li>
+                    </ul>
+                  </p> 
+                  </div>
+
+                  <div class="col-md-4">
+                  <h3>Grading</h3>
+                    <ul>
+                        <li>5 Homeworks: 50% of the grade</li>
+                        <li>1 Midterm: 20% of the grade</li>
+                        <li>1 Final: 30% of the grade</li>
+                    </ul>
+                  </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+
+            <div class="container">
+            <div class="alert alert-info">
+              <h4>About the Course</h4>
+                <p>Imagine a world where you can pick up a phone and talk in English, while at the other end of the line your words are spoken in Chinese. Imagine a computer animated representation of yourself speaking fluently what you have written in an email. Imagine automatically uncovering protein/drug interactions in terabytes of medical abstracts. Imagine feeding a computer an ancient script that no living person can read, then listening as the computer reads aloud in this dead language. Natural Language Processing is the automatic analysis of human languages such as English, Korean, and thousands of others analyzed by computer algorithms. Unlike artificially created programming languages where the structure and meaning of programs is easy to encode, human languages provide an interesting challenge, both in terms of its analysis and the learning of language from observations.</p>
+            </div>
+            </div> <!-- container -->
+
+        </div>
+
+        <div class="tab-pane fade" id="notes">
+        <div class="container">
+        <p>
+        <h3>Lecture Notes</h3>
+        <div class="container">
+                <p>Video lectures: <a href="http://www.youtube.com/playlist?list=PLlJscqJYzu34ZstEVVKUtkWHUgsdsKcxO" target="_blank">Playlist on youtube</a></p>
+        </div>
+<p>The links to the slides/notes below will become available gradually as the semester progresses. Do not be alarmed if some PDF files are not available for download yet.</p>
+	  <ol>
+
+	    <li>Introduction to Linguistics and Formal language theory
+	    <ul>
+	      <li><a href="intro.pdf">IN1 Intro</a> </li>
+          <li>Readings:
+            <ul>
+               <li>Lillian Lee. <a href="http://www.cs.cornell.edu/home/llee/papers/cstb.pdf">I'm sorry Dave, I'm afraid I can't do that: Linguistics, Statistics, and Natural Language Processing circa 2001</a>. The National Academies' study on the Fundamentals of Computer Science.</li>
+               <li>Steven Abney. <a href="http://www.vinartus.net/spa/95c.pdf">Statistical Methods and Linguistics</a>. In: Judith Klavans and Philip Resnik (eds.), The Balancing Act: Combining Symbolic and Statistical Approaches to Language. The MIT Press, Cambridge, MA. 1996.</li>
+            </ul>
+          </li>
+	      <li>Links: 
+            <ul>
+            <li><a href="http://video.pbs.org/video/1923247005/">Crisis Mapping in Haiti</a></li>
+            <li><a href="http://www.youtube.com/watch?v=lI-M7O_bRNg">What is Watson?</a></li>
+            <li><a href="http://www.cstr.ed.ac.uk/projects/festival/">Festival: Open-source text to speech</a></li>
+            <li><a href="http://www.naturalvoices.att.com/">Speech Animation at AT&amp;T</a></li>
+	        <li><a href="http://www.speech.cs.cmu.edu/Communicator/">CMU Communicator: Dialog System</a></li>
+            <li><a href="http://www.cs.rutgers.edu/~village/ruth/">RUTH: Rutgers University Talking Head</a></li>
+            <li><a href="http://www.semanticlight.com/">WordsEye: NLP &amp; Graphics</a></li>
+          </ul>
+          </li>
+	    </ul>
+        </li>
+
+        <li>Probability models and language: n-grams<br>
+        <ul>
+          <li><a href="prob.pdf">PR1 Introduction to probability and information theory</a>  </li>
+          <li><a href="ngrams.pdf">NG1 N-grams</a>  </li>
+          <li><a href="smooth.pdf">NG2 Smoothing N-gram models</a>  </li>
+          <li>Readings:
+            <ul>
+              <li><a href="http://nbviewer.ipython.org/url/www.cs.sfu.ca/~anoop/courses/CMPT-413-Spring-2014/python-tidbits.ipynb">Python tidbits</a>.</li>
+              <li>Chapter on <a href="http://norvig.com/ngrams/">Natural Language Corpus Data</a> by Peter Norvig in Beautiful Data (Segaran and Hammerbacher, 2009)</li>
+              <li>Sections 1-14 from <a href="mt-wkbk.pdf">Kevin Knight's statistical MT workbook</a></li>
+              <li>Sections 1-2.7 (p.15) &amp; Section 5.1 from <i></i><a href="chen-goodman-tr-10-98.pdf"><i>Empirical Study of Smoothing</i> by Chen and Goodman</a></li>
+            </ul>
+          </li>
+        </ul>
+	    </li>
+
+	    <li>Finite-state methods: automata and transducers (applications to orthography, morphology, phonology)<br>
+	      <ul>
+		<li><a href="fsmintro.pdf">FST1 Intro to Finite-state automata</a>  </li> 
+		<li><a href="fsmapply.pdf">FST2 Applying Finite-state automata</a>  </li>
+		<li><a href="fst.pdf">FST3 Introducing Finite state transducers</a>  </li>
+		<li><a href="fstapply.pdf">FST4 Applying Finite-state transducers</a>  </li>
+        <li><a href="http://nbviewer.ipython.org/url/www.cs.sfu.ca/~anoop/courses/CMPT-413-Spring-2014/pyfst-intro.ipynb">Installing and using PyFST</a></li>
+		<!-- <li><a href="ED4-edit-distance-fst.pdf">ED4 Edit distance and Finite-state transducers</a> </li> -->
+	      </ul>
+	    </li>
+
+
+	  <li>Finite-state methods: edit distance (shortest path in a transducer, spelling correction, evaluation metrics)
+	  <ul>
+ 	    <!-- <li> <a href="editdist.pdf">Notes #7</a> </li>  -->
+        <li><a href="ED1-introducing-edit-distance.pdf">ED1 Introducing edit distance</a> </li>
+        <li><a href="ED2-edit-distance-algorithm.pdf">ED2 Edit distance algorithm</a> </li>
+        <li><a href="ED3-variable-edit-distance.pdf">ED3 Variable Edit distance and Spelling Correction</a> </li>
+	    <li>Links: 
+        <ul>
+            <li><a href="http://odur.let.rug.nl/%7Ekleiweg/lev/">Levenshtein Demo</a></li>
+            <li>Links: <a href="http://www.let.rug.nl/~vannoord/TextCat/index.html">TextCat</a></li>
+        </ul>
+	    </li>
+	  </ul>
+      </li>
+
+	<li>Hidden markov models (sequence learning)<br>
+      <ul>
+        <li><a href="HMM1-introducing-hmms.pdf">HMM1 Introducing HMMs</a></li>
+        <li><a href="HMM2-ngrams-versus-hmms.pdf">HMM2 ngrams versus HMMs</a></li>
+        <li><a href="HMM3-parsing-with-HMMs.pdf">HMM3 parsing with HMMs</a></li>
+        <li><a href="HMM4-viterbi-algorithm.pdf">HMM4 Viterbi algorithm for HMMs</a></li>
+        <li><a href="HMM5-language-model.pdf">HMM5 HMM as language model</a></li>
+        <li><a href="HMM6-supervised-learning.pdf">HMM6 Supervised learning of a HMM</a></li>
+        <li><a href="HMM7-lagrange-multipliers.pdf">HMM7 Lagrange multipliers for learning HMMs</a></li>
+        <li><a href="HMM8-unsupervised-learning.pdf">HMM8 Unsupervised learning of a HMM</a></li>
+        <!-- <li>HMM9 Efficient unsupervised learning of a HMM</a></li> -->
+        <li>Readings:
+            <ul>
+            <li><a href="hmm-algos.pdf">Pseudo-code for HMM Learning</a></li>
+            <li>Additional Reading: <a href="hmm-map-prior.pdf">Maximizing the posterior for HMM model learning</a></li>
+            </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>Some applications of sequence learning (automatic speech recognition, part of speech tagging, name-finding, word segmentation)
+        <ul>
+           <li><a href="postags.pdf">HMM9 Tagging and chunking</a>  </li>
+        </ul>
+    </li>
+
+    <li>Building a classifier (PP attachment, etc)
+        <ul>
+           <li><a href="classify.pdf">CL1 Introduction to Classification</a> </li>
+        </ul>
+    </li>
+
+    <li>Context-free grammars and parsing algorithms (natural language syntax)
+    <ul>
+    <li><a href="CFG1-ambiguity.pdf">CFG1 Ambiguity and CFGs</a></li>
+    <li><a href="CFG2-cfg-definition.pdf">CFG2 Definition of CFG</a></li>
+    <li><a href="CFG3-parsing.pdf">CFG3 CFG Parsing</a></li>
+    <li><a href="CFG4-recognition-algorithms.pdf">CFG4 CFG recognition complexity</a></li>
+    <li><a href="CFG5-probabilistic-cfgs.pdf">CFG5 Probabilistic CFGs</a></li>
+    <li>Readings: 
+        <ul>
+        <li><a href="parsingchp.pdf">Notes on grammars and parsing</a> by Anoop.</li>
+        <li><a href="http://www.cs.jhu.edu/%7Ejason/465/PowerPoint/lect10-earley.ppt">Earley Algorithm (ppt)</a> from Jason Eisner's NLP course</li>
+        </ul>
+    </li>
+    </ul>
+
+    <li>Machine Translation
+    <ul>
+    <li><a href="smt-tutorial2003.pdf">SMT Tutorial (2003)</a> by Kevin Knight and Philipp Koehn.</li>
+    </ul>
+    </li>
+
+    <li>Selected topics in NLP
+    <ul>
+    <li><a href="fs.pdf">FS1 Feature structures and unification</a>  </li>
+    <li><a href="lexicalsem.pdf">LEX1 Lexical semantics and sense disambiguation</a>  </li>
+    <li><a href="SEM1-natural-language-semantics.pdf">SEM1 Natural Language Semantics</a> (translation into logic, language understanding, language generation)</li>
+    <li><a href="discourse.pdf">DIS1 Discourse and dialog models</a></li>
+    <li>Natural Language and complexity theory (mathematical linguistics)</li>
+    </ul>
+    </li>
+
+    </ol>
+    </p>
+    </div>
+    </div>
+
+        <div class="tab-pane fade" id="homeworks">
+        <div class="container">
+        <p>
+          <h3>Homeworks</h3>
+      <ol> 
+      <li><a href="hw1.pdf">Homework #1</a>. Due Jan 28. 10%. <a href="hw1.tgz">files</a>. 
+        <ul>
+            <li><a href="http://nbviewer.ipython.org/url/www.cs.sfu.ca/~anoop/courses/CMPT-413-Spring-2014/python-tidbits.ipynb">Python tidbits</a>.</li>
+            <li>Additional Reading: <a href="nltkintro.pdf">Short Introduction to NLTK</a> by S. Bird, E. Klein and E. Loper.</li> 
+            <li>Additional Reading for Python newbies: <a href="http://docs.python.org/tut/tut.html">Python Tutorial</a> by Guido van Rossum. Read upto Chapter 10.</li> 
+        </ul>
+      </li>
+      <li><a href="hw2.pdf">Homework #2</a>. Due Feb 18 (deadline extended to Feb 21 due to CSIL issues). 10%. <a href="hw2.tgz">files</a></li> 
+          <ul> 
+            <li>CMU Pronunciation dictionary: <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">cmudict</a></li> 
+            <li><a href="http://nbviewer.ipython.org/url/www.cs.sfu.ca/~anoop/courses/CMPT-413-Spring-2014/pyfst-intro.ipynb">Installing and using PyFST</a></li>
+            <li><a href="https://gist.github.com/anoopsarkar/4743314">Using the openfst and thrax toolkits installed on CSIL Linux machines</a></li>
+            <li>OpenFST fst toolkit: <code>/usr/shared/CMPT/cmpt413/sw/linux/openfst-1.3.3</code>; </li>
+            <li><a href="http://www.openfst.org">OpenFST download and documentation</a> (configure with <code>--enable-far=true</code> for Thrax).</li>
+            <!-- <li>Thrax rewrite rules toolkit: <code>/usr/shared/CMPT/cmpt413/sw/linux/thrax-1.0.2</code>; <a href="http://www.cslu.ogi.edu/~sproatr/Courses/TextNorm/tutorial.html">Thrax download and installation instructions</a>. -->
+          </ul>
+      <li><a href="hw3.pdf">Homework #3</a>. Due Mar 4. 10%. <a href="hw3.tgz">files</a></li>
+          <ul> 
+            <li>The data files are in the directory: <code>~anoop/cmpt413/hw3/</code></li>
+            <li><a href="http://www.kanungo.com/software/software.html">umdhmm</a> is available on CSIL Linux machines in the directory: <code>/usr/shared/CMPT/cmpt413/sw/linux</code></li>
+          </ul>
+      <li><a href="hw4.pdf">Homework #4</a>. Due Mar 25. 10%. <a href="hw4.tgz">files</a></li>
+          <ul> 
+            <li>The data files are in the directory: <code>~anoop/cmpt413/hw4/</code></li>
+          </ul>
+      <li><a href="hw5.pdf">Homework #5</a>. Due Apr 8. 10%. <a href="hw5.tgz">files</a></li>
+          <ul> 
+            <li>The data files are in the directory: <code>~anoop/cmpt413/hw5/</code></li>
+          </ul>
+      </ol>
+
+    <h4>Files and Subversion</h4>
+        <ul>
+        <li>The directory <code>~anoop/cmpt413/hw1</code> and the directories for later homeworks are available on <code>fraser.sfu.ca</code>.
+        <li>Use Subversion (svn) for your homeworks.  <script src="https://gist.github.com/4486112.js"></script> </li>
+        <li>To continue working at a later date: <script src="https://gist.github.com/4486519.js"></script> </li>
+        <li>There are strict requirements on the filenames for your programs. The filenames to be used is provided in <code>readme.txt</code> file. These steps will enable us to consistently test all the submissions using the same method (see the information about automated testing below). </li>
+        </ul>
+
+    <h4>Programming</h4>
+        <ul>
+            <li>We will be using the Python-based <a href="http://nltk.org/">NLTK: Natural Language Toolkit</a> for most of the homeworks in this course (version 2.0.4 is installed and should be used for the homeworks). </li>
+            <li>Run <code>python</code> and then type in <code>import nltk</code>. If you get an error then something went wrong. Email csilop@cs.sfu.ca with the details.</li>
+            <li>It is expected that your program will compile and run using the standard runtime environment on the Linux CSIL lab machines.</span> If you are developing on a Linux or Windows machine at home, you have to ensure that the code will run on the CSIL machines before you submit the assignment. Please either visit the CSIL lab machines or you can use <code>ssh</code> to login to the CSIL Linux machines and also use <code>scp</code> to copy over and test your programs on the CSIL Linux machines before you submit them. Check the <a href="http://www.cs.sfu.ca/content/dam/sfu/computing/csil/csil_layout_burnaby.pdf">CSIL Layout map</a> for the machine names.</li>
+            <li><a href="http://www.cs.sfu.ca/about/school-facilities/csil/how-to-remote-access-to-csil.html">Remote access to CSIL</a> is allowed.</li>
+            <li><a href="http://www.cs.sfu.ca/about/school-facilities/csil/unix/how-to-use-csil-linux-terminal-server.html">Linux terminal server</a> is currently in beta.</li>
+            <li>CSIL computers accept SSH connections on port 24 (rather than the usual port 22). They can only be accessed from within the SFU network. If you are outside it, you need to go through a directly accessable computer, most likely fraser.sfu.ca. Here are some examples using the usual command line <code>ssh</code> and <code>scp</code> (from OpenSSH). Below $ is the command line shell on your home computer running Linux/MacosX/Cygwin. What follows is a recipe that will connect you remotely to a CSIL Linux machine: <script src="https://gist.github.com/4486532.js"></script> </li>
+        <li>If your local machine (e.g your laptop) has a different username from your SFU username (your username can be found by examining your SFU email address: username@sfu.ca), then prefix the SFU username to the ssh or scp command. <code>ssh (username)@fraser.sfu.ca</code> and <code>scp -r (username)@fraser.sfu.ca:~anoop/cmpt413/hw1</code>.
+    <li>CSIL uses a seperate home directory from the rest of SFU, so you also have to copy files through fraser. However, it looks like it now has a separate home for each machine, so you probably want to just keep your files in your SFU home. <script src="https://gist.github.com/4486537.js"></script> </li>
+            <li>You may want to refer to a quick Unix tutorial. There are several on the web. The following one covers most of what you need to use the Linux shell effectively: <a href="http://unlser1.unl.csi.cuny.edu/tutorials/QuickUnixTutorial.html">Quick Unix Tutorial</a>.
+</li>
+            <li> On some CSIL Linux machines, in some rare cases, you might have to extend your CPU time limit for a process. If you are using tcsh then run the command "limit cputime 1800" to extend CPU time to 1800 secs or 30 mins. If you are using bash then use the command "ulimit -t 1800".</li>
+        </ul>
+
+    <h4>Homework Submission</h4>
+        <ul>
+        <li>Your homework will be submitted electronically using the department-provided submission server. Connect to
+        the submission server by going to the URL: <a href="https://courses.cs.sfu.ca/">https://courses.cs.sfu.ca/</a>
+        (your grades for the homeworks will also be tracked on the same web page)</li>
+         <li>The URL for your homework should be the answer directory, e.g. for hw1, the URL will be 
+         <li>All homeworks are due by 11:45 PM on the homework due date.</li>
+        </ul>
+    <!--
+            <h4>Groups</h4>
+            <ul>
+            <li>The homework assignments will be solved in groups. Maximum group size is four. All groups must be formed before Homework #1 goes live (start of class on the release date of HW1).</li>
+            <li>Your homework submission should include a file called <code>answer/HANDLE</code> which should contain ASCII text without spaces which will be a suitably nerdy/funny group name to identify your group.</li>
+            <li>Each group will create a single submission and upload it to courses.cs.sfu.ca before the due date.</li>
+            <li>Each member of the group must include a <code>README.username</code> file for each username in the group. This file will contain the self-assessment of your contribution to the submission.</li>
+            <li>Each group member will be graded primarily based on the svn commit logs. We will count the activity of each group member. If the TA or the instructor perceives there is a problem with collaboration in a group, certain group members can get zero marks. If you are pair programming, take turns in switching the user doing the commits to the svn repository.</li>
+            <li><b>Effective group collaboration</b>: We are looking to see effective collaboration to solve the homework assignment. People can play different roles and sometimes more than one role in the same homework:
+                <ul>
+                    <li>Designer: creates a plan for implementation and coordinates activities of the group. Should create design docs (text files or markdown or equivalent only). Put these documents in the directory <code>answer/docs</code> and mention the files in your <code>README.username</code> file.</li>
+                    <li>Code reviews: write a critical view of the implementation by the group. Points out what is missing, inelegant code, etc. and produces a code review document (text files or markdown or equivalent only). Put these documents in the directory <code>answer/docs</code> and mention the files in your <code>README.username</code> file.</li>
+                    <li>Development: write the code. This can be done in collaboration. Usually there should be multiple developers especially for more complex questions in the homework. </li>
+                    <li>Testcases: write new testcases to anticipate any secret testcases. These testcases should follow the same format and conventions of the provided testcases and you should be able to use the python check program on these testcases. Put these documents in the directory <code>answer/testcases</code> and mention the files in your <code>README.username</code> file.</li>
+                </ul>
+            </li>
+            <li>In general, late submissions will be per group since each group uploads a single solution to each homework. However, in the case when the <code>README.username</code> file is missing in the submission for only one group member, and if that file is received late, then only that group member will be considered late for that homework.</li>
+            <li>The reason for having a group is to collaborate on solving <i>each</i> question in the assignment. Do not simply split up the questions in each homework and submit as a group without looking at each others code. This will result in a grade for each group member equivalent to the questions actually solved by each person in the group.</li>
+            </ul>
+-->
+
+            <h4>Homework Grading</h4>
+            <ul>
+            <li>You have 4 grace days for the entire semester. You can use up your grace days, one per homework, or all 4
+            for one homework (in general, any integer partition of 4, which is <i>[[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 3], [4]]</i> <a href="https://gist.github.com/anoopsarkar/4486552">source code</a>). If you use up all your grace days then the maximum grade <b>if you are late</b> will be 50 percent of the original score for that homework. Each additional day will reduce the maximum grade further by 10 percent. Weekend days count the same as weekdays for the late penalty.</li>
+                <li>If you want to do extra stuff make sure it is <i>correct</i>.</li>
+                <li>Only do extra stuff if you have finished the entire homework.</li>
+                <li>There is no <i>extra credit</i> for doing more, mainly because it is a pain to grade that way.</li> 
+                <li>However doing the extra optional question for your own understanding will likely help you with the concepts covered in the course and hence you may do better in the exams or future assignments.</li>
+                <li>Read the <b>Mark Appeals</b> policies in the <b>Policies</b> section of this web page.</li>
+        </ul>
+
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="policies">
+        <div class="container">
+        <p>
+        <h3>Course Policies</h3>
+	    <h4 id="email">Email policy</h4>
+	    <ul>
+	      <li>We will be using the discussion board on courses.cs.sfu.ca for all discussions. For homeworks, exams, or other clarification emails do not email me (the instructor) or the TA directly.</li>
+          <li>If you email the instructor or TA directly then use your SFU email address to send the email (do not use any other provider), and use <code>cmpt413:</code> as the prefix in your subject line.</li>
+	    </ul>
+	  <h4 id="hw">Homework submission policies</h4>
+	  <ul>
+	    <li>For homework policies, see the Homeworks section</li>
+	  </ul>
+       <h4 id="exams">Exams</h4>
+        <ul>
+          <li> If you must miss an exam because of a medical problem, you should make an attempt to contact me prior to the exam either by email or a message in my mailbox. </li>
+          <li>To request an extension of the due date due to a medical problem, you must submit the <a href="http://students.sfu.ca/forms.html">offical SFU Health Care Provider statement</a>. </li>
+          <li>If you miss an exam due to valid medical reasons you will be graded on your performance on the rest of the course. </li>
+          <li><span style="font-weight: bold;">Make up exams will not be given under any circumstances</span>. </li>
+        </ul>
+      <h4 id="webpage">Disclaimers about this web page</h4>
+      <ul>
+        <li>All course information on this web page is tentative and could be in error. It can also change at any time. Confirm crucial dates or information with me in person during class. Double check with SFU calendar or schedule information for official class times and final exams time and location. </li>
+        <li>Students are expected to attend all classes: announcements about assigned readings, homeworks and exams will be made available at the start of each class. Such announcements may not be made on this web page, so don't rely on information here instead of attending class. </li>
+        <li>Lecture notes or other materials put up on this web page are only <span style="font-style: italic;">additional
+        material</span> and <span style="font-weight: bold;">not</span> an alternative to the readings assigned. Only reading the lecture notes will not be enough to prepare for the homeworks or the exams.</li>
+      </ul>
+
+    <h4 id="acaddis">Academic Honesty</h4> 
+    <ul> 
+      <li>Some examples of unacceptable behaviour:
+           <ul> 
+             <li> Handing in assignments that are not 100% your own work (in design, implementation, wording, etc.), without proper citation. There must be a README file in your submission with citations to any external code used.</li> 
+         <li> Using any unpermitted resources during an exam.</li> 
+         <li> Looking at, or attempting to look at, another student's paper during an exam.</li> 
+         <li> Submitting work that has been submitted before, for any course at any institution.</li> 
+           </ul></li> 
+      <li>If you are unclear on what academic honesty is, see <abbr title="Simon Fraser University" class="obvious">SFU</abbr>'s <a 
+    href="http://www.sfu.ca/policies/Students/index.html">Policy S10-01</a> and the <a href="https://www.sfu.ca/policies/gazette/teaching.html">University code of academic honesty</a>.</li> 
+      <li>All instances of academic dishonesty will be dealt with very severely.</li> 
+      <li>In general, minimum requested penalties will be as follows:
+           <ul> 
+         <li>For assignments: a mark of -100% on the assignment.  So, academic dishonesty on an assignment worth 5% of your final mark will result in a zero on the assignment, and a penalty of 5% from your final grade.</li> 
+         <li>For exams: an F in the course.</li> 
+           <li>Please note that these are minimum penalties.  At the instructor's option, more severe penalties may be given/requested.  <strong>All</strong> instances of academic dishonesty will be noted on your University record.</li> 
+           </ul> 
+      <li> The instructor may use, or require students to submit assignments to, an automated service that will check for plagiarism.</li> 
+    </ul> 
+     
+     
+    <h4 id="exams">Exams and Tests</h4> 
+    <ul> 
+      <li>Midterms may be in different rooms than the lectures.  You will be notified by email.</li> 
+      <li>Exams may be written in either pen or pencil.  Calculators or other aids are not allowed unless explicitly stated.</li> 
+      <li>Midterm exams and other tests may or may not be returned, depending on the course.  If they are returned, you can get them from the instructor's office hours.  You can not dispute the marking of your exam after you have taken it out of the instructor's office. </li> 
+      <li>Final exams are not returned to students by University policy; they are kept by the instructor.</li> 
+      <li>If you miss a test or exam, you must present a note from a doctor to get a mark other than zero.  Arrangements to make up the lost marks will be made on a case-by-case basis by the instructor.  Make-up exams may be given as an oral examination.</li> 
+      <li>You must get a pass on the weighted average of the exams to pass the course.</li> 
+    </ul> 
+     
+     
+    <h4 id="appeals">Mark Appeals</h4> 
+    <p>Except for final grades, this is how you can go about getting your mark changed:</p> 
+    <ul> 
+      <li>Requests for a change in your mark must come to the course
+    instructor.  <abbr title="Teaching Assistant" class="obvious">TA</abbr>s will not change your mark, except for errors in addition
+    or data entry.</li> 
+      <li>Requests should come in the same form as you received your marks: if
+    you got marks by email, forward that email to the instructor; if you had
+    paper handed back, return that.</li> 
+      <li>You should give a brief explanation of why you want your mark reevaluated.</li> 
+      <li>The instructor will remark the entire assignment/test.  This will be your mark, whether it is higher or lower than the original.</li> 
+      <li>Appeals may be made up to two weeks after the mark is returned or until the final exam date, whichever is <em>first</em>.  After that deadline, you must make a formal mark appeal for any changes.</li> 
+      <li>For exams in particular, these are <em>not</em> reasons to get more marks:
+           <ul> 
+         <li>I knew what I was saying here, but didn't write it.</li> 
+         <li>This is the correct answer for some question other than the one asked,
+              but I didn't get any marks for it.</li> 
+         <li>I didn't understand the question.</li> 
+           </ul></li> 
+    </ul> 
+     
+    <h4 id="finals">Final Exam and Final Marks Appeals</h4> 
+    <p>If you're concerned about your mark at the end of the course, you can see the instructor.  Here are some guidelines:</p> 
+    <ul> 
+      <li>You can come to the instructor's office at designated times to review your final exam.</li> 
+      <li>Like assignments, you can ask the instructor to reevaluate your final exam marking.</li> 
+      <li>The following are not good reasons to get a higher final mark:
+           <ul> 
+         <li>I want it.</li> 
+         <li>I think I deserve it.</li> 
+         <li>I need it.</li> 
+         <li>I'm close to the next grade cutoff.</li> 
+           </ul></li> 
+      <li>This is a good reason:
+           <ul> 
+         <li>There's a marking irregularity on my final or some other piece of work.</li> 
+           </ul></li> 
+      <li> The marking scheme is fixed.  If you did badly on a midterm, you can't weight the final more heavily.</li> 
+    </ul> 
+
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="textbook">
+        <div class="container">
+        <p>
+        <h3>Textbook and References</h3>
+
+        <p>The following material is in addition to the lecture notes in the Notes section.</p>
+        <h4>Required Reading</h4>
+        <h5>Lecture notes on Statistical Natural Language Processing by Michael Collins</h5>
+        <div class="container">
+          <p>
+            <ul>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/lm-spring2013.pdf">Language models</a> (<a href="mcollins-notes/lm-spring2013.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/hmms-spring2013.pdf">Hidden Markov models and tagging (sequence labeling) problems</a> (<a href="mcollins-notes/hmms-spring2013.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf">PCFGs</a> (<a href="mcollins-notes/pcfgs.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lexpcfgs.pdf">Lexicalized PCFGs</a> (<a href="mcollins-notes/lexpcfgs.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/ibm12.pdf">IBM Models 1 and 2 for machine translation</a> (<a href="mcollins-notes/ibm12.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/pb.pdf">Phrase-based translation models</a> (<a href="mcollins-notes/pb.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/loglinear.pdf">Log-linear models</a> (<a href="mcollins-notes/loglinear.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/crf.pdf">Log-linear models, MEMMs, and CRFs</a> (<a href="mcollins-notes/crf.pdf">cached</a>)</li>
+            <li><a href="http://www.cs.columbia.edu/~mcollins/fb.pdf">The forward-backward algorithm</a> (<a href="mcollins-notes/fb.pdf">cached</a>)</li> 
+            <li><a href="http://www.cs.columbia.edu/~mcollins/em.pdf">The EM algorithm</a> (<a href="mcollins-notes/em.pdf">cached</a>)</li>
+<!--            <li><a href="http://www.cs.columbia.edu/~mcollins/io.pdf">The inside-outside algorithm</a> (<a href="mcollins-notes/io.pdf">cached</a>)</li> -->
+            </ul>
+          </p>
+          <p>These notes were also used as part of <a href="https://www.coursera.org/course/nlangp">Michael Collins' course on Natural Language Processing on coursera</a>.</p>
+        </div>
+
+        <br>
+        
+        <h5>Introduction to Natural Language Processing by Steven Bird, Ewan Klein and Edward Loper</h5>
+        <p><img align="left" style="width: 103px; height: 140px; padding-right: 10px" alt="" title="" src="images/nltkbook.png">
+        <div class="container">
+          <p>This book describes the Python-based Natural Language toolkit that we will use in the homework and will provide additional reading material for that purpose. Note that the tutorials needed for the homeworks are available online on nltk.sf.net.</p>
+        </div>
+        </p>
+
+        <br>
+        <h4>Reference Textbooks</h4>
+        <h5>Jurafsky and Martin</h5>
+        <p><img align="left" style="width: 103px; height: 140px; padding-right: 10px" alt="" title="" src="images/slp.jpg">
+        <div class="container">
+        <p>Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition by Daniel Jurafsky, James H. Martin. 934 pages 1 edition (January 26, 2000), Prentice Hall, ISBN: 0130950696</p>
+		<p>The book also has a <a href="http://www.cs.colorado.edu/%7Emartin/slp.html">webpage</a>. In particular visit it for the <a href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-errata.html">Errata</a> and the online <a href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-web-resources.html">Resources</a> sections.</p>
+        </div>
+        </p>
+
+        <br>
+
+        <h5>Manning and Schutze</h5>
+        <p><img align="left" style="width: 103px; height: 140px; padding-right: 10px" alt="" title="" src="images/fsnlp.jpg">
+        <div class="container">
+		    <p>Foundations of Statistical Natural Language Processing by Christopher D. Manning, Hinrich Schutze. 680 pages 1 edition (1999), M.I.T. Press/Triliteral, ISBN: 0262133601</p>
+        </div>
+        </p>
+
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="dropdown1">
+            <p><iframe src="http://www.google.com/calendar/embed?src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p> 
+        </div>
+
+        <div class="tab-pane fade" id="dropdown2">
+            <p><iframe src="https://www.google.com/calendar/b/0/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FVancouver" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">All content is &copy; <a href="http://www.cs.sfu.ca/~anoop/index.html">Anoop Sarkar</a>. The website was built using <a href="http://getbootstrap.com">Twitter Bootstrap</a>.</p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+!<arch>
+dlhello.c       1159977791  42253 3000  100644  278       `
+#include <dlfcn.h>
+
+int
+main(int argc, char **argv)
+{
+  void (*greeting)();
+  void *module;
+  if( argc > 2 ) exit(0);
+  module = dlopen(argv[1], RTLD_LAZY);
+  if(!module) exit(0);
+  greeting = dlsym(module, "greet");
+  if(greeting) {
+    (*greeting)();
+  }
+  dlclose(module);
+}
+english.c       1159977791  42253 3000  100644  65        `
+#include <stdio.h>
+void
+greet () {
+  printf("hello, world\n");
+}
+
+hello.c         1159977791  42253 3000  100644  27        `
+int
+main () {
+  greet();
+}
+
+makefile        1159977791  42253 3000  100644  793       `
+
+# For linux use "make libenglish.so" and "make dllinux" and run the
+# programs using "LD_LIBRARY_PATH=. ./hello" and
+# "LD_LIBRARY_PATH=. ./dlhello libenglish.so"
+
+libenglish.so:
+	gcc -fPIC -c english.c
+	gcc -shared -o libenglish.so english.o
+	gcc -c hello.c
+	gcc -o hello hello.o -L. -lenglish
+
+dllinux: libenglish.so
+	gcc -c dlhello.c
+	gcc -o dlhello dlhello.o -ldl
+
+# For macosx use "make libenglish.dylib" and "make dlmac" and run the
+# programs using "./hello" and "./dlhello ./libenglish.dylib"
+
+libenglish.dylib: 
+	gcc -fPIC -c english.c
+	gcc -dynamiclib -o libenglish.dylib english.o
+	gcc -c hello.c
+	gcc -o hello hello.o -L. -lenglish
+
+dlmac: libenglish.dylib
+	gcc -c dlhello.c
+	gcc -o dlhello dlhello.o
+
+# common cleanup stuff
+
+clean:
+	/bin/rm -f hello dlhello *.o *.so *~ *.dylib
+
+

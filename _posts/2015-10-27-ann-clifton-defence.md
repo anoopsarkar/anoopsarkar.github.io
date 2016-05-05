@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ann Clifton passes her PhD thesis exam"
+tags: [graduate-students,news]
 ---
 
 Ann Clifton successfully defended her PhD thesis on Oct 27th 2015. 

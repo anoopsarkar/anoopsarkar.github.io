@@ -1,0 +1,68 @@
+SFU                       Computing Science                       05-1
+________________________________________________________________________
+CMPT 413-3 D1"    Computational Linguistics
+ Instructor: A. Sarkar                     SFU Burnaby
+
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+Computational Linguistics is the study of human language from a
+computational perspective.  This course will examine algorithms used in the
+automatic analysis or production of language.  Along with formal models of
+language, we will also study the engineering of natural language processing
+software.  Many of the concepts, methods and algorithms studied are related
+to topics like formal linguistics, information retrieval, data mining from
+text, and biological sequence analysis.
+
+TOPICS:
+
+   o Introduction to linguistics and formal language theory
+   o Finite-state transducers:  applications to phonology and morphology
+   o Machine translation
+   o Hidden markov models:  speech recognition, part of speech tagging
+   o Context-free grammars:  Semantics
+   o Language and complexity:  the Chomsky hierarchy
+   o Feature structures and unification
+   o Generation
+   o Word-sense disambiguation
+   o Wordnet
+   o Discourse and dialog models
+   o Summarization
+   o Document classification and clustering
+
+GRADING:
+
+Assignments (40%), Midterm (20%), Final Examination (40%).
+
+Students must attain an overall passing grade on the weighted average of
+exams in the course in order to obtain a clear pass (C or better).
+
+TEXTBOOKS:
+
+   o None
+
+RECOMMENDED:
+
+   o Speech and Language Processing, Daniel Jurafsky and James Martin,
+     Prentice-Hall, 2000
+   o Foundations of Statistical Natural Language Processing, Christopher
+     Manning and Hinrich Schutze, MIT Press, 1999
+
+PREREQUISITES/COREQUISITES:
+
+Completion of nine credits in Computing Science upper division courses, or
+permission of the instructor.
+
+Distributed:  November 1, 2004
+
+.......................................................................
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's policy information
+(http://www.cs.sfu.ca/undergrad/Policies/).

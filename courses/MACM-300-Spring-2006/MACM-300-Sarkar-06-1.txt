@@ -1,0 +1,81 @@
+SFU                       Computing Science                       06-1
+________________________________________________________________________
+MACM 300-3 SECT   Intro.  to Formal Languages and Automata with
+                  Applications
+ Instructor: A. Sarkar                       WHERE
+ LECTURE TIME TBA ... EXAM TIME TBA
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+The goal of this course is to begin to understand the foundations of
+computation.  Various models of computation exist, all of which capture
+some fundamental aspect of computation.  We will concentrate on three
+classes of models:  models with finite amount of memory (finite-state
+automata); models with stack memory (push-down automata); and unrestricted
+models (Turing machines).  The notion of a formal grammar arises from the
+need to formalize the informal notions of grammar and language.  Many
+formal grammars were invented:  right-linear grammars, context-free
+grammars and unrestricted grammars.  These grammars can be placed in a
+natural hierarchy.  Surprisingly, there is a deep connection between these
+grammars, the strings they generate (their language), and the models of
+computation introduced above.  This course will also briefly cover the
+impact of formal language theory for many computer science applications:
+in compilers, natural language processing, and program verification.  For
+more information go to:
+http://www.cs.sfu.ca/ anoop/courses/MACM-300-Spring-2006/index.html
+
+TOPICS:
+
+   o Regular Languages and Finite Automata:  regular expressions,
+     deterministic and non-deterministic finite automata, uniqueness of
+     minimal finite automata, non-regular languages
+   o Context Free Languages and Pushdown Automata:  grammars, derivation
+     trees, ambiguity, parsing, normalizing context-free grammars, the
+     hardest context-free language, letter equivalence of context-free
+     languages with regular languages, deterministic context-free
+     languages, non-context-free languages
+   o Turing Machines:  equivalence of variants, the Church-Turing thesis,
+     alternative models of computation
+   o Hierarchy of Languges and Automata:  recursive and recursively
+     enumerable languages, recognizing versus deciding a language,
+     context-sensitive grammars and languages
+   o Applications of Formal Language Theory:  compilers, natural language
+     processing, program verification (automata over infinite strings)
+
+GRADING:
+
+To be announced later.
+
+Students must attain an overall passing grade on the weighted average of
+exams in the course in order to obtain a clear pass (C or better).
+
+TEXTBOOKS:
+
+   o Introduction to the Theory of Computation, Michael Sipser, Thompson
+     Course Technology, 2005
+
+REFERENCES:
+
+   o Introduction to Automata Theory, Languages, and Computation:  2/e,
+     John Hopcroft, Rajeev Motwani and Jeffrey Ullman, Addison-Wesley, 2001
+   o An Introduction to Formal Languages and Automata, Peter Linz, Jones
+     and Bartlett, 2000
+   o
+
+PREREQUISITES/COREQUISITES:
+
+MACM 201
+
+Distributed:  October 17, 2005
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's Statement on Intellectual Honesty
+(http://www.cs.sfu.ca/undergrad/Policies/honesty.html).

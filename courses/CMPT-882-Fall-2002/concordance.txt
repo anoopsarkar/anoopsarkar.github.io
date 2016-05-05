@@ -1,0 +1,26 @@
+
+./concordance.pl plant nanc_nyt94_plant_sents.txt | head -8   
+
+produces:
+
+de_VBP training_VBG new_JJ Ukrainian_JJ     plant    _NN operators_NNS to_TO replace_VB Russi
+_NNPS who_WP are_VBP leaving_VBG the_DT     plant    s_NNS in_IN Ukraine_NNP and_CC improving
+N and_CC safety_NN procedures_NNS at_IN     plant    s_NNS in_IN both_DT countries_NNS ,_, sa
+iet-designed_JJ reactors_NNS at_IN a_DT     plant    _NN in_IN the_DT Czech_NNP Republic_NNP 
+er_JJ to_TO pay_VB to_TO make_VB the_DT     plant    _NN safer_JJR ._. 
+er_JJ to_TO pay_VB to_TO make_VB the_DT     plant    _NN safer_JJR ._. 
+ ,_, ''_'' she_PRP said_VBD ,_, are_VBP     plant    _NN moratoriums_NNS ._. 
+_NNS at_IN the_DT Orange_NNP County_NNP     plant    _NN ._. 
+
+
+for searching through more than one file:
+
+cat nanc* | ./concordance.pl plant - | less
+
+for searching larger contexts:
+
+./concordance.pl plant nanc_nyt94_plant_sents.txt 45 | less
+
+Anoop Sarkar
+anoop at cs.sfu.ca
+

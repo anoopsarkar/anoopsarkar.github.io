@@ -1,0 +1,18 @@
+Linguistics and Formal-language theory
+Finite-state methods: automata and transducers orthography, morphology, phonology
+Finite-state methods: edit distance shortest path in a transducer, spelling correction, evaluation metrics
+ Levenshtein
+Probability models and language: n-grams
+Hidden markov models sequence learning
+Some applications of sequence learning automatic speech recognition, part of speech tagging, name-finding, word segmentation
+Context-free grammars and parsing algorithms natural-language syntax
+Feature structures and unification
+Lexical semantics and word-sense disambiguation
+Discourse and dialog models
+Natural-Language Semantics translation into logic, language understanding, language generation
+Natural-Language and complexity theory mathematical linguistics
+CFG
+HMM
+CF
+TAG
+CCG

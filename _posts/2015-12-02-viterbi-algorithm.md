@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "History of the Viterbi Algorithm"
+tags: [ill-tempered-observations]
 ---
 
 Required reading: [The Viterbi Algorithm: A Personal History](http://arxiv.org/abs/cs/0504020) by G. David Forney Jr.

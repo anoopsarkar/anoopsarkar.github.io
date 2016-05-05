@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Paper accepted at EMNLP 2015"
+tags: [publications,machine-translation]
 ---
 
 The list of accepted papers in EMNLP 2015 is now available at [EMNLP 2015 accepted papers](http://aclweb.org/anthology/D/D15/). 

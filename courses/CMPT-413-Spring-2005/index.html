@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CMPT 413 - Spring 2005: Computational Linguistics</title>
+  <meta content="Anoop Sarkar" name="author">
+  <meta content="Course web page for CMPT-413 (Simon Fraser University)"
+ name="description">
+</head>
+<body>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0"
+ cellspacing="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 204, 255);">
+      <h2>CMPT-413 - Spring 2005 - Computational Linguistics<br>
+      </h2>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<big>
+<span style="font-weight: bold;"><br>
+</span></big>
+<table style="text-align: left; width: 1012px; height: 4165px;"
+ border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="background-color: rgb(153, 255, 153); vertical-align: top;">
+      <h4><a href="#location">Location</a></h4>
+      <h4><a href="#announcements">Announcements</a></h4>
+      <h4><a href="#assignments">Assignments</a></h4>
+      <h4><a href="#references">References</a></h4>
+      <h4><a href="#readings">Weekly
+Readings</a></h4>
+      <h4><a href="#readme">Course
+Policies</a> <small>(first time here? read this)</small></h4>
+      </td>
+      <td style="vertical-align: top;">
+      <table>
+        <tbody>
+          <tr>
+            <td><img style="width: 149px; height: 103px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/speech.jpeg"></td>
+            <td><img style="width: 133px; height: 114px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/parse.jpeg"></td>
+            <td><img style="width: 119px; height: 98px;" alt="" title=""
+ src="../CMPT-413-Spring-2003/cfg.jpeg"></td>
+            <td><img style="width: 129px; height: 78px;" alt="" title=""
+ src="../CMPT-413-Spring-2003/em.jpeg"></td>
+            <td><img style="width: 124px; height: 120px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/hal.jpeg"></td>
+            <td><img style="width: 133px; height: 100px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/data.jpeg"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <big><span style="font-weight: bold;">Anoop Sarkar<br>
+      </span></big><br>
+      <span style="font-weight: bold;"></span><a name="location"><span
+ style="font-weight: bold;">Location</span>:
+AQ 3159
+(Academic Quadrangle)<br>
+      <span style="font-weight: bold;">Time</span>: 2:30-3:20pm MWF<br>
+      <br>
+      <span style="font-weight: bold;">gosfu Term:</span> 1051<br>
+      <span style="font-weight: bold;">gosfu Class Number:</span> 6880<br>
+      <br>
+      <span style="font-weight: bold;">Mailing List</span>:
+cmpt-413 @ sfu.ca</a><a
+ href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-413/"><br>
+Mailing list archives</a><br>
+      <br>
+      <span style="font-weight: bold;">Office</span>: ASB 10830<br>
+      <span style="font-weight: bold;">Office hours</span>: Wed
+3:30-4:30<span style="font-weight: bold;"><br>
+      </span>
+      <div style="text-align: left;"><br>
+Computational Linguistics is the study of human language behaviour and
+language learning from a computational perspective. This course will
+examine algorithms used in the automatic analysis or production of
+language.&nbsp; Along with formal models of natural language, we will
+also study the engineering of natural language processing software.
+This course is a broad introduction to this important sub-field of
+artificial intelligence and is intended for advanced 3rd year or 4th
+year undergraduate students.<br>
+      <br>
+More details: <a href="CMPT-413-Sarkar-05-1.txt">Course outline</a><br>
+      <br>
+      <table style="text-align: left; width: 881px; height: 20px;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+            <h3 style="background-color: rgb(102, 255, 153);"><a
+ name="announcements">Announcements</a></h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li><span style="font-weight: bold;">Grading for the course:</span><br>
+        </li>
+        <ul>
+          <li><span style="font-weight: bold;">Final Exam:</span> 30%</li>
+          <li><span style="font-weight: bold;">3 quizzes (1 hr each,
+closed
+book, held in class):</span> 14% each (total of 42%)<br>
+          </li>
+          <li><span style="font-weight: bold;">Homeworks:</span> 28%<br>
+          </li>
+        </ul>
+        <li style="font-weight: bold;">Important Dates:</li>
+        <ul>
+          <li><span style="font-weight: bold;">Jan 10, 2005:</span>
+First day
+of class</li>
+          <li><span style="font-weight: bold;">April 8, 2005:</span>
+Last
+day
+of class</li>
+          <li><span style="font-weight: bold;">Feb 11:</span> Quiz #1
+(Topics 1, 2 and 3)<br>
+          </li>
+          <li><span style="font-weight: bold;">Mar 11:</span> Quiz
+#2 (Topics 4, and 5)<br>
+          </li>
+          <li><span style="font-weight: bold;">Apr 1:</span> Quiz
+#3 (Take-home, Topics 6 and 7)<br>
+          </li>
+          <li><span style="font-weight: bold;">Final Exam: </span><span
+ style="font-weight: bold;">12-3pm, April 15, 2005</span>,
+Location: <span style="font-weight: bold;">WMC3220</span><br>
+          </li>
+          <li><span style="font-weight: bold;">Holidays: Fri, Mar 25;
+Mon, Mar 28</span>
+(no classes)<br>
+          </li>
+        </ul>
+        <li><span style="font-weight: bold;">Location of data files and
+software packages: </span><code>~anoop/cmpt413/</code> on
+fraser.sfu.ca and CSIL machines</li>
+        <li>Mon, Jan 10, 2005: Course web page created</li>
+        <li>Tue, Feb 1, 2005: HW1 and HW2 grades now available on <code>gradebook.cs.sfu.ca</code><br>
+        </li>
+      </ul>
+      <table style="text-align: left; width: 881px; height: 23px;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; background-color: rgb(102, 255, 153);">
+            <h3><a name="assignments">Assignments</a></h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+A brief note on assignment submission and development: Your homework
+will be submitted electronically using the department-provided
+submission server. Connect to the submission server by going to the
+URL: <a href="https://onara.cs.sfu.ca/">https://onara.cs.sfu.ca/</a><br>
+      <br>
+      <span style="font-style: italic;">It
+is expected that your program will compile and run using the standard
+perl environment on the Linux CSIL lab machines.</span>
+If you are
+developing on a Linux or Windows machine at home, you have to ensure
+that the code will run on the CSIL machines before you submit the
+assignment. Please either visit the CSIL lab machines or you can use <code>ssh</code>
+to login to the CSIL Linux machines and also use <code>scp</code> to
+copy over and test your programs on the CSIL Linux machines before you
+submit them. Check the <a href="MTF_Layout.pdf">MTF
+Layout map</a> for the machine names.<br>
+      <br>
+For those using Windows machines, you might want to look into the use
+of the <a href="http://www.cygwin.com/"><span
+ style="font-weight: bold;">cygwin</span> </a>environment and the <code>dos2unix</code>
+command on Linux. The character conversion between Windows and Linux is
+sometimes a key hidden cause for your assignments failing to work on
+the CSIL machines. There will be no extensions for problems with
+non-CSIL machines, so don't ask.<br>
+      <br>
+On some CSIL Linux machines, in some rare cases, you might have to
+extend your CPU time limit for a process. If you are using tcsh then
+run the command "limit cputime 1800" to extend CPU time to 1800 secs or
+30 mins. If you are using bash then use the command "ulimit -t 1800".<br>
+      <br>
+All homework files are in the Unix directory <code>/home/anoop/cmpt413/</code>.
+      <span style="font-style: italic;">The directory is
+accessible only on the CSIL machines and on </span><code>fraser.sfu.ca.
+      </code>Once you are logged in to a CSIL machine or fraser, access
+the directory by using the command: <code>cd /home/anoop/cmpt413/<br>
+      </code>
+      <h4>Perl Programming</h4>
+      <ul>
+        <li>Introduction to Perl Programming</li>
+        <ul>
+          <li><a href="perl-tutorial.txt">Perl Crash Course</a> <br>
+          </li>
+          <li>Download <a href="perl_interpreter.pl.txt">perl_interpreter.pl</a>
+and run it using the command <code>perl perl_interpreter.pl. </code>Enter
+commands from the Perl crash course (above) and
+observe the results</li>
+          <li>Code that explains <a href="perl-default-variables.txt">Perl
+Default Variables</a> (<a href="wc.tar.gz">tarfile</a>)<br>
+          </li>
+          <li><a href="PerlReferencesTutorial.html">Tutorial
+on Collections and References in Perl</a><br>
+          </li>
+          <li><span style="font-style: italic;">Optional:</span> Chp
+1-8
+(WC&amp;O)</li>
+          <li>Links: the <a href="http://www.ebb.org/PickingUpPerl/">Picking
+Up Perl</a> tutorial, <a
+ href="http://archive.ncsa.uiuc.edu/General/Training/PerlIntro/">PerlIntro</a>,
+            <a
+ href="http://www.cs.toronto.edu/%7Egpenn/csc401/perl_tutorial2002.ps">Diana
+Inkpen's tutorial</a>, more tutorials on <a href="http://www.perl.com/">perl.com</a>.</li>
+        </ul>
+        <li>Advanced Perl Programming</li>
+        <ul>
+          <li><span style="font-style: italic;">Optional:</span> Chp
+9,24,28-30 (WC&amp;O)</li>
+        </ul>
+      </ul>
+      <h4>Homework Files</h4>
+      <code style="font-weight: bold;"> </code>
+      <ol>
+        <li><a href="hw1.pdf">Homework #1</a>. Distributed on Mon, Jan
+17, due on Mon, Jan 24.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw1/</code></li>
+        </ol>
+        <li><a href="hw2.pdf">Homework #2</a>. Distributed on Mon, Jan
+24, due on Mon, Jan 31.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw2/</code></li>
+        </ol>
+        <li><a href="hw3.pdf">Homework #3</a>. Distributed on Wed, Feb
+2, due on Wed, Feb 9.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw3/</code><br>
+          </li>
+        </ol>
+        <ol>
+          <li>The AT&amp;T finite-state transducer toolkit is available
+at <code>/home/anoop/cmpt413/for-linux/fsm-4.0/bin</code></li>
+          <li>You can put the above directory in your PATH to access
+the files in them without using the full path or copying them over to
+your directory</li>
+        </ol>
+        <li><a href="hw4.pdf">Homework #4</a>. Distributed on Mon, Feb
+14, due on Mon, Feb 21.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw4/</code></li>
+          <li>The Porter stemmer is available from <a
+ href="http://www.tartarus.org/%7Emartin/PorterStemmer/">Martin
+Porter's page</a></li>
+        </ol>
+        <li><a href="hw5.pdf">Homework #5</a>. Distributed on Mon, Feb
+21, due on Mon, Mar 7.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw5/</code></li>
+          <li>Old data files from previous homeworks are now archived
+in <code>/cmpt413</code> on CSIL machines (but not on <code>fraser</code>).</li>
+        </ol>
+        <li><a href="hw6.pdf">Homework #6</a>. Distributed on Mon, Mar
+14, due on Mon, Mar 21.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw6/</code></li>
+        </ol>
+        <li><a href="hw7.pdf">Homework #7</a>. Distributed on Mon, Mar
+21, due on Wed, Mar 30.</li>
+        <ol>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw7/</code></li>
+        </ol>
+        <li><a href="hw8.pdf">Homework #8</a>. Distributed on Mon, Apr
+4, due on Mon, Apr 11. <span style="font-style: italic;">Optional</span>:
+Submit in place of earlier homework.<br>
+        </li>
+        <ul>
+          <li>The data files are available in <code>/home/anoop/cmpt413/hw8/</code></li>
+        </ul>
+      </ol>
+      <table style="text-align: left; width: 880px; height: 25px;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+            <h3 style="background-color: rgb(102, 255, 153);"><a
+ name="references">Textbook and
+References<br>
+            </a></h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>
+          <h3>Recommended</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><img style="width: 103px; height: 140px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/slp.jpg"></td>
+                <td>Speech and Language Processing: An Introduction to
+Natural
+Language Processing, Computational Linguistics, and Speech Recognition
+by Daniel Jurafsky, James H. Martin. 934 pages 1 edition (January 26,
+2000), Prentice Hall, ISBN: 0130950696<br>
+                <br>
+The book also has a <a
+ href="http://www.cs.colorado.edu/%7Emartin/slp.html">webpage</a>. In
+particular visit it for the <a
+ href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-errata.html">Errata</a>
+and the online <a
+ href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-web-resources.html">Resources</a>
+sections.</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr>
+                <td><img style="width: 107px; height: 140px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/pp.jpg"></td>
+                <td>Programming Perl by Larry Wall, Brett McLaughlin,
+Jon Orwant.
+400 pages 3 edition (August 30, 2000), O'Reilly &amp; Associates, Inc.,
+ISBN: 0596000278<br>
+                <br>
+While the book "Programming Perl" is not a reference book for this
+course, you might find it or an equivalent perl programming book
+invaluable when dealing with the homeworks which include programming
+assignments to be done in Perl. For my own use, I find "The Perl CD
+Bookshelf" published by O'Reilly to be quite a good deal: it contains 7
+books on Perl (including this one) on one cdrom.<br>
+                <br>
+There are many online Perl tutorials of varying quality. Links to some
+of them are provided in the Links section below.<br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>
+          <h4>Reference (do not purchase unless you feel it is
+absolutely
+necessary; usually available from
+the library)<br>
+          </h4>
+          <table>
+            <tbody>
+              <tr>
+                <td><img style="width: 111px; height: 140px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/fsnlp.jpg"></td>
+                <td>Foundations of Statistical Natural Language
+Processing by
+Christopher D. Manning, Hinrich Schutze. 680 pages 1 edition (1999),
+M.I.T. Press/Triliteral, ISBN: 0262133601<br>
+                <br>
+This book will be useful in cases where you want a different
+presentation of the same material that is required reading from <span
+ style="font-weight: bold;">J&amp;M</span>. In many cases the
+statistical approaches are covered in a bit more detail in this book.
+However, it does not contain all the topics that we will cover in this
+course.<br>
+                </td>
+              </tr>
+              <tr>
+                <td><img style="width: 95px; height: 140px;" alt=""
+ title="" src="../CMPT-413-Spring-2003/itc.jpg"></td>
+                <td>Introduction to the Theory of Computation by
+Michael Sipser.
+480 pages (December 1996), PWS Pub. Co. ISBN: 053494728X </td>
+              </tr>
+            </tbody>
+          </table>
+          <p> </p>
+          <span style="font-family: serif; font-weight: bold;"></span></li>
+      </ul>
+      <table style="text-align: left; width: 881px; height: 18px;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+            <h3 style="background-color: rgb(102, 255, 153);"><a
+ name="readings">Syllabus and
+Reading</a></h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+The following list summarizes the topics that will be covered in this
+course. Also included are the required and optional readings for each
+topic. <span style="font-weight: bold;">J&amp;M </span>refers to the
+book "Speech and Language Processing" by Jurafsky and Martin; <span
+ style="font-weight: bold;">WC&amp;O</span> refers to "Programming Perl
+3rd Edition" by Wall, McLaughlin and Orwant; <span
+ style="font-weight: bold;">Sipser </span>refers to "Introduction to
+the Theory of Computation" by Michael Sipser (see below for detailed
+information on each of these books). Apart from the required readings,
+the optional or review readings are provided for those who are having
+difficulty understanding the material. <br>
+      <ol>
+        <li>Introduction to Linguistics and Formal language theory</li>
+        <ul>
+          <li>Chp 1 and 2 (J&amp;M)</li>
+          <li><span style="font-style: italic;">Review:</span> Chp 0
+and 1
+(Sipser)</li>
+          <li><a href="intro.pdf">Notes #1</a></li>
+          <li>Links: <a
+ href="http://www.cstr.ed.ac.uk/projects/festival/">Text
+to Speech</a>, <a href="http://www.naturalvoices.att.com/">Speech
+Animation</a>, <a href="http://www1.cs.columbia.edu/nlp/newsblaster/">Summarization</a></li>
+          <li>Links: <a
+ href="http://www.speech.cs.cmu.edu/Communicator/">Dialog
+Systems</a>, <a href="http://www.ionaut.com/">Question Answering</a>, <a
+ href="http://www.semanticlight.com/">NLP &amp; Graphics</a></li>
+        </ul>
+        <li>Finite-state methods: automata and transducers
+(applications to orthography, morphology, phonology)<br>
+        </li>
+        <ul>
+          <li>Chp 3 (J&amp;M)</li>
+          <li><a href="fsm.pdf">Notes #2</a></li>
+          <li><a href="fsmapply.pdf">Notes #3</a></li>
+          <li><a href="fst.pdf">Notes #4</a> (<a href="fst-old.pdf">old
+version</a>)</li>
+          <li><a href="fstapply.pdf">Notes #5</a></li>
+          <li>Extra slides from Richard Sproat's CL course: <br>
+          </li>
+          <ul>
+            <li><a href="sproat-slides06.pdf">Introduction to
+computational phonology</a>, <br>
+            </li>
+            <li><a href="sproat-slides07.pdf">Compiling
+context-dependent rewrite rules
+into finite-state transducers</a><br>
+            </li>
+          </ul>
+          <li>Links: An example NLP application using finite-state
+transducers: <a href="http://acl.ldc.upenn.edu/J/J98/J98-4003.pdf">Machine
+Transliteration</a>. Kevin Knight and Jonathan Graehl. Computational
+Linguistics, Volume 24, Number 4, December 1998. <span
+ style="font-style: italic;">(the pronunciation mapping for homework #3
+was taken from this paper)</span><br>
+          </li>
+        </ul>
+        <li>Finite-state methods: edit distance (shortest path in a
+transducer, spelling
+correction, evaluation metrics)</li>
+        <ul>
+          <li>Chp 5 sections 5.1-5.6 (J&amp;M)</li>
+          <li><a href="editdist.pdf">Notes #6</a></li>
+          <li>Links: <a href="http://odur.let.rug.nl/%7Ekleiweg/lev/">Levenshtein
+Demo</a><br>
+          </li>
+        </ul>
+        <li>Probability models and language: n-grams<br>
+        </li>
+        <ul>
+          <li>Reading: Sections 1-14 from <a href="mt-wkbk.pdf">Kevin
+Knight's statistical MT workbook</a></li>
+          <li>Reading: Sections 1-2.7 (p.15) &amp; Section 5.1 from <i></i><a
+ href="../CMPT-413-Spring-2003/chen-goodman-tr-10-98.pdf"><i>Empirical
+Study of Smoothing</i> by Chen and Goodman</a></li>
+          <li><a href="prob.pdf">Notes #7</a></li>
+          <li><a href="ngrams.pdf">Notes #8</a></li>
+          <li><a href="smooth.pdf">Notes #9</a><br>
+          </li>
+        </ul>
+        <ul>
+          <li>Chp 6 sections 6.1-6.2 and 6.7 (J&amp;M).&nbsp;<span
+ style="font-style: italic;"></span></li>
+          <li><span style="font-style: italic;"><span
+ style="font-weight: bold;">Warning:</span> it is essential to read the
+errata pages for this chapter and do </span><span
+ style="font-weight: bold; font-style: italic;">not</span><span
+ style="font-style: italic;"> read sections 6.3-6.6 from
+J&amp;M</span></li>
+        </ul>
+        <li>Hidden markov models (sequence learning)<br>
+        </li>
+        <ul>
+          <li>Chp 5 section 5.9; sections 7.1-7.3 and Appendix D
+(J&amp;M)</li>
+          <li><a href="hmm.pdf">Notes #10</a><br>
+          </li>
+          <li>Viterbi spreadsheet (Excel or Openoffice): <a
+ href="viterbi.xls">viterbi.xls</a></li>
+          <li>Forward-backward spreadsheet (Excel or Openoffice): <a
+ href="hmm.xls">hmm.xls</a></li>
+        </ul>
+        <li>Some applications of sequence learning (automatic speech
+recognition, part of speech tagging, name-finding,
+word segmentation)<br>
+        </li>
+        <ul>
+          <li><a href="asr.pdf">Notes #11</a><br>
+          </li>
+          <li><a href="postags.pdf">Notes #12</a><br>
+          </li>
+          <li>Chp 8 sections 8.1-8.5 (J&amp;M)</li>
+        </ul>
+        <li>Context-free grammars and parsing algorithms (natural
+language syntax)<br>
+        </li>
+        <ul>
+          <li><a href="cfg.pdf">Notes #13</a></li>
+          <li><a href="parsing.pdf">Notes #14</a></li>
+          <li><a href="moreparsing.pdf">Notes #15</a></li>
+          <li><a href="probcfg.pdf">Notes #16</a><br>
+          </li>
+          <li>Parsing demos using the Python <a
+ href="http://nltk.sourceforge.net/">Natural Language Toolkit (nltk)
+v1.2</a> (not fully tested with v1.4)<br>
+          </li>
+          <ul>
+            <li><a href="rdparser_demo.py">Recursive descent
+(backtracking) parser<br>
+              </a></li>
+            <li><a href="srparser_demo.py">Shift-Reduce parser<br>
+              </a></li>
+            <li><a href="chart_demo.py">CKY parser</a> (repeatedly use
+the Bottom-Up Strategy)<br>
+            </li>
+            <li><a href="earley_demo.py">Earley parser<br>
+              </a></li>
+            <li>Using different grammars and input strings: <a
+ href="rdparser_np1.py">NP Grammar1</a>, <a href="rdparser_np2.py">NP
+Grammar2</a><br>
+            </li>
+          </ul>
+          <li><a
+ href="http://www.cs.jhu.edu/%7Ejason/465/PowerPoint/lect10-earley.ppt">Earley
+Algorithm (ppt)</a> from Jason Eisner's NLP course<br>
+          </li>
+          <li>Chp 9 and Chp 10 (J&amp;M)</li>
+          <li><span style="font-style: italic;">Review:</span> Chp 2
+and 4.1
+(Sipser)</li>
+        </ul>
+        <li style="text-decoration: line-through;">Natural Language
+Semantics (translation into logic,
+language understanding, language generation)<br>
+        </li>
+        <ul style="text-decoration: line-through;">
+          <li>Chp 14 and 15 (J&amp;M)</li>
+        </ul>
+        <ul>
+        </ul>
+        <li>Feature structures and unification</li>
+        <ul>
+          <li><a href="fs.pdf">Notes #17</a><br>
+          </li>
+          <li>Chp 11 (J&amp;M)</li>
+        </ul>
+        <li style="text-decoration: line-through;">Natural Language and
+complexity theory (mathematical
+linguistics)<br>
+        </li>
+        <ul style="text-decoration: line-through;">
+          <li>Chp 13 (J&amp;M)</li>
+        </ul>
+        <li>Lexical semantics and word-sense disambiguation</li>
+        <ul>
+          <li><a href="lexicalsem.pdf">Notes #18</a><br>
+          </li>
+          <li>Chp 16 and Chp 17, sections 17.1 and 17.2 (J&amp;M)</li>
+        </ul>
+        <li>Discourse and dialog models</li>
+        <ul>
+          <li><a href="discourse.pdf">Notes #19</a><br>
+          </li>
+          <li>Chp 18, section 18.1 and Chp 19, sections 19.1-19.3
+(J&amp;M)</li>
+        </ul>
+      </ol>
+      <table style="text-align: left; width: 881px; height: 24px;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; background-color: rgb(102, 255, 153);">
+            <h3><a name="readme">Course Expectations and Policies</a></h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li>Email policy: <span style="font-weight: bold;">Use the
+prefix
+"CMPT 413: " or "cmpt-413: " on all your messages</span>. If you do not
+include
+the prefix, then the mail might go unanswered. Do
+not send general questions about the
+class or the material to me directly. Instead use the class mailing
+list
+"cmpt-413 @ sfu.ca" to post your question. <br>
+        </li>
+        <li>For personal advising come during my office hours
+(posted above).</li>
+        <li>Students are expected to attend all classes and to arrive
+on
+time: announcements about assigned readings, homeworks and exams will
+be made available at the start of each class.<br>
+        </li>
+        <li>Students are expected to have read all assigned readings
+(from
+the required reading material) before class. Simply attending the class
+will not
+provide adequate preparation for the exams. You might think that since
+the lecture notes for this course are online you can skip the class and
+catch up later. This is a bad idea for three reasons: (1) The lecture
+notes are only designed to be discussed in class and they will often
+not make sense in isolation. (2) Many points in the lecture notes are
+explained using the blackboard or transparencies which are not provided
+online. (3) Many concepts are explained in class using interactive
+tools or demos which are typically much easier ways to understand the
+material and you will be unaware of this if you skip class and rely on
+the lecture notes.<br>
+        </li>
+        <li>Late assignments will be graded as follows: marks earned
+for
+assignments submitted after 11:45pm on the due date will be multiplied
+by a <span style="font-style: italic;">0.8</span> penalty. Submissions
+two days late will get a penalty of 0.6 * grade, and so on (Sat, Sun
+and holidays are
+included). Any submission identical to a solution key will get zero
+marks.</li>
+        <li> If you must miss an exam because of illness, you are
+required to
+contact me prior to the exam either by email or a message in my
+mailbox.
+A valid note from a medical doctor is required specifying date of
+absence and reason. If you miss an exam due to valid medical reasons
+you will be graded on your
+performance on the rest of the course. <span style="font-weight: bold;">Make
+up
+exams will not be given under any circumstances</span>.</li>
+        <li><span style="font-weight: bold;">Note on quiz and exam
+answers:</span>
+In many cases you will be asked to provide an algorithm or a general
+solution and I might provide some examples to help you test your
+solution. You should not encode the examples into your solution and
+expect to get it marked correct. Here is an example (not from
+computational linguistics, but to explain this point further): Let's
+say I ask you to provide the relationship between the hypotenuse and
+the other 2 sides of a triangle and I say that you should test your
+solution with the case where the hypotenuse is of length 5 and the two
+other sides are of length 3 and 4 respectively. In this case the
+correct answer would be the equation that works for any triangle
+(answer: <span style="font-style: italic;">a<sup>2</sup>+b<sup>2</sup>=h<sup>2</sup></span>,
+where <span style="font-style: italic;">h</span> is the hypotenuse)
+and not an answer that provides the answer for the example (incorrect
+answer which only provides the relationship for the example: <span
+ style="font-style: italic;">9 + 16 = 25</span>). During a quiz or exam
+resist the temptation of using the examples provided directly in your
+answer. It is tempting because in many cases such an answer will be
+easy to obtain as opposed to the correct general solution. If you don't
+get the general solution correct: at least you will get partial credit.<br>
+        </li>
+        <li>Copying
+on assignments or exams will be taken very seriously. If you are caught
+cheating on an assignment or an exam you will be hauled off for
+disciplinary action. There will be no assignments to be solved as a
+group. Despite this, students often meet to discuss the assignments.
+You have to be very careful that you do not take any notes or copy
+during these meetings.<br>
+        </li>
+        <li>For more on academic dishonesty read the <a
+ href="https://www.sfu.ca/policies/gazette/teaching.html">University code
+of academic honesty</a>. <br>
+        </li>
+        <li>I will give partial credit on exams.
+If you provide an incorrect answer but your work shows some
+understanding you will get partial credit, but if you have the correct
+answer, and your work shows a misunderstanding of the course material
+you will lose marks.</li>
+      </ul>
+      <table style="text-align: left; width: 100%;" border="0"
+ cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; background-color: rgb(102, 255, 153);">
+            <h3>Courses in Computational Linguistics Elsewhere</h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <dl>
+        <dt><b>Alberta</b>: <a
+ href="http://www.cs.ualberta.ca/%7Elindek/650/index.htm">CMPUT 650:
+Natural Language Processing</a> </dt>
+        <dd> Dekang Lin </dd>
+        <dt> <b>CMU</b>: <a
+ href="http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-55/lti/Courses/711/www/11-711-schedule.html">CS
+11-711: Algorithms for NLP (Fall 2002)</a> </dt>
+        <dd> Alon Lavie </dd>
+        <dt> <b>Colorado</b>: <a
+ href="http://www.cs.colorado.edu/%7Emartin/csci5832.html">CS Natural
+Language Processing (Spring 2000)</a> </dt>
+        <dd> Jim Martin </dd>
+        <dt> <b>Cornell</b>: <a
+ href="http://courses.cs.cornell.edu/cs674/2000sp/default.html">CS 674:
+Natural Language Processing (Spring 2000)</a> </dt>
+        <dd> Lillian Lee </dd>
+        <dt> <b>JHU</b>: <a
+ href="http://cs.jhu.edu/%7Ehajic/courses/cs465/syllabus.html">CS
+600.465: Introduction to NLP (Fall 2000)</a> </dt>
+        <dd> Jan Hajic </dd>
+        <dt> <b>JHU</b>: <a href="http://www.cs.jhu.edu/%7Ejason/465/">CS
+Introduction to Natural Language Processing, Course # 600.465 (Fall
+2002)</a> </dt>
+        <dd> Jason Eisner </dd>
+        <dt> <b>Maryland</b>: <a
+ href="http://umiacs.umd.edu/%7Eresnik/ling645_sp2001/">CS/Ling
+Ling645/CMSC723 Introduction to Computational Linguistics (Spring 2001)</a>
+        </dt>
+        <dd> Philip Resnik </dd>
+        <dt> <b>MIT</b>: <a
+ href="http://www.ai.mit.edu/courses/6.863/">6.863J:
+Natural Language &amp; the Computer Representation of Knowledge (Spring
+2002)</a> </dt>
+        <dd> Bob Berwick </dd>
+        <dt> <b>Pennsylvania</b>: <a
+ href="http://www.cis.upenn.edu/%7Ecis530/index-2000.html">CIS 530:
+Computational Linguistics (Fall 2000)</a> </dt>
+        <dd> Steven Bird </dd>
+        <dt> <b>Stanford</b>: <a
+ href="http://www.stanford.edu/class/cs224n/">CS/Ling
+CS 224N/Ling 237 Natural Language Processing (Spring 2002)</a> </dt>
+        <dd> Chris Manning </dd>
+        <dt> <b>Toronto</b>: <a
+ href="http://www.cs.toronto.edu/%7Egpenn/csc401/index.html">CSC 401:
+Natural Language Computing (Winter 2002)</a> </dt>
+        <dd> Gerald Penn </dd>
+        <dt> <span style="font-weight: bold;">UIUC</span>: <a
+ href="http://catarina.ai.uiuc.edu/L406/">Ling 406: Introduction to
+Computational Linguistics (Spring 2005)</a> </dt>
+        <dd>Richard Sproat<br>
+        </dd>
+        <dt><b>Utah</b>: <a
+ href="http://www.cs.utah.edu/classes/cs5340/">CS
+5340/6340 Natural Language Processing (Fall 2002)</a> </dt>
+        <dd> Ellen Riloff</dd>
+      </dl>
+      <hr style="width: 100%; height: 2px;">
+      <address>anoop at cs.sfu.ca</address>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<big><span style="font-weight: bold;"></span></big>
+</body>
+</html>

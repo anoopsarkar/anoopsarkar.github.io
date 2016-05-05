@@ -1,0 +1,20 @@
+input: Calvin saw the man
+scanner: 0 state: S -> SBJ VP # dot=0 i=0 j=0
+completer: 1 state: SBJ -> Calvin # dot=1 i=0 j=1
+predictor: 1 state: S -> SBJ VP # dot=1 i=0 j=1
+scanner: 1 state: VP -> V NP # dot=0 i=1 j=1
+predictor: 1 state: VP -> VP PP # dot=0 i=1 j=1
+completer: 2 state: V -> saw # dot=1 i=1 j=2
+predictor: 2 state: VP -> V NP # dot=1 i=1 j=2
+predictor: 2 state: NP -> NP PP # dot=0 i=2 j=2
+scanner: 2 state: NP -> Det N # dot=0 i=2 j=2
+completer: 3 state: Det -> the # dot=1 i=2 j=3
+scanner: 3 state: NP -> Det N # dot=1 i=2 j=3
+completer: 4 state: N -> man # dot=1 i=3 j=4
+completer: 4 state: NP -> Det N # dot=2 i=2 j=4
+completer: 4 state: VP -> V NP # dot=2 i=1 j=4
+predictor: 4 state: NP -> NP PP # dot=1 i=2 j=4
+completer: 4 state: S -> SBJ VP # dot=2 i=0 j=4
+predictor: 4 state: VP -> VP PP # dot=1 i=1 j=4
+scanner: 4 state: PP -> P NP # dot=0 i=4 j=4
+yes

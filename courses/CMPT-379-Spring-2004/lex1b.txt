@@ -1,0 +1,3 @@
+T_A dfa1.txt
+T_B dfa2.txt
+T_C dfa3.txt

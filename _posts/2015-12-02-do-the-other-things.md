@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Do the other things"
+tags: [ill-tempered-observations]
 ---
 
 If you have watched any documentary on the Apollo space program, you've heard (and seen) the following excerpt from John F. Kennedy's address delivered at Rice University, Sept 12, 1962.

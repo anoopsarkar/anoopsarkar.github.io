@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CMPT 379 - Spring 2004: Principles of Compiler Design</title>
+</head>
+<body>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 204, 255);">
+      <h2>CMPT-379 - Spring 2004 - Principles of Compiler Design<br>
+      </h2>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<big>
+<span style="font-weight: bold;"><img
+ style="width: 114px; height: 169px;" alt="" title=""
+ src="dragonbook.jpg"><br>
+Anoop Sarkar<br>
+</span></big><br>
+<span style="font-weight: bold;">Location</span>: AQ 3153
+(Academic Quadrangle)<br>
+<span style="font-weight: bold;">Time</span>: 9:30-10:20a; Mon, Wed, Fri<br>
+<br>
+<span style="font-weight: bold;">Term:</span> 1041<br>
+<span style="font-weight: bold;">Class Number:</span> 6177<br>
+<br>
+<span style="font-weight: bold;">Mailing List</span>: cmpt-379@sfu.ca<a
+ href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-379/"><br>
+Mailing list archives</a><br>
+<br>
+<span style="font-weight: bold;">Office</span>: ASB 10830<br>
+<span style="font-weight: bold;">Office hours</span>: Wed 10:30a-12:30p<br>
+<br>
+<span style="font-weight: bold;">Teaching Assistant:</span> Eric
+Dagenais (<span style="font-style: italic;">edagenai at cs.sfu.ca</span>)<br>
+<span style="font-weight: bold;">TA Office Hours:</span> Fri,
+12:30p-2p (at the CSIL Lab)<br>
+<div style="text-align: left;">
+<br>
+This course covers the fundamentals of compiler theory used to build
+compilers for high level programming languages. Algorithms used in
+building a compiler and their underlying theoretical foundations will
+be covered. We will cover each component of a compiler including
+lexical analysis, parsing, code generation, code optimization and type
+checking. As part of the course, students will implement a
+working compiler for a high level programming language.<br>
+<br>
+More details: <a href="CMPT-379-Sarkar-04-1.txt">Course outline</a> (<a
+ href="CMPT-379-Sarkar-04-1.pdf">pdf</a>)<br>
+<br>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3 style="background-color: rgb(102, 255, 153);">Announcements</h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+  <li><span style="font-weight: bold;">Grading for the course:</span><br>
+  </li>
+  <ul>
+    <li><span style="font-weight: bold;">Final Exam:</span> 30%</li>
+    <li><span style="font-weight: bold;">3 quizzes (1 hr each, closed
+book, held in class):</span> 15% each (total of 45%)<br>
+    </li>
+    <li><span style="font-weight: bold;">Homeworks:</span> 25%<br>
+    </li>
+  </ul>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li><span style="font-weight: bold;">Jan 5, 2004:</span> First day
+of class</li>
+    <li><span style="font-weight: bold;">Apr 5, 2004:</span> Last day
+of class</li>
+    <li><span style="font-weight: bold;">Jan 30:</span> Quiz #1</li>
+    <li><span style="font-weight: bold;">Feb 27:</span> Quiz #2<br>
+    </li>
+    <li><span style="font-weight: bold;">Mar 26:</span> Quiz #3<br>
+    </li>
+    <li><span style="font-weight: bold;">Final Exam: </span><span
+ style="font-weight: bold;">12p-3p; Apr 8, 2004</span>,
+Location: <span style="font-weight: bold;">AQ 4120</span><br>
+    </li>
+    <li><span style="font-weight: bold;">Feb 16, Feb 17</span>: Reading
+Break (no classes)<br>
+    </li>
+  </ul>
+  <li><span style="font-weight: bold;">Location of data files and
+software packages: </span><code>~anoop/cmpt379/</code> on
+fraser.sfu.ca and CSIL machines</li>
+  <li>Tue, Oct 14, 2003: Course web page created</li>
+  <li>Mon, Jan 5, 2004: First day of class</li>
+  <li>Fri, Jan 23, 2004: <a href="decafspec-v1.pdf">First version of
+the Decaf language specification</a> was handed out.<br>
+  </li>
+  <li><span style="font-weight: bold;">Important:</span> Fri, Jan 23,
+2004: Due to CSIL closure on Sun, Jan 25, Homework #2 deadline has been
+extended to Tue, Jan 27th.</li>
+  <li>Sun, Feb 1, 2004: <a href="decafspec-v2.pdf">Second version of
+the Decaf language spec</a> released (includes the reference grammar
+needed for homework #3).</li>
+  <li>Wed, Feb 4, 2004: <a href="decafspec-v3.pdf">Slightly modified
+3rd version of Decaf language spec</a> (not much has changed: the typos
+discussed in class have been fixed and some things are explained in
+clearer English)</li>
+  <li>Tue, Feb 24, 2004: <a href="quiz2topics.txt">Quiz 2 topics</a></li>
+  <li>Mon, Mar 22, 2004: <a href="quiz3topics.txt">Quiz 3 topics</a></li>
+  <li>Fri, Mar 26, 2004: Amnesty on late submission for homework #6. No
+late penalty until 4pm on Fri, Apr 2, 2004 <br>
+  </li>
+</ul>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(102, 255, 153);">
+      <h3>Assignments</h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+A brief note on assignment submission and development: Your homework
+will be submitted electronically using the department-provided
+submission server. Connect to the submission server by going to the
+URL: <a href="https://onara.cs.sfu.ca/">https://onara.cs.sfu.ca/</a><br>
+<br>
+<span style="font-style: italic;">It
+is expected that your program will compile and run using the standard
+gcc or g<small>++</small> compiler on the Linux CSIL lab machines.</span>
+If you are
+developing on a Linux or Windows machine at home, you have to ensure
+that the code will run on the CSIL machines before you submit the
+assignment. Please either visit the CSIL lab machines or you can use <code>ssh</code>
+to login to the CSIL Linux machines and also use <code>scp</code> to
+copy over and test your programs on the CSIL Linux machines before you
+submit them. Check the <a href="../CMPT-413-Spring-2004/MTF_Layout.pdf">MTF
+Layout map</a> for the machine names.<br>
+<br>
+For Windows machines, you might want to look into the use
+of the <a href="http://www.cygwin.com/"><span
+ style="font-weight: bold;">cygwin</span> </a>environment and the <code>dos2unix</code>
+command on Linux. There will be no extensions for problems with
+non-CSIL machines, so don't ask.<br>
+<br>
+On some CSIL Linux machines, in some rare cases, you might have to
+extend your CPU time limit for a process. If you are using tcsh then
+run the command "limit cputime 1800" to extend CPU time to 1800 secs or
+30 mins. If you are using bash then use the command "ulimit -t 1800".<br>
+<br>
+The files for each homework are available in the directory listed with
+the homework. <span style="font-weight: bold;">The directories are
+accessible only on the CSIL machines and on </span><code
+ style="font-weight: bold;">fraser.sfu.ca</code>
+<ol>
+  <li><a href="hw1.pdf">Homework #1</a> (distributed Mon, Jan 12; due
+on Mon, Jan 19)</li>
+  <ul>
+    <li><a href="while-input.txt">while-input.txt</a></li>
+    <li><a href="int-input.txt">int-input.txt</a></li>
+  </ul>
+  <li><a href="hw2.pdf">Homework #2</a> (distributed Mon, Jan 19; due
+on Mon, Jan 26)</li>
+  <ul>
+    <li><a href="lex1a.txt">lex1a.txt</a> -- <a href="lex1b.txt">lex1b.txt</a>
+-- <a href="dfa1.txt">dfa1.txt</a> -- <a href="dfa2.txt">dfa2.txt</a>
+-- <a href="dfa3.txt">dfa3.txt</a></li>
+    <li><a href="lex1-input1.txt">lex1-input1.txt</a> -- <a
+ href="lex1-input2.txt">lex1-input2.txt</a> -- <a
+ href="lex1-input3.txt">lex1-input3.txt</a></li>
+  </ul>
+  <li><a href="hw3.pdf">Homework #3</a> (distributed Mon, Feb 2; due on
+Mon, Feb 9)</li>
+  <ul>
+    <li>refer to the latest version of the Decaf language spec in the
+Announcements section</li>
+    <li>ascii characters: <a href="ascii.txt">ascii.txt</a></li>
+    <li>whitespace characters: <a href="dfa_whitespace.txt">dfa_whitespace.txt</a></li>
+  </ul>
+  <li><a href="hw4.pdf">Homework #4</a> (distributed on Mon, Feb 9; due
+on Mon, Feb 23)</li>
+  <li><a href="hw5.pdf">Homework #5</a> (distributed on Wed, Mar 3; due
+on Mon, Mar 15)</li>
+  <ul>
+    <li>files for this homework: <code>~anoop/cmpt379/hw5</code></li>
+  </ul>
+  <li><a href="hw6.pdf">Homework #6</a> (distributed on Mon, Mar 15;
+due on Mon, Mar 29; amnesty on late penalty until 4pm, Fri, Apr 2)</li>
+  <ul>
+    <li>files for this homework: <code>~anoop/cmpt379/hw6</code></li>
+  </ul>
+  <ul>
+    <li><a href="cod-appa.pdf">MIPS assembly and <code>spim</code>
+documentation <br>
+      </a></li>
+  </ul>
+  <li><a href="hw7.pdf">Homework #7</a> (distributed on Mon, Mar 29;
+due on Mon, Apr 5)<br>
+  </li>
+</ol>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3 style="background-color: rgb(102, 255, 153);">Textbook and
+References<br>
+      </h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+  <li> <span style="font-family: serif; font-weight: bold;">Textbook:</span></li>
+  <ul>
+    <li><span style="font-family: serif;"><span
+ style="font-style: italic;">Compilers: Principles, Techniques and Tools</span>,
+A.V. Aho, R. Sethi, and</span><span style="font-family: serif;"> J.D.
+Ullman, Addison-Wesley, 1986. </span>ISBN: 0201100886<font size="-2"
+ face="verdana,arial,helvetica"><br>
+      </font></li>
+  </ul>
+  <li><span style="font-family: serif;"><span style="font-weight: bold;">Only
+for review:</span> </span><span style="font-weight: bold;"></span></li>
+  <ul>
+    <li><span style="font-weight: bold;">Sipser </span>refers to <span
+ style="font-style: italic;">Introduction to
+the Theory of Computation</span> by Michael Sipser. 1996, PWS Pub. Co.
+ISBN:
+053494728X</li>
+  </ul>
+  <li><span style="font-weight: bold;">Reference Textbooks:</span>
+Material that I use from time to time, but not required reading for
+those taking the course.<br>
+  </li>
+  <ul>
+    <li><span style="font-style: italic;">Modern Compiler
+Implementation in {C,ML,Java}</span> by Andrew W. Appel. 2002,
+Cambridge Univ Press.<br>
+    </li>
+    <li><span style="font-style: italic;">Theory of Parsing,
+Translation and Compiling</span> (Vol 1: Parsing and Vol 2: Compiling)
+by A. V. Aho and J. D. Ullman. 1972-1973, Prentice Hall.<br>
+    </li>
+  </ul>
+  <li><span style="font-weight: bold;">Course materials:</span> From
+Compilers courses taught at SFU and elsewhere. Typically I read <span
+ style="font-style: italic;">and</span> use materials from these
+courses for my lecture notes and for assignment ideas. I mention them
+here to acknowledge their work.</li>
+  <ul>
+    <li><a href="file:///fas-info/cs/CC/379/shermer/index.htm">CMPT 379</a>:
+SFU<br>
+    </li>
+    <li><a href="http://www.stanford.edu/class/cs143/">CS 143</a>:
+Stanford University<br>
+    </li>
+    <li><a href="http://web.mit.edu/course/6/6.035/6035.html">6.035</a>:
+MIT</li>
+    <li><a href="http://www.cis.udel.edu/%7Epollock/672/s03/">CISC 672</a>:
+University of Delaware</li>
+  </ul>
+</ul>
+<ul>
+</ul>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3 style="background-color: rgb(102, 255, 153);">Syllabus and
+Readings<br>
+      </h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ol>
+  <li>Introduction to Compiler Design<br>
+  </li>
+  <ul>
+    <li>Chp 1,2</li>
+    <li><a href="intro.pdf">Notes #1</a></li>
+    <li>Code sample: <a href="../../distrib/duff.c">duff.c</a><br>
+    </li>
+    <li>Links: <a href="http://www.acm.org/classics/sep95/">Reflections
+on
+Trusting Trust</a>, Ken Thompson. CACM 27(8), pp. 761-763, 1984.<br>
+    </li>
+  </ul>
+  <li>Lexical Analysis</li>
+  <ul>
+    <li>Chp 3</li>
+    <li><a href="lex.pdf">Notes #2</a><br>
+    </li>
+    <li>Code sample: <a href="adhocScanner.c">adhocScanner.c</a></li>
+    <li>Links: <a href="Fortran.html">Historical Perspective: FORTRAN I<br>
+      </a></li>
+    <li>Links: <strong></strong><a
+ href="http://portal.acm.org/citation.cfm?id=359175&amp;coll=portal&amp;dl=ACM&amp;CFID=15540343&amp;CFTOKEN=40038079">
+Storing a sparse table</a>. R. E. Tarjan and A. C. Yao. CACM 22(11),
+1979.<br>
+    </li>
+  </ul>
+  <li>Formal languages and automata, Analysis of Ambiguity</li>
+  <ul>
+    <li>Chp 0, 1 (Sipser)</li>
+    <li><a href="formal.pdf">Notes #3</a></li>
+    <li>Code sample: <a href="catalan.c">catalan.c</a><br>
+    </li>
+  </ul>
+  <li>Syntax Analysis, Deterministic Parsing of CFGs<br>
+  </li>
+  <ul>
+    <li>Chp 4</li>
+    <li><a href="cfg.pdf">Notes #4</a></li>
+    <li><a href="parsing.pdf">Notes #5</a></li>
+    <li>Links: <a href="lrk_xform.pdf">Transforming LR(k) Grammars to
+LR(1)</a><a href="lrk_xform.pdf">, ...</a> Mickunas, Lancaster and
+Schneider. JACM 23(3), 1976.<br>
+    </li>
+  </ul>
+  <li>Syntax-directed Translation and Semantics<br>
+  </li>
+  <ul>
+    <li>Chp 5 and 6<br>
+    </li>
+    <li><a href="abstract.pdf">Notes #6</a></li>
+    <li><a href="semantics.pdf">Notes #7</a><br>
+    </li>
+    <li>Code sample: <a href="indent.c">indent.c</a> (test file: <a
+ href="exprparsetree.txt">exprparsetree.txt</a>)<br>
+    </li>
+  </ul>
+  <li>Stack Frames and Parameter Passing</li>
+  <ul>
+    <li>Chp 7, 7.1-7.5</li>
+    <li><a href="runtime.pdf">Notes #8</a><br>
+    </li>
+    <li>Code sample: <a href="fact.decaf">fact.decaf</a> converted to <a
+ href="mips-fact.mips">mips-fact.mips</a> or to <a href="gcc-fact.mips">gcc-fact.mips</a><br>
+    </li>
+  </ul>
+  <li>Translation to Intermediate Code</li>
+  <ul>
+    <li>Chp 8</li>
+    <li><a href="tac.pdf">Notes #9</a><br>
+    </li>
+    <li>Code sample: <a href="funcptr.cc">funcptr.cc</a></li>
+  </ul>
+  <li>Code Generation and Register Allocation<br>
+  </li>
+  <ul>
+    <li>Chp 9</li>
+    <li><a href="codegen.pdf">Notes #10</a><br>
+    </li>
+    <li>Code sample: <a href="global-vars.mips">global-vars.mips</a></li>
+  </ul>
+  <li>Code Optimization</li>
+  <ul>
+    <li>Chp 10</li>
+    <li><a href="optimize.pdf">Notes #11</a><br>
+    </li>
+  </ul>
+</ol>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(102, 255, 153);">
+      <h3>Course Expectations and Policies</h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<ul>
+  <li>Students are expected to attend all classes and to arrive on
+time: announcements about assigned readings, homeworks and exams will
+be made available at the start of each class.<br>
+  </li>
+  <li>Students are expected to have read all assigned readings (from
+the required reading material) before class. Simply attending the class
+will not
+provide adequate preparation for the exams. You will need to work out
+examples from the reading materials before you come to class.</li>
+  <li>Please note that lecture notes or other materials put up on this
+web page are only <span style="font-style: italic;">additional material</span>
+and <span style="font-weight: bold;">not</span> an alternative to the
+readings assigned. Only reading the lecture notes will not be enough to
+prepare for the assignments or the exams.</li>
+  <li>Late assignments will be graded as follows: marks earned for
+assignments submitted after 4pm on the due date will be multiplied by a
+    <span style="font-style: italic;">0.8</span> penalty. The penalty
+will increase by <span style="font-style: italic;">0.2</span> (e.g.
+one day late penalty will be: <span style="font-style: italic;">0.8 -
+0.2 = 0.6 * grade</span>) for each
+day after the due date (Sat, Sun and holidays included).</li>
+  <li> If you must miss an exam because of illness, you are required to
+contact me prior to the exam either by email or a message in my
+mailbox.
+A valid note from a medical doctor is required specifying date of
+absence and reason. If you miss an exam due to valid medical reasons
+you will be graded on your
+performance on the rest of the course. <span style="font-weight: bold;">Make
+up
+exams will not be given under any circumstances</span>.<br>
+  </li>
+  <li>Email policy: <span style="font-weight: bold;">Use the prefix
+"CMPT 379: " on all your messages</span>. If you do not include
+the prefix, then the mail might go unanswered. Do
+not send general questions about the
+class or the material to me directly. Instead use the class mailing
+list
+"cmpt-379 @ sfu.ca" to post your question. <br>
+  </li>
+  <li>For personal advising come during my office hours
+(posted above).</li>
+  <li>Copying
+on assignments or exams will be taken very seriously. If you are caught
+cheating on an assignment or an exam you will be hauled off for
+disciplinary action. There will be no assignments to be solved as a
+group. Despite this, students often meet to discuss the assignments.
+You have to be very careful that you do not take any notes or copy
+during these meetings.<br>
+  </li>
+  <li>For more on academic dishonesty read the <a
+ href="https://www.sfu.ca/policies/gazette/teaching.html">University code
+of academic honesty</a>. <br>
+  </li>
+  <li>I will give partial credit on exams.
+If you provide an incorrect answer but your work shows some
+understanding you will get partial credit, but if you have the correct
+answer, and your work shows a misunderstanding of the course material
+you will lose marks.<br>
+  </li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<address>anoop at cs.sfu.ca</address>
+</body>
+</html>

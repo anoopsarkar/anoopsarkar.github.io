@@ -1,0 +1,74 @@
+SFU                       Computing Science                       03-1
+________________________________________________________________________
+CMPT 413-1 SECT   Computational Linguistics
+ Instructor: A. Sarkar                       WHERE
+ LECTURE TIME TBA ... EXAM TIME TBA
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+Computational Linguistics is the study of human language from a
+computational perspective.  This course will examine algorithms used in the
+automatic analysis or production of language.  Along with formal models of
+language, we will also study the engineering of natural language processing
+software.  Many of the concepts, methods and algorithms studied are related
+to topics like formal linguistics, information retrieval, data mining from
+text, and bioinformatics.  The course will also provide an introduction to
+programming with Perl.  Assignments will develop expertise in Perl and
+provide exposure to commonly used datasets.
+
+TOPICS:
+
+   o Introduction to linguistics and formal language theory
+   o Finite-state transducers:  application to word morphology
+   o Introduction to probability and information theory
+   o Edit distances for spelling correction and phylogeny
+   o Speech recognition:  hidden markov models
+   o Search engines and document classification
+   o Word classes and part of speech tagging
+   o Context-free and tree-adjoining grammars
+   o Feature structures and unification
+   o Machine translation
+   o Semantics, lexical semantics and Wordnet
+   o Word-sense disambiguation
+   o Discourse and dialog models
+
+GRADING:
+
+Assignments (40%), Midterm (20%), Final Examination (40%).
+
+Students must attain an overall passing grade on the weighted average of
+exams in the course in order to obtain a clear pass (C or better).
+
+TEXTBOOKS:
+
+   o Speech and Language Processing, Daniel Jurafsky and James Martin,
+     Prentice-Hall, 2000
+
+RECOMMENDED:
+
+   o Programming Perl, Larry Wall, Jon Orwant, and Tom Christiansen,
+     O'Reilly, 2000
+
+REFERENCES:
+
+   o Foundations of Statistical Natural Language Processing, Christopher
+     Manning and Hinrich Schutze, MIT Press, 1999
+
+PREREQUISITES/COREQUISITES:
+
+Completion of nine credits in Computing Science upper division courses, or
+permission of the instructor.
+
+Distributed:  October 28, 2002
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's Statement on Intellectual Honesty
+(http://www.cs.sfu.ca/undergrad/Policies/honesty.html).

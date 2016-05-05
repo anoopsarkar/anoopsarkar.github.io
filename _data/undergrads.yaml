@@ -5,6 +5,7 @@
       funding: "NSERC USRA"
     - semester: "Summer 2003"
       funding: "NSERC USRA"
+  after: "Phd U of Washington &raquo; Tenure-track Waterloo"
 
 - name: "Whitney, Max"
   degree: "BSc (SFU)"
@@ -96,6 +97,7 @@
       funding: "Google"
     - semester: "Fall 2015"
       funding: "NSERC DAS"
+  after: "SFU MSc"
 
 - name: "Wang, Yizhou"
   degree: "BSc (SFU DDP)"
@@ -106,6 +108,7 @@
       funding: "NSERC DAS"
     - semester: "Spring 2016"
       funding: "NSERC DAS"
+  after: "Yale MSc"
 
 - name: "La, Sean"
   degree: "BSc"
@@ -128,4 +131,16 @@
       funding: "NSERC DAS"
     - semester: "Summer 2016"
       funding: "NSERC DAS"
+
+- name: "Ke, Jiahao"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2016"
+      funding: "-none-"
+
+- name: "Liu, Shiqi"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2016"
+      funding: "-none-"
 

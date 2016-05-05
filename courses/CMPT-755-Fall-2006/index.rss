@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="0.92" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>CMPT 755: Compilers, Instructor: Anoop Sarkar</title>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/index.html</link>
+<description>Announcements related to the SFU course CMPT 755: Compilers, Fall 2006, taught by Anoop Sarkar</description>
+<language>en</language>
+<copyright>Copyright 2006, Anoop Sarkar</copyright>
+<editor>none</editor>
+
+<item>
+<description>Additional paper topics added to course web page which can be chosen for Paper #2</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/listofpapers.html</link>
+<dc:date>Sat Oct 28 17:57:50 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>paper #1 grades available on gradebook.cs.sfu.ca</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/index.html</link>
+<dc:date>Sat Oct 28 04:13:23 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Parsing demos using Python-based nltk toolkit available on course web page. To extract files run "ar -x nltk_demos.ar". You will need to install nltk-lite (<a href="http://nltk.sf.net">nltk</a>) and other required packages to be able to run the demos.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2006/nltk_demos.ar</link>
+<dc:date>Mon Oct 23 12:08:50 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Guide to MIPS assembly available on course web page. You will find it useful for HW5.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2005/cod-appa.pdf</link>
+<dc:date>Mon Oct 23 12:08:50 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Paper #2 is due on Mon, Nov 6th. The CMPT-755 web page has a list of topics. Please send me your selected topic by Mon, Oct 30. You will have to submit a hardcopy of your paper on Mon, Nov 6th in class and you should submit the electronic version using the submission server by 11:45pm on that day. Note that there will be no class on Mon, Nov 6th as there will be Quiz #2 for CMPT-379 students on that day. Someone else can submit your hardcopy for you if you prefer not to come to class.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/index.html</link>
+<dc:date>Mon Oct 23 12:08:50 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Added sample code to help you understand dynamic linking in unix. To extract files run "ar -x dylib.ar"</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2006/dylib.ar</link>
+<dc:date>Mon Oct 23 12:08:50 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Notes #3 has been changed slightly. Please note this when comparing mailing list discussion with page numbers to the notes.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2006/index.html</link>
+<dc:date>Mon Oct 16 10:42:49 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>List of paper topics updated with some new ideas for topics.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/listofpapers.html</link>
+<dc:date>Mon Sep 25 16:04:57 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Next week I will cancel office hours on Sep 21st due to conflict with the department meeting. You can come during the office hours on Sep 20th from 2-3pm instead. Or you could talk to me during the Terry Fox run which starts at 11:45am in the Quad: I'll be with the CS Foxes.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/index.html</link>
+<dc:date>Thu Sep 14 17:15:36 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Some links in the page listing paper topics were broken. Now they should be fixed.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/listofpapers.html</link>
+<dc:date>Wed Sep 13 00:36:56 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>There is a 2006 edition of the Dragon book that was very recently released. Please do not purchase this book as I haven't had time to adjust the course materials to the new book.</description>
+<link>http://www.aw-bc.com/catalog/academic/product/0,1144,0321486811,00.html</link>
+<dc:date>Tue Sep 12 17:04:30 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Detailed information on how to format your paper submission and how it will be graded has been added to the course web page.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/papergrading.html</link>
+<dc:date>Mon Sep 11 22:43:20 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Survey paper #1 will be due in class on Wed, Oct 4, 2006. Please see the list of paper topics and choose one as your topic and send me an email. Any topic in the list can be chosen, but you might want to choose one related to what was covered in class.</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/listofpapers.html</link>
+<dc:date>Mon Sep 11 14:15:24 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Homework #1, due date Sep 18, 2006. Relevant files are in ~anoop/cmpt379/hw1 on CSIL linux machines</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2006/hw1.pdf</link>
+<dc:date>Mon Sep 11 13:56:38 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Office hours posted: Thursdays from 2-3pm at TASC 9427</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/index.html</link>
+<dc:date>Mon Sep 11 13:56:38 PDT 2006</dc:date>
+</item>
+
+<item>
+<description>Course web page created</description>
+<link>http://www.cs.sfu.ca/~anoop/courses/CMPT-755-Fall-2006/index.html</link>
+<dc:date>Wed May 31 10:40:00 PDT 2006</dc:date>
+</item>
+
+</channel>
+</rss>
+

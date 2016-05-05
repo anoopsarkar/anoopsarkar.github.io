@@ -1,0 +1,75 @@
+SFU                       Computing Science                       06-3
+________________________________________________________________________
+CMPT 379-3 D100    Principles of Compiler Design
+ Instructor: A. Sarkar                     SFU Burnaby
+
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+Every computing device built today needs a compiler.  It enables us to use
+a programming language by translating programs into machine code.
+Understanding how compilers work is essential if you want to be a good
+programmer.  The study of compilers also includes interesting theoretical
+ideas in translation and optimization with sparse resources.  This course
+covers the fundamentals of compiler theory used to build compilers for high
+level programming languages.  We will cover each component of a compiler
+including lexical analysis, parsing, code generation, code optimization and
+type-checking.  As part of the course, students will implement a working
+compiler.  The programming language used for the homeworks will be either
+C, C++, Java (another programming language may be used if it is found to be
+relevant and interesting).  Check out http://www.cs.sfu.ca/ anoop/ for more
+details.
+
+TOPICS:
+
+   o Overview of a compiler
+   o Lexical Analysis:  formal language theory:  regular expressions and
+     finite-state machines, scanners, symbol tables
+   o Simple Parsing:  context-free grammars, derivation trees, ambiguity,
+     sentential forms, backtracking parsers, top-down versus bottom-up
+     parsing
+   o LL(1) parsing:  removing left-recursion, left-factoring, error
+     handling
+   o Shift-reduce parsers:  handles and handle pruning, shift/reduce
+     conflicts
+   o SLR/LR parsing:  characteristic automata, action and goto functions,
+     viable prefix, introduction to LALR parsing
+   o Type checking:  typing rules, unification, types as inferencing rules,
+     attribute grammars
+   o Semantics and code generation:  generating code from attribute
+     grammars, flow of control, handling memory, garbage collection,
+     generating code for conditionals, arrays, and procedures
+   o Optimization:  peephole optimization, redundant instruction
+     elimination, dataflow analysis and global optimization (an
+     introduction)
+
+GRADING:
+
+The grade distribution will be handed out at the start of classes.
+
+TEXTBOOKS:
+
+   o Compilers:  Principles, Techniques and Tools, A.V. Aho, R. Sethi, and
+     J.D. Ullman, Addison-Wesley, 1986
+
+REFERENCES:
+
+   o , , ,
+
+PREREQUISITES/COREQUISITES:
+
+MACM 201 ( or CMPT 205), CMPT 150 and CMPT 201 ( or 225)
+
+Distributed:  August 10, 2006
+
+.......................................................................
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's policy information
+(http://www.cs.sfu.ca/undergrad/Policies/).

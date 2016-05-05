@@ -1,0 +1,209 @@
+
+##########################
+# Original wc.pl from hw1
+##########################
+
+use strict;
+my $line;
+my $total = 0;
+while ($line = <>) {
+  chomp($line);
+  my @words = split(' ', $line);
+  $total += $#words + 1;
+}
+print "$total\n";
+
+##########################
+# wc1.pl
+# opens a fixed filename
+##########################
+
+use strict;
+
+my $line;
+my $total = 0;
+
+my $filename = "hw1.txt";
+my $fh;
+
+my $status = open($fh, $filename);
+if (!$status) { die "could not open $filename\n"; }
+
+while ($line = <$fh>) {
+  chomp($line);
+  my @words = split(' ', $line);
+  $total += $#words + 1;
+}
+
+close($fh);
+print "$total\n";
+
+##########################
+# wc1-bad.pl
+# opens a fixed filename 
+# that does not exist
+##########################
+
+use strict;
+
+my $line;
+my $total = 0;
+
+my $filename = "hw1-missing.txt";
+my $fh;
+
+my $status = open($fh, $filename);
+if (!$status) { die "could not open $filename\n"; }
+
+while ($line = <$fh>) {
+  chomp($line);
+  my @words = split(' ', $line);
+  $total += $#words + 1;
+}
+
+close($fh);
+print "$total\n";
+
+##########################
+# wc2.pl
+# takes filename from @ARGV
+##########################
+
+use strict;
+
+my $line;
+my $total = 0;
+
+my $filename = '';
+my $fh;
+
+$filename = shift(@ARGV);
+if ($filename eq '') { die "no filename provided\n"; }
+
+my $status = open($fh, $filename);
+if (!$status) { die "could not open $filename\n"; }
+
+while ($line = <$fh>) {
+  chomp($line);
+  my @words = split(' ', $line);
+  $total += $#words + 1;
+}
+
+close($fh);
+print "$total\n";
+
+##########################
+# wc3.pl
+# takes filename from @ARGV
+# but if no files provided then
+# filehandle is set to standard input
+##########################
+
+use strict;
+
+my $line;
+my $total = 0;
+
+my $filename = '';
+my $fh;
+
+$filename = shift(@ARGV);
+
+if ($filename eq '') { 
+    $fh = *STDIN; 
+} else {
+    my $status = open($fh, $filename);
+    if (!$status) { die "could not open $filename\n"; }
+}
+
+while ($line = <$fh>) {
+  chomp($line);
+  my @words = split(' ', $line);
+  $total += $#words + 1;
+}
+
+close($fh);
+print "$total\n";
+
+##########################
+# wc4.pl
+# does the same thing as wc3.pl
+# except uses the default behaviour
+# of the readline (<>) operator
+##########################
+
+use strict;
+
+my $line;
+my $total = 0;
+
+while ($line = <>) {
+  chomp($line);
+  my @words = split(' ', $line);
+  $total += $#words + 1;
+}
+
+print "$total\n";
+
+##########################
+# wc5.pl
+# same as wc4.pl but also
+# uses default variable $_
+# which takes value returned
+# by the readline function (<>)
+##########################
+
+use strict;
+
+my $total = 0;
+
+while (<>) {
+  chomp($_);
+  my @words = split(' ', $_);
+  $total += $#words + 1;
+}
+
+print "$total\n";
+
+##########################
+# wc6.pl
+# same as wc5.pl but also uses
+# the default behaviour of
+# the perl functions used in
+# the while loop, e.g. chomp
+# without any arguments is
+# taken by perl to be chomp($_)
+##########################
+
+use strict;
+
+my $total = 0;
+
+while (<>) {
+  chomp;
+  my @words = split;
+  $total += $#words + 1;
+}
+
+print "$total\n";
+
+##########################
+# wc7.pl
+# uses default return location
+# for split as well which is @_
+##########################
+
+use strict;
+
+my $total = 0;
+
+while (<>) {
+  chomp;
+  split;
+  $total += $#_ + 1;
+}
+
+print "$total\n";
+
+
+############################

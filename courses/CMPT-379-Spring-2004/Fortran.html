@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Fortran I</title>
+</head>
+<body>
+<h1>Historical Perspective: FORTRAN I<br>
+</h1>
+<p>The first version of FORTRAN violates many notions of good
+programming language (PL) design. Here are some highlights:<br>
+</p>
+<ul>
+  <li>Variables can be upto 5 chars long and must begin with a letter.
+Variables beginning with i, j, k, l, m and n are assumed to be integer
+types. Some PL experts say this is why the letters i and j are so
+popular even now as loop variable names.<br>
+  </li>
+  <li>Variable declarations are not required, except for arrays.&nbsp;
+Arrays are limited to 3 dimensions. <br>
+  </li>
+  <li>The control structures consisted of: <br>
+  </li>
+  <ul>
+    <li>unconditional branch: GOTO statement_number <br>
+    </li>
+    <li>conditional branch: <code>GOTO (30, 40, 50) I1</code> where <code>I1</code>
+has a value of 1, 2 or 3 to indicate which position in the list to jump
+to.</li>
+    <li>IF statement: <code>IF (A+B-1.2) 7, 6, 9</code> transfers
+control to statement labeled 7, 6, or 9&nbsp; depending on whether <code>(A+B-1.2)</code>
+is negative, zero or positive.&nbsp; <br>
+    </li>
+    <li>DO statement: <code>DO 17 I = 1, N, 2</code> which specifies
+that the set of statements following, up to and including that labeled
+17, is to be executed with I first assigned value 1,&nbsp; incrementing
+by 2, up through N.&nbsp; <br>
+    </li>
+  </ul>
+  <li>No user-defined subroutines allowed, although several built-ins
+were provided including&nbsp; <code>READ</code> and <code>WRITE</code>
+for I/O. <br>
+  </li>
+  <li>Blanks are ignored in all statements, e.g., all the following are
+equivalent: <br>
+  </li>
+  <ul>
+    <li>DIMENSION IN DATA(10000)&nbsp; <br>
+    </li>
+    <li>DIMENSIONINDATA(10000)&nbsp; <br>
+    </li>
+    <li>D I M E N S I O N I N D A T A ( 1 0 0 0 0 )&nbsp; <br>
+    </li>
+  </ul>
+  <li>Whitespace was relevant in other cases: Code started on a
+particular column number.</li>
+  <li>Reserved words are valid variable names, e.g., <code>DIMENSION
+IF(100) </code>declares an array called IF.&nbsp; <br>
+  </li>
+  <li>FORTRAN had two basic stages in compiling:</li>
+  <ul>
+    <li>Lexical analysis, parsing, and code generation in one big loop
+and switch program.</li>
+    <li>The other stages of the compiler were dealing with code
+optimization steps.</li>
+  </ul>
+</ul>
+<hr style="width: 100%; height: 2px;"><span style="font-style: italic;">anoop
+at cs.sfu.ca</span><br>
+</body>
+</html>

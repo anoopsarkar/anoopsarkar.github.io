@@ -1,0 +1,502 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<title>CMPT 379 - Compilers</title> 
+ 
+<!--
+included within course.css:
+<style type="text/css"> 
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+body {
+	margin:0;
+	padding:0;
+}
+</style> 
+-->
+ 
+<link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css"/>
+<script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script> 
+<link rel="stylesheet" href="course.css">
+
+</head> 
+ 
+<body class="yui3-skin-sam"> 
+
+<h1>CMPT 379 - Compilers: Fall 2011</h1>
+
+<div class="header">
+  <table>
+    <tbody>
+      <tr>
+	<td>
+	  <ul>
+	    <li><b>Semester</b>: Fall 2011 (1117)</li>
+	    <li><b>Instructor</b>: <a
+	    href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+	    <li><b>Meeting Information</b>:
+	    <ul>
+	      <li>Tu 2:30PM - 4:20PM in WMC 2532</li>
+	      <li>Th 2:30PM - 3:20PM in C 9000</li>
+	    </ul>
+	    <li><b>Dates</b>: Sep 6, 2011 - Dec 1, 2011</li>
+	    <li></li>
+	    <li><b>Teaching Assistant</b>: Max Whitney</li>
+	    <li><b>TA Email</b>: mwhitney __at__ cs.sfu.ca</li>
+	    <li><b>TA Office Hours</b>: 11AM-12PM in the CSIL Labs on Mondays</li>
+	  </ul>
+	</td>
+	<td>
+	  <img src="purpledragonbook.jpg"/>
+	  <img src="lexyaccbook.png"/>
+	  <img src="LLVM-Logo-Derivative-5.png"/>
+	</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--BEGIN MAIN TAB VIEW =============================== --> 
+ 
+<div id="main" class="tabview"> 
+    <ul class="tabview-tabs"> 
+        <li class="tabview-active"><a href="#news">News</a></li>
+	<li><a href="#about">About</a></li>
+	<li><a href="#textbook">Textbook</a></li>
+	<li><a href="#syllabus">Syllabus</a></li>
+	<li><a href="#homeworks">Homeworks</a></li>
+	<li><a href="#policies">Policies</a></li>
+        <li><a href="#cal">Calendar</a></li> 
+        <li><a href="#agenda">Agenda</a></li>
+  </ul>
+   <div class="content"> 
+        <div class="news">
+        <div id="twitter_div">
+        <h3 class="sidebar-title">News</h3>
+        <ul><li><a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-379/">Email archives</a></li></ul>
+        <ul id="twitter_update_list"></ul>
+        <a href="http://twitter.com/anpsrkr" id="twitter-link" style="display:block;text-align:right;font-size:12px">[Follow]</a>
+        <!-- <a href="http://twitter.com/anpsrkr" id="twitter-link" style="display:block;text-align:right;"><img src="images/bird-follow-icon.png"></a> -->
+        </div>
+        <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+        <script type="text/javascript"
+        src="http://twitter.com/statuses/user_timeline/anpsrkr.json?callback=twitterCallback2&amp;count=10"></script>
+        </div>
+	<div id="about">
+	  <h3>About this course</h3>
+	  <ul>
+        <li><b>Class Mailing List:</b> cmpt-379@sfu.ca (always use 'cmpt-379:' prefix on Subject line)
+        <ul><li><a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-379/">Mailing list archives</a></li></ul>
+        </li>
+	    <li><b>Location</b>: Burnaby Mountain Campus</li>
+	    <li><b>Class number</b>: 12577</li>
+	    <li><b>Section</b>: D100 </li>
+	    <li><b>About the course</b>:
+	    <div class="blurb">
+	      <p>As <a href="http://steve-yegge.blogspot.com/2007/06/rich-programmer-food.html">Steve Yegge said</a>, "If
+          you don't know how compilers work, then you don't know how computers work." This is a course for those who are
+          interested in the design and practice of programming languages. Especially, if you want to learn how to design
+          and implement your own programming language, then take this course. Almost every computing device built today
+          needs a compiler. It enables us to use a high-level programming language like Lisp, C or Haskell by
+          translating programs into low-level machine code. Understanding how compilers work is essential if you want to
+          be a good programmer. The study of compilers also includes interesting ideas in translation and optimization
+          with sparse resources. As part of the course, students will implement a working compiler using standard compiler tools.</p>
+	    </div></li>
+	    <li><b>Course Outline</b>: <a
+	    href="https://portal.cs.sfu.ca/outlines/1117-CMPT-379-D100/" target="_blank">on CS Portal</a></li>
+	    <li><span style="font-weight: bold;">Grading for the course:</span>
+	    <ul>
+	      <li><span style="font-weight: bold;">Final Exam (Dec 14, 2011; 8:30-11:30; Location AQ 3150):</span> 30%</li>
+	      <li><span style="font-weight: bold;">2 midterms:</span> 15% each (total of 30%)</li>
+	      <li><span style="font-weight: bold;">4 homeworks:</span> 10% each (total of 40%)</li>
+	    </ul>
+	  </li>
+	  </ul>
+	</div>
+	<div id="textbook">
+	  <h3>Textbook and References</h3>
+	    <h4>Textbook:</h4>
+	    <ul>
+	      <li>There is no <b>required</b> textbook for this course; use the lecture notes and reading from Syllabus.</li>
+	      <li>You should be able to attempt all homework questions and midterm/final questions without using the recommended textbook below. However it is likely to contain useful background information that will help you understand better the course materials and lectures.</li>
+	    </ul>
+	    <h4>Recommended Textbooks:</h4>
+	    <ol>
+	      <li>
+	      <table>
+		<tbody>
+		  <tr>
+		    <td><img style="width: 103px; height: 140px;" alt="" title="" src="purpledragonbook.jpg"></td>
+		      <td>Compilers:  Principles, Techniques and Tools (2nd Edition), Alfred V. Aho,
+     Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman, Addison-Wesley, 2006:  ISBN-13:
+     9780321486813 (the purple dragon book)<br>
+			<br>
+			The book also has a <a
+			href="http://dragonbook.stanford.edu/">webpage</a>. In
+			particular visit it for the <a
+			href="http://dragonbook.stanford.edu/#errata">Errata</a>
+			and the online <a
+			href="http://dragonbook.stanford.edu/#courses">Resources</a>.<br>
+                        <br>
+	                We will follow the material in this textbook closely but not in all aspects. The exercises and
+	                discussion in this book will be helpful to supplement what is discussed in class.
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+	      </li>
+
+	      <li>
+	      <table>
+		<tbody>
+		  <tr>
+		    <td><img style="width: 103px; height: 140px;" alt="" title="" src="lexyaccbook.png"></td>
+		      <td>lex &amp; yacc. 2nd Ed. John R. Levine, Tony Mason and Doug Brown. O'Reilly. ISBN 1565920007.
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+
+	    </ol>
+
+	    <h4>Reference Textbooks:</h4>
+	    <ol>
+	      <li>Modern Compiler Implementation in {C,ML,Java} by Andrew W. Appel. 2002, Cambridge Univ Press.</li>
+              <li>Theory of Parsing, Translation and Compiling (Vol 1: Parsing and Vol 2: Compiling) by A. V. Aho and J. D. Ullman. 1972-1973, Prentice Hall.</li>
+              <li>Advanced Compiler Design and Implementation by Steven S. Muchnick. 1997, Morgan Kaufmann.</li>
+	    </ol>
+	</div>
+
+	<div id="syllabus">
+	  <h3>Syllabus and Readings</h3>
+<ol>
+  <li>Introduction to Compiler Design<br>
+  </li>
+  <ul>
+    <li>Chp 1</li>
+    <li><a href="intro.pdf">Notes #1</a></li>
+    <li>Alfred Aho, <a href="Aho-SSST-Talk-Clipped.pdf">Unnatural Language Processing</a>. Invited Keynote Talk, SSST-3, NAACL HLT, 2009.</li>
+    <li>Code sample: <a href="duff-a.c">duff-a.c</a></li>
+    <li>Code sample: <a href="dylib.ar"><tt>dylib.ar</tt></a>, dynamic linking in unix (to extract files, run <tt>ar -x dylib.ar</tt>)</li>
+    <li>Links: <a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">How Browsers Work: Behind the Scenes of Modern Web Browsers</a> by Tali Garsiel.</li>
+    <li>Links: <a href="http://dl.acm.org/citation.cfm?id=358198.358210">Reflections on Trusting Trust</a>, Ken Thompson. CACM 27(8), pp. 761-763, 1984.</li>
+  </ul>
+  <li>Lexical Analysis</li>
+  <ul>
+    <li>Chp 3</li>
+    <li><a href="lex.pdf">Notes #2</a></li>
+    <li>Code sample: <a href="adhocScanner.c">adhocScanner.c</a></li>
+    <li>Code sample: <a href="simpletok.lex">simpletok.lex</a></li>
+    <li>Code sample: <a href="cpptok.lex">cpptok.lex</a></li>
+    <li>Links: <a href="Fortran.html">Historical Perspective: FORTRAN I</a></li>
+    <li>Links: <a href="http://swtch.com/~rsc/regexp/regexp1.html">Regular Expression Matching Can Be Simple And Fast</a> and <a href="http://swtch.com/~rsc/regexp/">Implementing Regular Expressions</a> by Russ Cox.</li>
+    <li>Links: <a href="posix-regexp.html">Posix "regular expression" specification</a></li>
+    <li>Links: <a href="http://portal.acm.org/citation.cfm?id=359175&amp;coll=portal&amp;dl=ACM&amp;CFID=15540343&amp;CFTOKEN=40038079">Storing a sparse table</a>. R. E. Tarjan and A. C. Yao. CACM 22(11), 1979.</li>
+  </ul>
+  <li>Formal languages and automata, Analysis of Ambiguity</li>
+  <ul>
+    <li><a href="formal.pdf">Notes #3</a> </li>
+ </ul>
+  <li>Syntax Analysis, Deterministic Parsing and sub-classes of
+CFGs<br>
+  </li>
+  <ul>
+    <li>Chp 4</li>
+    <li><a href="cfg.pdf">Notes #4</a></li>
+    <li><a href="LL.pdf">Notes #5</a> </li>
+    <li><a href="LR.pdf">Notes #6</a> (updated: 10/22)</li>
+    <li><a href="cfparsing.pdf">Notes #7</a> </li>
+   <li>Links: <a href="http://www.aei.mpg.de/~peekas/tree/">tree.hh</a> -- STL style tree class implementation</li>
+  </ul>
+  <li>Simple Syntax-directed translations, Abstract Syntax Trees</li>
+  <ul>
+    <li>Chp 2, esp 2.5</li>
+    <li><a href="abstract.pdf">Notes #8</a> </li>
+ </ul>
+  <li>Syntax-directed Translation</li>
+  <ul>
+    <li><a href="sdt.pdf">Notes #9</a> (updated: 11/10)</li>
+    <li>Chp 5</li>
+ </ul>
+  <li>Translation to Intermediate Code</li>
+  <ul>
+    <li><a href="tac.pdf">Notes #10</a> </li>
+    <li>Chp 6 (excluding Chp 6.3 to 6.5)</li>
+ </ul>
+  <li>Run-time Environment, Stack frames and parameter passing</li>
+    <ul>
+    <li><a href="runtime.pdf">Notes #11</a> </li>
+    <li><a href="http://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Mips/stack.html">Understanding the stack</a>
+    <li><a href="http://www.unc.edu/courses/2005spring/comp/120/001/handouts/L14-StacksProcedures.pdf">Stacks and procedures</a>
+    <li>Chp 7, 7.1-7.4</li>
+    </ul>
+  <li>Code Generation and Register Allocation</li>
+  <ul>
+    <li><a href="codegen.pdf">Notes #12</a></li>
+    <li>Chp 8</li>
+ </ul>
+ <li>Semantics: Semantic checks, Static and Dynamic Types</li>
+   <ul>
+     <li><a href="semantics.pdf">Notes #13</a> (updated: 11/28)</li>
+     <li><i>Note:</i> We did not cover Type Systems. Type unification will not be on the final.</li>
+     <li>Chp 6.3 to 6.5</li>
+   </ul>
+  <li>Code Optimization</li>
+  <ul>
+     <li><a href="optimize.pdf">Notes #14</a> (updated: 11/30)</li>
+    <li>Chp 9, 9.1-9.6</li>
+ </ul>
+  <li>Wrap-up</li>
+  <ul>
+     <li><a href="conclusion.pdf">Notes #15</a></li>
+ </ul>
+</ol>
+	</div>
+
+	<div id="homeworks">
+	  <h3>Homeworks</h3>
+	  <ol>
+          <li><a href="hw1.pdf">Homework #1</a>. Sep 13 - Sep 27. 10%. Files in <code>~anoop/cmpt379/hw1</code>.</li>
+          <li><a href="hw2.pdf">Homework #2</a>. Sep 27 - Oct 18. 10%. Files in <code>~anoop/cmpt379/hw2</code>.</li>
+          <li><a href="hw3.pdf">Homework #3</a>. Oct 18 - Nov 08. 10%. Files in <code>~anoop/cmpt379/hw3</code>.</li>
+          <li><a href="hw4.pdf">Homework #4</a>. Nov 08 - Nov 30. 10%. Files in <code>~anoop/cmpt379/hw4</code>.</li>
+          </ol>
+        <h3>Homework submissions and grading</h3>
+        <h4>Decaf Specification</h4>
+        <ul>
+        <li><a href="decafspec.pdf">Decaf language specification</a>
+          <ul>
+          <li>Updated on Nov 22, 2011: the spec now states that main should have return type int. For HW4 you have a choice: either main has return type int <i>or</i> void, or (even easier) your compiler does not have to check the return type for main.</li>
+          <li>Updated on Sept 27, 2011: minor change to return syntax, now allows void return without parentheses.</li>
+          </ul>
+        </li>
+        </ul>
+        <h4>Files</h4>
+        <ul>
+        <li>The directory <code>~anoop/cmpt379/hw1</code> is available on <code>fraser.sfu.ca</code>.
+        <li>To copy over to your CSIL Linux home directory you can use scp:
+        <pre>scp -r fraser.sfu.ca:/home/anoop/cmpt379/hw1 .</pre>
+        Subsequent homework files will be available at this location as well: ~anoop/cmpt379/hw2 , etc.
+        <li>When solving the homeworks please use the following method to store your files: Create a hw1 directory with the files above:
+<pre>scp -r fraser.sfu.ca:/home/anoop/cmpt379/hw1 .</pre>
+Go to the answer subdirectory of hw1 and copy over makefile.answer as makefile:
+<pre>
+cd hw1
+cd answer
+cp ../makefile.answer ./makefile
+</pre>
+Use the filenames mentioned in the makefile to create the solutions to the questions to be submitted (or change the filenames in the makefile to match your own). Use the test and testall portions of the makefile to test your own programs:
+<pre>
+make test
+make testall
+</pre>
+These steps will enable us to consistently test all the submissions using the same method.
+</li>
+
+        </ul>
+        <h4>Programming</h4>
+	    <ul>
+            <li>We will be using <a href="http://flex.sourceforge.net/">flex</a> (preferably version 2.5.x) and <a href="http://www.gnu.org/software/bison/">bison</a> (preferably version 2.3 or later) in order to build our compiler. This implies that we will be using C or C++ for the homeworks. If you wish to implement your compiler in another programming language you will need special permission from the instructor.</li>
+            <li>For code generation and code optimization we will be using the static single assignment (SSA) intermediate code using the <a href="http://llvm.org">LLVM</a> software library. Version 2.9 of LLVM has been installed on the CSIL Linux machines.</li>
+            <li>It is expected that your program will compile and run using the standard runtime environment on the Linux CSIL lab machines.</span> If you are developing on a Linux or Windows machine at home, you have to ensure that the code will run on the CSIL machines before you submit the assignment. Please either visit the CSIL lab machines or you can use <code>ssh</code> to login to the CSIL Linux machines and also use <code>scp</code> to copy over and test your programs on the CSIL Linux machines before you submit them. Check the <a href="http://www.cs.sfu.ca/CC/CSILPC/CSIL_Layout.pdf">CSIL Layout map</a> for the machine names.</li>
+            <li><b>Important:</b> ssh to CSIL machines uses port 24, so use <code>ssh -p 24</code>, e.g. <code>ssh -p 24 mango.csil.sfu.ca</code>, to connect to a CSIL machine.</li>
+
+<li>CSIL computers accept SSH connections on port 24 (rather than the usual port 22). They can only be accessed from within the SFU network. If you are outside it, you need to go through a directly accessable computer, most likely fraser.sfu.ca. Here are some examples using the usual command line <code>ssh</code> and <code>scp</code> (from OpenSSH). Below $ is the command line shell on your home computer running Linux/MacosX/Cygwin, and blackberry is a CSIL Linux machine.
+<pre>
+# Get to blackberry in two steps
+$ ssh fraser.sfu.ca
+fraser$ ssh -p 24 blackberry.csil.sfu.ca
+blackberry$
+# Get to blackberry in one command (-t is to force a proper terminal for the second ssh)
+$ ssh fraser.sfu.ca -t ssh -p 24 blackberry.csil.sfu.ca
+blackberry$
+</pre>
+</li>
+
+<li>CSIL uses a seperate home directory from the rest of SFU, so you also have to copy files through fraser. However, it looks like it now has a separate home for each machine, so you probably want to just keep your files in your SFU home.
+<pre>
+# Copy a directory to your SFU home directory (to copy a single regular file, omit -r)
+$ scp -r my-directory fraser.sfu.ca:.
+# Now it is ~/sfuhome/my-directory in CSIL, or you can scp again between fraser and a CSIL computer
+# Copy a directory from your SFU home directory out
+$ scp -r fraser.sfu.ca:my-directory .
+</pre>
+</li>
+
+            <li>You may want to refer to a quick Unix tutorial. There are several on the web. The following one covers most of what you need to use the Linux shell effectively: <a href="http://unlser1.unl.csi.cuny.edu/tutorials/QuickUnixTutorial.html">Quick Unix Tutorial</a>.
+</li>
+            <li>You must use a <code>makefile</code> to compile your program, test and cleanup your program output. Running "make" should compile your program and running "make test" should run any tests on sample inputs. 
+<ul>
+  <li>Sample makefiles are provided to you with Homework #1.</li>
+  <li>A gentle <a href="http://www.eng.hawaii.edu/Tutor/Make/index.html">make tutorial from U. Hawaii</a> (<a href="http://www.eng.hawaii.edu/Tutor/Make/FrenchMake/make.htm">en fran&ccedil;ais</a>).</li>
+  <li>For hardcore hacking, refer to <code>info make</code>.</li>
+  <li>Be careful when you use <a href="http://xkcd.com/149/">sudo with make</a>.
+</ul></li>
+        </ul>
+
+        <h4>Homework Submission</h4>
+        <ul>
+        <li>Your homework will be submitted electronically using the department-provided submission server. Connect to
+        the submission server by going to the URL: <a href="https://courses.cs.sfu.ca/">https://courses.cs.sfu.ca/</a>
+        (your grades for the homeworks will also be tracked on the same web page)</li>
+         <li>All homeworks are due by 11:45 PM on the homework due date.</li>
+         <li>You must have a README file with each submission with information about your code. This should include documentation needed to run your code, and citations to any code that you may have taken from any other source (if you didn't write it, you must mention which code you got from another student or external source and where you got it).</li>
+        </ul>
+
+        <h4>Groups</h4>
+        <ul>
+        <li>The homework assignments will be solved in groups. The typical group size will be three. Before Homework #1 goes live (start of class on the release date of HW1) you should find two other students to form a group.</li>
+        <li>Email the group members names (include student IDs to avoid name conflicts) to the instructor and the TA on or before HW1 is released. Also include a suitably nerdy/funny group name to identify your group.</li>
+        <li>Each group will create a single submission and upload it to courses.cs.sfu.ca before the due date.</li>
+        <li>In addition to the <code>README</code> file (see above) that documents how to run your code, each member of the group must include a <code>README.username</code> file for each username in the group. This file will contain the self-assessment of your contribution to the submission.</li>
+        <li>In general, late submissions will be per group since each group uploads a single solution to each homework. However, in the case when the <code>README.username</code> file is missing in the submission for only one group member, and if that file is received late, then only that group member will be considered late for that homework.</li>
+        <li>The reason for having a group is to collaborate on solving <i>each</i> question in the assignment. Do not simply split up the questions in each homework and submit as a group without looking at each others code. This will result in a grade for each group member equivalent to the questions actually solved by each person in the group.</li>
+        <li>Some examples of appropriate ways to organize work in a group:
+        <ul>
+        <li>Split up the tasks within each question and solve it <i>together</i> by discussing it as a group and using sensible divide and conquer tactics. </li>
+        <li>For simpler questions that cannot be decomposed into smaller chunks of work, one person should develop the code, another should do a code review, and another can do the testing. The code review and testing should typically result in further development of the solution that can be done as a group as well.</li>
+        <li>Code review is recommended over pair programming, but programming in groups of (at-most) two is acceptable.</li>
+        <li>The <code>README.username</code> file should contain for each group member how the work was divided up for each question to be submitted in the homework.</li>
+        </ul>
+        </li>
+        </ul>
+        <h4>Homework Grading</h4>
+        <ul>
+	    <li>You have 4 grace days for the entire semester. You can use up your grace days, one per homework, or all 4
+        for one homework (in general, any integer partition of 4, which is <i>[[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 3], [4]]</i> <a href="http://www.cs.sfu.ca/~anoop/distrib/partitions.py">source code</a>). If you use up all your grace days then the maximum grade <b>if you are late</b> will be 50 percent of the original score for that homework. Each additional day will reduce the maximum grade further by 10 percent. Weekend days count the same as weekdays for the late penalty.</li>
+            <li>If you want to do extra stuff make sure it is <i>correct</i> -- it is probably not a good idea to advertise that you got something wrong.</li>
+            <li>Only do extra stuff if you have finished the entire homework.</li>
+            <li>There is no <i>extra credit</i> for doing more, mainly because it is a pain to grade that way.</li> 
+            <li>However doing the extra optional question for your own understanding will likely help you with the concepts covered in the course and hence you may do better in the exams or future assignments.</li>
+            <li>Read the <b>Mark Appeals</b> policies in the <b>Policies</b> section of this web page.</li>
+	</ul>
+	</div>
+
+	<div id="policies">
+	  <h3>Policies</h3>
+	    <h4 id="email">Email policy</h4>
+	    <ul>
+	      <li><span style="font-weight: bold;">Use the prefix "cmpt-379: " on all your messages</span>. If you do not include the prefix, then the mail might go unanswered. </li>
+	      <li>Send email to the course mailing list (cmpt-379@sfu.ca) rather than individually to me (the instructor). This will allow either me, the TA or other students to reply to your email.</li>
+	    </ul>
+	  <h4 id="hw">Homework submission policies</h4>
+	  <ul>
+	    <li>For homework policies, see the Homeworks section</li>
+	  </ul>
+   <h4 id="exams">Exams</h4>
+    <ul>
+      <li> If you must miss an exam because of a medical problem, you should make an attempt to contact me prior to the exam either by email or a message in my mailbox. </li>
+      <li>To request an extension of the due date due to a medical problem, you must submit the <a href="http://students.sfu.ca/forms/hcpsfGeneral.pdf">offical SFU Health Care Provider statement</a>. </li>
+      <li>If you miss an exam due to valid medical reasons you will be graded on your performance on the rest of the course. </li>
+      <li><span style="font-weight: bold;">Make up exams will not be given under any circumstances</span>. </li>
+    </ul>
+  <h4 id="webpage">Disclaimers about this web page</h4>
+  <ul>
+    <li>All course information on this web page is tentative and could be in error. It can also change at any time. Confirm crucial dates or information with me in person during class. Double check with SFU calendar or schedule information for official class times and final exams time and location. </li>
+    <li>Students are expected to attend all classes: announcements about assigned readings, homeworks and exams will be made available at the start of each class. Such announcements may not be made on this web page, so don't rely on information here instead of attending class. </li>
+    <li>Lecture notes or other materials put up on this web page are only <span style="font-style: italic;">additional
+    material</span> and <span style="font-weight: bold;">not</span> an alternative to the readings assigned. Only reading the lecture notes will not be enough to prepare for the homeworks or the exams.</li>
+  </ul>
+
+<h4 id="acaddis">Academic Honesty</h4> 
+<ul> 
+  <li>Some examples of unacceptable behaviour:
+       <ul> 
+         <li> Handing in assignments that are not 100% your own work (in design, implementation, wording, etc.), without proper citation. There must be a README file in your submission with citations to any external code used.</li> 
+	 <li> Using any unpermitted resources during an exam.</li> 
+	 <li> Looking at, or attempting to look at, another student's paper during an exam.</li> 
+	 <li> Submitting work that has been submitted before, for any course at any institution.</li> 
+       </ul></li> 
+  <li>If you are unclear on what academic honesty is, see <abbr title="Simon Fraser University" class="obvious">SFU</abbr>'s <a 
+href="http://www.sfu.ca/policies/Students/index.html">Policy S10-01</a> and the <a href="https://www.sfu.ca/policies/gazette/teaching.html">University code of academic honesty</a>.</li> 
+  <li>All instances of academic dishonesty will be dealt with very severely.</li> 
+  <li>In general, minimum requested penalties will be as follows:
+       <ul> 
+	 <li>For assignments: a mark of -100% on the assignment.  So, academic dishonesty on an assignment worth 5% of your final mark will result in a zero on the assignment, and a penalty of 5% from your final grade.</li> 
+	 <li>For exams: an F in the course.</li> 
+       <li>Please note that these are minimum penalties.  At the instructor's option, more severe penalties may be given/requested.  <strong>All</strong> instances of academic dishonesty will be noted on your University record.</li> 
+       </ul> 
+  <li> The instructor may use, or require students to submit assignments to, an automated service that will check for plagiarism.</li> 
+</ul> 
+ 
+ 
+<h4 id="exams">Exams and Tests</h4> 
+<ul> 
+  <li>Midterms may be in different rooms than the lectures.  You will be notified by email.</li> 
+  <li>Exams may be written in either pen or pencil.  Calculators or other aids are not allowed unless explicitly stated.</li> 
+  <li>Midterm exams and other tests may or may not be returned, depending on the course.  If they are returned, you can get them from the instructor's office hours.  You can not dispute the marking of your exam after you have taken it out of the instructor's office. </li> 
+  <li>Final exams are not returned to students by University policy; they are kept by the instructor.</li> 
+  <li>If you miss a test or exam, you must present a note from a doctor to get a mark other than zero.  Arrangements to make up the lost marks will be made on a case-by-case basis by the instructor.  Make-up exams may be given as an oral examination.</li> 
+  <li>You must get a pass on the weighted average of the exams to pass the course.</li> 
+</ul> 
+ 
+ 
+<h4 id="appeals">Mark Appeals</h4> 
+<p>Except for final grades, this is how you can go about getting your mark changed:</p> 
+<ul> 
+  <li>Requests for a change in your mark must come to the course
+instructor.  <abbr title="Teaching Assistant" class="obvious">TA</abbr>s will not change your mark, except for errors in addition
+or data entry.</li> 
+  <li>Requests should come in the same form as you received your marks: if
+you got marks by email, forward that email to the instructor; if you had
+paper handed back, return that.</li> 
+  <li>You should give a brief explanation of why you want your mark reevaluated.</li> 
+  <li>The instructor will remark the entire assignment/test.  This will be your mark, whether it is higher or lower than the original.</li> 
+  <li>Appeals may be made up to two weeks after the mark is returned or until the final exam date, whichever is <em>first</em>.  After that deadline, you must make a formal mark appeal for any changes.</li> 
+  <li>For exams in particular, these are <em>not</em> reasons to get more marks:
+       <ul> 
+	 <li>I knew what I was saying here, but didn't write it.</li> 
+	 <li>This is the correct answer for some question other than the one asked,
+	      but I didn't get any marks for it.</li> 
+	 <li>I didn't understand the question.</li> 
+       </ul></li> 
+</ul> 
+ 
+<h4 id="finals">Final Exam and Final Marks Appeals</h4> 
+<p>If you're concerned about your mark at the end of the course, you can see the instructor.  Here are some guidelines:</p> 
+<ul> 
+  <li>You can come to the instructor's office at designated times to review your final exam.</li> 
+  <li>Like assignments, you can ask the instructor to reevaluate your final exam marking.</li> 
+  <li>The following are not good reasons to get a higher final mark:
+       <ul> 
+	 <li>I want it.</li> 
+	 <li>I think I deserve it.</li> 
+	 <li>I need it.</li> 
+	 <li>I'm close to the next grade cutoff.</li> 
+       </ul></li> 
+  <li>This is a good reason:
+       <ul> 
+	 <li>There's a marking irregularity on my final or some other piece of work.</li> 
+       </ul></li> 
+  <li> The marking scheme is fixed.  If you did badly on a midterm, you can't weight the final more heavily.</li> 
+</ul> 
+ 
+ 
+	</div>
+
+	<div id="cal"> 
+            <p><iframe src="http://www.google.com/calendar/embed?src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p> 
+        </div> 
+    <div id="agenda"> 
+    <iframe
+    src="https://www.google.com/calendar/b/0/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FVancouver"
+    style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+</div>
+</div> 
+</div> 
+<script type="text/javascript"> 
+YUI({filter:'raw'}).use("yui", "tabview", function(Y) {
+    var tabview = new Y.TabView({srcNode:'#main'});
+    tabview.render();
+});
+</script> 
+ 
+<!--END SOURCE CODE FOR EXAMPLE =============================== --> 
+</body>
+</html> 

@@ -1,0 +1,156 @@
+
+\documentclass[11pt]{article}
+%\usepackage{txfonts}
+\usepackage{graphicx}
+
+\setlength\oddsidemargin{0.01in}
+\setlength\topmargin{-1in}
+\setlength\textwidth{6.8in}
+\setlength\textheight{9.5in} 
+
+\newcommand{\blank}{\mbox{\verb*| |}}
+
+\raggedright
+
+\begin{document}
+
+\begin{center}
+{\Large\bf Language Modelling with Stochastic Tree Adjoining Grammars}\\
+{\small Anoop Sarkar -- {\tt anoop@cs.sfu.ca}}
+\end{center}
+
+\section{Problem and Motivation}
+
+Given some word sequence $a_1 \ldots a_{n-1}$, speech recognition
+language models are used to hypothesize the next word $a_n$, which
+could be any word from the vocabulary. This is typically done using a
+probability model $Pr( a_n \mid a_1 \ldots a_{n-1} )$ called an
+$n$-gram model. However, long-range dependencies are ignored in such a
+model of prediction. An alternative method that takes into account the
+structural dependencies in language appears to be an approach that
+will improve performance in a language model. Such an approach is
+referred to as a {\em structured language model}. However, models that use
+structure without taking into account the words themselves do not
+outperform the simple $n$-gram model. We approach this problem by
+using a lexicalized formalism in which structure is used to allow
+long-range dependencies between words.
+
+Learning of structural language models is also more complex
+than $n$-gram models. Either we need sufficient amounts of text
+labeled with structural information or we need to learn the hidden
+structure from raw text. The learning of $n$-gram models do not
+require any labeled data. In order to use the same amount of data that
+is available to $n$-gram models, we need to be able to train
+structured language models on raw text as well. We address this
+problem as well.
+
+\section{Background and Related Work}
+
+Based on the assumption that modelling the hidden structure of natural
+language would improve performance of such language models, some
+researchers tried to use stochastic context-free grammars (CFGs) to
+produce language models (see refs. [1,2,3]).  The probability model
+used for a stochastic grammar computed the sum over all completions
+$w$ of the input in the probability $Pr(a_1 \ldots a_n w)$.
+
+However, language models that are based on trigram probability models
+were found to out-perform stochastic CFGs. The common wisdom about
+this failure of CFGs is that trigram models are lexicalized models
+while CFGs are not.
+
+In this respect, the formalism of Tree Adjoining Grammars (TAGs) is
+important since they are easily lexicalized while capturing the
+constituent structure of language.  More importantly, TAGs allow
+greater linguistic expressiveness. TAGs have been shown to have
+relations with both phrase-structure grammars and dependency grammars.
+Recent work on structured language models [4] have used dependency
+grammars to exploit lexicalization. We use stochastic TAGs as such a
+structured language model in contrast with earlier work where TAGs
+have been exploited in a class-based $n$-gram language model [5].
+
+\section{Approach and Uniqueness}
+
+The problem of computing prefix probabilities for stochastic
+context-free languages has been discussed in [2,3]. The main idea
+leading to the solution of this problem is that all parts of
+context-free derivations that are potentially of unbounded size are
+captured into a set of equations that is solved ``off-line'', i.e.
+before a specific prefix is considered. These equations are then
+solved and the results are stored. These off-line contributions are
+then added into the prefix probability computations which can be now
+treated simply as a recursive decomposition into an inside probability
+and a prefix probability.
+
+For stochastic tree-adjoining grammars (STAGs) the problem is more
+complicated than in the context-free case since in general it allows
+trees to contribute non-contiguous strings to the input. This means
+that hidden paths of tree combinations can constrain the prefix
+probability and have to be predicted while processing the input
+string.
+
+The key idea to solving this problem is again to break up derivations
+into parts that are of potentially unbounded size, and that are
+independent on actual input, and those that are always of bounded
+length, and that do depend on input symbols.  The probabilities of the
+former subderivations can be computed off-line, and the results are
+combined with subderivations of the latter kind during computation of
+the prefix probability for a given string.
+
+In order to evaluate the algorithm empirically, it is crucial to be
+able to estimate the parameters of a stochastic TAG which is the input
+to the prefix probability computation. We can use the standard
+parameterization of TAGs as in [6], and estimate the parameter values
+using relative frequencies from a sufficient amount of text labeled
+with structural information. However, the learning of $n$-gram models
+do not require any labeled data. In order to use the same amount of
+data that is available to $n$-gram models, we need to be able to train
+structured language models on raw text as well. We propose an
+estimation technique which combines a
+small amount of annotated text along with an unrestricted amount of 
+raw text to estimate the parameters of a stochastic TAG.
+
+\section{Results and Contributions}
+
+This work derives an algorithm to compute prefix probabilities. For
+all possible completions w, we compute:
+
+\[ \sum_w Pr(a_1 \ldots a_n w ) \mbox{, for a given input } a_1 \ldots
+a_n \]
+
+The algorithm assumes as input a stochastic TAG $G$ and a string which
+is a prefix of some string in $L(G)$, the language generated by
+$G$. It does this in time complexity $O(n^6)$ where $n$ is the length of
+the prefix, which is equivalent to the time complexity for TAG
+parsing.
+
+This algorithm enables existing corpus-based estimation techniques [6]
+in stochastic TAGs to be used for language modelling. 
+
+\section*{References}
+
+\begin{description}
+\item[] [1] J. H. Wright and E. N. Wrigley. 1989. Probabilistic LR parsing for
+speech recognition. In IWPT '89, pages 105--114.
+
+\item[] [2] F. Jelinek and J. Lafferty. 1991. Computation of the probability
+of initial substring generation by stochastic context-free
+grammars. Computational Linguistics, 17(3):315--323.
+
+\item[] [3] A. Stolcke. 1995. An efficient probabilistic context-free parsing
+algorithm that computes prefix probabilities. Computational
+Linguistics, 21(2):165--201.
+
+\item[] [4] C. Chelba et al. 1997. Structure and performance of a dependency
+language model. In Proc. of Eurospeech 97, volume 5, pages 2775--2778.
+
+\item[] [5] B. Srinivas. 1996. Almost Parsing technique for language
+modeling. In Proc. ICSLP '96, volume 3, pages 1173--1176,
+Philadelphia, PA, Oct 3-6.
+
+\item[] [6] Y. Schabes. 1992. Stochastic lexicalized tree-adjoining
+grammars. In Proc. of COLING '92, volume 2, pages 426--432, Nantes,
+France.
+
+\end{description}
+
+\end{document}

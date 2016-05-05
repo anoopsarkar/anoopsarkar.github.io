@@ -1,0 +1,35 @@
+
+CMPT-379, an introduction to compilers, is being offered in Fall
+2007. If you want to learn how to design and implement your own
+programming language, then consider taking this course. A compiler
+enables us to use a high-level programming language like C or Java
+by translating such programs into low-level machine code.  Understanding
+how compilers work is essential if you want to be a good programmer.
+
+I am sending this message to highlight some new changes to this
+course which will take effect in the Fall 2007 offering. These
+changes should make this course more appealing to students interested
+in programming languages.
+
+First, we are changing the textbook to the new edition (the "purple
+dragon book"):
+
+Compilers:  Principles, Techniques and Tools (2nd Edition), A. V.
+Aho, M. S. Lam, R. Sethi, and J. D. Ullman, Addison-Wesley, 2006:
+
+The textbook is augmented with my own detailed lecture notes.
+
+Second, the assignments are going to be updated as well and we will
+use popular open-source tools for building compilers. In the past,
+this course had a reputation of having time-consuming programming
+assignments, but I have developed a new sequence of assignments to
+streamline this process.
+
+Students lacking the MACM 201 pre-requisite should contact me. I
+am also happy to answer any other questions. 
+
+For more visit: http://www.cs.sfu.ca/CourseCentral/379/anoop/
+
+Anoop Sarkar (anoop@cs.sfu.ca)
+Asst Prof in Computing Science
+

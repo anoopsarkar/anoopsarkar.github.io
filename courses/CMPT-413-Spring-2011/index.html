@@ -1,0 +1,526 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<title>CMPT 413 - Computational Linguistics</title> 
+ 
+<!--
+included within course.css:
+<style type="text/css"> 
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+body {
+	margin:0;
+	padding:0;
+}
+</style> 
+-->
+ 
+<link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css"/>
+<script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script> 
+<link rel="stylesheet" href="course.css">
+
+</head> 
+ 
+<body class="yui3-skin-sam"> 
+
+<!--
+<table> 
+  <tbody> 
+    <tr> 
+      <td><img alt="" title="" src="images/hal.jpeg"></td> 
+      <td><img style="width: 149px; height: 103px;" alt="" title="" src="images/speech.jpeg"></td> 
+      <td><img style="width: 133px; height: 114px;" alt="" title="" src="images/parse.jpeg"></td> 
+      <td><img style="width: 119px; height: 98px;" alt=""  title="" src="images/cfg.jpeg"></td> 
+      <td><img style="width: 129px; height: 78px;" alt="" title="" src="images/em.jpeg"></td> 
+    </tr> 
+  </tbody> 
+</table>
+-->
+<h1>CMPT 413 - Computational Linguistics: Spring 2011</h1>
+
+<div class="header">
+  <table>
+    <tbody>
+      <tr>
+	<td>
+	  <ul>
+	    <li><b>Semester</b>: Spring 2011 (1111)</li>
+	    <li><b>Instructor</b>: <a
+	    href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+	    <li><b>Meeting Information</b>:
+	    <ul>
+	      <li>Tu 1:30PM - 2:20PM in AQ5030</li>
+	      <li>Th 12:30PM - 2:30PM in AQ5030</li>
+	    </ul>
+	    <li><b>Dates</b>: 2011/1/6 - 2011/4/13</li>
+	    <li></li>
+	    <li><b>Teaching Assistant</b>: Max Whitney</li>
+	    <li><b>TA Email</b>: mwhitney __at__ cs.sfu.ca</li>
+	    <li><b>TA Office Hours</b>: 11AM-12PM in CSIL Labs on Mon</li>
+	  </ul>
+	</td>
+	<td>
+	  <img width="460" src="images/cmpt413wordle.png"/>
+	</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--BEGIN MAIN TAB VIEW =============================== --> 
+ 
+<div id="main" class="tabview"> 
+    <ul class="tabview-tabs"> 
+        <li class="tabview-active"><a href="#news">News</a></li>
+	<li><a href="#about">About</a></li>
+	<li><a href="#textbook">Textbook</a></li>
+	<li><a href="#syllabus">Syllabus</a></li>
+	<li><a href="#homeworks">Homeworks</a></li>
+	<li><a href="#policies">Policies</a></li>
+        <li><a href="#cal">Calendar</a></li> 
+        <li><a href="#agenda">Agenda</a></li>
+  </ul>
+   <div class="content"> 
+        <div class="news">
+        <div id="twitter_div">
+        <h3 class="sidebar-title">News</h3>
+        <ul id="twitter_update_list"></ul>
+        <a href="http://twitter.com/anpsrkr" id="twitter-link" style="display:block;text-align:right;font-size:12px">[Follow]</a>
+        <!-- <a href="http://twitter.com/anpsrkr" id="twitter-link" style="display:block;text-align:right;"><img src="images/bird-follow-icon.png"></a> -->
+        </div>
+        <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/anpsrkr.json?callback=twitterCallback2&amp;count=8"></script>
+        </div>
+	<div id="about">
+	  <h3>About this course</h3>
+	  <ul>
+	    <li><b>Location</b>: Burnaby Mountain Campus</li>
+	    <li><b>Class number</b>: 8923</li>
+	    <li><b>Section</b>: D100 </li>
+	    <li><b>About the course</b>:
+	    <div class="blurb">
+	      <p>Computational Linguistics is the study of human language from a
+	      computational perspective.  This course will examine algorithms used in the
+	      automatic analysis or production of language.  Along with formal models of
+	      language, we will also study the engineering of natural language processing
+	      software.</p>
+	    </div></li>
+	    <li><b>Course Outline</b>: <a
+	    href="https://portal.cs.sfu.ca/outlines/1111-CMPT-413-D100/"
+	    target="_blank">on CS Portal</a></li>
+	    <li><span style="font-weight: bold;">Grading for the course:</span>
+	    <ul>
+	      <li><span style="font-weight: bold;">Final Exam (Apr 13, 2011; 8:30-11:30; RCB 8100):</span> 30%</li>
+	      <li><span style="font-weight: bold;">2 midterms:</span> 15% each (total of 30%)</li>
+	      <li><span style="font-weight: bold;">5 homeworks:</span> 8% each (total of 40%)</li>
+	    </ul>
+	  </li>
+	  </ul>
+	</div>
+	<div id="textbook">
+	  <h3>Textbook and References</h3>
+	    <h4>Textbook:</h4>
+	    <ul>
+	      <li>There is no official textbook for this course; use the lecture notes and reading from Syllabus.</li>
+	      <li>You should be able to attempt all homework questions and midterm/final questions without using the textbooks below. However they may contain useful background information that will help you understand better the course materials and lectures.</li>
+	    </ul>
+	    <h4>Recommended Textbooks:</h4>
+	    <ol>
+	      <li>
+	      <table>
+		<tbody>
+		  <tr>
+		    <td><img style="width: 103px; height: 140px;" alt=""
+		      title="" src="images/slp.jpg"></td>
+		      <td>Speech and Language Processing: An Introduction to
+			Natural
+			Language Processing, Computational Linguistics, and Speech Recognition
+			by Daniel Jurafsky, James H. Martin. 934 pages 1 edition (January 26,
+			2000), Prentice Hall, ISBN: 0130950696<br>
+			<br>
+			The book also has a <a
+			href="http://www.cs.colorado.edu/%7Emartin/slp.html">webpage</a>. In
+			particular visit it for the <a
+			href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-errata.html">Errata</a>
+			and the online <a
+			href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-web-resources.html">Resources</a>
+			sections.<br>
+                        <br>
+	                We will follow the material in this textbook closely but not in all aspects. The exercises and
+	                discussion in this book will be helpful to supplement what is discussed in class.
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+	      </li>
+
+	      <li>
+	      <table>
+		<tbody>
+		  <tr>
+		    <td><img style="width: 103px; height: 140px;" alt=""
+		      title="" src="images/nltkbook.png"></td>
+		      <td>Introduction to Natural Language Processing by Steven Bird, Ewan Klein and Edward Loper. This book describes the Python-based Natural Language toolkit that we will use in the homework and will provide additional reading material for that purpose. Note that the tutorials needed for the homeworks are available online on nltk.sf.net.
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+
+	    </ol>
+
+	    <h4>Reference Textbooks:</h4>
+	    <p>Material that I use from time to time, but not required reading for
+	    those taking the course.</p>
+	    <table>
+	      <tbody>
+		<tr>
+		  <td><img style="width: 111px; height: 140px;" alt=""
+		    title="" src="images/fsnlp.jpg"></td>
+		    <td>Foundations of Statistical Natural Language
+		      Processing by
+		      Christopher D. Manning, Hinrich Schutze. 680 pages 1 edition (1999),
+		      M.I.T. Press/Triliteral, ISBN: 0262133601<br>
+		      <br>
+		      This book will be useful in cases where you want a different
+		      presentation of the same material that is required reading from <span
+		      style="font-weight: bold;">J&amp;M</span>. In many cases the
+		      statistical approaches are covered in a bit more detail in this book.
+		      However, it does not contain all the topics that we will cover in this
+		      course.<br>
+		    </td>
+		  </tr>
+		</tbody>
+	      </table>
+	</div>
+
+	<div id="syllabus">
+	  <h3>Syllabus and Readings</h3>
+	  <p>The following list summarizes the topics that will be covered in this
+	  course. Also included are the required and optional readings for each
+	  topic. <span style="font-weight: bold;">J&amp;M </span>refers to the
+	  book "Speech and Language Processing" by Jurafsky and Martin. Apart from the required readings,
+	  the optional or review readings are provided for those who are having
+	  difficulty understanding the material. </p>
+	  <ol>
+	    <li>Introduction to Linguistics and Formal language theory</li>
+	    <ul>
+	      <li><a href="intro.pdf">Notes #1</a> (1/13/2011)</li>
+	      <li><a href="ambiguity.pdf">Notes #2</a> (1/13/2011)</li>
+	      <li>Chp 1 and 2 (J&amp;M)</li>
+          <li>Readings:
+            <ul>
+               <li>Lillian Lee. <a href="http://www.cs.cornell.edu/home/llee/papers/cstb.pdf">I'm sorry Dave, I'm afraid
+               I can't do that: Linguistics, Statistics, and Natural Language Processing circa 2001</a>. The
+               National Academies' study on the Fundamentals of Computer Science.</li>
+               <li>Steven Abney. <a href="http://www.vinartus.net/spa/95c.pdf">Statistical Methods and Linguistics</a>. In: Judith Klavans and Philip Resnik (eds.), The Balancing Act: Combining Symbolic and Statistical Approaches to Language. The MIT Press, Cambridge, MA. 1996.</li>
+            </ul>
+          </li>
+	      <li>Links: <a
+	      href="http://www.cstr.ed.ac.uk/projects/festival/">Festival: Open-source text
+	      to speech</a>, <a href="http://www.naturalvoices.att.com/">Speech Animation at AT&amp;T</a>, 
+	      <a href="http://natlang.cs.sfu.ca/qa/">Summarization at SFU</a></li>
+	      <li>Links: <a href="http://www.speech.cs.cmu.edu/Communicator/">CMU Communicator: Dialog
+	      System</a>, <a href="http://www.cs.rutgers.edu/~village/ruth/">RUTH: Rutgers University Talking Head</a>, <a href="http://www.semanticlight.com/">WordsEye: NLP &amp; Graphics</a></li>
+	    </ul>
+	    <li>Finite-state methods: automata and transducers (applications to orthography, morphology, phonology)<br>
+	  </li>
+	  <ul>
+ 	    <li><a href="fsmintro.pdf">Notes #3</a> (1/18/2011)</li> 
+ 	    <li><a href="fsmapply.pdf">Notes #4</a> (1/27/2011)</li>
+ 	    <li><a href="fst.pdf">Notes #5</a> (1/20/2011)</li>
+ 	    <li><a href="fstapply.pdf">Notes #6</a> (2/8/2011)</li>
+	    <li>Chp 3 (J&amp;M)</li>
+	  </ul>
+	  <li>Finite-state methods: edit distance (shortest path in a transducer, spelling correction, evaluation metrics)</li>
+	  <ul>
+ 	    <li><a href="editdist.pdf">Notes #7</a> (2/3/2011)</li>
+	    <li>Chp 5 sections 5.1-5.6 (J&amp;M)</li>
+	    <li>Links: <a href="http://odur.let.rug.nl/%7Ekleiweg/lev/">Levenshtein Demo</a>
+	    </li>
+	  </ul>
+	  <li>Probability models and language: n-grams<br>
+	</li>
+	<ul>
+ 	  <li><a href="prob.pdf">Notes #8</a> (2/24/2011)</li>
+ 	  <li><a href="ngrams.pdf">Notes #9</a> (2/24/2011)</li>
+ 	  <li><a href="smooth.pdf">Notes #10</a> (3/1/2011)</li>
+ 	  <li><a href="classify.pdf">Notes #11</a> (3/3/2011)</li>
+	  <li>Reading: Sections 1-14 from <a href="mt-wkbk.pdf">Kevin Knight's statistical MT workbook</a></li>
+	  <li>Reading: Sections 1-2.7 (p.15) &amp; Section 5.1 from <i></i><a href="chen-goodman-tr-10-98.pdf"><i>Empirical Study of Smoothing</i> by Chen and Goodman</a></li>
+	  </li>
+	</ul>
+	<ul>
+	  <li>Chp 6 sections 6.1-6.2 and 6.7 (J&amp;M).&nbsp;<span style="font-style: italic;"></span></li>
+<!--	  <ul>
+	    <li><span style="font-style: italic;"><span
+	    style="font-weight: bold;">Warning:</span> it is essential to read the errata pages for this chapter and do </span><span style="font-weight: bold; font-style: italic;">not</span><span style="font-style: italic;"> read sections 6.3-6.6 from J&amp;M (1st ed. only; read the 2nd ed. for this chapter if you have it)</span></li>
+	  </ul> -->
+	  <li>Links: <a href="http://www.let.rug.nl/~vannoord/TextCat/index.html">TextCat</a> and <a href="http://languid.cantbedone.org/">languid</a>: language identification based on n-gram matching</li>
+	</ul>
+	<li>Hidden markov models (sequence learning)<br>
+      </li>
+      <ul>
+ 	<li><a href="hmm.pdf">Notes #12</a> (3/8/2011) </li>
+ 	<li><a href="hmmalgos.pdf">Notes #13</a> (3/12/2011) </li>
+	<li>Spreadsheet demos: <a href="viterbi.xlsx">Viterbi algorithm</a> and <a href="hmm.xlsx">HMM Learning</a></li>
+	<li>Chp 5 section 5.9; sections 7.1-7.3 and Appendix D (J&amp;M)</li>
+    <li>Additional Reading: <a href="hmm-algos.pdf">Pseudo-code for HMM Learning</a>
+    <li>Additional Reading: <a href="hmm-map-prior.pdf">Maximizing the posterior for HMM model learning</a>
+	</li>
+      </ul>
+      <li>Some applications of sequence learning (automatic speech
+      recognition, part of speech tagging, name-finding,
+      word segmentation)<br>
+    </li>
+    <ul>
+       <li><a href="postags.pdf">Notes #14</a> (3/8/2011)</li>
+<!--       <li><a href="asr.pdf">Notes #12</a> (2/20/2008)</li> -->
+      <li>Chp 8 sections 8.1-8.5 (J&amp;M)</li>
+    </ul>
+    <li>Context-free grammars and parsing algorithms (natural language syntax)</li>
+    <ul>
+       <li><a href="cfg.pdf">Notes #15</a> (3/17/2011)</li>
+       <li><a href="parsing.pdf">Notes #16</a> (3/17/2011)</li>
+       <li><a href="moreparsing.pdf">Notes #17</a> (3/17/2011)</li>
+       <li><a href="probcfg.pdf">Notes #18</a> (3/17/2011)</li>
+      <li>Chp 9 and Chp 10 (J&amp;M)</li>
+      <li>Reading: <a href="parsingchp.pdf">Notes on grammars and parsing</a> by Anoop.</li>
+      <li><a href="http://www.cs.jhu.edu/%7Ejason/465/PowerPoint/lect10-earley.ppt">Earley Algorithm (ppt)</a> from Jason Eisner's NLP course</li>
+      <li><span style="font-style: italic;">Review:</span> Chp 2 and 4.1 (Sipser)</li>
+    </ul>
+    <li>Feature structures and unification</li>
+    <ul>
+      <li><a href="fs.pdf">Notes #19</a> (3/31/2011)</li>
+      <li><a href="unify-scans.pdf">Supplementary transparencies</a> (3/31/2011)</li>
+      <li>Chp 11 (J&amp;M)</li>
+    </ul>
+    <li>Lexical semantics and word-sense disambiguation</li>
+    <ul>
+      <li><a href="lexicalsem.pdf">Notes #20</a> (3/31/2011)</li>
+      <li>Chp 16 and Chp 17, sections 17.1 and 17.2 (J&amp;M)</li>
+    </ul>
+    <li>Selected topics in NLP
+    <ul>
+    <li>Discourse and dialog models</li>
+    <ul>
+      <li><a href="discourse.pdf">Notes #21</a> (3/31/2011)</li>
+      <li>Chp 18, section 18.1 and Chp 19, sections 19.1-19.3
+      (J&amp;M)</li>
+    </ul>
+    <li>Natural Language Semantics (translation into logic, language understanding, language generation)</li>
+    <ul>
+<!--       <li><a href="../CMPT-413-Spring-2007/semantics.pdf">Notes #20</a></li> -->
+      <li>Chp 14 and 15 (J&amp;M)</li>
+    </ul>
+    <ul>
+    </ul>
+    <li>Natural Language and complexity theory (mathematical linguistics)</li>
+    <ul>
+<!--       <li><a href="../CMPT-413-Spring-2005/complexity.pdf">Notes #21</a></li> -->
+      <li>Chp 13 (J&amp;M)</li>
+    </ul>
+    </ul></li>
+  </ol>
+	</div>
+
+	<div id="homeworks">
+	  <h3>Homeworks</h3>
+      <p>For all the information regarding homeworks, please read <a href="#homeworkpolicies">Homework submission
+      policies</a>.</p>
+	  <ol> <li><a href="hw1.pdf">Homework #1</a>. Due Jan 25.</li>
+	  <ul> 
+	    <li>Additional Reading: <a href="nltkintro.pdf">Short Introduction to NLTK</a> by S. Bird, E. Klein and E. Loper.</li> 
+	    <li>Additional Reading for Python newbies: <a href="http://docs.python.org/tut/tut.html">Python Tutorial</a> by Guido van Rossum. Read upto Chapter 10.</li> 
+	    <li>The data files are in the directory: <code>~anoop/cmpt413/hw1/</code> on CSIL Linux machines.</li>
+        <li><a href="python.tidbits.txt">Python tidbits</a>.</li>
+	  </ul>
+	  <li><a href="hw2.pdf">Homework #2</a>. Due Feb 8.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/cmpt413/hw2/</code></li>
+	    <li>CMU Pronunciation dictionary: <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">cmudict</a></li> 
+        <li>OpenFST fst toolkit: <code>~anoop/cmpt413/sw/openfst-1.2.6</code>; <a href="http://www.openfst.org">OpenFST
+        download and documentation</a>.
+	    <li>AT&amp;T fst toolkit: <code>~anoop/cmpt413/sw/fsm-4.0</code>; <a href="http://www.research.att.com/~fsmtools/fsm/">download and documentation</a></li> 
+	  </ul>
+	  <li><a href="hw3.pdf">Homework #3</a>. Deadline extended to Mar 8.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/cmpt413/hw3/</code></li>
+	    <li>If you choose to do Question 9, read <a href="mt-wkbk.pdf">Kevin Knight's workbook</a> on statistical machine translation.</li>
+	  </ul>
+	  <li><a href="hw4.pdf">Homework #4</a>. Due Mar 22.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/cmpt413/hw4/</code></li>
+	    <li>For Q5 <a href="http://www.kanungo.com/software/software.html">umdhmm</a> is available on CSIL Linux machines in the directory: <code>~anoop/cmpt413/sw/</code></li>
+	  </ul>
+	  <li><a href="hw5.pdf">Homework #5</a>. Due Apr 5.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/cmpt413/hw5/</code></li>
+	  </ul>
+	</ol>
+        <h3>Homework submissions and grading</h3>
+        <h4>Programming</h4>
+	    <ul>
+	    <li>We will be using the Python-based <a href="http://nltk.org/">NLTK: Natural Language Toolkit</a> for most of
+        the homeworks in this course. <b>You must use NLTK version v2.0b9 for the homeworks.</b></li>
+        <li>On CSIL Linux machines, NLTK version v2.0b9 installed. Run <code>python2.6</code> and then type in
+        <code>import nltk</code>. If you get an error then something went wrong. Email csilop@cs.sfu.ca with the
+        details.</li>
+	    <li>You must test your programs on the CSIL Linux machines before you submit.
+	    For most homework questions, a sample output is provided. Make sure your output matches it exactly. Submit
+        an <code>exec.py</code> for each homework. This python program will be used to run all of your programs for the homework.</li>
+	    <li> You can use ssh to connect to the CSIL Linux machines (peach.csil.sfu.ca, mango.csil.sfu.ca, ... you get the idea).</li>
+	    <li>You may choose to use a different algorithm than the one I suggest for solving any part of the homework.  However, please contact me before you do so. I would not recommend this for students who are not very confident about programming or solving the homework as given.</li>
+	    <li> On some CSIL Linux machines, in some rare cases, you might have to extend your CPU time limit for a
+        process. If you are using tcsh then run the command "limit cputime 1800" to extend CPU time to 1800 secs or 30
+        mins. If you are using bash then use the command "ulimit -t 1800".</li>
+        </ul>
+        <h4>Homework Submission</h4>
+        <ul>
+        <li>Your homework will be submitted electronically using the department-provided submission server. Connect to
+        the submission server by going to the URL: <a href="https://courses.cs.sfu.ca/">https://courses.cs.sfu.ca/</a>
+        (your grades for the homeworks will also be tracked on the same web page)</li>
+	    <li>All homeworks are due by 11:45 PM on the homework due date.</li>
+        </ul>
+        <h4>Homework Grading</h4>
+        <ul>
+	    <li>You have 4 grace days for the entire semester. You can use up your grace days, one per homework, or all 4
+        for one homework (in general, any integer partition of 4, which is <i>[[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 3],
+        [4]]</i> <a href="http://www.cs.sfu.ca/~anoop/distrib/partitions.py">source code</a>). If you use up all your
+        grace days then the maximum grade <b>if you are late</b> will be 50 percent of the original score for that
+        homework. Each additional day will reduce the maximum grade further by 10 percent. Weekend days count the same as weekdays for the late penalty.</li>
+            <li>If you want to do extra stuff make sure it is <i>correct</i> -- it is probably not a good idea to advertise to the TA that you got something wrong.</li>
+            <li>Only do extra stuff if you have finished the entire homework.</li>
+            <li>There is no <i>extra credit</i> for doing more, mainly because it is a pain to grade that way.</li> 
+            <li>However doing the extra optional question for your own understanding will likely help you with the concepts covered in the course and hence you may do better in the exams or future assignments.</li>
+            <li>Read the <b>Mark Appeals</b> policies in the <b>Policies</b> section of this web page.</li>
+	</ul>
+	</div>
+
+	<div id="policies">
+	  <h3>Policies</h3>
+	    <h4 id="email">Email policy</h4>
+	    <ul>
+	      <li><span style="font-weight: bold;">Use the prefix "cmpt-413: " on all your messages</span>. If you do not include the prefix, then the mail might go unanswered. </li>
+	      <li>Send email to the course mailing list (cmpt-413@sfu.ca) rather than individually to me (the instructor). This will allow either me, the TA or other students to reply to your email.</li>
+	    </ul>
+	  <h4 id="hw">Homework submission policies</h4>
+	  <ul>
+	    <li>For homework policies, see the Homeworks section</li>
+	  </ul>
+   <h4 id="exams">Exams</h4>
+    <ul>
+      <li> If you must miss an exam because of a medical problem, you should make an attempt to contact me prior to the exam either by email or a message in my mailbox. </li>
+      <li>To request an extension of the due date due to a medical problem, you must submit the <a href="http://students.sfu.ca/forms/hcpsfGeneral.pdf">offical SFU Health Care Provider statement</a>. </li>
+      <li>If you miss an exam due to valid medical reasons you will be graded on your performance on the rest of the course. </li>
+      <li><span style="font-weight: bold;">Make up exams will not be given under any circumstances</span>. </li>
+    </ul>
+  <h4 id="webpage">Disclaimers about this web page</h4>
+  <ul>
+    <li>All course information on this web page is tentative and could be in error. It can also change at any time. Confirm crucial dates or information with me in person during class. Double check with SFU calendar or schedule information for official class times and final exams time and location. </li>
+    <li>Students are expected to attend all classes: announcements about assigned readings, homeworks and exams will be made available at the start of each class. Such announcements may not be made on this web page, so don't rely on information here instead of attending class. </li>
+    <li>Lecture notes or other materials put up on this web page are only <span style="font-style: italic;">additional
+    material</span> and <span style="font-weight: bold;">not</span> an alternative to the readings assigned. Only reading the lecture notes will not be enough to prepare for the homeworks or the exams.</li>
+  </ul>
+
+<h4 id="acaddis">Academic Honesty</h4> 
+<ul> 
+  <li>Some examples of unacceptable behaviour:
+       <ul> 
+         <li> Handing in assignments that are not 100% your own work (in design, implementation, wording, etc.), without proper citation.</li> 
+	 <li> Using any unpermitted resources during an exam.</li> 
+	 <li> Looking at, or attempting to look at, another student's paper during an exam.</li> 
+	 <li> Submitting work that has been submitted before, for any course at any institution.</li> 
+       </ul></li> 
+  <li>If you are unclear on what academic honesty is, see <abbr title="Simon Fraser University" class="obvious">SFU</abbr>'s <a 
+href="http://www.sfu.ca/policies/Students/index.html">Policy S10-01</a> and the <a href="https://www.sfu.ca/policies/gazette/teaching.html">University code of academic honesty</a>.</li> 
+  <li>All instances of academic dishonesty will be dealt with very severely.</li> 
+  <li>In general, minimum requested penalties will be as follows:
+       <ul> 
+	 <li>For assignments: a mark of -100% on the assignment.  So, academic dishonesty on an assignment worth 5% of your final mark will result in a zero on the assignment, and a penalty of 5% from your final grade.</li> 
+	 <li>For exams: an F in the course.</li> 
+       <li>Please note that these are minimum penalties.  At the instructor's option, more severe penalties may be given/requested.  <strong>All</strong> instances of academic dishonesty will be noted on your University record.</li> 
+       </ul> 
+  <li> The instructor may use, or require students to submit assignments to, an automated service that will check for plagiarism.</li> 
+</ul> 
+ 
+ 
+<h4 id="exams">Exams and Tests</h4> 
+<ul> 
+  <li>Midterms may be in different rooms than the lectures.  You will be notified by email.</li> 
+  <li>Exams may be written in either pen or pencil.  Calculators or other aids are not allowed unless explicitly stated.</li> 
+  <li>Midterm exams and other tests may or may not be returned, depending on the course.  If they are returned, you can get them from the instructor's office hours.  You can not dispute the marking of your exam after you have taken it out of the instructor's office. </li> 
+  <li>Final exams are not returned to students by University policy; they are kept by the instructor.</li> 
+  <li>If you miss a test or exam, you must present a note from a doctor to get a mark other than zero.  Arrangements to make up the lost marks will be made on a case-by-case basis by the instructor.  Make-up exams may be given as an oral examination.</li> 
+  <li>You must get a pass on the weighted average of the exams to pass the course.</li> 
+</ul> 
+ 
+ 
+<h4 id="appeals">Mark Appeals</h4> 
+<p>Except for final grades, this is how you can go about getting your mark changed:</p> 
+<ul> 
+  <li>Requests for a change in your mark must come to the course
+instructor.  <abbr title="Teaching Assistant" class="obvious">TA</abbr>s will not change your mark, except for errors in addition
+or data entry.</li> 
+  <li>Requests should come in the same form as you received your marks: if
+you got marks by email, forward that email to the instructor; if you had
+paper handed back, return that.</li> 
+  <li>You should give a brief explanation of why you want your mark reevaluated.</li> 
+  <li>The instructor will remark the entire assignment/test.  This will be your mark, whether it is higher or lower than the original.</li> 
+  <li>Appeals may be made up to two weeks after the mark is returned or until the final exam date, whichever is <em>first</em>.  After that deadline, you must make a formal mark appeal for any changes.</li> 
+  <li>For exams in particular, these are <em>not</em> reasons to get more marks:
+       <ul> 
+	 <li>I knew what I was saying here, but didn't write it.</li> 
+	 <li>This is the correct answer for some question other than the one asked,
+	      but I didn't get any marks for it.</li> 
+	 <li>I didn't understand the question.</li> 
+       </ul></li> 
+</ul> 
+ 
+<h4 id="finals">Final Exam and Final Marks Appeals</h4> 
+<p>If you're concerned about your mark at the end of the course, you can see the instructor.  Here are some guidelines:</p> 
+<ul> 
+  <li>You can come to the instructor's office at designated times to review your final exam.</li> 
+  <li>Like assignments, you can ask the instructor to reevaluate your final exam marking.</li> 
+  <li>The following are not good reasons to get a higher final mark:
+       <ul> 
+	 <li>I want it.</li> 
+	 <li>I think I deserve it.</li> 
+	 <li>I need it.</li> 
+	 <li>I'm close to the next grade cutoff.</li> 
+       </ul></li> 
+  <li>This is a good reason:
+       <ul> 
+	 <li>There's a marking irregularity on my final or some other piece of work.</li> 
+       </ul></li> 
+  <li> The marking scheme is fixed.  If you did badly on a midterm, you can't weight the final more heavily.</li> 
+</ul> 
+ 
+ 
+	</div>
+
+	<div id="cal"> 
+            <p><iframe src="http://www.google.com/calendar/embed?src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p> 
+        </div> 
+    <div id="agenda"> 
+    <iframe
+    src="https://www.google.com/calendar/b/0/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FVancouver"
+    style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+</div>
+</div> 
+</div> 
+<script type="text/javascript"> 
+YUI({filter:'raw'}).use("yui", "tabview", function(Y) {
+    var tabview = new Y.TabView({srcNode:'#main'});
+    tabview.render();
+});
+</script> 
+ 
+<!--END SOURCE CODE FOR EXAMPLE =============================== --> 
+</body>
+</html> 

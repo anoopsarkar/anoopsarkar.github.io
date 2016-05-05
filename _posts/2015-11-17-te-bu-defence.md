@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Te Bu passes his MSc thesis exam"
+tags: [graduate-students,news]
 ---
 
 Te Bu successfully defended his MSc thesis on Nov 17th 2015. 

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Tutorial on Collections/References in Perl</title>
+</head>
+<body>
+<h1>Tutorial on Collections and References in Perl</h1>
+<big><big><span style="font-weight: bold;">Anoop Sarkar</span></big></big><br>
+<br>
+This page is a short tutorial on <span style="font-style: italic;">collections</span>
+(lists and hash tables) in Perl and how to use <span
+ style="font-style: italic;">references</span>
+to such collection types. You will need to first read a more basic
+tutorial on Perl before reading this tutorial to discover other
+important facets of Perl (notably the use of regular expression
+matching). This tutorial assumes some knowledge of another programming
+language.<br>
+<h2>Scalars</h2>
+Scalars are atomic types. Datatypes such as <span
+ style="font-style: italic;">integers</span>, <span
+ style="font-style: italic;">floating point numbers</span>, <span
+ style="font-style: italic;">strings</span> are scalar variables.
+Scalar variables are denoted by the prefix <code>$</code> to the
+variable name. Comments can be started by the symbol <code>#</code>
+upto the end of the line.<br>
+<pre>$scalarInt = 42; # scalar integer variable</pre>
+<pre>$scalarFloat = 42.3; # scalar floating point variable</pre>
+<pre>$scalarInterpolatedString = "value=$scalarInt\n"; # scalar string variable with interpolation of values into the string</pre>
+<pre>$scalarString = 'value'; # scalar string without interpolation<br></pre>
+There are many operators (such as <code>++, eq, ...</code>) and
+functions (such as <code>lc, length, ...</code>) that can be used to
+manipulate scalar variables. See the man page for perlop for more on
+operators (using <code>man perlop</code>) and the man page on perl
+functions (<code>man perlfunc</code>).<br>
+<h2>Arrays</h2>
+The most basic collection type is the array. Arrays can be also viewed
+as lists (no random access), but in Perl lists are still stored as
+arrays and are not a distinct collection type.&nbsp; Array variables
+are denoted by the prefix <code>@</code> to the variable name. Arrays
+are indexed from <code>0</code> in Perl. Notice that when referring to
+each element of the array (e.g. <code>$intArray[0]</code>), since each
+element is a scalar, this is denoted by the prefix <code>$</code>.
+<pre>@intArray = (1,2,3,4,5); # array of integers</pre>
+<pre>$firstElement = $intArray[0]; # random access to the first element of @intArray</pre>
+<pre>$thirdElement = $intArray[2]; # random access to the third element of @intArray</pre>
+<pre>@miscArray = (1, "second", 2, 2.34); # arrays are not strongly typed, each array element can be a different scalar type<br></pre>
+The function pop removes the last element of the array, and the
+function push adds a new element as the last element of the array. From
+the other end, the function shift removes the first element of the
+array, while unshift adds a new element as the first element of the
+array.<br>
+<pre>@intArray = (); # the empty array<br><br>push(@intArray, 1); # adds 1 as the last element<br><br>push(@intArray, 2); # adds 2 as the last element<br><br>$value = shift(@intArray); # $value == 1 and @intArray becomes (2)<br><br>unshift(@intArray, 3); # adds 3 as first element, @intArray becomes (3,2)<br><br>$value = pop(@intArray); # $value == 2, @intArray becomes (3)<br><br>$intArray[1] = 4; # inserts a new element as second element of @intArray<br></pre>
+The length of an array can be obtained with two different methods. Perl
+has a special variable <code>$#</code>
+for each array variable which is an integer equal to the index of the
+last element in the array. The length of the array can also be obtained
+by coercing the array variable into a scalar variable.<br>
+<pre>@intArray = (1..3); # initializes array with all integers between 1 and 3 inclusive<br><br>$lastIndex = $#intArray; # index of the last element, $lastIndex == 2<br><br>$length1 = $lastIndex + 1; # size of the array<br><br>$length2 = scalar(@intArray); # type coercion, reports size of the array, $length1 == $length2<br></pre>
+The functions <code>join</code> and <code>split</code> are useful in
+converting from arrays to strings and vice versa.<br>
+<pre>$line = "This is a line of text\n"; # $line is a scalar string variable<br><br>chomp($line); # chomp removes the final newline character<br><br>@wordArray = split(" ", $line); # Looks for " " to separate substrings into list elements<br><br>@wordArray = split(/\s+/, $line); # split can also use regular expressions (see 'man perlre' for more on regexps)<br><br>$line = join(" ", @wordArray); # merges elements of @wordArray with " " between each element to form a scalar<br><br>$line = $line . "\n"; # concatenates the newline character to form the original value of $line<br></pre>
+Just like scalar variables can be interpolated into strings, array
+variables are also automatically interpolated.<br>
+<pre>print join(" ", @wordArray), "\n"; # one method to print the contents of an array variable<br><br>print "@wordArray\n"; # alternative method to print the array<span
+ style="font-weight: bold;"><br></span></pre>
+Arrays can also be multi-dimensional. Here is an example of a two
+dimensional array:<br>
+<pre>$distance[14][20] = 120;<span style="font-weight: bold;"><br><br></span></pre>
+<span style="font-weight: bold;"></span>
+<h2>Hash Tables</h2>
+<pre><span style="font-weight: bold;"></span></pre>
+Hash table variables are denoted by the prefix <code>%</code>. Hash
+tables create a mapping from scalar variables (the <span
+ style="font-style: italic;">keys</span>) to scalar variables (the <span
+ style="font-style: italic;">values</span>).
+The keys have to be scalar types for which a hashcode can be computed
+(integers and strings). The syntax to insert and delete elements from
+hash tables is similar to the syntax of inserting and deleting elements
+in arrays.<br>
+<pre>%hashTable = ();<br><br>$hashTable{"first"} = 1; # inserts a new hash table entry with key="first" and value=1<br><br>$hashTable{"second"} = 2; # new entry with key="second" and value=2<br><br>@hashkeys = keys(%hashTable); # the function keys returns an array containing only the keys: ("first", "second")<br><br>for my $key (keys(%hashTable)) { print $hashTable{$key}, "\n"; } # printing every value in the hash table<br></pre>
+Note that only scalars can be stored as values. So any variable that is
+not scalar will be coerced to a scalar value before insertion as a
+value into the hash table. Remember that an array variable when coerced
+to a scalar will report the length of the array.<br>
+<pre>@intArray = (1..3);<br><br>$hashTable{"third"} = @intArray; # coercion to a scalar type means the value is not the array but its length<br></pre>
+<h2>References</h2>
+So if we wanted to store more complex information in arrays or hash
+tables we need a method to convert complex data types into scalars.
+References allow us to do just that. Let's take an example program: say
+we need to store for each word in the input text a list of all the line
+numbers in which that word occurred. The natural method to store this
+information would be to store each word as a key in a hash table and
+have a list of line numbers as the value. Let's assume we have a list
+of line numbers:<br>
+<pre>@lineNumbers = (34, 23, 78, 122, 455);</pre>
+A <span style="font-style: italic;">reference</span> to a list is a
+scalar value (as usual denoted by the <code>$</code> prefix to the
+variable name). The operator <code>\ </code>creates a reference:<br>
+<pre>$refList = \@lineNumbers;</pre>
+The function <code>ref</code> returns true for an input scalar
+variable
+if the variable is a reference. The reference also internally knows
+whether it was a reference to an array or a hash table (or even a
+function or a scalar variable).<br>
+<pre>if (ref $reflist) { print "yes\n"; } else { print "no\n"; } # will print 'yes'</pre>
+Note that references are scalar variables (as seen from the prefix <code>$</code>
+on the variable name). Since collections are over scalars, this means
+that we can use references as members in lists and hash tables. So if
+we wanted to store a list of lists, we can now do it using references:<br>
+<pre>@lineNumbers = (34, 23, 78, 122, 455);<br><br>$refList = \@lineNumbers;<br><br>$refList = [34, 23, 78, 122, 455]; # this is a short-hand for creating a reference to a list directly, same effect as previous statement<br><br>$reflistA = [1,2,3];<br>$reflistB = [4,5,6];<br>$reflistC = [7,8,9];<br><br>@listOfLists = ($reflistA, $reflistB, $reflistC);  # this creates a list with three elements: each a reference to a list<br><br>$listOfLists[3] = [10,11,12]; # this adds a new list ref to the list @listOfLists<br></pre>
+Now that we have a scalar variable that refers to a list, we can store
+this variable <code>$refList</code> as a value in a hash table. Let's
+assume the word is <code>"keyword"</code>, then:<br>
+<pre>$hashTable{"keyword"}&nbsp; = $reflist;</pre>
+To get the original list variable back, we need to <span
+ style="font-style: italic;">dereference</span> the reference:<br>
+<pre>$reflist = $hashTable{"keyword"};</pre>
+<pre>@lineNumbers = @{$reflist};</pre>
+These two lines can be combined into one statement (in this case the
+precedence requires the use of the curly braces <code>{}</code> around
+the reference:<br>
+<pre>@lineNumbers = @{$hashTable{"keyword"}};</pre>
+The deference which is the <span style="font-style: italic;">rvalue</span>
+in the above statement can also be used as an <span
+ style="font-style: italic;">lvalue</span>:<br>
+<pre>$newLineNumber = 677;</pre>
+<pre>push( @{ $hashTable{"keyword"} } , $newLineNumber );</pre>
+The statement shown above actually modifies the contents of the list
+pointed to by the reference that was stored as a value in the hash
+table. So if we wanted to add to a list variable, and we have a
+reference to that list variable, then the step shown above is first
+dereferencing the reference and then modifying the list. Perl has some
+syntactic sugar that can make this process easier:<br>
+<pre>@listVar = (1..10); # create a list variable</pre>
+<pre>$reflist = \@listVar; # create a reference to the list variable</pre>
+<pre>${$reflist}[0] = 11; # changes the first element of @listVar to 11</pre>
+<pre>$reflist-&gt;[0] = 11; # same as previous statement, changes first element of @listVar but this time without a dereference</pre>
+The above notation can be useful when dealing with lists of lists (read
+the description earlier in this section on how to define list of lists):<br>
+<pre>@listOfLists = ([1,2,3], [5,6,7], [9,10,11]); # create a list variable with three listrefs</pre>
+<pre>@listOfLists[0]-&gt;[3] = 4; # add the element 4 to the first listref element<br><br>@listOfLists[1]-&gt;[3] = 8; # add the element 8 to the second listref element<br><br>@listOfLists[2]-&gt;[3] = 12; # add the element 12 to the third listref element<br><br>for my $refList (@listOfLists) { print join(" ", @$refList), "\n"; } # print out the contents of @listOfLists<br></pre>
+Hash tables can also be defined over multiple keys (analogous to the
+use of multi-dimensional arrays):<br>
+<pre>%mdimHash = (); # initialize hash table to be empty<br><br>$mdimHash{"key1"}{"key2"} = "valuestring";<br></pre>
+The value of <code>$mdimHash{"key1"}</code> is actually a reference to
+another hash table which contains key <code>"key1"</code> which stores
+the value <code>"valuestring"</code>. Here is how to loop over all the
+keys of a multi-dimensional hash table:<br>
+<pre>for my $k1 (keys(%mdimHash)) {<br>  for my $k2 (keys(%{ $mdimHash{$k1} })) {<br>    print "key1=$k1 key2=$k2 value=$mdimHash{$k1}{$k2}\n";<br>  }<br>}<br></pre>
+As we saw before we can also dereference values implicitly using the <code>-&gt;</code>
+operator. Hence the following is a true statement:<br>
+<pre>$mdimHash{"key1"}{"key2"} == $mdimHash{"key1"}-&gt;{"key2"}<br></pre>
+<h2>An Example</h2>
+Now you're in a position to understand an example Perl program which
+combines the ideas presented above. The input to the program is a text
+file with one sentence per line.&nbsp; Output of this program is a list
+of all the linenumbers <code>k</code> in the input text file for every
+word pair <code>w[i-1], w[i]</code> that appears in the sentence at
+linenumber <code>k</code>. An additional condition is that both <code>count(w[i-1])</code>
+and <code>count(w[i])</code> are greater than some minimum word count
+defined in the variable <code>$minWordCount.</code> The input to this
+program should be a text file (you can try <code>hw1.txt</code>
+for example).<br>
+<pre>use strict;<br><br>my $minWordCount = 10;<br>my %pairCount = ();<br>my %wordCount = ();<br>my $line;<br>my $lineNumber = 0;<br><br>while ($line = &lt;&gt;) {<br>    chomp($line);<br>    ++$lineNumber;<br>    my @words = split(' ', $line);<br><br>    # size of the array @words<br>    my $sz = scalar(@words);<br><br>    # go to next line if current line has less than 2 words<br>    if ($sz &lt; 2) { next; }<br><br>    for (my $i=1; $i &lt; $sz; $i++) {<br><br>        # store the count of word w[i] in the hash table %wordCount<br>        $wordCount{ $words[$i] }++;<br><br>        # store the current line number in the reference to the list                                <br>        # stored in the hash table %pairCount with two keys: w[i-1]                                 <br>        # and w[i]                                                                                  <br>        push( @{ $pairCount{ $words[$i-1] }{ $words[$i] } } , $lineNumber);<br>    }<br>}<br><br>for my $w1 (keys(%pairCount)) {<br>    if ($wordCount{$w1} &gt; $minWordCount) {<br>        for my $w2 (keys(%{ $pairCount{$w1} })) {<br>            if ($wordCount{$w2} &gt; $minWordCount) {<br>                print "word1=$w1 word2=$w2: ";<br>                # reference to a list in a multi-dimensional hash table                             <br>                print "linenumbers = @{ $pairCount{$w1}{$w2} } \n";<br>            }<br>        }<br>    }<br>}</pre>
+<hr style="width: 100%; height: 2px;">
+<address>Anoop Sarkar &lt;anoop at cs.sfu.ca&gt;</address>
+</body>
+</html>

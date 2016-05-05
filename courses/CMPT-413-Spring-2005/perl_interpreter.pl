@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+
+use Term::ReadLine;
+my $regular_prompt = "perl> ";
+my $continue_prompt = "....> ";
+
+my $term = new Term::ReadLine 'Simple Perl Interpreter';
+my $prompt = $regular_prompt;
+my $OUT = $term->OUT || \*STDOUT;
+
+my $lcount = 0; $rcount = 0;
+while ( defined ($_ = $term->readline($prompt)) ) {
+    $term->addhistory($_) if /\S/;
+    chomp;
+    $lcount += (tr/\{//) ;
+    $rcount += (tr/\}//) ;
+    $partialexpr .= $_ ; 
+    if (($lcount - $rcount) == 0) {
+	$lcount = 0; $rcount = 0; 
+	$expr = $partialexpr . ';'; 
+	$partialexpr = "" ;
+	my $res = eval($expr), "\n";
+	warn $@ if $@;
+	print $OUT $res, "\n" unless $@;
+	$prompt = $regular_prompt;
+    } else {
+	$prompt = $continue_prompt;
+    }
+}
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CMPT 882 - Spring 2007: Discriminative Methods in Machine Learning</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+<h1>CMPT 882 - Spring 2007: Discriminative Methods in Machine Learning</h1>
+<div class="sidebar">
+<p><img alt="" src="SVM_01.jpg" style="width: 100px; height: 75px;"></p>
+<h3><a href="#announcements">Announcements</a></h3>
+<h3><a href="#readings">Weekly Readings</a></h3>
+</div>
+<div class="main">
+        <table>
+        <tbody>
+          <tr>
+	    <td><img alt="" src="SVM_02.jpg" style="width: 100px; height: 75px;"></td>
+            <td><img alt="" src="SVM_03.jpg" style="width: 100px; height: 75px;"></td>
+            <td><img alt="" src="SVM_05.jpg" style="width: 100px; height: 75px;"></td>
+          </tr>
+        </tbody>
+      </table>
+
+<ul>
+  <li><span style="font-weight: bold;">Instructor</span>: <a
+ href="http://www.cs.sfu.ca/%7Eanoop/">Dr. Anoop Sarkar</a></li>
+    <li><span style="font-weight: bold;">Location and Time</span>: <br>
+ TASC1 9406, 9:30-12:20 <span style="font-style: italic;">Tuesdays</span></li>
+  <br>
+  <li><span style="font-weight: bold;">Mailing List</span>: cmpt-882
+_at_ sfu.ca (always prefix "cmpt-882: " to all messages sent to this
+list)<br>
+    <a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-882/">Mailing list
+archives</a></li>
+  <br>
+  <li><span style="font-weight: bold;">Office</span>: TASC 9427</li>
+  <li><span style="font-weight: bold;">Office hours</span>: Tues, 2:30-3:30pm</li>
+</ul>
+<div class="blurb">
+  
+<p>This is an Area 3 course covering some advanced topics in Artificial
+Intelligence.  The course will cover some topics in machine learning.  We
+will focus on learning which assumes that the training data is generated
+from some stochastic source, but otherwise makes no assumption about any
+particular distribution having generated the data.  These are so-called
+"distribution-free" or discriminative methods.  In addition, the course
+will focus on the analysis of the algorithms used in different learning
+models, and explore the trade-off between optimal learning vs.  scalability
+of the learning model to large datasets.</p>
+  
+</div>
+<p>
+More details: <a href="CMPT-413-Sarkar-07-1.txt">Course outline</a>
+</p>
+<div class="content">
+<h2><a name="announcements">Announcements</a></h2>
+<ul>
+  <li><span style="font-weight: bold;">Grading for the course:</span><br>
+  </li>
+  <ul>
+    <li><span style="font-weight: bold;">Project and research report:</span> 40%</li>
+    <li><span style="font-weight: bold;">Class presentations:</span> 40%</li>
+    <li><span style="font-weight: bold;">Class participation:</span> 20%</li>
+  </ul>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li><span style="font-weight: bold;">Mon, Jan 8:</span> First day of classes</li>
+    <li><span style="font-weight: bold;">Wed, Apr 4:</span> Last day of classes</li>
+  </ul>
+</ul>
+
+<h2><a name="readings">Syllabus and Readings</a></h2>
+<p>We will cover the following topics in this course. The weekly readings 
+are listed below.</p>
+<h3>Topics</h3>
+<ol>
+<li>Linear classification</li>
+<li>Support Vector Machines</li>
+<li>Boosting</li>
+<li>Perceptron variants</li>
+<li>Global linear models</li>
+<li>Markov Random Fields</li>
+<li>Kernel methods</li>
+<li>Discriminative learning for structured labels</li>
+<li>Discriminative methods in semi-supervised learning</li>
+</ol>
+<h3>Weekly schedule and Readings</h3>
+<ul>
+<li>Week 1: Jan 9
+  <ul>
+    <li>Supervised learning; hypothesis space</li>
+    <li>Generalization and learning; "distribution-free" setting for learning</li>
+    <li>Readings:
+    <ul>
+      <li>Mitchell, T. Whitepaper on <a href="http://www.cs.cmu.edu/~tom/pubs/MachineLearning.pdf">The Discipline of Machine Learning</a>. 2006</li>
+      <li>Langley, P. <a href="http://www-csli.stanford.edu/icml2k/craft.html">Crafting Papers on Machine Learning</a>.</li>
+      <li>Jordan, M. I. <a href="http://portal.acm.org/citation.cfm?id=104295">An introduction to linear algebra in parallel distributed processing</a>. In Parallel distributed processing: vol 1: foundations. 1986.</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 2: Jan 16
+  <ul>
+    <li>Fisher linear discriminant</li>
+    <li>Probably-approximately correct (pac) learning</li>
+  </ul>
+</li>
+<li>Week 3: Jan 23
+  <ul>
+    <li>The Perceptron algorithm</li>
+    <li>Margin distribution of a dataset</li>
+    <li>Novikoff's theorem</li>
+  </ul>
+</li>
+<li>Week 4: Jan 30
+  <ul>
+    <li>VC dimension</li>
+    <li>Readings:
+    <ul>
+      <li>Valiant, L.G. <a href="http://www.cs.toronto.edu/~roweis/csc2515/readings/p1134-valiant.pdf"> A Theory of the Learnable.</a> Comm. of the ACM. Vol 27, 1984.</li>
+      <li>Blumer, A. et al. <a href="http://portal.acm.org/citation.cfm?id=76371">Learnability and the Vapnik-Chervonenkis dimension</a>. Journal of the ACM, vol 36, issue 4 (1989).</li>
+      <li>Haussler, D. <a href="http://www.cbse.ucsc.edu/staff/haussler_pubs/smo.pdf">Decision theoretic generalizations of the PAC model for neural net and other learning applications</a>. Information and Computation. 100(1), 1992.</li>
+      <li>Shawe-Taylor et. al. Bounding sample size with the Vapnik-Chervonenkis dimension. Discrete Applied Mathematics, 42:65-73, 1993.</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 5: Feb 6
+  <ul>
+    <li>Support Vector Machines</li>
+    <li>Kernel methods</li>
+    <li>Readings:
+    <ul>
+      <li>Chapter 5 of <a href="http://www.stanford.edu/~boyd/cvxbook/">Convex Optimization</a> by Boyd and Vandenberghe.
+      <li>C. Burges. <a href="http://research.microsoft.com/~cburges/tech_reports/tr-2004-56.pdf">Some Notes on Applied Mathematics for Machine Learning</a>, Technical Report. MSR-TR-2004-56. Related slides available from: <a href="http://research.microsoft.com/~cburges/talks/lecturesTuebingenBurges.ps.gz">Some Mathematical Tools for Machine Learning</a>, Lectures given at the 2003 Summer School on Machine Learning at Max Planck Institute, Tuebingen</li>
+      <li><a href="http://www.cs.berkeley.edu/~klein/papers/lagrange-multipliers.pdf">Lagrange Multipliers without Permanent Scarring</a>. Dan Klein. Tutorial.</li>
+      <li>C. Burges, <a href="http://research.microsoft.com/~cburges/papers/SVMTutorial.pdf">A Tutorial on Support Vector Machines for Pattern Recognition</a>, Data Mining and Knowledge Discovery, Vol. 2, Number 2, p. 121-167, Kluwer Academic Publishers, 1998.</li>
+      <li>C. Cortes and V. Vapnik, <a href="http://citeseer.ist.psu.edu/cortes95supportvector.html">Support-Vector Networks</a>, Machine Learning, 20(3):273-297, September 1995</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 6: Feb 13
+  <ul>
+    <li>Minimum error training of a perceptron</li>
+    <li>Empirical Risk Minimization</li>
+    <li>Using the margin in learning</li>
+    <li>Readings:
+    <ul>
+      <li>Schuurmans, D. and Greiner, R. (1995) <a href="http://www.cs.ualberta.ca/~dale/papers/ijcai95.ps.gz">Practical PAC learning</a>. In Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence (IJCAI-95), pp. 1169-1175.</li>
+    <li>A. Garg, S. Har-Peled, and D. Roth, <a href="http://l2r.cs.uiuc.edu/~danr/Papers/icml02.pdf">On generalization bounds, projection profile, and margin distribution</a>. ICML  (2002) pp. 171-178</li>
+    <li>A. Garg and D. Roth, <a href="http://l2r.cs.uiuc.edu/~danr/Papers/GargRo03.pdf">Margin Distribution and Learning Algorithms</a>. Proc. of the International Conference on Machine Learning (ICML)  (2003) pp. 210-217</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 7: Feb 20
+  <ul>
+    <li>Ill-posed problems, uniform stability and regularization</li>
+    <li>Regression</li>
+    <li>Readings:
+    <ul>
+      <li>Evgeniou, T., Pontil, M. and Poggio, T. <a href="http://cbcl.mit.edu/projects/cbcl/publications/ps/evgeniou-reviewall.pdf">Regularization networks and support vector machines</a>. Advances in Computational Mathematics, 13: 1-50.</li>
+      <li>Girosi, F., Jones, M. and Poggio, T. <a href="http://citeseer.ist.psu.edu/girosi95regularization.html">Regularization theory and neural network architectures</a>. Neural Computation, 7: 219-269.</li>
+      <li>Poggio, T., R. Rifkin, S. Mukherjee and P. Niyogi. <a href="http://cbcl.mit.edu/projects/cbcl/publications/ps/nature-predictivity.pdf">General Conditions for Predictivity in Learning Theory</a>, Nature, 428, 419-422, March 2004. </li>
+    <li>Poggio, T. and S. Smale. <a href="http://cbcl.mit.edu/projects/cbcl/publications/ps/notices-ams2003refs.pdf">The Mathematics of Learning: Dealing with Data</a>, Notices of the American Mathematical Society (AMS), Vol. 50, No. 5, 537-544, 2003. (<a href="http://www.ams.org/notices/200305/200305-toc.html">AMS Notices page</a>)</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 8: Feb 27
+  <ul>
+    <li>Voted Perceptron</li>
+    <li>Averaged Perceptron</li>
+    <li>Readings:
+    <ul>
+      <li>Yoav Freund and Robert Schapire. <a href="http://www.cs.princeton.edu/~schapire/papers/FreundSc98.ps.Z">Large Margin Classification using the Perceptron Algorithm</a>. Machine Learning, 37(3): 277--296, 1999.</li>
+      <li>Koby Crammer and Yoram Singer. <a href="http://www.cis.upenn.edu/~crammer/publications/crammer01a.pdf">On the Algorithmic Implementation of Multiclass Kernel-based Vector Machines</a>. Journal of Machine Learning Research, vol 2, 295--292, 2001.</li>
+    </ul>
+   </li>
+ </ul>
+</li>
+<li>Week 9: Mar 6 
+  <ul>
+    <li>Winnow</li>
+    <li>SNoW</li>
+    <li>Bayes Point Machines</li>
+    <li>Readings:
+    <ul>
+       <li>Nick Littlestone (1988). <a href="http://www.springerlink.com.proxy.lib.sfu.ca/content/j0k7t38567325716/">Learning quickly when irrelevant attributes abound: A new linear threshold algorithm</a>. Machine Learning 2, pp. 285-318. (<a href="http://www.cs.toronto.edu/~roweis/csc2515/readings/winnow.pdf">pdf</a>)</li>
+       <li>Dan Roth. <a href="http://l2r.cs.uiuc.edu/~danr/Papers/aaai98.ps.gz">Learning to Resolve Natural Language Ambiguities: A Unified Approach</a> AAAI '98, July 1998.</li>
+       <li>Ralf Herbrich, Thore Graepel, and Colin Campbell. <a href="http://www.research.microsoft.com/~rherb/papers/hergraecamp01.ps.gz">Bayes Point Machines</a>. Journal of Machine Learning Research, 1:245-279, 2001.</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 10: Mar 13
+  <ul>
+    <li>Chernoff Bounds</li>
+    <li>Boosting</li>
+    <li>AdaBoost</li>
+    <li>Boosting using confidence-rated predictions</li>
+    <li>Readings:
+    <ul>
+       <li>Robert E. Schapire. <a href="http://www.cs.princeton.edu/~schapire/uncompress-papers.cgi/msri.ps">The boosting approach to machine learning: An overview.</a> In D. D. Denison, M. H. Hansen, C. Holmes, B. Mallick, B. Yu, editors, Nonlinear Estimation and Classification. Springer, 2003.</li>
+       <li>Y. Freund. <a href="http://www.cse.ucsd.edu/~yfreund/adaboost/index.html">AdaBoost applet</a>.
+       <li>Robert E. Schapire. <a href="http://citeseer.ist.psu.edu/schapire90strength.html">The strength of weak learnability</a>. Machine Learning, 5(2):197-227, 1990. (<a href="http://www.cs.toronto.edu/~roweis/csc2515/readings/schapire_swl.pdf">pdf</a>)</li>
+       <li>Robert E. Schapire and Yoram Singer. <a href="http://www.cs.princeton.edu/~schapire/uncompress-papers.cgi/SchapireSi98.ps">Improved boosting algorithms using confidence-rated predictions</a>. Machine Learning, 37(3):297-336, 1999. 
+       <li>Robert E. Schapire, Yoav Freund, Peter Bartlett and Wee Sun Lee.  <a href="http://www.cs.princeton.edu/~schapire/uncompress-papers.cgi/SchapireFrBaLe98.ps">Boosting the margin: A new explanation for the effectiveness of voting methods</a>. The Annals of Statistics, 26(5):1651-1686, 1998. 
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 11: Mar 20 
+  <ul>
+    <li>Multi-class classification</li>
+    <li>Readings:
+    <ul>
+    <li>Thomas G. Dietterich and Ghulum Bakiri. <a href="http://citeseer.ist.psu.edu/dietterich95solving.html">Solving multiclass learning problems via error-correcting output codes</a>. Journal of Artificial Intelligence Research, 2:263--286, January 1995. </li>
+    <li>Erin L. Allwein, Robert E. Schapire and Yoram Singer. <a href="http://www.cs.princeton.edu/~schapire/uncompress-papers.cgi/mult2bin.ps">Reducing multiclass to binary: A unifying approach for margin classifiers.</a> Journal of Machine Learning Research, 1:113-141, 2000. 
+    <li>Rifkin, R. and A. Klautau. <a href="http://cbcl.mit.edu/projects/cbcl/publications/ps/rifkin-04-jmlr.pdf">In Defense of One-vs-All Classification</a>, Journal of Machine Learning Research, Vol. 5, 101-141, 2004.</li>
+    </ul>
+    </li>
+  </ul>
+</li>
+<li>Week 12: Mar 27
+  <ul>
+    <li>Co-training</li>
+    <li>Bootstrapping</li>
+    <li>Readings:
+    <ul>
+    <li>Blum, A., & Mitchell, T. (1998). <a href="http://citeseer.ist.psu.edu/blum98combining.html">Combining labeled and unlabeled data with co-training</a>. COLT 1998.</li>
+    <li>Sanjoy Dasgupta, Michael Littman and David McAllester, <a href="http://ttic.uchicago.edu/~dmcallester/cotrain01.ps">PAC Generalization Bounds for Co-Training</a>.  NIPS 01</li>
+    <li>Steven Abney. <a href="http://www.vinartus.net/spa/02a.pdf">Bootstrapping</a>. 40th Annual Meeting of the Association for Computational Linguistics: Proceedings of the Conference. 2002.</li>
+    <li>Yarowsky, D. <a href="http://www.cs.jhu.edu/~yarowsky/acl95.ps">Unsupervised Word Sense Disambiguation Rivaling Supervised Methods</a>. In Proceedings of the 33rd Annual Meeting of the Association for Computational Linguistics. Cambridge, MA, pp. 189-196, 1995.</li>
+    <li>Steven Abney. <a href="http://www.vinartus.net/spa/03c-v7.pdf">Understanding the Yarowsky Algorithm</a>. Computational Linguistics 30(3). 2004. </li>
+    </ul>
+  </ul>
+</li>
+<li>Possible future readings:
+  <ul>
+      <li>William W. Cohen (2002): <a href="http://www.cs.cmu.edu/~wcohen/postscript/nips-2002.pdf">Improving A Page Classifier with Anchor Extraction and Link Analysis in NIPS 2002.</li>
+      <li>William Cohen and Vitor R. Carvalho. <a href="http://www.cs.cmu.edu/%7Evitor/papers/ijcai05.pdf">Stacked Sequential Learning. IJCAI 2005.</li>
+      <li>Blumer et. al. <a href="http://portal.acm.org/citation.cfm?id=31174">Occam's Razor</a>. Information Processing Letters, 24 (1987) 377--380.</li>
+    <li>Mukherjee, S., P. Niyogi, T. Poggio and R. Rifkin. <a href="http://cbcl.mit.edu/projects/cbcl/publications/ps/mukherjee-ACM-06.pdf">Learning Theory: Stability is Sufficient for Generalization and Necessary and Sufficient for Consistency of Empirical Risk Minimization</a>, Advances in Computational Mathematics, 25, 161-193, 2006.</li>
+      <li>Mitchell, T.M. (1980). <a href="http://citeseer.ist.psu.edu/mitchell80need.html">The Need for Biases in Learning Generalizations</a>. CBM-TR 5-110, Rutgers University, New Brunswick, NJ.</li>
+  </ul>
+</ul>
+</div>
+<hr>
+<address>anoop at cs.sfu.ca</address>
+<p></p>
+</div>
+</body>
+</html>
