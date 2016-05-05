@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mahdi Soleimani passes his MSc thesis exam"
+tags: [graduate-students,news]
 ---
 
 Mahdi Soleimani successfully defended his MSc thesis on Apr 1st 2016. 

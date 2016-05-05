@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Paper accepted at IWSLT 2015"
+tags: [publications,machine-translation]
 ---
 Our paper on  “Learning Segmentations that Balance Latency versus Quality in Spoken Language Translation” by Hassan S. Shavarani, Maryam Siahbani, Ramtin Mehdizadeh Seraj and Anoop Sarkar was accepted for publication at the 12th International Workshop on Spoken Language Translation: [IWSLT 2015](http://workshop2015.iwslt.org/) to be held in Da Nang, Vietnam from December 3-4, 2015.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The ideal meeting"
+tags: [ill-tempered-observations]
 ---
 
 The following excerpt is from _In the First Circle: The First Uncensored Edition_

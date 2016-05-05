@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "On Being a Professor"
+tags: [ill-tempered-observations]
 ---
 
 An excerpt from _Master and Commander_ by Patrick O'Brian. 

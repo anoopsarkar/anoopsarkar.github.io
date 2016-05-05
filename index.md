@@ -49,6 +49,7 @@ If you are interested in working with me, before you email me, please read my <a
 <div class="more">
     <ul class="navigate">
         <li><a href="{{ site.baseurl }}/news">All news and posts</a></li>
+        <li><a href="{{ site.baseurl }}/tags">Sorted by tags</a></li>
     </ul>
 </div>
 
