@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CMPT 825 Fall 2003: Natural Language Processing</title>
+</head>
+<body>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 204, 255);">
+      <h2>CMPT-825 - Fall 2003 - Natural Language Processing</h2>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<big><br style="font-weight: bold;">
+<span style="font-weight: bold;">Anoop Sarkar<br>
+<br>
+</span></big><span style="font-weight: bold;">Location</span>: WMX 3253
+(West Mall Complex)<br>
+<span style="font-weight: bold;">Time</span>: Wed 9-10:20 and Fri
+9-10:20<br>
+<br>
+<span style="font-weight: bold;">Mailing List</span>: cmpt-825@sfu.ca<br>
+<a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-825/">Mailing list
+archive</a><br>
+<br>
+<span style="font-weight: bold;">Office</span>: ASB 10830<br>
+<span style="font-weight: bold;">Office hours</span>: by appointment
+(send email to <span style="font-family: monospace;">anoop at cs.sfu.ca</span>
+after checking my <a
+ href="http://www.icalx.com/html/anoop/week.php?cal=Work">Schedule</a>)<br>
+<br>
+<div style="text-align: left;">Natural Language Processing (NLP) is the
+automatic analysis of human language by computer algorithms. NLP can be
+used for the <span style="font-style: italic;">transduction</span> of
+one linguistic form to another or <span style="font-style: italic;">parsing</span>
+of language into a structured form. Transduction of language involves
+summarizing, paraphrasing or translating languages. Parsing involves
+conversion of unstructured data into a structured form, such as speech
+into text or large text collections (like the web) into informative
+labels that are meaningful for database queries (e.g. identifying a
+noun phrase as a company name). Like other artificial intelligence
+sub-fields, we would like to accomplish these task using very little
+specialized information (using unsupervised learning). However, in
+practice, supervised learning leads to better results. <br>
+<br>
+This course attempts to be a comprehensive overview of the field. The
+course work will require written assignments, programming and a final
+project. Assignments will provide exposure to commonly used NLP
+datasets.<br>
+<br>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3>Announcements</h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li>Wed, Sep 3rd: First day of class</li>
+    <li>Fri, Nov 28th: Last day of class</li>
+    <li>Wed, Oct 15-17: Midterm Week, Review and Examination</li>
+    <li>Tue, Dec 9: <span style="font-weight: bold;">Final Project
+Presentations</span> <span style="font-style: italic;">10am to 2:20pm
+at WMC 3510</span></li>
+  </ul>
+  <li><span style="font-weight: bold;">Grading for the course: </span><br>
+  </li>
+  <ul>
+    <li>Assignments (20%), <br>
+    </li>
+    <li>Midterm (20%), <br>
+    </li>
+    <li>Final Project (40%), <br>
+    </li>
+    <li>Class Presentation (20%).</li>
+  </ul>
+  <li><span style="font-weight: bold;">Guidelines for Class
+Presentation:</span></li>
+  <ul>
+    <li> 20 mins, no more than 10 slides </li>
+    <li>One presentation is required</li>
+    <li>Contents to be determined based on your interest and after
+discussion with me<br>
+    </li>
+  </ul>
+  <li><span style="font-weight: bold;">Location of data files and
+software packages:</span></li>
+  <ul>
+    <li>Data files are stored in <code>/cs/825/data</code><code></code></li>
+    <li>Software can be found in various sub-directories of <code>/cs/825/software</code></li>
+  </ul>
+  <li>Sep 13, 2003: added <a href="PerlReferencesTutorial.html">Tutorial
+on Collections and References in Perl</a> in the Syllabus and Readings
+section.</li>
+  <li>Sep 15, 2003: added <a href="msa.pdf">Brief Introduction to
+Issues in Multiple Sequence Alignment</a> to the Syllabus and Readings
+section.</li>
+  <li>Sep 25, 2003: fixed off by one error in the HMM spreadsheet. Use
+the <a href="hmm.xls">updated file</a>, also linked below.</li>
+  <li>Nov 18, 2003: fixed typos in reading for Document Classification.</li>
+  <li>Nov 18, 2003: new date and location for final presentation.<br>
+  </li>
+</ul>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3>Assignments</h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+  <li><a href="hw0.pdf">Homework #0</a>. Distributed
+on Sep 3. Do not hand in.</li>
+  <ul>
+    <li>File location: <code>/cs/825/data</code>&nbsp; <span
+ style="font-weight: bold;">Note</span>: also available from <code>/cs/fac1/anoop/data/cmpt825</code><br>
+    </li>
+    <li>Files: <code>hw0.txt, wc.pl</code><br>
+    </li>
+    <ul>
+    </ul>
+  </ul>
+  <li><a href="hw1.pdf">Homework #1</a>. Distributed
+on Sep 5. Due in class on Sep 12.</li>
+  <ul>
+    <li>File location <code>/cs/825/data</code>. File: <code>hw1.txt</code></li>
+    <ul>
+    </ul>
+  </ul>
+  <li><a href="hw2.pdf">Homework #2</a>. Distributed on Sep 12. Due in
+class on Sep 19.</li>
+  <ul>
+    <li>Files are in <code>/cs/825/data/recap</code></li>
+  </ul>
+  <li><a href="hw3.pdf">Homework #3</a>. Distributed on Sep 19. Due in
+class on Sep 26.</li>
+  <ul>
+    <li>Files for this homework are in <code>/cs/825/data</code></li>
+    <li>File: <code>viterbi.xls</code></li>
+  </ul>
+  <li><a href="hw4.pdf">Homework #4</a>. Distributed on Sep 26. Due in
+class on Oct 3.</li>
+  <ul>
+    <li>Files for this homework are in <code>/cs/825/data/postags</code></li>
+    <li>Guide to the part of speech tags is provided in <code>/cs/825/data/postags/tagguide.pdf</code></li>
+  </ul>
+  <li><a href="hw5.pdf">Homework #5</a>. Distributed on Oct 3. Due in
+class on Oct 10.</li>
+  <ul>
+    <li>Files for this homework are in <code>/cs/825/data/translit</code><br>
+    </li>
+  </ul>
+  <li><a href="hw6.pdf">Homework #6</a>. Distributed on Oct 10. Due in
+class on Oct 17.</li>
+  <li><a href="hw7.pdf">Homework #7</a>. Distributed on Oct 31. Due in
+class on Nov 7.</li>
+  <li><a href="hw8.pdf">Homework #8</a>. Distributed on Nov 14. Due in
+class on Nov 28.</li>
+  <ul>
+    <li>For more details on Earley parsing, see: <br>
+      <strong style="font-weight: normal;"><a
+ href="http://portal.acm.org/citation.cfm?id=358005&amp;coll=portal&amp;dl=ACM&amp;CFID=14017505&amp;CFTOKEN=95925915">An
+efficient context-free parsing algorithm</a>. Jay Earley. </strong><span
+ class="mediumb-text">Communications of the ACM 26(1). 1983.<br>
+      </span></li>
+  </ul>
+</ul>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3>Syllabus and Readings<br>
+      </h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="text-align: left; width: 100%;" border="2" cellspacing="0"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);"><span
+ style="font-weight: bold;">Dates</span></td>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);"><span
+ style="font-weight: bold;">Topics and Lecture Notes</span><br>
+      </td>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);"><span
+ style="font-weight: bold;">Readings</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Sep 3-5<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="outline.pdf">Outline</a></li>
+        <li><a href="intro.pdf">Introduction to NLP and Linguistic
+Essentials</a></li>
+        <li><a href="prob.pdf">Introduction to probability and
+information theory</a><br>
+        </li>
+        <li><a href="editdist.pdf">Minimum
+edit-distance</a></li>
+      </ul>
+Student Presentation: <a
+ href="file:///Users/anoop/public_html/courses/CMPT-825-Fall-2003/student/KaustavMukherjee.ppt">Kaustav
+Mukherjee</a> (ppt slides)<br>
+Additional Reading: <a
+ href="file:///cs/fac1/anoop/public_html/courses/CMPT-825-Fall-2003/msa.pdf">Brief
+Introduction to Issues in Multiple Sequence Alignment</a><br>
+Perl tutorials online: the <a href="http://www.ebb.org/PickingUpPerl/">Picking
+Up Perl</a> tutorial, <a
+ href="http://archive.ncsa.uiuc.edu/General/Training/PerlIntro/">PerlIntro</a>,<a
+ href="http://www.cs.toronto.edu/%7Egpenn/csc401/perl_tutorial2002.ps">
+Diana Inkpen's tutorial</a>, more tutorials on <a
+ href="http://www.perl.com">perl.com</a>.<br>
+Demos:<a href="http://www.cstr.ed.ac.uk/projects/festival/"> Festival</a>,&nbsp;
+      <a href="http://www.naturalvoices.att.com/">Natural Voices</a>, <a
+ href="http://www1.cs.columbia.edu/nlp/newsblaster/">Newsblaster</a>, <a
+ href="http://www.speech.cs.cmu.edu/Communicator/">CMU Communicator</a>,
+      <a
+ href="http://www.sls.lcs.mit.edu/sls/whatwedo/applications/jupiter.html">MIT
+Jupiter</a><br>
+      </td>
+      <td style="vertical-align: top;">MS: Chp 1,3<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Sep 10-12<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="ngrams.pdf">N-gram
+models</a></li>
+        <li><a href="smooth.pdf">Smoothing</a></li>
+        <li><a href="asr.pdf">Language models for speech recognition</a></li>
+        <li><a href="PerlReferencesTutorial.html">Tutorial
+on Collections and References in Perl</a></li>
+      </ul>
+Student Presentation: <a
+ href="file:///Users/anoop/public_html/courses/CMPT-825-Fall-2003/student/AndreiMissine.ppt">Andrei
+Missine</a> (ppt slides)<br>
+Software: <a href="http://www.speech.sri.com/projects/srilm/">SRI
+Language
+Modelling toolkit</a><br>
+      </td>
+      <td style="vertical-align: top;">MS:
+Chp 2,6<br>
+      <a href="../CMPT-413-Spring-2003/chen-goodman-tr-10-98.pdf">Chen
+and Goodman 1998</a> </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Sep 17-19<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="hmm.pdf">Hidden Markov
+Models</a></li>
+        <li>Demos(Excel or Openoffice): <a href="viterbi.xls">Viterbi</a>
+and <a href="hmm.xls">Forward-Backward</a></li>
+      </ul>
+Student Presentation: <a href="student/HongShen.ppt">Hong Shen</a>
+(ppt slides)<br>
+Additional Reading: P. Felzenszwalb, D. Huttenlocher, J. Kleinberg. <a
+ href="http://www.cs.cornell.edu/home/kleinber/nips16-hmm.pdf">Fast
+Algorithms for Large-State-Space HMMs with Applications to Web Usage
+Analysis.</a>
+      <span style="font-style: italic;">Advances in Neural Information
+Processing Systems</span> (NIPS) 16, 2003. </td>
+      <td style="vertical-align: top;">MS: Chp 9 </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Sep 24-26<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="postags.pdf">Learning Sequences</a>: Part of
+Speech Tagging,
+Chunking, Named-entity recognition, Word segmentation</li>
+      </ul>
+Student Presentation: <a href="student/MashaalMemon.ppt">Mashaal Memon</a>
+(ppt slides)<br>
+Link: <a href="../CMPT-413-Spring-2003/tagguide.pdf">Part of Speech
+Tagging Guidelines for the Penn Treebank</a><br>
+Link: CoNLL shared task on NER, <a
+ href="http://cnts.uia.ac.be/conll2003/ner/">2003</a>, <a
+ href="http://cnts.uia.ac.be/conll2002/ner/">2002</a><br>
+Link: <a href="http://cnts.uia.ac.be/conll2000/chunking/">CoNLL shared
+task on Chunking, 2000</a><br>
+Link: <a href="http://www.sighan.org/bakeoff2003">Chinese Word
+Segmentation Bakeoff 2003</a><br>
+      </td>
+      <td style="vertical-align: top;">MS: Chp 10 </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Oct 1-3<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="fst.pdf">Finite-state
+Transducers and Morphology<br>
+          </a></li>
+        <li><a href="fstalgos.pdf">Algorithms for Finite State
+Transducers</a><br>
+        </li>
+      </ul>
+Student Presentation: <a href="student/YudongLiu.ppt">Yudong Liu</a>
+(ppt slides)<br>
+Additional slides: <a href="mohri-tutorial.pdf">Tutorial on the fsm
+toolkit by Mehryar Mohri</a><br>
+Additional reading: <a
+ href="http://acl.ldc.upenn.edu/hlt-naacl2003/conference/pdf/hlt_naacl_03_main_108.pdf">Simpler
+and More General Minimization for Weighted Finite-State Automata</a><i>.
+      </i>Jason Eisner. In <span style="font-style: italic;">Proc. of
+HLT-NAACL 2003</span>. (<a
+ href="http://www.cs.jhu.edu/%7Ejason/papers/eisner.hlt03.ppt">slides</a>)<br>
+Software: <a href="http://www.research.att.com/sw/tools/fsm/">AT&amp;T
+fsm
+toolkit</a><br>
+Link: <a
+ href="http://www.xrce.xerox.com/competencies/content-analysis/fst/">FSTs
+at Xerox</a><br>
+Link: <a href="http://www.isi.edu/licensed-sw/carmel/">FSTs at ISI</a><br>
+      </td>
+      <td style="vertical-align: top;"><a href="mohri-jnle.pdf">Mohri
+1996</a><br>
+      <a href="mohri-cl1.pdf">Mohri
+1997</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Oct 8-10<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="wsd.pdf">Word sense
+disambiguation,
+Lexical semantics and Wordnet</a></li>
+      </ul>
+Link: <a href="http://www.cogsci.princeton.edu/%7Ewn/">Wordnet</a><br>
+      </td>
+      <td style="vertical-align: top;">MS: Chp 7<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Oct 15-17<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>Midterm Week: Review and
+Examination</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Oct 22-24<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>Machine translation (Part I)</li>
+        <li><a href="mt.pdf">Introduction to MT</a></li>
+      </ul>
+Additional Reading: <a
+ href="http://acl.ldc.upenn.edu/J/J93/J93-2003.pdf">The Mathematics of
+Statistical Machine Translation: Parameter Estimation</a>. Peter E
+Brown; Vincent J. Della Pietra; Stephen A. Della Pietra; Robert L.
+Mercer. <span style="font-style: italic;">Computational Linguistics</span>,
+Volume 19, Number 2, June 1993 </td>
+      <td style="vertical-align: top;">MS: Chp 13<br>
+      <a href="wkbk.rtf.doc">K. Knight MT Tutorial</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Oct 29-31<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>Machine translation (Part II)</li>
+      </ul>
+Student Presentation: <a href="student/MauricioZuluaga.ppt">Mauricio
+Zuluaga</a> (ppt slides)<br>
+Additional Slides: <a href="papineni.pdf">Slides on the Bleu metric by
+Kishore Papineni</a> (read pages 57-75)<br>
+Additional Reading: <a
+ href="http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf">BLEU: A Method for
+Automatic Evaluation of Machine Translation</a>. Kishore Papineni,
+Salim Roukos, Todd Ward and Wi-Jing Zhu. <span
+ style="font-style: italic;">Proceedings of the 40th Annual
+Meeting of the Association for Computational Linguistics</span>. 2002<br>
+Additional Reading: <a
+ href="http://mitpress.mit.edu/catalog/item/default.asp?sid=48A0538A-DF9C">Word
+Reordering and a Dynamic Programming Beam Search Algorithm for
+Statistical Machine Translation</a>. Christoph Tillmann and Hermann
+Ney.&nbsp; <span style="font-style: italic;">Computational Linguistics</span>.
+Vol. 29, Issue 1 - March 2003,
+pp. 97 - 133 </td>
+      <td style="vertical-align: top;"><a
+ href="http://acl.ldc.upenn.edu/J/J93/J93-2003.pdf"> Brown et. al.</a> </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Nov 5-7<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="complexity.pdf">Natural Language and Complexity</a><br>
+        </li>
+        <li><a href="parsing.pdf">Prepositional phrase attachment,
+Probabilistic context-free grammars</a></li>
+      </ul>
+Student Presentation: <a href="student/XianghuaJiang.ppt">Xianghua
+Jiang</a> (ppt slides)<br>
+Additional Reading: <a
+ href="http://acl.ldc.upenn.edu/W/W97/W97-0109.pdf">Corpus Based PP
+Attachment Ambiguity Resolution with a Semantic Dictionary</a>. Jiri
+Stetina and Makoto Nagao. <span style="font-style: italic;">Fifth
+Workshop on Very Large&nbsp; Corpora</span>. </td>
+      <td style="vertical-align: top;">MS: Chp 8,11<br>
+      <a href="http://acl.ldc.upenn.edu/J/J82/J82-3004.pdf">Church and
+Patil</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Nov 12-14<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="probcfg.pdf">Parsing PCFGs, Viterbi and
+Inside-Outside algorithm</a></li>
+        <li><a href="statparsing.pdf">Treebank-based and Lexicalized
+Parsing, Beam thresholding</a><br>
+        </li>
+      </ul>
+Student Presentation: <a href="student/ZhongminShi.ppt">Zhongmin Shi</a>
+(ppt slides)<br>
+Additional Reading: <a
+ href="http://www.ai.mit.edu/people/mcollins/papers/CL2003.ps">Head-Driven
+Statistical Models for Natural Language Parsing</a>. Michael Collins.
+2003. To appear in <span style="font-style: italic;">Computational
+Linguistics</span>.<br>
+Additional Reading: <a
+ href="http://www.cs.brown.edu/people/ec/papers/aaai97.ps">Statistical
+Parsing with a Context-Free Grammar and Word
+Statistics</a>. Eugene Charniak. Proceedings of the Fourteenth National
+Conference on
+Artificial Intelligence AAAI Press/MIT Press, Menlo Park (1997). <a
+ href="http://citeseer.nj.nec.com/charniak97statistical.html">pdf
+version</a>.<br>
+      </td>
+      <td style="vertical-align: top;">MS: Chp 12<br>
+      <a href="http://www.ai.mit.edu/people/mcollins/papers/CL2003.ps">Collins</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Nov 19-21<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>Document classification (Generative vs. Discriminative
+models for classification): <br>
+        </li>
+        <li><a href="nb.pdf">Naive
+Bayes</a></li>
+        <li><a href="maxent.pdf">Maximum Entropy Models</a></li>
+        <li><a href="tbl.pdf">Transformation-based learning</a><br>
+        </li>
+      </ul>
+Student Presentation: <a href="student/GaborMelli.ppt">Gabor Melli</a>
+(ppt slides)<br>
+Additional Reading: <a
+ href="http://citeseer.nj.nec.com/freund99short.html"> A short
+introduction to boosting </a>. Y. Freund and R. Schapire. <span
+ style="font-style: italic;">Journal of
+the Japanese Society for Artificial Intelligence</span>. 14(5), pages
+771-780,
+1999.<br>
+Additional Reading: <a
+ href="http://citeseer.nj.nec.com/collins00discriminative.html">
+Discriminative Reranking for Natural Language Parsing</a>. Michael
+Collins. In <span style="font-style: italic;">Proc. 17th International
+Conf. on Machine Learning</span>, pages
+175-182, 2000.<br>
+Additional Reading: <a href="http://www.vinartus.net/spa/98b.pdf">
+Boosting Applied to Tagging and PP Attachment </a>. Steven Abney,
+Robert E. Schapire, and Yoram Singer. <span style="font-style: italic;">Proceedings
+of the 1999 Joint
+SIGDAT Conference on Empirical Methods in Natural Language Processing
+and Very Large Corpora</span>, pp. 38-45. 1999. </td>
+      <td style="vertical-align: top;">MS: Chp 16<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Nov 26-28<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="cluster.pdf">Clustering</a></li>
+      </ul>
+      <br>
+Additional Reading: <a
+ href="http://www.cs.caltech.edu/%7Eschulman/Papers/em-uaif.pdf">A
+Two-Round Variant of EM for Gaussian Mixtures</a>. Sanjoy Dasgupta and
+Leonard Schulman. <span style="font-style: italic;">Uncertainty in AI</span>,
+2000.<br>
+Additional Reading: <a
+ href="http://www.ai.mit.edu/people/mcollins/papers/wpeII.4.ps">The EM
+Algorithm</a>. manuscript by Michael Collins. Review of three famous
+papers about the EM algorithm: (Dempster, Laird and Rubin 1977), (Wu
+1983), and (Jamshidian and Jennrich 1993). </td>
+      <td style="vertical-align: top;">MS: Chp 14<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3>Textbook</h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img
+ style="width: 111px; height: 140px;" alt="" title="" src="fsnlp.jpg"></td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Course
+Textbook</span><br>
+      <br>
+Foundations of Statistical Natural Language Processing by Christopher
+D. Manning, Hinrich Schutze. 680 pages 1 edition (1999), M.I.T.
+Press/Triliteral, ISBN: 0262133601<br>
+      <br>
+This book has a <a href="http://nlp.stanford.edu/fsnlp/">webpage</a>.
+This book is referred to as MS: on this web page.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img
+ style="width: 103px; height: 140px;" alt="" title="" src="slp.jpg"><br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">For
+Reference Only</span><br style="font-weight: bold;">
+      <br>
+Speech and Language Processing: An Introduction to Natural Language
+Processing, Computational Linguistics, and Speech Recognition by Daniel
+Jurafsky, James H. Martin. 934 pages 1 edition (January 26, 2000),
+Prentice Hall, ISBN: 0130950696<br>
+      <br>
+The book also has a <a
+ href="http://www.cs.colorado.edu/%7Emartin/slp.html">webpage</a>. In
+particular visit it for the <a
+ href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-errata.html">Errata</a>
+and the online <a
+ href="http://www.cs.colorado.edu/%7Emartin/SLP/slp-web-resources.html">Resources</a>
+sections.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0"
+ cellpadding="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(51, 255, 51);">
+      <h3>Software and Datasets<br>
+      </h3>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3>Software</h3>
+<ul>
+  <li><a href="http://www.research.att.com/sw/tools/fsm/">AT&amp;T fsm
+toolkit</a></li>
+  <li><a href="http://www.isi.edu/licensed-sw/carmel/">ISI Carmel
+finite-state toolkit</a></li>
+  <li><a href="http://www.speech.sri.com/projects/srilm/">SRI Language
+Modelling toolkit</a></li>
+  <li><a
+ href="http://www-i6.informatik.rwth-aachen.de/web/Software/GIZA++.html">GIZA++</a>
+and <a href="http://www.clsp.jhu.edu/ws99/projects/mt/toolkit/">EGYPT</a></li>
+  <li><a href="http://www.cis.upenn.edu/%7Eadwait/statnlp.html">Adwait
+Ratnaparkhi's Part of Speech tagger</a></li>
+  <li><a href="http://nlp.cs.jhu.edu/%7Erflorian/fntbl/">fnTBL</a><br>
+  </li>
+  <li>Parsers: <a
+ href="ftp://ftp.cis.upenn.edu/pub/mcollins/PARSER.tar.gz">Michael
+Collins</a>, <a href="ftp://ftp.cs.brown.edu/pub/nlparser/">Eugene
+Charniak</a>, <a href="http://www.vinartus.net/spa/">Steve Abney</a><br>
+  </li>
+  <li><a href="http://www-2.cs.cmu.edu/%7Emccallum/bow/">rainbow text
+classification toolkit</a></li>
+  <li><a href="http://www.cogsci.princeton.edu/%7Ewn/">Wordnet</a></li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<address>anoop at cs.sfu.ca</address>
+</body>
+</html>

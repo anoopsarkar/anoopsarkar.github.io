@@ -1,0 +1,64 @@
+SFU                       Computing Science                       06-1
+________________________________________________________________________
+CMPT 825-3 SECT   Natural Language Processing
+ Instructor: A. Sarkar                       WHERE
+ LECTURE TIME TBA ... EXAM TIME TBA
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+Natural Language Processing (NLP) is the automatic analysis of human
+language by computer algorithms.  These algorithms can be used to convert
+unstructured data such as transcribed speech or large text collections
+(like the web) into structured forms.  NLP algorithms allow us to take
+abstract information embedded in language and produce informative labels
+(e.g.  identifying a sequence of words as the name of a protein or a
+company name) using very little specialized information.  The course will
+be mainly covering statistical machine learning methods for NLP. (This
+course will be in Area 3).
+
+TOPICS:
+
+   o Language models and smoothed estimation
+   o Statistical machine translation
+   o The EM algorithm
+   o Stochastic parsing and tagging; Log-linear models
+   o Re-ranking methods for parsing and tagging
+   o Kernel methods
+   o Finite-state and tree transducers
+
+GRADING:
+
+Midterm (20%), Final Paper (30%), Final Project (30%), Class Presentation
+(20%).
+
+Students must attain an overall passing grade on the weighted average of
+exams in the course in order to obtain a clear pass (C or better).
+
+TEXTBOOKS:
+
+   o , , ,
+
+REFERENCES:
+
+   o Foundations of Statistical Natural Language Processing, Christopher
+     Manning and Hinrich Schutze, MIT Press, 1999
+   o Speech and Language Processing, Daniel Jurafsky and James H. Martin,
+     Prentice Hall, 2000
+
+PREREQUISITES/COREQUISITES:
+
+For graduate students.
+
+Distributed:  October 12, 2005
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's Statement on Intellectual Honesty
+(http://www.cs.sfu.ca/undergrad/Policies/honesty.html).

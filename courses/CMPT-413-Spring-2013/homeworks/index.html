@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CMPT 413: Computational Linguistics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="website for the SFU CS course CMPT 413 Computational Linguistics">
+    <meta name="author" content="Anoop Sarkar">
+
+    
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../bootstrap/css/docs.css" rel="stylesheet">
+    <link href="../extra.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!-- <link rel="shortcut icon" href="../bootstrap/ico/favicon.ico"> -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2013/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand visible-phone" href="../index.html">CMPT 413: CL</a>
+          <a class="brand visible-tablet visible-desktop" href="../index.html">CMPT 413: Computational Linguistics</a>
+          <div class="btn-group pull-right">
+            <a class="btn btn-primary" href="https://courses.cs.sfu.ca/2013sp-cmpt-413-d1/">courses.cs</a>
+          </div>
+          <div class="nav-collapse">
+            <ul class="nav">
+              
+              
+              
+  
+
+  
+
+  
+
+  
+    
+      <li><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2013//notes/index.html">Notes</a></li>
+    
+  
+
+  
+    
+      <li><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2013//policies/index.html">Policies</a></li>
+    
+  
+
+  
+
+  
+    
+      <li><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2013//calendar/index.html">Calendar</a></li>
+    
+  
+
+  
+    
+      <li><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2013//news/index.html">News</a></li>
+    
+  
+
+  
+    
+      <li class="active"><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2013//homeworks/index.html" class="active">Homeworks</a></li>
+    
+  
+
+
+
+
+              <li><a href="../all.xml">RSS Feed</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <!--<div class="span9 contentarea">-->
+           
+               <header class="pageheader">
+                    <h1>Homeworks</h1>
+               </header>
+           
+             <ol> 
+  <li><a href="hw1.pdf">Homework #1</a>. Due Jan 29.</li>
+	  <ul> 
+	    <li>Additional Reading: <a href="nltkintro.pdf">Short Introduction to NLTK</a> by S. Bird, E. Klein and E. Loper.</li> 
+	    <li>Additional Reading for Python newbies: <a href="http://docs.python.org/tut/tut.html">Python Tutorial</a> by Guido van Rossum. Read upto Chapter 10.</li> 
+	    <li>The data files are in the directory: <code>~anoop/CMPT-413-Spring-2013/hw1/</code> on fraser.sfu.ca.</li>
+	    <li>Check against testcases with: <code>python check-hw1.py</code></li>
+        <li><a href="python.tidbits.txt">Python tidbits</a>.</li>
+        <li>For the Chinese word segmentation task, some ideas can be found in the chapter on <a href="http://norvig.com/ngrams/">Natural Language Corpus Data</a> by Peter Norvig in Beautiful Data (Segaran and Hammerbacher, 2009).</li>
+	  </ul>
+  <li><a href="hw2.pdf">Homework #2</a>. Due Feb 19.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/CMPT-413-Spring-2013/hw2/</code></li>
+	    <li>Check against testcases with: <code>python check-hw2.py</code></li>
+	    <li>CMU Pronunciation dictionary: <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">cmudict</a></li> 
+        <li><a href="https://gist.github.com/anoopsarkar/4743314">Using the openfst and thrax toolkits installed on CSIL Linux machines</a>
+        <li>OpenFST fst toolkit: <code>~anoop/CMPT-413-Spring-2013/sw/linux/openfst-1.3.3</code>; <a href="http://www.openfst.org">OpenFST download and documentation</a> (configure with --enable-far=true for Thrax).
+        <li>Thrax rewrite rules toolkit: <code>~anoop/CMPT-413-Spring-2013/sw/linux/thrax-1.0.2</code>; <a href="http://www.cslu.ogi.edu/~sproatr/Courses/TextNorm/tutorial.html">Thrax download and installation instructions</a>.
+	  </ul>
+  <li><a href="hw3.pdf">Homework #3</a>. Due Mar 5.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/CMPT-413-Spring-2013/hw3/</code></li>
+	    <li>If you choose to do Question 12, read <a href="mt-wkbk.pdf">Kevin Knight's workbook</a> on statistical machine translation.</li>
+	    <li><a href="http://www.kanungo.com/software/software.html">umdhmm</a> is available on CSIL Linux machines in the directory: <code>~anoop/CMPT-413-Spring-2013/sw/linux</code></li>
+	  </ul>
+  <li><a href="hw4.pdf">Homework #4</a>. Due Mar 26.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/CMPT-413-Spring-2013/hw4/</code></li>
+	  </ul>
+  <li><a href="hw5.pdf">Homework #5</a>. Due Apr 9. Deadline extended to Apr 11.</li> 
+	  <ul> 
+	    <li>The data files are in the directory: <code>~anoop/CMPT-413-Spring-2013/hw5/</code></li>
+	  </ul>
+  </ol>
+
+<h3>Homework submissions and grading</h3>
+
+<h4>Files and Subversion</h4>
+        <ul>
+        <li>The directory <code>~anoop/CMPT-413-Spring-2013/hw1</code> is available on <code>fraser.sfu.ca</code>.
+        <li>Use Subversion (svn) for your homeworks.  <script src="https://gist.github.com/4486112.js"></script> </li>
+        <li>To continue working at a later date: <script src="https://gist.github.com/4486519.js"></script> </li>
+        <li>There are strict requirements on the filenames for your programs. The filenames to be used is provided in <code>readme.txt</code> file. These steps will enable us to consistently test all the submissions using the same method (see the information about automated testing below). </li>
+        </ul>
+
+<h4>Programming</h4>
+	    <ul>
+	    <li>We will be using the Python-based <a href="http://nltk.org/">NLTK: Natural Language Toolkit</a> for most of the homeworks in this course (version 2.0rc1 is installed and should be used for the homeworks). </li>
+        <li>Run <code>python</code> and then type in <code>import nltk</code>. If you get an error then something went wrong. Email csilop@cs.sfu.ca with the details.</li>
+        <li>It is expected that your program will run on the standard runtime environment installed on the Linux CSIL lab machines. If you are developing on a Linux or Windows machine at home, you have to ensure that the code will run on the CSIL machines before you submit the assignment. Please either visit the CSIL lab machines or you can use <code>ssh</code> to login to the CSIL Linux machines and also use <code>scp</code> to copy over and test your programs on the CSIL Linux machines before you submit them. Check the <a href="http://www.cs.sfu.ca/content/dam/sfu/computing/csil/csil_layout_burnaby.pdf">CSIL Layout map</a> for the machine names.</li> 
+	    <li> You can use ssh to connect to the CSIL Linux machines. </li>
+        <li><a href="http://www.cs.sfu.ca/about/school-facilities/csil/how-to-remote-access-to-csil.html">Remote access to CSIL</a> is allowed.</li>
+        <li><a href="http://www.cs.sfu.ca/about/school-facilities/csil/unix/how-to-use-csil-linux-terminal-server.html">Linux terminal server</a> is currently in beta.</li>
+        <li>CSIL computers accept SSH connections on port 24 (rather than the usual port 22). They can only be accessed from within the SFU network. If you are outside it, you need to go through a directly accessable computer, most likely fraser.sfu.ca. Here are some examples using the usual command line <code>ssh</code> and <code>scp</code> (from OpenSSH). Below $ is the command line shell on your home computer running Linux/MacosX/Cygwin. What follows is a recipe that will connect you remotely to a CSIL Linux machine: <script src="https://gist.github.com/4486532.js"></script> </li>
+    <li>If your local machine (e.g your laptop) has a different username from your SFU username (your username can be found by examining your SFU email address: username@sfu.ca), then prefix the SFU username to the ssh or scp command. <code>ssh (username)@fraser.sfu.ca</code> and <code>scp -r (username)@fraser.sfu.ca:~anoop/CMPT-413-Spring-2013/hw2</code>.
+<li>CSIL uses a seperate home directory from the rest of SFU, so you also have to copy files through fraser. However, it looks like it now has a separate home for each machine, so you probably want to just keep your files in your SFU home. <script src="https://gist.github.com/4486537.js"></script> </li>
+	    <li> On some CSIL Linux machines, in some rare cases, you might have to extend your CPU time limit for a process. If you are using tcsh then run the command "limit cputime 1800" to extend CPU time to 1800 secs or 30 mins. If you are using bash then use the command "ulimit -t 1800".</li>
+        </ul>
+
+<h4>Testing</h4>
+        <ul>
+	    <li>You must test your programs on the CSIL Linux machines before you submit. </li>
+        <li>You can check the output of your programs against the testcases by running <code>python check-hw1.py</code> (similarly for hw2, hw3, ...). Run without any arguments to get a detailed description of how it does automatic testing and how we use it for grading.</li>
+        <li>It is a good idea to test your programs each time you change your programs.</li>
+        </ul>
+
+<h4>Homework Submission</h4>
+        <ul>
+        <li>Your homework will be submitted electronically using the department-provided submission server. Connect to
+        the submission server by going to the URL: <a href="https://courses.cs.sfu.ca/">https://courses.cs.sfu.ca/</a>
+        (your grades for the homeworks will also be tracked on the same web page)</li>
+	    <li>All homeworks are due by 11:45 PM on the homework due date.</li>
+        </ul>
+
+<h4>Homework Grading</h4>
+        <ul>
+	    <li>You have 4 grace days for the entire semester. You can use up your grace days, one per homework, or all 4 for one homework (in general, any integer partition of 4, which is <i>[[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 3], [4]]</i> <a href="https://gist.github.com/4486552">source code</a>). If you use up all your grace days then the maximum grade <b>if you are late</b> will be 50 percent of the original score for that homework. Each additional day will reduce the maximum grade further by 10 percent. Weekend days count the same as weekdays for the late penalty.</li>
+        <li>If you want to do extra stuff make sure it is <i>correct</i> -- it is probably not a good idea to advertise to the TA that you got something wrong.</li>
+        <li>Only do extra stuff if you have finished the entire homework.</li>
+        <li>There is no <i>extra credit</i> for doing more, mainly because it is a pain to grade that way.</li> 
+        <li>However doing the extra optional question for your own understanding will likely help you with the concepts covered in the course and hence you may do better in the exams or future assignments.</li>
+        <li>Read the <b>Mark Appeals</b> policies in the <b>Policies</b> section of this web page.</li>
+	</ul>
+        <!-- </div> -->
+      </div><!--/row-fluid-->
+    </div><!--/.fluid-container-->
+    <div class="footer">
+        <div class="container-fluid copyright">
+         <p>All content is &copy; Anoop Sarkar. Web site built using <a href="https://github.com/mojombo/jekyll ">jekyll</a> and <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></p>
+        </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap-transition.js"></script>
+    <script src="../bootstrap/js/bootstrap-alert.js"></script>
+    <script src="../bootstrap/js/bootstrap-modal.js"></script>
+    <script src="../bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="../bootstrap/js/bootstrap-tab.js"></script>
+    <script src="../bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="../bootstrap/js/bootstrap-popover.js"></script>
+    <script src="../bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="../bootstrap/js/bootstrap-affix.js"></script>
+
+  </body>
+</html>

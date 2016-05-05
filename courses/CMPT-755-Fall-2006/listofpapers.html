@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Papers for CMPT-755</title>
+</head>
+<body>
+<h2>Papers for CMPT-755</h2>
+
+<p>Most papers can be downloaded from journal websites that are linked
+from the Library website. Others can be found on the web. Otherwise
+you can take a trek down to the Library. If you can't track down a
+paper, then contact me as I might have a hardcopy. You can also
+propose a topic in compiler design or related topics based on a group
+of papers along the lines of the topics below. </p>
+
+<p>You are expected to write a survey paper that explains the 
+ideas from the papers and also how they are connected to topics
+studied in class. A <a href="papergrading.html">exhaustive
+guide to writing the survey</a> has been provided.</p>
+
+<hr>
+
+<h3>Finite-state machine determinization</h3>
+<ul>
+  <li>Gertjan van Noord, <i><a href="papers/fsmnlp.ps.gz">The
+Treatment of Epsilon Moves in Subset Construction</a></i>,
+Computational Linguistics, 26(1), pp. 61-76, April 2000.</li>
+  <li>Ted Leslie, Efficient Approaches to Subset Construction,
+masters thesis, Computer Science, University of Waterloo, 1995.</li>
+  <li>J. Howard Johnson and Derick Wood, Instruction Computation in
+Subset Construction, in Automata Implementation, Darrell Raymond and
+Derick Wood and Sheng Yu (eds.), Lecture Notes in Computer Science
+1260, pp. 64-71, Springer Verlag, 1997.<br>
+  </li>
+</ul>
+
+<h3>Finite-state machine minimization</h3>
+<ul>
+  <li>The fastest (<i>O</i>(|Q|log|Q|), where |Q| is the number of
+states) minimization algorithm:</li>
+  <ul>
+    <li>John E. Hopcroft, An n log n algorithm for minimizing the
+states in a finite automaton, in The Theory of Machines and
+Computations, Z. Kohavi (ed.), pp. 189-196, Academic Press, 1971.</li>
+  </ul>
+  <ul>
+    <li>A. V. Aho, J. E. Hopcroft and J. D. Ullman, The Design and
+Analysis of Computer Algorithms, Addison-Wesley Publishing Company,
+1974.</li>
+    <li>David Gries, Describing an Algorithm by Hopcroft, Acta
+Informatica, vol. 2, pp. 97-109, 1973.</li>
+  </ul>
+  <ul>
+    <li>George Anton Kiraz and Edmund Grimley-Evans, Multi-tape
+Automata for Speech and Language Systems: A Prolog Implementation,
+Automata Implementation. Second Internation Workshop on Implementing
+Automata, WIA '97, Derick Wood and Sheng Yu (eds.), Springer Lecture
+Notes in Computer Science 1436, pp. 87-103, 1997.<br>
+    </li>
+  </ul>
+  <li>Brzozowski's algorithm
+minimizes an automaton by performing reversal and determinization
+twice. The subset construction (determinization) is <i>O</i>(2<sup>|Q|</sup>),
+where Q is a set of states:</li>
+  <ul>
+    <li>J. A. Brzozowski, Canonical regular expressions and minimal
+state graphs for definite events, in Mathematical Theory of Automata,
+Volume 12 of MRI Symposia Series, pp. 529-561, Polytechnic Press,
+Polytechnic Institute of Brooklyn, N.Y., 1962.</li>
+  </ul>
+  <ul>
+    <li>Ted Leslie, Efficient Approaches to Subset Construction,
+masters thesis, Computer Science, University of Waterloo, 1995.</li>
+  </ul>
+  <li>The Hopcroft-Ullman algorithm. Complexity is <i>O</i>(|Q|<sup>2</sup>),
+and it also requires <i>O</i>(|Q|<sup>2</sup>) memory:</li>
+  <ul>
+    <li>John E. Hopcroft  and Jeffrey D. Ullman, Introduction to
+Automata Theory, Languages, and Computation, Adison-Wesley Publishing
+Company, Reading, Massachusets, USA, 1979.<br>
+    </li>
+  </ul>
+  <li>The Aho-Sethi-Ullman algorithm has the same complexity as the
+Hopcroft-Ullman algorithm, i.e. <i>O</i>(|Q|<sup>2</sup>), but it
+needs only <i>O</i>(|Q|) memory:</li>
+  <ul>
+    <li>Alfred V. Aho and Ravi Sethi and Jeffrey D. Ullman, Compilers.
+Principles, Techniques and Tools, Addison Wesley, 1986.</li>
+  </ul>
+  <li>Bruce W. Watson, A Taxonomy of finite automata minimization
+algorithms, Eindhoven University of Technology, The Netherlands,
+Computing Science Note, 93/44, 1993</li>
+</ul>
+
+<h3>Derivatives of Regular Expressions</h3>
+<ul>
+  <li>Janusz A. Brzozowski. Derivatives of Regular Expressions. JACM 11(4), Oct 1964, pp. 481-494</li>
+  <li>G. Berry and R. Sethi.  From regular expressions to deterministic automata. <em>Theoretical Computer Science</em>, 48:117-126, 1986. (INRIA Technical Report, RR-0649, Mar 1987) [<a href="papers/RR-0649.ps.gz">ps</a>, <a href="papers/RR-0649.pdf.gz">pdf</a>]<br>
+  </li>
+</ul>
+
+<h3>Comparison between Thompson and Glushkov-McNaughton-Yamada automata construction</h3>
+<ul>
+  <li>S. C. Kleene, Representations of Events in Nerve Sets and Finite Automata, In: C. E. Shannon and J. McCarthy, editors, Automata Studies, pages 3-42, Princeton, NJ, 1956. Princeton University Press.</li>
+  <li>K. Thompson. Regular expression search algorithm. <em>Communications of the ACM</em>, 11(6):410-422, 1968.</li>
+  <li>V. Glushkov. The abstract theory of automata. <em>Russian Math. Surveys</em>, 16:1-53, 1961.</li>
+  <li>R. McNaughton and H. Yamada. Regular expressions and state graphs for automata. <em>IEEE Transactions on Electronic Computers</em>, 9:39-47, 1960.</li>
+  <li>A. Br&uuml;ggemann-Klein, Regular expressions into finite automata, <em>Theoret. Comput. Sci.</em> 120:197-213, 1993.</li>
+</ul>
+
+<h3>Antimirov automata</h3>
+<ul>
+<li>V. Antimirov, Partial derivatives of regular expressions and finite automaton constructions, <em>Theoret. Comput. Sci.</em> 155:291-319, 1996.</li>
+<li>J.-M. Champarnaud and D. Ziadi, New finite automaton constructions based on canonical derivatives, <em>Proc. of CIAA 2000</em>, LNCS 2088, Springer 2001, 94-104.</li>
+<li>J.-M. Champarnaud and D. Ziadi, Computing the equation automaton of a regular expression in O(s<sup>2</sup>) space and time, <em>Proc. of 12th Comb. Pattern Matching Conference</em>: CPM 2001, LNCS 2089, Springer 2001, 157-168.</li>
+</ul>
+
+<h3>Efficient &epsilon;-free NFA construction</h3>
+<ul>
+<li>C. Hagenah and A. Muscholl, Computing &epsilon;-free NFA from regular expresssions in O(n log<sup>2</sup>(n)) time, <em>Theor. Inform. Appl.</em> 34(4):257-277, 2000.</li>
+<li>J. Hromkovic and S. Seibert and T. Wilke, Translating regular expressions into small &epsilon;-free nondeterministic finite automata, <em>J. Comput. Sys. Sci.</em> 62(4):565-588, 2001.</li>
+<li>L. Ilie and S. Yu, Constructing NFAs by optimal use of positions in regular expressions, In <em>Proc. of 13th Comb. Pattern Matching Conference</em>: CPM 2002.</li>
+<li>C. Allauzen and M. Mohri, A Unified Construction of the Glushkov, Follow and Antimirov Automata, NYU Technical Report (TR 2006-880). [<a href="http://cs.nyu.edu/web/Research/TechReports/TR2006-880/TR2006-880.pdf">pdf</a>]</li>
+</ul>
+
+<h3>Incremental DFA Minimization</h3>
+<ul>
+  <li>Bruce W. Watson, An incremental DFA minimization algorithm,
+Finite State Methods in Natural Language Processing 2001, ESSLLI
+Workshop, August 20-24, Helsinki, Finland, 2001.</li>
+  <li>Bruce B. Watson, Jan Daciuk, An efficient incremental DFA
+minimization algorithm, Natural Language Engineering, Volume 9, Issue
+01, March 2003.<br>
+  </li>
+</ul>
+
+<h3>Compression of Automata</h3>
+<ul>
+  <li>Minimization of binary finite automata. C. L. Lucchesi, T. Kowaltowski, and J. Stolfi. Journal of the Brazilian Computer Society, vol. 1 no. 3, 5--11. April 1995. [<a href="http://www.ic.unicamp.br/~stolfi/EXPORT/papers/by-tag/luc-kow-sto-95-min.ps.gz">PS</a>]</li>
+  <li>Tomasz Kowaltowski, Cl&aacute;udio L. Lucchesi, and Jorge Stolfi,
+    <i><a href="http://grande.dcc.unicamp.br/%7Edicio/minimization.ps.gz">Minimization of Binary Automata</a></i>, First South American String Processing Workshop, Belo Horizonte, Brasil, 1993.</li>
+  <li>Franklin Mark Liang, <a href="http://www.tug.org/docs/liang/liang-thesis.pdf"><i>Word Hy-phen-a-tion by Computer</i></a>,
+Ph.D. thesis, Stanford, 1983.</li>
+  <li>Robert Endre Tarjan and Andrew Chi-Chih Yao, <i>Storing a Sparse
+Table</i>, Communications of the ACM, 22(11), pp. 606-611, November,
+1979.</li>
+  <li>Andr&eacute; Kempe, Reduction of Intermediate Alphabets in
+Finite-State Transducer Cascades, in: Proc. TALN 2000, Lausanne,
+Switzerland, pp. 207-215, 2000.<br>
+  </li>
+</ul>
+
+<hr>
+
+<h3>Transforming LR(k) Grammars to LR(1)</h3>
+<ul>
+  <li>Mickunas M.D. One the complete covering problem for LR(k) grammars. JACM 23: 17-30. 1976.</li>
+  <li>Mickunas, Lancaster and Schneider. <a href="papers/lrk_xform.pdf.gz">Transforming LR(k) Grammars to LR(1)</a><a href="papers/lrk_xform.pdf.gz">, SLR(1) and (1,1) Bounded Right-Context Grammars.</a> JACM 23(3), 1976.</li>
+  <li>Nijholt, A. One the covering of parsable grammars. J. Compu. Sys. Sci. 15: 99-110.</li>
+  <li>Gray, J.N, Harrison M.A. On the covering and reduction problems for context-free grammars. JACM 19: 675-698. 1972</li>
+</ul>
+
+<h3>Approximations of Context-Free Languages</h3>
+<ul>
+  <li>Fernando C. N. Pereira and Rebecca N. Wright, Finite-State Approximation of Phrase-Structure Grammars, in Finite-State Language Processing, Emmanuel Roche and Yves Schabes (eds.), pp. 149-173, MIT Press, Cambridge, 1997.</li>
+  <li>Mark-Jan Nederhof, Regular approximation of CFLs: a grammatical view, In H. Bunt and A. Nijholt, editors, Advances in Probabilistic and other Parsing Technologies, chapter 12, pages 221-241. Kluwer Academic Publishers, 2000.</li>
+  <li>Mark-Jan Nederhof, Context-free Parsing through regular approximation, Finite-state Methods in Natural Language Processing, pp. 13-24, Bilkent University, Ankara, Turkey, 1998.</li>
+  <li>Mark-Jan Nederhof, Practical Experiments with Regular Approximation of Context-Free Languages, Computational Linguistics, 26(1), April, 2000.</li>
+  <li>Mehryar Mohri, Mark-Jan Nederhof, Regular Approximation of Context-Free Grammars through Transformation. Robustness in Language and Speech Technology, J.-C. Junqua and G. van Noord (eds.), Kluwer Academic Publishers, pp. 153-163, 2001.</li>
+  <li>Edmund Grimley Evans, Approximating Context-Free Grammars with a Finite-State Calculus, 35th Annual Meeting of the Association for Computational Linguistics and 8th Conference of the European Chapter of the Association for Computational Linguistics, pp. 452-459, Madrid, 1997.</li>
+<!--
+  <li>C.M. Rood, Efficient Finite-State Approximation of Context Free Grammars, in Extended Finite State Models of Language, Proceedings of the ECAI'96 workshop, pp. 58-64, Budapest University of Economic Sciences, Hungary, 1996.</li>
+  <li>A.W. Black, Finite state machines from feature grammars, International Workshop on Parsing Technologies, pp. 277-285, Pittsburgh, USA, 1989.</li>
+  <li>Mark Johnson, Finite-state Approximation of Constraint-based Grammars using Left-corner Grammar Transforms, COLING-ACL '98. 36th Annual Meeting of the Association for Computational Linguistics and 17th International Conference on Computational Linguistics. Proceedings of the Conference, Montreal, 1998.</li>
+  <li>M.-J. Nederhof.  Approximating context-free by rational transduction for example-based MT.  In <i>Association for Computational Linguistics, 39th Annual Meeting and 10th Conference of the European Chapter, Workshop proceedings: Data-driven Machine Translation</i>, pages 25-32, Toulouse, France, July 2001.  [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/2001b.pdf">pdf</a>]</li>
+-->
+</ul>
+
+<h3>Containment Problems for deterministic pda's</h3>
+<ul>
+  <li>R.E. Stearns, A Regularity Test for Pushdown Machines, Information and Control, vol. 11, pp. 323-340, 1967.</li>
+  <li>J.S. Ullian, Partial Algorithm Problems for Context Free Languages, Information and Control, vol. 11, pp. 80-101, 1967.</li>
+  <li>L.G. Valiant, <a href="papers/p1-valiant.pdf.gz">Regularity and Related Problems for Deterministic Pushdown Automata</a>, Journal of the ACM, 22(1), pp. 1-10, 1975.</li>
+  <li>Ibarra, O., and  Rosier, L. (1981). On the decidability of equivalence for deterministic pushdown transducers, Information Processing Letters 13, 89-93.</li>
+</ul>
+
+<h3>Regular Closure of Deterministic Languages</h3>
+<ul>
+  <li>E. Bertsch and M.-J. Nederhof. <a href="http://odur.let.rug.nl/%7Emarkjan/publications/1999e.pdf">Regular closure of deterministic languages</a>. <i>SIAM Journal on Computing</i>, 29(1):81-102, 1999. [<a href="http://portal.acm.org/citation.cfm?id=330358.330362&amp;dl=GUIDE&amp;dl=ACM">acm</a>]</li>
+  <li>M.-J. Nederhof and E. Bertsch. An innovative finite state concept for recognition and parsing of context free languages.  In A. Kornai, editor, <i>Extended finite state models of language</i>, chapter 18, pages 226-243.  Cambridge University Press, 1999.  [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/1999f.pdf">pdf</a>]</li>
+</ul>
+
+<h3>Size/Lookahead Tradeoff for LR(k) and LL(k) Grammars</h3>
+<ul>
+  <li>H. Leung, D. Wotschke, On the size of parsers and LR(k)-grammars.  Theoretical Computer Science 242 (2000) 59-69.</li>
+  <li>E. Bertsch and M.-J. Nederhof.  Size/lookahead tradeoff for LL(<i>k</i>)-grammars. <i>Information Processing Letters</i>, 80:125-129, 2001. [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/2001e.pdf">pdf</a>]</li>
+  <li>Terence Parr and Russell Quong. <a href="http://www.antlr.org/article/1055550346383/antlr.pdf">ANTLR: A Predicated-LL(k) Parser Generator</a>. Journal of Software Practice and Experience, Vol. 25(7), 789-810 (July 1995).</li>
+  <li>Terence Parr and Russell Quong.  LL and LR Translators Need k. SIGPLAN Notices, Volume 31 #2 Februrary 1996.</li>
+  <li>Terence Parr. <a href="http://www.antlr.org/article/1055550517640/parr.phd.thesis.pdf">Obtaining Practical Variants of LL(k) and LR(k) for k&gt;1 by splitting the atomic k-Tuple</a>. PhD Dissertation, Purdue University, 1993.</li>
+</ul>
+
+<h3>Error Correction for CFGs and Regular Languages</h3>
+<ul>
+  <li>Robert A. Wagner, <a href="papers/p265-wagner.pdf.gz">Order-n correction for regular languages</a>. Communications of the ACM.  Volume 17,  Issue 5  (May 1974) pp. 265 - 268  </li>
+  <li>Aho, A. V., and Peterson, T. G. A minimum-distance error-correcting parser for context-free languages. SIAM J. Comput 1(4), 305-312. 1972.</li>
+  <li>Lyon, G. 1974.  <a href="papers/p3-lyon.pdf.gz">Syntax-directed least-errors analysis for context-free
+languages: a practical approach</a>. Commun. ACM 17, 1, 3-14.</li>
+  <li>Irons, E.T. <a href="papers/p669-irons.pdf.gz">An error-correcting parse
+algorithm</a>. CACM 6(11) Nov. 1963, pp. 669-673. </li>
+  <li>R. Teitelbaum. <a href="papers/p196-teitelbaum.pdf.gz">Context-free error analysis by evaluation of algebraic power series</a>. In 5th STOC, pp.  196-199, 1973.</li>
+  <li>Robert A. Wagner, Joel I. Seiferas. Correcting Counter-Automaton-Recognizable Languages. SIAM J. on Computing. Vol 7.  No 3, pp. 357-375. Aug 1978. </li>
+</ul>
+
+<h3>Substring Parsing</h3>
+<ul>
+  <li>M.-J. Nederhof and E. Bertsch. <a href="papers/p524-nederhof.pdf.gz">Linear-time suffix parsing for deterministic
+languages</a>. <i>Journal of the ACM</i>, 43(3):524-554, 1996.</li>
+  <li>Bates, J. and Lavie, A. 1994. Recognizing substring of LR(k) languages in linear time. ACM Trans. Prog. Lang. Syst. 16, 3 (May), pp.  1051-1077.</li>
+  <li>Cormack, G.V. 1989. An LR substring parser for non-correcting syntax error recovery. SIGPLAN Notices 24, 7. 161-169.</li>
+  <li>Lang, B. 1991. <a href="papers/C88-1075.pdf.gz">Parsing Incomplete Sentences</a>. In Proc. of the 12th Intl. Conf. on Computational Linguistics, vol 1 (Budapest, Hungary, Aug) pp. 365-371.</li>
+</ul>
+
+<h3>Non-recursive CFGs</h3>
+<ul>
+  <li>M.-J. Nederhof and G. Satta. The language intersection problem for non-recursive context-free grammars, <i>Information and Computation</i>, 192(2):172-184, 2004.  [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/2004d.ps">ps</a>]</li>
+  <li>M.-J. Nederhof and G. Satta.  Parsing non-recursive context-free grammars.  In <i>40th Annual Meeting of the Association for Computational Linguistics, Proceedings of the Conference</i>, pages 112-119, Philadelphia, Pennsylvania, USA, July 2002. [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/2002a.pdf">pdf</a>]</li>
+  <li>M.-J. Nederhof and G. Satta. IDL-expressions: A formalism for representing and parsing finite languages in natural language processing. <i>Journal of Artificial Intelligence Research</i>, 21:287-317, 2004. [<a href="http://www.jair.org/abstracts/nederhof04a.html">link</a>]</li>
+  <li>M.-J. Nederhof and G. Satta.  IDL-expressions: a compact representation for finite languages in generation systems.  In <i>Proceedings of FG Trento, The 7th Conference on Formal Grammar</i>, pages 125-136, Trento, Italy, 2002. [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/2002c.ps">ps</a>]</li>
+</ul>
+
+<h3>General Error Recovery in Parsers</h3>
+<ul>
+  <li>Burke, M. G., and Fisher, G. A. 1987. A practical method for LR and LL syntactic error diagnosis and recovery. ACM Trans. Program.
+Lang. Syst. 9, 2, 164-197.</li>
+  <li>Graham, S. L., and Rhodes, S. P. 1975. <a href="papers/p639-graham.pdf.gz">Practical syntactic error
+recovery</a>. Commun. ACM 18, 11, 639-649.</li>
+  <li>Feycock, S., and Lazarus, P. 1976. Syntax-directed correction of syntax errors. Softw. Pract. Exper. 6, 2, 207-219.</li>
+  <li>Hammond, K., and Rayward-Smith, V. J. 1984. A survey on syntactic error recovery and repair. Comput. Lang. (Elmsford, NY) 9, 1, 51-67.</li>
+  <li>Mauney, J., and Fischer, C. N. 1988.  Determining the extent of lookahead in syntactic error repair. ACM Trans. Program. Lang. Syst.  10, 3, 456-469.</li>
+  <li>Richter, H. 1985. Noncorrecting syntax error recovery. ACM Trans.  Prog. Lang. Syst. 7, 3 (July) 478-489.</li>
+</ul>
+
+<h3>Handling Syntax Errors in LR Parsers</h3>
+<ul>
+  <li>Mickunas, M. D., and Modry, J. A. 1978.  <a href="papers/p459-mickunas.pdf.gz">Automatic error recovery for LR parsers</a>. Commun. ACM 21, 6, 459-465.</li>
+  <li>Sippu, S., and Soisalon-Soininen, E. 1982. Practical error recovery in LR parsing. Conf. Record Ninth Annual ACM Symposium on
+Principles of Programming Languages, ACM, New York, NY, 177-184.</li>
+  <li>Sippu, S., and Soisalon-Soininen, E. 1983. A syntax-error handling technique and its experimental analysis. ACM Trans. Program. Lang. Syst. 5, 4, 656-679.</li>
+  <li>Sippu, S., and Soisalon-Soininen, E. 1980. A scheme for LR(k) parsing with error recovery, Part 1: LR(k) parsing, Part 2: Error Recovery, Part 3: Error Correction. Intern. J. Computer Math. 8: 27-42 (Part 1), 107-119 (Part 2), 189-206 (Part 3). </li>
+  <li>McKenzie, B., Yeatman, C., and De Vere, L. <a href="papers/p672-mckenzie.pdf.gz">Error repair in shift-reduce parsers</a>. <i>ACM Transactions on Programming Languages and Systems, </i>17(4):672-689, July 1995.</li>
+  <li>E. Bertsch and M.-J. Nederhof.  On failure of the pruning technique in ``Error Repair in Shift-Reduce Parsers''. <i>ACM Transactions on Programming Languages and Systems</i>, 21(1):1-10, January 1999. [<a href="http://odur.let.rug.nl/%7Emarkjan/publications/1999a.pdf">pdf</a>]</li>
+  <li>Graham, S. L., Haley, C. B., and Joy, W. N. 1979.  Practical LR error recovery. SIGPLAN Notices 14, 8, 168-175.</li>
+</ul>
+
+<h3>Handling Syntax Errors in LL Parsers</h3>
+<ul>
+  <li>Fischer, C.N. and Mauney, J. 1992. A simple, fast, and effective LL(1) error repair algorithm. Acta Inf. 29, 109-120.</li>
+  <li>Fischer, C. N., Milton, D. R., and Quiring, S. B. 1980. Efficient LL(1) error correction and recovery using only insertions. Acta Inf.
+13, 141-154.</li>
+  <li>Fischer, C. N., Tai, K. C., and Milton, D. R. 1979. Immediate error detection in strong LL(1) parsers. Inf. Process. Lett. 8, 261-266.</li>
+  <li>Hammond, K., and Rayward-Smith, V. J. 1984. A survey on syntactic error recovery and repair. Comput. Lang. (Elmsford, NY) 9, 1, 51-67.</li>
+  <li>Mauney, J., and Fischer, C. N. 1988.  Determining the extent of lookahead in syntactic error repair. ACM Trans. Program. Lang. Syst.  10, 3, 456-469.</li>
+</ul>
+
+<h3>Deductive Parsing and Semirings</h3>
+<ul>
+<li><a href="http://www.eecs.harvard.edu/%7Eshieber/Biblio/Papers/infer.pdf">Principles and implementation of deductive parsing</a>. Stuart M. Shieber, Yves Schabes, and Fernando C. N. Pereira. <i>Journal of Logic Programming</i>, 24(1-2):3-36, July-August 1995. Also available as <a href="http://lanl.arxiv.org/abs/cmp-lg/9404008">cmp-lg/9404008</a></li>
+<li><a href="http://ttic.uchicago.edu/~dmcallester/sas01.ps">On The Complexity Analysis of Static Analyses</a>. David McAllester. <span style="font-style: italic;">JACM</span>
+49(4): 512-537, 2002.</li>
+<li><a href="http://research.microsoft.com/%7Ejoshuago/finalring.ps">Semiring Parsing.</a> Joshua Goodman. <span style="font-style: italic;">Computational Linguistics</span>, Vol. 25, No. 4, pp. 573--605, December 1999.</li>
+</ul>
+
+<h3>Bounded-context parsing</h3>
+<ul>
+<li>R. W. Floyd. Bounded context syntactic analysis. CACM(7) 2, pp. 62-67. 1964.</li>
+<li>J. H. Williams. Bounded context parsable grammars. Inf. Control(28) 4, pp. 314-334. 1975.</li>
+<li>David A. Workman. SR(s,k) parsers: A class of shift-reduce bounded-context parsers. Journal of Computer and System Sciences. Vol 22, Issue 2, pp. 178-197.</li>
+</ul>
+
+<h3>Space Efficient LR Parsing</h3>
+<ul>
+  <li>F. DeRemer, Simple LR(k) grammars. CACM 14, 7 (1971), 453-460.</li>
+  <li>F. DeRemer and T. Pennello, Efficient Computation of LALR(1) Look-Ahead Sets. ACM TOPLAS Vol 4, No 4, (1982), 615-649</li>
+  <li>J. C.-H. Park, K. M. Choe and C.-H. Chang, A New Analysis of LALR Formalisms. ACM TOPLAS Vol 7, No 1 (Jan. 1985), 159-175</li>
+</ul>
+
+<h3>Unbounded Lookahead in LR Parsing</h3>
+<ul>
+  <li>LR-Regular (LRR): K. Culik and R. Cohen, LR-regular grammars -- an extension of LR(k) grammars. J. Comp. Sys. Sci. 7, (1973), 66-96.</li>
+  <li>Extended LR (XLR): T. P. Baker, Extending Lookahead for LR Parsers. J. Comp. Sys. Sci. 22 (1981), 243-259.</li>
+  <li>LAR(m): M. E. Bermudez and K. M. Schimpf, A Practical Arbitrary Look-ahead LR Parsing Technique. ACM SIGPLAN Notices (1986), 136-144.</li>
+</ul>
+
+<h3>Non-canonical extensions to LR Parsing</h3>
+<ul>
+  <li>LR(k,t) grammars: (included in) D. Knuth, On the translation of languages from left to right. Inf. Control 8 (1965), 607-639.</li>
+  <li>T. G. Syzmanski and J. H. Williams, Noncanonical extensions of bottom-up parsing techniques. SIAM J. Comp. 5, 2 (June 1976), 321-350.</li>
+  <li>K.-C. Tai, Noncanonical SLR(1) Grammars. ACM TOPLAS, Vol 1 No 2 (Oct 1979), 295-320.</li>
+  <li>Survey paper: M. D. Hutton, Noncanonical Extensions of LR Parsing Methods. unpublished manuscript (available online).</li>
+</ul>
+
+<h3>Generalized LR Parsing</h3>
+<ul>
+  <li>B. Lang. 1974. Deterministic techniques for efficient non-deterministic parsers. In Jacques Loeckx, editor, Automata, Languages and Programming, 2nd Colloquium, University of Saarbr&uuml;cken. Lecture Notes in Computer Science, Springer Verlag.</li>\
+  <li>M. Tomita. 1987. An efficient augmented context-free parsing algorithm. Computational Linguistics, 13:31-46.</li> 
+  <li>M. Tomita. 1985. Efficient Parsing for Natural Language, A Fast Algorithm for Practical Systems. Kluwer Academic Publishers.</li>
+  <li>Y. Schabes. 1991. Polynomial Time and Space Shift-Reduce Parsing of Arbitrary Context-free Grammars. Proc. of ACL-1991, 29th Annual Meeting of the Association of Computational Linguistics. </li>
+  <li>D. Grune and C.J.H. Jacob. Parsing Techniques: a practical guide. Ellis Horwood, Chichester, 1990. </li>
+</ul>
+
+<h3>Earley Parsing for Programming Language Grammars</h3>
+<ul>
+  <li>J. Earley, An Efficient Context-free Parsing Algorithm. CACM (13) 2, Feb 1970, 94-102.</li>
+  <li>P. MacLean and R. N. Horspool, A Faster Earley Parser. Proceedings of Intl. Conference on Compiler Construction (CC'96), Linkoping, Sweden, April 1996, LNCS vol. 1060, Springer-Verlag, pp. 281-293.</li>
+  <li>J. Aycock and R. N. Horspool. Practical Earley Parsing. Computer Journal, vol. 45, 6 (2002), pp. 620-630.</li>
+  <li>J. Aycock and R. N. Horspool. Directly-Executable Earley Parsing. Proceedings of CC 2001, Compiler Construction Conference, Genoa, Italy, April 2001, LNCS 2027, Springer-Verlag, pp. 229-243.</li>
+</ul>
+
+<h3>GHR optimizations for context-free parsing</h3>
+<ul>
+  <li>S .L. Graham, M. A. Harrison, and W. L. Ruzzo. 1980. An improved context-free recognizer. ACM Transactions on Programming Languages and Systems, 2(3):415-462, July. </li>
+  <li>H. Leiss. 1990. On Kilbury's modification of Earley's algorithm. ACM Transactions on Programming Languages and Systems, 12(4):610-640, October. </li>
+</ul>
+
+<hr>
+
+<h3>Code Generation using bottom-up tree parsing</h3>
+<ul>
+<li>C. W. Fraser, D. R. Hanson, and T. A. Proebsting. Engineering a simple, efficient code-generator generator. ACM Letters on Programming Languages and Systems, 1(3):213--226, September 1992.</li>
+<li>C. W. Fraser, R. R. Henry, and T. A. Proebsting. BURG---fast optimal instruction selection and tree parsing. ACM SIGPLAN Notices, 27(4):68--76, April 1992.</li>
+<li>T. A. Proebsting. BURS automata generation. ACM Transactions on Programming Languages and Systems, 17(3):461--486, May 1995.</li>
+</ul>
+
+<h3>Syntax-directed Translation</h3>
+<ul>
+  <li>P. M. Lewis and R. E. Stearns, Syntax-Directed Transduction. JACM vol 15, no 3, July 1968.</li>
+  <li>A. V. Aho and J. D. Ullman, Properties of Syntax Directed Translations. Journal of Comp. and Sys. Sci. 3, 319-334, 1969.</li>
+  <li>A. V. Aho and J. D. Ullman, Syntax Directed Translations and the Pushdown Assembler. Journal of Comp. and Sys. Sci. 3, 37-56, 1969.</li>
+  <li>A. V. Aho and J. D. Ullman, Translations on a Context Free Grammar. Inf. and Control 19, 439-475, 1971.</li>
+  <li>S. Vere, Translation Equations. CACM, vol 13 no 2, Feb 1970</li>
+</ul>
+
+<h3>Tree Transducers for Code Generation</h3>
+<ul>
+<li>Comon et al. <a href="http://www.grappa.univ-lille3.fr/tata/chap6.ps.gz">Chapter 6</a>, <a href="http://www.grappa.univ-lille3.fr/tata/">Tree Automata Techniques and Applications</a>. unpublished book.</li>
+<li>J.W. Thatcher, Tree automata: an informal survey, Currents in the Theory of Computing (Alfred V.Aho, ed.), chapter 4, pp. 143--172, Prentice-Hall, 1973.</li>
+<li>Gesecg and Steinby, Tree automata, book</li>
+</ul>
+
+<h3>Other ideas for topics</h3>
+<ul>
+  <li>Generalised recursive descent parsing and follow determinism, Adrian Johnstone and Elizabeth Scott, in: Kai Koskimies ed, Proc. 7th Intnl. Conf. Compiler Construction (CC'98), Lecture Notes in Computer Science, 1383, Springer-Verlag, Berlin 16-30 (1998)</li>
+  <li>Geller and Harrison, <i>On LR(k) Grammars and Languages</i>, TCS 4:245--276, 1977</li>
+  <li><a href="http://www.eti.pg.gda.pl/katedry/kiw/pracownicy/Jan.Daciuk/personal/fsm_algorithms/">Jan Daciuk's list of FSM algorithms</a></li>
+  <li>A. Bergeron and S. Hamel, Fast Implementations of Automata Computations, Pre-Proc. 5th Int. Conf. on Implementation and
+Application of Automata (CIAA), M. Daley, M. G. Eramian, and S. Yu (eds.), pp. 16-25, the University of Western Ontario, London, Canada, July 2000.</li>
+  <li>Horspool, R. N., and Whitney, M. 1990. Even faster LR parsing. Softw. Pract. Exper. 20, 6, 515-535.</li>
+  <li>D.E. Knuth. Semantics of context-free languages. Mathematical Systems Theory, 2(2):127-145, 1968.</li>
+  <li>Tai, K. C. 1980b. Predictors of context-free grammars. SIAM J. Comput. 9, 3, 653-664.</li>
+  <li>Brenda S. Baker: Generalized Syntax Directed Translation, Tree Transducers, and Linear Space. SIAM J. on Computing. Vol 7. No 3, Aug 1978. pp. 376-391.</li>
+  <li>Bruce W. Watson, <i>Taxonomies and Toolkits of Regular Language Algorithms</i>, Ph.D. thesis, Eindhoven University of Technology, the Netherlands, 1995.</li>
+  <li>E. Shamir, A Representation Theorem for Algebraic and Context-Free Power Series. Inf. and Control (11), 1967, p. 239-254.</li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+</body>
+</html>

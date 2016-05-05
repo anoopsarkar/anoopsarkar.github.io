@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CMPT 755 - Fall 2006: Principles of Compiler Design</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+<h1>CMPT-755 - Fall 2006 - Principles of Compiler Design</h1>
+<div class="sidebar">
+<p><img alt="Dragon Book (textbook)"
+ src="../CMPT-379-Fall-2004/dragonbook.jpg"
+ style="width: 114px; height: 169px;"></p>
+<h3><a href="#announcements">Announcements</a>
+  <a href="./index.rss"><img src="../../pictures/Feed.png" alt="RSS feed" height="14" /></a></h3>
+<h3><a href="../CMPT-379-Fall-2006/index.html#assignments">Assignments</a></h3>
+<h3><a href="../CMPT-379-Fall-2006/index.html#references">References</a></h3>
+<h3><a href="../CMPT-379-Fall-2006/index.html#readings">Weekly Readings</a></h3>
+<h3><a href="../CMPT-379-Fall-2006/index.html#readme">Course Policies</a> <small>(first time here? read this)</small></h3>
+</div>
+<div class="main">
+<ul>
+  <li><span style="font-weight: bold;">Instructor</span>: <a
+ href="http://www.cs.sfu.ca/%7Eanoop/">Dr. Anoop Sarkar</a></li>
+  <li><span style="font-weight: bold;">Location and Time</span>: <br>
+ AQ 5006, 9:30-10:20 <span style="font-style: italic;">Monday</span>; <br>
+ AQ 5007, 9:30-11:20 <span style="font-style: italic;">Wednesday</span></li>
+  <br>
+  <li><span style="font-weight: bold;">Mailing List</span>: cmpt-755
+_at_ sfu.ca (always prefix "cmpt-755: " to all messages sent to this
+list)<br>
+    <a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-755/">Mailing list
+archives</a></li>
+  <br>
+  <li><span style="font-weight: bold;">Office</span>: TASC 9427</li>
+  <li><span style="font-weight: bold;">Office hours</span>: Thursday, 2-3pm</li>
+</ul>
+<div class="blurb">
+  
+<p>Every computing device built today needs a compiler.  It enables us
+  to use a programming language by translating programs into machine
+  code.  Understanding how
+  compilers work is essential if you want to be a good programmer. The
+  study of compilers also includes interesting theoretical ideas in
+  translation and optimization with sparse resources.  This course
+  covers the fundamentals of compiler theory used to build compilers
+  for high level programming languages. We will cover each component
+  of a compiler including lexical analysis, parsing, code generation,
+  code optimization and type-checking. As part of the course, students
+  will implement a working compiler. The programming language used for
+  the homeworks will be either C, C++, Java (another programming
+  language may be used if it is found to be relevant and interesting).
+  </p>
+  
+</div>
+<p>
+More details: <a href="CMPT-755-Sarkar-06-3.txt">Course outline</a>
+</p>
+<div class="content">
+<h2><a name="announcements">Announcements</a></h2>
+<ul>
+  <li><span style="font-weight: bold;">Grading for the course:</span><br>
+  </li>
+  <ul>
+    <li><span style="font-weight: bold;">Final Exam:</span> 33%</li>
+    <li><span style="font-weight: bold;">3 survey papers:</span> 12% each (total of 36%).
+<ul>
+<li>Each write-up will be a concise summary of ideas in a related group of papers. </li>
+<li> <a href="listofpapers.html">A list of topics and relevant papers</a> has been provided (other topics can be proposed, but please check with me first). </li>
+<li>Read the page on <a href="papergrading.html">paper requirements and grading</a> for paper formatting instructions and information on how it will be graded.</a> </li>
+</ul>
+</li>
+    <li><span style="font-weight: bold;">Homeworks:</span> 31%<br>
+    </li>
+  </ul>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li><span style="font-weight: bold;">Tue, Sep 5:</span> First day of classes</li>
+    <li><span style="font-weight: bold;">Mon, Dec 4:</span> Last day of classes</li>
+    <li><span style="font-weight: bold;">Wed, Oct 4 (due in class; and on submission server by 11:45pm):</span> Paper #1 </li>
+    <li><span style="font-weight: bold;">Mon, Nov 6 (due in class; and on submission server by 11:45pm):</span> Paper #2 </li>
+    <li><span style="font-weight: bold;">Mon, Dec 11 (on submission server by 11:45pm):</span> Paper #3 
+      <ul> <li>Submit your survey paper or your paper plus the extended full compiler if you are writing about your extension instead of a survey</li></ul> </li>
+    <li><span style="font-weight: bold;">Final Exam: </span><span style="font-weight: bold;">Dec 6, 2006,</span> <span style="font-weight: bold;">Time: 3:30-6:30pm</span>, Location: RCB 8100 </li>
+    <li><span style="font-weight: bold;">Mon, Oct 9</span>: Thanksgiving Day</li>
+    <li><span style="font-weight: bold;">Sat, Nov 11</span>: Remembrance Day (no classes)<br>
+    </li>
+  </ul>
+  <li><span style="font-weight: bold;">Location of data files and
+software packages: </span><code>~anoop/cmpt379/</code> on the CSIL linux machines</li>
+  <li>Wed, May 31, 2006: Course web page created</li>
+  <li>Mon, Sep 11, 2006: Office hours and date for Paper #1.</li>
+  <li>Mon, Sep 11, 2006: <a href="index.rss">RSS feed</a> for course announcements created.</li>
+  <li><a href="../CMPT-379-Fall-2006/index.html#announcements">More announcements from CMPT 379 ...</a></li>
+</ul>
+<h2><a name="crosslisted">Cross-Listed with CMPT-379</a></h2>
+<p>This course is cross-listed with the Fall 2006 offering of <a href="../CMPT-379-Fall-2006">CMPT 379</a>. Please check the
+following links for the course materials for CMPT-755.
+</p>
+<p>
+<ul>
+<li><a href="../CMPT-379-Fall-2006/index.html#assignments">Assignments</a></li>
+<li><a href="../CMPT-379-Fall-2006/index.html#references">References</a></li>
+<li><a href="../CMPT-379-Fall-2006/index.html#readings">Syllabus and Readings</a></li>
+<li><a href="../CMPT-379-Fall-2006/index.html#readme">Course Policies</a></li>
+</ul>
+</p>
+</div>
+<hr>
+<address>anoop at cs.sfu.ca</address>
+<p></p>
+</div>
+</body>
+</html>

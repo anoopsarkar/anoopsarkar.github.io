@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Reading Group - Summer 2006: Tree Adjoining Grammars</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+<h1>Reading Group - Summer 2006: Tree Adjoining Grammars</h1>
+<div class="sidebar">
+<p><img alt="TAG picture"
+ src="tagbook.jpg"
+ style="width: 114px; height: 169px;"></p>
+<h3><a href="#announcements">Announcements</a></h3>
+<h3><a href="#readings">Weekly Readings</a></h3>
+
+</div>
+<div class="main">
+<ul>
+  <li><span style="font-weight: bold;">Location</span>: T-9406
+(TASC-1) <a href="http://www.cs.sfu.ca/AboutCMPT/CampusMap_ASB.pdf">Where is TASC-1?</a></li>
+  <li><span style="font-weight: bold;">Time</span>: 2-3:30pm <span
+ style="font-style: italic;">Wednesday</span></li>
+  <br>
+  <li><span style="font-weight: bold;">Mailing List</span>: tag-rg-06
+_at_ sfu.ca (always prefix "tag-rg-06: " to all messages sent to this
+list)</li>
+</ul>
+<div class="desc">
+<p>This is a reading group on Tree-Adjoining Grammars with a focus
+  on issues related to linguistics and computer-science. In the first
+  few meetings we will start with a more tutorial style where we will
+  get up to speed on the following topics:
+  <ol>
+    <li>Formal grammar aspects of TAG</li>
+    <li>Lexicalization in grammars and efficient parsing algorithms for TAG</li>
+    <li>Explanatory power of TAG for syntax of natural language like
+    raising, crossing dependencies and long-distance dependencies/movement.</li>
+    <li>Variants of TAG like synchronous TAG, tree-local multi-component TAG, etc.</li>
+  </ol>
+  </p><p>
+  After these initial meetings, we will focus on:
+<ol>
+<li> How to use computationally efficient methods for compositional
+semantics. How to do semantics using synchronous TAG grammars. (we plan
+  to compare and contrast with how semantics has been done in
+different ways in TAG and in other formalisms like HPSG)</li>
+
+<li> Interesting linguistics issues in compositional semantics and how
+locality in TAG can be used to address various linguistic phenomena.
+</li>
+
+<li> Formal aspects of synchronous TAG grammars and their close
+relation to tree automata/ tree transducers.
+</li>
+
+<li> Applications of synchronous TAG to NLP applications like machine
+translation.
+</li>
+</ol>
+</p>
+</div>
+<div class="content">
+<h2><a name="announcements">Announcements</a></h2>
+<ul>
+  <li>To subscribe to the mailing list: Send an email message to maillist@sfu.ca with a subject of either: 
+<p><pre>
+  subscribe tag-rg-06
+</pre></p>
+  or
+<p><pre>  
+unsubscribe tag-rg-06
+</pre></p>
+  Note that some of you may have already been added to the mailing list when we set it up. </li>
+<br>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li><span style="font-weight: bold;">May 10:</span>
+First meeting of the reading group</li>
+  </ul>
+</ul>
+
+<h2><a name="readings">Weekly Readings</a></h2>
+Papers listed as <i>Additional Readings</i> are additional references relevant to the topic at hand but you don't need to read them for the meeting.
+<ul>
+  <li><b>May 10</b>: Introduction to Tree-Adjoining Grammars (TAG)
+  <ul>
+  <li><a href="anoop_TAG_intro_slides.pdf">Formal Language, Natural Language and
+    Tree Adjoining Grammars</a> (tutorial slides). Anoop Sarkar.</li>
+  <li>Abeillé, Anne and Rambow, Owen, 2000. <a href="Ind-owen-tag.pdf">Tree Adjoining
+    Grammar: An Overview</a>. In Abeillé, Anne; and Rambow, Owen, editors,
+    Tree Adjoining Grammars: Formalisms, Linguistic Analyses and Processing.
+    CSLI Publications, Stanford, CA. </li>
+  </ul>
+  <li><b>May 17</b>: TAG Formalism
+  <ul>
+  <li><a href="chunghye_intro_tutorial.pdf">Introduction to TAG-based
+    Linguistic Theory</a> (tutorial slides). Chung-hye Han.</li>
+  <li>Joshi, A.K. and Schabes, Y.; <a href="joshi-schabes.pdf">Tree-Adjoining
+    Grammars</a>, in Handbook of Formal Languages, G. Rozenberg and A.
+    Salomaa (eds.), Vol. 3, Springer, Berlin, New York, 1997, 69 - 124. </li>
+  </ul>
+  <li><b>May 24</b>: TAG Formalism (cont'd) and TAG Variants
+  <ul>
+  <li>We will finish up any remaining aspects of the introductory material concerning the TAG formalism from the papers of the last two weeks.</li>
+  <li>We will informally cover variants of TAG such as TAG with feature structures, multi-component TAGs (MCTAG) and some linguistic analysis that depends on MCTAGs.</li>
+  <li><i>Additional reading:</i> Chapters 2 and 4 from <i>Characterizing Mildly Context-Sensitive Grammar Formalisms</i>. David J. Weir. Phd Dissertation. Department of Computer and Information Science. University of Pennsylvania. 1988.</li>
+</ul>
+  <li><b>May 31</b>: Linguistic Relevance of TAG
+  <ul>
+  <li><a href="joshi85.pdf">Tree-adjoining grammars: how much context-sensitivity is required to provide reasonable structural descriptions?</a>. Aravind Joshi. In <i>Natural Language Parsing</i>, Eds. D. Dowty, L. Karttunen and A. Zwicky. Cambridge University Press, 1985.</li>
+  <li><a href="KrochJoshi85.pdf">The Linguistic Relevance of TAG</a>. Anthony S. Kroch and Aravind K. Joshi. University of Pennsylvania Technical Report, MS-CIS-85-16. 1985</li>
+  </ul>
+  <li><b>Jun 7</b>: Synchronous TAG (intro)
+  <ul>
+  <li><a href="http://www.eecs.harvard.edu/~shieber/Biblio/Papers/synch-tags.pdf">Synchronous Tree-Adjoining Grammars</a>. S. Shieber and Y. Schabes. In <i>Proceedings of 13th International Conference on Computational Linguistics</i>: COLING-1990, pages 253-258, Helsinki, Finland, 1990.</li>
+  </ul>
+  <li><b>Jun 14</b>: Synchronous TAG
+  <ul>
+  <li>Sections 1-4 of <a href="http://acl.ldc.upenn.edu/P/P92/P92-1022.pdf">An Alternative Conception of Tree-adjoining Derivation</a>. Yves Schabes and Stuart M. Shieber. <i>Computational Linguistics</i>, Volume 20, Number 1, March 1994. </li>
+  <li><a href="http://www.eecs.harvard.edu/~shieber/Biblio/Papers/synch-deriv.pdf">Restricting the weak-generative capacity of synchronous tree-adjoining grammars</a>. Stuart M. Shieber. Computational Intelligence, 10(4):371-385, November 1994. Also available as cmp-lg/9404003.</li>
+  <li><a href="http://www.eecs.harvard.edu/~shieber/Biblio/Papers/shieber90generation.pdf">Generation and synchronous tree-adjoining grammars</a>. Stuart M. Shieber and Yves Schabes. In Proceedings of the Fifth International Workshop on Natural Language Generation, pages 9-14, 1990.</li>
+  <li><i>Additional Reading</i>: <a href="http://www.eecs.harvard.edu/~shieber/Biblio/Papers/shieber-04-stsg-distrib.pdf">Synchronous grammars as tree transducers</a>. Stuart M. Shieber. In Proceedings of the Seventh International Workshop on Tree Adjoining Grammar and Related Formalisms (TAG+ 7), Vancouver, Canada, May 20-22 2004.</li>
+  <li><i>Additional Reading</i>: <a href="http://www.eecs.harvard.edu/~shieber/Biblio/Papers/stag-bimorphism.pdf">Unifying synchronous tree-adjoining grammars and tree transducers via bimorphisms</a>. Stuart M. Shieber. In Proceedings of the 11th Conference of the European Chapter of the Association for Computational Linguistics (EACL-06), Trento, Italy, 3-7 April 2006.</li>
+  <li><i>Additional reading</i>: <a href="ftp://ftp.deas.harvard.edu/techreports/tr-20-05.pdf">Induction of probabilistic synchronous tree-insertion grammars</a>. Rebecca Nesson, Alexander Rush, and Stuart M. Shieber. Technical Report TR-20-05, Division of Engineering and Applied Sciences, Harvard University, Cambridge, MA, 2005.</li>
+  </ul>
+  <li><b>Jun 21</b>: Synchronous TAG
+  <ul>
+    <li><a href="http://www.sfb441.uni-tuebingen.de/~lk/papers/kallmrom-tag+7.pdf">LTAG Semantics with Semantic Unification</a>. Laura Kallmeyer and Maribel Romero. Proceedings of TAG+7. Vancouver, May 2004, 155-162.
+    <li><a href="http://www.sfu.ca/~chunghye/papers/tag8-rc-paper2.pdf">Pied-Piping in Relative Clauses: Syntax and Compositional Semantics based on Synchronous Tree Adjoining Grammar</a>. Chung-hye Han. Proceedings of the 8th International Workshop on Tree Adjoining Grammars and Related Formalisms (TAG+8). COLING-ACL 2006 workshop, Sydney, Australia.</li>
+    <li><a href="http://cs.haifa.ac.il/~shuly/fg06/submissions/submission_17.pdf">Simpler TAG Semantics through Synchronization</a>. Rebecca Nesson and Stuart M. Shieber. In FG-2006: The 11th conference on Formal Grammar. Malaga, Spain, July 29-30, 2006. <i>Warning</i>: submission version only, not the final version, please do not distribute further.</li>
+  </ul>
+  <li><b>Jun 26</b> (1pm, usual place): Corpora for NL semantics
+  <ul>
+  <li><a href="http://people.csail.mit.edu/lsz/papers/uai05.pdf">Learning to Map Sentences to Logical Form: Structured Classification with Probabilistic Categorial Grammars</a>. Luke S. Zettlemoyer and Michael Collins. In Proceedings of the Twenty First Conference on Uncertainty in Artificial Intelligence (UAI-05), 2005.</li>
+  <li><a href="http://www.cs.utexas.edu/users/ml/papers/parsing-conll-05.pdf">A Statistical Semantic Parser that Integrates Syntax and Semantics</a>. Ge, R. and Mooney, R.J. Proceedings of the Ninth Conference on Computational Natural Language Learning, Ann Arbor, MI, pp. 9--16, June 2005.</li>
+  <li><a href="http://www.cs.utexas.edu/users/ml/papers/cocktail-ecml-01.pdf">Using Multiple Clause Constructors in Inductive Logic Programming for Semantic Parsing</a>. Lappoon R. Tang and Raymond J. Mooney. Proceedings of the 12th European Conference on Machine Learning (ECML-2001), pp. 466-477, Freiburg, Germany, September 2001.</li>
+  <li><a href="http://www.cs.rochester.edu/~gildea/palmer-propbank-cl.pdf">The Proposition Bank: An Annotated Corpus of Semantic Roles</a>. Martha Palmer, Daniel Gildea, and Paul Kingsbury. Computational Linguistics, 31(1):71-106, 2005.</li>
+  </ul>
+</ul>
+<hr>
+<address>tag-rg-06 _at_ sfu.ca</address>
+<p></p>
+</div>
+</body>
+</html>

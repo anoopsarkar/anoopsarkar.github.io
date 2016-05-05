@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CMPT 825: Natural Language Processing. Burnaby Campus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!--    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
+    <link href="css/my.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron visible-md visible-lg visible-sm" style="overflow: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="page-header">
+                    <h2>Natural Language Processing <small>Spring 2014</small></h2>
+                    <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-hand-right"></span><a href="https://courses.cs.sfu.ca/2014sp-cmpt-825-g1/"> courses.cs</a> / <a href="https://courses.cs.sfu.ca/2014sp-cmpt-413-x1/discussion/"> discussion board</a>
+                    </button>
+                    <small>
+                    <ul>
+                    <li>CMPT 825: SFU Burnaby Campus. <small>(<a href="https://portal.cs.sfu.ca/portal/outlines/1141-CMPT-825-G100/">course outline</a>)</small></li>
+                    <li>Instructor: <a href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+                    </ul>
+                    </small>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5">
+                    <img src="images/cmpt413wordle.png" alt="" class="thumbnail">
+                </div>
+            </div> <!-- row -->
+            </ul>
+        </div>
+    </div> <!-- jumbotron -->
+
+    <div class="row visible-xs">
+      <div class="col-md-4">
+      <div class="container">
+      <div class="page-header">
+      <h1> NLP <small>Fall 2014</small></h1>
+      <ul>
+      <li>CMPT 825: SFU Burnaby Campus. <small>(<a href="https://portal.cs.sfu.ca/portal/outlines/1141-CMPT-825-D100/">course outline</a>)</small></li>
+      <li>Instructor: <a href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+      <li>Grades, etc.: <a href="https://courses.cs.sfu.ca/2014sp-cmpt-825-g1/"> courses.cs</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+    </div> <!-- row -->
+
+    <div class="container">
+      <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#about" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> About</a></li>
+        <li><a href="#notes" data-toggle="tab"><span class="glyphicon glyphicon-list"></span> Notes</a></li>
+        <li><a href="#homeworks" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Homeworks</a></li>
+        <li><a href="#project" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Final Project</a></li>
+        <li><a href="#policies" data-toggle="tab"><span class="glyphicon glyphicon-warning-sign"></span> Policies</a></li>
+        <li><a href="#textbook" data-toggle="tab"><span class="glyphicon glyphicon-book"></span> Textbook</a></li>
+        <li class="dropdown">
+          <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-calendar"></span> Dates <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">Calendar</a></li>
+            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">Agenda</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="about">
+            <div class="container">
+                <div class="row">
+
+                  <div class="col-md-4">
+                  <h3>Dates</h3>
+                  <p>From Jan 6, 2014 to Apr 9, 2014</p>
+                    <ul>
+                      <li>Tue 1:30PM - 2:20PM in <a href="http://www.sfu.ca/fs/Campus-Facility-Profiles/Building_Information/Saywell_Hall.html">SWH 10041</a></li>
+                      <li>Thu 12:30PM - 2:20PM in <a href="http://www.sfu.ca/fs/Campus-Facility-Profiles/Building_Information/Academic_Quadrangle.html">AQ 3149</a></li>
+                    </ul>
+                  <p>Final Project due: Apr 22, 2014 9:00AM</p>
+                  </div>
+
+                  <div class="col-md-4">
+                  <h3>Office Hours</h3>
+                  <p>
+                    <ul>
+                    <li>Location: TASC1 9427</li>
+                    <li>Office hours: Wed 10:30AM - 11:30AM</li>
+                    </ul>
+                  </p> 
+                  </div>
+<!--
+                  <div class="col-md-4">
+                  <h3>Teaching Assistant</h3>
+                  <p>
+                    <ul>
+                    <li><a href="http://www.cs.sfu.ca/~aca69/personal/">Ann Clifton</a></li>
+                    <li>Office hours: TBA</li>
+                    <li>Location: CSIL Linux Lab (ASB 9840)</li>
+                    </ul>
+                  </p> 
+                  </div>
+-->
+
+                  <div class="col-md-4">
+                  <h3>Grading</h3>
+                    <ul>
+                        <li>5 Homeworks: 50% of the grade</li>
+                        <li>1 Midterm: 20% of the grade</li>
+                        <li>1 Final: 30% of the grade</li>
+                    </ul>
+                  </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+
+            <div class="container">
+            <div class="alert alert-info">
+              <h4>About the Course</h4>
+                <p>Imagine a world where you can pick up a phone and talk in English, while at the other end of the line your words are spoken in Chinese. Imagine a computer animated representation of yourself speaking fluently what you have written in an email. Imagine automatically uncovering protein/drug interactions in terabytes of medical abstracts. Imagine feeding a computer an ancient script that no living person can read, then listening as the computer reads aloud in this dead language. Natural Language Processing is the automatic analysis of human languages such as English, Korean, and thousands of others analyzed by computer algorithms. Unlike artificially created programming languages where the structure and meaning of programs is easy to encode, human languages provide an interesting challenge, both in terms of its analysis and the learning of language from observations.</p>
+            </div>
+            </div> <!-- container -->
+
+        </div>
+
+        <div class="tab-pane fade" id="notes">
+        <div class="container">
+        <p>
+        <h3>Lecture Notes</h3>
+            <div class="container">
+                <p>CMPT 825 is a cross-listed course. See the CMPT 413 course page for the lecture notes.</p>
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-hand-right"></span><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2014/index.html"> CMPT 413</a>
+                </button>
+            </div>
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="homeworks">
+        <div class="container">
+        <p>
+          <h3>Homeworks</h3>
+            <div class="container">
+                <p>CMPT 825 is a cross-listed course. See the CMPT 413 course page for the homeworks and other details about homework submissions.</p>
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-hand-right"></span><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2014/index.html"> CMPT 413</a>
+                </button>
+            </div>
+            <h4>Files and Subversion</h4>
+                    <ul>
+                    <li>The directory <code>~anoop/cmpt413/hw1</code> and the directories for later homeworks are available on <code>fraser.sfu.ca</code>.
+                    <li>Use Subversion (svn) for your homeworks. <script src="https://gist.github.com/anoopsarkar/8292114.js"></script>
+                    <li>To continue working at a later date: <script src="https://gist.github.com/anoopsarkar/8292131.js"></script>
+                    <li>There are strict requirements on the filenames for your programs. The filenames to be used is provided in <code>readme.txt</code> file. These steps will enable us to consistently test all the submissions using the same method (see the information about automated testing below). </li>
+                    </ul>
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="project">
+        <div class="container">
+        <p>
+        <h3>Final Project</h3>
+            <div class="container">
+            <h4>Grading of the final project</h4>
+            <p>Each final project will receive a review that will include a numerical score and some free-form comments. The final projects will be graded based on the criteria provided 
+            in the review form. Please examine the criteria carefully when working on your project and writing the project description.
+            <ul>
+                <li><a href="review-form.txt">Review Form</a>.</li>
+                <li><a href="review-instructions.txt">Detailed description of the review form</a>.</li>
+            </ul>
+            </p>
+            <h4>Example project</h4>
+            <p>Here is an <a href="http://www.cs.sfu.ca/~anoop/papers/pdf/sighan08.pdf">example final project</a>. The example is a previously published workshop paper, but you can use it as an example of what a final project paper should look like.</p>
+            <h4>Style Files</h4>
+                <p>Your final project submission will be a PDF file which may consist of up to eight (8) pages of content, including figures and tables, plus two extra pages for references only. Final project submissions must be formatted using the following style files. Using LaTeX is strongly recommended but not required.</p>
+                <table style="width:50pt; padding:1pt 1pt 1pt 1pt; border:black; border: 1px dotted">
+                <tbody><tr style="background-color: #CCCCCC;">
+                <th style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px">LaTeX</th>
+                <th style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px">MS Word</th>
+                </tr>
+                <tr>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"><a href="http://www.cs.jhu.edu/ACL2014/acl2014.tex">acl2014.tex</a></td>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"><a href="http://www.cs.jhu.edu/ACL2014/acl2014.dot">acl2014.dot</a></td>
+                </tr>
+                <tr>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"><a href="http://www.cs.jhu.edu/ACL2014/acl2014.sty">acl2014.sty</a></td>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"><a href="http://www.cs.jhu.edu/ACL2014/acl2014.pdf">acl2014.pdf</a></td>
+                </tr>
+                <tr>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"><a href="http://www.cs.jhu.edu/ACL2014/acl2014.pdf">acl2014.pdf</a></td>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"></td>
+                </tr>
+                <tr>
+                <td style="padding-right:15px; padding-top:5px; padding-bottom:5px; padding-left:5px"><a href="http://www.cs.jhu.edu/ACL2014/acl.bst">acl.bst</a></td>
+                <td></td>
+                </tr>
+                </tbody></table>
+            </div>
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="policies">
+        <div class="container">
+        <p>
+        <h3>Course Policies</h3>
+            <div class="container">
+                <p>CMPT 825 is a cross-listed course. See the CMPT 413 course page for the course related policies.</p>
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-hand-right"></span><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2014/index.html"> CMPT 413</a>
+                </button>
+            </div>
+	    <h4 id="email">Email policy</h4>
+	    <ul>
+	      <li>We will be using the discussion board on courses.cs.sfu.ca for all discussions. For homeworks, exams, or other clarification emails do not email me (the instructor) or the TA directly.</li>
+          <li>If you email the instructor or TA directly then use your SFU email address to send the email (do not use any other provider), and use <code>cmpt825:</code> as the prefix in your subject line.</li>
+	    </ul>
+
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="textbook">
+        <div class="container">
+        <p>
+          <h3>Textbook and References</h3>
+            <div class="container">
+                <p>CMPT 825 is a cross-listed course. See the CMPT 413 course page for the textbook and reference books.</p>
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-hand-right"></span><a href="http://www.cs.sfu.ca/~anoop/teaching/CMPT-413-Spring-2014/index.html"> CMPT 413</a>
+                </button>
+            </div>
+        </p>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="dropdown1">
+            <p><iframe src="http://www.google.com/calendar/embed?src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p> 
+        </div>
+
+        <div class="tab-pane fade" id="dropdown2">
+            <p><iframe src="https://www.google.com/calendar/b/0/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FVancouver" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">All content is &copy; <a href="http://www.cs.sfu.ca/~anoop/index.html">Anoop Sarkar</a>. The website was built using <a href="http://getbootstrap.com">Twitter Bootstrap</a>.</p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

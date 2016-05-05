@@ -1,0 +1,12 @@
+
+Quiz 3 Topics
+-------------
+
+1. Canonical LR, LALR
+2. Elimination of conflicts in LR parsing
+3. Parsing algorithms for arbitrary CFGs (including ambiguous CFGs)
+4. Precedence and Associativity
+5. Syntax-directed translation & Attribute Grammars
+6. Stack frames and parameter passing
+
+

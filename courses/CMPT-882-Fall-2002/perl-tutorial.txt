@@ -1,0 +1,286 @@
+
+Crash course in Perl scripting
+Anoop Sarkar <anoop at cs.sfu.ca>
+
+1. hello, world
+print "hello, world\n";
+print "hello, world", "\n";
+printf ("%s\n", "hello, world");
+
+2. statements
+$x = 2;  # comments after hash symbol until end of line
+"a" eq "a";
+"a" ne "b";
+
+3. supported types (internally typed, untyped for the user)
+scalar: 
+   $x = 2; $y = 3.1415;
+   $mesg = "hello, world\n";
+   $mesg = 'hello, world' . "\n";
+arrays: 
+   @x = (1,2,3); 
+   $y = shift(@x); 
+   push(@x, 4); 
+   unshift(@x, 1);
+   $len = $#x + 1;   # length is last index of array plus one
+hash:   
+   %x = ( "a" => 1, "b" => 2 );  same as: %x = ("a", 1, "b", 2);
+scalar vs. non-scalar context:  
+   $len = @x; 
+   @copy = @x;
+
+4. blocks
+if ("a" eq "a") { print "yes\n"; }
+
+5. control flow:
+if: 
+  print "yes\n" if ("a" eq "a");
+if-block: 
+  if ("a" eq "a") { print "yes\n"; }
+  elsif ("b" eq "b") { print "maybe\n"; }
+  else { print "no\n"; }
+foreach:
+  foreach $key (keys %x) { print "$key\n"; }
+while:
+  $i = 0; while (1) { print "yes\n"; last if ($i++ > 10); }
+for:
+  for ($i = 0; $i < 10; $i++) { print "yes\n"; }
+ternary op:
+  ("a" eq "a") ? print "yes\n" : print "no\n";
+
+7. functions (lexical scoping is user-defined, @_ is a default variable):
+sub foo {
+    my ($a, $b) = @_;
+    if ($a == 0) {
+       return $b+1;
+    } elsif (($a > 0) and ($b == 0)) {
+       foo($a-1, 1);
+    } else {
+       foo($a-1, foo($a, $b-1));
+    }
+}
+sub ack {
+    my ($a, $b) = @_;
+    return ($a > 0) ? ack($a-1, (($b > 0) ? ack($a, $b-1) : 1)) : $b+1;
+}
+print foo(3,2), "\n";
+print ack(3,2), "\n";
+
+sub iterfn {
+  my ($x) = @_;
+  print "$n $x\n";
+}
+sub iter {
+  local ($n) = @_;
+  for (my $i = 0; $i <= $n; $i++) {
+    iterfn($i);
+  }
+}
+iter(10);
+
+for comparison of speed with C:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int foo (int a, int b) {
+  return (a > 0) ? foo(a-1, (b > 0) ? foo(a, b-1) : 1) : b+1;
+}
+
+int main (int argc, char **argv) {
+  if (argc < 3) { exit(0); }
+  printf("%d\n", foo(atoi(argv[1]), atoi(argv[2])));
+} 
+
+8. file operator ($_ is again a default variable)
+
+$file = "tmp";
+open(F, $file) or die "could not open $file\n";
+while (<F>) {
+  chomp;
+  print "$_\n";
+}
+close(F);
+
+use English;
+sub printfile {
+  my ($file) = @ARG;  # instead of @_
+  open(F, $file) or die "could not open $file\n";
+  while (<F>) { chomp; print "$ARG\n"; }
+  close(F);
+}
+
+---start here next time---
+9. command line args (@ARGV can also be default variable for functions like shift):
+
+$file = shift or die "usage: $0 <file>\n";
+open(F, $file) or die "could not open $file\n";
+while (<F>) {
+  chomp;
+  print "$_\n";
+}
+close(F);
+
+to save typing, with even more hidden variables:
+
+while (<>) {
+  chomp;
+  print "$_\n";
+}
+
+10. regexps operators:
+
+while (<>) {
+  chomp;
+  if (/^\d+\. /) { print; print "\n"; }
+}
+while $line (<>) {
+  chomp;
+  if ($line =~ /^\d+\. /) { print "$line\n"; }
+}
+while (<>) {
+  chomp;
+  if (/^\d+\. /) { 
+     s/^\d+\. //; 
+     s/[\(\):]//g; 
+     print; 
+     print "\n"; }
+}
+$_ = "(S NP (VP V NP))";
+tr/[A-Z]/[a-z]/;
+print;
+$lcount = (tr/(//);
+$rcount = (tr/)//);
+print "\nleft=$lcount right=$rcount\n";
+
+
+11. advanced file operations:
+
+open(F, "ls |") or die "could not find ls\n";
+while (<F>) {
+  if ($_ !~ /^\./) { print; }
+}
+close(F);
+
+12. references
+
+@x = (1,2,3);
+$x = \@x;
+foreach $i (@{$x}) { print "$i\n"; }
+
+sub visit {
+  my ($tree) = @_;
+  if (ref $tree) {
+     my @nodes = @{$tree};
+     print "(",  shift(@nodes), " ";
+     foreach $kid (@nodes) { visit($kid); }
+     print ")";
+  } else {
+     print " $tree ";
+  }
+}
+$x = ['S','NP',['VP','V','NP']];
+visit($x); print "\n";
+
+13. variables that control perl behaviour
+
+$/ = "\n\n";
+while (<>) {
+  chomp;
+  s/\n/ /g;
+  print "$_\n";
+}
+
+14. advanced list functions
+sorting:
+   @names = ('Tellier','Eure','Rivet','Constance','Yvetot','Phillipe','rivet','eure');
+   @numbers = (1 .. 10);
+   @sortedlist = sort {$b cmp $a} @names;
+   @sortedlist = sort {uc($b) cmp uc($a)} @names;
+   @sortedlist = sort {$a <=> $b} @numbers;  # numerically ascending
+   @sortedlist = sort {$b <=> $a} @numbers;  # numerically descending
+   print join(" ", @sortedlist), "\n";
+   @eldest = sort { $age{$b} <=> $age{$a} } keys %age; # descending on the numeric key
+finding elements:
+   @x = ('said','the','joker','to','the','thief');
+   @found = grep { /^t/ } @x;
+   print join(" ", @found), "\n";
+   @x = (1,2,3,4,5,6,7,8,9,10);
+   @found = grep { $_ > 5 } @x;
+   foreach (@found) { print; print "\n"; }
+transforming elements:
+   @x = ('said','the','joker','to','the','thief');
+   @found = map(uc, @x);
+   foreach (@found) { print; print "\n"; }
+converting lists to hash:
+   @x = ('said','the','joker','to','the','thief');
+   %found = map { $_ => length($_) } @x;
+   foreach (keys %found) { print "$_ => $found{$_}\n"; }
+converting s-expressions to trees:
+   $x = "(S NP (VP V NP))";
+   $x =~ s/\(/\[/g;
+   $x =~ s/\)/\]/g;
+   $x =~ s/ /,/g;
+   $x =~ s/([^,\[\]]+)/'$1'/g;
+   print "$x\n";
+   $tree = eval $x;
+   visit($tree); print "\n";
+
+15. a full-fledged Perl script
+
+save the following to a file called invert.pl and then run it as
+perl invert.pl /usr/dict/words
+perl invert.pl -p /usr/dict/words
+
+--------------------
+# File: invert.pl
+
+# Scans a file of words (one word per line) and prints out those words
+# that are palindromes (with the -p option), e.g. malayalam; or prints
+# out words that when viewed upside-down are also words (with the -u
+# option), e.g. NOON (upside-down NOON) or HO (upside-down OH). The -u
+# option is the default.
+
+$arg1 = shift or die "$0 [-p|-u] <words>\n";
+$arg2 = shift;
+if (defined $arg2) { 
+    $dict = $arg2; 
+    $palindrome = ($arg1 eq '-p') ? 1 : 0; 
+} else { 
+    $dict = $arg1; 
+    $palindrome = 0;
+}
+
+%invert = ('H' => 1, 'I' => 1, 'N' => 1, 'O' => 1, 'S' => 1, 'X' => 1, 'Z' => 1);
+
+if ($dict =~ /\.bz2$/) { $filename = "bzip2 -dc $dict |"; }
+elsif ($dict =~ /\.gz$/) { $filename = "gzip -dc $dict |"; }
+else { $filename = $dict; }
+open(D, $filename) or die "cannot open $dict";
+while (<D>)
+{
+    chomp;
+    next if (/^.$/); # skip single letter words
+    $dict{uc($_)} = 1; # convert word to uppercase and store in dict hash
+}
+close(D);
+
+foreach (keys %dict)
+{
+    $rev = join('', reverse (split ('', $_)));
+    if ($palindrome) {
+	print "$_\t\t$rev\n" if ($_ eq $rev);
+    } else {
+	$upsidedown = 0;
+	foreach (split ('', $_)) {
+	    if (!defined $invert{$_}) {
+		$upsidedown = 0;
+		last;
+	    } else {
+		$upsidedown = 1;
+	    }
+	}
+	print "$_\t\t$rev\n" if (($upsidedown) and defined($dict{$rev})); 
+    }
+}
+

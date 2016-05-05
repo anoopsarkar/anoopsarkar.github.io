@@ -1,0 +1,40 @@
+#                  Userid cgw-holygrail.txt cgw-testset.txt    score
+          EuropeanSwallow            -7.950          -9.247   -8.598
+            GreatLinguist            -8.121         -10.382   -9.251
+               Bluemoment            -8.331         -10.295   -9.313
+several_seditious_scribes            -8.676         -10.781   -9.729
+                     will           -10.567         -11.570  -11.068
+                 chiachia           -13.636         -10.792  -12.214
+              stingpanpan           -16.271         -14.635  -15.453
+          GFS/fingerezard           -91.072         -10.438  -50.755
+              Red Herring           -94.171         -14.974  -54.572
+                  titanic          -102.177          -9.873  -56.025
+Thinker_Sailor_Coder_S.py          -104.564         -12.027  -58.296
+               knockezard           -96.424         -22.062  -59.243
+                   Merlin          -106.357         -12.747  -59.552
+                 faceumon           -94.025         -25.167  -59.596
+                    IIIII          -116.773         -14.601  -65.687
+                 muckemon          -125.182         -12.473  -68.827
+                faceartle          -125.132         -12.819  -68.976
+       int( exp(t)/t, t )          -129.397         -11.408  -70.402
+   StrugglingForDeadlines          -129.383         -12.003  -70.693
+               knockortle          -129.385         -12.033  -70.709
+                puffurtle          -129.385         -12.033  -70.709
+     DROP TABLE Students;           -98.972         -67.704  -83.338
+                linlinlin           -88.828         -85.524  -87.176
+        Hirundo Spilodera           -96.343         -99.624  -97.983
+                 pinortle          -131.507         -87.157 -109.332
+               twerpyzard          -129.390         -89.978 -109.684
+              knuckleochu          -127.354        -101.418 -114.386
+                numbirtle           -10.670         running      N/A
+             Not Dead Yet           -11.223          failed      N/A
+           The_Synologist           -45.173         running      N/A
+                 hatezard           -96.256          failed      N/A
+           Bloodycoconuts          -100.231          failed      N/A
+                      WVU            failed          failed      N/A
+                   anyway            failed          failed      N/A
+            PinkPartyPony            failed          failed      N/A
+      sir_pumpkin_esquire            failed          failed      N/A
+                 clodomon            failed          failed      N/A
+               cheeseichu            N/A             N/A         N/A
+                 wimpymon            N/A             N/A         N/A

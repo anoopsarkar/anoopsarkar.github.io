@@ -1,0 +1,69 @@
+SFU                       Computing Science                       06-3
+________________________________________________________________________
+CMPT 755-3 G100    Compiler Theory
+ Instructor: A. Sarkar                     SFU Burnaby
+
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+Compiler Theory is an Area II course in Computing Systems.  Algorithms used
+in building a compiler and their underlying foundations from formal
+language theory will be covered.  We will cover each component of a
+compiler including lexical analysis, parsing, code generation, code
+optimization and type checking.  This course will also cover advanced
+topics in parsing theory and implementation for arbitrary and deterministic
+grammars.  Students will also implement a working compiler for a high level
+programming language.
+
+TOPICS:
+
+   o Overview of a compiler
+   o Lexical Analysis:  formal language theory:  regular expressions and
+     finite-state machines, scanners, symbol tables
+   o Simple Parsing:  context-free grammars, derivation trees, ambiguity,
+     sentential forms, backtracking parsers, top-down versus bottom-up
+     parsing
+   o LL(1) parsing:  removing left-recursion, left-factoring, error
+     handling
+   o Shift-reduce parsers:  handles and handle pruning, shift/reduce
+     conflicts
+   o SLR/LR parsing:  characteristic automata, action and goto functions,
+     viable prefix, introduction to LALR parsing
+   o Parsing ambiguous CFGs:  the CKY, Earley and GHR parsing algorithms
+     for CFGs, deductive parsing, semiring parsing
+   o Type checking:  typing rules, unification, types as inferencing rules,
+     attribute grammars
+   o Code generation:  generating code from attribute grammars and code
+     generation using tree grammars
+   o Optimization:  dataflow analysis and global optimization
+   o Statistical analysis of programs:  Run-time analysis of parsing,
+     probabilistic CFGs
+   o Errors in programs:  self correcting parsers
+
+GRADING:
+
+The grade distribution will be handed out at the start of classes.
+
+Students must attain an overall passing grade on the weighted average of
+exams in the course in order to obtain a clear pass (C or better).
+
+TEXTBOOKS:
+
+   o Compilers:  Principles, Techniques & Tools, A.V. Aho, R. Sethi & J.D.
+     Ullman, Addison-Wesley, 1986
+
+PREREQUISITES/COREQUISITES:
+
+Distributed:  June 1, 2006
+
+.......................................................................
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's policy information
+(http://www.cs.sfu.ca/undergrad/Policies/).

@@ -1,0 +1,321 @@
+
+/* ---- yui skin css ---- */
+.tabview {
+    padding: 10px;
+    width: 90%;
+}
+.tabview-tabs {
+    /* margin: 0 20px; */
+    margin-left: 1em;
+    font-size: 16px;
+}
+
+/* Happy Resyndicator
+
+div.feedburnerFeedBlock p.date {
+	font-size: .78em;
+	display: inline;
+	margin-left: 3px;
+	}
+div.feedburnerFeedBlock ul li div {
+	display: inline;
+	}
+div.feedburnerFeedBlock p.feedTitle {
+	margin-top:  0.5em;
+	margin-bottom: 0.2em;
+	margin-left:   0.2em;
+	margin-right:  0.2em;
+	padding: 13px;
+	font-size: 15px;
+	border-style: dotted;
+    color: #993300;
+    border-color: #99cccc;
+    border-width: 0px 0px 1px 0px;
+    }
+div.feedburnerFeedBlock span.headline {
+	display: block;
+	text-indent: 0;
+	}
+div.feedburnerFeedBlock ul li {
+	margin-bottom: 0em;
+	padding-left: 0 !important;
+	text-indent: 0 !important;
+	}
+----------------------------------------------- */
+
+/* ---- course css ---- */
+
+a:link {
+	text-decoration: none;
+	color: #006699;
+}
+a:visited {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+a:active {
+	text-decoration: none;
+        color: #ff0;
+}
+
+a:hover, a:focus {
+	color: #000;
+        text-decoration: underline;
+}
+
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+
+body {
+        margin:0;
+        padding:0;
+/*	background-color: #fff; 
+	color: #000; */
+        border-style: none;
+        border-color: #cccccc;
+        border-width: 0px;
+        /* margin: 4% 4% 4% 4%;  */
+}
+
+p,form {
+    margin-left:  0.4em;
+    margin-right: 0.4em;
+    padding: 10px;
+}
+
+h1 {
+	text-align: left;
+	font-size: 23px;
+	padding: 10px;
+        color: #993300;
+        font-weight: bold;
+        border-color: #99cccc;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        width: 90%;
+}
+
+h2 {
+	margin-top:    1.0em;
+	margin-bottom: 0.2em;
+	margin-right:  0.2em;
+	margin-left:   0em;
+	padding: 10px;
+        font-size: 18px;
+        color: #993300;
+        border-color: #99cccc;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+}
+
+h3 {
+	margin-top:  0.5em;
+	margin-bottom: 0.2em;
+	margin-left:   0.2em;
+	margin-right:  0.2em;
+	padding: 13px;
+	font-size: 15px;
+	border-style: dotted;
+        color: #993300;
+        border-color: #99cccc;
+        border-width: 0px 0px 1px 0px;
+}
+
+div.section p {
+	line-height: 1.3em;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+div.section p a, a:visited{
+        color: #006699;
+}
+
+div.blurb p { 
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 90%;
+	padding: 5px;
+	border-style: double solid double solid;
+	border-color: #cccccc;
+	overflow: auto;
+	border-width: 1px 1px 1px 1px;
+        background-color: #cccccc;
+        color: #993300;
+}
+
+div.blurb blockquote {
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 90%;
+	padding: 5px;
+	border-style: double solid double solid;
+        border-color: #fcfcfc;
+	border-width: 1px 1px 1px 1px;
+        background-color: #cccccc;
+        color: #000;
+}
+
+pre {
+	margin-left: 2%;
+	margin-right: 2%;
+	white-space: pre;
+	width: 93%;
+	padding: 5px;
+	border-style: double solid double solid;
+	border-color: #cccccc;
+	overflow: auto;
+	border-width: 1px 1px 3px 1px;
+        background-color: #fcfcfc;
+        color: #000;
+}
+
+/*
+ul {
+	list-style-type: none;
+        margin-left: 0;
+        padding-left: 1em;
+        text-indent: -1em;
+}
+*/
+
+dl, ol {
+	margin-left:   1em;
+	margin-right:  0em;		
+}
+
+div.content {
+    font-size: 15px;
+}
+
+div.content ul {
+	list-style-type: square;
+        margin-left: 1em;
+        padding-left: 1em;
+        text-indent: 0em;
+}
+
+div.content ol {
+	list-style-type: decimal;
+        margin-left: 1em;
+        padding-left: 1em;
+        text-indent: 0em;
+}
+
+hr {
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+        border-color: #99cccc;
+        color: #99cccc;
+        width: 90%;
+}
+
+hr.sep {
+	display: none;
+}
+
+textarea {
+	margin-left: 1em;
+	width: 90%;
+	border-style: solid solid solid solid;
+	border-color: #cccccc;
+	border-width: 1px 1px 1px 1px;
+}
+
+div.body dl {
+	margin-left: 2em;
+}
+
+div.body dt {
+	margin-bottom: 0.2em;
+	font-weight: bold;
+}
+
+div.body dd {
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+}
+
+div.body blockquote {
+        border-width: 3px 0px 1px 0px;
+	border-style: solid solid solid solid;
+	border-color: #191970;
+	background-color: transparent;
+        color: #191970;
+        font-style:italic;
+	padding: 8px;
+}
+
+table {
+        font-size: 100%;
+	margin-left: 0em;
+	margin-right: 0.4em;
+        line-height: 100%;
+        border-width: 1px;
+        border-color: #ccc #999999 #999999 #ccc;
+        border-style: none;
+        padding: 1px;
+}
+
+div.main {
+	width: 80%;	
+	float: left;
+	padding: 10px;
+}
+
+div.sidebar {
+	float: left;
+	width: 19%;
+        border-style: solid;
+	margin-left: 1%;
+	margin-top: 0.5em;
+        border-width: 0px 0px 0px 0px;
+}
+
+div.sidebar li { 
+                 font-size: smaller;
+                 color: #3366ff;
+                 list-style-type: none; 
+                 margin-left: -0.8em; 
+                 }
+
+div.sidebar h2 { 
+                 font-size: 90%;
+                 color: #663300;
+                 border-width: 0px 0px 1px 0px;
+                 }
+
+div.sidebar h3 { font-size: 90%; }
+
+div.header ul { 
+    padding: 4px;
+}
+
+div.header li { 
+    font-size: 15px;
+    color: #191970;
+    list-style-type: none;
+    padding: 4px;
+}
+
+div.header p a, a:visited{
+        color: #006699;
+}
+
+div.header td {
+    padding-left: 10px;
+    padding-right: 50px; 
+    align: top;
+}
+
+li.student {
+    color: DarkBlue
+}
+.student:before {
+    content: "Student: " ;
+}
+

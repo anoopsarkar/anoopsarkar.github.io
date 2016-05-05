@@ -1,0 +1,138 @@
+========================================================================
+CMPT 825 Review Form - Instructions
+========================================================================
+
+Please complete your review using the following guidelines for the 
+scored categories.
+
+APPROPRIATENESS (1-5)
+---------------------
+
+Does the paper fit in ACL 2014? (Please answer this question in light of
+the desire to broaden the scope of the research areas represented at ACL.)
+
+5: Certainly.
+4: Probably.
+3: Unsure.
+2: Probably not.
+1: Certainly not.
+
+CLARITY (1-5)
+-------------
+
+For the reasonably well-prepared reader, is it clear what was done and why?
+Is the paper well-written and well-structured?
+
+5 = Very clear.
+4 = Understandable by most readers.
+3 = Mostly understandable to me with some effort.
+2 = Important questions were hard to resolve even with effort.
+1 = Much of the paper is confusing.
+
+ORIGINALITY (1-5)
+-----------------
+
+How original is the approach? Does this paper break new ground in topic,
+methodology, or content? How exciting and innovative is the research it
+describes?
+Note that a paper could score high for originality even if the results do
+not show a convincing benefit.
+
+5 = Surprising: Significant new problem, technique, methodology, or insight
+-- no prior research has attempted something similar.
+4 = Creative: An intriguing problem, technique, or approach that is
+substantially different from previous research.
+3 = Respectable: A nice research contribution that represents a notable
+extension of prior approaches or methodologies.
+2 = Pedestrian: Obvious, or a minor improvement on familiar techniques.
+1 = Significant portions have actually been done before or done better.
+
+IMPLEMENTATION AND SOUNDNESS
+(1-5)
+----------------------------------
+
+Has the application or tool been fully implemented or do certain parts of
+the system remain to be implemented? Does it achieve its claims? Is enough
+detail provided that one might be able to replicate the application or tool
+with some effort? Are working examples provided and do they adequately
+illustrate the claims made?
+
+5 = The application or tool is fully implemented, and the claims are
+convincingly supported. Other researchers should be able to replicate the
+work.
+4 = Generally solid work, although there are some aspects of the
+application or tool that still need work, and/or some claims that should be
+better illustrated and supported.
+3 = Fairly reasonable work. The main claims are illustrated to some extent
+with examples, but I am not entirely ready to accept that the application
+or tool can do everything that it should (based on the material in the
+paper).
+2 = Troublesome. There are some aspects that might be good, but the
+application or tool has several deficiencies and/or limitations that make
+it premature.
+1 = Fatally flawed.
+
+SUBSTANCE (1-5)
+---------------
+
+Does this paper have enough substance, or would it benefit from more ideas
+or results?
+Note that this question mainly concerns the amount of work; its quality is
+evaluated in other categories.
+
+5 = Contains more ideas or results than most publications in this
+conference; goes the extra mile.
+4 = Represents an appropriate amount of work for a publication in this
+conference. (most submissions)
+3 = Leaves open one or two natural questions that should have been pursued
+within the paper.
+2 = Work in progress. There are enough good ideas, but perhaps not enough
+in terms of outcome.
+1 = Seems thin. Not enough ideas here for a full-length paper.
+
+EVALUATION (1-5)
+----------------
+
+To what extent has the application or tool been tested and evaluated? Have
+there been any user studies?
+
+5 = The application or tool has been thoroughly tested. Rigorous evaluation
+on a large corpus or via formal user studies support the claims made for
+the system. Critical analysis of the results yields many insights into the
+limitations (if any).
+4 = The application or tool has been tested and evaluated on a reasonable
+corpus or with a small set of users. The results support the claims made.
+Critical analysis of the results yields some insights into the limitations
+(if any).
+3 = The application or tool has been tested and evaluated to a limited
+extent. The results have been critically analyzed to gain insight into the
+system's performance.
+2 = A few test cases have been run on the application or tool but no
+significant evaluation or user study has been performed.
+1 = The application or tool has not been tested or evaluated.
+
+MEANINGFUL COMPARISON (1-5)
+---------------------------
+
+Do the authors make clear where the problems and methods sit with respect
+to existing literature? Are the references adequate? For empirical papers,
+are the experimental results meaningfully compared with the best prior
+approaches?
+
+5 = Precise and complete comparison with related work. Good job given the
+space constraints.
+4 = Mostly solid bibliography and comparison, but there are some references
+missing.
+3 = Bibliography and comparison are somewhat helpful, but it could be hard
+for a reader to determine exactly how this work relates to previous work.
+2 = Only partial awareness and understanding of related work, or a flawed
+empirical comparison.
+1 = Little awareness of related work, or lacks necessary empirical
+comparison.
+
+OVERALL SCORE (1-40)
+--------------------
+
+The overall score combines all the above scores but also includes
+an additional 5 points that will be used to rank projects based
+on their unique characteristics.

@@ -1,0 +1,75 @@
+SFU                       Computing Science                       02-3
+________________________________________________________________________
+CMPT 882-3 G2"    Statistical Learning of Natural Language
+ Instructor: A. Sarkar                         SFU
+  Final Exam:
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+How can we learn to process natural language text?  How much human
+supervision is needed for the learning process?  In this course we will
+study basic algorithms that produce state of the art results on tasks
+involving natural language text.  For each of these tasks, we will compare
+knowledge-rich approaches which use a lot of human supervision to
+knowledge-poor techniques which use bootstrapping.  We will predominantly
+look at statistical approaches to learning, comparing generative models
+with discriminative models.  However, we will look at some
+non-probabilistic methods for learning as well.  Note that this course will
+not provide a broad overview of the entire field but rather we will look at
+specific algorithms in depth.
+
+TOPICS:
+
+   o Bootstrapping techniques in learning word meanings:  word-sense
+     disambiguation.
+   o Hidden Markov Models (HMMs):  Maximum Likelihood and the EM Algorithm.
+   o Non-recursive analysis of language with HMMs:  Part of Speech Tagging
+     and Chunking.
+   o Error Rate vs.  Likelihood, Part I: Non-probabilistic Techniques for
+     Learning (Transformation-Based Learning)
+   o Hypothesis Testing:  Unsupervised learning of lexical knowledge
+   o Ambiguity resolution in parsing:  Prepositional phrase attachment
+   o Supervised learning of parsers from a Treebank
+   o Unsupervised learning of parsers:  The Inside-Outside Algorithm
+   o Error Rate vs.  Likelihood, Part II: Discriminative Techniques
+     (Maximum-Entropy Models, Boosting)
+   o Learning linguistically detailed grammars
+
+GRADING:
+
+Homework (30%), class participation (10%), class presentation (20%),
+Project and research report (40%).  The project will be either a group or
+an individual project depending on the number of students and will involve
+experimental work on text corpora.
+
+TEXTBOOKS:
+
+   o None.  (handouts, conference, and journal papers will be distributed
+     in class), ,
+
+REFERENCES:
+
+   o Foundations of Statistical Natural Language Processing, Christopher,
+     MIT Press, 1999:  Recommended to brush up on basics
+   o Speech and Language Processing, Daniel Jurafsky and James Martin,
+     Prentice-Hall, 2000:  Recommended to brush up on basics.
+
+PREREQUISITES/COREQUISITES:
+
+A course in computational linguistics or natural language processing, such
+as CMPT 413, or CMPT 825.  Some exposure to elementary probability theory
+is needed.
+
+Distributed:  August 8, 2002
+
+.......................................................................
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's Statement on Intellectual Honesty
+(http://www.cs.sfu.ca/undergrad/Policies/honesty.html).

@@ -1,0 +1,122 @@
+
+--------- Hash tables:
+
+$tbl{'a'} = [1,2,3];
+$tbl{'b'} = [3,4,5];
+
+while (my ($key, $val) = each %tbl) {
+    print "key = $key;  value = @$val\n";
+}
+
+--------- Advanced file operations:
+
+open(F, "ls |") or die "could not find ls\n";
+while (<F>) {
+  if ($_ !~ /^\./) { print; }
+}
+close(F);
+
+--------- Advanced references
+
+sub visit {
+  my ($tree) = @_;
+  if (ref $tree) {
+     my @nodes = @{$tree};
+     print "(",  shift(@nodes), " ";
+     foreach $kid (@nodes) { visit($kid); }
+     print ")";
+  } else {
+     print " $tree ";
+  }
+}
+$x = ['S','NP',['VP','V','NP']];
+visit($x); print "\n";
+
+---------- Variables that control perl behaviour
+
+$/ = "\n\n";
+while (<>) {
+  chomp;
+  s/\n/ /g;
+  print "$_\n";
+}
+
+---------- Advanced list functions
+
+finding elements:
+
+   @x = ('said','the','joker','to','the','thief');
+   @found = grep { /^t/ } @x;
+   print join(" ", @found), "\n";
+   @x = (1,2,3,4,5,6,7,8,9,10);
+   @found = grep { $_ > 5 } @x;
+   foreach (@found) { print; print "\n"; }
+
+transforming elements:
+
+   @x = ('said','the','joker','to','the','thief');
+   @found = map(uc, @x);
+   foreach (@found) { print; print "\n"; }
+
+converting lists to hash:
+
+   @x = ('said','the','joker','to','the','thief');
+   %found = map { $_ => length($_) } @x;
+   foreach (keys %found) { print "$_ => $found{$_}\n"; }
+
+converting s-expressions to trees:
+
+   $tree = ['S','NP',['VP','V','NP']];
+   $x = "(S NP (VP V NP))";
+   $x =~ s/\(/\[/g;
+   $x =~ s/\)/\]/g;
+   $x =~ s/ /,/g;
+   $x =~ s/([^,\[\]]+)/'$1'/g;
+   print "$x\n";
+   $tree = eval $x;
+   visit($tree); print "\n";
+
+file operations: file test -X, chdir, unlink, readdir
+
+vec() -- bit vectors
+
+pack() and unpack() -- binary data
+
+tie() and untie() -- databases linked to hash tables
+
+----- References
+
+$input[2][2] = ['a','b'];
+$output[2][2] = ['0','1'];
+
+$i = 2; $j = 2;
+$sz = $#{$input[$i][$j]};
+for (my $k = 0; $k <= $sz; $k++) {
+    print "input: $input[$i][$j]->[$k]  output: $output[$i][$j]->[$k]\n";
+}
+
+$tbl{'a'} = [1,2,3];
+$tbl{'b'} = [4,5,6];
+
+-------- Data structures
+
+$rec = {
+     word => "shares",
+     count => 3,
+     prevWord => [ "the", "many", "two" ]
+};
+
+print "word: $rec->{word}  count: $rec->{count}  prevWord: @{$rec->{prevWord}}\n";
+
+-------- Packages
+
+package foopkg;
+sub foo {
+    my ($self) = @_;
+    print "self: $self\n";
+}
+
+foopkg->foo();
+foopkg::foo();
+
+

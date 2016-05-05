@@ -1,0 +1,22 @@
+
+Quiz 3 Topics
+-------------
+
+1. Context-free grammars and parsing algorithms, structural ambiguity
+
+    * Chp 9 and Chp 10 (J&M)
+    * Notes #10
+    * Notes #11
+    * Notes #12
+
+2. Probabilistic context-free grammars
+
+    * Chp 12 (J&M)
+    * Notes #13
+    * Notes #14
+
+3. Language and complexity theory
+
+    * Chp 13 (J&M)
+    * Notes #15
+

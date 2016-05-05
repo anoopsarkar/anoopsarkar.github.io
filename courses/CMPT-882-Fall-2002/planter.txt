@@ -1,0 +1,25 @@
+Planter-HW1
+Created by Julia Birke (#200065523 ; jbirke@sfu.ca)
+For Cmpt 882-Prof. Anoop Sarkar
+On Sept. 8, 2002
+
+The purpose of this assignment was to find concordance structures for a
+given word (e.g. plant).
+
+The Planter program (a command-line program), created in Sicstus
+Prolog, produces such concordance structures.  The user can specify the
+word of interest and the number of context words desired before and
+after.  The word of interest must be provided with its tag in the case
+of the data sets provided by Prof. Sarkar: e.g. plant_nn.
+
+To run Planter, start Sicstus Prolog in a terminal window and load Planter:
+
+?-[planter].
+
+Then enter:
+
+?-planter(Word,Num).
+
+...where Word is the word of interest, for example 'plant_nn', and Num is 
+the number of context words, for example '3'.
+

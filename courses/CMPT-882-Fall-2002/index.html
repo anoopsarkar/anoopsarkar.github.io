@@ -1,0 +1,686 @@
+<html>
+<title>Anoop Sarkar: CMPT 882-3 - Statistical Learning of Natural Language</title>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" alink="#0000FF" vlink="#4C58CC">
+<h2>CMPT 882-3 - Statistical Learning of Natural Language</h2>
+<p>
+<b>Anoop Sarkar</b>
+<p>
+<table>
+<tr>
+<td>Office:</td>
+<td>ASB 10859</td>
+</tr>
+<tr>
+<td>Phone:</td>
+<td>291-4933</td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><tt>anoop at cs.sfu.ca</tt></td>
+</tr>
+</table>
+<p>
+CMPT 882-3: Fall 2002
+<table>
+<tr>
+<td>Monday</td>
+<td>4:00p - 5:50p in SCB 8662</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>3:30p - 4:20p in SCB 8662</td>
+</tr>
+<tr>
+<td>Office Hrs</td>
+<td>by appointment (send me email)</td>
+</tr>
+</table>
+<p>
+<blockquote>
+In this course we will study basic algorithms that produce state
+of the art results on tasks involving natural language text.  For
+each of these tasks, we will compare knowledge-rich approaches
+which use a lot of human supervision to knowledge-poor techniques
+which use parameter re-estimation or bootstrapping algorithms. We
+will also compare generative models (models which maximize 
+likelihood of the training data) with discriminative models 
+(models which minimize classification error rate).
+<p>
+For more details: 
+<a href="CMPT-882-Sarkar-02-3.txt">Course Description for CMPT 882-3</a>
+</blockquote>
+
+<p>
+<h3>Important Dates</h3>
+<ol>
+<li> Sep 4: <b>First class</b>
+<li> Oct 14: <b>No Class: Thanksgiving</b>
+<li> Nov 11: <b>No Class: Remembrance Day</b>
+<li> Dec 4: <b>Final Project Presentations</b>
+</ol>
+
+<p><h3>Final Projects</h3>
+
+<p>
+<ul>
+<li> Julia Birke, <i>Metaphoinder: A study in metaphor clustering</i>
+ (<a href="julia.ppt">slides</a>)
+
+<li> Charu Jain, <i>Transformations</i>
+ (<a href="charu.ppt">slides</a>)
+
+<li> Chris Demwell, <i>Tagging with Hidden Markov Models</i> 
+ (<a href="chris.ppt">slides</a>)
+
+<li> Roozbeh Farahbod, <i>Modified Voted Perceptron: A Re-ranking method for NP Chunking</i>
+ (<a href="roozbeh.ppt">slides</a>)
+
+<li> Mona Vajihollahi, <i>Re-ranking for NP Chunking using the Maximum Entropy Framework</i>
+ (<a href="mona.ppt">slides</a>)
+
+<li> Daniel Zimmerman, <i>RNA Secondary Structure Prediction with Error-Driven Transformation Based Learning</i>
+ (<a href="dan.ppt">slides</a>)
+
+</ul>
+
+<p>
+<h3>Reading List</h3>
+
+<ol>
+
+<li> <b>Introduction to Statistical NLP and Supervised Decision List Learning</b>
+<p>Notes: <a href="lecture01.pdf">Lecture #01 pdf</a>
+
+<p><li> <b>Bootstrapping techniques in learning word meanings: word-sense disambiguation</b>
+<p><a href="http://citeseer.nj.nec.com/yarowski95unsupervised.html">Unsupervised Word Sense Disambiguation Rivaling Supervised Methods</a> (1995). David Yarowsky. Proceedings of ACL-95. pp. 189-196
+<p>Notes: <a href="lecture02.pdf">Lecture #02 pdf</a>
+
+<p>
+Additional Readings:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/rivest87learning.html">Learning Decision Lists</a> (1987). Ronald L. Rivest. Machine Learning. 2(3), pp. 229-246.
+  <li> <a href="http://citeseer.nj.nec.com/yarowsky94decision.html">Decision Lists for Lexical Ambiguity Resolution: Application to Accent Restoration in Spanish and French</a> (1994). David Yarowsky. Proceedings of ACL-94. pp. 88-85.
+  <li> <a href="http://citeseer.nj.nec.com/collins99unsupervised.html">Unsupervised Models for Named Entity Classification</a> (1999). Michael Collins, Yoram Singer. In Proceedings of the Joint SIGDAT Conference on Empirical Methods in Natural Language Processing and Very Large Corpora.
+  </ul>
+<p>
+Data:
+  <ul>
+  <li> <a href="nyt_plant_sents.tar.gz">"Plant" dataset extracted from New York Times</a> (taken from North American Business News, LDC dataset)
+  <li> <a href="ftp://ftp.cis.upenn.edu/pub/treebank/doc/tagguide.ps.gz">Penn Treebank Tagging Guidelines</a>: this will explain the tags that appear after the underscore after each word, e.g. plant_NN
+  <li> Training and test data for WSD in multiple languages: <a href="http://www.sle.sharp.co.uk/senseval2/">senseval 2 data</a>.
+  </ul>
+<p>
+Homework:
+  <ul>
+  <li> Write a concordance tool that shows a keyword (say, "plant") in context. Use the above data set and produce an output that looks like this:
+  <blockquote><pre>
+de_VBP training_VBG new_JJ Ukrainian_JJ     plant    _NN operators_NNS to_TO replace_VB Russi
+_NNPS who_WP are_VBP leaving_VBG the_DT     plant    s_NNS in_IN Ukraine_NNP and_CC improving
+N and_CC safety_NN procedures_NNS at_IN     plant    s_NNS in_IN both_DT countries_NNS ,_, sa
+iet-designed_JJ reactors_NNS at_IN a_DT     plant    _NN in_IN the_DT Czech_NNP Republic_NNP 
+er_JJ to_TO pay_VB to_TO make_VB the_DT     plant    _NN safer_JJR ._. 
+er_JJ to_TO pay_VB to_TO make_VB the_DT     plant    _NN safer_JJR ._. 
+ ,_, ''_'' she_PRP said_VBD ,_, are_VBP     plant    _NN moratoriums_NNS ._. 
+_NNS at_IN the_DT Orange_NNP County_NNP     plant    _NN ._. 
+  </pre></blockquote>
+  <li> <a href="concordance.pl">perl script for concordance</a> (<a href="concordance.txt">readme</a>)
+  </ul>
+
+<p><li> <b>Comparing Decision Lists to Naive Bayes</b>
+<p>
+<a href="http://citeseer.nj.nec.com/lewis98naive.html">Naive (Bayes) at Forty: The Independence Assumption in Information Retrieval</a> (1998). David Lewis. Proceedings of ECML-98 (10th meeting). pp. 4-15.
+<p>Notes: <a href="lecture03.pdf">Lecture #03 pdf</a>
+<p>
+Additional Readings:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/mccallum98comparison.html">A Comparison of Event Models for Naive Bayes Text Classification</a> (1998).  Andrew Mccallum and Kamal Nigam. In AAAI-98 Workshop on Learning for Text Categorization. 
+  <li> <a href="http://www.ai.mit.edu/~jrennie/papers/ifile00.pdf">ifile: An Application of Machine Learning to E-mail Filtering</a> (2000). Jason Rennie. Proceedings of the KDD-2000 Workshop on Text Mining. 
+  </ul>
+
+<p>
+Homework:
+  <ul>
+  <li> Download, install and use <a href="http://www.cs.cmu.edu/~mccallum/bow">rainbow</a>, an implementation of Naive Bayes for document classification by Andrew McCallum and his collaborators. You can use the <code>20Newsgroups</code> and the <code>WebKB</code> datasets available from the <a href="http://www.cs.cmu.edu/~textlearning">CMU Text Learning page</a>.
+  <li> Optionally, you can download, install and play with <a
+  href="http://fuzzy.cs.uni-magdeburg.de/~borgelt/software.html">Christian
+  Borgelt's Naive Bayes implementation</a>. You will need to download
+  <code>table.tar.gz</code> and <code>bayes.tar.gz</code>. Use the
+  data files that come with the package.
+  <li> Other links: <a
+  href="http://ic.arc.nasa.gov/ic/projects/bayes-group/autoclass/">AutoClass</a>,
+  <a href="http://www.eurecom.fr/~bmgroup/projects/MISTRAL.html">Mistral</a>
+  </ul>
+
+<p><li> <b>Hidden Markov Models and their Application to Sequence Analysis</b>
+<p>
+Chapters 3 and 4 of <i>Statistical Language Learning</i>. Eugene Charniak. MIT Press. 1993.
+<p>Notes: <a href="lecture04.pdf">Lecture #04 pdf</a>
+<p>
+Other Sources:
+  <ul>
+  <li> Chapter 2 from <i>Statistical Methods in Speech Recognition</i>. Frederick Jelinek. MIT Press. 1998.
+  <li> A tutorial on Hidden Markov Models and selected applications in speech recognition (1989). L. R. Rabiner. <i>Proceedings of the IEEE</i>, vol 77, number 2.
+  <li> Chapter 6 from <i>Fundamentals of Speech Recognition</i>. Lawrence Rabiner and Biing-Hwang Juang. Prentice Hall. 1993. 
+  </ul>
+
+<p>
+Additional Readings:
+  <ul>
+  <li> <a href="http://acl.ldc.upenn.edu/A/A88/A88-1019.pdf">
+  A stochastic parts program and noun phrase parser for unrestricted
+  text
+  </a> (1988). Kenneth Church. Proceedings of ANLP-88.
+  <li> <a href="http://citeseer.nj.nec.com/stolcke94bestfirst.html">Best-first Model Merging for Hidden Markov Model Induction</a> (1994). A. Stolcke and S. M. Omohundro. TR-94-003, ICSI, Berkeley, CA.
+  </ul>
+
+<p>
+Homework:
+  <ul>
+
+  <li> Create a markov chain model on a corpus of your choice using
+  the script <code>create_model</code> from <a
+  href="../distrib/trigen/"> this directory
+  </a> (you can use <a href="nyt_plant_sents.tar.gz">
+  the "Plant" dataset </a> as your corpus, for example).  Then
+  produce a sample output using <code>trigen.pl</code> (also in
+  the same directory). Read the file <a
+  href="../distrib/trigen/readme.txt">
+  readme.txt </a> for further instructions.
+
+  </ul>
+
+<p><li> <b>Using the Forward-Backward Algorithm</b>
+<p> <a href="http://xxx.lanl.gov/abs/cmp-lg/9410012">
+    Does Baum-Welch Re-estimation help taggers?
+    </a> (1994). David Elworthy. Proceedings of 4th ACL Conf on ANLP,
+    Stuttgart. pp. 53-58.  
+<p>Notes: <a href="lecture05.pdf">Lecture #05 pdf</a>
+<p>
+Additional Readings:
+  <ul>
+  <li>  <a href="http://citeseer.nj.nec.com/cutting92practical.html">
+   A Practical Part-of-Speech Tagger
+   </a> (1992). Doug Cutting, Julian  Kupiec, Jan Pedersen and
+   Penelope Sibun. In Proceedings of ANLP-92. 
+  <li> <a href="http://acl.ldc.upenn.edu/J/J94/J94-2001.pdf">
+   Tagging text with a probabilistic model
+   </a> (1994). Bernard Merialdo. <i>Computational Linguistics</i>
+   20(2):155-172. 
+  <li> <a href="http://citeseer.nj.nec.com/nigam99text.html">Text Classification from Labeled and Unlabeled Documents using EM</a> (2000). Kamal Nigam, Andrew Mccallum, Sebastian Thrun and Tom Mitchell. Machine Learning volume 39, number 2-3. 
+  </ul>
+
+<p>
+Homework:
+  <ul>
+  <li> Use the <a href="hmm.xls">HMM alpha/beta spreadsheet</a>
+  and the <a href="viterbi.xls">HMM Viterbi spreadsheet</a>.
+  Note that you will need either Microsoft Excel or Openoffice to open these spreadsheets.
+  The idea of using a spreadsheet for teaching the forward-backward algorithm comes from 
+  <a href="http://www.cs.jhu.edu/~jason/papers/abstracts.html#tnlp02">
+  Jason Eisner's TNLP paper</a>.
+  </ul>
+
+
+<p><li> <b>Hidden Markov Models for Name Finding</b>
+<p>
+<a href="http://citeseer.nj.nec.com/bikel97nymble.html">Nymble: a High-Performance Learning Name-finder</a> (1997).  Daniel M. Bikel, Scott Miller, Richard Schwartz, Ralph Weischedel. Proceedings of ANLP-97. 
+<p>Notes: <a href="lecture06.pdf">Lecture #06 pdf</a>
+<p>
+Additional Readings:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/freitag99information.html">Information Extraction with HMMs and Shrinkage</a> (1999).  Dayne Freitag, Andrew McCallum. Proceedings of the AAAI-99 Workshop on Machine Learning for Information Extraction. 
+  <li> <a href="http://citeseer.nj.nec.com/freitag00information.html">Information Extraction with HMM Structures Learned by Stochastic Optimization</a> (2000).  Dayne Freitag and Andrew McCallum. Proceedings of AAAI-2000.
+  </ul>
+<p>Other Applications of HMMs:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/abney98hiding.html">
+  Hiding a Semantic Class Hierarchy in a Markov Model
+  </a> (1998). Steven Abney and Marc Light. manuscript.
+  </ul>
+
+<p><li> <b>The EM algorithm for hybrid models</b>
+<p><a href="../distrib/mixture/readme.pdf">EM for hybrid models</a>
+<p>We will look at the use of the EM algorithm (a generalization of
+the forward-backward algorithm for HMMs) and apply it to the problem
+of finding the appropriate interpolation weights between a word-based
+and a part-of-speech based language model. 
+<p><a href="../distrib/mixture/">mixture.pl</a> is a simple Perl
+script that implements this idea.
+<p>Additional Readings:
+<ul>
+<li><a href="http://citeseer.nj.nec.com/1570.html">
+A Gentle Tutorial on the EM Algorithm and its Application to Parameter
+Estimation for Gaussian Mixture and Hidden Markov Models
+</a> (1997). Jeff A. Bilmes, Technical Report, University of Berkeley,
+ICSI-TR-97-021. 
+<li><a href="http://citeseer.nj.nec.com/collins97em.html">
+The EM algorithm
+</a> (1997). Michael Collins. manuscript.
+</ul>
+
+<p><li> <b>Discriminative Methods, Transformation-Based Learning</b>
+<p>
+<a href="http://citeseer.nj.nec.com/brill95transformationbased.html">
+Transformation-Based Error-Driven Learning and Natural Language
+Processing: A Case Study in Part-of-Speech Tagging</a> (1995). Eric
+Brill. <i>Computational Linguistics</i>, volume 21, number 4,
+pp. 543-565.
+  
+<p>Notes: <a href="lecture07.pdf">Lecture #07 pdf</a>
+<p>
+Additional Readings:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/brill95unsupervised.html">
+       Unsupervised Learning of Disambiguation Rules for Part of
+       Speech Tagging
+       </a> (1995). Eric Brill. Proceedings of the Third Workshop on
+       Very Large Corpora WVLC-95. pp. 1-13
+  <li> <a href="http://citeseer.nj.nec.com/ramshaw95text.html">
+       Text Chunking Using Transformation-Based Learning
+       </a> (1995). Lance Ramshaw and Mitch Marcus. Proceedings of the
+       Third Workshop on Very Large Corpora WVLC-95. pp. 82-94.
+  </ul>
+
+<p>
+Homework:
+  <ul>
+  <li> Download the <a href="http://nlp.cs.jhu.edu/~rflorian/fntbl/">fntbl</a> 
+  toolkit: a recent implementation of the TBL learning algorithm. Use it for
+  POS tagging and NP chunking tasks (included in the download). Examine the
+  rules that have been learned for these tasks.
+  <li> Download and use the <a href="http://www.ling.gu.se/~lager/mutbl.html">
+  mu-TBL</a> system which uses Prolog to implement TBL. 
+  </ul>
+
+
+<p><li> <b>Discriminative Methods, Maximum Entropy Models</b>
+<p>
+<a href="http://citeseer.nj.nec.com/128751.html">
+A simple introduction to maximum entropy models for natural language
+processing
+</a> (1997). Adwait Ratnaparkhi. Technical Report 97-08, Institute
+for Research in Cognitive Science, University of Pennsylvania.
+<p>
+<a href="http://citeseer.nj.nec.com/ratnaparkhi96maximum.html">
+A Maximum Entropy Model for Part-of-Speech Tagging
+</a> (1996). Adwait Ratnaparkhi. In <i>Proceedings of the Conference
+on Empirical Methods in Natural Language Processing</i>. pp. 133-142.  
+
+<p>Notes: <a href="lecture08.pdf">Lecture #08 pdf</a>
+
+<p>Additional Readings:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/mccallum00maximum.html">
+  Maximum Entropy Markov Models for Information Extraction and
+  Segmentation
+  </a> (2000). Andrew Mccallum, Dayne Freitag and Fernando Pereira. 
+  In <i>Proc. 17th International Conf. on Machine
+  Learning</i>. pp. 591-598. 
+  <li> <a href="http://citeseer.nj.nec.com/lafferty01conditional.html">
+  Conditional Random Fields: Probabilistic Models for Segmenting and
+  Labeling Sequence Data  
+  </a> (2001).  John Lafferty, Andrew McCallum and Fernando Pereira.
+  In <i>Proc. 18th International Conf. on Machine Learning</i>
+  <li> <a href="http://citeseer.nj.nec.com/chen99gaussian.html">
+  A Gaussian prior for smoothing maximum entropy models
+  </a> (1999). S. Chen and R. Rosenfeld, Technical Report CMUCS
+  -99-108, Carnegie Mellon University.
+  </ul>
+<p>
+Homework:
+  <ul>
+  <li> Download the Java code for <a
+  href="http://www.cis.upenn.edu/~adwait/statnlp.html">
+  MXPOST</a> from Adwait Ratnaparkhi's web page. Using the
+  training data and raw text supplied to you train an initial
+  model on the training data and then augment the training
+  data using the raw text iteratively in a self-training loop
+  until the raw text is exhausted. Measure performance at
+  each iteration on the test data provided.
+  </ul>
+
+<p><li> <b>Hypothesis Testing: Unsupervised Learning of Lexical Knowledge</b>
+<p>
+<a href="http://citeseer.nj.nec.com/briscoe97automatic.html">
+Automatic Extraction of Subcategorization from Corpora
+</a>
+(1997). Ted Briscoe and John Carroll. In <i>Proceedings of the 5th 
+Conference on Applied Natural Language Processing (ANLP-97)</i>.
+ 
+<p>Notes: <a href="lecture09.pdf">Lecture #09 pdf</a>
+<p>
+Additional Readings:
+  <ul> 
+  <li> <a href="http://citeseer.nj.nec.com/brent93surface.html">
+  Surface Cues and Robust Inference as a Basis for the early Acquisition
+  of Subcategorization Frames
+  </a>
+  (1993). Michael Brent. In Gleitman, L. and Landau, B., editors, 
+  <i>The Acquisition of the Lexicon</i>, pages 433-470. MIT Press.
+
+  <li> <a href="http://citeseer.nj.nec.com/sarkar00automatic.html">
+  Automatic Extraction of Subcategorization Frames for Czech
+  </a> (2000). Anoop Sarkar and Daniel Zeman. In <i>Proceedings of
+  COLING-2000</i>.
+
+  <li> <a href=" http://citeseer.nj.nec.com/stevenson99automatic.html">
+  Automatic Verb Classification Using Distributions of Grammatical Features
+  </a>
+  (1999). Suzanne Stevenson and Paola Merlo. In <i>Proc. of the 9th Conference
+  of the European Chapter of the ACL</i>, pages 45-52.
+  </ul>
+
+<p>
+Homework:
+<ul>
+<li> By now you have decided on a project. From now on, there will
+be no more homeworks. Instead you should concentrate on getting 
+the datasets, and doing the relevant reading for your project work. 
+</ul>
+
+<p><li> 
+<b>Learning Morphology</b>
+<p><a href="http://www.cs.jhu.edu/~yarowsky/pdfpubs/acl2000_yar.ps">
+Minimally supervised morphological analysis by multimodal alignment
+</a> (2000). Yarowsky, D. and R. Wicentowski. In <i>Proceedings of
+ACL-2000</i>, pages 207-216. 
+
+  <p> <a href="http://acl.ldc.upenn.edu/J/J01/J01-2001.pdf">
+  Unsupervised Learning of the Morphology of a Natural Language 
+  </a>
+  (2001). John Goldsmith. <i>Computational Linguistics</i>, Volume 27, Number 2.
+
+<p>Notes: <a href="lecture10.pdf">Lecture #10 pdf</a>
+
+<p>Additional Readings:
+  <ul>
+  <li> <a href="http://citeseer.nj.nec.com/schone00knowledgefree.html">
+  Knowledge-Free Induction of Morphology Using Latent Semantic Analysis
+  </a> (2000).  Patrick Schone and Daniel Jurafsky. In <i>Proceedings of
+  the Fourth Conference on Computational Natural Language Learning and
+  of the Second Learning Language in Logic Workshop</i>.
+
+  <li> <a href="http://citeseer.nj.nec.com/cucerzan99language.html">
+       Language independent named entity recognition combining
+       morphological and contextual evidence
+       </a> (1999). S. Cucerzan and D. Yarowsky, In <i>Proc. 1999
+    Joint SIGDAT Conference on EMNLP and VLC</i>.
+
+  </ul>
+
+<p><li> <b>HMM Redux: Almost Parsing</b>
+<p><a href="http://citeseer.nj.nec.com/bangalore99supertagging.html">
+Supertagging: An Approach to Almost Parsing
+</a> (1999). Srinivas Bangalore and Aravind K. Joshi.
+<i>Computational Linguistics</i>, volume 25, number 2,
+pages 237-265.
+
+<p>Notes: <a href="lecture11.pdf">Lecture #11 pdf</a>
+
+<p>
+Additional Readings:
+<ul>
+<li><a href="http://citeseer.nj.nec.com/529676.html">
+Transplanting Supertags from English to Spanish
+</a> (1998). Srinivas Bangalore. In <i>Proceedings of
+TAG+4</i> Workshop on Tree Adjoining Grammars.
+
+<li><a href="http://citeseer.nj.nec.com/206110.html">
+New Models for Improving Supertag Disambiguation
+</a> (1999). John Chen, Srinivas Bangalore and K. Vijay-Shanker. In
+Proc. of the 9th EACL.
+
+<li><a href="http://www.eecis.udel.edu/~jchen/tag6.pdf">
+Reranking an N-Gram Supertagger
+</a> (2002). John Chen, Srinivas Bangalore, Michael Collins and Owen
+Rambow. In Proc.  of 6th International Workshop on Tree Adjoining
+Grammars and Related Frameworks.
+</ul>
+
+<p><li> <b>Prepositional Phrase Attachment</b>
+<p><a href="http://acl.ldc.upenn.edu/J/J82/J82-3004.pdf">
+Coping with syntactic ambiguity or how to put the block in the box on
+the table 
+</a> (1982). Kenneth Church and Ramesh Patil. <i>Computational
+  Linguistics</i> 8:139-49.
+<p>
+  <a href="http://citeseer.nj.nec.com/collins95prepositional.html">
+  Prepositional Phrase Attachment through a Backed-Off Model
+  </a> (1995). Michael Collins and James Brooks. Proceedings of the
+  Third Workshop on Very Large Corpora WVLC-95. 
+
+<p>Notes: <a href="lecture12.pdf">Lecture #12 pdf</a>
+
+<p>
+Additional Readings:
+  <ul>
+  <li> 
+  <a href="http://xxx.lanl.gov/abs/cmp-lg/9410026">
+  A rule based approach to prepositional phrase attachment
+ disambiguation
+ </a> (1994). Eric Brill and Philip Resnik. In Proceedings
+  of COLING-94, Kyoto, Japan. 
+  <li> PP Attachment Ambiguity Resolution through Supervised Learning
+  (1998). J. Stetina and M. Nagao. Journal of Natural Language
+  Processing (Japan) Vol. 5 No. 1. pp. 37-57. 
+  <li> <a href="http://citeseer.nj.nec.com/merlo97attaching.html">
+  Attaching Multiple Prepositional Phrases: Generalized Backed-off Estimation
+  </a> (1997). P. Merlo and M. Crocker and C. Berthouzoz. In
+    Proceedings of Second Conference on Empirical Methods in Natural 
+    Language Processing, pages 149-155.
+  </ul>
+
+
+<p><li> 
+<b>Unsupervised Prepositional Phrase Attachment</b>
+<p>
+<a href="http://acl.ldc.upenn.edu/J/J93/J93-1005.pdf">
+Structural Ambiguity and Lexical Relations
+</a> (1993). Donald Hindle and Mats Rooth. <i>Computational
+Linguistics</i>. Volume 19, Number 1, March 1993, Special Issue on
+Using Large Corpora: I.
+   <p> <a href="http://acl.ldc.upenn.edu/P/P98/P98-2177.pdf">
+   Statistical Models for Unsupervised Prepositional Phrase Attachment
+   </a> (1998). Adwait Ratnaparkhi. In Proceedings of COLING-ACL 1998.
+
+<p>Notes: <a href="lecture13.pdf">Lecture #13 pdf</a>
+
+<p>Additional Readings:
+   <ul>
+   <li> <a href="http://www.cs.ualberta.ca/~lindek/papers/acl00.pdf">
+   An Unsupervised Approach to Prepositional Phrase Attachment using
+   Contextually Similar Words
+   </a> (2000). P. Pantel and D. Lin. In Proceedings of Association
+   for Computational Linguistics 2000. pp. 101-108. Hong Kong.
+   </ul>
+
+<p><li> 
+<b>Statistical Parsing using a Treebank: Context-Free Grammars and Lexicalized Models</b>
+
+<p>
+<a href="http://www.research.att.com/~mcollins/papers/thesis.ps">
+Head-Driven Statistical Models for Natural Language Parsing</a>.
+Michael Collins. PhD Dissertation, University of Pennsylvania,
+1999. <b>Read chapters 2 and 3, pages 31-102</b>
+
+<p> <a href="http://www.cis.upenn.edu/~dchiang/acl00-1.pdf">
+Statistical parsing with an automatically-extracted tree adjoining grammar
+</a> (2000). David Chiang. In Proceedings of ACL 2000, Hong Kong, October 2000,
+pages 456-463. 
+
+<p>Notes: <a href="lecture14.pdf">Lecture #14 pdf</a> and <a href="mcollins-thesisslides.pdf">additional slides</a> (from Michael Collins' thesis presentation)
+
+<p>Additional Readings:
+   <ul>
+   <li> <a
+   href="http://citeseer.nj.nec.com/charniak97statistical.html">Statistical
+   Parsing with a Context-Free Grammar and Word Statistics</a>. Eugene
+   Charniak. Proc. of 14th National Conf. on AI, AAAI Press. 1997.
+   <li> <a
+   href="http://citeseer.nj.nec.com/gildea01corpus.html">Corpus
+   Variation and Parser Performance</a>. Daniel Gildea. Proc. of 2001
+   Conf. on Empirical Methods in Natural Language Processing
+   (EMNLP). 2001. 
+   </ul>
+
+<p>Code:
+<ul>
+<li> <a href="../distrib/ckycfg/readme.html">Parser for CFGs</a>
+<li> <a href="../distrib/ckytig/readme.html">Parser for TIGs</a>
+</ul>
+
+<p><li> 
+<b>Parsing Algorithms and the Inside-Outside Algorithm for PCFGs</b>
+
+<p>
+<a href="http://www.cis.upenn.edu/~pereira/papers/io.pdf">
+Inside-Outside Reestimation from partially bracketed corpora</a>.
+Fernando Pereira and Yves Schabes. In 30th Annual Meeting of the
+Association for Computational Linguistics, pages 128-135, Newark,
+Delaware, 1992.
+<p>
+<i>Applications of stochastic context-free grammars using the
+Inside-Outside algorithm</i>. K. Lari and S. J. Young. Computer
+Speech and Language, 4:35-56, 1990.
+
+<p>Additional Readings:
+   <ul>
+   <li> <a href="http://acl.ldc.upenn.edu/E/E93/E93-1040.pdf">Parsing
+   the Wall Street Journal with the Inside-Outside Algorithm</a>. Yves
+   Schabes, Michael Roth and Randy Osborne. In Proc. of Sixth
+   Conference of the European Chapter of the Association for
+   Computational Linguistics, 1993. 
+   </ul>
+
+<p>Optional:
+   <ul>
+   <li> <i>Basic Methods of Probabilistic Context-Free
+   Grammars</i>. F. Jelinek, J. D. Lafferty and
+   R. L. Mercer. Technical Report RC 16374, IBM, Yorktown
+   Heights. 1990. 
+   </ul>
+
+<p><li> 
+<b>Co-training</b>
+
+<p><a href="http://citeseer.nj.nec.com/blum98combining.html">Combining
+Labeled and Unlabeled Data with Co-training</a>. Avrim Blum and Tom
+Mitchell. In Proc. of the Workshop on Computational Learning Theory
+(COLT98). 1998.
+
+<p><a href="http://citeseer.nj.nec.com/nigam00analyzing.html">Analyzing the 
+Effectiveness and Applicability of Co-training</a>. Kamal Nigam and
+Rayid Ghani. In Ninth International Conference on Information and
+Knowledge Management (CIKM-2000), pp. 86-93. 2000.
+
+<p>Additional Readings:
+   <ul>
+   <li> <a href="http://citeseer.nj.nec.com/goldman00enhancing.html">
+   Enhancing Supervised Learning with Unlabeled Data</a>. Sally
+   Goldman and Yan Zhou. Proc. 17th International Conf. on Machine
+   Learning (ICML-2000). pages 327--334, 2000.
+
+   <li> <a href="http://acl.ldc.upenn.edu/P/P02/P02-1046.pdf">
+   Bootstrapping</a>. Steven Abney. In Proc. of ACL-02. 2002.
+
+   <li> <a
+   href="http://www.cs.berkeley.edu/~dasgupta/papers/cotrain.ps">
+   PAC generalization bounds for co-training</a>. 
+   Sanjoy Dasgupta, Michael Littman and David McAllester.
+   Neural Information Processing Systems (NIPS), 2001.
+
+   </ul>
+
+
+<p><li> 
+<b>Active Learning, Sample Selection</b>
+
+<p> <a href="http://citeseer.nj.nec.com/argamon-engelson99committeebased.html">
+    Committee-Based Sample Selection for Probabilistic
+    Classifiers</a>. Shlomo Argamon-Engelson and Ido Dagan. in Journal of
+    Artificial Intelligence Research, 1999.
+
+<p> <a href="http://citeseer.nj.nec.com/471409.html"> On Minimizing
+    Training Corpus for Parser Acquisition</a>.  Rebecca Hwa. In
+    Proc. of Workshop on Computational Natural Language
+    Learning. 2001.
+
+<p>Additional Readings:
+   <ul>
+   <li> <a href="http://citeseer.nj.nec.com/roy01toward.html">
+    Toward Optimal Active Learning through Sampling Estimation of
+   Error Reduction
+   </a>. Nicholas Roy and Andrew McCallum. In Proc. 18th International
+    Conf. on Machine Learning. pages 441-448, 2001.
+
+   <li> <a href="http://citeseer.nj.nec.com/mccallum98employing.html">
+   Employing EM in pool-based active learning for text classification
+   </a>. Andrew K. McCallum and Kamal Nigam. In Proceedings of
+    ICML-98, 15th International Conference on Machine Learning. 
+    pages 350--358, 1998.
+
+   </ul>
+
+<p><li> 
+<b>Discriminative Models: Boosting</b>
+
+<p> <a href="http://citeseer.nj.nec.com/freund99short.html">
+    A short introduction to boosting
+    </a>. Y. Freund and R. Schapire. Journal of the Japanese
+    Society for Artificial Intelligence. 14(5), pages 771-780, 1999. 
+
+<p> <a href="http://www.vinartus.net/spa/98b.pdf">
+    Boosting Applied to Tagging and PP Attachment
+    </a>. Steven Abney, Robert E. Schapire, and Yoram
+   Singer. Proceedings of the 1999 Joint SIGDAT Conference on
+   Empirical Methods in Natural Language Processing and Very Large
+   Corpora, pp. 38-45. 1999.
+
+<p>Additional Readings:
+   <ul>
+
+   <li> <a href="http://citeseer.nj.nec.com/collins00discriminative.html">
+   Discriminative Reranking for Natural Language Parsing</a>. Michael
+   Collins. In Proc. 17th International Conf. on Machine Learning, pages
+   175-182, 2000.
+
+   <li> <a href="http://acl.ldc.upenn.edu/A/A00/A00-2005.pdf">
+   Bagging and Boosting a Treebank Parser</a>. John Henderson and Eric
+   Brill. In Proc. of 6th Applied Natural Language Processing
+   Conference, 2000.
+
+   </ul>
+
+</ol>
+
+<p>
+<h3>Misc Presentations</h3>
+<ul>
+<li> <a href="perl-tutorial.txt">Crash course in Perl</a>. <a href="perlsh.pl">Perl shell</a> for trying out the code fragments interactively (run with <code>perl perlsh.pl</code> and copy/paste code from the tutorial into the session).
+<li> <a href="project-ideas.txt">Project ideas</a>
+<li> <a href="project-requirements.txt">Project requirements</a>
+<li> <a href="http://www.cs.ualberta.ca/~lindek/acl02/style/">LaTeX and Microsoft Word style files for final project report</a>
+</ul>
+
+<p>
+<h3>Links to Useful Software and Corpora</h3>
+<ul>
+<li> <a href="http://lcg-www.uia.ac.be/%7Eerikt/research/np-chunking.html">NP Chunking datasets and results</a> by Eric Tjong Kim Sang.
+<li> <a href="http://www-nlp.stanford.edu/links/statnlp.html">Stanford Stat NLP Page</a>: links to various implementations of algorithms we have discussed.
+<li> <a href="http://www-nlp.stanford.edu/fsnlp/probparse/">FSNLP Parsers Page</a>: links to parsers available.
+</ul>
+
+<p>
+<h3>Citations</h3>
+<ul>
+<li> ACL: Annual Meeting of the Association of Computational Linguistics (<a href="http://www.aclweb.org/">ACL Web</a>)
+<li> ECML: European Conference on Machine Learning
+<li> AAAI: American Association for Artificial Intelligence
+<li> KDD: ACM International Conference on Knowledge Discovery and Data Mining
+<li> ANLP: Conference on Applied Natural Language Processing
+</ul>
+<hr>
+Last modified: $Date: 2003-09-03 00:53:00 $ <br>
+<i>[<a href="../index.html">Home</a>]</i><br>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+General ideas about the final project in CMPT-882-3:
+Anoop Sarkar <anoop at cs.sfu.ca>
+
+1. Take an algorithm we have looked at and analyze the complexity of
+   training/testing phase. Improve the algorithm and test accuracy
+   vs. speed against old algorithm.
+
+2. Add additional state information and see if performance improves or
+   not. e.g. add a transformation template that conditions on previous
+   transformation. how does this change the algorithm? does accuracy
+   improve on the tagging task.
+
+3. Combine labeled and unlabeled data. For example, implement HMMs and
+   use it with unlabeled data. How can this algorithm effectively use
+   unlabeled data. Another example is adapting the Yarowsky WSD
+   unsupervised algorithm to other algorithms like TBL, HMMs or MaxEnt
+   (it has already been extended to Naive Bayes classifiers as the
+   Co-training algorithm which we will cover later in class).
+
+4. Use transformation based learning, decision lists, and other
+   algorithms we have studied in an unsupervised setting. 
+
+5. Use discriminative methods to re-rank the output of a generative
+   model. For example, can one use the n-best output of an HMM (not
+   just the best tag, but the next best one, and so on) and then pick
+   between those using a discriminative method.
+
+6. Apply a learning algorithm previously not used for a particular
+   task: e.g. applications like spelling correction, name finding,
+   word alignment in parallel corpora, learning morphology, learning
+   lexical knowledge like subcategorization or syntactic frame
+   alternations, discourse structure, rhetorial structure, idioms,
+   semantic information, metaphors, etc.
+
+7. Explore conversion of an existing algorithm into a transducer and
+   then use the AT&T fsm toolkit to improve the running speed of the
+   training or test phase of that algorithm. 
+
+8. Apply sequence learning to parsing using Supertagging. 
+
+9. Active learning/sample selection: same as the combined use of
+   labeled data with unlabeled data but using the correct answer for
+   each instance of unlabeled data (assuming a human is training the
+   model).

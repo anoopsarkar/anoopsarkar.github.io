@@ -1,0 +1,11 @@
+input: Calvin saw Calvin
+scanner: 0 state: S -> SBJ VP # dot=0 i=0 j=0
+completer: 1 state: SBJ -> Calvin # dot=1 i=0 j=1
+predictor: 1 state: S -> SBJ VP # dot=1 i=0 j=1
+scanner: 1 state: VP -> V NP # dot=0 i=1 j=1
+predictor: 1 state: VP -> VP PP # dot=0 i=1 j=1
+completer: 2 state: V -> saw # dot=1 i=1 j=2
+predictor: 2 state: VP -> V NP # dot=1 i=1 j=2
+predictor: 2 state: NP -> NP PP # dot=0 i=2 j=2
+scanner: 2 state: NP -> Det N # dot=0 i=2 j=2
+no

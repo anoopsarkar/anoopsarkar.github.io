@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>MACM-300 - Introduction to Formal Languages and Automata</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+<h1>MACM-300 - Spring 2006 - Introduction to Formal Languages and
+Automata<br>
+</h1>
+<div class="sidebar">
+<p><img alt="(textbook image)" src="hopcroft-ullman-book.gif"
+ style="width: 114px; height: 169px;"></p>
+<h3><a href="#announcements">Announcements</a></h3>
+<h3><a href="#assignments">Assignments</a></h3>
+<h3><a href="#references">References</a></h3>
+<h3><a href="#readings">Weekly Readings</a></h3>
+<h3><a href="#readme">Course Policies</a> <small>(first time here?
+read this)</small></h3>
+</div>
+<div class="main">
+<ul>
+  <li><span style="font-weight: bold;">Instructor</span>: <a
+ href="http://www.cs.sfu.ca/%7Eanoop/">Dr. Anoop Sarkar</a></li>
+  <li><span style="font-weight: bold;">Location</span>: Acad Quad, AQ 5030</li>
+  <li><span style="font-weight: bold;">Time</span>: 10:30-11:20am MWF</li>
+  <br>
+  <li><span style="font-weight: bold;">gosfu Term:</span> 1061</li>
+  <li><span style="font-weight: bold;">gosfu Class Number:</span> 14100</li>
+  <br>
+  <li><span style="font-weight: bold;">Mailing List</span>: macm-300
+_at_ sfu.ca (always prefix "macm-300: " to all messages sent to this
+list)<br>
+    <a href="http://www.cs.sfu.ca/CC/Hypermail/macm-300/">Mailing list
+archives</a></li>
+  <br>
+  <li><span style="font-weight: bold;">Office</span>: TASC 9427</li>
+  <li><span style="font-weight: bold;">Office hours</span>: Mon, 11:30a-12:30p</li>
+</ul>
+<div class="blurb">
+<p>The goal of this course is to begin to understand the foundations of
+computation. Various models of computation exist, all of which
+capture some fundamental aspect of computation. We will
+concentrate on three classes of models: models with finite amount of
+memory (finite-state automata); models with stack memory (push-down
+automata); and unrestricted models (Turing machines). <br>
+<br>
+The notion
+of a formal grammar arises from the need to formalize the informal
+notions of grammar and language. Many formal grammars were
+invented: right-linear grammars, context-free grammars and
+unrestricted grammars. These grammars can be placed in a natural
+hierarchy. <br>
+<br>
+Surprisingly, there is a deep connection between these
+grammars, the strings they generate (their language), and the models of
+computation introduced above. This course will also briefly cover
+the impact of formal language theory for many computer science
+applications: in compilers, natural language processing, and program
+verification.</p>
+</div>
+<p>
+More details: <a href="MACM-300-Sarkar-06-1.txt">Course outline</a>
+</p>
+<div class="content">
+<h2><a name="announcements">Announcements</a></h2>
+<ul>
+  <li><span style="font-weight: bold;">Grading for the course:</span><br>
+  </li>
+  <ul>
+    <li><span style="font-weight: bold;">Homeworks</span>: 35%</li>
+    <li><span style="font-weight: bold;">Midterm Exam</span>: 25%</li>
+    <li><span style="font-weight: bold;">Final Exam</span>: 40%</li>
+  </ul>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li><span style="font-weight: bold;">Jan 9, 2006:</span>
+First day of class</li>
+    <li><span style="font-weight: bold;">Apr 7, 2006:</span> Last day
+of class</li>
+    <li><span style="font-weight: bold;">Midterm Exam: </span><span style="font-weight: bold;">Mon, Mar 6, 2006</span><span style="font-weight: bold;"></span></li>
+    <li><span style="font-weight: bold;">Final Exam: </span><span style="font-weight: bold;">8:30am-11:30am, Apr 10, 2006, Room: AQ 5006</span><span style="font-weight: bold;"></span></li>
+  </ul>
+  <li>Wed, Oct 12, 2005: Course web page created</li>
+</ul>
+<h2><a name="assignments">Assignments</a></h2>
+Note that all homeworks are due in class on the due date.
+<ol>
+  <li><a href="hw1.pdf">Homework #1</a></li>
+  <li><a href="hw2.pdf">Homework #2</a></li>
+  <li><a href="hw3.pdf">Homework #3</a></li>
+  <li><a href="hw4.pdf">Homework #4</a></li>
+  <li><a href="hw5.pdf">Homework #5</a></li>
+  <li><a href="hw6.pdf">Homework #6</a></li>
+  <li><a href="hw7.pdf">Homework #7</a></li>
+  <li><a href="hw8.pdf">Homework #8</a></li>
+  <li><a href="hw9.pdf">Homework #9</a></li>
+</ol>
+<p>
+<b>Important note on assignment submission and development</b>: Do not
+collaborate on solving the homework. Do not discuss the solutions of the
+homework with others outside class. Please bring any questions you
+might have to class for discussion.
+</p>
+<h2><a name="references">Textbook and References</a></h2>
+<ul>
+  <li> <span style="font-family: serif; font-weight: bold;">Textbook:</span></li>
+  <ul>
+    <li><span style="font-style: italic;">Introduction to the Theory of
+Computation, </span>Michael Sipser, Thompson Course Technology, 2006</li>
+      </font></li>
+  </ul>
+  <li><span style="font-weight: bold;">Reference Textbooks:</span> <br>
+  </li>
+  <ul>
+    <li><span style="font-style: italic;">Introduction to Automata
+Theory, Languages, and Computation: 2/e, </span>John Hopcroft,
+Rajeev Motwani and Jeffrey Ullman, Addison-Wesley, 2001<br>
+    </li>
+    <li><span style="font-style: italic;">An Introduction to Formal
+Languages and Automata, </span>Peter Linz, Jones and Bartlett, 2000</li>
+  </ul>
+</ul>
+<p>Thanks to Tugkan Batu for his homeworks, exams and their solutions from
+his MACM 300 course materials. And thanks to Chung-hye Han for notes
+created from Sipser, and additional homework ideas. We will follow
+Sipser's textbook fairly closely for this course.</p> 
+<h2><a name="readings">Syllabus and Readings</a></h2>
+<ol>
+  <li>Preliminaries: sets, proof methods</li>
+  <ul>
+  <li><i>Reading</i>: Chp 0, Sipser</li>
+  <li><i>Notes</i>: <a href="cantor.pdf">Notes #1</a></li>
+  </ul>
+  <li>Finite-state automata, Regular languages</li>
+  <ul>
+  <li><i>Reading</i>: Chp 1, Sipser</li>
+  <li><i>Notes</i>: <a href="fsa.pdf">Notes #2</a></li>
+  <li><i>Notes</i>: <a href="fst.pdf">Notes #3</a></li>
+  <li><i>Notes</i>: <a href="fsa_apps.pdf">Notes #4</a></li>
+  <li><i>Notes</i>: <a href="pump.pdf">Notes #5</a></li>
+  <li>Regular expressions and regular languages</li>
+  <li>Finite-state automata: deterministic and non-deterministic automata</li>
+  <li>Pumping lemma for regular languages, closure properties</li>
+  <li>Minimizing the size of finite-state automata</li>
+  </ul>
+  <li>Context-free grammars and context-free languages
+  <ul>
+  <li><i>Reading</i>: Chp 2, Sipser</li>
+  <li><i>Notes</i>: <a href="cfg.pdf">Notes #6</a></li>
+  <li><i>Notes</i>: <a href="cfg_apps.pdf">Notes #7</a></li>
+  <li><i>Notes</i>: <a href="subst.pdf">Notes #8</a></li>
+  <li>Left/right-linear context-free grammars</li>
+  <li>Normal forms for context-free grammars, the hardest context-free language</li>
+  <li>Ambiguity and parsing, deterministic context-free languages</li>
+  <li>Pumping lemma for context-free languages, closure properties</li>
+  </ul>
+  <li>Turing Machines, undecidable problems</li>
+  <ul>
+  <li><i>Notes</i>: <a href="complexity.pdf">Notes #9</a></li>
+  <li>Alternative models of computation</li>
+  <li>Hierarchy of languages and automata</li>
+  </ul>
+  <li>Applications (covered briefly with each topic above): <ul> <li>compilers,</li> <li>structured databases,</li> <li>natural language processing,</li> <li>program verification,</li> <li> applications of automata theory to logic</li> 
+  </ul>
+  </li>
+</ol>
+<h2><a name="readme">Course Expectations and Policies</a></h2>
+<ul>
+  <li>Students are expected to attend all classes: announcements
+about assigned readings, homeworks and exams will be made available at
+the start of each class. Such announcements may not be made on this web
+page, so don't rely on information here instead of attending class. </li>
+  <li> The final grade will be assigned based on the percentage
+split between the requirements (given above in the <a href="#announcements">
+Announcements</a> section). The grade will be based on a percentage
+cutoff, e.g. above 94% overall might be an A+. The actual cutoffs will
+be determined based on my estimate of the course difficulty at the end
+of the semester. </li>
+  <li>Late assignments will be graded as follows: marks earned
+for assignments submitted after the due date and time will be
+multiplied by a <span style="font-style: italic;">0.8</span> penalty
+(even if it was late on the same day as the due date). Submissions
+two days late will get a penalty of 0.6 * grade, and so on until
+the penalty reaches 0.2 * grade (Sat, Sun and holidays are included).
+Any submission identical to a solution key will get zero marks.
+</li>
+  <li> If you must miss an exam because of illness, you are
+required to contact me prior to the exam either by email or a message
+in my mailbox. A valid note from a medical doctor is required
+specifying date of absence and reason. If you miss an exam due to
+valid medical reasons you will be graded on your performance on the
+rest of the course. <span
+ style="font-weight: bold;">Make
+up exams will not be given under any circumstances</span>. </li>
+  <li>Email policy: <span style="font-weight: bold;">Use the
+prefix "macm-300: " on all your messages</span>. If you do not
+include the prefix, then the mail might go unanswered. Do not send
+general questions about the class or the material to me directly.
+Instead use the class mailing list to post your question. </li>
+  <li>For personal advising come during my office hours
+(posted above).</li>
+  <li>Copying on assignments or exams will be taken very seriously.
+  If
+you are caught cheating on an assignment or an exam you will be
+hauled off for disciplinary action. There will be no assignments
+to be solved as a group. Despite this, students often meet to discuss
+the assignments.  You have to be very careful that you do not take
+any notes or copy during these meetings. </li>
+  <li>For more on academic dishonesty read the <a
+ href="http://www.sfu.ca/policies/teaching/index.htm">University
+ code
+of academic honesty</a>. </li>
+  <li>I will give partial credit on exams.
+If you provide an incorrect answer but your work shows some
+understanding you will get partial credit, but if you have the
+correct answer, and your work shows a misunderstanding of the course
+material you will lose marks.</li> </ul> </div> <hr> <address>anoop
+at cs.sfu.ca</address> </div> </body> </html>

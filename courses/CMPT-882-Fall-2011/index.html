@@ -1,0 +1,302 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<title>CMPT 882 (Special Topics in AI) - Statistical Machine Translation</title> 
+ 
+<!--
+included within course.css:
+<style type="text/css"> 
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+body {
+	margin:0;
+	padding:0;
+}
+</style> 
+-->
+ 
+<link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css"/>
+<script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script> 
+<link rel="stylesheet" href="course.css">
+
+</head> 
+ 
+<body class="yui3-skin-sam"> 
+
+<h1>CMPT 882 - Statistical Machine Translation: Fall 2011</h1>
+
+<div class="header">
+  <table>
+    <tbody>
+      <tr>
+	<td>
+	  <ul>
+            <li><b>CMPT 882 (Special Topics in AI) - Statistical Machine Translation</b></li>
+	    <li><b>Semester</b>: Fall 2011 (1117)</li>
+	    <li><b>Instructor</b>: <a
+	    href="http://www.cs.sfu.ca/~anoop/" target="_blank">Anoop Sarkar</a></li>
+	    <li><b>Meeting Information</b>:
+	    <ul>
+	      <li>Tu 10:30AM - 11:20AM in WMC 2268</li>
+	      <li>Th 09:30AM - 11:20PM in WMC 2268</li>
+	    </ul>
+	    <li><b>Dates</b>: Sep 6, 2011 - Dec 1, 2011</li>
+	  </ul>
+	</td>
+	<td>
+	  <img style="width:150px; padding:10px;" src="rosetta1.png"/>
+	  <img style="width:150px; padding:10px;" src="rosetta2.png"/>
+	  <img style="width:150px; padding:10px;" src="rosetta3.png"/>
+	</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--BEGIN MAIN TAB VIEW =============================== --> 
+ 
+<div id="main" class="tabview"> 
+    <ul class="tabview-tabs"> 
+	<li><a href="#about">About</a></li>
+	<li><a href="#textbook">Textbook</a></li>
+	<li class="tabview-active"><a href="#readings">Readings</a></li>
+	<li><a href="#homeworks">Homeworks</a></li>
+        <li><a href="#cal">Calendar</a></li> 
+        <li><a href="#agenda">Agenda</a></li>
+  </ul>
+   <div class="content"> 
+	<div id="about">
+	  <h3>About this course</h3>
+	  <ul>
+        <li><b>Class Mailing List:</b> cmpt-882@sfu.ca (always use 'cmpt-882:' prefix on Subject line)
+        <ul><li><a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-882/">Mailing list archives</a></li></ul>
+        </li>
+	    <li><b>Location</b>: Burnaby Mountain Campus</li>
+	    <li><b>Class number</b>: 12577</li>
+	    <li><b>Section</b>: D100 </li>
+	    <li><b>About the course</b>:
+	    <div class="blurb">
+	      <p>This special topics course will be focused on statistical machine translation (data-driven approaches that translate speech or text from one human language to another). Three major paradigms will be covered: word-based translation, phrase-based translation, and syntax-based translation. Students will gain hands-on experience with building translation systems and working with real-world data, and they will learn how to formulate and investigate research questions in machine translation. </p>
+	    </div></li>
+	    <li><b>Course Outline</b>: <a
+	    href="https://portal.cs.sfu.ca/portal/outlines/1117-CMPT-882-G100/" target="_blank">on CS Portal</a></li>
+	    <li><span style="font-weight: bold;">Grading for the course:</span>
+	    <ul>
+	      <li><span style="font-weight: bold;">3 homeworks:</span> 10% each (total of 30%)</li>
+	      <li><span style="font-weight: bold;">Class participation (in-class + email):</span> 15%</li>
+	      <li><span style="font-weight: bold;">2 in-class presentations:</span> 5% each (total of 10%)</li>
+	      <li><span style="font-weight: bold;">Project proposal:</span> 5%</li>
+	      <li><span style="font-weight: bold;">Final project write-up:</span> 15%</li>
+	      <li><span style="font-weight: bold;">Final project results:</span> 25%</li>
+	    </ul>
+	  </li>
+	  </ul>
+	</div>
+	<div id="textbook">
+	  <h3>Textbook and References</h3>
+	    <h4>Textbook:</h4>
+	    <ol>
+	      <li>
+	      <table>
+		<tbody>
+		  <tr>
+		    <td><img style="width: 103px; height: 140px;" alt="" title="" src="statmtbook.jpg"></td>
+		      <td>Statistical Machine Translation by Philipp Koehn. Hardcover, 488 pages. Publisher: Cambridge University Press. ISBN-10: 0521874157. ISBN-13: 978-0521874151<br>
+			<br>
+			The book also has a <a
+			href="http://statmt.org/book/">webpage</a>. In
+			particular visit it for the <a
+			href="http://statmt.org/book/errata.html">Errata</a>.
+                        <br>
+	                We will follow the material in this textbook closely but not in all aspects. We will also read research papers as listed in the Syllabus.
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+	      </li>
+
+	</div>
+
+	<div id="readings">
+	  <h3>Readings</h3>
+<ol>
+  <li>Introduction to Statistical Machine Translation
+  <ul>
+    <li>Sep 6, 8, 13, 15</li>
+      <ul><li>Sep 15 truncated to 1 hour due to Distinguished Lecture</li></ul>
+    <li>Chp 1-2, Koehn. (see Textbook tab)</li>
+    <li>Knight, <a href="http://www.isi.edu/natural-language/mt/aimag97.pdf">Automating knowledge acquisition for machine translation</a>, AI Magazine 18(4), 1997.</li>
+    <li>Lopez, <a href="http://www.cs.jhu.edu/~alopez/papers/survey.pdf">Statistical Machine Translation</a>. In
+    ACM Comp. Sur. 40(3): Article 8, pages 1-49, August 2008. Read the Errata for this survey on <a href="http://www.cs.jhu.edu/~alopez/">Adam's web page</a>.</li>
+    <li>Chiang, Huang and Knight, Slides on <a href="http://nlg.isi.edu/teaching/cs599mt/Introduction.pdf">introduction to the statistical approach to MT</a>.</li>
+    <li>Lopez, <a href="http://www.cs.jhu.edu/~alopez/esslli2010.html">Statistical Machine Translation</a>. A 1 week course on SMT taught at ESSLLI 2010.</li>
+  </ul>
+  </li>
+  <li>Decoding for phrase-based SMT
+  <ul>
+    <li>Sep 20, 22, 27</li>
+    <li>Chp 6, Koehn</li>
+    <li>Koehn, <a href="http://homepages.inf.ed.ac.uk/pkoehn/publications/pharaoh-amta2004.pdf">Pharaoh: a Beam Search Decoder for Phrase-Based Statistical Machine Translation Models</a>, AMTA 2004.</li>
+    <li>Koehn, <a href="http://homepages.inf.ed.ac.uk/pkoehn/publications/tutorial2006.pdf">Statistical Machine Translation: the basic, the novel, and the speculative</a>, Tutorial at EACL 2006.
+    <li>Koehn, Och, Marcu, <a href="http://aclweb.org/anthology/N/N03/N03-1017.pdf">Statistical Phrase-Based Translation</a>. HLT NAACL 2003.</li>
+  </ul>
+  <li>Evaluation
+  <ul>
+    <li>Sep 29</li>
+    <li>Chp 8, Koehn</li>
+    <li>Papineni et al, <a href="http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf">BLEU: A Method for Automatic Evaluation of Machine Translation</a>. ACL 2002.</li>
+    <li>Papineni, <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Fall-2003/papineni.pdf">Introduction to SMT and the Bleu metric</a>. Presentation Slides. (for description of Bleu, jump to pages 57-75)</li>
+  </ul>
+  </li>
+  <li>Minimum Error Rate Training of Log-linear models for SMT
+  <ul>
+    <li>Oct 4, 6</li>
+    <li>Chp 9.3, Koehn</li>
+    <li>Och, <a href="http://www.aclweb.org/anthology/P03-1021">Minimum Error Rate Training in Statistical Machine Translation</a>. ACL 2003.</li>
+    <!-- <li>Link: Vogel, <a href="http://www.cs.cmu.edu/afs/cs/project/cmt-55/lti/Courses/731/www/Spring-11/Slides/MT-Class-110216-MER.ppt">MERT slides</a>. (note that the scores P(e|f) used in the slides are negative log probabilities).</li>  -->
+    <li>Link: Zaidan, <a href="http://www.cs.jhu.edu/~ozaidan/zmert/">zmert</a> and <a href="http://www.cs.jhu.edu/~ozaidan/zmert/zaidan09_ZMERT.pdf">zmert paper</a>.</li>
+  </ul>
+  </li>
+  <li>Word Alignment
+  <ul>
+    <li>Oct 11, 13, 18</li>
+    <li>Chp 4, Koehn</li>
+    <li><a href="mt-wkbk.pdf">Kevin Knight's MT Workbook</a>. We will discuss sections 15-37.</li>
+    <li>Vogel, <a href="http://aclweb.org/anthology-new/C/C96/C96-2141.pdf">HMM-Based Word Alignment in Statistical Translation</a>, COLING, 1996.</li>
+    <li>Zhao and Gildea, <a href="http://www.cs.rochester.edu/~gildea/pubs/zhao-gildea-emnlp10.pdf">A Fast Fertility Hidden Markov Model for Word Alignment Using MCMC</a>. In EMNLP 2010.</li>
+    <li>Och and Ney, <a href="http://aclweb.org/anthology/J/J03/J03-1002.pdf">A Systematic Comparison of Various Statistical Alignment Models</a>. Comput. Ling. v29, 2003.</li>
+  </ul>
+  </li>
+
+  <li>Hierarchical Phrase-based SMT and LR Decoding
+  <ul>
+    <li>Oct 20, 25</li>
+    <li>Chiang, <a href="http://www.mitpressjournals.org/doi/pdf/10.1162/coli.2007.33.2.201">Hierarchical phrase-based translation</a>. 2007. Comput. Ling. 33(2):201-228.</li>
+    <ul><li><a href="students/hiero.pdf">slides</a> by M. Razavi, M. Siahbani and R. Vadlapudi.</li></ul>
+    <li>Watanabe, Tsukada and Isozaki. <a href="http://aclweb.org/anthology/P/P06/P06-1098.pdf">Left-to-Right Target Generation for Hierarchical Phrase-based Translation</a>. COLING-ACL 2006.</li>
+    <ul><li><a href="students/watanabe.pdf">slides</a> by M. Razavi, M. Siahbani and R. Vadlapudi.</li></ul>
+    <li>Huang and Mi. <a href="http://aclweb.org/anthology/D/D10/D10-1027.pdf">Efficient Incremental Decoding for Tree-to-String Translation</a>. EMNLP 2010.</li>
+    <li>Huang and Sagae. <a href="http://aclweb.org/anthology/P/P10/P10-1110.pdf">Dynamic Programming for Linear-time Incremental Parsing</a>. ACL 2010.</li>
+  </ul>
+  </li>
+
+  <li>Discriminative Re-ranking
+  <ul>
+    <li>Oct 27, Nov 1</li>
+    <li>Shen, Sarkar and Och, <a href="http://aclweb.org/anthology/N/N04/N04-1023.pdf">Discriminative Re-ranking for SMT</a>. HLT NAACL 2004.</li>
+    <li>Hopkins and May, <a href="http://aclweb.org/anthology/D/D11/D11-1125.pdf">Tuning as Ranking</a>. EMNLP 2011.</li>
+    <li>Cer, Manning, Jurafsky, <a href="http://aclweb.org/anthology/N/N10/N10-1080.pdf">The Best Lexical Metric for Phrase-Based Statistical MT System Optimization</a>. NAACL 2010.</li>
+<!--    <li>Mauser, Hasan, Ney, <a href="http://www-i6.informatik.rwth-aachen.de/publications/download/538/Mauser-LREC-2008.pdf">Automatic Evaluation Measures for Statistical Machine Translation System Optimization</a>. LREC 2008.</li> -->
+  </ul>
+  </li>
+
+  <li>Syntactic Re-ordering for SMT
+  <ul>
+    <li>Nov 3, 8</li>
+    <li>Collins, Koehn, Ku&ccaron;erov&aacute;, <a href="http://aclweb.org/anthology/P/P05/P05-1066.pdf">Clause restructuring for statistical machine translation</a>. ACL 2005.</li>
+    <ul><li>Wang, Collins, Koehn, <a href="http://aclweb.org/anthology/D/D07/D07-1077.pdf">Chinese syntactic reordering for statistical machine translation</a>. EMNLP 2007.</li></ul>
+    <li>Xu et al, <a href="http://aclweb.org/anthology/N/N09/N09-1028.pdf">Using a dependency parser to improve SMT for subject-object-verb languages</a>. HLT NAACL 2009.</li>
+    <li>Xia, McCord, <a href="http://aclweb.org/anthology/C/C04/C04-1073.pdf">Improving a Statistical MT System with Automatically Learned Rewrite Patterns</a>. COLING 2004.</li>
+    <li>Talbot et al, <a href="http://aclweb.org/anthology/W/W11/W11-2102.pdf">A lightweight evaluation framework for machine translation reordering</a>. WMT 2011.</li>
+  </ul>
+  </li>
+
+  <li>Discriminative Learning for MT
+  <ul>
+    <li>Nov 10, 17</li>
+    <li>Liang et al, <a href="http://aclweb.org/anthology/P/P06/P06-1096.pdf">An End-to-End Discriminative Approach to Machine Translation</a>. ACL-COLING 2006.</li>
+    <li>Tillmann and Zhang, <a href="http://aclweb.org/anthology/P/P06/P06-1091.pdf">A Discriminative Global Training Algorithm for Statistical MT</a>. ACL-COLING 2006.</li>
+    <li>Dyer et al, <a href="http://www.aclweb.org/anthology/P/P11/P11-1042.pdf">Unsupervised Word Alignment with Arbitrary Features</a>. ACL 2011.</li>
+    <ul><li>Berg-Kirkpatrick et al, <a href="http://aclweb.org/anthology/N/N10/N10-1083.pdf">Painless Unsupervised
+    Learning with Features</a>. NAACL 2010.</li></ul>
+  </ul>
+  </li>
+
+  <li>Discriminative Tuning for MT
+  <ul>
+    <li>Nov 15, 17</li>
+    <li>Chiang, Wang, Knight, <a href="http://aclweb.org/anthology/N/N09/N09-1025.pdf">11,001 new features for statistical machine translation</a>. NAACL HLT 2009.</li>
+    <ul><li>Watanabe et al, <a href="http://aclweb.org/anthology/D/D07/D07-1080.pdf">Online Large-Margin Training for
+    Statistical Machine Translation</a>. EMNLP-CoNLL 2007.</li></ul>
+    <li>Blunsom, Cohn, Osborne, <a href="http://aclweb.org/anthology/P/P08/P08-1024.pdf">A Discriminative Latent Variable Model for Statistical Machine Translation</a>. ACL 2008.</li>
+  </ul>
+  </li>
+
+  <li>Syntax-based SMT
+  <ul>
+    <li>Nov 17, 22</li>
+    <li>GHKM, <a href="http://aclweb.org/anthology/N/N04/N04-1035.pdf">What's in a translation rule?</a>. NAACL HLT 2004. (dll4)</li>
+    <ul><li>DeNeefe et al, <a href="http://aclweb.org/anthology/D/D07/D07-1079.pdf">What Can Syntax-Based MT Learn from Phrase-Based MT?</a> EMNLP-CoNLL 2007. (rahman)</li></ul>
+    <li>Nov 22</li>
+    <li>GHKMDWT, <a href="http://aclweb.org/anthology/P/P06/P06-1121.pdf">Scalable Inference and Training of Context-Rich Syntactic Translation Models</a>. COLING-ACL 2006. (mrazavi, msiabhan, rvadlapu)</li>
+    <li>Nov 24</li>
+    <li>Graehl, Knight, May, <a href="http://aclweb.org/anthology/J/J08/J08-3004.pdf">Training Tree Transducers</a>. Comput. Ling. 34(3). 2008. (mrazavi, msiabhan, rvadlapu)</li>
+  </ul>
+  </li>
+
+  <li>Miscellaneous Topics in SMT
+  <ul>
+    <li>Nov 24</li>
+    <ul>
+    <li>Ravi, Knight. <a href="http://aclweb.org/anthology/P/P11/P11-1002.pdf">Deciphering Foreign Language</a>. ACL 2011. (aca69)</li> 
+    <li>Koehn and Hoang, <a href="http://aclweb.org/anthology/D/D07/D07-1091.pdf">Factored Translation Models</a>. EMNLP-CoNLL 2007. (mwhitney)</li>
+    </ul>
+    <li>Nov 29</li>
+    <ul>
+    <li>Genzel, Uszkoreit, Och. <a href="http://aclweb.org/anthology/D/D10/D10-1016.pdf">"Poetic" Statistical Machine Translation: Rhyme and Meter</a>. EMNLP 2010. (ssaghaei)</li>
+    <li>Greene, Bodrumlu, Knight. <a href="http://aclweb.org/anthology/D/D10/D10-1051.pdf">Automatic Analysis of Rhythmic Poetry with Applications to Generation and Translation</a>. EMNLP 2010. (mengyunk)</li>
+    </ul>
+    <li>Dec 1</li>
+    <ul>
+    <li>Tromble et al, <a href="http://aclweb.org/anthology/D/D08/D08-1065.pdf">Lattice Minimum Bayes-Risk Decoding for Statistical Machine Translation</a>. EMNLP 2008. (hosseinh)</li> 
+    <li>Rosti et al, <a href="http://aclweb.org/anthology/N/N07/N07-1029.pdf">Combining Outputs from Multiple Machine Translation Systems</a>. NAACL 2007. (bhull)</li>
+    <li>DeNero et al, <a href="http://aclweb.org/anthology/N/N10/N10-1141.pdf">Model Combination for Machine Translation</a>. NAACL 2010. (abakhtia)</li>
+    </ul>
+    <!-- <li>Nakov and Ng, <a href="http://aclweb.org/anthology/P/P11/P11-1130.pdf">Translating from Morphologically Complex Languages: A Paraphrase-Based Approach</a>. ACL 2011.</li>
+    <li>Cohn and Lapata, <a href="http://aclweb.org/anthology/P/P07/P07-1092.pdf">Machine Translation by Triangulation: Making Effective Use of Multi-Parallel Corpora</a>. ACL 2007.</li> -->
+  </ul>
+  </li>
+
+</ol>
+	</div>
+
+	<div id="homeworks">
+	  <h3>Homeworks</h3>
+	  <ol>
+          <li><a href="hw1.pdf">Homework #1</a>. Sep 08 - Sep 29. 10% </li>
+          <li><a href="hw2.pdf">Homework #2</a>. Sep 29 - Oct 13. 10% </li>
+          <li><a href="hw3.pdf">Homework #3</a>. Oct 14 - Oct 28. 10% </li>
+          </ol>
+        <h3>Homework Submission</h3>
+        <ul>
+        <li>Your homework will be submitted electronically using the department-provided submission server. Connect to
+        the submission server by going to the URL: <a href="https://courses.cs.sfu.ca/">https://courses.cs.sfu.ca/</a>
+        (your grades for the homeworks will also be tracked on the same web page)</li>
+	    <li>All homeworks are due by 11:45 PM on the homework due date.</li>
+        </ul>
+	</div>
+
+        <div id="cal"> 
+            <p><iframe src="http://www.google.com/calendar/embed?src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&ctz=America/Vancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p> 
+        </div> 
+    <div id="agenda"> 
+    <iframe src="https://www.google.com/calendar/b/0/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qgs97od9ef8t1582k2rqomv5ho%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FVancouver" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+</div>
+</div> 
+</div> 
+<script type="text/javascript"> 
+YUI({filter:'raw'}).use("yui", "tabview", function(Y) {
+    var tabview = new Y.TabView({srcNode:'#main'});
+    tabview.render();
+});
+</script> 
+ 
+<!--END SOURCE CODE FOR EXAMPLE =============================== --> 
+</body>
+</html> 

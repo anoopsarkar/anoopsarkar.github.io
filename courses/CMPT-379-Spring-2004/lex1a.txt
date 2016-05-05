@@ -1,0 +1,3 @@
+T_A a
+T_B abb
+T_C a*b+

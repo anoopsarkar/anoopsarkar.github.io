@@ -1,0 +1,70 @@
+SFU                       Computing Science                       04-3
+________________________________________________________________________
+CMPT 379-3 D1"    Principles of Compiler Design
+ Instructor: A. Sarkar                         SFU
+
+________________________________________________________________________
+
+OBJECTIVE/DESCRIPTION:
+
+This course covers the fundamentals of compiler theory used to build
+compilers for high level programming languages.  Algorithms used in
+building a compiler and their underlying theoretical foundations will be
+covered.  We will cover each component of a compiler including lexical
+analysis, parsing, code generation, code optimization and type checking.
+Students will also implement a working compiler starting from lexical
+analysis all the way to code generation and optimization.
+
+TOPICS:
+
+   o Overview of a compiler
+   o Lexical Analysis:  formal language theory:  regular expressions and
+     finite-state machines, scanners, symbol tables
+   o Simple Parsing:  context-free grammars, derivation trees, ambiguity,
+     sentential forms, backtracking parsers, top-down versus bottom-up
+     parsing
+   o LL(1) parsing:  removing left-recursion, left-factoring, error
+     handling
+   o Shift-reduce parsers:  handles and handle pruning, shift/reduce
+     conflicts
+   o SLR/LR parsing:  characteristic automata, action and goto functions,
+     viable prefix, introduction to LALR parsing
+   o Type checking:  typing rules, unification, types as inferencing rules,
+     attribute grammars
+   o Semantics and code generation:  generating code from attribute
+     grammars, flow of control, handling memory, garbage collection,
+     generating code for conditionals, arrays, and procedures
+   o Optimization:  peephole optimization, redundant instruction
+     elimination, dataflow analysis and global optimization (an
+     introduction)
+
+GRADING:
+
+The grade distribution will be handed out at the start of classes.
+
+TEXTBOOKS:
+
+   o Compilers:  Principles, Techniques and Tools, A.V. Aho, R. Sethi, and
+     J.D. Ullman, Addison-Wesley, 1986
+
+REFERENCES:
+
+   o Engineering a Compiler, Keith D. Cooper and Linda Torczon, Morgan
+     Kaufman Publishers, 2003
+
+PREREQUISITES/COREQUISITES:
+
+Macm 201 ( or CMPT 205), CMPT 150 and CMPT 201
+
+Distributed:  June 28, 2004
+
+.......................................................................
+
+Academic Honesty plays a key role in our efforts to maintain a high
+standard of academic excellence and integrity.  Students are advised that
+ALL acts of intellectual dishonesty are subject to disciplinary action by
+the School; serious infractions are dealt with in accordance with the Code
+of Academic Honesty (T10.02)
+(http://www.sfu.ca/policies/teaching/t10-02.htm).  Students are encouraged
+to read the School's Statement on Intellectual Honesty
+(http://www.cs.sfu.ca/undergrad/Policies/honesty.html).

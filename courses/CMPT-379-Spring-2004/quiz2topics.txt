@@ -1,0 +1,29 @@
+
+Quiz 2 Topics
+-------------
+
+1. Context-free grammars, 
+   - writing CFGs given a specification
+   - Recognition, is string x in L(G) for CFG G
+   - Write down in English what the language L(G) represents
+   - Parse trees from CFGs
+   - Leftmost and rightmost derivations
+   - Ambiguity
+   - Non-CF Languages
+2. Grammar transformations:
+   - Left transform
+   - Eliminating left recursion
+3. FIRST and FOLLOW sets
+4. Top-down parsing
+   - Backtracking parsers
+   - Predictive table driven parsing
+   - LL(1) grammars
+5. Bottom-up parsing
+   - shift/reduce table parsing using action/goto table
+   - handle and viable prefix
+   - Closure over dotted rules (items)
+   - Constructing LR(0) items and action/goto table
+   - LR(0) grammars
+   - LR(0) conflicts
+   - Simple LR: SLR(1) parsing
+

@@ -1,0 +1,40 @@
+#                  Userid cgw-holygrail.txt cgw-testset.txt    score
+               Bluemoment            -8.370          -8.422   -8.396
+            GreatLinguist            -8.147          -8.719   -8.433
+                 chiachia            -9.585          -8.337   -8.961
+                      WVU           -10.263          -7.861   -9.062
+          GFS/fingerezard            -8.229         -10.233   -9.231
+several_seditious_scribes            -8.676          -9.955   -9.316
+          EuropeanSwallow            -7.892         -10.954   -9.423
+                  titanic           -10.490          -8.612   -9.551
+                 clodomon           -12.244          -8.731  -10.488
+                     will            -9.498         -14.399  -11.948
+           The_Synologist            -7.848         -16.479  -12.163
+                numbirtle           -10.661         -14.646  -12.653
+              stingpanpan           -15.832         -10.697  -13.264
+              knuckleochu           -12.658         -14.772  -13.715
+   StrugglingForDeadlines           -10.253         -17.906  -14.080
+                faceartle           -14.352         -16.884  -15.618
+                   anyway           -24.308          -8.218  -16.263
+               cheeseichu           -39.948          -9.078  -24.513
+              Red Herring           -40.171          -9.297  -24.734
+Thinker_Sailor_Coder_S.py           -69.761         -14.006  -41.883
+        Hirundo Spilodera           -96.348          -9.667  -53.008
+     DROP TABLE Students;           -84.442         -23.862  -54.152
+           Bloodycoconuts           -96.091         -20.273  -58.182
+                 faceumon           -94.099         -35.295  -64.697
+                    IIIII          -116.773         -18.620  -67.697
+                 muckemon          -125.223         -15.308  -70.266
+       int( exp(t)/t, t )          -129.397         -15.293  -72.345
+                linlinlin           -88.828         -76.336  -82.582
+                 wimpymon          -103.330         -73.610  -88.470
+                 pinortle          -133.586         -50.920  -92.253
+               twerpyzard          -129.407         -91.152 -110.280
+               knockortle          -133.586        -108.728 -121.157
+            PinkPartyPony          -133.586        -108.829 -121.208
+             Not Dead Yet           -11.223          failed      N/A
+      sir_pumpkin_esquire            failed         -12.456      N/A
+                   Merlin            failed         -14.856      N/A
+                 hatezard            failed         -16.833      N/A
+                puffurtle            failed          failed      N/A
+               knockezard            failed          failed      N/A
