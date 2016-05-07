@@ -82,7 +82,6 @@ If you are interested in working with me, before you email me, please read my <a
 * On sabbatical: Fall 2015 and Spring 2016
 * Spring 2015: [Machine Learning for Decipherment](http://anoopsarkar.github.io/decipherment-class/)
 * Fall 2014: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
-* Fall 2013: [Compilers](http://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2013/)
 
 ### Recent Publications and Talks
 <div class="more">
