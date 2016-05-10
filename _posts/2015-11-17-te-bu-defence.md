@@ -26,4 +26,11 @@ F-score by 4.6% over a baseline that does not use typed alignment
 links. We expect typed word alignments to benefit SMT and other NLP
 tasks that rely on word alignments.
 
+M.Sc. Examining Committee:
+
+* Dr. Anoop Sarkar, Senior Supervisor
+* Dr. Fred Popowich, Supervisor
+* Dr. Greg Mori, Examiner
+* Dr. William (Nick) Sumner, Chair
+
 More information on the [Student theses page]({{ site.baseurl }}/theses)

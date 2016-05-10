@@ -28,4 +28,12 @@ framework for latent structure learning for machine translation,
 in which the latent segmentation and alignment of the parallel
 training data inform the translation model.
 
+Ph.D. Examining Committee:
+
+* Dr. Anoop Sarkar, Senior Supervisor
+* Dr. Fred Popowich, Supervisor
+* Dr. Greg Mori, Internal Examiner
+* [Dr. Marine Carpuat](http://www.cs.umd.edu/~marine/), External Examiner
+* Dr. Ted Kirkpatrick, Chair
+
 More information on the [Student theses page]({{ site.baseurl }}/theses)

@@ -24,6 +24,13 @@ tested on named entity classification and word sense disambiguation
 tasks and has shown significant improvement over previous generative
 approaches.
 
+M.Sc. Examining Committee:
+
+* Dr. Anoop Sarkar, Senior Supervisor
+* Dr. Fred Popowich, Supervisor
+* Dr. Martin Ester, Examiner
+* Dr. William (Nick) Sumner, Chair
+
 More information on the [Student theses page]({{ site.baseurl }}/theses)
 
 > No, this is not an elaborate April Fools joke on Mahdi. He really did pass.
