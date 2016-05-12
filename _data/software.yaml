@@ -38,3 +38,12 @@
   about: "Python code to read and display the XTAG English (and other) grammars"
   repo: "https://github.com/sfu-natlang/xtag-nltk"
   paper: "https://ufal.mff.cuni.cz/pbml/103/art-wang-zhang-sarkar.pdf"
+
+- name: "Competitive Grammar Writing"
+  about: "Port of Jason Eisner and Noah Smith exercise to teach weighted context-free grammars"
+  repo: "https://github.com/anoopsarkar/cgw"
+
+- name: "PsychoPy utilities"
+  about: "Utility programs to help create PsychoPy experiments"
+  repo: "https://github.com/anoopsarkar/psychopy-utils"
+
