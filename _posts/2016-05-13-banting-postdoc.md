@@ -11,8 +11,8 @@ The fellowship provides $70,000 per year (taxable) for 2 years (non-renewable). 
 
 If you plan to apply for this with me, you must send me the following documents by **July 7, 2016**.
 
-* Completed [SFU Banting Application Form](https://www.sfu.ca/content/dam/sfu/dean-gradstudies/scholarships/BantingApplication2016.pdf)
-* Your completed [Common CV](https://ccv-cvc.ca/)
+* Completed [SFU Banting Application Form](https://www.sfu.ca/content/dam/sfu/dean-gradstudies/scholarships/BantingApplication2016.pdf).
+* Your completed [Common CV](https://ccv-cvc.ca/) (Vanier-Banting academic template).
 * Applicant Summary (Max 2 pages)
     * _Significance of Research Contributions_: Choose up to three research contributions you deem to be your most important and describe their significance in terms of how they influence the direction of thought and activity within the target community and in terms of significance to, and use by, other researchers and knowledge users.
 
