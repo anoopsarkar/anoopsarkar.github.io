@@ -15,9 +15,7 @@ If you plan to apply for this with me, you must send me the following documents 
 * Your completed [Common CV](https://ccv-cvc.ca/) (Vanier-Banting academic template).
 * Applicant Summary (Max 2 pages)
     * _Significance of Research Contributions_: Choose up to three research contributions you deem to be your most important and describe their significance in terms of how they influence the direction of thought and activity within the target community and in terms of significance to, and use by, other researchers and knowledge users.
-
     * _Significance of Leadership Contributions_: Describe how your activities demonstrate your leadership and sphere of influence at the institutional level and beyond. Discuss the impacts and importance of these activities in terms of your career aspirations.
-
     * _Synergy with SFU and Supervisor_: Describe why you have elected to hold a postdoctoral fellowship at SFU and work with your proposed supervisor
 * Lay Abstract: Provide a summary of your research proposal written in clear, plain language. It should be written in non-technical terms that can be clearly understood by reviewers/readers with various areas of expertise. Using simple terms, briefly describe the nature of the work to be done. Indicate why and to whom the research is important, the anticipated outcomes and how your field and Canada will benefit from your research.
 
