@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Teaching
-menu: true
+menu: false
 ---
 

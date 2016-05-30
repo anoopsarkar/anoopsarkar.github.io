@@ -72,11 +72,13 @@ If you are interested in working with me, before you email me, please read my <a
 -->
 
 ### Teaching
+<!--
 <div class="more">
     <ul class="navigate">
         <li><a href="{{ site.baseurl }}/teaching">All teaching</a></li>
     </ul>
 </div>
+-->
 
 * Summer 2016: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * On sabbatical: Fall 2015 and Spring 2016
