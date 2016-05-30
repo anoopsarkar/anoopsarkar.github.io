@@ -8,12 +8,15 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Vacariu, Andrei",MSc Thesis option,Potential Supervisor (no committee),Fall 2016,,,Confirmed Acceptance
 "Alinejad, Ashkan",PhD,Potential Supervisor (no committee),Fall 2016,,,Confirmed Acceptance
 "Kou, Xinxin",MSc Thesis option,Senior Supervisor,Fall 2015,,,Active
+"Chowdhury, Wasifa",MSc Thesis option,Supervisor,Fall 2015,,,Active
 "Khoshraftar, Shima",PhD,Potential Supervisor (no committee),Spring 2015,,,Declined Offer
 "Jiang, Yuhuan",MSc Thesis option,Potential Supervisor (no committee),Fall 2014,,,Declined Offer
 "Sheikhshabbafghi, Golnar",PhD,Senior Supervisor,Fall 2014,,,Active
 "Wu, Zhelun",MSc Thesis option,Senior Supervisor,Fall 2014,,,Active
+"Sabharwal, Jasneet",MSc Thesis option,Senior Supervisor,Fall 2013,Summer 2016,Bilingual Language Models using Word Embeddings for Machine Translation,Graduated
 "Shavarani, Sayyedhassan",MSc Thesis option,Senior Supervisor,Fall 2014,Summer 2016,Training Data Annotation for Segmentation Classification in Translation,Graduated
 "Tran, Khoa",MSc Thesis option,Supervisor,Fall 2014,,,Active
+"Wang, Xiaojian",MSc Thesis option,SFU Examiner,Fall 2014,,EFFICIENTLY COMPRESSING STRING COLUMNAR DATA USING FREQUENT PATTERN MINING,Active
 "Soleimani Nasab, Mohammad Mahdi",MSc Thesis option,Senior Supervisor,Spring 2014,Spring 2016,On the Importance of Decoding in Semi-supervised Learning,Graduated
 "Bu, Te",MSc Thesis option,Potential Supervisor (has committee),Fall 2013,Fall 2015,Joint Prediction of Word Alignment and Alignment Types for Statistical Machine Translation,Graduated
 "Shareghi Nojehdeh, Ehsan",PhD,Potential Supervisor (no committee),Fall 2013,,,Declined Offer
@@ -21,7 +24,6 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Bu, Te",MSc Thesis option,Senior Supervisor,Fall 2013,Fall 2015,Joint Prediction of Word Alignment and Alignment Types for Statistical Machine Translation,Graduated
 "Mehdizadeh Seraj, Ramtin",MSc Thesis option,Senior Supervisor,Fall 2013,Fall 2015,Paraphrases for Statistical Machine Translation,Graduated
 "Routley, Kurt",MSc Thesis option,SFU Examiner,Fall 2013,Spring 2015,A Markov Game Model for Valuing Player Actions in Ice Hockey,Graduated
-"Sabharwal, Jasneet",MSc Thesis option,Senior Supervisor,Fall 2013,,BILINGUAL LANGUAGE MODELS USING WORD EMBEDDINGS FOR MACHINE TRANSLATION,Active
 "Bruce, Jacob",MSc Thesis option,Defence Chair,Fall 2013,Fall 2015,FINDING TINY PEOPLE: LONG-RANGE OUTDOOR SENSING FOR ESTABLISHING JOINT ATTENTION IN HRI,Graduated
 "Deng, Zhiwei",MSc Thesis option,SFU Examiner,Fall 2013,Fall 2015,DEEP STRUCTURED MODELS FOR GROUP ACTIVITY RECOGNITION,Graduated
 "Kamalzadeh, Mohsen",PhD,Supervisor,Summer 2013,,,Active
@@ -56,7 +58,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Kim, Youngchan",MSc Thesis option,Potential Supervisor (has committee),Fall 2009,Spring 2012,Bidirectional Segmentation for English-Korean Machine Translation,Graduated
 "Patell, Porus",MSc Project option,Senior Supervisor,Fall 2009,Spring 2011,Experiments on Phrasal Chunking in NLP using Exponentiated Gradient for Structured Prediction,Graduated
 "Sagaii, Sara",MSc Project option,SFU Examiner,Fall 2009,Summer 2012,,Graduated
-"Siahbani, Maryam",PhD,Senior Supervisor,Fall 2009,,,Active
+"Siahbani, Maryam",PhD,Senior Supervisor,Fall 2009,,LEFT-TO-RIGHT HIERARCHICAL PHRASE-BASED MACHINE TRANSLATION,Active
 "Shahbazi, Hossein",MSc Thesis option,Potential Supervisor (no committee),Spring 2009,,,Incomplete Application
 "Stefanus, Ferdinand",MSc Thesis option,SFU Examiner,Spring 2009,Spring 2011,,Graduated
 "Clifton, Ann",MSc Thesis option,Senior Supervisor,Fall 2008,Summer 2010,Unsupervised Morphological Segmentation for Statistical Machine Translation,Graduated

@@ -2,10 +2,10 @@
 {% assign phd = 0 %}
 {% assign msc = 0 %}
 {% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Committee Member" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
+    {% if student.YourRole == "Supervisor" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
         {% assign phd = phd | plus: 1 %}
     {% endif %}
-    {% if student.YourRole == "Committee Member" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
+    {% if student.YourRole == "Supervisor" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
         {% assign msc = msc | plus: 1 %}
     {% endif %}
 {% endfor %}
@@ -14,7 +14,7 @@
 #### Phd (Total: {{ phd }})
 <ul>
 {% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Committee Member" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
+    {% if student.YourRole == "Supervisor" and student.CurrentStatus == "Graduated" and student.Program == "PhD" %}
         <li>{{ student.Name }} <span class="smaller">(from: {{ student.StartSemester }} to: {{ student.EndSemester }})</span></li>
     {% endif %}
 {% endfor %}
@@ -26,7 +26,7 @@
 
 <ul>
 {% for student in site.data.gradstudents %}
-    {% if student.YourRole == "Committee Member" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
+    {% if student.YourRole == "Supervisor" and student.CurrentStatus == "Graduated" and student.Program contains 'MSc' %}
         <li>{{ student.Name }} <span class="smaller">(from: {{ student.StartSemester }} to: {{ student.EndSemester }})</span></li>
     {% endif %}
 {% endfor %}
