@@ -97,6 +97,8 @@
       funding: "Google"
     - semester: "Fall 2015"
       funding: "NSERC DAS"
+    - semester: "Summer 2016"
+      funding: "NSERC Discovery"
   after: "SFU MSc"
 
 - name: "Wang, Yizhou"
@@ -116,7 +118,7 @@
     - semester: "Spring 2016"
       funding: "NSERC DAS"
 
-- name: "Chen, Kingston"
+- name: "Chen, Jingda (Kingston)"
   degree: "BSc (SFU DDP)"
   semesters: 
     - semester: "Spring 2016"
@@ -124,7 +126,7 @@
     - semester: "Summer 2016"
       funding: "NSERC DAS"
 
-- name: "Gu, Jetic"
+- name: "Gu, Yilong (Jetic)"
   degree: "BSc (SFU DDP)"
   semesters: 
     - semester: "Spring 2016"
@@ -132,15 +134,27 @@
     - semester: "Summer 2016"
       funding: "NSERC DAS"
 
-- name: "Ke, Jiahao"
+- name: "Ke, Jiahao (Ryoma)"
   degree: "BSc (SFU DDP)"
   semesters: 
     - semester: "Summer 2016"
       funding: "-none-"
 
-- name: "Liu, Shiqi"
+- name: "Liu, Shiqi (Luke)"
   degree: "BSc (SFU DDP)"
   semesters: 
     - semester: "Summer 2016"
       funding: "-none-"
+
+- name: "Li, Jiaqi (Jerry)"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2016"
+      funding: "-none-"
+
+- name: "Avvaru, Pravalika"
+  degree: "BSc (SFU DDP)"
+  semesters: 
+    - semester: "Summer 2016"
+      funding: "MITACS Globalink"
 
