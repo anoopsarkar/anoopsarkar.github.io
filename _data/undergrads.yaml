@@ -48,6 +48,12 @@
     - semester: "Summer 2013"
       funding: "NSERC CRD"
 
+- name: "Patange, Utkarsh"
+  degree: "BSc (IIT Kanpur)"
+  semesters:
+    - semester: "Summer 2014"
+      funding: "MITACS Globalink"
+
 - name: "Wang, Ziqi"
   degree: "BSc (SFU DDP)"
   semesters: 
