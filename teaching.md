@@ -4,7 +4,7 @@ title: Teaching
 menu: false
 ---
 
-# Recent Teaching
+## Recent Teaching
 
 * Summer 2016: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * On sabbatical: Fall 2015 and Spring 2016
