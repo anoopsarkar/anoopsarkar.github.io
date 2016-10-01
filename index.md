@@ -40,10 +40,9 @@ If you are interested in working with me, before you email me, please read my <a
     </ul>
 </div>
 
-* Statistical machine translation
-* Statistical parsing of natural languages
 * Multilingual Natural Language Processing
 * Machine learning for Natural Language Processing
+* Machine Reading and Information Visualization 
 
 ### News and Posts
 <div class="more">
