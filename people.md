@@ -18,8 +18,12 @@ A list of graduate students I have supervised (as senior supervisor).
 
 <ul>
 {% for postdoc in site.data.postdocs %}
-    <li>{{ postdoc.name }} <span class="smaller">({{ postdoc.start }} to {{ postdoc.end }})</span>
-        <!-- <ul class="smaller"><li>After: {{ postdoc.after }}</li></ul> -->
+    {% if postdoc.url %}
+        <li><a href="{{ postdoc.url }}">{{ postdoc.name }}</a> <span class="smaller">({{ postdoc.start }} to {{ postdoc.end }})</span>
+    {% else %}
+        <li>{{ postdoc.name }} <span class="smaller">({{ postdoc.start }} to {{ postdoc.end }})</span>
+    {% endif %}
+            <!-- <ul class="smaller"><li>After: {{ postdoc.after }}</li></ul> -->
     </li>
 {% endfor %}
 </ul>
