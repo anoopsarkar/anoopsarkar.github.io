@@ -8,6 +8,7 @@ customjs: shortpubs
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
+* [Curriculum Vitae]({{ site.baseurl }}/public/files/CCV-AnoopSarkar.pdf)
 {: .contact}
 
 <p>
