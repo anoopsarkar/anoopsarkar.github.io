@@ -8,11 +8,11 @@ customjs: shortpubs
 * [Natural Language Lab](http://natlang.cs.sfu.ca)
 * [School of Computing Science](http://www.cs.sfu.ca/)
 * [Simon Fraser University](http://www.sfu.ca)
-* [Curriculum Vitae]({{ site.baseurl }}/public/files/CCV-AnoopSarkar.pdf)
 {: .contact}
 
 <p>
 <div class="button-group">
+    <a href="{{ site.baseurl }}/public/files/CCV-AnoopSarkar.pdf">Curriculum Vitae</a>
     <a href="https://scholar.google.ca/citations?user=KhJJchQAAAAJ" class="button">Google Scholar</a>
     <a href="https://github.com/anoopsarkar" class="button">Github</a>
     <a href="https://bitbucket.org/sfu-natlang/" class="button">Bitbucket</a>
