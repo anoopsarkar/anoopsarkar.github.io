@@ -16,6 +16,7 @@ menu: true
 
 ### Conference chair
 
+* Area co-chair, Machine Learning track, EMNLP 2017
 * Program co-chair, NAACL HLT 2015.
 * Doctoral forum chair for SIAM International Conference on Data Mining, SDM 2015.
 * Tutorials chair for Meeting of the American Machine Translation Association, AMTA 2014.
@@ -30,6 +31,7 @@ menu: true
 
 ### Conference organization
 
+* Local co-organizer, ACL 2017, Vancouver, BC
 * Member of the organizing Committee for the 1st CAIAC/Precarn Canadian Intelligent Systems Challenge, 2008-2009. (an annual competition among Canadian university, college and high school students).
 * Local Preparation and Student Volunteer Coordinator: HLT/EMNLP 2005, October 6-8, 2005.
 * Local co-organizer (with Chung-hye Han): TAG+7: 7th Int'l Workshop on Tree Adjoining Grammar & Related Formalisms, 20-22 May, 2004.
