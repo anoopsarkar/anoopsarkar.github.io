@@ -56,6 +56,7 @@ menu: true
 
 ### Committees
 
+* Spring 2016 - current: Graduate Program Committee member
 * Fall 2015 - Spring 2016: Sabbatical
 * Fall 2012 - Summer 2014: Capital Resources Committee member: Distinguished Lecture Series and CS Seminar series
 * Fall 2011 - Summer 2012: Graduate Program Committee member
