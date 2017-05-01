@@ -11,7 +11,7 @@ description: "An archive of posts sorted by tag."
 
 <div class="actions button-container">
   <div class="button-group">
-  {% for tag in tag_words) %}
+  {% for tag in tag_words %}
     <a href="#{{ tag | cgi_escape }}" class="button">{{ tag }} <span class="badge">{{ site.tags[tag] | size }}</span></a>
   {% endfor %}
   </div>
