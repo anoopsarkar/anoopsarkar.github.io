@@ -80,9 +80,9 @@ If you are interested in working with me, before you email me, please read my <a
 </div>
 -->
 
+* Fall 2017: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
+* Fall 2017: [Neural Machine Translation](http://anoopsarkar.github.io/neuralmt-class/)
 * Summer 2017: [127: Computing Laboratory](http://www.cs.sfu.ca/CourseCentral/127/anoop/)
-* Fall 2016: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
-* Fall 2016: [Neural Machine Translation](http://anoopsarkar.github.io/neuralmt-class/)
 
 ### Recent Publications and Talks
 <div class="more">
