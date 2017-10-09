@@ -139,6 +139,14 @@
       funding: "NSERC DAS"
     - semester: "Summer 2016"
       funding: "NSERC DAS"
+    - semester: "Fall 2016"
+      funding: "RA"
+    - semester: "Spring 2017"
+      funding: "RA"
+    - semester: "Summer 2017"
+      funding: "SFU USRA"
+    - semester: "Fall 2017"
+      funding: "RA"
 
 - name: "Ke, (Ryoma) Jiahao"
   degree: "BSc (SFU DDP)"
@@ -159,8 +167,14 @@
       funding: "-none-"
 
 - name: "Avvaru, Pravalika"
-  degree: "BSc (SFU DDP)"
+  degree: "BSc"
   semesters: 
     - semester: "Summer 2016"
+      funding: "MITACS Globalink"
+
+- name: "Pancholi, Chinmaya"
+  degree: "BSc"
+  semesters: 
+    - semester: "Summer 2017"
       funding: "MITACS Globalink"
 
