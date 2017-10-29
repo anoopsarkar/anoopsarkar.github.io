@@ -1,20 +1,21 @@
 Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Shavarani, Sayyedhassan",PhD,Senior Supervisor,Fall 2017,,,Active
 "Shavarani, Sayyedhassan",PhD,Potential Supervisor (has committee),Fall 2017,,,Active
-"Ghobadipasha, Nadia",MSc Thesis option,Potential Supervisor (no committee),Fall 2017,,,Active
+"Ghobadipasha, Nadia",MSc Thesis option,Senior Supervisor,Fall 2017,,,Active
 "Hong, Junki",PhD,Senior Supervisor,Fall 2016,,,Declined Offer
 "Hosseini, Seyed Mohammad Javad",PhD,Potential Supervisor (no committee),Fall 2016,,,Declined Offer
 "Liu, Yang",PhD,Potential Supervisor (no committee),Fall 2016,,,Rejected Application
-"Alinejad, Ashkan",PhD,Potential Supervisor (has committee),Fall 2016,,,Active
 "Kambhatla, Nishant",MSc Thesis option,Senior Supervisor,Fall 2016,,,Active
 "Vacariu, Andrei",MSc Thesis option,Senior Supervisor,Fall 2016,,,Active
 "Born, Logan",MSc Thesis option,Senior Supervisor,Fall 2016,,,Active
 "Alinejad, Ashkan",PhD,Senior Supervisor,Fall 2016,,,Active
+"Abdu Jyothi, Akash",MSc Thesis option,Supervisor,Fall 2016,,,Active
 "Mehdizadeh Seraj, Ramtin",PhD,Potential Supervisor (no committee),Fall 2015,,,Declined Offer
-"Kou, Xinxin",MSc Thesis option,Senior Supervisor,Fall 2015,Fall 2017,"Speed versus Accuracy in Neural Sequence Tagging for Natural Language Processing",Graduated
+"Kou, Xinxin",MSc Thesis option,Senior Supervisor,Fall 2015,Fall 2017,Speed versus Accuracy in Neural Sequence Tagging for Natural Language Processing,Graduated
 "Chowdhury, Wasifa",MSc Thesis option,Supervisor,Fall 2015,,,Active
 "Gharachorlu, Golnaz",PhD,Supervisor,Fall 2015,,,Active
 "Rashedi Nia, Karoon",MSc Thesis option,Supervisor,Fall 2015,Spring 2017,,Graduated
+"Naz, Fariha",PhD,Supervisor,Fall 2015,,,Active
 "Khoshraftar, Shima",PhD,Potential Supervisor (no committee),Spring 2015,,,Declined Offer
 "Jiang, Yuhuan",MSc Thesis option,Potential Supervisor (no committee),Fall 2014,,,Declined Offer
 "Sheikhshabbafghi, Golnar",PhD,Senior Supervisor,Fall 2014,,,Active
@@ -24,7 +25,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Wang, Xiaojian",MSc Thesis option,SFU Examiner,Fall 2014,Summer 2016,EFFICIENTLY COMPRESSING STRING COLUMNAR DATA USING FREQUENT PATTERN MINING,Graduated
 "Soleimani Nasab, Mohammad Mahdi",MSc Thesis option,Senior Supervisor,Spring 2014,Spring 2016,On the Importance of Decoding in Semi-supervised Learning,Graduated
 "Bu, Te",MSc Thesis option,Potential Supervisor (has committee),Fall 2013,Fall 2015,Joint Prediction of Word Alignment and Alignment Types for Statistical Machine Translation,Graduated
-"Shareghi Nojehdeh, Ehsan",PhD,Potential Supervisor (no committee),Fall 2013,Fall 2013,,Withdrawn
+"Shareghi Nojehdeh, Ehsan",PhD,Potential Supervisor (no committee),Fall 2013,,,Declined Offer
 "Mansouri Bigvand, Anahita",PhD,Senior Supervisor,Fall 2013,,,Active
 "Bu, Te",MSc Thesis option,Senior Supervisor,Fall 2013,Fall 2015,Joint Prediction of Word Alignment and Alignment Types for Statistical Machine Translation,Graduated
 "Mehdizadeh Seraj, Ramtin",MSc Thesis option,Senior Supervisor,Fall 2013,Fall 2015,Paraphrases for Statistical Machine Translation,Graduated
@@ -32,6 +33,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Sabharwal, Jasneet",MSc Thesis option,Senior Supervisor,Fall 2013,Summer 2016,Bilingual Language Models using Word Embeddings for Machine Translation,Graduated
 "Bruce, Jacob",MSc Thesis option,Defence Chair,Fall 2013,Fall 2015,FINDING TINY PEOPLE: LONG-RANGE OUTDOOR SENSING FOR ESTABLISHING JOINT ATTENTION IN HRI,Graduated
 "Deng, Zhiwei",MSc Thesis option,SFU Examiner,Fall 2013,Fall 2015,DEEP STRUCTURED MODELS FOR GROUP ACTIVITY RECOGNITION,Graduated
+"Ellert, Bradley",MSc Thesis option,Senior Supervisor,Fall 2013,Summer 2015,LEVERAGING SUBMETERED ELECTRICITY LOADS TO DISAGGREGATE HOUSEHOLD WATER USE,Graduated
 "Kamalzadeh, Mohsen",PhD,Supervisor,Summer 2013,,,Active
 "Odilinye, Lydia",PhD,Supervisor,Summer 2013,,,Active
 "Krayenhoff, Willem",MSc Thesis option,Potential Supervisor (has committee),Spring 2013,Summer 2016,,Withdrawn
@@ -101,7 +103,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Mostafavi Kashani, Mehdi",MSc Thesis option,Supervisor,Fall 2004,Fall 2007,,Graduated
 "Sabzmeydani, Payam",MSc Thesis option,SFU Examiner,Fall 2004,Fall 2006,,Graduated
 "Wang, Yang",PhD,Supervisor,Fall 2004,Fall 2009,,Graduated
-"Grbavec, Ann",PhD,SFU Examiner,Fall 2004,Fall 2004,,Graduated
+"Grbavec, Ann",PhD,SFU Examiner,Fall 2004,Fall 2004,,Graduation Approved
 "Gu, Baohua",PhD,Defence Chair,Fall 2003,Summer 2008,,Graduated
 "Haffari, Gholam",PhD,Senior Supervisor,Fall 2003,Fall 2009,Machine Learning Approaches to Dealing with Limited Training Data in Statistical Machine Translation,Graduated
 "Melli, Gabor",PhD,Supervisor,Fall 2003,Fall 2010,,Graduated
