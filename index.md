@@ -12,7 +12,7 @@ customjs: shortpubs
 
 <p>
 <div class="button-group">
-    <a href="{{ site.baseurl }}/public/files/CCV-AnoopSarkar.pdf" class="button">Curriculum Vitae</a>
+    <a href="{{ site.baseurl }}/public/files/cv.pdf" class="button">Curriculum Vitae</a>
     <a href="https://scholar.google.ca/citations?user=KhJJchQAAAAJ" class="button">Google Scholar</a>
     <a href="https://github.com/anoopsarkar" class="button">Github</a>
     <a href="https://bitbucket.org/sfu-natlang/" class="button">Bitbucket</a>
