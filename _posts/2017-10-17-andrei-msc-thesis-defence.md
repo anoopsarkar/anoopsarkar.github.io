@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Andrei Vacariu passes his MSc Thesis Defence"
+title: "Andrei passes his MSc thesis exam"
 root: ../../
 ---
 

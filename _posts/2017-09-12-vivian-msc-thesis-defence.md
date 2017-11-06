@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vivian Kou passes her MSc Thesis Defence"
+title: "Vivian passes her MSc thesis exam"
 root: ../../
 ---
 
