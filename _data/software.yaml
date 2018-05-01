@@ -1,7 +1,7 @@
 - name: "Lensing Wikipedia"
   about: "Interactive summaries of human history articles from Wikipedia"
   repo: "https://github.com/sfu-natlang/lensingwikipedia"
-  demo: "http://lensingwikipedia.cs.sfu.ca/"
+  demo: "http://lensingwikipedia.cs.sfu.ca:8080"
   paper: "http://www.cs.sfu.ca/~anoop/papers/pdf/akbc2013.pdf"
 
 - name: "lrhiero"
