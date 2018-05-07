@@ -178,3 +178,8 @@
     - semester: "Summer 2017"
       funding: "MITACS Globalink"
 
+- name: "Finnigan, Caitlin"
+  degree: "BSc (Engg)"
+  semesters:
+    - semester: "Summer 2018"
+      funding: "NSERC USRA"
