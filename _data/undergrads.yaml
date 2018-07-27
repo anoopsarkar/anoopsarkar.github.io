@@ -183,3 +183,9 @@
   semesters:
     - semester: "Summer 2018"
       funding: "NSERC USRA"
+
+- name: "Ruoyi Wang"
+  degree: "BSc"
+  semesters:
+    - semester: "Summer 2018"
+      funding: "none"
