@@ -10,20 +10,19 @@ Anoop Sarkar is Professor of Computer Science at [Simon Fraser
 University](http://www.sfu.ca) in British Columbia, Canada where
 he co-directs the [Natural Language Laboratory](http://natlang.cs.sfu.ca).
 
-Anoop Sarkar is interested in developing machine learning methods
-for natural language processing. He has published on statistical
-machine translation for human languages, and the summarization of
-information in language using a combination of visualization and
-semantic parsing algorithms. He sometimes dreams about automated
-computational decipherment of ancient scripts and mysterious
-manuscripts.
+His research uses machine learning methods applied to natural
+language processing, specifically neural machine translation between
+all human languages, tackling ambiguity in language using parsing
+algorithms. He has an interest in computational decipherment of
+ancient scripts and mysterious manuscripts.
 
-Anoop Sarkar is the recipient of a 2013 NSERC Discovery Accelerator
-Supplement award, a 2014 and 2009 Google Faculty Award, 2008 IBM
-Faculty Award and a 2012 NSERC Collaborative Research and Development
-Grant with industrial contributions from Boeing and AeroInfo Systems.
-He received the Excellence in Undergraduate Teaching Award in 2007
-by the SFU Undergraduate Computing Science Student Society (CSSS).
+Anoop Sarkar is the recipient of a 2013 and 2017 NSERC Discovery
+Accelerator Supplement award, a 2014 and 2009 Google Faculty Award,
+2008 IBM Faculty Award and a 2012 NSERC Collaborative Research and
+Development Grant with industrial contributions from Boeing and
+AeroInfo Systems.  He received the Excellence in Undergraduate
+Teaching Award in 2007 by the SFU Undergraduate Computing Science
+Student Society (CSSS).
 
 Anoop Sarkar received his PhD from the Department of Computer and
 Information Sciences at the University of Pennsylvania under Prof.
