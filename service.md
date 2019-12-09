@@ -16,6 +16,7 @@ menu: true
 
 ### Conference chair
 
+* Tutorial co-chair, NAACL 2019, Minneapolis, MN
 * Area co-chair, Machine Learning track, EMNLP 2017
 * Program co-chair, NAACL HLT 2015.
 * Doctoral forum chair for SIAM International Conference on Data Mining, SDM 2015.
@@ -56,7 +57,8 @@ menu: true
 
 ### Committees
 
-* Spring 2016 - current: Graduate Program Committee member
+* Spring 2019 - current: Undergraduate Program Committee member
+* Spring 2016 - Summer 2018: Graduate Program Committee member
 * Fall 2015 - Spring 2016: Sabbatical
 * Fall 2012 - Summer 2014: Capital Resources Committee member: Distinguished Lecture Series and CS Seminar series
 * Fall 2011 - Summer 2012: Graduate Program Committee member

@@ -122,10 +122,10 @@ If you are interested in working with me, before you email me, please read my <a
         <li><a href="{{ site.baseurl }}/service">All activities</a></li>
     </ul>
 </div>
+* Tutorial co-chair, NAACL 2019, Minneapolis, MN
 * Local co-organizer, ACL 2017, Vancouver, BC
 * Area co-chair, Machine Learning track, EMNLP 2017
 * Program co-chair, NAACL HLT 2015.
-* Doctoral forum chair for SIAM International Conference on Data Mining, SDM 2015.
 
 ### Recently Graduated Students
 <div class="more">
