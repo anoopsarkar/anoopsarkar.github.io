@@ -95,6 +95,15 @@ If you are interested in working with me, before you email me, please read my <a
     </ul>
 </div>
 
+<p>
+<div class="button-group">
+    <a href="https://www.aclweb.org/anthology/people/a/anoop-sarkar/" class="button">ACL Anthology</a>
+    <a href="https://scholar.google.ca/citations?user=KhJJchQAAAAJ" class="button">Google Scholar</a>
+    <a href="https://www.semanticscholar.org/author/Anoop-Sarkar/3028658" class="button">Semantic Scholar</a>
+    <a href="https://dblp.org/pers/hd/s/Sarkar:Anoop" class="button">DBLP</a>
+</div>
+</p>
+
 {% include shortpubs.html %}
 
 ### Software
