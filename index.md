@@ -16,6 +16,7 @@ customjs: shortpubs
     <a href="https://www.aclweb.org/anthology/people/a/anoop-sarkar/" class="button">ACL Anthology</a>
     <a href="https://scholar.google.ca/citations?user=KhJJchQAAAAJ" class="button">Google Scholar</a>
     <a href="https://www.semanticscholar.org/author/Anoop-Sarkar/3028658" class="button">Semantic Scholar</a>
+    <a href="https://dblp.org/pers/hd/s/Sarkar:Anoop" class="button">DBLP</a>
     <a href="https://github.com/anoopsarkar" class="button">Github</a>
     <a href="https://twitter.com/anoopsarkar" class="button">Twitter</a>
 </div>
