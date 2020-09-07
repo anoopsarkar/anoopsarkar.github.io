@@ -74,19 +74,14 @@ If you are interested in working with me, before you email me, please read my <a
 -->
 
 ### Teaching
-<!--
 <div class="more">
     <ul class="navigate">
-        <li><a href="{{ site.baseurl }}/teaching">All teaching</a></li>
+        <li><a href="{{ site.baseurl }}/teaching.html">Recent teaching</a></li>
     </ul>
 </div>
--->
 
+* Fall 2020: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * Fall 2019: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
-* Summer 2019: [Compilers](http://anoopsarkar.github.io/compilers-class/)
-* Summer 2018: [Computing Laboratory](http://www.cs.sfu.ca/CourseCentral/127/anoop/)
-* Fall 2017: [Neural Machine Translation](http://anoopsarkar.github.io/neuralmt-class/)
-* Spring 2015: [Machine Learning for Decipherment](http://anoopsarkar.github.io/decipherment-class/)
 
 ### Recent Publications and Talks
 <div class="more">
