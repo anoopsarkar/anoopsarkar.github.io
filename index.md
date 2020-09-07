@@ -76,7 +76,7 @@ If you are interested in working with me, before you email me, please read my <a
 ### Teaching
 <div class="more">
     <ul class="navigate">
-        <li><a href="{{ site.baseurl }}/teaching.html">Recent teaching</a></li>
+        <li><a href="{{ site.baseurl }}/teaching">Recent teaching</a></li>
     </ul>
 </div>
 
