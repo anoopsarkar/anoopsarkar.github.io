@@ -9,31 +9,14 @@
   * `_posts/*`,
   * `*.md`.
 
-## Install jekyll
+## Installation
 
-Check ruby
-
-    ruby -v
-    2.3.3
-
-Install jekyll
-
-    gem install bundler jekyll
-
-If `Gemfile` does not already exist, create it:
-
-    # Create a Gemfile
-    bundle init
-
-Install the bundle
-
-    # Add Jekyll
-    bundle add jekyll
-
-    # Install gems
+    sudo gem install jekyll bundler github-pages kramdown
     bundle install
 
 ## Deploy
+
+    bundle exec jekyll serve
 
 To copy to SFU:
 

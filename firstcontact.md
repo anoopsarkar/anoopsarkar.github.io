@@ -11,6 +11,9 @@ relatedpages:
     url: news
 ---
 
+<div class="alert alert-danger">
+Due to Covid19 and uncertainty about my plans for Fall 2021, I am unable to take any new students starting with the Fall 2021 semester and for the forseeable future. If you have emailed me about a potential undergraduate or graduate research position (such as Masters or PhD admission) please note that I cannot individually respond to each of you. Stay safe and all the best with your career!
+</div>
 
 <div class="alert alert-info">
 Although I try my best to respond to important emails, due the large volume I cannot respond to every email individually. If you do not get a response I hope you have found this page where I try to answer the typical questions you might have about joining or visiting my research lab and admission to graduate studies in computer science at SFU.
@@ -32,7 +35,7 @@ Although I try my best to respond to important emails, due the large volume I ca
 
 If you are considering SFU as a MSc or PhD student in Computer Science, I strongly encourage you to apply. We have an excellent research lab in computational linguistics and natural language processing. We are certainly very competitive with other universities in Canada. 
 
-About open lab positions: we usually have at least 1-2 open positions every year for Masters students. As for open Phd positions we can only make an estimate in Apr/May, around the time when you apply for admission to the Fall semester at SFU. Typically we have one open Ph.D. position in our lab per year, and we require a strong background in NLP for a Ph.D. candidate (e.g. a publication in a reputable NLP conference).
+Please see the notice above for open positions for the following academic year.
 
 **I do not respond to emails** asking for evaluation of your resume for admission. That is why we have an admission process. It is unfortunate that you have to pay an application fee to SFU for my evaluation, but that is normal for university applications around the world. I cannot tell you if you are well suited for my lab without reading your entire graduate application including reference letters.
 
