@@ -5,8 +5,8 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Huang, Xiang",MSc Thesis option,Senior Supervisor,Fall 2019,,,Active
 "Kambhatla, Nishant",PhD,Potential Supervisor (no committee),Fall 2018,,,Active
 "Gu, Yilong",MSc Thesis option,Senior Supervisor,Fall 2018,Summer 2019,Exploiting Target Syntax with Structured Decoding,Graduated
-"Zhu, Zhenqi",MSc Thesis option,Senior Supervisor,Fall 2018,Spring 2020,,Graduated
-"Moradi, Pooya",MSc Thesis option,Senior Supervisor,Fall 2018,Summer 2020,,Graduated
+"Zhu, Zhenqi",MSc Thesis option,Senior Supervisor,Fall 2018,Spring 2020,Deconstructing supertagging into multi-task sequence prediction,Graduated
+"Moradi, Pooya",MSc Thesis option,Senior Supervisor,Fall 2018,Summer 2020,Training with adversaries to improve faithfulness of attention in neural machine translation,Graduated
 "Luo, Yudong",MSc Thesis option,SFU Examiner,Fall 2018,Summer 2020,,Graduated
 "Abdu Jyothi, Akash",PhD,Supervisor,Fall 2018,,,Active
 "Ghobadipasha, Nadia",MSc Thesis option,Senior Supervisor,Fall 2017,Fall 2019,Translation versus Language Model Pre-training Objectives for Word Sense Disambiguation,Graduated
@@ -17,19 +17,17 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Hong, Junki",PhD,Senior Supervisor,Fall 2016,,,Declined Offer
 "Hosseini, Seyed Mohammad Javad",PhD,Potential Supervisor (no committee),Fall 2016,,,Declined Offer
 "Liu, Yang",PhD,Potential Supervisor (no committee),Fall 2016,,,Rejected Application
-"Vacariu, Andrei",MSc Thesis option,Potential Supervisor (has committee),Fall 2016,Fall 2017,,Graduated
-"Kambhatla, Nishant",MSc Thesis option,Senior Supervisor,Fall 2016,Summer 2018,,Graduated
-"Vacariu, Andrei",MSc Thesis option,Senior Supervisor,Fall 2016,Fall 2017,,Graduated
-"Born, Logan",MSc Thesis option,Senior Supervisor,Fall 2016,Summer 2018,,Graduated
+"Kambhatla, Nishant",MSc Thesis option,Senior Supervisor,Fall 2016,Summer 2018,Decipherment of substitution ciphers with neural language models,Graduated
+"Vacariu, Andrei",MSc Thesis option,Senior Supervisor,Fall 2016,Fall 2017,A high-throughput dependency parser,Graduated
+"Born, Logan",MSc Thesis option,Senior Supervisor,Fall 2016,Summer 2018,Properties of prefix lexicalized synchronous grammars,Graduated
 "Alinejad, Ashkan",PhD,Senior Supervisor,Fall 2016,,,Active
-"Vacariu, Andrei",MSc Thesis option,Senior Supervisor,Fall 2016,Fall 2017,,Graduated
 "Abdu Jyothi, Akash",MSc Thesis option,Supervisor,Fall 2016,Summer 2018,,Graduated
 "Gujjar, Pratik",MSc Thesis option,Supervisor,Fall 2016,Fall 2018,,Graduated
 "Nikdel, Payam",MSc Thesis option,Supervisor,Fall 2016,Fall 2018,Robot Following Ahead of the Leader and Learning Human-relevant Navigational Cues,Graduated
 "Muralidharan, Srikanth",PhD,Supervisor,Summer 2016,Summer 2020,,Graduated
 "Deng, Zhiwei",PhD,Supervisor,Spring 2016,Fall 2019,Learning Deep Structured Models for Visual Understanding,Graduated
 "Mehdizadeh Seraj, Ramtin",PhD,Potential Supervisor (no committee),Fall 2015,,,Declined Offer
-"Kou, Xinxin",MSc Thesis option,Senior Supervisor,Fall 2015,Fall 2017,,Graduated
+"Kou, Xinxin",MSc Thesis option,Senior Supervisor,Fall 2015,Fall 2017,Speed versus accuracy in neural sequence tagging for natural language processing,Graduated
 "Chowdhury, Wasifa",MSc Thesis option,Supervisor,Fall 2015,Fall 2019,Employing Neural Hierarchical Model with Pointer Generator Networks for Abstractive Text Summarization,Graduated
 "Gharachorlu, Golnaz",PhD,Supervisor,Fall 2015,,,Active
 "Rashedi Nia, Karoon",MSc Thesis option,Supervisor,Fall 2015,Spring 2017,,Graduated
@@ -53,7 +51,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Sabharwal, Jasneet",MSc Thesis option,Senior Supervisor,Fall 2013,Summer 2016,Bilingual Language Models using Word Embeddings for Machine Translation,Graduated
 "Bruce, Jacob",MSc Thesis option,Defence Chair,Fall 2013,Fall 2015,FINDING TINY PEOPLE: LONG-RANGE OUTDOOR SENSING FOR ESTABLISHING JOINT ATTENTION IN HRI,Graduated
 "Deng, Zhiwei",MSc Thesis option,SFU Examiner,Fall 2013,Fall 2015,DEEP STRUCTURED MODELS FOR GROUP ACTIVITY RECOGNITION,Graduated
-"Ellert, Bradley",MSc Thesis option,Senior Supervisor,Fall 2013,Summer 2015,LEVERAGING SUBMETERED ELECTRICITY LOADS TO DISAGGREGATE HOUSEHOLD WATER USE,Graduated
+"Ellert, Bradley",MSc Thesis option,Supervisor,Fall 2013,Summer 2015,LEVERAGING SUBMETERED ELECTRICITY LOADS TO DISAGGREGATE HOUSEHOLD WATER USE,Graduated
 "Odilinye, Lydia",PhD,Supervisor,Summer 2013,Fall 2019,TBC,Graduated
 "Kamalzadeh, Mohsen",PhD,Supervisor,Summer 2013,Summer 2020,,Graduated
 "Krayenhoff, Willem",MSc Thesis option,Potential Supervisor (has committee),Spring 2013,Summer 2016,,Withdrawn
