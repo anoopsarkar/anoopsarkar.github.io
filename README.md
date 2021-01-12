@@ -20,6 +20,6 @@
 
 To copy to SFU:
 
-    jekyll build --config=_config.yml,_sfuconfig.yml
-    rsync --delete -avz _site/ anoop@linux.cs.sfu.ca:/fas-info/cs/people/Faculty/anoop
+    bundle exec jekyll build --config=_config.yml,_sfuconfig.yml
+    rsync --delete -avz _site/ anoop@rcga-linux-ts1.dc.sfu.ca:/cs/csweb/webhome/anoop
 
