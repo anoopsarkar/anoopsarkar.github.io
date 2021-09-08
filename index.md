@@ -80,7 +80,7 @@ If you are interested in working with me, before you email me, please read my <a
     </ul>
 </div>
 
-* Fall 2020: [Compilers](http://anoopsarkar.github.io/compilers-class/)
+* Fall 2021: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * Fall 2019: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 
 ### Recent Publications and Talks
