@@ -47,6 +47,7 @@ If you are interested in working with me, before you email me, please read my <a
 * Machine learning for Natural Language Processing
 * Machine Reading and Information Visualization 
 
+<!--
 ### News and Posts
 <div class="more">
     <ul class="navigate">
@@ -69,6 +70,7 @@ If you are interested in working with me, before you email me, please read my <a
     {% endunless %}
   {% endfor %}
 </ul>
+-->
 <!--
 <p><span class="moreinfo"><a href="{{ site.baseurl }}/news">All news and posts ...</a></span></p>
 -->
