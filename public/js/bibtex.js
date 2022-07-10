@@ -19,7 +19,7 @@
 function author_tex_reformat(input){
     if (input.indexOf(",") > -1){
       return input.split(',')[1] + " " + input.split(',')[0];
-    } else{ 
+    } else{
       return input;
     }
   }
@@ -27,12 +27,12 @@ function author_tex_reformat(input){
 function BibtexParser() {
   this.pos = 0;
   this.input = "";
-  
+
   this.entries = {};
   this.strings = {
       JAN: "January",
       FEB: "February",
-      MAR: "March",      
+      MAR: "March",
       APR: "April",
       MAY: "May",
       JUN: "June",
@@ -45,12 +45,12 @@ function BibtexParser() {
   };
   this.currentKey = "";
   this.currentEntry = "";
-  
+
 
   this.setInput = function(t) {
     this.input = t;
   }
-  
+
   this.getEntries = function() {
       return this.entries;
   }
@@ -127,7 +127,7 @@ function BibtexParser() {
       this.pos++;
     }
   }
-  
+
   this.single_value = function() {
     var start = this.pos;
     if (this.tryMatch("{")) {
@@ -145,7 +145,7 @@ function BibtexParser() {
       }
     }
   }
-  
+
   this.value = function() {
     var values = [];
     values.push(this.single_value());
@@ -162,7 +162,7 @@ function BibtexParser() {
       if (this.pos == this.input.length) {
         throw "Runaway key";
       }
-    
+
       if (this.input[this.pos].match("[a-zA-Z0-9_:\\./-]")) {
         this.pos++
       } else {
@@ -184,7 +184,7 @@ function BibtexParser() {
 
   this.key_value_list = function() {
     // this.entries[this.currentEntry]['bibtex'] = this. ????????;
-    
+
     var kv = this.key_equals_value();
     this.entries[this.currentEntry][kv[0]] = kv[1];
     while (this.tryMatch(",")) {
@@ -202,7 +202,7 @@ function BibtexParser() {
 
   this.entry_body = function() {
     this.currentEntry = this.key();
-    this.entries[this.currentEntry] = new Object(); 
+    this.entries[this.currentEntry] = new Object();
     this.match(",");
     this.key_value_list();
 
@@ -298,7 +298,7 @@ function BibtexDisplay() {
             if (key == 'AUTHOR'){
                   var author_found =  false;
                   if (entry['AUTHOR'].indexOf(' and ') >-1) {
-                        entry['AUTHOR'].split(' and ').forEach(function(item) { 
+                        entry['AUTHOR'].split(' and ').forEach(function(item) {
                           item = item.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
                           item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
                           if (item.indexOf(value) > -1){
@@ -347,7 +347,7 @@ function BibtexDisplay() {
     for (var entryKey in entries) {
       var entry = entries[entryKey];
 
-      entry['AUTHOR'].split(' and ').forEach(function(item) { 
+      entry['AUTHOR'].split(' and ').forEach(function(item) {
           item = item.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
           item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
          if (dic[item] != null){
@@ -363,7 +363,7 @@ function BibtexDisplay() {
       //      dic[item] = 1;
       //    }
       // }
-     
+
     }
     return dic;
     // return [{"year":"2014","value":"1"},{"year":"2013","value":"2"}];
@@ -386,7 +386,7 @@ function BibtexDisplay() {
     //       years[e[item]['YEAR']] = years[e[item]['YEAR']] + 1
     //   } else{
     //     years[e[item]['YEAR']] = 1
-    //   } 
+    //   }
     // }
 
 
@@ -394,7 +394,7 @@ function BibtexDisplay() {
     //       $(".years").append( '<button class="btn btn-primary" type="button">'+ key+'<span class="badge">'years[key]'</span>');
     // }
     var old = o.find("*");
-  
+
     for (var item in e) {
 
       var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
@@ -421,26 +421,26 @@ function BibtexDisplay() {
           }
         }
       }
-    
+
       var emptyFields = tpl.find("span .unused");
       emptyFields.each(function (key,f) {
         if (f.innerHTML.match("%")) {
           f.innerHTML = "";
         }
       });
-    // TODO counter 
+    // TODO counter
     // if (e[item]['YEAR'] == '2012'){
       o.append(tpl);
     // }
       tpl.show();
     }
-    
+
     old.remove();
   }
 
 
 
-  
+
   this.displayBibtex2 = function(i, o) {
     var b = new BibtexParser();
     b.setInput(i);
@@ -448,13 +448,13 @@ function BibtexDisplay() {
 
     var e = b.getEntries();
     var old = o.find("*");
-  
+
     for (var item in e) {
       var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
       tpl.addClass("unused");
-      
+
       for (var key in e[item]) {
-      
+
         var fields = tpl.find("." + key.toLowerCase());
         for (var i = 0; i < fields.size(); i++) {
           var f = $(fields[i]);
@@ -474,18 +474,18 @@ function BibtexDisplay() {
           }
         }
       }
-    
+
       var emptyFields = tpl.find("span .unused");
       emptyFields.each(function (key,f) {
         if (f.innerHTML.match("%")) {
           f.innerHTML = "";
         }
       });
-    
+
       o.append(tpl);
       tpl.show();
     }
-    
+
     old.remove();
   }
 
@@ -497,9 +497,9 @@ function BibtexDisplay() {
     var b = new BibtexParser();
     b.setInput(input);
     b.bibtex();
-    
+
     // save old entries to remove them later
-    var old = output.find("*");    
+    var old = output.find("*");
 
     // iterate over bibTeX entries
     var entries = b.getEntries();
@@ -508,17 +508,17 @@ function BibtexDisplay() {
     // console.log(entries);
     for (var entryKey in entries) {
       var entry = entries[entryKey];
-      
+
       // find template
       // $(".years").innerHTML().append('hi');
       var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
-      
+
       // find all keys in the entry
       var keys = [];
       for (var key in entry) {
         keys.push(key.toUpperCase());
       }
-      
+
       // find all ifs and check them
       var removed = false;
       do {
@@ -527,7 +527,7 @@ function BibtexDisplay() {
         if (conds.size() == 0) {
           break;
         }
-        
+
         // check if
         var cond = conds.first();
         cond.removeClass("if");
@@ -539,23 +539,23 @@ function BibtexDisplay() {
           }
           cond.removeClass(cls);
         });
-        
+
         // remove false ifs
         if (!ifTrue) {
           cond.remove();
         }
       } while (true);
-      
-      // fill in remaining fields 
-      
+
+      // fill in remaining fields
+
       tpl.find("div.bibtexdata").attr('id', "bib"+entryKey.replace(/\:/g,""));
       //tpl.find("a.bibtex_but").attr('data-target', "#bib"+entryKey.replace(/\:/g,""));
       tpl.find("a.bibtex_but").attr('href', "#bib"+entryKey.replace(/\:/g,""));
       tpl.find("a.bibtex_but").attr('onclick', "mytoggle(\'bib"+entryKey.replace(/\:/g,"")+"\')");
 
       tpl.find("div.abstractdata").attr('id', "abs"+entryKey.replace(/\:/g,""));
-      //tpl.find("a.abstract_but").attr('data-target', "#abs"+entryKey.replace(/\:/g,""));     
-      tpl.find("a.abstract_but").attr('href', "#abs"+entryKey.replace(/\:/g,""));     
+      //tpl.find("a.abstract_but").attr('data-target', "#abs"+entryKey.replace(/\:/g,""));
+      tpl.find("a.abstract_but").attr('href', "#abs"+entryKey.replace(/\:/g,""));
       tpl.find("a.abstract_but").attr('onclick', "mytoggle(\'abs"+entryKey.replace(/\:/g,"")+"\')");
 
 
@@ -586,7 +586,7 @@ function BibtexDisplay() {
                   var author_found =  false;
                   // alert(entry['AUTHOR']);
                  if (entry['AUTHOR'].indexOf("and") >-1) {
-                        entry['AUTHOR'].split(' and ').forEach(function(item) { 
+                        entry['AUTHOR'].split(' and ').forEach(function(item) {
                           item = item.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
                           item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
                           if (item.indexOf(value) > -1){
@@ -602,14 +602,13 @@ function BibtexDisplay() {
                             author_found = true;
                           }
                   }
-                 // entry['AUTHOR'].split(' and ').forEach(function(item) { 
+                 // entry['AUTHOR'].split(' and ').forEach(function(item) {
                  //  item = item.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
                  //  item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
                  //  if (item.indexOf(value) > -1){
                  //    author_found = true;
                  //  }
                   // if (item == value){
-                      
                   // }
                 // });
                  if (author_found == false){
@@ -638,7 +637,7 @@ function BibtexDisplay() {
       //     }
       //   }
       //   if (filter_type == 'AUTHORS'){
-      //         entry['AUTHOR'].split(' and ').forEach(function(item) { 
+      //         entry['AUTHOR'].split(' and ').forEach(function(item) {
       //            item = item.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
       //            item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
       //           if (item.indexOf(filter_value) > -1){
@@ -650,10 +649,10 @@ function BibtexDisplay() {
       // else {
       //    output.append(tpl);
       // }
-      
+
       tpl.show();
     }
-    
+
     // remove old entries
     old.remove();
   }
@@ -665,7 +664,7 @@ function bibtex_js_draw() {
 }
 
 // check whether or not jquery is present
-if (typeof jQuery == 'undefined') {  
+if (typeof jQuery == 'undefined') {
   // an interesting idea is loading jquery here. this might be added
   // in the future.
   alert("Please include jquery in all pages using bibtex_js!");

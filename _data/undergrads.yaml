@@ -5,7 +5,7 @@
       funding: "NSERC USRA"
     - semester: "Summer 2003"
       funding: "NSERC USRA"
-  after: "Phd U of Washington &raquo; Tenure-track Waterloo"
+  after: "Phd U of Washington &raquo; Tenure-track Waterloo &raquo; Associate Professor at SFU"
 
 - name: "Whitney, Max"
   degree: "BSc (SFU)"
@@ -14,14 +14,14 @@
       funding: "NSERC Discovery"
     - semester: "Summer 2009"
       funding: "NSERC Discovery"
-  after: "MSc with me"
+  after: "MSc with me &raquo; Emtelligent"
 
 - name: "Faruqui, Manaal"
   degree: "BSc (IIT Kharagpur)"
   semesters: 
     - semester: "Summer 2009"
       funding: "MITACS Globalink"
-  after: "CMU PhD"
+  after: "CMU PhD &raquo; Google"
 
 - name: "Chatterjee, Diptesh"
   degree: "BSc (IIT Kharagpur)"

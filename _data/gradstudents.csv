@@ -1,8 +1,11 @@
 Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
+"Sampson, Rylen",MSc Thesis option,Supervisor,Fall 2021,,,Active
 "Wang, Ruoyi",MSc Thesis option,Potential Supervisor (no committee),Fall 2019,,,Declined Offer
 "Gu, Yilong",PhD,Senior Supervisor,Fall 2019,,TBC,Active
 "Born, Logan",PhD,Senior Supervisor,Fall 2019,,,Active
 "Huang, Xiang",MSc Thesis option,Senior Supervisor,Fall 2019,,,Active
+"Kochiev, Leon",MSc Thesis option,Supervisor,Fall 2019,Fall 2021,,Graduated
+"Gholami, Ali",MSc Thesis option,Supervisor,Fall 2019,Spring 2022,,Graduated
 "Kambhatla, Nishant",PhD,Senior Supervisor,Fall 2018,,,Active
 "Moradi, Pooya",MSc Thesis option,Senior Supervisor,Fall 2018,Summer 2020,Training with adversaries to improve faithfulness of attention in neural machine translation,Graduated
 "Zhu, Zhenqi",MSc Thesis option,Senior Supervisor,Fall 2018,Spring 2020,Deconstructing supertagging into multi-task sequence prediction,Graduated
@@ -20,7 +23,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Kambhatla, Nishant",MSc Thesis option,Senior Supervisor,Fall 2016,Summer 2018,Decipherment of substitution ciphers with neural language models,Graduated
 "Vacariu, Andrei",MSc Thesis option,Senior Supervisor,Fall 2016,Fall 2017,A high-throughput dependency parser,Graduated
 "Born, Logan",MSc Thesis option,Senior Supervisor,Fall 2016,Summer 2018,Properties of prefix lexicalized synchronous grammars,Graduated
-"Alinejad, Ashkan",PhD,Senior Supervisor,Fall 2016,,,Active
+"Alinejad, Ashkan",PhD,Senior Supervisor,Fall 2016,Summer 2021,Transforming neural machine translation into simultaneous text and speech translation,Graduated
 "Abdu Jyothi, Akash",MSc Thesis option,Supervisor,Fall 2016,Summer 2018,,Graduated
 "Gujjar, Pratik",MSc Thesis option,Supervisor,Fall 2016,Fall 2018,,Graduated
 "Nikdel, Payam",MSc Thesis option,Supervisor,Fall 2016,Fall 2018,Robot Following Ahead of the Leader and Learning Human-relevant Navigational Cues,Graduated
@@ -59,9 +62,9 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Dholakia, Rohit",MSc Thesis option,Potential Supervisor (has committee),Fall 2012,Spring 2014,Real-world Use of Pivot Languages to Translate Low-resource Languages,Graduated
 "Guttikonda, Rakesh",MSc Thesis option,Potential Supervisor (no committee),Fall 2012,,,Declined Offer
 "Wang, Hao",MSc Thesis option,Supervisor,Fall 2012,Spring 2015,SENTIMENT-ALIGNED TOPIC MODELS FOR PRODUCT ASPECT RATING PREDICTION,Graduated
-"Zhan, Fei",MSc Course option,Supervisor,Fall 2012,Fall 2014,,Graduated
 "Dholakia, Rohit",MSc Thesis option,Senior Supervisor,Fall 2012,Spring 2014,Real-world Use of Pivot Languages to Translate Low-resource Languages,Graduated
 "Xu, Xiaoning",MSc Thesis option,SFU Examiner,Fall 2012,Spring 2014,CONTINUOUS SIMILARITY SEARCH FOR EVOLVING QUERIES,Graduated
+"Zhan, Fei",MSc Course option,Supervisor,Fall 2012,Fall 2014,,Graduated
 "Denis, Dale",MSc Thesis option,SFU Examiner,Fall 2012,Fall 2014,High-Performance Regular Expression Matching with Parabix and LLVM,Graduated
 "Sefidgar, Yasaman",MSc Thesis option,Supervisor,Spring 2012,Spring 2014,DISCRIMINATIVE KEY-SEGMENT MODEL FOR INTERACTION DETECTION,Graduated
 "Gupta, Samir",MSc Thesis option,Potential Supervisor (no committee),Fall 2011,,,Declined Offer
@@ -90,7 +93,7 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Clifton, Ann",MSc Thesis option,Senior Supervisor,Fall 2008,Summer 2010,Unsupervised Morphological Segmentation for Statistical Machine Translation,Graduated
 "Clifton, Ann",MSc Thesis option,Potential Supervisor (has committee),Fall 2008,Summer 2010,Unsupervised Morphological Segmentation for Statistical Machine Translation,Graduated
 "Jabbari Taleghani, Pante a",MSc Thesis option,SFU Examiner,Fall 2008,Spring 2011,,Graduated
-"Okada, Hisanaga",MSc Thesis option,Defence Chair,Fall 2008,Spring 2011,,Graduation Approved
+"Okada, Hisanaga",MSc Thesis option,Defence Chair,Fall 2008,Spring 2011,,Graduated
 "Razmara, Majid",PhD,Senior Supervisor,Fall 2008,Summer 2013,Leveraging Diverse Sources in Statistical Machine Translation,Graduated
 "Ronaghi Khamene, Farnaz",MSc Thesis option,Potential Supervisor (no committee),Fall 2008,,,Declined Offer
 "Sankaranarayanan, Ananth Narayan",MSc Thesis option,Supervisor,Fall 2008,Summer 2011,,Graduated
@@ -121,10 +124,10 @@ Name,Program,YourRole,StartSemester,EndSemester,ThesisTitle,CurrentStatus
 "Mostafavi Kashani, Mehdi",MSc Thesis option,Supervisor,Fall 2004,Fall 2007,,Graduated
 "Sabzmeydani, Payam",MSc Thesis option,SFU Examiner,Fall 2004,Fall 2006,,Graduated
 "Wang, Yang",PhD,Supervisor,Fall 2004,Fall 2009,,Graduated
-"Grbavec, Ann",PhD,SFU Examiner,Fall 2004,Fall 2004,,Graduation Approved
 "Gu, Baohua",PhD,Defence Chair,Fall 2003,Summer 2008,,Graduated
 "Haffari, Gholam",PhD,Senior Supervisor,Fall 2003,Fall 2009,Machine Learning Approaches to Dealing with Limited Training Data in Statistical Machine Translation,Graduated
 "Melli, Gabor",PhD,Supervisor,Fall 2003,Fall 2010,,Graduated
+"Grbavec, Ann",PhD,SFU Examiner,Fall 2004,Fall 2004,,Graduated
 "Wang, Yang",MSc Thesis option,Supervisor,Fall 2003,Fall 2006,,Graduated
 "Corbett, Richard",MSc Thesis option,Potential Supervisor (no committee),Spring 2003,,,Declined Offer
 "Fung, Benjamin",PhD,Defence Chair,Spring 2003,Summer 2007,,Graduated
