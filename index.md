@@ -82,6 +82,7 @@ If you are interested in working with me, before you email me, please read my <a
     </ul>
 </div>
 
+* Summer 2023: [Advanced NLP](http://anoopsarkar.github.io/advanced-nlp-class/)
 * Fall 2021: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * Fall 2019: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 
