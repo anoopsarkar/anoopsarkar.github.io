@@ -147,6 +147,21 @@ pubstate = {published}
     abstract = "While the attention heatmaps produced by neural machine translation (NMT) models seem insightful, there is little evidence that they reflect a model{'}s true internal reasoning. We provide a measure of faithfulness for NMT based on a variety of stress tests where attention weights which are crucial for prediction are perturbed and the model should alter its predictions if the learned weights are a faithful explanation of the predictions. We show that our proposed faithfulness measure for NMT models can be improved using a novel differentiable objective that rewards faithful behaviour by the model through probability divergence. Our experimental results on multiple language pairs show that our objective function is effective in increasing faithfulness and can lead to a useful analysis of NMT model behaviour and more trustworthy attention heatmaps. Our proposed objective improves faithfulness without reducing the translation quality and has a useful regularization effect on the NMT model and can even improve translation quality in some cases.",
 }
 
+@inproceedings{moradi-etal-2020-training,
+    title = "Training with Adversaries to Improve Faithfulness of Attention in Neural Machine Translation",
+    author = "Moradi, Pooya  and
+      Kambhatla, Nishant  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing: Student Research Workshop",
+    month = dec,
+    year = "2020",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.aacl-srw.14",
+    pages = "93--100",
+    abstract = "Can we trust that the attention heatmaps produced by a neural machine translation (NMT) model reflect its true internal reasoning? We isolate and examine in detail the notion of faithfulness in NMT models. We provide a measure of faithfulness for NMT based on a variety of stress tests where model parameters are perturbed and measuring faithfulness based on how often the model output changes. We show that our proposed faithfulness measure for NMT models can be improved using a novel differentiable objective that rewards faithful behaviour by the model through probability divergence. Our experimental results on multiple language pairs show that our objective function is effective in increasing faithfulness and can lead to a useful analysis of NMT model behaviour and more trustworthy attention heatmaps. Our proposed objective improves faithfulness without reducing the translation quality and it also seems to have a useful regularization effect on the NMT model and can even improve translation quality in some cases.",
+}
+
 @inproceedings{alinejad-sarkar-2020-effectively,
     title = "Effectively pretraining a speech translation decoder with Machine Translation data",
     author = "Alinejad, Ashkan  and
@@ -224,6 +239,16 @@ pubstate = {published}
     doi = "10.18653/v1/K19-1002",
     pages = "12--21",
     abstract = "Supertagging is a sequence prediction task where each word is assigned a piece of complex syntactic structure called a supertag. We provide a novel approach to multi-task learning for Tree Adjoining Grammar (TAG) supertagging by deconstructing these complex supertags in order to define a set of related but auxiliary sequence prediction tasks. Our multi-task prediction framework is trained over the exactly same training data used to train the original supertagger where each auxiliary task provides an alternative view on the original prediction task. Our experimental results show that our multi-task approach significantly improves TAG supertagging with a new state-of-the-art accuracy score of 91.39{\textbackslash}{\%} on the Penn Treebank supertagging dataset.",
+}
+
+@misc{gu2019pointerbased,
+      title="Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation",
+      author="Jetic Gū and Hassan S. Shavarani and Anoop Sarkar",
+      year="2019",
+      eprint="1909.07907",
+      url="https://arxiv.org/abs/1909.07907",
+      archivePrefix="arXiv",
+      primaryClass="cs.CL"
 }
 
 @InProceedings{kambhatla2018decipherment,
@@ -441,6 +466,15 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   year={2016}
 }
 
+@inproceedings{sarkar2016paclic30,
+      title="The Challenge of Simultaneous Speech Translation",
+      author="Anoop Sarkar",
+      year="2016",
+      booktitle="PACLIC 30",
+      url="https://aclanthology.org/Y16-1003.pdf",
+      archivePrefix="ACL Anthology"
+}
+
 @inproceedings{shavarani-siahbani-sarkar:2015:iwslt,
     author = {Hassan S. Shavarani , Maryam Siahbani, Ramtin Mehdizadeh Seraj and Anoop Sarkar}, 
     title = {Learning Segmentations that Balance Latency versus Quality in Spoken Language Translation},
@@ -625,7 +659,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
 @inproceedings{maryam:akbc13,
   author = {Siahbani, Maryam and Vadlapudi, Ravikiran and Whitney, Max and Sarkar, Anoop},
   title = {Knowledge Base Population and Visualization Using an Ontology based on Semantic Roles},
-  booktitle = {Proceedings of the 3rd Workshop on Knowledge Extraction},
+  booktitle = {Proceedings of the 3rd Workshop on Knowledge Extraction: AKBC},
   month = {October},
   year = {2013},
   address = {San Francisco, USA},
@@ -780,6 +814,20 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   pdf       = {http://aclweb.org/anthology/P/P11/P11-1004.pdf},
   abstract  = {This paper extends the training and tuning regime for phrase-based statistical machine translation to obtain fluent translations into morphologically complex languages (we build an English to Finnish translation system). Our methods use unsupervised morphology induction. Unlike previous work we focus on morphologically productive phrase pairs – our decoder can combine morphemes across phrase boundaries. Morphemes in the target language may not have a corresponding morpheme or word in the source language. Therefore, we propose a novel combination of post-processing morphology prediction with morpheme-based translation. We show, using both automatic evaluation scores and linguistically motivated analyses of the output, that our methods outperform previously proposed ones and provide the best known results on the EnglishFinnish Europarl translation task. Our methods are mostly language independent, so they should improve translation into other target languages with complex morphology.},
   url       = {http://www.aclweb.org/anthology/P11-1004}
+}
+
+@article{sarkar-2011-book,
+    title = "Book Reviews: Parsing Schemata for Practical Text Analysis by Carlos {G}{\'o}mez {R}odr{\'\i}guez",
+    author = "Sarkar, Anoop",
+    journal = "Computational Linguistics",
+    volume = "37",
+    number = "4",
+    month = dec,
+    year = "2011",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/J11-4010",
+    doi = "10.1162/COLI_r_00081",
 }
 
 @inproceedings{sankaran_etal:2010:WMT,
@@ -948,16 +996,17 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{sarkar-haffari:2006:HLT-NAACL06-Tutorials,
-  author = {Sarkar, Anoop and Haffari, Gholamreza},
-  title = {Tutorial on Inductive Semi-supervised Learning Methods: with Applicability to Natural Language Processing},
-  booktitle = {Proceedings of the Human Language Technology Conference of the NAACL, Companion Volume: Tutorial Abstracts},
-  month = {jun},
-  year = {2006},
-  address = {New York City, USA},
-  publisher = {Association for Computational Linguistics},
-  pages = {307--308},
-  url = {http://www.aclweb.org/anthology/N/N06/N06-5005}
+@inproceedings{sarkar-haffari-2006-tutorial,
+    title = "Tutorial on Inductive Semi-supervised Learning Methods: with Applicability to Natural Language Processing",
+    author = "Sarkar, Anoop  and
+      Haffari, Gholamreza",
+    booktitle = "Proceedings of the Human Language Technology Conference of the {NAACL}, Companion Volume: Tutorial Abstracts",
+    month = jun,
+    year = "2006",
+    address = "New York City, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N06-5005",
+    pages = "307--308",
 }
 
 @inproceedings{song-sarkar:2006:SIGHAN,
@@ -1182,6 +1231,16 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   year = {1997},
   address = {Saarbruecken, Germany},
   pdf = {https://anoopsarkar.github.io/papers/pdf/mol5final.pdf}
+}
+
+@misc{sarkar1998separating,
+      title="Separating Dependency from Constituency in a Tree Rewriting System",
+      author="Anoop Sarkar",
+      year="1998",
+      url="https://arxiv.org/abs/cs/9809028v1",
+      eprint="cs/9809028",
+      archivePrefix="arXiv",
+      primaryClass="cs.CL"
 }
 
 @article{DBLP:journals/corr/cs-CL-9809028,
