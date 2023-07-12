@@ -1,3 +1,32 @@
+@inproceedings{kambhatla-etal-2023-learning,
+    title = "Learning Nearest Neighbour Informed Latent Word Embeddings to Improve Zero-Shot Machine Translation",
+    author = "Kambhatla, Nishant  and
+      Born, Logan  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the 20th International Conference on Spoken Language Translation (IWSLT 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada (in-person and online)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.iwslt-1.27",
+    pages = "291--301",
+    abstract = "Multilingual neural translation models exploit cross-lingual transfer to perform zero-shot translation between unseen language pairs. Past efforts to improve cross-lingual transfer have focused on aligning contextual sentence-level representations. This paper introduces three novel contributions to allow exploiting nearest neighbours at the token level during training, including: (i) an efficient, gradient-friendly way to share representations between neighboring tokens; (ii) an attentional semantic layer which extracts latent features from shared embeddings; and (iii) an agreement loss to harmonize predictions across different sentence representations. Experiments on two multilingual datasets demonstrate consistent gains in zero shot translation over strong baselines.",
+}
+
+@inproceedings{jain-etal-2023-language,
+    title = "Language Model Based Target Token Importance Rescaling for Simultaneous Neural Machine Translation",
+    author = "Jain, Aditi  and
+      Kambhatla, Nishant  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the 20th International Conference on Spoken Language Translation (IWSLT 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada (in-person and online)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.iwslt-1.32",
+    pages = "341--356",
+    abstract = "The decoder in simultaneous neural machine translation receives limited information from the source while having to balance the opposing requirements of latency versus translation quality. In this paper, we use an auxiliary target-side language model to augment the training of the decoder model. Under this notion of target adaptive training, generating rare or difficult tokens is rewarded which improves the translation quality while reducing latency. The predictions made by a language model in the decoder are combined with the traditional cross entropy loss which frees up the focus on the source side context. Our experimental results over multiple language pairs show that compared to previous state of the art methods in simultaneous translation, we can use an augmented target side context to improve BLEU scores significantly. We show improvements over the state of the art in the low latency range with lower average lagging values (faster output).",
+}
 
 @inproceedings{eacl2023,
     title = "Decipherment as Regression: Solving Historical Substitution Ciphers by Learning Symbol Recurrence Relations",
