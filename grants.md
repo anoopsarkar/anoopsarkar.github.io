@@ -7,11 +7,12 @@ menu: true
 * Google Faculty Research Award
     * 2014-2015
     * 2009-2010
-* NSERC Discovery Accelerator Supplements Program: 2012-2015
+* NSERC Discovery Accelerator Supplements Program: 2012-2015 and 2017-2023.
 * NSERC Discovery Grants Program
     * 2003-2007
     * 2007-2012
     * 2012-2017
+    * 2017-2023
 * NSERC Strategic Project Grants
     * Co-investigator on the GreenPhones project with Sasha Fedorova and Arrvindh Shriraman: 2012-2016
 * NSERC Collaborative Research and Development (CRD) Grants

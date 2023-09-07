@@ -119,9 +119,10 @@ If you are interested in working with me, before you email me, please read my <a
         <li><a href="{{ site.baseurl }}/grants">All grants</a></li>
     </ul>
 </div>
-* Google Faculty Research Award, 2014-2015.
-* NSERC Discovery Accelerator Supplements Program, 2012-2015.
-* NSERC Discovery Grants Program, 2003-2007, 2007-2012, 2012-2017.
+* NSERC Discovery Accelerator Supplements Program: 2012-2015 and 2017-2023.
+* NSERC Discovery Grants Program, 2003-2007, 2007-2012, 2012-2017, 2017-2023.
+* Google Faculty Research Award, 2014-2015 and 2009-2010
+* IBM Faculty Award: 2008-2009
 
 ### Service
 <div class="more">
@@ -129,6 +130,7 @@ If you are interested in working with me, before you email me, please read my <a
         <li><a href="{{ site.baseurl }}/service">All activities</a></li>
     </ul>
 </div>
+* Area chair, EMNLP 2023.
 * Tutorial co-chair, NAACL 2019, Minneapolis, MN
 * Local co-organizer, ACL 2017, Vancouver, BC
 * Area co-chair, Machine Learning track, EMNLP 2017
