@@ -12,7 +12,7 @@ relatedpages:
 ---
 
 <div class="alert alert-danger">
-Due to Covid19 and uncertainty about my plans for Fall 2021, I am unable to take any new students starting with the Fall 2021 semester and for the forseeable future. If you have emailed me about a potential undergraduate or graduate research position (such as Masters or PhD admission) please note that I cannot individually respond to each of you. Stay safe and all the best with your career!
+I am unable to take on any new students for the forseeable future. If you have emailed me about a potential undergraduate or graduate research position (such as Masters or PhD admission) please note that I cannot individually respond to each of you. Stay safe and all the best with your career!
 </div>
 
 <div class="alert alert-info">
