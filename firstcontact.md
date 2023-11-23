@@ -12,7 +12,7 @@ relatedpages:
 ---
 
 <div class="alert alert-danger">
-I am unable to take on any new students for the forseeable future. If you have emailed me about a potential undergraduate or graduate research position (such as Masters or PhD admission) please note that I cannot individually respond to each of you. Stay safe and all the best with your career!
+I am planning to take on a few students starting in Fall 2024. Please apply for SFU graduate studies in Computer Science using their [usual process](https://www.sfu.ca/computing/prospective-students/graduate-students/admissions.html). If you have emailed me about a potential undergraduate or graduate research position (such as Masters or PhD admission) please note that I cannot individually respond to each of you. If you have applied for a MSc or PhD position and if you have listed me as a potential supervisor then I will be evaluating your application. Please be aware that there are close to a hundred applications for only a few open positions.
 </div>
 
 <div class="alert alert-info">
@@ -33,7 +33,7 @@ Although I try my best to respond to important emails, due the large volume I ca
 
 ## Prospective graduate students: Applying for MSc and PhD
 
-If you are considering SFU as a MSc or PhD student in Computer Science, I strongly encourage you to apply. We have an excellent research lab in computational linguistics and natural language processing. We are certainly very competitive with other universities in Canada. 
+If you are considering SFU as a MSc or PhD student in Computer Science, I strongly encourage you to apply. We have an excellent research lab in computational linguistics and natural language processing. We are certainly very competitive with other universities in Canada.
 
 Please see the notice above for open positions for the following academic year.
 
