@@ -6,6 +6,7 @@ menu: false
 
 ## Recent Teaching
 
+* Fall 2023: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 * Fall 2020: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * Fall 2019: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 * Summer 2019: [Compilers](http://anoopsarkar.github.io/compilers-class/)
