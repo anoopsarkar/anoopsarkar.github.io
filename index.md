@@ -18,7 +18,7 @@ customjs: shortpubs
     <a href="https://www.semanticscholar.org/author/Anoop-Sarkar/3028658" class="button">Semantic Scholar</a>
     <a href="https://dblp.org/pers/hd/s/Sarkar:Anoop" class="button">DBLP</a>
     <a href="https://github.com/anoopsarkar" class="button">Github</a>
-    <a href="https://twitter.com/anoopsarkar" class="button">Twitter</a>
+    <a href="https://mstdn.ca/@anoopsarkar" class="button">Mastodon</a>
 </div>
 </p>
 
@@ -82,8 +82,9 @@ If you are interested in working with me, before you email me, please read my <a
     </ul>
 </div>
 
+* Fall 2024: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
+* Summer 2023: [Advanced Natural Language Processing](http://anoopsarkar.github.io/advanced-nlp-class/)
 * Fall 2021: [Compilers](http://anoopsarkar.github.io/compilers-class/)
-* Fall 2019: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 
 ### Recent Publications and Talks
 <div class="more">
@@ -118,9 +119,10 @@ If you are interested in working with me, before you email me, please read my <a
         <li><a href="{{ site.baseurl }}/grants">All grants</a></li>
     </ul>
 </div>
-* Google Faculty Research Award, 2014-2015.
-* NSERC Discovery Accelerator Supplements Program, 2012-2015.
-* NSERC Discovery Grants Program, 2003-2007, 2007-2012, 2012-2017.
+* NSERC Discovery Accelerator Supplements Program: 2012-2015 and 2017-2023.
+* NSERC Discovery Grants Program, 2003-2007, 2007-2012, 2012-2017, 2017-2023.
+* Google Faculty Research Award, 2014-2015 and 2009-2010
+* IBM Faculty Award: 2008-2009
 
 ### Service
 <div class="more">
@@ -128,6 +130,7 @@ If you are interested in working with me, before you email me, please read my <a
         <li><a href="{{ site.baseurl }}/service">All activities</a></li>
     </ul>
 </div>
+* Area chair, EMNLP 2023.
 * Tutorial co-chair, NAACL 2019, Minneapolis, MN
 * Local co-organizer, ACL 2017, Vancouver, BC
 * Area co-chair, Machine Learning track, EMNLP 2017

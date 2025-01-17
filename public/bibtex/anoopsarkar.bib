@@ -1,3 +1,121 @@
+@inproceedings{born-etal-2024-towards,
+    title = "Towards Fast Cognate Alignment on Imbalanced Data",
+    author = "Born, Logan  and
+      Monroe, M. Willis  and
+      Kelley, Kathryn  and
+      Sarkar, Anoop",
+    editor = "Gorman, Kyle  and
+      Prud'hommeaux, Emily  and
+      Roark, Brian  and
+      Sproat, Richard",
+    booktitle = "Proceedings of the Second Workshop on Computation and Written Language (CAWL) @ LREC-COLING 2024",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.cawl-1.7",
+    pages = "53--58",
+    abstract = "Cognate alignment models purport to enable decipherment, but their speed and need for clean data can make them unsuitable for realistic decipherment problems. We seek to draw attention to these shortcomings in the hopes that future work may avoid them, and we outline two techniques which begin to overcome the described problems.",
+}
+
+@inproceedings{ong-etal-2024-unified,
+    title = "Unified Examination of Entity Linking in Absence of Candidate Sets",
+    author = "Ong, Nicolas  and
+      Shavarani, Hassan  and
+      Sarkar, Anoop",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 2: Short Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-short.11",
+    doi = "10.18653/v1/2024.naacl-short.11",
+    pages = "113--123",
+    abstract = "Despite remarkable strides made in the development of entity linking systems in recent years, a comprehensive comparative analysis of these systems using a unified framework is notably absent. This paper addresses this oversight by introducing a new black-box benchmark and conducting a comprehensive evaluation of all state-of-the-art entity linking methods. We use an ablation study to investigate the impact of candidate sets on the performance of entity linking. Our findings uncover exactly how much such entity linking systems depend on candidate sets, and how much this limits the general applicability of each system. We present an alternative approach to candidate sets, demonstrating that leveraging the entire in-domain candidate set can serve as a viable substitute for certain models. We show the trade-off between less restrictive candidate sets, increased inference time and memory footprint for some models.",
+}
+
+@inproceedings{shavarani-sarkar-2023-spel,
+    title = "{S}p{EL}: Structured Prediction for Entity Linking",
+    author = "Shavarani, Hassan  and
+      Sarkar, Anoop",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.686",
+    doi = "10.18653/v1/2023.emnlp-main.686",
+    pages = "11123--11137",
+    abstract = "Entity linking is a prominent thread of research focused on structured data creation by linking spans of text to an ontology or knowledge source. We revisit the use of structured prediction for entity linking which classifies each individual input token as an entity, and aggregates the token predictions. Our system, called SpEL (Structured prediction for Entity Linking) is a state-of-the-art entity linking system that uses some new ideas to apply structured prediction to the task of entity linking including: two refined fine-tuning steps; a context sensitive prediction aggregation strategy; reduction of the size of the model{'}s output vocabulary, and; we address a common problem in entity-linking systems where there is a training vs. inference tokenization mismatch. Our experiments show that we can outperform the state-of-the-art on the commonly used AIDA benchmark dataset for entity linking to Wikipedia. Our method is also very compute efficient in terms of number of parameters and speed of inference.",
+}
+
+@inproceedings{born-etal-2023-disambiguating,
+    title = "Disambiguating Numeral Sequences to Decipher Ancient Accounting Corpora",
+    author = "Born, Logan  and
+      Monroe, M. Willis  and
+      Kelley, Kathryn  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the Workshop on Computation and Written Language (CAWL 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.cawl-1.9",
+    pages = "71--81",
+    abstract = "A numeration system encodes abstract numeric quantities as concrete strings of written characters. The numeration systems used by modern scripts tend to be precise and unambiguous, but this was not so for the ancient and partially-deciphered proto-Elamite (PE) script, where written numerals can have up to four distinct readings depending on the system that is used to read them. We consider the task of disambiguating between these readings in order to determine the values of the numeric quantities recorded in this corpus. We contribute an automated conversion from PE notation to modern Hindu-Arabic notation, as well as two disambiguation techniques based on structural properties of the original documents and classifiers learned with the bootstrapping algorithm. We also contribute a test set for evaluating disambiguation techniques, as well as a novel approach to cautious rule selection for bootstrapped classifiers. Our analysis confirms existing intuitions about this script and reveals previously-unknown correlations between tablet content and numeral magnitude. This work is crucial to understanding and deciphering PE, as the corpus is heavily accounting-focused and contains many more numeric tokens than tokens of text.",
+}
+
+@inproceedings{born-etal-2023-learning,
+    title = "Learning the Character Inventories of Undeciphered Scripts Using Unsupervised Deep Clustering",
+    author = "Born, Logan  and
+      Monroe, M. Willis  and
+      Kelley, Kathryn  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the Workshop on Computation and Written Language (CAWL 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.cawl-1.11",
+    pages = "92--104",
+    abstract = "A crucial step in deciphering a text is to identify what set of characters were used to write it. This requires grouping character tokens according to visual and contextual features, which can be challenging for human analysts when the number of tokens or underlying types is large. Prior work has shown that this process can be automated by clustering dense representations of character images, in a task which we call {``}script clustering{''}. In this work, we present novel architectures which exploit varying degrees of contextual and visual information to learn representations for use in script clustering. We evaluate on a range of modern and ancient scripts, and find that our models produce representations which are more effective for script recovery than the current state-of-the-art, despite using just {\textasciitilde}2{\textbackslash}{\%} as many parameters. Our analysis fruitfully applies these models to assess hypotheses about the character inventory of the partially-deciphered proto-Elamite script.",
+}
+
+@inproceedings{kambhatla-etal-2023-learning,
+    title = "Learning Nearest Neighbour Informed Latent Word Embeddings to Improve Zero-Shot Machine Translation",
+    author = "Kambhatla, Nishant  and
+      Born, Logan  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the 20th International Conference on Spoken Language Translation (IWSLT 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada (in-person and online)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.iwslt-1.27",
+    pages = "291--301",
+    abstract = "Multilingual neural translation models exploit cross-lingual transfer to perform zero-shot translation between unseen language pairs. Past efforts to improve cross-lingual transfer have focused on aligning contextual sentence-level representations. This paper introduces three novel contributions to allow exploiting nearest neighbours at the token level during training, including: (i) an efficient, gradient-friendly way to share representations between neighboring tokens; (ii) an attentional semantic layer which extracts latent features from shared embeddings; and (iii) an agreement loss to harmonize predictions across different sentence representations. Experiments on two multilingual datasets demonstrate consistent gains in zero shot translation over strong baselines.",
+}
+
+@inproceedings{jain-etal-2023-language,
+    title = "Language Model Based Target Token Importance Rescaling for Simultaneous Neural Machine Translation",
+    author = "Jain, Aditi  and
+      Kambhatla, Nishant  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the 20th International Conference on Spoken Language Translation (IWSLT 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada (in-person and online)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.iwslt-1.32",
+    pages = "341--356",
+    abstract = "The decoder in simultaneous neural machine translation receives limited information from the source while having to balance the opposing requirements of latency versus translation quality. In this paper, we use an auxiliary target-side language model to augment the training of the decoder model. Under this notion of target adaptive training, generating rare or difficult tokens is rewarded which improves the translation quality while reducing latency. The predictions made by a language model in the decoder are combined with the traditional cross entropy loss which frees up the focus on the source side context. Our experimental results over multiple language pairs show that compared to previous state of the art methods in simultaneous translation, we can use an augmented target side context to improve BLEU scores significantly. We show improvements over the state of the art in the low latency range with lower average lagging values (faster output).",
+}
 
 @inproceedings{eacl2023,
     title = "Decipherment as Regression: Solving Historical Substitution Ciphers by Learning Symbol Recurrence Relations",
@@ -7,7 +125,7 @@
     year = "2023",
     address = "Dubrovnik, Croatia",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/",
+    url = "https://aclanthology.org/2023.findings-eacl.160/",
     abstract = "Solving substitution ciphers involves mapping sequences of cipher symbols to fluent text in a target language. This has conventionally been formulated as a search problem, to find the decipherment key using a character-level language model to constrain the search space. This work instead frames decipherment as a sequence prediction task, using a Transformer-based causal language model to learn recurrences between characters in a ciphertext. We introduce a novel technique for transcribing arbitrary substitution ciphers into a common \textit{recurrence encoding}. By leveraging this technique, we (i) create a large synthetic dataset of homophonic ciphers using random keys, and (ii) train a decipherment model that predicts the plaintext sequence given a recurrence-encoded ciphertext. Our method achieves strong results on synthetic 1:1 and homophonic ciphers, and cracks several real historic homophonic ciphers. Our analysis shows that the model learns recurrence relations between cipher symbols and recovers decipherment keys in its self-attention."
 }
 
@@ -34,6 +152,7 @@ doi = {10.2143/IA.57.0.0000000},
 issn = {1720-9331},
 year = {2022},
 journal = {Iranica Antiqua},
+pdf = "https://anoopsarkar.github.io/papers/pdf/IA57001.pdf",
 volume = {LVII},
 abstract = {Proto-Elamite (PE) is a mostly undeciphered writing system of late 4th / early 3rd millennium Iran. Although known to be a bookkeeping system that employs many “object” signs and numerical notations, it has long been hypothesized that the script could contain some signs which functioned as a “syllabary”, which would make PE a very early example of glottographic writing.  A recent article on the decipherment of the much-later Linear Elamite (LE) script (Desset et al. 2022) proposed a set of correspondences between the LE signs and graphically similar PE signs, suggesting that future work should explore whether LE sign values may be successfully applied to PE signs to yield a greater decipherment. The current article applies the values of Desset et al. to the existing PE corpus to begin to test this theory. Contextual information in PE facilitates examining whether some LE signs and values may be of phylogenetic relationship to PE ones. The article explores the PE signs and sign sequences in question, offering observations on patterns of use with implications for future work towards investigating hypothetical sound values for PE signs.},
 pubstate = {published}
@@ -46,6 +165,8 @@ doi = {10.1418/105965},
 issn = {1720-9331},
 year = {2022},
 journal = {Lingue e Linguaggio},
+url = "https://www.rivisteweb.it/doi/10.1418/105965",
+pdf = "https://anoopsarkar.github.io/papers/pdf/KelleyETAL_1720-9331-38086-4-AVAILABLE-AFTER-Jan-2024.pdf",
 volume = {XXI.2},
 abstract = {Computational methods and machine learning have been applied to problems in the study of Proto-Elamite writing in recent years, with results which confirm that the available digital format of the corpus and the work-in-progress signlist can support meaningful computational analysis. However, the specialist’s system for transliterating the texts nonetheless determines the ways that algorithms have been learning sign relationships. This paper therefore explores how image-aware language modeling can address difficulties arising from biases introduced into the data during transliteration. This approach can help us to better understand the system of signs and to revise the proto-Elamite signlist, a fundamental task of the decipherment project.},
 pubstate = {published}
@@ -144,6 +265,21 @@ pubstate = {published}
     abstract = "While the attention heatmaps produced by neural machine translation (NMT) models seem insightful, there is little evidence that they reflect a model{'}s true internal reasoning. We provide a measure of faithfulness for NMT based on a variety of stress tests where attention weights which are crucial for prediction are perturbed and the model should alter its predictions if the learned weights are a faithful explanation of the predictions. We show that our proposed faithfulness measure for NMT models can be improved using a novel differentiable objective that rewards faithful behaviour by the model through probability divergence. Our experimental results on multiple language pairs show that our objective function is effective in increasing faithfulness and can lead to a useful analysis of NMT model behaviour and more trustworthy attention heatmaps. Our proposed objective improves faithfulness without reducing the translation quality and has a useful regularization effect on the NMT model and can even improve translation quality in some cases.",
 }
 
+@inproceedings{moradi-etal-2020-training,
+    title = "Training with Adversaries to Improve Faithfulness of Attention in Neural Machine Translation",
+    author = "Moradi, Pooya  and
+      Kambhatla, Nishant  and
+      Sarkar, Anoop",
+    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing: Student Research Workshop",
+    month = dec,
+    year = "2020",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.aacl-srw.14",
+    pages = "93--100",
+    abstract = "Can we trust that the attention heatmaps produced by a neural machine translation (NMT) model reflect its true internal reasoning? We isolate and examine in detail the notion of faithfulness in NMT models. We provide a measure of faithfulness for NMT based on a variety of stress tests where model parameters are perturbed and measuring faithfulness based on how often the model output changes. We show that our proposed faithfulness measure for NMT models can be improved using a novel differentiable objective that rewards faithful behaviour by the model through probability divergence. Our experimental results on multiple language pairs show that our objective function is effective in increasing faithfulness and can lead to a useful analysis of NMT model behaviour and more trustworthy attention heatmaps. Our proposed objective improves faithfulness without reducing the translation quality and it also seems to have a useful regularization effect on the NMT model and can even improve translation quality in some cases.",
+}
+
 @inproceedings{alinejad-sarkar-2020-effectively,
     title = "Effectively pretraining a speech translation decoder with Machine Translation data",
     author = "Alinejad, Ashkan  and
@@ -223,46 +359,56 @@ pubstate = {published}
     abstract = "Supertagging is a sequence prediction task where each word is assigned a piece of complex syntactic structure called a supertag. We provide a novel approach to multi-task learning for Tree Adjoining Grammar (TAG) supertagging by deconstructing these complex supertags in order to define a set of related but auxiliary sequence prediction tasks. Our multi-task prediction framework is trained over the exactly same training data used to train the original supertagger where each auxiliary task provides an alternative view on the original prediction task. Our experimental results show that our multi-task approach significantly improves TAG supertagging with a new state-of-the-art accuracy score of 91.39{\textbackslash}{\%} on the Penn Treebank supertagging dataset.",
 }
 
+@misc{gu2019pointerbased,
+      title="Pointer-based Fusion of Bilingual Lexicons into Neural Machine Translation",
+      author="Jetic Gū and Hassan S. Shavarani and Anoop Sarkar",
+      year="2019",
+      eprint="1909.07907",
+      url="https://arxiv.org/abs/1909.07907",
+      archivePrefix="arXiv",
+      primaryClass="cs.CL"
+}
+
 @InProceedings{kambhatla2018decipherment,
-  author = 	"Kambhatla, Nishant
-		and Mansouri Bigvand, Anahita
-		and Sarkar, Anoop",
-  title = 	"Decipherment of Substitution Ciphers with Neural Language Models",
-  booktitle = 	"Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
-  year = 	"2018",
-  publisher = 	"Association for Computational Linguistics",
-  pages = 	"869--874",
-  address = 	"Brussels, Belgium",
-  url = 	"http://aclweb.org/anthology/D18-1102",
+  author =     "Kambhatla, Nishant
+        and Mansouri Bigvand, Anahita
+        and Sarkar, Anoop",
+  title =     "Decipherment of Substitution Ciphers with Neural Language Models",
+  booktitle =     "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+  year =     "2018",
+  publisher =     "Association for Computational Linguistics",
+  pages =     "869--874",
+  address =     "Brussels, Belgium",
+  url =     "http://aclweb.org/anthology/D18-1102",
   pdf =         "http://aclweb.org/anthology/D18-1102"
 }
 
 @InProceedings{wu2018offensive,
-  author = 	"Wu, Zhelun
-		and Kambhatla, Nishant
-		and Sarkar, Anoop",
-  title = 	"Decipherment for Adversarial Offensive Language Detection",
-  booktitle = 	"Proceedings of the 2nd Workshop on Abusive Language Online (ALW2)",
-  year = 	"2018",
-  publisher = 	"Association for Computational Linguistics",
-  pages = 	"149--159",
-  address = 	"Brussels, Belgium",
-  url = 	"http://aclweb.org/anthology/W18-5119",
+  author =     "Wu, Zhelun
+        and Kambhatla, Nishant
+        and Sarkar, Anoop",
+  title =     "Decipherment for Adversarial Offensive Language Detection",
+  booktitle =     "Proceedings of the 2nd Workshop on Abusive Language Online (ALW2)",
+  year =     "2018",
+  publisher =     "Association for Computational Linguistics",
+  pages =     "149--159",
+  address =     "Brussels, Belgium",
+  url =     "http://aclweb.org/anthology/W18-5119",
   pdf =         "http://aclweb.org/anthology/W18-5119"
 }
 
 
 @InProceedings{D18-1337,
-  author = 	"Alinejad, Ashkan
-		and Siahbani, Maryam
-		and Sarkar, Anoop",
-  title = 	"Prediction Improves Simultaneous Neural Machine Translation",
-  booktitle = 	"Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
-  year = 	"2018",
-  publisher = 	"Association for Computational Linguistics",
-  pages = 	"3022--3027",
-  address = 	"Brussels, Belgium",
-  url = 	"http://aclweb.org/anthology/D18-1337",
+  author =     "Alinejad, Ashkan
+        and Siahbani, Maryam
+        and Sarkar, Anoop",
+  title =     "Prediction Improves Simultaneous Neural Machine Translation",
+  booktitle =     "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+  year =     "2018",
+  publisher =     "Association for Computational Linguistics",
+  pages =     "3022--3027",
+  address =     "Brussels, Belgium",
+  url =     "http://aclweb.org/anthology/D18-1337",
   pdf =         "http://aclweb.org/anthology/D18-1337",
   abstract = {Simultaneous speech translation aims to maintain translation quality while minimizing the delay between reading input and incrementally producing the output.
 We propose a new general-purpose prediction action which predicts future words in the input to improve quality and minimize delay in simultaneous translation. We train this agent using reinforcement learning with a novel reward function. Our agent with prediction has better translation quality and less delay compared to an agent-based simultaneous translation system without prediction.}
@@ -270,29 +416,29 @@ We propose a new general-purpose prediction action which predicts future words i
 
 
 @InProceedings{gu:2018:topdown,
-  author = 	{Gū, Jetic
-		and Shavarani, Hassan S.
-		and Sarkar, Anoop},
-  title = 	{Top-down Tree Structured Decoding with Syntactic Connections for Neural Machine Translation and Parsing},
-  booktitle = 	{Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP) },
-  year = 	{2018},
-  pages = 	{401--413},
-  address = 	{Brussels, Belgium},
-  url = 	{http://aclweb.org/anthology/D18-1037},
-  pdf = 	{http://aclweb.org/anthology/D18-1037},
+  author =     {Gū, Jetic
+        and Shavarani, Hassan S.
+        and Sarkar, Anoop},
+  title =     {Top-down Tree Structured Decoding with Syntactic Connections for Neural Machine Translation and Parsing},
+  booktitle =     {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP) },
+  year =     {2018},
+  pages =     {401--413},
+  address =     {Brussels, Belgium},
+  url =     {http://aclweb.org/anthology/D18-1037},
+  pdf =     {http://aclweb.org/anthology/D18-1037},
   abstract = {The addition of syntax-aware decoding in Neural Machine Translation (NMT) systems requires an effective tree-structured neural network, a syntax-aware attention model and a language generation model that is sensitive to sentence structure. We exploit a top-down tree-structured model called DRNN (Doubly-Recurrent Neural Networks) first proposed by Alvarez-Melis and Jaakola (2017) to create an NMT model called Seq2DRNN that combines a sequential encoder with tree-structured decoding augmented with a syntax-aware attention model. Unlike previous approaches to syntax-based NMT which use dependency parsing models our method uses constituency parsing which we argue provides useful information for translation. In addition, we use the syntactic structure of the sentence to add new connections to the tree-structured decoder neural network (Seq2DRNN+SynC). We compare our NMT model with sequential and state of the art syntax-based NMT models and show that our model produces more fluent translations with better reordering. Since our model is capable of doing translation and constituency parsing at the same time we also compare our parsing accuracy against other neural parsing models.}
 }
 
 @InProceedings{sheikhshab:2018:LOUHI,
-  author = 	{Sheikhshab, Golnar and Birol, Inanc
-		and Sarkar, Anoop},
-  title = 	{In-domain Context-aware Token Embeddings Improve Biomedical Named Entity Recognition},
-  booktitle = 	{Proceedings of the Ninth International Workshop on Health Text Mining and Information Analysis (LOUHI)},
-  year = 	{2018},
-  pages = 	{160--164},
-  address = 	{Brussels, Belgium},
-  url = 	{http://aclweb.org/anthology/W18-5618 },
-  pdf = 	{http://aclweb.org/anthology/W18-5618 },
+  author =     {Sheikhshab, Golnar and Birol, Inanc
+        and Sarkar, Anoop},
+  title =     {In-domain Context-aware Token Embeddings Improve Biomedical Named Entity Recognition},
+  booktitle =     {Proceedings of the Ninth International Workshop on Health Text Mining and Information Analysis (LOUHI)},
+  year =     {2018},
+  pages =     {160--164},
+  address =     {Brussels, Belgium},
+  url =     {http://aclweb.org/anthology/W18-5618 },
+  pdf =     {http://aclweb.org/anthology/W18-5618 },
   abstract = {Rapidly expanding volume of publications in the biomedical domain makes it increasingly difficult for a timely evaluation of the latest literature. That, along with a push for automated evaluation of clinical reports, present opportunities for effective natural language processing methods. In this study we target the problem of named entity recognition, where texts are processed to annotate terms that are relevant for biomedical studies. Terms of interest in the domain include gene and protein names, and cell lines and types. Here we report on a pipeline built on Embeddings from Language Models (ELMo) and a deep learning package for natural language processing (AllenNLP). We trained context-aware token embeddings on a dataset of biomedical papers using ELMo, and incorporated these embeddings in the LSTM-CRF model used by AllenNLP for named entity recognition. We show these representations improve named entity recognition for different types of biomedical named entities. We also achieve a new state of the art in gene mention detection on the BioCreative II gene mention shared task.}
 }
 
@@ -315,15 +461,15 @@ tppubtype = {article}
 }
 
 @InProceedings{P18-1107,
-  author = 	"Born, Logan
-		and Sarkar, Anoop",
-  title = 	"Prefix Lexicalization of Synchronous CFGs using Synchronous TAG",
-  booktitle = 	"Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-  year = 	"2018",
-  publisher = 	"Association for Computational Linguistics",
-  pages = 	"1160--1170",
-  location = 	"Melbourne, Australia",
-  url = 	"http://aclweb.org/anthology/P18-1107",
+  author =     "Born, Logan
+        and Sarkar, Anoop",
+  title =     "Prefix Lexicalization of Synchronous CFGs using Synchronous TAG",
+  booktitle =     "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  year =     "2018",
+  publisher =     "Association for Computational Linguistics",
+  pages =     "1160--1170",
+  location =     "Melbourne, Australia",
+  url =     "http://aclweb.org/anthology/P18-1107",
   pdf =         "http://aclweb.org/anthology/P18-1107"
 }
 
@@ -367,7 +513,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   month     = 11,
   abstract  = {Current word alignment models do not distinguish between different types of alignment links. In this paper, we provide a new probabilistic model for word alignment where word alignments are associated with linguistically motivated alignment types. We propose a novel task of joint prediction of word alignment and alignment types and propose novel semi-supervised learning algorithms for this task. We also solve a sub-task of predicting the alignment type given an aligned word pair. In our experimental results, the generative models we introduce to model alignment types significantly outperform the models without alignment types.},
   url = {https://transacl.org/ojs/index.php/tacl/issue/view/13},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/align_type_tacl2017_paper.pdf}
+  pdf = {https://anoopsarkar.github.io/papers/pdf/align_type_tacl2017_paper.pdf}
 }
 
 @InProceedings{han-sarkar:2017:TAG13,
@@ -394,15 +540,15 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   publisher = {Association for Computational Linguistics},
   pages     = {612--618},
   abstract  = {Phrase-based and hierarchical phrase-based (Hiero) translation models differ
-	radically in the way reordering is modeled. Lexicalized reordering models play
-	an important role in phrase-based MT and such models have been added to
-	CKY-based decoders for Hiero. Watanabe et al. (2006) proposed a promising
-	decoding algorithm for Hiero (LR-Hiero) that visits input spans in arbitrary
-	order and produces the translation in left to right (LR) order which leads to
-	far fewer language model calls and leads to a considerable speedup in decoding.
-	We introduce a novel shift-reduce algorithm to LR-Hiero to decode with our
-	lexicalized reordering model (LRM) and show that it improves translation
-	quality for Czech-English, Chinese-English and German-English.},
+    radically in the way reordering is modeled. Lexicalized reordering models play
+    an important role in phrase-based MT and such models have been added to
+    CKY-based decoders for Hiero. Watanabe et al. (2006) proposed a promising
+    decoding algorithm for Hiero (LR-Hiero) that visits input spans in arbitrary
+    order and produces the translation in left to right (LR) order which leads to
+    far fewer language model calls and leads to a considerable speedup in decoding.
+    We introduce a novel shift-reduce algorithm to LR-Hiero to decode with our
+    lexicalized reordering model (LRM) and show that it improves translation
+    quality for Czech-English, Chinese-English and German-English.},
   pdf       = {http://www.aclweb.org/anthology/E17-2097},
   url       = {http://www.aclweb.org/anthology/E17-2097}
 }
@@ -438,6 +584,15 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   year={2016}
 }
 
+@inproceedings{sarkar2016paclic30,
+      title="The Challenge of Simultaneous Speech Translation",
+      author="Anoop Sarkar",
+      year="2016",
+      booktitle="PACLIC 30",
+      url="https://aclanthology.org/Y16-1003.pdf",
+      archivePrefix="ACL Anthology"
+}
+
 @inproceedings{shavarani-siahbani-sarkar:2015:iwslt,
     author = {Hassan S. Shavarani , Maryam Siahbani, Ramtin Mehdizadeh Seraj and Anoop Sarkar}, 
     title = {Learning Segmentations that Balance Latency versus Quality in Spoken Language Translation},
@@ -445,7 +600,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
     address = {Da Nang, Vietnam},
     year = 2015,
     url = {http://workshop2015.iwslt.org/},
-    pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/pareto-iwslt2015.pdf},
+    pdf = {https://anoopsarkar.github.io/papers/pdf/pareto-iwslt2015.pdf},
     abstract = {{Segmentation of the incoming speech stream and translating segments incrementally is a commonly used technique that improves latency in spoken language translation. Previous work (Oda et al. 2014) has explored creating training data for segmentation by finding segments that maximize translation quality with a user-defined bound on segment length. In this work, we provide a new algorithm, using Pareto-optimality, for finding good segment boundaries that can balance the trade-off between latency versus translation quality. We compare against the state-of-the-art greedy algorithm from (Oda et al. 2014). Our experimental results show that we can improve latency by up to 12\% without harming the Bleu score for the same average segment length. Another benefit is that for any segment size, Pareto-optimal segments maximize latency and translation quality.}}
 }
 
@@ -481,7 +636,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   publisher = {Journal of Machine Learning Research},
   year      = {2015},
   volume    = {38},
-  pdf       = {http://www.cs.sfu.ca/~anoop/papers/pdf/sag4crf-aistats2015.pdf},
+  pdf       = {https://anoopsarkar.github.io/papers/pdf/sag4crf-aistats2015.pdf},
   url       = {http://proceedings.mlr.press/v38/schmidt15.html}
 }
 
@@ -503,7 +658,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   publisher = {Association for Computational Linguistics},
   month     = {October},
   year      = {2014},
-  pdf       = {http://www.cs.sfu.ca/~anoop/papers/pdf/lrhiero-newglue-short.pdf},
+  pdf       = {https://anoopsarkar.github.io/papers/pdf/lrhiero-newglue-short.pdf},
   url       = {http://www.aclweb.org/anthology/D13-1110}
 
 }
@@ -515,7 +670,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   address   = {Vancouver, Canada},
   month     = {October},
   year      = {2014},
-  pdf       = {http://www.cs.sfu.ca/~anoop/papers/pdf/LRHieroXtraction.pdf}
+  pdf       = {https://anoopsarkar.github.io/papers/pdf/LRHieroXtraction.pdf}
 
 }
 
@@ -526,7 +681,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   address   = {Vancouver, Canada},
   month     = {October},
   year      = {2014},
-  pdf       = {http://www.cs.sfu.ca/~anoop/papers/pdf/bayesian_cascade.pdf}
+  pdf       = {https://anoopsarkar.github.io/papers/pdf/bayesian_cascade.pdf}
 }
 
 @inproceedings{dholakia-sarkar:2014:AMTA2014,
@@ -536,7 +691,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   address   = {Vancouver, Canada},
   month     = {October},
   year      = {2014},
-  pdf       = {http://www.cs.sfu.ca/~anoop/papers/pdf/triangulation-amta2014.pdf}
+  pdf       = {https://anoopsarkar.github.io/papers/pdf/triangulation-amta2014.pdf}
 }
 
 @inproceedings{siahbani-seraj-sankaran-sarkar:2014:SLT2014,
@@ -546,7 +701,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   address   = {Nevada, USA},
   month     = {December},
   year      = {2014},
-  pdf       = {http://www.cs.sfu.ca/~anoop/papers/pdf/lr-speech-slt2014.pdf}
+  pdf       = {https://anoopsarkar.github.io/papers/pdf/lr-speech-slt2014.pdf}
 }
 
 @inproceedings{sankaran-sarkar-duh:2013:NAACL-HLT,
@@ -622,7 +777,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
 @inproceedings{maryam:akbc13,
   author = {Siahbani, Maryam and Vadlapudi, Ravikiran and Whitney, Max and Sarkar, Anoop},
   title = {Knowledge Base Population and Visualization Using an Ontology based on Semantic Roles},
-  booktitle = {Proceedings of the 3rd Workshop on Knowledge Extraction},
+  booktitle = {Proceedings of the 3rd Workshop on Knowledge Extraction: AKBC},
   month = {October},
   year = {2013},
   address = {San Francisco, USA},
@@ -725,19 +880,19 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   month = {may},
   year = {2012},
   address = {Toronto, Canada},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/ai2012.pdf},
+  pdf = {https://anoopsarkar.github.io/papers/pdf/ai2012.pdf},
   abstract = {Statistical Machine Translation (SMT) is currently used in real-time and commercial settings to quickly produce initial translations for a document which can later be edited by a human. The SMT models specialized for one domain often perform poorly when applied to other domains. The typical assumption that both training and testing data are drawn from the same distribution no longer applies. This paper evaluates domain adaptation techniques for SMT systems in the context of end-user feedback in a real world application. We present our experiments using two adaptive techniques, one relying on log-linear models and the other using mixture models. We describe our experimental results on legal and government data, and present the human evaluation effort for post-editing in addition to traditional automated scoring techniques (BLEU scores). The human effort is based primarily on the amount of time and number of edits required by a professional post-editor to improve the quality of machine-generated translations to meet industry standards. The experimental results in this paper show that the domain adaptation techniques can yield a significant increase in BLEU score (up to four points) and a significant reduction in post-editing time of about one second per word.}
 }
 
 @inproceedings{whitney-clifton-sarkar-fedorova:2012:NW-NLP,
-	author={Max Whitney and Ann Clifton and Anoop Sarkar and Alexandra Fedorova},
-	title={Making the most of a distributed perceptron for NLP},
-	year=2012,
-	month=may,
-	publisher={Pacific Northwest Regional NLP Workshop},
-	address={Redmond, Washington, USA},
-	pdf={http://dada.cs.washington.edu/nw-nlp-2012/papers/perceptron-nwnlp.pdf},
-	abstract={Perceptron training is commonly used for various natural language processing tasks, making it desirable to apply on very large datasets. We implemented a distributed perceptron training algorithm in a MapReduce framework for a structured output chunking task and evaluated it on a cluster and on multi-core systems. Our work extends (McDonald et al. 2002) into two areas of analysis. We compare two methods for implementing the algorithm and find that the choice of topology in the MapReduce operations significantly affects runtime, with the unexpected result that duplicating computation increases overall performance. We also examine the behaviour with different numbers of data shards and find a tradeoff between runtime and accuracy.}
+    author={Max Whitney and Ann Clifton and Anoop Sarkar and Alexandra Fedorova},
+    title={Making the most of a distributed perceptron for NLP},
+    year=2012,
+    month=may,
+    publisher={Pacific Northwest Regional NLP Workshop},
+    address={Redmond, Washington, USA},
+    pdf={http://dada.cs.washington.edu/nw-nlp-2012/papers/perceptron-nwnlp.pdf},
+    abstract={Perceptron training is commonly used for various natural language processing tasks, making it desirable to apply on very large datasets. We implemented a distributed perceptron training algorithm in a MapReduce framework for a structured output chunking task and evaluated it on a cluster and on multi-core systems. Our work extends (McDonald et al. 2002) into two areas of analysis. We compare two methods for implementing the algorithm and find that the choice of topology in the MapReduce operations significantly affects runtime, with the unexpected result that duplicating computation increases overall performance. We also examine the behaviour with different numbers of data shards and find a tradeoff between runtime and accuracy.}
 }
 
 @inproceedings{sankaran_etal:2011:WMT,
@@ -779,6 +934,20 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   url       = {http://www.aclweb.org/anthology/P11-1004}
 }
 
+@article{sarkar-2011-book,
+    title = "Book Reviews: Parsing Schemata for Practical Text Analysis by Carlos {G}{\'o}mez {R}odr{\'\i}guez",
+    author = "Sarkar, Anoop",
+    journal = "Computational Linguistics",
+    volume = "37",
+    number = "4",
+    month = dec,
+    year = "2011",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/J11-4010",
+    doi = "10.1162/COLI_r_00081",
+}
+
 @inproceedings{sankaran_etal:2010:WMT,
   author = {Sankaran, Baskaran and Grewal, Ajeet and Sarkar, Anoop},
   title = {Incremental decoding for phrase-based statistical machine translation},
@@ -802,7 +971,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   address = {Manchester, UK},
   publisher = {Coling 2008 Organizing Committee},
   pages = {305--312},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/coling08.pdf},
+  pdf = {https://anoopsarkar.github.io/papers/pdf/coling08.pdf},
   url = {http://www.aclweb.org/anthology/C08-1039}
 }
 
@@ -945,16 +1114,17 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{sarkar-haffari:2006:HLT-NAACL06-Tutorials,
-  author = {Sarkar, Anoop and Haffari, Gholamreza},
-  title = {Tutorial on Inductive Semi-supervised Learning Methods: with Applicability to Natural Language Processing},
-  booktitle = {Proceedings of the Human Language Technology Conference of the NAACL, Companion Volume: Tutorial Abstracts},
-  month = {jun},
-  year = {2006},
-  address = {New York City, USA},
-  publisher = {Association for Computational Linguistics},
-  pages = {307--308},
-  url = {http://www.aclweb.org/anthology/N/N06/N06-5005}
+@inproceedings{sarkar-haffari-2006-tutorial,
+    title = "Tutorial on Inductive Semi-supervised Learning Methods: with Applicability to Natural Language Processing",
+    author = "Sarkar, Anoop  and
+      Haffari, Gholamreza",
+    booktitle = "Proceedings of the Human Language Technology Conference of the {NAACL}, Companion Volume: Tutorial Abstracts",
+    month = jun,
+    year = "2006",
+    address = "New York City, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N06-5005",
+    pages = "307--308",
 }
 
 @inproceedings{song-sarkar:2006:SIGHAN,
@@ -1147,7 +1317,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   booktitle = {COLING-ACL},
   year = {1998},
   pages = {1164-1170},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/consist.pdf},
+  pdf = {https://anoopsarkar.github.io/papers/pdf/consist.pdf},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1157,7 +1327,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   booktitle = {{COLING-ACL}},
   year = {1998},
   pages = {953-959},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/prefix.pdf},
+  pdf = {https://anoopsarkar.github.io/papers/pdf/prefix.pdf},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1166,7 +1336,7 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   title = {Grammar and parser evaluation in the XTAG project},
   booktitle = {LREC Workshop on The Evaluation of Parsing Systems},
   year = {1998},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/eval-final.pdf}
+  pdf = {https://anoopsarkar.github.io/papers/pdf/eval-final.pdf}
 }
 
 
@@ -1178,7 +1348,17 @@ abstract = {This paper presents a novel analysis of clausal coordination with sh
   month = aug,
   year = {1997},
   address = {Saarbruecken, Germany},
-  pdf = {http://www.cs.sfu.ca/~anoop/papers/pdf/mol5final.pdf}
+  pdf = {https://anoopsarkar.github.io/papers/pdf/mol5final.pdf}
+}
+
+@misc{sarkar1998separating,
+      title="Separating Dependency from Constituency in a Tree Rewriting System",
+      author="Anoop Sarkar",
+      year="1998",
+      url="https://arxiv.org/abs/cs/9809028v1",
+      eprint="cs/9809028",
+      archivePrefix="arXiv",
+      primaryClass="cs.CL"
 }
 
 @article{DBLP:journals/corr/cs-CL-9809028,

@@ -16,6 +16,7 @@ menu: true
 
 ### Conference chair
 
+* Area chair, EMNLP 2023.
 * Tutorial co-chair, NAACL 2019, Minneapolis, MN
 * Area co-chair, Machine Learning track, EMNLP 2017
 * Program co-chair, NAACL HLT 2015.
