@@ -44,8 +44,8 @@ If you are interested in working with me, before you email me, please read my <a
 </div>
 
 * Multilingual Natural Language Processing
-* Machine learning for Natural Language Processing
-* Machine Reading and Information Visualization 
+* Computational Decipherment
+* Language Models
 
 <!--
 ### News and Posts
@@ -82,9 +82,9 @@ If you are interested in working with me, before you email me, please read my <a
     </ul>
 </div>
 
+* Summer 2025: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 * Fall 2024: [Natural Language Processing](http://anoopsarkar.github.io/nlp-class/)
 * Summer 2023: [Advanced Natural Language Processing](http://anoopsarkar.github.io/advanced-nlp-class/)
-* Fall 2021: [Compilers](http://anoopsarkar.github.io/compilers-class/)
 
 ### Recent Publications and Talks
 <div class="more">
